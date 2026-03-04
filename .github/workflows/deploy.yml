@@ -19,6 +19,9 @@ jobs:
   deploy:
     uses: OpenAEC-Foundation/github/.github/workflows/deploy-site-with-pages.yml@main
     with:
+      deploy_host: ${{ vars.DEPLOY_HOST }}
+      deploy_port: ${{ vars.DEPLOY_PORT }}
+      deploy_user: ${{ vars.DEPLOY_USER }}
       deploy_path: ${{ vars.DEPLOY_PATH }}
       rsync_excludes: |
         README.md
