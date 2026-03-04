@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monty IFC Viewer — OpenAEC Foundation</title>
+  <meta name="description" content="Web-based IFC viewer with 3D visualization, build sequence animation, and element property inspection. Built with Three.js and web-ifc.">
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body>
+  <nav class="navbar"><div class="nav-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <ul class="nav-links"><li><a href="/">Tools</a></li><li><a href="https://github.com/OpenAEC-Foundation/monty-ifc-viewer">GitHub</a></li></ul>
+  </div></nav>
+
+  <section class="hero">
+    <span class="section-label">BIM / IFC viewer</span>
+    <h1>Monty <span class="accent">IFC</span> Viewer</h1>
+    <p class="tagline">Web-based IFC viewer with build sequence visualization. Load IFC files, animate the construction sequence step by step, and inspect element properties.</p>
+    <div class="btn-group">
+      <a href="#download" class="btn btn-primary btn-lg">Download v1.0.1</a>
+      <a href="https://openaec-foundation.github.io/monty-IFC-viewer/" class="btn btn-ghost btn-lg">Live demo</a>
+    </div>
+  </section>
+
+  <section class="section" id="download"><div class="container">
+    <div class="download-section">
+      <h3>Download v1.0.1</h3>
+      <div class="download-grid">
+        <div class="download-item"><div class="os">Windows (.exe)</div><div class="size">2.5 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_x64-setup.exe" class="btn btn-primary btn-sm">Download</a></div>
+        <div class="download-item"><div class="os">Windows (.msi)</div><div class="size">3.5 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_x64_en-US.msi" class="btn btn-primary btn-sm">Download</a></div>
+        <div class="download-item"><div class="os">macOS (Apple Silicon)</div><div class="size">3.6 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_aarch64.dmg" class="btn btn-primary btn-sm">Download</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size">3.6 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_amd64.deb" class="btn btn-primary btn-sm">Download</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size">77.5 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_amd64.AppImage" class="btn btn-primary btn-sm">Download</a></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section section-alt"><div class="container">
+    <h2>Features</h2>
+    <div class="features" style="margin-top:var(--sp-8)">
+      <div class="feature">
+        <h4>IFC file loading</h4>
+        <p>Drag and drop IFC files into the viewer or use the file picker. Parsed with the web-ifc library.</p>
+      </div>
+      <div class="feature">
+        <h4>3D visualization</h4>
+        <p>Interactive 3D rendering of BIM models with Three.js. Zoom, pan, and rotate around the model.</p>
+      </div>
+      <div class="feature">
+        <h4>Build sequence animation</h4>
+        <p>Visualize the construction sequence step by step with play, pause, previous, and next controls. Choose which IFC parameter drives the sequence order.</p>
+      </div>
+      <div class="feature">
+        <h4>Element properties</h4>
+        <p>Click on any element to select and highlight it. View all IFC properties of the selected element.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <h2>Tech stack</h2>
+    <div class="features" style="margin-top:var(--sp-8)">
+      <div class="feature"><h4>Three.js</h4><p>3D rendering engine for interactive model visualization.</p></div>
+      <div class="feature"><h4>web-ifc</h4><p>IFC parsing library by IFCjs for reading Industry Foundation Classes files.</p></div>
+      <div class="feature"><h4>Vanilla JavaScript</h4><p>No framework dependencies. Lightweight and fast.</p></div>
+    </div>
+    <p style="margin-top:var(--sp-6);color:var(--scaffold-gray)">Created by Piet Mol</p>
+  </div></section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span>Build free. Build together.</span>
+    <a href="https://github.com/OpenAEC-Foundation">GitHub</a>
+  </div></footer>
+</body>
+</html>

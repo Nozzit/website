@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open PDF Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Free, open-source PDF editor and annotator for Windows, macOS, Linux, and Android. 20+ annotation tools, measurement, stamps, redaction, and more.">
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body>
+  <nav class="navbar"><div class="nav-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <ul class="nav-links"><li><a href="/">Tools</a></li><li><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio">GitHub</a></li></ul>
+  </div></nav>
+
+  <section class="hero">
+    <span class="section-label">Open-source PDF editor</span>
+    <h1>Open <span class="accent">PDF</span> Studio</h1>
+    <p class="tagline">Professional-grade PDF annotation, markup, and editing without subscriptions, telemetry, or bloatware. Built with Tauri 2 and SolidJS.</p>
+    <div class="btn-group">
+      <a href="#download" class="btn btn-primary btn-lg">Download v1.23.0</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio" class="btn btn-ghost btn-lg">View source</a>
+    </div>
+  </section>
+
+  <section class="section" id="download"><div class="container">
+    <div class="download-section">
+      <h3>Download v1.23.0</h3>
+      <div class="download-grid">
+        <div class="download-item"><div class="os">Windows</div><div class="size">8.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.23.0/Open.PDF.Studio_1.23.0_x64-setup.exe" class="btn btn-primary btn-sm">Download .exe</a></div>
+        <div class="download-item"><div class="os">macOS (universal)</div><div class="size">22.2 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.23.0/Open.PDF.Studio_1.23.0_universal.dmg" class="btn btn-primary btn-sm">Download .dmg</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size">11.7 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.23.0/Open.PDF.Studio_1.23.0_amd64.deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size">85.1 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.23.0/Open.PDF.Studio_1.23.0_amd64.AppImage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+        <div class="download-item"><div class="os">Android</div><div class="size">21.9 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.23.0/open-pdf-studio-release.apk" class="btn btn-primary btn-sm">Download .apk</a></div>
+        <div class="download-item"><div class="os">Linux (snap)</div><div class="size">via Snap Store</div>
+          <a href="https://snapcraft.io/open-pdf-studio" class="btn btn-primary btn-sm">Snap Store</a></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section section-alt"><div class="container">
+    <h2>Features</h2>
+    <div class="features" style="margin-top:var(--sp-8)">
+      <div class="feature">
+        <h4>20+ annotation tools</h4>
+        <p>Highlight, underline, strikethrough, shapes (rectangle, ellipse, polygon, cloud, arrow), freehand pen, text boxes, callouts, sticky notes, stamps, and image insertion.</p>
+      </div>
+      <div class="feature">
+        <h4>Measurement tools</h4>
+        <p>Distance, area, and perimeter measurement with scale calibration (mm, cm, inches, points). Object snapping to endpoints, midpoints, centers, and edges.</p>
+      </div>
+      <div class="feature">
+        <h4>Signatures and stamps</h4>
+        <p>Draw multi-stroke signatures and save up to 5 for quick reuse. 10 built-in stamps including Approved, Rejected, Draft, Confidential, and Final.</p>
+      </div>
+      <div class="feature">
+        <h4>Page management</h4>
+        <p>Insert, delete, extract, replace, and reorder pages via drag-and-drop thumbnails. Merge multiple PDFs. Rotate pages 90/180/270 degrees.</p>
+      </div>
+      <div class="feature">
+        <h4>Redaction</h4>
+        <p>Mark areas and apply to permanently remove sensitive content from documents.</p>
+      </div>
+      <div class="feature">
+        <h4>Forms support</h4>
+        <p>Fill interactive PDF forms (AcroForms and XFA). Create text fields, checkboxes, and radio buttons with JavaScript validation.</p>
+      </div>
+      <div class="feature">
+        <h4>Watermarks and headers/footers</h4>
+        <p>Text and image watermarks with opacity, rotation, and position control. Headers and footers with page number, date, time, and filename variables.</p>
+      </div>
+      <div class="feature">
+        <h4>Export and print</h4>
+        <p>Export pages as PNG or JPEG at 72-600 DPI. Full print dialog with live preview, page range, scaling, and print-as-image option. XFDF annotation export/import.</p>
+      </div>
+      <div class="feature">
+        <h4>Multi-tab and sessions</h4>
+        <p>Work with multiple PDFs in tabs. Save and restore named workspace snapshots. Recent files with pin/unpin.</p>
+      </div>
+      <div class="feature">
+        <h4>39 languages</h4>
+        <p>Full interface translation including RTL support for Arabic, Hebrew, Farsi, and Urdu. 5 themes: Dark, Light, Blue, High Contrast, and System.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <h2>Tech stack</h2>
+    <div class="features" style="margin-top:var(--sp-8)">
+      <div class="feature"><h4>Tauri 2</h4><p>Rust backend for native performance and small binary size.</p></div>
+      <div class="feature"><h4>SolidJS</h4><p>Reactive UI framework with fine-grained updates.</p></div>
+      <div class="feature"><h4>PDF.js + pdf-lib</h4><p>Mozilla PDF.js for rendering, pdf-lib for document manipulation.</p></div>
+    </div>
+  </div></section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span>Build free. Build together.</span>
+    <a href="https://github.com/OpenAEC-Foundation">GitHub</a>
+  </div></footer>
+</body>
+</html>

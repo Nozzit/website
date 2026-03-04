@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Planner Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Open-source construction planning application with Gantt charts, Critical Path Method, WBS, and native IFC 4.3 file format. Built with Tauri 2.">
+  <link rel="stylesheet" href="/shared/style.css">
+</head>
+<body>
+  <nav class="navbar"><div class="nav-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <ul class="nav-links"><li><a href="/">Tools</a></li><li><a href="https://github.com/OpenAEC-Foundation/open-planner-studio">GitHub</a></li></ul>
+  </div></nav>
+
+  <section class="hero">
+    <span class="section-label">Construction planning</span>
+    <h1>Open <span class="accent">Planner</span> Studio</h1>
+    <p class="tagline">Open-source construction planning with Gantt charts, Critical Path Method, and native IFC 4.3 file format. Built for the construction sector.</p>
+    <div class="btn-group">
+      <a href="#download" class="btn btn-primary btn-lg">Download v2026.2.0</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg">View source</a>
+    </div>
+  </section>
+
+  <section class="section" id="download"><div class="container">
+    <div class="download-section">
+      <h3>Download v2026.2.0</h3>
+      <div class="download-grid">
+        <div class="download-item"><div class="os">Windows</div><div class="size">2.4 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.2.0/Open.Planner.Studio_2026.2.0_x64-setup.exe" class="btn btn-primary btn-sm">Download .exe</a></div>
+        <div class="download-item"><div class="os">macOS (universal)</div><div class="size">5.8 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.2.0/Open.Planner.Studio_2026.2.0_universal.dmg" class="btn btn-primary btn-sm">Download .dmg</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size">2.9 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.2.0/Open.Planner.Studio_2026.2.0_amd64.deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size">76.9 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.2.0/Open.Planner.Studio_2026.2.0_amd64.AppImage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section section-alt"><div class="container">
+    <h2>Features</h2>
+    <div class="features" style="margin-top:var(--sp-8)">
+      <div class="feature">
+        <h4>Gantt charts</h4>
+        <p>Interactive Canvas-rendered Gantt diagrams with drag and drop, zoom, and timeline navigation.</p>
+      </div>
+      <div class="feature">
+        <h4>Critical Path Method</h4>
+        <p>Automatic CPM calculation with critical path identification and float analysis.</p>
+      </div>
+      <div class="feature">
+        <h4>Work Breakdown Structure</h4>
+        <p>Hierarchical task structure with collapsible chapters. Excel-style table editor with inline editing.</p>
+      </div>
+      <div class="feature">
+        <h4>IFC 4.3 native</h4>
+        <p>Save and open planning files in IFC 4.3 format (buildingSMART standard). Built-in IFC code editor with generate and apply.</p>
+      </div>
+      <div class="feature">
+        <h4>Resource management</h4>
+        <p>Manage labor, equipment, and subcontractors. Construction-specific features: holidays, building recess, inspection moments, and phasing.</p>
+      </div>
+      <div class="feature">
+        <h4>4D BIM-ready</h4>
+        <p>Link planning tasks to IFC building model elements for 4D construction sequence visualization.</p>
+      </div>
+      <div class="feature">
+        <h4>Reporting</h4>
+        <p>Live print preview in the ribbon with configurable report options. Context menu for quick task actions.</p>
+      </div>
+      <div class="feature">
+        <h4>Multilingual</h4>
+        <p>Interface in 6 languages: Nederlands, English, Francais, Deutsch, Espanol, and Zhongwen.</p>
+      </div>
+      <div class="feature">
+        <h4>Ribbon toolbar</h4>
+        <p>Microsoft Office-style ribbon with tabs: Start, Planning, View, Settings, Table, IFC, and Report.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <h2>Tech stack</h2>
+    <div class="features" style="margin-top:var(--sp-8)">
+      <div class="feature"><h4>Tauri 2.0</h4><p>Native desktop application with Rust backend.</p></div>
+      <div class="feature"><h4>React 18 + TypeScript</h4><p>Component-based UI with Zustand + Immer state management.</p></div>
+      <div class="feature"><h4>HTML5 Canvas 2D</h4><p>Gantt chart rendering. TailwindCSS styling, Vite 5 build.</p></div>
+    </div>
+  </div></section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span>Build free. Build together.</span>
+    <a href="https://github.com/OpenAEC-Foundation">GitHub</a>
+  </div></footer>
+</body>
+</html>

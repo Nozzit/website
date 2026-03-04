@@ -339,6 +339,59 @@
       opacity: 0.7;
       line-height: 1.6;
     }
+
+    /* Tools */
+    .tools {
+      background: linear-gradient(180deg, var(--cloud) 0%, rgba(107,184,212,0.08) 100%);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 64px;
+    }
+
+    .tool-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 28px;
+      background-color: var(--cloud);
+      border: 1px solid rgba(74,144,184,0.16);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(58,58,58,0.06);
+    }
+
+    .tool-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .tool-card p {
+      font-size: 15px;
+      opacity: 0.8;
+      line-height: 1.7;
+    }
+
+    .tool-link {
+      color: var(--dawn);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .tool-link:hover {
+      color: var(--horizon);
+    }
+
+    .tools-actions {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
     
     /* Bestuur */
     .bestuur {
@@ -678,6 +731,7 @@
       <div class="nav-menu">
         <a href="#over-ons" class="nav-link" data-i18n="nav.about">Over ons</a>
         <a href="#missie" class="nav-link" data-i18n="nav.mission">Missie</a>
+        <a href="#tools" class="nav-link" data-i18n="nav.tools">Tools</a>
         <a href="#bestuur" class="nav-link" data-i18n="nav.board">Bestuur</a>
         <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
         <a href="#contact" class="btn btn-primary" data-i18n="nav.joinBoard">Word bestuurslid</a>
@@ -794,6 +848,95 @@
           <h3 data-i18n="mission.items.advocacy.title">Advocacy</h3>
           <p data-i18n="mission.items.advocacy.desc">Promoten van open source en open standaarden</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools" id="tools">
+    <div class="container">
+      <div class="text-center">
+        <p class="section-label" data-i18n="tools.label">Projecten en tools</p>
+        <h2 class="section-title" data-i18n="tools.title">Verken de huidige OpenAEC-pagina's</h2>
+        <p class="section-desc" data-i18n="tools.description">Deze website bundelt de projecten en productpagina's die nu al live staan binnen het OpenAEC-ecosysteem.</p>
+      </div>
+
+      <div class="tools-grid">
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.openBooks.title">OpenBooks</h3>
+            <p data-i18n="tools.items.openBooks.desc">Digitale collectie met historische architectuur- en bouwboeken, vrij toegankelijk voor ontwerpers, ingenieurs en bouwers.</p>
+          </div>
+          <a href="/open-books/" class="tool-link" data-i18n="tools.items.openBooks.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.buildingPy.title">building.py</h3>
+            <p data-i18n="tools.items.buildingPy.desc">Python-bibliotheek voor gebouwmodellering, export en open BIM-workflows.</p>
+          </div>
+          <a href="/building-py/" class="tool-link" data-i18n="tools.items.buildingPy.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.open2d.title">Open 2D Studio</h3>
+            <p data-i18n="tools.items.open2d.desc">Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.</p>
+          </div>
+          <a href="/open-2d-studio/" class="tool-link" data-i18n="tools.items.open2d.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.openPdf.title">Open PDF Studio</h3>
+            <p data-i18n="tools.items.openPdf.desc">Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.</p>
+          </div>
+          <a href="/open-pdf-studio/" class="tool-link" data-i18n="tools.items.openPdf.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.openEnergy.title">Open Energy Studio</h3>
+            <p data-i18n="tools.items.openEnergy.desc">Projectpagina voor open energie-analyse en gebouwprestaties.</p>
+          </div>
+          <a href="/open-energy-studio/" class="tool-link" data-i18n="tools.items.openEnergy.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.openPlanner.title">Open Planner Studio</h3>
+            <p data-i18n="tools.items.openPlanner.desc">Open plannings- en projectcoördinatiepagina voor bouwteams.</p>
+          </div>
+          <a href="/open-planner-studio/" class="tool-link" data-i18n="tools.items.openPlanner.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.openPointcloud.title">Open Pointcloud Studio</h3>
+            <p data-i18n="tools.items.openPointcloud.desc">Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.</p>
+          </div>
+          <a href="/open-pointcloud-studio/" class="tool-link" data-i18n="tools.items.openPointcloud.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.montyIfc.title">Monty IFC Viewer</h3>
+            <p data-i18n="tools.items.montyIfc.desc">Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.</p>
+          </div>
+          <a href="/monty-ifc-viewer/" class="tool-link" data-i18n="tools.items.montyIfc.link">Bekijk project →</a>
+        </article>
+
+        <article class="tool-card">
+          <div>
+            <h3 data-i18n="tools.items.extDrawing.title">EXT Drawing Statistics</h3>
+            <p data-i18n="tools.items.extDrawing.desc">Pagina voor tekeningenanalyse en statistieken binnen open engineeringprocessen.</p>
+          </div>
+          <a href="/ext-drawing-statistics/" class="tool-link" data-i18n="tools.items.extDrawing.link">Bekijk project →</a>
+        </article>
+      </div>
+
+      <div class="tools-actions">
+        <a href="/tools-overview.html" class="btn btn-secondary btn-large" data-i18n="tools.overviewBtn">Bekijk volledig repository-overzicht</a>
       </div>
     </div>
   </section>
@@ -922,6 +1065,7 @@
         nav: {
           about: "Over ons",
           mission: "Missie",
+          tools: "Tools",
           board: "Bestuur",
           contact: "Contact",
           joinBoard: "Word bestuurslid"
@@ -988,6 +1132,59 @@
             }
           }
         },
+        tools: {
+          label: "Projecten en tools",
+          title: "Verken de huidige OpenAEC-pagina's",
+          description: "Deze website bundelt de projecten en productpagina's die nu al live staan binnen het OpenAEC-ecosysteem.",
+          overviewBtn: "Bekijk volledig repository-overzicht",
+          items: {
+            openBooks: {
+              title: "OpenBooks",
+              desc: "Digitale collectie met historische architectuur- en bouwboeken, vrij toegankelijk voor ontwerpers, ingenieurs en bouwers.",
+              link: "Bekijk project →"
+            },
+            buildingPy: {
+              title: "building.py",
+              desc: "Python-bibliotheek voor gebouwmodellering, export en open BIM-workflows.",
+              link: "Bekijk project →"
+            },
+            open2d: {
+              title: "Open 2D Studio",
+              desc: "Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.",
+              link: "Bekijk project →"
+            },
+            openPdf: {
+              title: "Open PDF Studio",
+              desc: "Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.",
+              link: "Bekijk project →"
+            },
+            openEnergy: {
+              title: "Open Energy Studio",
+              desc: "Projectpagina voor open energie-analyse en gebouwprestaties.",
+              link: "Bekijk project →"
+            },
+            openPlanner: {
+              title: "Open Planner Studio",
+              desc: "Open plannings- en projectcoördinatiepagina voor bouwteams.",
+              link: "Bekijk project →"
+            },
+            openPointcloud: {
+              title: "Open Pointcloud Studio",
+              desc: "Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.",
+              link: "Bekijk project →"
+            },
+            montyIfc: {
+              title: "Monty IFC Viewer",
+              desc: "Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.",
+              link: "Bekijk project →"
+            },
+            extDrawing: {
+              title: "EXT Drawing Statistics",
+              desc: "Pagina voor tekeningenanalyse en statistieken binnen open engineeringprocessen.",
+              link: "Bekijk project →"
+            }
+          }
+        },
         board: {
           label: "Word onderdeel",
           title: "Bestuursleden gezocht",
@@ -1044,6 +1241,7 @@
         nav: {
           about: "About us",
           mission: "Mission",
+          tools: "Tools",
           board: "Board",
           contact: "Contact",
           joinBoard: "Join the board"
@@ -1107,6 +1305,59 @@
             advocacy: {
               title: "Advocacy",
               desc: "Promoting open source and open standards"
+            }
+          }
+        },
+        tools: {
+          label: "Projects and tools",
+          title: "Explore the current OpenAEC pages",
+          description: "This website now brings together the project and product pages that are already live in the OpenAEC ecosystem.",
+          overviewBtn: "View full repository overview",
+          items: {
+            openBooks: {
+              title: "OpenBooks",
+              desc: "Digital collection of historical architecture and construction books, freely accessible for designers, engineers and builders.",
+              link: "View project →"
+            },
+            buildingPy: {
+              title: "building.py",
+              desc: "Python library for building modelling, export and open BIM workflows.",
+              link: "View project →"
+            },
+            open2d: {
+              title: "Open 2D Studio",
+              desc: "Viewer and product page for 2D documents and drawings in an open design workflow.",
+              link: "View project →"
+            },
+            openPdf: {
+              title: "Open PDF Studio",
+              desc: "Open tooling around PDF-based document flows and technical publishing.",
+              link: "View project →"
+            },
+            openEnergy: {
+              title: "Open Energy Studio",
+              desc: "Project page for open energy analysis and building performance.",
+              link: "View project →"
+            },
+            openPlanner: {
+              title: "Open Planner Studio",
+              desc: "Open planning and project coordination page for construction teams.",
+              link: "View project →"
+            },
+            openPointcloud: {
+              title: "Open Pointcloud Studio",
+              desc: "Viewer and workflow page for point cloud data in renovation and analysis projects.",
+              link: "View project →"
+            },
+            montyIfc: {
+              title: "Monty IFC Viewer",
+              desc: "Lightweight IFC viewer for quick inspection of open BIM models.",
+              link: "View project →"
+            },
+            extDrawing: {
+              title: "EXT Drawing Statistics",
+              desc: "Page for drawing analysis and statistics in open engineering processes.",
+              link: "View project →"
             }
           }
         },
