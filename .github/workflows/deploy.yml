@@ -17,10 +17,9 @@ concurrency:
 
 jobs:
   deploy:
-    uses: OpenAEC-Foundation/github/.github/workflows/deploy-site.yml@main
+    uses: OpenAEC-Foundation/github/.github/workflows/deploy-site-with-pages.yml@main
     with:
       deploy_path: ${{ vars.DEPLOY_PATH }}
-      deploy_to_pages: true
       rsync_excludes: |
         README.md
         LICENSE.md
