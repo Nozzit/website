@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenAEC Ecosystem</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --amber: #D97706;
+  --warm-gold: #F59E0B;
+  --signal-orange: #EA580C;
+  --night-build: #2A2A32;
+  --night-light: #32323a;
+  --scaffold-gray: #A1A1AA;
+  --white: #FAFAF9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: var(--night-build); font-family: 'Inter', system-ui, sans-serif; }
+
+svg { display: block; }
+
+/* Tooltip */
+#tooltip {
+  position: fixed; pointer-events: none; opacity: 0;
+  background: rgba(42,42,50,0.95); border: 1px solid var(--amber);
+  border-radius: 10px; padding: 14px 18px; max-width: 280px;
+  backdrop-filter: blur(12px); z-index: 100;
+  transition: opacity 0.15s;
+}
+#tooltip h3 { font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 1rem; color: var(--white); margin-bottom: 4px; }
+#tooltip .cat { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+#tooltip p { font-size: 0.8rem; color: var(--scaffold-gray); line-height: 1.4; }
+#tooltip .meta { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #71717a; margin-top: 6px; }
+
+/* Legend */
+#legend {
+  position: fixed; bottom: 24px; left: 24px; z-index: 50;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.leg-item { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--scaffold-gray); cursor: pointer; transition: opacity 0.2s; }
+.leg-item:hover { color: var(--white); }
+.leg-item.dimmed { opacity: 0.25; }
+.leg-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+/* Title */
+#title {
+  position: fixed; top: 20px; left: 24px; z-index: 50;
+}
+#title h1 { font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 1.4rem; color: var(--white); font-weight: 700; }
+#title h1 span { color: var(--amber); }
+#title p { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #52525b; margin-top: 4px; }
+
+/* Controls */
+#controls {
+  position: fixed; top: 20px; right: 24px; z-index: 50;
+  display: flex; gap: 8px;
+}
+#controls button {
+  background: rgba(42,42,50,0.9); border: 1px solid #3f3f46; color: var(--white);
+  padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace; transition: all 0.15s;
+}
+#controls button:hover { background: var(--amber); border-color: var(--amber); color: var(--night-build); }
+</style>
+</head>
+<body>
+
+<div id="title">
+  <h1>Open<span>AEC</span> Ecosystem</h1>
+  <p>Interactive tool graph — drag, scroll, click to explore</p>
+</div>
+
+<div id="controls">
+  <button onclick="resetView()">Reset</button>
+  <button onclick="toggleLabels()">Labels</button>
+  <button onclick="expandAll()">Expand</button>
+  <button onclick="compactAll()">Compact</button>
+</div>
+
+<div id="legend"></div>
+<div id="tooltip"><h3></h3><div class="cat"></div><p></p><div class="meta"></div></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const W = window.innerWidth, H = window.innerHeight;
+
+// Categories with colors
+const cats = {
+  core:     { label: 'Core / Platform', color: '#D97706' },
+  design:   { label: 'Design & BIM',    color: '#F59E0B' },
+  viewer:   { label: 'Viewers',         color: '#FB923C' },
+  eng:      { label: 'Engineering',     color: '#EF4444' },
+  business: { label: 'Business / ERP',  color: '#8B5CF6' },
+  collab:   { label: 'Collaboration',   color: '#06B6D4' },
+  ai:       { label: 'AI & Agents',     color: '#10B981' },
+  data:     { label: 'Data & Standards',color: '#6366F1' },
+  lib:      { label: 'Libraries',       color: '#EC4899' },
+};
+
+// Building SVG path (isometric cube)
+const buildingPath = `M0,-45 L35,-25 L35,20 L0,40 L-35,20 L-35,-25 Z
+  M0,-45 L0,0 M0,0 L35,-25 M0,0 L-35,-25
+  M-35,20 L0,40 L35,20
+  M-20,-10 L-20,10 M-10,-5 L-10,15
+  M10,-5 L10,15 M20,-10 L20,10`;
+
+// Icon URLs from GitHub repos and known logos
+const GH = 'https://raw.githubusercontent.com/OpenAEC-Foundation';
+const icons = {
+  openaec:    `${GH}/OpenAEC_stijlbook/main/brandbook/assets/logo/png/openaec-symbol-amber-on-dark-2x.png`,
+  wfc5:       `${GH}/wfc5/main/docs/logo/wefc-icon.svg`,
+  blender:    'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/200px-Blender_logo_no_text.svg.png',
+  freecad:    'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/FreeCAD-logo.svg/200px-FreeCAD-logo.svg.png',
+  open2d:     `${GH}/open-2d-studio/master/src-tauri/icons/128x128.png`,
+  monty:      `${GH}/monty-ifc-viewer/main/src-tauri/icons/128x128.png`,
+  pointcloud: `${GH}/open-pointcloud-studio/main/src-tauri/icons/128x128.png`,
+  '3dviewer': `${GH}/open-3d-viewer/main/src-tauri/icons/128x128.png`,
+  pdf:        `${GH}/open-pdf-studio/main/open-pdf-studio/src-tauri/icons/icon.png`,
+  energy:     `${GH}/open-energy-studio/main/src-tauri/icons/128x128.png`,
+  planner:    `${GH}/open-planner-studio/main/src-tauri/icons/128x128.png`,
+  nextcloud:  'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Nextcloud_Logo.svg/200px-Nextcloud_Logo.svg.png',
+  erpnext:    'https://frappe.io/files/erpnext-logo-blue.png',
+  speckle:    'https://speckle.systems/images/logo.png',
+};
+
+const nodes = [
+  // Center
+  { id: 'building', label: '', cat: 'core', r: 50, fx: 0, fy: 0, isCenter: true },
+
+  // Core / Platform
+  { id: 'openaec',    label: 'OpenAEC\nCloud Platform', cat: 'core', r: 32, desc: 'The open-source BIM platform. Version control, collaboration and lifecycle management.', meta: 'IFC 4X3 · OpenBIM · BCF 3.0 · GIT' },
+  { id: 'wfc5',       label: 'WFC5',           cat: 'core', r: 22, desc: 'IFC5 extension. Complete BIM model in one format.', meta: 'TypeSpec' },
+
+  // Design & BIM
+  { id: 'blender',    label: 'Blender\n+ Bonsai',  cat: 'design', r: 30, desc: 'IFC authoring with Blender and Bonsai plugin.', meta: 'Open BIM' },
+  { id: 'freecad',    label: 'FreeCAD',        cat: 'design', r: 24, desc: 'Open source parametric 3D CAD modeler.' },
+  { id: 'building-py',label: 'building.py',    cat: 'design', r: 28, desc: 'Python building modeling. Export to Blender, Revit, IFC, DXF, Speckle.', meta: '764 commits · Python' },
+  { id: 'open2d',     label: 'Open 2D\nStudio',cat: 'design', r: 26, desc: '2D viewer and drawing environment. Extension system.', meta: '66 commits · v0.32.0 · 22 releases' },
+  { id: 'aec-ext',    label: '2D AEC\nExtension',cat:'design', r: 18, desc: 'Construction symbols, layers and annotations.', meta: '7 commits · v0.1.0' },
+
+  // Viewers
+  { id: 'monty',      label: 'Monty IFC\nViewer',  cat: 'viewer', r: 24, desc: 'Lightweight web-based BIM viewer with Three.js.', meta: '11 commits · v1.0.1' },
+  { id: 'pointcloud', label: 'Pointcloud\nStudio', cat: 'viewer', r: 22, desc: 'View and edit point clouds.', meta: '12 commits · v0.3.0' },
+  { id: '3dviewer',   label: 'Open 3D\nViewer',    cat: 'viewer', r: 20, desc: 'Universal 3D viewer in the browser.', meta: 'Alpha · v0.1.0-alpha' },
+  { id: 'pdf',        label: 'Open PDF\nStudio',   cat: 'viewer', r: 26, desc: 'View, combine and edit PDFs for construction.', meta: '90 commits · v1.23.0 · 24 releases' },
+
+  // Engineering
+  { id: 'fem2d',      label: 'FEM2D\nStudio',  cat: 'eng', r: 24, desc: '2D structural analysis.', meta: '13 commits · TypeScript' },
+  { id: 'struct',     label: 'Structural\nEngineer', cat: 'eng', r: 20, desc: 'Tool for the structural engineer.', meta: 'New' },
+  { id: 'energy',     label: 'Energy\nStudio',  cat: 'eng', r: 24, desc: 'Energy performance NTA 8800. Desktop app with Tauri 2.', meta: '11 commits · v2026.2.0' },
+  { id: 'mpg',        label: 'MPG\nStudio',     cat: 'eng', r: 20, desc: 'MPG calculation for building permits.', meta: '2 commits' },
+  { id: 'uvalue',     label: 'U-value\nStudio', cat: 'eng', r: 18, desc: 'Wall, roof and floor constructions.' },
+  { id: 'dynlex',     label: 'Dynlex',          cat: 'eng', r: 22, desc: 'High-performance C++ calculation engine.', meta: '98 commits · C++' },
+  { id: 'calc',       label: 'Calc\nStudio',    cat: 'eng', r: 18, desc: 'Calculation tool for construction.', meta: 'New' },
+  { id: 'ifccalc',    label: 'Ifc-Calc',        cat: 'eng', r: 18, desc: 'Graphical calculator linked to IFC models.', meta: '3 commits' },
+
+  // Business / ERP
+  { id: 'erpnext',    label: 'ERPNext',         cat: 'business', r: 28, desc: 'Open source ERP for construction. Project management, invoicing, HRM.', meta: 'NL payroll' },
+  { id: 'erp-dash',   label: 'ERPNext\nDashboard', cat: 'business', r: 20, desc: 'Electron desktop app. Banking, invoicing, expense management.', meta: '16 commits' },
+  { id: 'erp-level',  label: 'Level\nDashboard',cat: 'business', r: 20, desc: 'Alternative GUI. Departments, employees, AI bots.' },
+  { id: 'planner',    label: 'Planner\nStudio', cat: 'business', r: 20, desc: 'Project planning. Gantt charts with Tauri 2.', meta: '10 commits · v2026.2.0' },
+  { id: 'bestek',     label: 'Bestekstool',     cat: 'business', r: 18, desc: 'Specifications writing for construction projects.' },
+  { id: 'cutlist',    label: 'Cutlist\nOptimizer',cat:'business', r: 18, desc: '1D and 2D cut plan optimization.', meta: 'JavaScript' },
+
+  // Collaboration
+  { id: 'nextcloud',  label: 'Nextcloud',       cat: 'collab', r: 26, desc: 'File management, version control, IfcGit, Check-in/out.' },
+  { id: 'speckle',    label: 'Speckle',         cat: 'collab', r: 20, desc: 'Data exchange and collaboration platform.' },
+  { id: 'reports',    label: 'OpenAEC\nReports', cat: 'collab', r: 22, desc: 'Generate reports for construction projects.', meta: '131 commits · Python' },
+
+  // AI
+  { id: 'agents',     label: 'Open\nAgents',    cat: 'ai', r: 24, desc: 'Multi-agent orchestrator. AI agents in parallel via CLI.', meta: '84 commits · TypeScript' },
+  { id: 'claude',     label: 'Claude\nSkills',  cat: 'ai', r: 22, desc: 'AI-assisted design with Claude.' },
+
+  // Data & Standards
+  { id: 'ocondat',    label: 'Project\nOcondat', cat: 'data', r: 24, desc: 'Open building data. WikiData linked to building information.', meta: '152 commits' },
+  { id: 'books',      label: 'Open\nBooks',     cat: 'data', r: 20, desc: 'Historical construction books. Digital collection.', meta: '109 commits' },
+  { id: 'cpt',        label: 'CPT\nViewer',     cat: 'data', r: 18, desc: 'Geotechnical soundings. GEF and BRO-xml viewer.', meta: 'JavaScript' },
+
+  // Libraries
+  { id: 'heatloss',   label: 'Heat Loss\nCalc', cat: 'lib', r: 18, desc: 'ISSO 51:2023 Rust calculation library.', meta: '21 commits · Rust' },
+];
+
+// Links: everything connects to building, plus logical sub-connections
+const links = [
+  // Core to center
+  { source: 'openaec', target: 'building', strength: 0.8 },
+  { source: 'wfc5',    target: 'building', strength: 0.5 },
+
+  // Design to center
+  { source: 'blender',     target: 'building', strength: 0.7 },
+  { source: 'freecad',     target: 'building', strength: 0.5 },
+  { source: 'building-py', target: 'building', strength: 0.7 },
+  { source: 'open2d',      target: 'building', strength: 0.5 },
+  { source: 'aec-ext',     target: 'open2d',   strength: 0.9 },
+
+  // Viewers to center
+  { source: 'monty',      target: 'building', strength: 0.5 },
+  { source: 'pointcloud', target: 'building', strength: 0.4 },
+  { source: '3dviewer',   target: 'building', strength: 0.4 },
+  { source: 'pdf',        target: 'building', strength: 0.3 },
+
+  // Engineering to center
+  { source: 'fem2d',   target: 'building', strength: 0.5 },
+  { source: 'struct',  target: 'building', strength: 0.5 },
+  { source: 'energy',  target: 'building', strength: 0.5 },
+  { source: 'mpg',     target: 'building', strength: 0.4 },
+  { source: 'uvalue',  target: 'building', strength: 0.4 },
+  { source: 'dynlex',  target: 'building', strength: 0.4 },
+  { source: 'calc',    target: 'building', strength: 0.3 },
+  { source: 'ifccalc', target: 'building', strength: 0.5 },
+
+  // Business to center
+  { source: 'erpnext',  target: 'building', strength: 0.5 },
+  { source: 'erp-dash', target: 'erpnext',  strength: 0.9 },
+  { source: 'erp-level',target: 'erpnext',  strength: 0.9 },
+  { source: 'planner',  target: 'building', strength: 0.3 },
+  { source: 'bestek',   target: 'building', strength: 0.3 },
+  { source: 'cutlist',  target: 'building', strength: 0.2 },
+
+  // Collaboration
+  { source: 'nextcloud', target: 'building', strength: 0.4 },
+  { source: 'speckle',   target: 'building', strength: 0.4 },
+  { source: 'reports',   target: 'building', strength: 0.3 },
+
+  // AI
+  { source: 'agents', target: 'building', strength: 0.4 },
+  { source: 'claude', target: 'building', strength: 0.4 },
+  { source: 'claude', target: 'blender',  strength: 0.3 },
+
+  // Data
+  { source: 'ocondat', target: 'building', strength: 0.4 },
+  { source: 'books',   target: 'building', strength: 0.2 },
+  { source: 'cpt',     target: 'building', strength: 0.2 },
+
+  // Libraries
+  { source: 'heatloss', target: 'energy',  strength: 0.8 },
+  { source: 'heatloss', target: 'building',strength: 0.2 },
+
+  // Cross-links
+  { source: 'building-py', target: 'blender',  strength: 0.5 },
+  { source: 'building-py', target: 'speckle',  strength: 0.3 },
+  { source: 'monty',       target: 'openaec',  strength: 0.4 },
+  { source: 'wfc5',        target: 'openaec',  strength: 0.5 },
+  { source: 'ifccalc',     target: 'blender',  strength: 0.3 },
+  { source: 'nextcloud',   target: 'openaec',  strength: 0.3 },
+  { source: 'ocondat',     target: 'openaec',  strength: 0.3 },
+  { source: 'agents',      target: 'claude',   strength: 0.6 },
+  { source: 'mpg',         target: 'energy',   strength: 0.4 },
+  { source: 'uvalue',      target: 'energy',   strength: 0.5 },
+  { source: 'struct',      target: 'fem2d',    strength: 0.5 },
+  { source: 'dynlex',      target: 'calc',     strength: 0.4 },
+];
+
+let showLabels = true;
+let activeCat = null;
+
+// Build legend
+const legendEl = document.getElementById('legend');
+Object.entries(cats).forEach(([key, {label, color}]) => {
+  const item = document.createElement('div');
+  item.className = 'leg-item';
+  item.innerHTML = `<div class="leg-dot" style="background:${color}"></div>${label}`;
+  item.onclick = () => {
+    if (activeCat === key) { activeCat = null; } else { activeCat = key; }
+    updateHighlight();
+  };
+  item.dataset.cat = key;
+  legendEl.appendChild(item);
+});
+
+// SVG setup
+const svg = d3.select('body').append('svg')
+  .attr('width', W).attr('height', H);
+
+const defs = svg.append('defs');
+// Glow filter
+const glow = defs.append('filter').attr('id','glow');
+glow.append('feGaussianBlur').attr('stdDeviation','4').attr('result','blur');
+glow.append('feMerge').selectAll('feMergeNode')
+  .data(['blur','SourceGraphic']).enter()
+  .append('feMergeNode').attr('in', d=>d);
+
+const g = svg.append('g').attr('transform', `translate(${W/2},${H/2})`);
+
+// Zoom
+const zoom = d3.zoom().scaleExtent([0.3, 4]).on('zoom', e => g.attr('transform', e.transform));
+svg.call(zoom);
+svg.call(zoom.transform, d3.zoomIdentity.translate(W/2, H/2).scale(1));
+
+// Simulation
+const sim = d3.forceSimulation(nodes)
+  .force('link', d3.forceLink(links).id(d=>d.id).distance(d => {
+    const s = d.source.r || 25, t = d.target.r || 25;
+    return (s + t) * 2.2 + 40;
+  }).strength(d => d.strength * 0.3))
+  .force('charge', d3.forceManyBody().strength(d => d.isCenter ? -1200 : -350))
+  .force('center', d3.forceCenter(0, 0).strength(0.05))
+  .force('collision', d3.forceCollide().radius(d => d.r + 12).strength(0.8))
+  .force('radial', d3.forceRadial(d => d.isCenter ? 0 : 350, 0, 0).strength(0.06))
+  .alphaDecay(0.02);
+
+// Draw links
+const linkG = g.append('g');
+const linkEls = linkG.selectAll('line').data(links).enter().append('line')
+  .attr('stroke', d => {
+    const sn = nodes.find(n=>n.id===(d.source.id||d.source));
+    return cats[sn?.cat]?.color || '#3f3f46';
+  })
+  .attr('stroke-opacity', 0.15)
+  .attr('stroke-width', d => Math.max(1, d.strength * 2.5));
+
+// Draw nodes
+const nodeG = g.append('g');
+const nodeEls = nodeG.selectAll('g').data(nodes).enter().append('g')
+  .attr('cursor', 'grab')
+  .call(d3.drag()
+    .on('start', (e,d) => { if(!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+    .on('drag', (e,d) => { d.fx=e.x; d.fy=e.y; })
+    .on('end', (e,d) => { if(!e.active) sim.alphaTarget(0); if(!d.isCenter){d.fx=null;d.fy=null;} })
+  );
+
+// Create clipPath defs for each node with an icon
+nodes.forEach(d => {
+  if (icons[d.id]) {
+    defs.append('clipPath').attr('id', `clip-${d.id}`)
+      .append('circle').attr('r', d.r * 0.6);
+  }
+});
+
+// Render nodes
+nodeEls.each(function(d) {
+  const el = d3.select(this);
+  if (d.isCenter) {
+    // Outer glow circle
+    el.append('circle').attr('r', d.r + 8)
+      .attr('fill', 'none').attr('stroke', '#D97706').attr('stroke-width', 2)
+      .attr('stroke-opacity', 0.3).attr('filter', 'url(#glow)');
+    // Main circle
+    el.append('circle').attr('r', d.r)
+      .attr('fill', '#1a1a20').attr('stroke', '#D97706').attr('stroke-width', 3);
+    // OpenAEC logo in center
+    defs.append('clipPath').attr('id','clip-center')
+      .append('circle').attr('r', d.r * 0.85);
+    el.append('image')
+      .attr('href', icons.openaec)
+      .attr('x', -d.r * 0.85).attr('y', -d.r * 0.85)
+      .attr('width', d.r * 1.7).attr('height', d.r * 1.7)
+      .attr('clip-path', 'url(#clip-center)')
+      .attr('preserveAspectRatio', 'xMidYMid meet')
+      .attr('pointer-events', 'none');
+  } else {
+    const color = cats[d.cat]?.color || '#D97706';
+    const hasIcon = !!icons[d.id];
+    // Main circle
+    el.append('circle').attr('r', d.r)
+      .attr('fill', hasIcon ? '#1a1a20' : color)
+      .attr('fill-opacity', hasIcon ? 0.9 : 0.12)
+      .attr('stroke', color).attr('stroke-width', 1.8);
+    // Icon image (clipped to circle)
+    if (hasIcon) {
+      const iconSize = d.r * 1.2;
+      el.append('image')
+        .attr('href', icons[d.id])
+        .attr('x', -iconSize/2).attr('y', -iconSize/2)
+        .attr('width', iconSize).attr('height', iconSize)
+        .attr('clip-path', `url(#clip-${d.id})`)
+        .attr('preserveAspectRatio', 'xMidYMid meet')
+        .attr('pointer-events', 'none');
+    }
+    // Hover ring
+    el.append('circle').attr('r', d.r).attr('class','hover-ring')
+      .attr('fill','none').attr('stroke', color).attr('stroke-width', 0)
+      .attr('stroke-opacity', 0);
+  }
+});
+
+// Labels — below node if icon, centered if no icon
+const labelEls = nodeEls.append('text')
+  .attr('text-anchor', 'middle')
+  .attr('fill', d => d.isCenter ? '#D97706' : '#FAFAF9')
+  .attr('font-family', "'Space Grotesk', system-ui, sans-serif")
+  .attr('font-weight', d => d.isCenter ? 700 : 500)
+  .attr('font-size', d => d.isCenter ? 11 : Math.max(8, d.r * 0.4))
+  .attr('pointer-events', 'none')
+  .each(function(d) {
+    const lines = d.label.split('\n');
+    const el = d3.select(this);
+    const hasIcon = !!icons[d.id];
+    const yOffset = hasIcon ? d.r + 10 : 0;
+    lines.forEach((line, i) => {
+      el.append('tspan')
+        .attr('x', 0)
+        .attr('dy', i === 0 ? `${yOffset + (-(lines.length-1)*0.5)*10}px` : '1.1em')
+        .text(line);
+    });
+  });
+
+// Tooltip
+const tooltip = document.getElementById('tooltip');
+nodeEls
+  .on('mouseenter', (e, d) => {
+    if (d.isCenter) return;
+    const color = cats[d.cat]?.color || '#D97706';
+    tooltip.querySelector('h3').textContent = d.label.replace('\n',' ');
+    tooltip.querySelector('.cat').textContent = cats[d.cat]?.label || '';
+    tooltip.querySelector('.cat').style.color = color;
+    tooltip.querySelector('p').textContent = d.desc || '';
+    tooltip.querySelector('.meta').textContent = d.meta || '';
+    tooltip.style.borderColor = color;
+    tooltip.style.opacity = 1;
+    // Hover ring
+    d3.select(e.currentTarget).select('.hover-ring')
+      .transition().duration(200)
+      .attr('stroke-width', 3).attr('stroke-opacity', 0.5).attr('r', d.r + 6);
+  })
+  .on('mousemove', (e) => {
+    tooltip.style.left = (e.clientX + 16) + 'px';
+    tooltip.style.top = (e.clientY - 10) + 'px';
+  })
+  .on('mouseleave', (e, d) => {
+    tooltip.style.opacity = 0;
+    d3.select(e.currentTarget).select('.hover-ring')
+      .transition().duration(300)
+      .attr('stroke-width', 0).attr('stroke-opacity', 0).attr('r', d.r);
+  });
+
+// Tick
+sim.on('tick', () => {
+  linkEls
+    .attr('x1', d=>d.source.x).attr('y1', d=>d.source.y)
+    .attr('x2', d=>d.target.x).attr('y2', d=>d.target.y);
+  nodeEls.attr('transform', d=>`translate(${d.x},${d.y})`);
+});
+
+// Highlight by category
+function updateHighlight() {
+  document.querySelectorAll('.leg-item').forEach(el => {
+    el.classList.toggle('dimmed', activeCat && el.dataset.cat !== activeCat);
+  });
+  nodeEls.transition().duration(300)
+    .attr('opacity', d => !activeCat || d.cat === activeCat || d.isCenter ? 1 : 0.1);
+  linkEls.transition().duration(300)
+    .attr('stroke-opacity', d => {
+      if (!activeCat) return 0.15;
+      const sc = d.source.cat, tc = d.target.cat;
+      return (sc === activeCat || tc === activeCat || d.source.isCenter || d.target.isCenter) ? 0.3 : 0.02;
+    });
+}
+
+// Controls
+function resetView() {
+  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity.translate(W/2, H/2).scale(1));
+  activeCat = null;
+  updateHighlight();
+}
+function toggleLabels() {
+  showLabels = !showLabels;
+  labelEls.transition().duration(200).attr('opacity', showLabels ? 1 : 0);
+}
+function expandAll() {
+  sim.force('radial', d3.forceRadial(d => d.isCenter ? 0 : 480, 0, 0).strength(0.12));
+  sim.alpha(0.5).restart();
+}
+function compactAll() {
+  sim.force('radial', d3.forceRadial(d => d.isCenter ? 0 : 280, 0, 0).strength(0.12));
+  sim.alpha(0.5).restart();
+}
+
+// Resize
+window.addEventListener('resize', () => {
+  svg.attr('width', window.innerWidth).attr('height', window.innerHeight);
+});
+</script>
+</body>
+</html>

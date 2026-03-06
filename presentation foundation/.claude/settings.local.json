@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo:*)",
+      "Bash(mkdir:*)",
+      "Bash(xargs grep:*)",
+      "Bash(start:*)",
+      "WebFetch(domain:www.opencompany246.nl)",
+      "Bash(curl:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(npm ls -g playwright)",
+      "Read(//c/Users/rickd/**)",
+      "Bash(npm install:*)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "symitech-erpnext",
+    "freecad-mcp"
+  ]
+}
