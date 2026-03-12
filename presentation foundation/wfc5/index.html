@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeFC Schema Explorer v2.0.0 alpha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.6/vis-network.min.js"></script>
+<script>window.vis || document.write('<script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"><\/script>')</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0e27;
+  --card: #131836;
+  --card-border: #1e2a5a;
+  --text: #e8eaf6;
+  --text-dim: #8892b0;
+  --text-muted: #5a6380;
+  --accent: #64ffda;
+  --accent-dim: #64ffda33;
+  --header-bg: #0d1230;
+  --sidebar-bg: #0f1535;
+  --hover: #1a2350;
+  --scrollbar: #1e2a5a;
+  --scrollbar-thumb: #3a4580;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4a5590; }
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 20px;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--card-border);
+  position: relative;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  position: relative;
+}
+
+.logo svg { width: 100%; height: 100%; }
+
+.header-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.header-title span {
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 8px;
+  background: var(--accent-dim);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.view-toggle {
+  display: flex;
+  background: var(--card);
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  overflow: hidden;
+}
+
+.view-btn {
+  padding: 7px 18px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-dim);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-btn:hover { color: var(--text); background: var(--hover); }
+
+.view-btn.active {
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.view-btn svg { width: 14px; height: 14px; }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-link {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-link:hover { color: var(--text); background: var(--hover); }
+
+.header-link svg { width: 14px; height: 14px; }
+
+/* ── Main Layout ── */
+.main-container {
+  display: flex;
+  height: calc(100vh - 56px - 32px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  width: 280px;
+  min-width: 280px;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.sidebar-section {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.sidebar-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px 12px 8px 34px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-box:focus { border-color: var(--accent); }
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+}
+
+.domain-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 16px;
+}
+
+.domain-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  user-select: none;
+}
+
+.domain-item:hover { background: var(--hover); }
+
+.domain-check {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.domain-check.checked {
+  background: currentColor;
+}
+
+.domain-check.checked::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background: var(--bg);
+}
+
+.domain-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.domain-label {
+  font-size: 12px;
+  font-weight: 500;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.domain-count {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-family: 'Inter', monospace;
+}
+
+/* Legend */
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.legend-line {
+  width: 30px;
+  height: 0;
+  border-top: 2px;
+}
+
+.legend-label {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ctrl-btn {
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ctrl-btn:hover { color: var(--text); border-color: var(--accent); }
+
+/* ── Graph View ── */
+.graph-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+  height: 100%;
+}
+
+#network {
+  width: 100%;
+  height: 100%;
+}
+
+/* Detail Panel */
+.detail-panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 300px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  z-index: 50;
+  transform: translateX(120%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.detail-panel.visible {
+  transform: translateX(0);
+}
+
+.detail-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-entity-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.detail-domain-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.detail-close {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: var(--hover);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.15s;
+}
+
+.detail-close:hover { background: #2a3570; color: var(--text); }
+
+.detail-body {
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.detail-section {
+  margin-bottom: 12px;
+}
+
+.detail-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.detail-rel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-rel {
+  font-size: 12px;
+  color: var(--text-dim);
+  padding: 4px 8px;
+  background: var(--bg);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detail-rel-arrow {
+  color: var(--accent);
+  font-family: monospace;
+}
+
+/* ── Card View ── */
+.card-view {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0;
+  display: none;
+}
+
+.card-view.active { display: block; }
+.graph-view { display: flex; flex: 1; height: 100%; min-height: 0; }
+.graph-view.hidden { display: none !important; }
+
+/* Card View Header */
+.cv-header {
+  padding: 40px 40px 30px;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+  background: linear-gradient(180deg, #0d1230 0%, var(--bg) 100%);
+}
+
+.cv-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.cv-subtitle {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+}
+
+.cv-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
+.cv-stat {
+  text-align: center;
+}
+
+.cv-stat-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+  font-family: 'Inter', monospace;
+}
+
+.cv-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+/* Flow diagram */
+.cv-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 4px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flow-pill {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.flow-arrow {
+  color: var(--text-muted);
+  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2px;
+}
+
+.flow-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  font-style: italic;
+  padding: 0 4px;
+}
+
+/* Card view search */
+.cv-search-bar {
+  max-width: 500px;
+  margin: 24px auto 0;
+  position: relative;
+}
+
+.cv-search-bar svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+}
+
+.cv-search {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cv-search:focus { border-color: var(--accent); }
+
+/* Domain cards */
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px;
+  padding: 24px 40px 60px;
+}
+
+.domain-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.domain-card:hover { border-color: #2a3570; transform: translateY(-1px); }
+
+.domain-card-header {
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.domain-card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.domain-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #fff;
+}
+
+.domain-card-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.domain-card-count {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.domain-card-chevron {
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+  transition: transform 0.25s ease;
+}
+
+.domain-card.expanded .domain-card-chevron {
+  transform: rotate(180deg);
+}
+
+.domain-card-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.domain-card.expanded .domain-card-body {
+  max-height: 600px;
+}
+
+.domain-card-entities {
+  padding: 0 18px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.entity-tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: 'Inter', monospace;
+  transition: all 0.15s;
+  cursor: default;
+}
+
+.entity-tag:hover {
+  filter: brightness(1.3);
+  transform: scale(1.04);
+}
+
+.entity-tag.hidden { display: none; }
+
+/* ── Stats Bar ── */
+.stats-bar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: var(--header-bg);
+  border-top: 1px solid var(--card-border);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.stats-left { display: flex; gap: 20px; }
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-value {
+  color: var(--text-dim);
+  font-weight: 600;
+  font-family: 'Inter', monospace;
+}
+
+.stats-right {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.stats-right a {
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.stats-right a:hover { color: var(--accent); }
+
+/* ── Animations ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.domain-card {
+  animation: fadeIn 0.4s ease backwards;
+}
+
+.cv-grid .domain-card:nth-child(1) { animation-delay: 0.02s; }
+.cv-grid .domain-card:nth-child(2) { animation-delay: 0.04s; }
+.cv-grid .domain-card:nth-child(3) { animation-delay: 0.06s; }
+.cv-grid .domain-card:nth-child(4) { animation-delay: 0.08s; }
+.cv-grid .domain-card:nth-child(5) { animation-delay: 0.10s; }
+.cv-grid .domain-card:nth-child(6) { animation-delay: 0.12s; }
+.cv-grid .domain-card:nth-child(7) { animation-delay: 0.14s; }
+.cv-grid .domain-card:nth-child(8) { animation-delay: 0.16s; }
+.cv-grid .domain-card:nth-child(9) { animation-delay: 0.18s; }
+.cv-grid .domain-card:nth-child(10) { animation-delay: 0.20s; }
+.cv-grid .domain-card:nth-child(11) { animation-delay: 0.22s; }
+.cv-grid .domain-card:nth-child(12) { animation-delay: 0.24s; }
+.cv-grid .domain-card:nth-child(13) { animation-delay: 0.26s; }
+.cv-grid .domain-card:nth-child(14) { animation-delay: 0.28s; }
+.cv-grid .domain-card:nth-child(15) { animation-delay: 0.30s; }
+.cv-grid .domain-card:nth-child(16) { animation-delay: 0.32s; }
+.cv-grid .domain-card:nth-child(17) { animation-delay: 0.34s; }
+.cv-grid .domain-card:nth-child(18) { animation-delay: 0.36s; }
+.cv-grid .domain-card:nth-child(19) { animation-delay: 0.38s; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .sidebar { width: 240px; min-width: 240px; }
+  .cv-grid { grid-template-columns: 1fr; padding: 16px; }
+  .cv-header { padding: 24px 16px 20px; }
+  .cv-stats { gap: 16px; }
+}
+
+@media (max-width: 600px) {
+  .sidebar { display: none; }
+  .header-title span { display: none; }
+  .cv-stat-value { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header class="header">
+  <div class="header-left">
+    <div class="logo">
+      <svg viewBox="0 0 40 40" fill="none">
+        <polygon points="20,2 38,36 2,36" fill="none" stroke="#64ffda" stroke-width="2.5"/>
+        <polygon points="20,12 30,32 10,32" fill="#64ffda" opacity="0.15"/>
+        <text x="20" y="28" text-anchor="middle" fill="#64ffda" font-size="12" font-weight="800" font-family="Inter,sans-serif">W</text>
+      </svg>
+    </div>
+    <div class="header-title">
+      WeFC Schema Explorer <span>v2.0.0 alpha</span>
+    </div>
+  </div>
+
+  <div class="view-toggle">
+    <button class="view-btn active" id="btn-graph" onclick="switchView('graph')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><line x1="7" y1="11" x2="17" y2="7"/><line x1="7" y1="13" x2="17" y2="17"/></svg>
+      Network Graph
+    </button>
+    <button class="view-btn" id="btn-cards" onclick="switchView('cards')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Card Overview
+    </button>
+  </div>
+
+  <div class="header-right">
+    <a class="header-link" href="https://github.com/OpenAEC/WeFC" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub
+    </a>
+    <a class="header-link" href="#" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Docs
+    </a>
+  </div>
+</header>
+
+<!-- ═══════════════ MAIN ═══════════════ -->
+<div class="main-container">
+
+  <!-- ── Graph View ── -->
+  <div class="graph-view" id="graphView">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Search Entities</div>
+        <div class="search-wrapper">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" class="search-box" id="graphSearch" placeholder="Filter entities..." oninput="filterGraph()">
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Domains</div>
+        <div class="domain-list" id="domainList"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Edge Types</div>
+        <div class="legend-item">
+          <svg width="30" height="4"><line x1="0" y1="2" x2="30" y2="2" stroke="#8892b0" stroke-width="2"/></svg>
+          <span class="legend-label">Extends (inheritance)</span>
+        </div>
+        <div class="legend-item">
+          <svg width="30" height="4"><line x1="0" y1="2" x2="30" y2="2" stroke="#4ECDC4" stroke-width="2" stroke-dasharray="6,3"/></svg>
+          <span class="legend-label">Contains (composition)</span>
+        </div>
+        <div class="legend-item">
+          <svg width="30" height="4"><line x1="0" y1="2" x2="30" y2="2" stroke="#8892b066" stroke-width="2" stroke-dasharray="2,3"/></svg>
+          <span class="legend-label">References (association)</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Controls</div>
+        <div class="controls">
+          <button class="ctrl-btn" onclick="fitGraph()">Fit All</button>
+          <button class="ctrl-btn" onclick="zoomIn()">Zoom +</button>
+          <button class="ctrl-btn" onclick="zoomOut()">Zoom -</button>
+          <button class="ctrl-btn" onclick="resetPhysics()">Reset</button>
+          <button class="ctrl-btn" onclick="togglePhysics()">Freeze</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Network Canvas -->
+    <div class="graph-container">
+      <div id="network"></div>
+
+      <!-- Detail Panel -->
+      <div class="detail-panel" id="detailPanel">
+        <div class="detail-header">
+          <div>
+            <div class="detail-entity-name" id="detailName">Entity</div>
+            <span class="detail-domain-badge" id="detailBadge">Domain</span>
+          </div>
+          <button class="detail-close" onclick="closeDetail()">&times;</button>
+        </div>
+        <div class="detail-body" id="detailBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Card View ── -->
+  <div class="card-view" id="cardView">
+    <div class="cv-header">
+      <div class="cv-title">World Engineering Foundation Classes</div>
+      <div class="cv-subtitle">A universal, open schema for the entire built environment lifecycle</div>
+
+      <div class="cv-stats">
+        <div class="cv-stat"><div class="cv-stat-value">275+</div><div class="cv-stat-label">Entities</div></div>
+        <div class="cv-stat"><div class="cv-stat-value">18</div><div class="cv-stat-label">Domains</div></div>
+        <div class="cv-stat"><div class="cv-stat-value">37</div><div class="cv-stat-label">Rel Types</div></div>
+        <div class="cv-stat"><div class="cv-stat-value">~47k</div><div class="cv-stat-label">Lines</div></div>
+      </div>
+
+      <!-- Flow diagram -->
+      <div class="cv-flow" id="cvFlow"></div>
+
+      <!-- Search -->
+      <div class="cv-search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="cv-search" id="cardSearch" placeholder="Search entities across all domains..." oninput="filterCards()">
+      </div>
+    </div>
+
+    <div class="cv-grid" id="cvGrid"></div>
+  </div>
+</div>
+
+<!-- ═══════════════ STATS BAR ═══════════════ -->
+<div class="stats-bar">
+  <div class="stats-left">
+    <div class="stat-item">Entities: <span class="stat-value" id="statEntities">0</span></div>
+    <div class="stat-item">Relationships: <span class="stat-value" id="statRels">0</span></div>
+    <div class="stat-item">Visible: <span class="stat-value" id="statVisible">0</span></div>
+    <div class="stat-item">Domains: <span class="stat-value" id="statDomains">18</span></div>
+  </div>
+  <div class="stats-right">
+    World Foundation Classes &mdash; OpenAEC Foundation &mdash; LGPL 3.0
+  </div>
+</div>
+
+<!-- ═══════════════ SCRIPT ═══════════════ -->
+<script>
+// ── Domain Data ──
+const DOMAINS = [
+  { id:'C', name:'Core', color:'#FF6B6B', entities:['Root','File','Header','Import','Node','Relationship','PropertySet','Property','Person','Organization','Address','GeoCoordinate','Layer','Snapshot','ChangeRecord','RelDecomposes','RelNests','RelVoidsElement','RelFillsElement','RelProjectsElement','RelContainedInSpatialStructure','RelReferencedInSpatialStructure','RelServicesBuildings','RelSpaceBoundary','RelConnectsElements','RelConnectsPorts','RelConnectsPortToElement','RelConnectsPathElements','RelConnectsStructuralMember','RelAssignsToProduct','RelAssignsToProcess','RelAssignsToGroup','RelAssignsToControl','RelAssignsToActor','RelSequence','RelAssociatesClassification','RelAssociatesMaterial','RelAssociatesDocument','RelDefinesByType','RelDefinesByProperties','RelParametricDependency','RelLiveLink','RelCalculationResult','RelSensorMonitors','RelRequirementVerifies'] },
+  { id:'S', name:'Building Spatial', color:'#4ECDC4', entities:['Site','Building','BuildingStorey','Space','Zone','Project','Grid','GridAxis'] },
+  { id:'E', name:'Building Elements', color:'#45B7D1', entities:['Wall','Beam','Column','Slab','Roof','Stair','Ramp','Door','Window','CurtainWall','Covering','Opening','Footing','Pile','Member','Plate','Railing','Chimney','ShadingDevice','GroundAnchor','SheetPileWall','Connection','BoltGroup','WeldGroup','ReinforcementLayout','ReinforcementLayer','ShearReinforcementZone','ReinforcingBar'] },
+  { id:'X', name:'Connections', color:'#96CEB4', entities:['Connection','BoltGroup','WeldGroup','ReinforcementLayout','ReinforcementLayer'] },
+  { id:'H', name:'MEP - HVAC', color:'#FFEAA7', entities:['AirTerminal','Boiler','Chiller','Fan','Valve','HeatPump','HeatExchanger','Compressor','Condenser','CoolingTower','Evaporator','EvaporativeCooler','Humidifier','CooledBeam','DuctSegment','DuctFitting','DuctSilencer','Damper','Coil','SpaceHeater','UnitaryEquipment','AirToAirHeatRecovery','Burner','TubeBundle'] },
+  { id:'W', name:'MEP - Electrical', color:'#DDA0DD', entities:['CableSegment','CableFitting','ElectricDistributionBoard','SwitchingDevice','LightFixture','Outlet','JunctionBox','Transformer','ElectricGenerator','ElectricMotor','ElectricTimeControl','ElectricFlowStorageDevice','ProtectiveDevice','ElectricalCircuit'] },
+  { id:'P', name:'MEP - Plumbing', color:'#98D8C8', entities:['PipeSegment','PipeFitting','SanitaryTerminal','FireSuppressionTerminal','Sensor','FlowMeter','Interceptor','Tank','Pump','FlowController','FlowInstrument','StackTerminal','WasteTerminal','SprinklerSystem','PlumbingValve'] },
+  { id:'G', name:'Geometry', color:'#F7DC6F', entities:['Point3D','Point2D','BSplineCurve','BSplineSurface','ExtrudedAreaSolid','RevolvedAreaSolid','BooleanResult','CsgSolid','TriangulatedFaceSet','AdvancedBrep','Polyline','Circle','Ellipse','Line','Plane','ColourRgb','SurfaceStyle','CurveStyle','ShapeRepresentation','LocalPlacement','Axis2Placement3D','BoundingBox','IndexedPolyCurve','CompositeCurve','ProfileDef','RectangleProfileDef','CircleProfileDef','IShapeProfileDef','LShapeProfileDef','TShapeProfileDef','MappedItem','StyledItem','FacetedBrep','SweptDiskSolid','SectionedSolid','HalfSpaceSolid','TrimmedCurve','OffsetCurve3D','SurfaceOfRevolution','SurfaceOfLinearExtrusion','Sphere','RightCircularCylinder'] },
+  { id:'R', name:'Parametric', color:'#BB8FCE', entities:['ParametricModel','Parameter','Constraint','SteelProfile','SteelProfileLibrary','ParametricBeam','ParametricColumn','ParametricWall','ParametricSlab','ParametricRoof','ParametricConnection','ParametricStaircase','ParametricWindow','ParametricDoor','ParametricFoundation','ParametricFrame','ParametricCurtainWall','DependencyGraph'] },
+  { id:'N', name:'Standards', color:'#85C1E9', entities:['Standard','NationalAnnex','BuildingRegulation','Formula','ComplianceCheck','StandardTable','StandardSection'] },
+  { id:'K', name:'Calculations', color:'#F1948A', entities:['Calculation','CalculationModule','CheckResult','LoadCase','LoadCombination','MemberCheck','CrossSection','CalculationResult'] },
+  { id:'T', name:'Reports', color:'#82E0AA', entities:['CompanyTemplate','ReportTemplate','Report','ContentBlock','LiveDataBinding','DataBinding'] },
+  { id:'D', name:'Drawings', color:'#F0B27A', entities:['DrawingSheet','Viewport','Dimension','Annotation','DrawingBlock','LineStyle','TextStyle','Hatch','TitleBlock'] },
+  { id:'I', name:'Sensors', color:'#AED6F1', entities:['Sensor','TimeSeries','Alarm','MonitoringSystem','AlarmThreshold'] },
+  { id:'PC', name:'Point Cloud', color:'#D7BDE2', entities:['PointCloud','ScanPosition','Registration','PointCloudLink','DeviationAnalysis'] },
+  { id:'RQ', name:'Requirements', color:'#A3E4D7', entities:['ProgramOfRequirements','SpaceRequirement','Requirement','RequirementGroup','BudgetConstraint'] },
+  { id:'CO', name:'Commercial', color:'#FAD7A0', entities:['Proposal','CostEstimate','CostChapter','BillOfQuantities','Pricing'] },
+  { id:'IF', name:'Infrastructure', color:'#AEB6BF', entities:['Road','Railway','Bridge','Tunnel','Alignment','Pavement','MarineFacility','RetainingWall','Earthworks','TrafficBarrier'] },
+  { id:'PL', name:'Planet', color:'#73C6B6', entities:['Planet','CoordinateSystem','Site','Terrain','SoilLayer','UndergroundUtility'] },
+];
+
+// Build lookup
+const domainMap = {};
+const entityToDomain = {};
+DOMAINS.forEach(d => {
+  domainMap[d.id] = d;
+  d.entities.forEach(e => { entityToDomain[e] = d.id; });
+});
+
+// Domain visibility
+const domainVisible = {};
+DOMAINS.forEach(d => { domainVisible[d.id] = true; });
+
+// ── Key entities for graph (subset for performance) ──
+const graphEntities = [
+  // Core key
+  'Root','Node','Relationship','PropertySet','Property','Person','Organization',
+  'RelDecomposes','RelNests','RelContainedInSpatialStructure','RelConnectsElements',
+  'RelAssociatesMaterial','RelDefinesByProperties','RelDefinesByType',
+  'RelAssignsToProduct','RelSequence','RelCalculationResult','RelSensorMonitors','RelRequirementVerifies',
+  // Spatial
+  'Site','Building','BuildingStorey','Space','Zone','Project','Grid',
+  // Elements key
+  'Wall','Beam','Column','Slab','Roof','Stair','Door','Window','CurtainWall','Footing','Pile','Member','Plate','Railing','Opening','ReinforcingBar',
+  // Connections
+  'Connection','BoltGroup','WeldGroup',
+  // HVAC key
+  'AirTerminal','Boiler','Chiller','Fan','Valve','HeatPump','DuctSegment','DuctFitting','Damper','Coil',
+  // Electrical key
+  'CableSegment','ElectricDistributionBoard','SwitchingDevice','LightFixture','Transformer',
+  // Plumbing key
+  'PipeSegment','PipeFitting','SanitaryTerminal','Tank','Pump',
+  // Geometry key
+  'Point3D','ExtrudedAreaSolid','BooleanResult','TriangulatedFaceSet','AdvancedBrep','ShapeRepresentation','LocalPlacement','ProfileDef','IShapeProfileDef','MappedItem',
+  // Parametric key
+  'ParametricModel','Parameter','Constraint','SteelProfile','ParametricBeam','ParametricColumn','ParametricWall','DependencyGraph',
+  // Standards
+  'Standard','NationalAnnex','Formula','ComplianceCheck','StandardSection',
+  // Calculations
+  'Calculation','CalculationModule','CheckResult','LoadCase','LoadCombination','MemberCheck','CalculationResult',
+  // Reports
+  'Report','ReportTemplate','ContentBlock','LiveDataBinding',
+  // Drawings
+  'DrawingSheet','Viewport','Dimension','Annotation','TitleBlock',
+  // Sensors
+  'Sensor','TimeSeries','Alarm','MonitoringSystem',
+  // Point Cloud
+  'PointCloud','ScanPosition','Registration','DeviationAnalysis',
+  // Requirements
+  'ProgramOfRequirements','SpaceRequirement','Requirement',
+  // Commercial
+  'Proposal','CostEstimate','CostChapter','BillOfQuantities',
+  // Infrastructure
+  'Road','Railway','Bridge','Tunnel','Alignment',
+  // Planet
+  'Planet','CoordinateSystem','Terrain','SoilLayer',
+];
+
+// Deduplicate
+const graphEntitySet = [...new Set(graphEntities)];
+
+// ── Edges ──
+const EDGES = [
+  // Extends
+  { from:'Relationship', to:'RelDecomposes', type:'extends' },
+  { from:'Relationship', to:'RelNests', type:'extends' },
+  { from:'Relationship', to:'RelContainedInSpatialStructure', type:'extends' },
+  { from:'Relationship', to:'RelConnectsElements', type:'extends' },
+  { from:'Relationship', to:'RelAssociatesMaterial', type:'extends' },
+  { from:'Relationship', to:'RelDefinesByProperties', type:'extends' },
+  { from:'Relationship', to:'RelDefinesByType', type:'extends' },
+  { from:'Relationship', to:'RelAssignsToProduct', type:'extends' },
+  { from:'Relationship', to:'RelSequence', type:'extends' },
+  { from:'Relationship', to:'RelCalculationResult', type:'extends' },
+  { from:'Relationship', to:'RelSensorMonitors', type:'extends' },
+  { from:'Relationship', to:'RelRequirementVerifies', type:'extends' },
+  { from:'Root', to:'Node', type:'extends' },
+  { from:'Root', to:'Relationship', type:'extends' },
+
+  // Contains - Spatial hierarchy
+  { from:'Planet', to:'Site', type:'contains' },
+  { from:'Project', to:'Building', type:'contains' },
+  { from:'Site', to:'Building', type:'contains' },
+  { from:'Building', to:'BuildingStorey', type:'contains' },
+  { from:'BuildingStorey', to:'Space', type:'contains' },
+
+  // Contains - Building has elements
+  { from:'Building', to:'Wall', type:'contains' },
+  { from:'Building', to:'Beam', type:'contains' },
+  { from:'Building', to:'Column', type:'contains' },
+  { from:'Building', to:'Slab', type:'contains' },
+  { from:'Building', to:'Roof', type:'contains' },
+  { from:'Building', to:'Door', type:'contains' },
+  { from:'Building', to:'Window', type:'contains' },
+
+  // Contains - Drawings
+  { from:'DrawingSheet', to:'Viewport', type:'contains' },
+
+  // Contains - Point Cloud
+  { from:'PointCloud', to:'ScanPosition', type:'contains' },
+
+  // Contains - Sensors
+  { from:'MonitoringSystem', to:'Sensor', type:'contains' },
+
+  // Contains - Requirements
+  { from:'ProgramOfRequirements', to:'SpaceRequirement', type:'contains' },
+
+  // Contains - Calculations
+  { from:'Calculation', to:'CalculationModule', type:'contains' },
+  { from:'CalculationModule', to:'CheckResult', type:'contains' },
+
+  // Contains - Commercial
+  { from:'CostEstimate', to:'CostChapter', type:'contains' },
+
+  // Contains - Standards
+  { from:'Standard', to:'StandardSection', type:'contains' },
+  { from:'StandardSection', to:'Formula', type:'contains' },
+
+  // Contains - Parametric
+  { from:'ParametricModel', to:'Parameter', type:'contains' },
+  { from:'ParametricModel', to:'Constraint', type:'contains' },
+
+  // References
+  { from:'Beam', to:'SteelProfile', type:'references' },
+  { from:'Beam', to:'LoadCase', type:'references' },
+  { from:'Calculation', to:'Standard', type:'references' },
+  { from:'Sensor', to:'Space', type:'references' },
+  { from:'Report', to:'Calculation', type:'references' },
+  { from:'DrawingSheet', to:'Building', type:'references' },
+  { from:'CostEstimate', to:'Wall', type:'references' },
+  { from:'CostEstimate', to:'Beam', type:'references' },
+  { from:'CostEstimate', to:'Slab', type:'references' },
+  { from:'ComplianceCheck', to:'Standard', type:'references' },
+  { from:'PointCloud', to:'Building', type:'references' },
+  { from:'SpaceRequirement', to:'Space', type:'references' },
+  { from:'Proposal', to:'Project', type:'references' },
+  { from:'Wall', to:'ShapeRepresentation', type:'references' },
+  { from:'Column', to:'ShapeRepresentation', type:'references' },
+  { from:'ParametricBeam', to:'Beam', type:'references' },
+  { from:'ParametricColumn', to:'Column', type:'references' },
+  { from:'ParametricWall', to:'Wall', type:'references' },
+  { from:'Alarm', to:'Sensor', type:'references' },
+  { from:'LiveDataBinding', to:'Calculation', type:'references' },
+  { from:'MemberCheck', to:'Beam', type:'references' },
+  { from:'DeviationAnalysis', to:'Wall', type:'references' },
+];
+
+// ── Build vis.js data ──
+let network = null;
+let nodesDataset, edgesDataset;
+let physicsEnabled = true;
+
+function getNodeSize(entity) {
+  if (entity === 'Root') return 28;
+  const important = ['Building','Project','Wall','Beam','Calculation','Standard','ParametricModel','Planet','Site','Relationship','Node','ShapeRepresentation','Report','DrawingSheet','PointCloud','MonitoringSystem','Sensor'];
+  if (important.includes(entity)) return 20;
+  return 14;
+}
+
+function buildGraph() {
+  const nodes = [];
+  const edges = [];
+
+  graphEntitySet.forEach(entity => {
+    const domId = entityToDomain[entity];
+    if (!domId) return;
+    const dom = domainMap[domId];
+    const size = getNodeSize(entity);
+    nodes.push({
+      id: entity,
+      label: entity,
+      group: domId,
+      size: size,
+      color: {
+        background: dom.color + '22',
+        border: dom.color,
+        highlight: { background: dom.color + '44', border: dom.color },
+        hover: { background: dom.color + '33', border: dom.color },
+      },
+      font: {
+        color: '#e8eaf6',
+        size: entity === 'Root' ? 13 : 10,
+        face: 'Inter, sans-serif',
+        strokeWidth: 3,
+        strokeColor: '#0a0e27',
+      },
+      borderWidth: 2,
+      borderWidthSelected: 3,
+      shape: 'dot',
+      domainId: domId,
+      domainLetter: domId.length > 2 ? domId.substring(0,2) : domId,
+    });
+  });
+
+  EDGES.forEach(e => {
+    if (!graphEntitySet.includes(e.from) || !graphEntitySet.includes(e.to)) return;
+    const fromDom = domainMap[entityToDomain[e.from]];
+    let edgeColor, dashes, width;
+    if (e.type === 'extends') {
+      edgeColor = '#5a638066'; dashes = false; width = 1.5;
+    } else if (e.type === 'contains') {
+      edgeColor = (fromDom ? fromDom.color : '#4ECDC4') + '88'; dashes = [8,4]; width = 1.5;
+    } else {
+      edgeColor = '#5a638044'; dashes = [3,4]; width = 1;
+    }
+    edges.push({
+      from: e.from, to: e.to,
+      color: { color: edgeColor, highlight: edgeColor, hover: edgeColor },
+      dashes: dashes,
+      width: width,
+      arrows: e.type === 'extends' ? { to: { enabled: true, scaleFactor: 0.5 } } : { to: { enabled: true, scaleFactor: 0.4 } },
+      smooth: { type: 'continuous', roundness: 0.2 },
+      edgeType: e.type,
+    });
+  });
+
+  nodesDataset = new vis.DataSet(nodes);
+  edgesDataset = new vis.DataSet(edges);
+
+  const container = document.getElementById('network');
+  network = new vis.Network(container, { nodes: nodesDataset, edges: edgesDataset }, {
+    physics: {
+      enabled: true,
+      solver: 'barnesHut',
+      barnesHut: {
+        gravitationalConstant: -4000,
+        centralGravity: 0.3,
+        springLength: 120,
+        springConstant: 0.04,
+        damping: 0.09,
+        avoidOverlap: 0.2,
+      },
+      stabilization: { iterations: 200, fit: true },
+    },
+    interaction: {
+      hover: true,
+      tooltipDelay: 200,
+      zoomView: true,
+      dragView: true,
+    },
+    nodes: {
+      shape: 'dot',
+      scaling: { min: 10, max: 30 },
+    },
+    edges: {
+      smooth: { type: 'continuous', roundness: 0.2 },
+    },
+  });
+
+  network.on('doubleClick', function(params) {
+    if (params.nodes.length > 0) showDetail(params.nodes[0]);
+  });
+
+  network.on('click', function(params) {
+    if (params.nodes.length === 0) closeDetail();
+  });
+
+  updateStats();
+}
+
+function showDetail(entityId) {
+  const domId = entityToDomain[entityId];
+  const dom = domainMap[domId];
+  document.getElementById('detailName').textContent = entityId;
+  const badge = document.getElementById('detailBadge');
+  badge.textContent = dom.id + ' - ' + dom.name;
+  badge.style.background = dom.color + '22';
+  badge.style.color = dom.color;
+
+  // Find relationships
+  const rels = EDGES.filter(e => e.from === entityId || e.to === entityId);
+  let html = '';
+  const outgoing = rels.filter(e => e.from === entityId);
+  const incoming = rels.filter(e => e.to === entityId);
+
+  if (outgoing.length > 0) {
+    html += '<div class="detail-section"><div class="detail-section-title">Outgoing</div><div class="detail-rel-list">';
+    outgoing.forEach(r => {
+      html += `<div class="detail-rel"><span class="detail-rel-arrow">${r.type}</span> ${r.to}</div>`;
+    });
+    html += '</div></div>';
+  }
+  if (incoming.length > 0) {
+    html += '<div class="detail-section"><div class="detail-section-title">Incoming</div><div class="detail-rel-list">';
+    incoming.forEach(r => {
+      html += `<div class="detail-rel">${r.from} <span class="detail-rel-arrow">${r.type}</span></div>`;
+    });
+    html += '</div></div>';
+  }
+
+  // Domain entities
+  html += '<div class="detail-section"><div class="detail-section-title">Domain Entities (' + dom.entities.length + ')</div><div style="display:flex;flex-wrap:wrap;gap:4px;">';
+  dom.entities.forEach(e => {
+    const isCurrent = e === entityId;
+    html += `<span style="padding:2px 7px;border-radius:4px;font-size:10px;background:${dom.color}${isCurrent?'44':'15'};color:${isCurrent?dom.color:'#8892b0'};font-weight:${isCurrent?'700':'400'}">${e}</span>`;
+  });
+  html += '</div></div>';
+
+  document.getElementById('detailBody').innerHTML = html;
+  document.getElementById('detailPanel').classList.add('visible');
+}
+
+function closeDetail() {
+  document.getElementById('detailPanel').classList.remove('visible');
+}
+
+function filterGraph() {
+  const q = document.getElementById('graphSearch').value.toLowerCase();
+  nodesDataset.forEach(node => {
+    const match = q === '' || node.id.toLowerCase().includes(q);
+    const domVis = domainVisible[node.domainId];
+    nodesDataset.update({ id: node.id, hidden: !(match && domVis) });
+  });
+  updateStats();
+}
+
+function toggleDomain(domId) {
+  domainVisible[domId] = !domainVisible[domId];
+  renderDomainList();
+  filterGraph();
+}
+
+function fitGraph() { if (network) network.fit({ animation: { duration: 500, easingFunction: 'easeInOutQuad' } }); }
+function zoomIn() { if (network) { const s = network.getScale(); network.moveTo({ scale: s * 1.4, animation: { duration: 300 } }); } }
+function zoomOut() { if (network) { const s = network.getScale(); network.moveTo({ scale: s / 1.4, animation: { duration: 300 } }); } }
+function resetPhysics() { if (network) { physicsEnabled = true; network.setOptions({ physics: { enabled: true } }); network.stabilize(100); } }
+function togglePhysics() {
+  physicsEnabled = !physicsEnabled;
+  if (network) network.setOptions({ physics: { enabled: physicsEnabled } });
+}
+
+function updateStats() {
+  const totalEntities = graphEntitySet.length;
+  const totalEdges = EDGES.filter(e => graphEntitySet.includes(e.from) && graphEntitySet.includes(e.to)).length;
+  let visible = 0;
+  nodesDataset.forEach(n => { if (!n.hidden) visible++; });
+  document.getElementById('statEntities').textContent = totalEntities;
+  document.getElementById('statRels').textContent = totalEdges;
+  document.getElementById('statVisible').textContent = visible;
+  document.getElementById('statDomains').textContent = DOMAINS.length;
+}
+
+// ── Sidebar domain list ──
+function renderDomainList() {
+  const el = document.getElementById('domainList');
+  el.innerHTML = '';
+  DOMAINS.forEach(d => {
+    const checked = domainVisible[d.id];
+    const item = document.createElement('div');
+    item.className = 'domain-item';
+    item.onclick = () => toggleDomain(d.id);
+    item.innerHTML = `
+      <div class="domain-check ${checked?'checked':''}" style="border-color:${d.color};color:${d.color}"></div>
+      <div class="domain-color" style="background:${d.color}"></div>
+      <div class="domain-label">${d.id} - ${d.name}</div>
+      <div class="domain-count">${d.entities.length}</div>
+    `;
+    el.appendChild(item);
+  });
+}
+
+// ── Card View ──
+function buildCardView() {
+  // Flow diagram
+  const flows = [
+    [
+      { label:'Core', color:'#FF6B6B' },
+      { arrow: true, text:'extends all' },
+      { label:'Every Domain', color:'#8892b0' },
+    ],
+    [
+      { label:'Spatial', color:'#4ECDC4' },
+      { arrow: true, text:'contains' },
+      { label:'Elements', color:'#45B7D1' },
+      { arrow: true, text:'shape' },
+      { label:'Geometry', color:'#F7DC6F' },
+    ],
+    [
+      { label:'Elements', color:'#45B7D1' },
+      { arrow: true, text:'materials' },
+      { label:'Materials', color:'#FF6B6B' },
+    ],
+    [
+      { label:'Parametric', color:'#BB8FCE' },
+      { arrow: true, text:'generates' },
+      { label:'Elements', color:'#45B7D1' },
+    ],
+    [
+      { label:'Sensors', color:'#AED6F1' },
+      { arrow: true, text:'monitors' },
+      { label:'Elements', color:'#45B7D1' },
+    ],
+    [
+      { label:'Point Clouds', color:'#D7BDE2' },
+      { arrow: true, text:'scan-to-BIM' },
+      { label:'Elements', color:'#45B7D1' },
+    ],
+    [
+      { label:'Standards', color:'#85C1E9' },
+      { arrow: true, text:'referenced by' },
+      { label:'Calculations', color:'#F1948A' },
+      { arrow: true, text:'results in' },
+      { label:'Reports', color:'#82E0AA' },
+    ],
+    [
+      { label:'Drawings', color:'#F0B27A' },
+      { arrow: true, text:'depicts' },
+      { label:'Elements', color:'#45B7D1' },
+    ],
+  ];
+
+  const flowEl = document.getElementById('cvFlow');
+  flowEl.innerHTML = '';
+  flows.forEach(row => {
+    const rowDiv = document.createElement('div');
+    rowDiv.style.cssText = 'display:flex;align-items:center;gap:4px;margin:2px 8px;';
+    row.forEach(item => {
+      if (item.arrow) {
+        rowDiv.innerHTML += `<span class="flow-label">${item.text}</span><span class="flow-arrow">&rarr;</span>`;
+      } else {
+        rowDiv.innerHTML += `<span class="flow-pill" style="background:${item.color}22;color:${item.color};border:1px solid ${item.color}44">${item.label}</span>`;
+      }
+    });
+    flowEl.appendChild(rowDiv);
+  });
+
+  // Domain cards
+  const grid = document.getElementById('cvGrid');
+  grid.innerHTML = '';
+  DOMAINS.forEach(d => {
+    const card = document.createElement('div');
+    card.className = 'domain-card';
+    card.dataset.domain = d.id;
+    card.innerHTML = `
+      <div class="domain-card-header" onclick="this.parentElement.classList.toggle('expanded')">
+        <div class="domain-card-left">
+          <div class="domain-card-icon" style="background:${d.color}22;color:${d.color};border:1px solid ${d.color}44">${d.id}</div>
+          <div>
+            <div class="domain-card-name">${d.name}</div>
+            <div class="domain-card-count">${d.entities.length} entities</div>
+          </div>
+        </div>
+        <svg class="domain-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="domain-card-body">
+        <div class="domain-card-entities">
+          ${d.entities.map(e => `<span class="entity-tag" data-entity="${e.toLowerCase()}" style="background:${d.color}15;color:${d.color}cc">${e}</span>`).join('')}
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function filterCards() {
+  const q = document.getElementById('cardSearch').value.toLowerCase();
+  document.querySelectorAll('.domain-card').forEach(card => {
+    const tags = card.querySelectorAll('.entity-tag');
+    let anyVisible = false;
+    tags.forEach(tag => {
+      const match = q === '' || tag.dataset.entity.includes(q);
+      tag.classList.toggle('hidden', !match);
+      if (match) anyVisible = true;
+    });
+    card.style.display = anyVisible ? '' : 'none';
+    if (q && anyVisible) card.classList.add('expanded');
+    else if (!q) card.classList.remove('expanded');
+  });
+}
+
+// ── View Switching ──
+function switchView(view) {
+  document.getElementById('btn-graph').classList.toggle('active', view === 'graph');
+  document.getElementById('btn-cards').classList.toggle('active', view === 'cards');
+  document.getElementById('graphView').classList.toggle('hidden', view !== 'graph');
+  document.getElementById('cardView').classList.toggle('active', view === 'cards');
+
+  if (view === 'graph' && network) {
+    setTimeout(() => { network.redraw(); network.fit({ animation: { duration: 300 } }); }, 100);
+  }
+}
+
+// ── Init ──
+window.addEventListener('DOMContentLoaded', () => {
+  renderDomainList();
+  buildCardView();
+  try {
+    if (typeof vis === 'undefined') {
+      console.error('vis.js not loaded — retrying in 1s');
+      document.getElementById('network').innerHTML = '<div style="padding:40px;color:#F1948A;text-align:center;">Loading graph library...</div>';
+      setTimeout(() => { buildGraph(); }, 1500);
+    } else {
+      buildGraph();
+    }
+  } catch(err) {
+    console.error('Graph init failed:', err);
+    document.getElementById('network').innerHTML = '<div style="padding:40px;color:#F1948A;">Graph failed to load: ' + err.message + '</div>';
+  }
+});
+</script>
+</body>
+</html>

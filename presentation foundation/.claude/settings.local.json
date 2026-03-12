@@ -12,7 +12,17 @@
       "Bash(python:*)",
       "Bash(npm ls -g playwright)",
       "Read(//c/Users/rickd/**)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "WebSearch",
+      "WebFetch(domain:www.gaf.eu)",
+      "WebFetch(domain:3bm.co.nl)",
+      "WebFetch(domain:vorm.nl)",
+      "WebFetch(domain:www.damsteegt.nl)",
+      "WebFetch(domain:bengcert.nl)",
+      "WebFetch(domain:www.orangeclimate.com)",
+      "WebFetch(domain:vandorp.eu)",
+      "WebFetch(domain:brandfetch.com)",
+      "Bash(echo \"=== ROOT LEVEL IMAGES ===\"\ncd \"C:\\\\Users\\\\rickd\\\\Documents\\\\GitHub\\\\website\\\\presentation foundation\"\nls -1 *.png *.jpg *.jpeg *.webp *.svg 2>/dev/null | while read file; do\n  if grep -q \"$file\" \"presentatie.html\"; then\n    echo \"[USED] $file\"\n  else\n    echo \"[UNUSED] $file\"\n  fi\ndone)"
     ]
   },
   "enabledMcpjsonServers": [
