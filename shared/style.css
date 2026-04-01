@@ -159,6 +159,23 @@ pre code {
 }
 .nav-links a:hover { color: white; }
 .nav-links a.active { color: var(--amber); }
+.nav-feedback-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--amber);
+  color: var(--night-build);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.nav-feedback-btn:hover {
+  background: var(--amber-light);
+}
 .lang-switcher {
   display: flex;
   gap: var(--sp-1);

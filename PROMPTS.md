@@ -882,3 +882,9 @@ Standaard moet het NL zijn.
 ### 2026-04-01 19:26
 Los dit op
 
+### 2026-04-01 19:31
+NL/EN werkt nog niet goed.
+
+### 2026-04-01 19:32
+Voeg ook een feedback knop bovenin de pagina toe. die naar Open Feedback Studio gaat. Net als bij de andere tools.
+
