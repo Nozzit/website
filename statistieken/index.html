@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tijdlijn & Statistieken — OpenAEC Foundation</title>
+  <meta name="description" content="De geschiedenis en cijfers achter het OpenAEC-ecosysteem. Van het eerste idee tot een compleet open source platform.">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-4);
+    }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p {
+      font-size: 1.125rem;
+      color: var(--scaffold-gray);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Highlight stat cards */
+    .highlight-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--sp-6);
+      margin: var(--sp-8) auto;
+      max-width: 900px;
+    }
+    .highlight-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    .highlight-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .highlight-card .number {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.25rem;
+      color: var(--amber);
+    }
+    .highlight-card .label {
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
+      margin-top: var(--sp-1);
+    }
+
+    /* Timeline */
+    .timeline-section {
+      background: var(--night-build);
+      padding: var(--sp-16) var(--sp-6);
+    }
+    .timeline-section h2 {
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      margin-bottom: var(--sp-12);
+    }
+    .timeline-section h2 .accent { color: var(--amber); }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--sp-6) 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: rgba(217, 119, 6, 0.3);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 0 var(--sp-8) var(--sp-10);
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      padding-right: var(--sp-10);
+      text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      padding-left: var(--sp-10);
+      text-align: left;
+    }
+
+    /* Dot on the line */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--amber);
+      border: 3px solid var(--night-build);
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3);
+      z-index: 2;
+    }
+    .timeline-item:nth-child(odd)::before {
+      right: -8px;
+    }
+    .timeline-item:nth-child(even)::before {
+      left: -8px;
+    }
+
+    .timeline-item.planned .timeline-card {
+      border-style: dashed;
+      opacity: 0.8;
+    }
+    .timeline-item.planned::before {
+      background: var(--scaffold-gray);
+      box-shadow: 0 0 0 3px rgba(161, 161, 170, 0.3);
+    }
+
+    .timeline-card {
+      background: var(--deep-forge);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      text-align: left;
+    }
+    .timeline-date {
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--amber);
+      margin-bottom: var(--sp-2);
+    }
+    .timeline-card h3 {
+      color: white;
+      font-size: 1.125rem;
+      margin-bottom: var(--sp-3);
+    }
+    .timeline-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .timeline-card ul li {
+      position: relative;
+      padding: var(--sp-1) 0 var(--sp-1) var(--sp-5);
+      color: var(--scaffold-gray);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .timeline-card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+    .timeline-item.planned .timeline-card ul li::before {
+      background: var(--scaffold-gray);
+    }
+    .planned-badge {
+      display: inline-block;
+      font-family: var(--font-code);
+      font-size: 0.625rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: rgba(161, 161, 170, 0.2);
+      color: var(--scaffold-gray);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      margin-left: var(--sp-2);
+      vertical-align: middle;
+    }
+
+    /* Stats table section */
+    .stats-section { max-width: 1000px; margin: 0 auto; }
+    .stats-section h2 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--deep-forge);
+      margin-bottom: var(--sp-6);
+      padding-bottom: var(--sp-3);
+      border-bottom: 2px solid var(--amber);
+      display: inline-block;
+    }
+
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--sp-8);
+    }
+    .stats-table thead th {
+      background: var(--concrete);
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--deep-forge);
+      padding: var(--sp-3) var(--sp-4);
+      text-align: left;
+      border-bottom: 2px solid #E7E5E4;
+    }
+    .stats-table thead th:not(:first-child) { text-align: right; }
+    .stats-table tbody td {
+      padding: var(--sp-3) var(--sp-4);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      border-bottom: 1px solid #E7E5E4;
+      vertical-align: middle;
+    }
+    .stats-table tbody td:not(:first-child) {
+      text-align: right;
+      font-family: var(--font-code);
+      font-size: 0.8125rem;
+      color: #57534E;
+    }
+    .stats-table tbody td:first-child {
+      font-weight: 600;
+      color: var(--deep-forge);
+    }
+    .stats-table tbody td:first-child a {
+      color: var(--deep-forge);
+      text-decoration: none;
+    }
+    .stats-table tbody td:first-child a:hover {
+      color: var(--amber);
+    }
+    .stats-table tbody tr:hover { background: var(--concrete); }
+
+    .lang-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .lang-rust { background: #DEA584; }
+    .lang-ts { background: #3178C6; }
+    .lang-js { background: #F1E05A; }
+    .lang-python { background: #3572A5; }
+    .lang-html { background: #E34C26; }
+    .lang-css { background: #563D7C; }
+    .lang-markdown { background: #083FA1; }
+    .lang-shell { background: #89E051; }
+
+    /* Top repos */
+    .top-repos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--sp-6);
+      margin-top: var(--sp-8);
+    }
+    .top-repo-card {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+    }
+    .top-repo-card h4 {
+      color: var(--amber);
+      font-size: 0.875rem;
+      font-family: var(--font-code);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-3);
+    }
+    .top-repo-card ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: rank;
+    }
+    .top-repo-card ol li {
+      counter-increment: rank;
+      padding: var(--sp-2) 0;
+      color: var(--scaffold-gray);
+      font-size: 0.875rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-repo-card ol li::before {
+      content: counter(rank) ".";
+      font-family: var(--font-code);
+      font-weight: 700;
+      color: var(--amber);
+      margin-right: var(--sp-2);
+      font-size: 0.75rem;
+    }
+    .top-repo-card ol li:last-child { border-bottom: none; }
+    .top-repo-card ol li span.repo-name { flex: 1; color: white; font-weight: 500; }
+    .top-repo-card ol li span.repo-val {
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      color: var(--scaffold-gray);
+    }
+
+    /* Footer */
+    .page-footer.footer {
+      background: var(--deep-forge);
+      border-top: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+    }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 2rem; }
+      .highlight-cards { grid-template-columns: repeat(2, 1fr); }
+
+      .timeline::before { left: 20px; }
+      .timeline-item,
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        left: 0;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        text-align: left;
+      }
+      .timeline-item::before,
+      .timeline-item:nth-child(odd)::before,
+      .timeline-item:nth-child(even)::before {
+        left: 12px;
+        right: auto;
+      }
+
+      .stats-table { font-size: 0.75rem; }
+      .stats-table thead th,
+      .stats-table tbody td { padding: var(--sp-2); }
+      .top-repos { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .highlight-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/over-ons.html">Over ons</a></li>
+        <li><a href="/#ecosysteem">Ecosysteem</a></li>
+        <li><a href="/roadmap/">Roadmap</a></li>
+        <li><a href="/architectuur/">Architectuur</a></li>
+        <li><a href="/supporters/">Supporters</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <p class="section-label">OpenAEC Foundation</p>
+    <h1>Tijdlijn & <span class="accent">Statistieken</span></h1>
+    <p>De geschiedenis en cijfers achter het OpenAEC-ecosysteem. Van het eerste idee tot een compleet open source platform.</p>
+  </header>
+
+  <!-- Section 1: Highlight stats -->
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="highlight-cards">
+      <div class="highlight-card">
+        <div class="number">50</div>
+        <div class="label">Repositories</div>
+      </div>
+      <div class="highlight-card">
+        <div class="number">2,428+</div>
+        <div class="label">Commits</div>
+      </div>
+      <div class="highlight-card">
+        <div class="number">139</div>
+        <div class="label">Stars</div>
+      </div>
+      <div class="highlight-card">
+        <div class="number">111</div>
+        <div class="label">Releases</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Timeline -->
+  <section class="timeline-section">
+    <h2>De <span class="accent">Reis</span></h2>
+    <div class="timeline">
+
+      <!-- Januari 2026 -->
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="timeline-date">Januari 2026</div>
+          <h3>Start OpenAEC Foundation</h3>
+          <ul>
+            <li>Eerste repository's aangemaakt</li>
+            <li>Open PDF Studio en Open 2D Studio gestart</li>
+            <li>Frappe Claude Skill Package gepubliceerd (55 stars)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Februari 2026 -->
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="timeline-date">Februari 2026</div>
+          <h3>Ecosysteem groeit</h3>
+          <ul>
+            <li>Open Pointcloud Studio, Open Energy Studio, Open Heatloss Studio gestart</li>
+            <li>Dynlex (196 commits), OpenAEC Reports (255 commits)</li>
+            <li>IFC Factory voor IFCX-ontwikkeling</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Maart 2026 -->
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="timeline-date">Maart 2026</div>
+          <h3>Validatie & documentatie</h3>
+          <ul>
+            <li>OpenAEC BIM Validator (207 commits)</li>
+            <li>Open Field Studio gelanceerd (v0.1.3)</li>
+            <li>Open Speech Studio (v0.5.0)</li>
+            <li>19 Claude Skill Packages gepubliceerd</li>
+            <li>BCF Platform en OpenAEC Docs gestart</li>
+            <li>Website live op open-aec.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- April 2026 -->
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="timeline-date">April 2026</div>
+          <h3>Stichting opgericht</h3>
+          <ul>
+            <li>Oprichting Stichting OpenAEC Foundation</li>
+            <li>50 repositories, 2.428+ commits</li>
+            <li>10+ live demo's beschikbaar</li>
+            <li>Offerte-systeem en supporters programma gelanceerd</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Juni 2026 (gepland) -->
+      <div class="timeline-item planned">
+        <div class="timeline-card">
+          <div class="timeline-date">Juni 2026 <span class="planned-badge">gepland</span></div>
+          <h3>BIM Modeller start</h3>
+          <ul>
+            <li>Start ontwikkeling open source BIM-modelleertool</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- December 2026 (gepland) -->
+      <div class="timeline-item planned">
+        <div class="timeline-card">
+          <div class="timeline-date">December 2026 <span class="planned-badge">gepland</span></div>
+          <h3>Ecosysteem compleet</h3>
+          <ul>
+            <li>Alle tools in productie</li>
+            <li>IFCX namespaces voltooid</li>
+            <li>End-to-end open source bouwketen</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Repository statistics -->
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="stats-section">
+      <h2>Repository overzicht</h2>
+      <div style="overflow-x: auto;">
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Repository</th>
+              <th>Taal</th>
+              <th>Commits</th>
+              <th>Releases</th>
+              <th>Stars</th>
+              <th>Aangemaakt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-aec-reports" target="_blank">OpenAEC Reports</a></td>
+              <td><span class="lang-dot lang-ts"></span>TypeScript</td>
+              <td>255</td>
+              <td>4</td>
+              <td>1</td>
+              <td>Feb 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-aec-bim-validator" target="_blank">BIM Validator</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>207</td>
+              <td>14</td>
+              <td>5</td>
+              <td>Mrt 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/dynlex" target="_blank">Dynlex</a></td>
+              <td><span class="lang-dot lang-ts"></span>TypeScript</td>
+              <td>196</td>
+              <td>4</td>
+              <td>2</td>
+              <td>Feb 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio" target="_blank">Open PDF Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>150</td>
+              <td>8</td>
+              <td>3</td>
+              <td>Jan 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-2d-studio" target="_blank">Open 2D Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>140</td>
+              <td>6</td>
+              <td>4</td>
+              <td>Jan 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-pointcloud-studio" target="_blank">Open Pointcloud Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>120</td>
+              <td>5</td>
+              <td>3</td>
+              <td>Feb 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-energy-studio" target="_blank">Open Energy Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>110</td>
+              <td>4</td>
+              <td>2</td>
+              <td>Feb 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank">Open Heatloss Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>105</td>
+              <td>3</td>
+              <td>2</td>
+              <td>Feb 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank">Open Speech Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>95</td>
+              <td>5</td>
+              <td>3</td>
+              <td>Mrt 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-field-studio" target="_blank">Open Field Studio</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>90</td>
+              <td>3</td>
+              <td>2</td>
+              <td>Mrt 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/ifc-factory" target="_blank">IFC Factory</a></td>
+              <td><span class="lang-dot lang-rust"></span>Rust</td>
+              <td>85</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Feb 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/frappe-claude-skill" target="_blank">Frappe Claude Skill</a></td>
+              <td><span class="lang-dot lang-python"></span>Python</td>
+              <td>80</td>
+              <td>6</td>
+              <td>55</td>
+              <td>Jan 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/bcf-platform" target="_blank">BCF Platform</a></td>
+              <td><span class="lang-dot lang-ts"></span>TypeScript</td>
+              <td>75</td>
+              <td>2</td>
+              <td>2</td>
+              <td>Mrt 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/open-aec-docs" target="_blank">OpenAEC Docs</a></td>
+              <td><span class="lang-dot lang-markdown"></span>Markdown</td>
+              <td>60</td>
+              <td>—</td>
+              <td>1</td>
+              <td>Mrt 2026</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/OpenAEC-Foundation/website" target="_blank">Website</a></td>
+              <td><span class="lang-dot lang-html"></span>HTML</td>
+              <td>55</td>
+              <td>—</td>
+              <td>1</td>
+              <td>Mrt 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Top repos by metric -->
+      <div class="top-repos">
+        <div class="top-repo-card">
+          <h4>Meeste commits</h4>
+          <ol>
+            <li><span class="repo-name">OpenAEC Reports</span> <span class="repo-val">255</span></li>
+            <li><span class="repo-name">BIM Validator</span> <span class="repo-val">207</span></li>
+            <li><span class="repo-name">Dynlex</span> <span class="repo-val">196</span></li>
+            <li><span class="repo-name">Open PDF Studio</span> <span class="repo-val">150</span></li>
+            <li><span class="repo-name">Open 2D Studio</span> <span class="repo-val">140</span></li>
+          </ol>
+        </div>
+        <div class="top-repo-card">
+          <h4>Meeste stars</h4>
+          <ol>
+            <li><span class="repo-name">Frappe Claude Skill</span> <span class="repo-val">55</span></li>
+            <li><span class="repo-name">BIM Validator</span> <span class="repo-val">5</span></li>
+            <li><span class="repo-name">Open 2D Studio</span> <span class="repo-val">4</span></li>
+            <li><span class="repo-name">Open PDF Studio</span> <span class="repo-val">3</span></li>
+            <li><span class="repo-name">Pointcloud Studio</span> <span class="repo-val">3</span></li>
+          </ol>
+        </div>
+        <div class="top-repo-card">
+          <h4>Meeste releases</h4>
+          <ol>
+            <li><span class="repo-name">BIM Validator</span> <span class="repo-val">14</span></li>
+            <li><span class="repo-name">Open PDF Studio</span> <span class="repo-val">8</span></li>
+            <li><span class="repo-name">Open 2D Studio</span> <span class="repo-val">6</span></li>
+            <li><span class="repo-name">Frappe Claude Skill</span> <span class="repo-val">6</span></li>
+            <li><span class="repo-name">Pointcloud Studio</span> <span class="repo-val">5</span></li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+</body>
+</html>
