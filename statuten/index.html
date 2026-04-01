@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concept statuten — OpenAEC Foundation</title>
+  <meta name="description" content="Concept oprichtingsakte en statuten van de Stichting OpenAEC Foundation.">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-16) var(--sp-6) var(--sp-10);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.5rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p { font-size: 1.125rem; color: var(--scaffold-gray); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .concept-badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-code); font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; padding: 4px 14px; border-radius: var(--radius-full); background: #FEF3C7; color: #92400E; margin-top: var(--sp-4); }
+
+    .doc-content { max-width: 800px; margin: 0 auto; }
+    .doc-content h2 { font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: var(--deep-forge); margin: var(--sp-8) 0 var(--sp-3); padding-bottom: var(--sp-2); border-bottom: 1px solid #E7E5E4; }
+    .doc-content p { font-size: 0.9375rem; color: #57534E; line-height: 1.7; margin-bottom: var(--sp-3); }
+    .doc-content ol, .doc-content ul { padding-left: var(--sp-6); margin-bottom: var(--sp-4); }
+    .doc-content li { font-size: 0.9375rem; color: #57534E; line-height: 1.7; margin-bottom: var(--sp-2); }
+    .doc-content strong { color: var(--deep-forge); }
+    .doc-meta { font-family: var(--font-code); font-size: 0.8rem; color: var(--scaffold-gray); margin-bottom: var(--sp-6); }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) { .page-header h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/over-ons.html">Over ons</a></li>
+        <li><a href="/#ecosysteem">Ecosysteem</a></li>
+        <li><a href="/roadmap/">Roadmap</a></li>
+        <li><a href="/architectuur/">Architectuur</a></li>
+        <li><a href="/supporters/">Supporters</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <p class="section-label">OpenAEC Foundation</p>
+    <h1>Concept <span class="accent">statuten</span></h1>
+    <p>Oprichtingsakte van de Stichting OpenAEC Foundation — ter beoordeling door de notaris.</p>
+    <span class="concept-badge">Concept — 21 maart 2026</span>
+  </header>
+
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="doc-content" id="docContent">
+      <p class="doc-meta">Dit document wordt automatisch geladen uit het bronbestand.</p>
+      <noscript><p>JavaScript is vereist om dit document te laden. <a href="oprichtingsakte.md">Download het markdown bestand</a>.</p></noscript>
+    </div>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple markdown to HTML renderer for the statuten
+    fetch('oprichtingsakte.md')
+      .then(r => r.text())
+      .then(md => {
+        const html = md
+          .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+          .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+          .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+          .replace(/^---$/gm, '')
+          .replace(/^(\d+)\. (.+)$/gm, '<li>$2</li>')
+          .replace(/^   ([a-z])\. (.+)$/gm, '<li>$2</li>')
+          .replace(/\n\n/g, '</p><p>')
+          .replace(/\n/g, '<br>');
+        document.getElementById('docContent').innerHTML = '<p>' + html + '</p>';
+      })
+      .catch(() => {
+        document.getElementById('docContent').innerHTML = '<p>Het document kon niet geladen worden. <a href="oprichtingsakte.md">Download het markdown bestand</a>.</p>';
+      });
+  </script>
+</body>
+</html>

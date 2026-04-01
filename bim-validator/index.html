@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIM Validator — OpenAEC Foundation</title>
+  <meta name="description" content="Open source IFC-validatietool voor de bouwsector. Valideer tegen IDS, NL BIM Basis ILS, RVB BIM Norm en meer.">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-4);
+    }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p {
+      font-size: 1.125rem;
+      color: var(--scaffold-gray);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .feature-section { max-width: 900px; margin: 0 auto; }
+    .feature-section h2 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--deep-forge);
+      margin-bottom: var(--sp-6);
+      padding-bottom: var(--sp-3);
+      border-bottom: 2px solid var(--amber);
+      display: inline-block;
+    }
+    .feature-section + .feature-section { margin-top: var(--sp-12); }
+
+    .feature-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--sp-4);
+    }
+    .feature-table thead th {
+      background: var(--concrete);
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--deep-forge);
+      padding: var(--sp-3) var(--sp-4);
+      text-align: left;
+      border-bottom: 2px solid #E7E5E4;
+    }
+    .feature-table tbody td {
+      padding: var(--sp-3) var(--sp-4);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      border-bottom: 1px solid #E7E5E4;
+      vertical-align: top;
+    }
+    .feature-table tbody td:first-child {
+      font-weight: 600;
+      color: var(--deep-forge);
+      white-space: nowrap;
+      width: 200px;
+    }
+    .feature-table tbody td:last-child {
+      color: #57534E;
+    }
+    .feature-table tbody tr:hover {
+      background: var(--blueprint-white);
+    }
+
+    .highlight-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--sp-6);
+      margin: var(--sp-8) auto;
+      max-width: 900px;
+    }
+    .highlight-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .highlight-card .number {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--amber);
+    }
+    .highlight-card .label {
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
+      margin-top: var(--sp-1);
+    }
+
+    .page-footer.footer {
+      background: var(--deep-forge);
+      border-top: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+    }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    /* Slider */
+    .media-slider {
+      max-width: 900px;
+      margin: calc(-1 * var(--sp-4)) auto var(--sp-8);
+      position: relative;
+      z-index: 1;
+    }
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background: var(--night-build);
+    }
+    .slider-track {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+    .slider-slide {
+      min-width: 100%;
+      position: relative;
+    }
+    .slider-slide img, .slider-slide video {
+      width: 100%;
+      display: block;
+      border-radius: var(--radius-lg);
+    }
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: background 0.15s;
+    }
+    .slider-btn:hover { background: rgba(0,0,0,0.7); }
+    .slider-prev { left: var(--sp-3); }
+    .slider-next { right: var(--sp-3); }
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: var(--sp-2);
+      padding: var(--sp-3) 0;
+    }
+    .slider-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #D6D3D1;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .slider-dot.active { background: var(--amber); }
+
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 2rem; }
+      .feature-table tbody td:first-child { white-space: normal; width: auto; }
+      .highlight-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/over-ons.html">Over ons</a></li>
+        <li><a href="/#ecosysteem">Ecosysteem</a></li>
+        <li><a href="/roadmap/">Roadmap</a></li>
+        <li><a href="/architectuur/">Architectuur</a></li>
+        <li><a href="/supporters/">Supporters</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <p class="section-label">OpenAEC Ecosysteem</p>
+    <h1>BIM <span class="accent">Validator</span></h1>
+    <p>Open source IFC-validatietool. Valideer modellen tegen IDS-specificaties, Nederlandse standaarden en projecteisen — in de browser, via CLI of API.</p>
+  </header>
+
+  <!-- Key stats -->
+  <div class="highlight-cards" style="margin-top: calc(-1 * var(--sp-8)); position: relative; z-index: 1;">
+    <div class="highlight-card">
+      <div class="number">IDS</div>
+      <div class="label">Validatie standaard</div>
+    </div>
+    <div class="highlight-card">
+      <div class="number">12+</div>
+      <div class="label">NL BIM Basis ILS specs</div>
+    </div>
+    <div class="highlight-card">
+      <div class="number">27+</div>
+      <div class="label">RVB BIM Norm specs</div>
+    </div>
+    <div class="highlight-card">
+      <div class="number">1GB+</div>
+      <div class="label">Max bestandsgrootte</div>
+    </div>
+  </div>
+
+  <!-- Media slider -->
+  <div class="media-slider">
+    <div class="slider-container">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator.png" alt="BIM Validator - Overzicht"></div>
+        <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-2.png" alt="BIM Validator - Validatie"></div>
+        <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-3.png" alt="BIM Validator - Resultaten"></div>
+        <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-4.png" alt="BIM Validator - 3D Viewer"></div>
+      </div>
+      <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
+      <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+  <script>
+    (function(){
+      const track = document.getElementById('sliderTrack');
+      const dots = document.getElementById('sliderDots');
+      const slides = track.children.length;
+      let current = 0;
+      for(let i=0;i<slides;i++){
+        const d = document.createElement('button');
+        d.className = 'slider-dot' + (i===0?' active':'');
+        d.onclick = ()=>slideTo(i);
+        dots.appendChild(d);
+      }
+      window.slideMove = function(dir){slideTo(current+dir);};
+      window.slideTo = function(i){
+        current = (i+slides)%slides;
+        track.style.transform = 'translateX(-'+current*100+'%)';
+        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
+      };
+    })();
+  </script>
+
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="feature-section">
+      <h2>Validatie</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>IDS Validatie</td><td>Valideer IFC-modellen tegen Information Delivery Specification (IDS) bestanden. Elke specificatie wordt per element getoetst op pass/fail met gedetailleerde foutmeldingen.</td></tr>
+          <tr><td>NL BIM Basis ILS v2</td><td>Ingebouwde Nederlandse BIM-basisstandaard met 12 specificaties: naamgeving verdiepingen, NL/SfB classificatie, ruimte-attributen, draagconstructie, uitwendigheid, brandwerendheid, U-waarde, materialen en renovatiestatus.</td></tr>
+          <tr><td>RVB BIM Norm v1.1</td><td>Ingebouwde Rijksvastgoedbedrijf-standaard met 27 specificaties voor overheidsbouwprojecten: projectinfo, terreincoordinaten, NL-SfB per elementtype, constructieve &amp; brandveiligheidseigenschappen en zone-informatie.</td></tr>
+          <tr><td>Custom IDS Upload</td><td>Upload je eigen IDS-specificatiebestand (max 10MB) om te valideren tegen projectspecifieke of organisatie-eigen eisen.</td></tr>
+          <tr><td>Multi-schema</td><td>Ondersteunt zowel IFC2X3 als IFC4 schema's — compatibel met exports uit Revit, ArchiCAD, Tekla en andere BIM-software.</td></tr>
+          <tr><td>Element-niveau rapportage</td><td>Per gefaald element wordt GlobalId, IFC-klasse, elementnaam en een gedetailleerde foutmelding getoond.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h2>3D Viewer</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>WebGL 3D Viewer</td><td>Interactieve 3D-weergave van het IFC-model in de browser via That Open Engine (Three.js). Geen installatie of plugin nodig.</td></tr>
+          <tr><td>Element selectie</td><td>Klik op een element in de 3D-viewer om eigenschappen te bekijken, of klik op een fout in de resultatenlijst om het element in 3D te highlighten.</td></tr>
+          <tr><td>Camera navigatie</td><td>Orbit, pan en zoom door het model. Fit-all knop om het volledige model in beeld te brengen.</td></tr>
+          <tr><td>Resizable panels</td><td>Versleepbare driedeling: navigatiepaneel (links), 3D-viewer (midden) en detailpaneel (rechts). Elk paneel is inklapbaar.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h2>BCF Export</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>BCF 2.1 ZIP Export</td><td>Exporteer alle validatiefouten als BCF 2.1 ZIP-bestand. Elk gefaald element wordt een BCF-topic met viewpoint, direct importeerbaar in Revit, Solibri, BIMcollab of Navisworks.</td></tr>
+          <tr><td>BCF Platform integratie</td><td>Verbind met het OpenAEC BCF Platform om issues direct te pushen naar een centraal projectdashboard. Inclusief OIDC-authenticatie en projectselectie.</td></tr>
+          <tr><td>Issue Queue</td><td>Lokaal overzicht van gegenereerde BCF-issues met thumbnails en detail-uitklap, voordat je exporteert of pusht naar het platform.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h2>Interfaces</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>Web applicatie</td><td>Volledige browsergebaseerde interface met drag-and-drop upload, standaardselectie, voortgangsbalk, resultatenweergave en 3D-viewer.</td></tr>
+          <tr><td>CLI</td><td><code>ifc-validate model.ifc --ids nl-bim</code> — geschikt voor batch-verwerking, CI/CD pipelines en scripting. Output als console, JSON of HTML.</td></tr>
+          <tr><td>REST API</td><td>FastAPI-backend met async validatie-endpoints. Integreerbaar in eigen workflows, dashboards of third-party tools.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h2>Rapportage &amp; output</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>Resultaten dashboard</td><td>Overzichtskaart met totaal pass/fail, percentage, aantal gevalideerde elementen en tijdstempel.</td></tr>
+          <tr><td>Specificatie breakdown</td><td>Uitklapbare lijst per specificatie met pass/fail status, percentage en lijst van gefaalde elementen met paginering.</td></tr>
+          <tr><td>JSON Export</td><td>Download volledige validatieresultaten als gestructureerd JSON-bestand voor verdere analyse of archivering.</td></tr>
+          <tr><td>HTML Rapport</td><td>Genereer een op zichzelf staand HTML-rapport voor delen met projectteam of opdrachtgever.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h2>Bestandsverwerking</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>Drag &amp; drop upload</td><td>Sleep IFC-, IFCXML- of IFCZIP-bestanden naar de browser. Maximaal 500MB per bestand.</td></tr>
+          <tr><td>Geheugenmanagement</td><td>Automatische controle of voldoende RAM beschikbaar is (IFC-bestanden gebruiken ~10x hun bestandsgrootte in geheugen). Tijdelijke bestanden worden direct opgeruimd.</td></tr>
+          <tr><td>Grote bestanden</td><td>Geoptimaliseerd voor IFC-modellen tot 1GB+. Voortgangsindicatie tijdens verwerking.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h2>Deployment &amp; integratie</h2>
+      <table class="feature-table">
+        <thead><tr><th>Functionaliteit</th><th>Omschrijving</th></tr></thead>
+        <tbody>
+          <tr><td>Docker deployment</td><td>Volledige Docker Compose setup met backend, frontend, nginx, PostgreSQL en Redis. Een commando om alles op te starten.</td></tr>
+          <tr><td>On-premises</td><td>Draai de validator op je eigen server voor maximale controle over data en privacy. Geen cloud-afhankelijkheid.</td></tr>
+          <tr><td>Multi-tenant</td><td>Projectopslag met optionele NextCloud-integratie voor bestandsbeheer per organisatie.</td></tr>
+          <tr><td>SSO Authenticatie</td><td>OIDC-gebaseerde single sign-on voor enterprise-omgevingen.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+</body>
+</html>

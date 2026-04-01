@@ -6,12 +6,36 @@
   <title>Open 2D Studio — OpenAEC Foundation</title>
   <meta name="description" content="Free, open-source 2D CAD application. Drawing tools, snap-to-grid, layers, DXF import/export. Built with Tauri 2 + React.">
   <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .media-slider { max-width: 900px; margin: 0 auto var(--sp-8); position: relative; }
+    .slider-container { position: relative; overflow: hidden; border-radius: 12px; background: #2A2A32; }
+    .slider-track { display: flex; transition: transform 0.4s ease; }
+    .slider-slide { min-width: 100%; }
+    .slider-slide img { width: 100%; display: block; border-radius: 12px; }
+    .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; z-index: 2; }
+    .slider-btn:hover { background: rgba(0,0,0,0.7); }
+    .slider-prev { left: 12px; }
+    .slider-next { right: 12px; }
+    .slider-dots { display: flex; justify-content: center; gap: 8px; padding: 12px 0; }
+    .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: #D6D3D1; border: none; cursor: pointer; }
+    .slider-dot.active { background: #D97706; }
+  </style>
 </head>
 <body>
-  <nav class="navbar"><div class="nav-container">
-    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
-    <ul class="nav-links"><li><a href="/">Tools</a></li><li><a href="https://github.com/OpenAEC-Foundation/open-2d-studio">GitHub</a></li></ul>
-  </div></nav>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/over-ons.html">Over ons</a></li>
+        <li><a href="/#ecosysteem">Ecosysteem</a></li>
+        <li><a href="/roadmap/">Roadmap</a></li>
+        <li><a href="/architectuur/">Architectuur</a></li>
+        <li><a href="/supporters/">Supporters</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <section class="hero">
     <span class="section-label">Open-source 2D CAD</span>
@@ -22,6 +46,22 @@
       <a href="https://github.com/OpenAEC-Foundation/open-2d-studio" class="btn btn-ghost btn-lg">View source</a>
     </div>
   </section>
+
+    <div class="media-slider">
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slider-slide">
+            <video controls muted playsinline poster="/shared/assets/screenshots/open-2d-studio.jpeg">
+              <source src="/shared/assets/screenshots/open-2d-studio-demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-2d-studio.jpeg" alt="Open 2D Studio screenshot"></div>
+        </div>
+        <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
+        <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
 
   <section class="section" id="download"><div class="container">
     <div class="download-section">
@@ -82,10 +122,38 @@
     </div>
   </div></section>
 
+  <section style="background: var(--concrete); padding: 3rem 1.5rem; text-align: center;">
+    <div style="max-width: 900px; margin: 0 auto; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Live demo &rarr;</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-2d-studio" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">GitHub &rarr;</a>
+    </div>
+  </section>
+
   <footer class="footer"><div class="footer-container">
     <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
     <span>Build free. Build together.</span>
     <a href="https://github.com/OpenAEC-Foundation">GitHub</a>
   </div></footer>
+  <script>
+    (function(){
+      const track = document.getElementById('sliderTrack');
+      const dots = document.getElementById('sliderDots');
+      if (!track || !dots) return;
+      const slides = track.children.length;
+      let current = 0;
+      for(let i=0;i<slides;i++){
+        const d = document.createElement('button');
+        d.className = 'slider-dot' + (i===0?' active':'');
+        d.onclick = ()=>slideTo(i);
+        dots.appendChild(d);
+      }
+      window.slideMove = function(dir){slideTo(current+dir);};
+      window.slideTo = function(i){
+        current = (i+slides)%slides;
+        track.style.transform = 'translateX(-'+current*100+'%)';
+        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
+      };
+    })();
+  </script>
 </body>
 </html>

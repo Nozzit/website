@@ -6,720 +6,516 @@
   <title data-i18n="meta.title">Open AEC Foundation - Open source voor een open bouwsector</title>
   <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige bouwketen.">
   <link rel="stylesheet" href="/shared/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --dawn: #E07B3C;
-      --horizon: #C45A20;
-      --sky: #4A90B8;
-      --mist: #6BB8D4;
-      --stone: #3A3A3A;
-      --sand: #F5F0EB;
-      --cloud: #FFFFFF;
-      --earth: #2D2D2D;
-      --growth: #5AAD58;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'DM Sans', sans-serif;
-      color: var(--stone);
-      background-color: var(--sand);
-      line-height: 1.6;
-    }
-    
-    /* Navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-      border-bottom: 1px solid rgba(107,184,212,0.25);
-    }
-    
-    .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .nav-menu {
-      display: flex;
-      gap: 32px;
-      align-items: center;
-    }
-    
-    .nav-link {
-      background: none;
-      border: none;
-      font-size: 15px;
-      color: var(--stone);
-      cursor: pointer;
-      font-weight: 500;
-      font-family: inherit;
-      text-decoration: none;
-    }
-    
-    .nav-link:hover {
-      color: var(--dawn);
-    }
-    
-    .btn {
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      font-family: inherit;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    
-    .btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    
-    .btn-primary {
-      background-color: var(--dawn);
-      color: var(--cloud);
-    }
-    
-    .btn-secondary {
-      background-color: transparent;
-      color: var(--stone);
-      border: 2px solid rgba(58,58,58,0.2);
-    }
-    
-    .btn-large {
-      padding: 16px 32px;
-      font-size: 16px;
-      border-radius: 10px;
-    }
-    
-    /* Hero Section */
+    /* ── Page-specific overrides on top of shared/style.css ── */
+
+    /* Hero */
     .hero {
+      background: var(--night-build);
+      padding: var(--sp-24) var(--sp-6);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 120px 24px 80px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
       background:
-        linear-gradient(135deg, rgba(245,240,235,0.92) 0%, rgba(255,255,255,0.88) 50%, rgba(107,184,212,0.15) 100%),
         url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-      position: relative;
-      overflow: hidden;
+      opacity: 0.12;
     }
-    
-    .hero-bg-1 {
-      position: absolute;
-      top: -20%;
-      right: -10%;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(107,184,212,0.2) 0%, transparent 70%);
-    }
-    
-    .hero-bg-2 {
-      position: absolute;
-      bottom: -30%;
-      left: -15%;
-      width: 500px;
-      height: 500px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(224,123,60,0.1) 0%, transparent 70%);
-    }
-    
     .hero-content {
-      max-width: 900px;
-      text-align: center;
       position: relative;
       z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    
-    .badge {
+    .hero .section-label {
+      color: var(--warm-gold);
+      margin-bottom: var(--sp-4);
+      display: block;
+    }
+    .hero .badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background-color: rgba(224,123,60,0.12);
-      color: var(--horizon);
+      background: rgba(217,119,6,0.15);
+      color: var(--warm-gold);
       padding: 8px 16px;
-      border-radius: 50px;
-      font-size: 13px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
       font-weight: 600;
-      margin-bottom: 32px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--sp-8);
     }
-    
     .badge-dot {
       width: 8px;
       height: 8px;
-      background-color: var(--dawn);
+      background: var(--amber);
       border-radius: 50%;
       animation: pulse 2s infinite;
     }
-    
     @keyframes pulse {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
+      50% { opacity: 0.4; }
     }
-    
     .hero h1 {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(28px, 5vw, 48px);
-      font-weight: 400;
-      font-style: italic;
-      color: var(--stone);
-      margin-bottom: 24px;
-      line-height: 1.3;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: white;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--sp-4);
     }
-    
-    .hero p {
-      font-size: 18px;
-      opacity: 0.8;
+    .hero h1 .accent { color: var(--amber); }
+    .hero .tagline {
+      font-size: 1.25rem;
+      color: var(--scaffold-gray);
       max-width: 600px;
-      margin: 0 auto 40px;
-      line-height: 1.7;
+      margin: 0 auto var(--sp-8);
+      line-height: 1.6;
     }
-    
     .hero-buttons {
       display: flex;
-      gap: 16px;
+      gap: var(--sp-4);
       justify-content: center;
       flex-wrap: wrap;
     }
-    
     .launch-box {
-      margin-top: 64px;
-      padding: 20px 32px;
-      background-color: var(--cloud);
-      border-radius: 12px;
+      margin-top: var(--sp-12);
+      padding: var(--sp-4) var(--sp-8);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
       display: inline-block;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
-    
     .launch-box p:first-child {
-      font-size: 13px;
-      opacity: 0.6;
+      font-size: 0.75rem;
+      color: var(--scaffold-gray);
       margin-bottom: 4px;
     }
-    
     .launch-box p:last-child {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 700;
-      color: var(--dawn);
+      color: var(--amber);
+      font-family: var(--font-heading);
       margin: 0;
     }
-    
-    /* Sections */
-    section {
-      padding: 120px 24px;
-    }
-    
+
+    /* Logo in hero */
+    .logo-full { display: block; margin: 0 auto var(--sp-8); }
+
+    /* Section helpers */
+    .section { padding: var(--sp-20) var(--sp-6); }
+    .section-alt { background: var(--concrete); }
+    .section-white { background: white; }
+    .text-center { text-align: center; }
+
     .section-label {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--dawn);
+      font-family: var(--font-code);
+      font-weight: 500;
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 16px;
+      letter-spacing: 0.1em;
+      color: var(--amber);
+      margin-bottom: var(--sp-4);
     }
-    
     .section-title {
-      font-size: 36px;
-      font-weight: 600;
-      margin-bottom: 24px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--sp-4);
+      color: var(--deep-forge);
     }
-    
     .section-desc {
-      font-size: 18px;
-      opacity: 0.8;
+      font-size: 1.125rem;
+      color: #57534E;
       max-width: 700px;
       margin: 0 auto;
-      line-height: 1.7;
+      line-height: 1.6;
     }
-    
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    
-    .text-center {
-      text-align: center;
-    }
-    
-    /* Over Ons */
-    .over-ons {
-      background-color: var(--cloud);
-    }
-    
+
+    /* Features grid (Why OpenAEC) */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-      margin-top: 64px;
+      gap: var(--sp-6);
+      margin-top: var(--sp-12);
     }
-    
     .feature-card {
-      padding: 32px;
-      background-color: var(--sand);
-      border-radius: 16px;
-      transition: transform 0.2s;
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      transition: box-shadow 0.15s ease, border-color 0.15s ease;
     }
-    
     .feature-card:hover {
-      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #D6D3D1;
     }
-    
     .feature-icon {
-      font-size: 36px;
-      display: block;
-      margin-bottom: 16px;
+      width: 48px;
+      height: 48px;
+      margin-bottom: var(--sp-4);
+      color: var(--amber);
     }
-    
     .feature-card h3 {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 12px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-bottom: var(--sp-2);
+      color: var(--deep-forge);
     }
-    
     .feature-card p {
-      font-size: 14px;
-      opacity: 0.8;
+      font-size: 0.875rem;
+      color: #57534E;
       line-height: 1.6;
     }
-    
-    /* Missie */
+
+    /* Mission */
     .missie {
-      background-color: var(--earth);
-      color: var(--sand);
+      background: var(--deep-forge);
+      color: var(--blueprint-white);
     }
-    
     .missie .section-title {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(28px, 4vw, 42px);
-      font-weight: 400;
-      font-style: italic;
-      line-height: 1.4;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: white;
+      line-height: 1.3;
       max-width: 800px;
-      margin: 0 auto 48px;
+      margin: 0 auto var(--sp-12);
     }
-    
+    .missie .section-title .accent { color: var(--amber); }
     .missie-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 32px;
+      gap: var(--sp-8);
       text-align: left;
     }
-    
     .missie-item {
-      padding: 24px;
-      border-left: 3px solid var(--dawn);
+      padding: var(--sp-6);
+      border-left: 3px solid var(--amber);
     }
-    
     .missie-item h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: var(--cloud);
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: var(--sp-2);
+      color: white;
     }
-    
     .missie-item p {
-      font-size: 14px;
-      opacity: 0.7;
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
       line-height: 1.6;
     }
 
     /* Tools */
-    .tools {
-      background: linear-gradient(180deg, var(--cloud) 0%, rgba(107,184,212,0.08) 100%);
-    }
-
     .tools-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      margin-top: 64px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--sp-6);
+      margin-top: var(--sp-12);
     }
-
     .tool-card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 20px;
-      padding: 28px;
-      background-color: var(--cloud);
-      border: 1px solid rgba(74,144,184,0.16);
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(58,58,58,0.06);
+      gap: var(--sp-4);
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.15s ease, border-color 0.15s ease;
     }
-
+    .tool-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: #D6D3D1;
+    }
+    .tool-card img.tool-thumb {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      margin-bottom: var(--sp-3);
+      background: var(--concrete);
+    }
     .tool-card h3 {
-      font-size: 20px;
-      margin-bottom: 12px;
-    }
-
-    .tool-card p {
-      font-size: 15px;
-      opacity: 0.8;
-      line-height: 1.7;
-    }
-
-    .tool-link {
-      color: var(--dawn);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .tool-link:hover {
-      color: var(--horizon);
-    }
-
-    .tools-actions {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    
-    /* Bestuur */
-    .bestuur {
-      background-color: var(--cloud);
-    }
-    
-    .cta-box {
-      background: linear-gradient(135deg, rgba(224,123,60,0.1) 0%, rgba(74,144,184,0.1) 100%);
-      border-radius: 24px;
-      padding: 48px;
-      text-align: center;
-      border: 2px solid rgba(224,123,60,0.2);
-      margin-top: 64px;
-    }
-    
-    .cta-icon {
-      width: 80px;
-      height: 80px;
-      background-color: var(--dawn);
-      border-radius: 50%;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-bottom: var(--sp-2);
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      font-size: 36px;
+      gap: var(--sp-2);
+      flex-wrap: wrap;
     }
-    
-    .cta-box h3 {
-      font-size: 24px;
+    .tool-tag {
+      font-family: var(--font-code);
+      font-size: 0.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .tool-tag-beta { background: #FED7AA; color: #9A3412; }
+    .tool-tag-dev { background: #DBEAFE; color: #1E40AF; }
+    .tool-tag-alpha { background: #FEF3C7; color: #92400E; }
+    .tool-tag-live {
+      background: #DCFCE7;
+      color: #166534;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .tool-links {
+      display: flex;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .tool-links .tool-link { font-size: 0.8rem; }
+    .tool-links .tool-link-secondary {
+      color: #57534E;
+      font-weight: 500;
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+    .tool-links .tool-link-secondary:hover { color: var(--deep-forge); }
+    .tool-stats {
+      display: flex;
+      gap: var(--sp-3);
+      margin-top: var(--sp-3);
+      flex-wrap: wrap;
+    }
+    .tool-stat {
+      font-family: var(--font-code);
+      font-size: 0.65rem;
+      color: var(--scaffold-gray);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .tool-stat svg { flex-shrink: 0; }
+    .tool-card p {
+      font-size: 0.875rem;
+      color: #57534E;
+      line-height: 1.6;
+    }
+    .tool-link {
+      color: var(--amber);
       font-weight: 600;
-      margin-bottom: 16px;
+      font-size: 0.875rem;
+      text-decoration: none;
     }
-    
+    .tool-link:hover { color: var(--signal-orange); }
+    .tools-actions {
+      margin-top: var(--sp-8);
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Board CTA */
+    .cta-box {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-12) var(--sp-8);
+      text-align: center;
+      margin-top: var(--sp-12);
+    }
+    .cta-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto var(--sp-6);
+      color: var(--amber);
+    }
+    .cta-box h3 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: var(--sp-4);
+    }
     .cta-box > p {
-      font-size: 16px;
-      opacity: 0.8;
-      max-width: 500px;
-      margin: 0 auto 32px;
-      line-height: 1.7;
+      font-size: 1rem;
+      color: var(--scaffold-gray);
+      max-width: 550px;
+      margin: 0 auto var(--sp-8);
+      line-height: 1.6;
     }
-    
     .roles {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: var(--sp-3);
       justify-content: center;
-      margin-bottom: 32px;
+      margin-bottom: var(--sp-8);
     }
-    
     .role-tag {
-      padding: 8px 16px;
-      background-color: var(--cloud);
-      border-radius: 50px;
-      font-size: 14px;
+      font-size: 0.75rem;
       font-weight: 500;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--scaffold-gray);
+      background: rgba(255,255,255,0.05);
     }
-    
+
     /* Contact */
-    .contact {
-      background-color: var(--sand);
-    }
-    
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 48px;
-      margin-top: 64px;
+      gap: var(--sp-8);
+      margin-top: var(--sp-12);
     }
-    
     .contact-card {
-      background-color: var(--cloud);
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
+      box-shadow: var(--shadow-sm);
     }
-    
     .contact-card h3 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 24px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-bottom: var(--sp-6);
     }
-    
     .contact-name {
-      font-size: 24px;
-      font-weight: 600;
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
       margin-bottom: 4px;
     }
-    
     .contact-role {
-      font-size: 14px;
-      opacity: 0.7;
-      margin-bottom: 32px;
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
+      margin-bottom: var(--sp-8);
     }
-    
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-    
-    .contact-icon {
+    .contact-info { display: flex; flex-direction: column; gap: var(--sp-4); }
+    .contact-item { display: flex; align-items: flex-start; gap: var(--sp-3); }
+    .contact-icon-box {
       width: 40px;
       height: 40px;
-      background-color: rgba(224,123,60,0.1);
-      border-radius: 10px;
+      background: rgba(217,119,6,0.08);
+      border-radius: var(--radius-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
       flex-shrink: 0;
+      color: var(--amber);
     }
-    
-    .contact-icon.blue {
-      background-color: rgba(74,144,184,0.1);
-    }
-    
     .contact-item-label {
-      font-size: 14px;
-      opacity: 0.6;
-      margin-bottom: 4px;
+      font-size: 0.75rem;
+      color: var(--scaffold-gray);
+      margin-bottom: 2px;
     }
-    
     .contact-item-value {
-      font-size: 15px;
+      font-size: 0.875rem;
       line-height: 1.5;
+      color: var(--deep-forge);
     }
-    
     .contact-item-value.highlight {
-      font-weight: 600;
-      color: var(--dawn);
+      font-weight: 700;
+      color: var(--amber);
     }
-    
+
     /* Form */
-    .form-group {
-      margin-bottom: 20px;
-    }
-    
+    .form-group { margin-bottom: var(--sp-4); }
     .form-group label {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 500;
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: var(--sp-2);
     }
-    
     .form-group input,
     .form-group textarea {
       width: 100%;
-      padding: 14px 16px;
-      border: 2px solid rgba(107,184,212,0.3);
-      border-radius: 10px;
-      font-size: 15px;
-      background-color: var(--sand);
-      font-family: inherit;
-      transition: border-color 0.2s;
+      padding: 12px 16px;
+      border: 1.5px solid #D6D3D1;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      font-family: var(--font-body);
+      background: var(--blueprint-white);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
     }
-    
     .form-group input:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: var(--dawn);
+      border-color: var(--amber);
+      box-shadow: 0 0 0 3px rgba(217,119,6,0.15);
     }
-    
-    .form-group textarea {
-      resize: vertical;
-      min-height: 120px;
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    /* Footer overrides */
+    .homepage-footer.footer {
+      background: var(--deep-forge);
+      border-top: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
     }
-    
-    /* Footer */
-    footer {
-      background-color: var(--earth);
-      color: var(--sand);
-      padding: 64px 24px 32px;
-    }
-    
-    .footer-content {
-      max-width: 1000px;
+    .homepage-footer .footer-content {
+      max-width: 1200px;
       margin: 0 auto;
     }
-    
     .footer-grid {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
-      gap: 48px;
-      margin-bottom: 48px;
+      gap: var(--sp-8);
+      margin-bottom: var(--sp-8);
     }
-    
     .footer-desc {
-      font-size: 14px;
-      opacity: 0.7;
-      margin-top: 16px;
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
+      margin-top: var(--sp-4);
       max-width: 300px;
       line-height: 1.6;
     }
-    
     .footer-section h4 {
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 600;
-      margin-bottom: 16px;
+      color: white;
+      margin-bottom: var(--sp-4);
     }
-    
     .footer-section p {
-      font-size: 14px;
-      opacity: 0.7;
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
       line-height: 1.8;
     }
-    
     .footer-date {
-      font-size: 20px;
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
       font-weight: 700;
-      color: var(--dawn);
+      color: var(--amber);
     }
-    
     .footer-bottom {
-      border-top: 1px solid rgba(245,240,235,0.1);
-      padding-top: 24px;
+      border-top: 1px solid #27272A;
+      padding-top: var(--sp-6);
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: var(--sp-4);
     }
-    
     .footer-bottom p {
-      font-size: 13px;
-      opacity: 0.5;
-    }
-    
-    /* Logo SVG */
-    .logo-full {
-      display: block;
-    }
-    
-    .logo-compact {
-      display: block;
-    }
-    
-    /* Language Switcher */
-    .lang-switcher {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      background-color: var(--sand);
-      padding: 4px;
-      border-radius: 8px;
-      margin-left: 16px;
+      font-size: 0.75rem;
+      color: var(--scaffold-gray);
     }
 
-    .lang-btn {
-      background: none;
-      border: none;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      border-radius: 6px;
-      color: var(--stone);
-      opacity: 0.6;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-
-    .lang-btn:hover {
-      opacity: 1;
-    }
-
-    .lang-btn.active {
-      background-color: var(--cloud);
-      opacity: 1;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    .mobile-only {
-      display: none;
-    }
-
-    .desktop-only {
-      display: flex;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .nav-menu {
-        display: none;
-      }
-
-      .mobile-only {
-        display: flex;
-      }
-
-      .desktop-only {
-        display: none;
-      }
-
-      .lang-switcher {
-        margin-left: 0;
-      }
-
-      section {
-        padding: 80px 24px;
-      }
-      
-      .section-title {
-        font-size: 28px;
-      }
-      
-      .cta-box {
-        padding: 32px 24px;
-      }
-      
-      .footer-grid {
-        flex-direction: column;
-        gap: 32px;
-      }
-    }
-
-    body.homepage {
-      font-family: var(--font-body);
-    }
-
+    /* Nav overrides */
     .homepage-nav.navbar {
       position: sticky;
       left: auto;
@@ -730,12 +526,10 @@
       backdrop-filter: none;
       padding: var(--sp-4) var(--sp-6);
     }
-
     .homepage-nav .nav-container {
       padding: 0;
       max-width: 1200px;
     }
-
     .homepage-nav .nav-brand {
       display: inline-flex;
       align-items: center;
@@ -746,91 +540,84 @@
       font-weight: 700;
       font-size: 1.25rem;
     }
-
-    .homepage-nav .nav-brand .accent {
-      color: var(--amber);
-    }
-
+    .homepage-nav .nav-brand .accent { color: var(--amber); }
     .homepage-nav .nav-menu {
+      display: flex;
       gap: var(--sp-6);
+      align-items: center;
     }
-
     .homepage-nav .nav-links {
       display: flex;
       gap: var(--sp-8);
       list-style: none;
       align-items: center;
     }
-
     .homepage-nav .nav-link {
       color: var(--scaffold-gray);
+      font-family: var(--font-body);
+      font-weight: 500;
       font-size: 0.875rem;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: color 0.15s ease;
     }
-
-    .homepage-nav .nav-link:hover {
-      color: white;
-    }
-
+    .homepage-nav .nav-link:hover { color: white; }
     .homepage-nav .btn.btn-primary {
       background: var(--amber);
       color: white;
       box-shadow: none;
     }
+    .homepage-nav .btn.btn-primary:hover { background: var(--signal-orange); }
 
-    .homepage-nav .btn.btn-primary:hover {
-      background: var(--signal-orange);
-    }
-
-    .homepage-nav .lang-switcher {
-      background-color: rgba(255,255,255,0.08);
+    /* Language switcher */
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      background: rgba(255,255,255,0.08);
       padding: var(--sp-1);
       border-radius: var(--radius-md);
+      margin-left: var(--sp-4);
     }
-
-    .homepage-nav .lang-btn {
+    .lang-btn {
+      background: none;
+      border: none;
+      padding: 6px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
       color: var(--scaffold-gray);
+      transition: all 0.15s ease;
+      font-family: var(--font-body);
     }
-
-    .homepage-nav .lang-btn.active {
-      background-color: white;
+    .lang-btn:hover { color: white; }
+    .lang-btn.active {
+      background: white;
       color: var(--deep-forge);
-      box-shadow: none;
     }
 
-    .homepage-footer.footer {
-      background: var(--deep-forge);
-      border-top: 3px solid transparent;
-      border-image: var(--gradient-accent) 1;
-    }
+    .mobile-only { display: none; }
+    .desktop-only { display: flex; }
 
-    .homepage-footer .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .homepage-footer .footer-desc,
-    .homepage-footer .footer-section p,
-    .homepage-footer .footer-bottom p {
-      color: var(--scaffold-gray);
-    }
-
-    .homepage-footer .nav-brand {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--sp-1);
-      color: white;
-      text-decoration: none;
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.125rem;
-    }
-
-    .homepage-footer .nav-brand .accent {
-      color: var(--amber);
+    /* Responsive */
+    @media (max-width: 768px) {
+      .homepage-nav .nav-menu { display: none; }
+      .mobile-only { display: flex; }
+      .desktop-only { display: none; }
+      .section { padding: var(--sp-12) var(--sp-4); }
+      .hero { padding: var(--sp-16) var(--sp-4); min-height: auto; }
+      .features-grid, .tools-grid { grid-template-columns: 1fr; }
+      .missie-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { flex-direction: column; gap: var(--sp-6); }
+      .cta-box { padding: var(--sp-8) var(--sp-4); }
     }
   </style>
 </head>
-<body class="homepage">
+<body>
   <!-- Navigation -->
   <nav class="navbar homepage-nav">
     <div class="nav-container">
@@ -839,13 +626,12 @@
       </a>
       <div class="nav-menu">
         <ul class="nav-links">
-          <li><a href="#over-ons" class="nav-link" data-i18n="nav.about">Over ons</a></li>
-          <li><a href="#missie" class="nav-link" data-i18n="nav.mission">Missie</a></li>
-          <li><a href="#tools" class="nav-link" data-i18n="nav.tools">Tools</a></li>
-          <li><a href="#bestuur" class="nav-link" data-i18n="nav.board">Bestuur</a></li>
+          <li><a href="#ecosysteem" class="nav-link" data-i18n="nav.tools">Ecosysteem</a></li>
+          <li><a href="/roadmap/" class="nav-link">Roadmap</a></li>
+          <li><a href="/architectuur/" class="nav-link">Architectuur</a></li>
+          <li><a href="/supporters/" class="nav-link">Supporters</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="btn btn-primary" data-i18n="nav.joinBoard">Word bestuurslid</a>
         <div class="lang-switcher desktop-only">
           <button class="lang-btn" data-lang="nl">NL</button>
           <button class="lang-btn active" data-lang="en">EN</button>
@@ -860,92 +646,133 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-bg-1"></div>
-    <div class="hero-bg-2"></div>
     <div class="hero-content">
       <div class="badge">
         <span class="badge-dot"></span>
-        <span data-i18n="hero.badge">Stichting in oprichting</span>
+        <span data-i18n="hero.badge">Doelstelling: alle bouwsoftware open source voor eind 2026</span>
       </div>
 
-      <svg class="logo-full" width="392" height="112" viewBox="0 0 280 80" fill="none" style="margin: 0 auto 32px;">
-        <path d="M10 70 L10 35 L50 10 L90 35 L90 70" stroke="#E07B3C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <path d="M30 70 L30 45 L50 30 L70 45 L70 70" stroke="#4A90B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <text x="108" y="42" font-family="'DM Sans', sans-serif" font-size="26" font-weight="700" fill="#3A3A3A">Open</text>
-        <text x="175" y="42" font-family="'DM Sans', sans-serif" font-size="26" font-weight="700" fill="#E07B3C">AEC</text>
-        <text x="108" y="62" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500" fill="#3A3A3A" letter-spacing="2.5">FOUNDATION</text>
+      <!-- OpenAEC Logo v2 — isometric open cube + wordmark -->
+      <svg class="logo-full" width="420" height="112" viewBox="0 0 520 140" fill="none" style="margin: 0 auto var(--sp-8);">
+        <g transform="translate(70,68) scale(0.52)">
+          <polygon points="-60,-20 0,15 0,80 -60,45" fill="#D97706" fill-opacity="0.22" stroke="#D97706" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="0,-55 60,-20 0,15 -60,-20" fill="#D97706" fill-opacity="0.12" stroke="#D97706" stroke-width="2.8" stroke-linejoin="round"/>
+          <line x1="60" y1="-20" x2="60" y2="45" stroke="#D97706" stroke-width="2.8" stroke-linecap="round"/>
+          <line x1="0" y1="80" x2="60" y2="45" stroke="#D97706" stroke-width="2.8" stroke-linecap="round"/>
+          <polygon points="60,-20 0,15 0,32 60,0" fill="#D97706" fill-opacity="0.18"/>
+          <line x1="0" y1="15" x2="0" y2="32" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="0" y1="32" x2="60" y2="0" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="0" y1="32" x2="-28" y2="48" stroke="#F59E0B" stroke-width="1.2" opacity="0.3"/>
+          <line x1="60" y1="0" x2="32" y2="16" stroke="#F59E0B" stroke-width="1.2" opacity="0.3"/>
+          <g stroke="#D97706" stroke-width="1.2" fill="none" opacity="0.55">
+            <rect x="-44" y="-6" width="10" height="7" rx="1" transform="skewY(-30)"/>
+            <rect x="-30" y="-6" width="10" height="7" rx="1" transform="skewY(-30)"/>
+            <rect x="-44" y="6" width="10" height="7" rx="1" transform="skewY(-30)"/>
+            <rect x="-30" y="6" width="10" height="7" rx="1" transform="skewY(-30)"/>
+            <rect x="-44" y="18" width="10" height="7" rx="1" transform="skewY(-30)"/>
+            <rect x="-30" y="18" width="10" height="7" rx="1" transform="skewY(-30)"/>
+          </g>
+        </g>
+        <text x="120" y="62" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="700" font-size="40" letter-spacing="-0.025em">
+          <tspan fill="#FAFAF9">Open</tspan><tspan fill="#D97706">AEC</tspan>
+        </text>
+        <text x="122" y="88" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="13" fill="#A1A1AA" letter-spacing="0.06em">Build free. Build together.</text>
+        <text x="122" y="108" font-family="'Inter', system-ui, sans-serif" font-weight="400" font-size="10" fill="#A1A1AA" opacity="0.6" letter-spacing="0.15em">FOUNDATION</text>
       </svg>
 
-      <h1 data-i18n="hero.title">Open source voor een open bouwsector</h1>
+      <h1 data-i18n="hero.title">Open source voor een <span class="accent">open bouwsector</span></h1>
 
-      <p data-i18n="hero.description">Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.</p>
+      <p class="tagline" data-i18n="hero.description">Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.</p>
 
       <div class="hero-buttons">
-        <a href="#bestuur" class="btn btn-primary btn-large" data-i18n="hero.joinBtn">Word bestuurslid →</a>
-        <a href="#over-ons" class="btn btn-secondary btn-large" data-i18n="hero.readMore">Lees meer</a>
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.contactBtn">Neem contact op &rarr;</a>
+        <a href="#over-ons" class="btn btn-ghost btn-lg" data-i18n="hero.readMore">Lees meer</a>
       </div>
 
-      <div class="launch-box">
-        <p data-i18n="hero.launchLabel">Geplande oprichting</p>
-        <p data-i18n="hero.launchDate">1 maart 2026</p>
-      </div>
     </div>
   </section>
 
   <!-- Over Ons Section -->
-  <section class="over-ons" id="over-ons">
+  <section class="section section-alt" id="over-ons">
     <div class="container">
       <div class="text-center">
         <p class="section-label" data-i18n="about.label">Over ons</p>
-        <h2 class="section-title" data-i18n="about.title">Waarom Open AEC Foundation?</h2>
+        <h2 class="section-title" data-i18n="about.title">Waarom OpenAEC Foundation?</h2>
         <p class="section-desc" data-i18n="about.description">De bouwsector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.</p>
       </div>
 
       <div class="features-grid">
         <div class="feature-card">
-          <span class="feature-icon">💰</span>
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 4v4M24 40v4M4 24h4M40 24h4"/>
+            <circle cx="24" cy="24" r="12"/>
+            <path d="M18 24l3 3 6-6"/>
+          </svg>
           <h3 data-i18n="about.features.cost.title">Kostenreductie</h3>
           <p data-i18n="about.features.cost.desc">Geen licentiekosten, lagere advieskosten. Bouwen wordt voordeliger voor iedereen.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">🔓</span>
-          <h3 data-i18n="about.features.vendor.title">Geen vendor lock-in</h3>
-          <p data-i18n="about.features.vendor.desc">Open data formaten zorgen dat bestanden voor altijd leesbaar blijven.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🤖</span>
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="14" r="4"/>
+            <circle cx="34" cy="14" r="4"/>
+            <circle cx="14" cy="34" r="4"/>
+            <circle cx="34" cy="34" r="4"/>
+            <path d="M18 14h12M14 18v12M34 18v12M18 34h12"/>
+          </svg>
           <h3 data-i18n="about.features.ai.title">AI-gereed</h3>
           <p data-i18n="about.features.ai.desc">Open source code is beter te integreren met AI en automatisering.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">🌍</span>
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 40V20l16-12 16 12v20"/>
+            <path d="M18 40V28h12v12"/>
+            <path d="M2 44h44"/>
+          </svg>
           <h3 data-i18n="about.features.future.title">Toekomstbestendig</h3>
           <p data-i18n="about.features.future.desc">Community kan software blijven onderhouden, onafhankelijk van leveranciers.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">👥</span>
-          <h3 data-i18n="about.features.users.title">Door gebruikers gestuurd</h3>
-          <p data-i18n="about.features.users.desc">Ontwikkeling wordt bepaald door wat gebruikers nodig hebben, niet door sales.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🎓</span>
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 44V12l8-8h16l8 8v32"/>
+            <path d="M16 4v8H8"/>
+            <path d="M16 24h16M16 32h10"/>
+            <path d="M32 4v8h8"/>
+          </svg>
           <h3 data-i18n="about.features.edu.title">Educatie</h3>
           <p data-i18n="about.features.edu.desc">Stage- en opleidingsmogelijkheden voor studenten wereldwijd.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="6" width="36" height="36" rx="4"/>
+            <path d="M6 18h36M18 6v36"/>
+            <circle cx="32" cy="32" r="4"/>
+          </svg>
+          <h3 data-i18n="about.features.formats.title">Open formaten</h3>
+          <p data-i18n="about.features.formats.desc">Alle data in open standaarden zoals IFC en IFCX. Geen proprietary formaten, geen afhankelijkheid.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="16"/>
+            <path d="M24 14v10l7 7"/>
+            <path d="M16 8l-2-4M32 8l2-4"/>
+          </svg>
+          <h3 data-i18n="about.features.ux.title">Gebruiksvriendelijkheid</h3>
+          <p data-i18n="about.features.ux.desc">100% focus op gebruiksvriendelijkheid. Software die werkt zoals je verwacht, zonder handleiding.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Missie Section -->
-  <section class="missie" id="missie">
+  <section class="section missie" id="missie">
     <div class="container text-center">
       <p class="section-label" data-i18n="mission.label">Onze missie</p>
-      <h2 class="section-title" data-i18n="mission.title">"Het ontwikkelen, ondersteunen en promoten van open source software voor de volledige bouwketen."</h2>
+      <h2 class="section-title" data-i18n="mission.title">"Het ontwikkelen, ondersteunen en promoten van <span class="accent">open source software</span> voor de volledige bouwketen."</h2>
 
       <div class="missie-grid">
         <div class="missie-item">
           <h3 data-i18n="mission.items.dev.title">Ontwikkeling</h3>
-          <p data-i18n="mission.items.dev.desc">Coördineren en financieren van open source softwareontwikkeling</p>
+          <p data-i18n="mission.items.dev.desc">Coordineren en financieren van open source softwareontwikkeling</p>
         </div>
         <div class="missie-item">
           <h3 data-i18n="mission.items.support.title">Ondersteuning</h3>
@@ -964,123 +791,267 @@
   </section>
 
   <!-- Tools Section -->
-  <section class="tools" id="tools">
+  <section class="section section-white" id="ecosysteem">
     <div class="container">
       <div class="text-center">
-        <p class="section-label" data-i18n="tools.label">Projecten en tools</p>
-        <h2 class="section-title" data-i18n="tools.title">Verken de huidige OpenAEC-pagina's</h2>
-        <p class="section-desc" data-i18n="tools.description">Deze website bundelt de projecten en productpagina's die nu al live staan binnen het OpenAEC-ecosysteem.</p>
+        <p class="section-label" data-i18n="tools.label">Ecosysteem</p>
+        <h2 class="section-title" data-i18n="tools.title">Het OpenAEC-ecosysteem</h2>
+        <p class="section-desc" data-i18n="tools.description">Onze stichting heeft als doelstelling om de hele bouwsector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.</p>
+        <p style="display: inline-flex; align-items: center; gap: 6px; background: #DBEAFE; color: #1E40AF; padding: 6px 14px; border-radius: var(--radius-full); font-family: var(--font-code); font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-top: var(--sp-4);" data-i18n="tools.devNotice">Alle tools zijn momenteel in actieve ontwikkeling</p>
       </div>
 
       <div class="tools-grid">
-        <article class="tool-card">
+        <article class="tool-card" style="border: 2px solid var(--amber);">
+          <img class="tool-thumb" src="/shared/assets/screenshots/ifcx.png" alt="IFCX Schema">
           <div>
-            <h3 data-i18n="tools.items.openBooks.title">OpenBooks</h3>
-            <p data-i18n="tools.items.openBooks.desc">Digitale collectie met historische architectuur- en bouwboeken, vrij toegankelijk voor ontwerpers, ingenieurs en bouwers.</p>
+            <h3 data-i18n="tools.items.ifcx.title">IFCX</h3>
+            <p data-i18n="tools.items.ifcx.desc">Het universele dataformaat van het OpenAEC-ecosysteem. Alle tools communiceren in IFCX met eigen namespaces voor het volledige gebouwmodel.</p>
           </div>
-          <a href="/open-books/" class="tool-link" data-i18n="tools.items.openBooks.link">Bekijk project →</a>
+          <a href="/ifcx/" class="tool-link" data-i18n="tools.items.ifcx.link">Lees meer &rarr;</a>
         </article>
-
         <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-2d-studio.jpeg" alt="Open 2D Studio">
           <div>
-            <h3 data-i18n="tools.items.buildingPy.title">building.py</h3>
-            <p data-i18n="tools.items.buildingPy.desc">Python-bibliotheek voor gebouwmodellering, export en open BIM-workflows.</p>
-          </div>
-          <a href="/building-py/" class="tool-link" data-i18n="tools.items.buildingPy.link">Bekijk project →</a>
-        </article>
-
-        <article class="tool-card">
-          <div>
-            <h3 data-i18n="tools.items.open2d.title">Open 2D Studio</h3>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.open2d.title" style="margin-bottom:0;">Open 2D Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.open2d.desc">Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 90 commits</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.35</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 13</span>
+            </div>
           </div>
-          <a href="/open-2d-studio/" class="tool-link" data-i18n="tools.items.open2d.link">Bekijk project →</a>
+          <div class="tool-links">
+            <a href="/open-2d-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
         </article>
-
         <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-pdf-studio.jpeg" alt="Open PDF Studio">
           <div>
-            <h3 data-i18n="tools.items.openPdf.title">Open PDF Studio</h3>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPdf.title" style="margin-bottom:0;">Open PDF Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.openPdf.desc">Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 117 commits</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v1.38</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 39</span>
+            </div>
           </div>
-          <a href="/open-pdf-studio/" class="tool-link" data-i18n="tools.items.openPdf.link">Bekijk project →</a>
+          <div class="tool-links">
+            <a href="/open-pdf-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-pdf-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
         </article>
-
         <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-energy-studio.jpeg" alt="Open Energy Studio">
           <div>
-            <h3 data-i18n="tools.items.openEnergy.title">Open Energy Studio</h3>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openEnergy.title" style="margin-bottom:0;">Open Energy Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.openEnergy.desc">Projectpagina voor open energie-analyse en gebouwprestaties.</p>
           </div>
-          <a href="/open-energy-studio/" class="tool-link" data-i18n="tools.items.openEnergy.link">Bekijk project →</a>
-        </article>
-
-        <article class="tool-card">
-          <div>
-            <h3 data-i18n="tools.items.openPlanner.title">Open Planner Studio</h3>
-            <p data-i18n="tools.items.openPlanner.desc">Open plannings- en projectcoördinatiepagina voor bouwteams.</p>
+          <div class="tool-links">
+            <a href="/open-energy-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
           </div>
-          <a href="/open-planner-studio/" class="tool-link" data-i18n="tools.items.openPlanner.link">Bekijk project →</a>
         </article>
-
         <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-planner-studio.jpeg" alt="Open Planner Studio">
           <div>
-            <h3 data-i18n="tools.items.openPointcloud.title">Open Pointcloud Studio</h3>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPlanner.title" style="margin-bottom:0;">Open Planner Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <p data-i18n="tools.items.openPlanner.desc">Open plannings- en projectcoordinatiepagina voor bouwteams.</p>
+          </div>
+          <div class="tool-links">
+            <a href="/open-planner-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-pointcloud-studio.jpeg" alt="Open Pointcloud Studio">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPointcloud.title" style="margin-bottom:0;">Open Pointcloud Studio</h3><span class="tool-tag tool-tag-alpha">Alpha</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.openPointcloud.desc">Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 15 commits</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.3</span>
+            </div>
           </div>
-          <a href="/open-pointcloud-studio/" class="tool-link" data-i18n="tools.items.openPointcloud.link">Bekijk project →</a>
+          <div class="tool-links">
+            <a href="/open-pointcloud-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-pointcloud-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
         </article>
-
         <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/monty-ifc-viewer.jpeg" alt="Monty IFC Viewer">
           <div>
-            <h3 data-i18n="tools.items.montyIfc.title">Monty IFC Viewer</h3>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.montyIfc.title" style="margin-bottom:0;">Monty IFC Viewer</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
             <p data-i18n="tools.items.montyIfc.desc">Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.</p>
           </div>
-          <a href="/monty-ifc-viewer/" class="tool-link" data-i18n="tools.items.montyIfc.link">Bekijk project →</a>
+          <a href="/monty-ifc-viewer/" class="tool-link">Productpagina &rarr;</a>
         </article>
-
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-calc-studio.png" alt="Open Calc Studio">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <p data-i18n="tools.items.openCalc.desc">Open source calculatietool voor kostenramingen en begrotingen in de bouw.</p>
+          </div>
+          <div class="tool-links">
+            <a href="/open-calc-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-calc-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-field-studio.jpeg" alt="Open Field Studio">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openField.title" style="margin-bottom:0;">Open Field Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <p data-i18n="tools.items.openField.desc">Gratis &amp; open-source tool voor inspectie, oplevering en kwaliteitsborging bij bouwprojecten. Tickets &amp; gebreken op plattegrond pinnen, 10 checklist-templates (incl. NEN 2767), energielabel opname, oplevering met handtekeningen, dashboard met live statistieken. Werkt volledig offline op elk apparaat.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 18 commits</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.1.3</span>
+            </div>
+          </div>
+          <div class="tool-links">
+            <a href="/open-field-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/y-app.jpeg" alt="Y-app">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.yapp.title" style="margin-bottom:0;">Y-app</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <p data-i18n="tools.items.yapp.desc">Open source communicatie- en samenwerkingsplatform voor bouwprojecten.</p>
+          </div>
+          <a href="/y-app/" class="tool-link">Productpagina &rarr;</a>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/bim-validator.png" alt="BIM Validator">
+          <div>
+            <h3 data-i18n="tools.items.bimValidator.title">BIM Validator</h3>
+            <p data-i18n="tools.items.bimValidator.desc">Open source tool voor het valideren van IFC-modellen tegen standaarden en projecteisen.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 207 commits</span>
+            </div>
+          </div>
+          <a href="/bim-validator/" class="tool-link">Productpagina &rarr;</a>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/openaec-docs.png" alt="OpenAEC Docs">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openaecDocs.title" style="margin-bottom:0;">OpenAEC Docs</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <p data-i18n="tools.items.openaecDocs.desc">Open source document management systeem voor BIM-projecten. Beheer, deel en archiveer projectdocumenten.</p>
+          </div>
+          <a href="/openaec-docs/" class="tool-link">Productpagina &rarr;</a>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-speech-studio.png" alt="Open Speech Studio">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openSpeech.title" style="margin-bottom:0;">Open Speech Studio</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <p data-i18n="tools.items.openSpeech.desc">Open source spraak-naar-tekst en notulen-tool voor bouwvergaderingen en projectoverleg.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 32 commits</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> 4 releases</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 1</span>
+            </div>
+          </div>
+          <a href="/open-speech-studio/" class="tool-link">Productpagina &rarr;</a>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/openaec-cloud.jpeg" alt="OpenAEC Cloud Platform">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.cloudPlatform.title" style="margin-bottom:0;">OpenAEC Cloud Platform</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <p data-i18n="tools.items.cloudPlatform.desc">Centraal cloudplatform voor het OpenAEC-ecosysteem. Projectbeheer, gebruikersbeheer, SSO en synchronisatie tussen alle tools.</p>
+          </div>
+          <a href="/openaec-cloud/" class="tool-link">Productpagina &rarr;</a>
+        </article>
+        <article class="tool-card">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-heatloss-studio.png" alt="Open Heatloss Studio">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openHeatloss.title" style="margin-bottom:0;">Open Heatloss Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <p data-i18n="tools.items.openHeatloss.desc">Open source warmteverliesberekening voor gebouwen. Berekent transmissie- en ventilatieverliezen per ruimte conform NEN 12831.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 176 commits</span>
+            </div>
+          </div>
+          <div class="tool-links">
+            <a href="/open-heatloss-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
+        </article>
         <article class="tool-card">
           <div>
-            <h3 data-i18n="tools.items.extDrawing.title">EXT Drawing Statistics</h3>
-            <p data-i18n="tools.items.extDrawing.desc">Pagina voor tekeningenanalyse en statistieken binnen open engineeringprocessen.</p>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openSafety.title" style="margin-bottom:0;">Open Safety Studio</h3><span class="tool-tag tool-tag-alpha">Alpha</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <p data-i18n="tools.items.openSafety.desc">Open source tool voor veiligheidsanalyse en risicobeoordeling op bouwprojecten.</p>
           </div>
-          <a href="/ext-drawing-statistics/" class="tool-link" data-i18n="tools.items.extDrawing.link">Bekijk project →</a>
+          <div class="tool-links">
+            <a href="/open-safety-studio/" class="tool-link-secondary">Productpagina</a>
+            <a href="https://open-safety-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link">Live demo &rarr;</a>
+          </div>
         </article>
       </div>
 
-      <div class="tools-actions">
-        <a href="/tools-overview.html" class="btn btn-secondary btn-large" data-i18n="tools.overviewBtn">Bekijk volledig repository-overzicht</a>
+      <div class="tools-actions" style="gap: var(--sp-4); flex-wrap: wrap;">
+        <a href="/offerte/" class="btn btn-primary btn-lg" data-i18n="tools.quoteBtn">Offerte aanvragen</a>
+        <a href="/roadmap/" class="btn btn-secondary btn-lg" data-i18n="tools.roadmapBtn">Roadmap 2026</a>
+        <a href="/architectuur/" class="btn btn-secondary btn-lg" data-i18n="tools.archBtn">Software architectuur</a>
       </div>
     </div>
   </section>
 
   <!-- Bestuur Section -->
-  <section class="bestuur" id="bestuur">
+  <section class="section section-alt" id="bestuur" style="display: none;">
     <div class="container">
       <div class="text-center">
-        <p class="section-label" data-i18n="board.label">Word onderdeel</p>
-        <h2 class="section-title" data-i18n="board.title">Bestuursleden gezocht</h2>
-        <p class="section-desc" data-i18n="board.description">We zoeken gedreven mensen uit de bouwsector die willen bijdragen aan een open toekomst.</p>
+        <p class="section-label" data-i18n="board.label">Bestuur</p>
+        <h2 class="section-title" data-i18n="board.title">Het bestuur</h2>
       </div>
 
-      <div class="cta-box">
-        <div class="cta-icon">🏗️</div>
-        <h3 data-i18n="board.cta.title">Bouw mee aan de toekomst</h3>
-        <p data-i18n="board.cta.desc">Het bestuur bestaat uit invloedrijke personen uit de bouwsector: architecten, aannemers, adviseurs en vertegenwoordigers van brancheorganisaties.</p>
-
-        <div class="roles">
-          <span class="role-tag" data-i18n="board.roles.architects">Architecten</span>
-          <span class="role-tag" data-i18n="board.roles.contractors">Aannemers</span>
-          <span class="role-tag" data-i18n="board.roles.consultants">Adviseurs</span>
-          <span class="role-tag" data-i18n="board.roles.it">IT-specialisten</span>
-          <span class="role-tag" data-i18n="board.roles.policy">Beleidsmakers</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--sp-6); margin-top: var(--sp-10); max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div style="text-align: center;">
+          <img src="/personen/Maarten.jpeg" alt="Maarten Vroegindeweij" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
+          <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.maarten.name">Maarten Vroegindeweij</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.maarten.role">Voorzitter</p>
         </div>
+        <div style="text-align: center;">
+          <img src="/personen/Jochem.jpeg" alt="Jochem Kolfhof" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
+          <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.jochem.name">Jochem Kolfhof</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.jochem.role">Penningmeester</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="/personen/Martjan%20den%20Hoed.jpeg" alt="Martjan den Hoed" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
+          <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.martjan.name">Martjan den Hoed</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.martjan.role">Secretaris</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="/personen/Silvia%20Taurer.jpeg" alt="Silvia Taurer" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
+          <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.silvia.name">Silvia Taurer</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.silvia.role">Bestuurslid</p>
+        </div>
+      </div>
 
-        <a href="#contact" class="btn btn-primary btn-large" data-i18n="board.cta.button">Neem contact op</a>
+      <div style="text-align: center; margin-top: var(--sp-8);">
+        <a href="/over-ons.html" class="btn btn-secondary" data-i18n="board.moreLink">Meer over het bestuur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nieuws Section -->
+  <section class="section" style="background: var(--night-build); text-align: center; padding: var(--sp-12) var(--sp-6);">
+    <div class="container">
+      <p style="font-family: var(--font-code); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--warm-gold); margin-bottom: var(--sp-4);">Nieuws</p>
+      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem; color: white; margin-bottom: var(--sp-3);">Blijf op de hoogte</h2>
+      <p style="color: var(--scaffold-gray); font-size: 1rem; max-width: 500px; margin: 0 auto var(--sp-6); line-height: 1.6;">Volg onze WhatsApp-groep voor het laatste nieuws over het ecosysteem, nieuwe releases en updates.</p>
+      <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
+        <a href="https://chat.whatsapp.com/J4PhnwwXGYP1WT6VQfoJVk" target="_blank" rel="noopener" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 8px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Join WhatsApp groep
+        </a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" style="display: inline-flex; align-items: center; gap: 8px; border-color: rgba(255,255,255,0.3); color: white;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          Volg op LinkedIn
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <section class="section" id="contact">
     <div class="container">
       <div class="text-center">
         <p class="section-label" data-i18n="contact.label">Contact</p>
@@ -1088,7 +1059,6 @@
       </div>
 
       <div class="contact-grid">
-        <!-- Contact Info -->
         <div class="contact-card">
           <h3 data-i18n="contact.person.title">Contactpersoon</h3>
           <p class="contact-name">Maarten Vroegindeweij</p>
@@ -1096,23 +1066,26 @@
 
           <div class="contact-info">
             <div class="contact-item">
-              <span class="contact-icon">📍</span>
+              <span class="contact-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+              </span>
+              <div>
+                <p class="contact-item-label">E-mail</p>
+                <p class="contact-item-value"><a id="email-link" href="#" style="color: var(--amber); text-decoration: none; font-weight: 600;"></a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
               <div>
                 <p class="contact-item-label" data-i18n="contact.person.addressLabel">Adres</p>
                 <p class="contact-item-value">Burgemeester de Raadtsingel 31<br>Dordrecht</p>
               </div>
             </div>
-            <div class="contact-item">
-              <span class="contact-icon blue">📅</span>
-              <div>
-                <p class="contact-item-label" data-i18n="contact.person.foundingLabel">Oprichting</p>
-                <p class="contact-item-value highlight" data-i18n="contact.person.foundingDate">1 maart 2026</p>
-              </div>
-            </div>
           </div>
         </div>
 
-        <!-- Contact Form -->
         <div class="contact-card">
           <h3 data-i18n="contact.form.title">Stuur een bericht</h3>
           <form>
@@ -1126,9 +1099,9 @@
             </div>
             <div class="form-group">
               <label for="message" data-i18n="contact.form.message">Bericht</label>
-              <textarea id="message" data-i18n-attr="placeholder" data-i18n="contact.form.messagePlaceholder" placeholder="Ik ben geïnteresseerd in..."></textarea>
+              <textarea id="message" data-i18n-attr="placeholder" data-i18n="contact.form.messagePlaceholder" placeholder="Ik ben geinteresseerd in..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;" data-i18n="contact.form.submit">Verstuur bericht</button>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="contact.form.submit">Verstuur bericht</button>
           </form>
         </div>
       </div>
@@ -1144,18 +1117,43 @@
           <p class="footer-desc" data-i18n="footer.description">Open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.</p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer.foundation">Stichting i.o.</h4>
-          <p>Burgemeester de Raadtsingel 31<br>Dordrecht<br><span data-i18n="footer.country">Nederland</span></p>
+          <h4>Pagina's</h4>
+          <p style="line-height: 2.2;">
+            <a href="/over-ons.html" style="color: var(--scaffold-gray); text-decoration: none;">Over ons</a><br>
+            <a href="/ifcx/" style="color: var(--scaffold-gray); text-decoration: none;">IFCX</a><br>
+            <a href="/roadmap/" style="color: var(--scaffold-gray); text-decoration: none;">Roadmap 2026</a><br>
+            <a href="/architectuur/" style="color: var(--scaffold-gray); text-decoration: none;">Architectuur</a><br>
+            <a href="/supporters/" style="color: var(--scaffold-gray); text-decoration: none;">Supporters</a><br>
+            <a href="/offerte/" style="color: var(--scaffold-gray); text-decoration: none;">Offerte aanvragen</a><br>
+            <a href="/diensten/" style="color: var(--scaffold-gray); text-decoration: none;">Diensten</a><br>
+            <a href="/faq/" style="color: var(--scaffold-gray); text-decoration: none;">FAQ</a><br>
+            <a href="/statistieken/" style="color: var(--scaffold-gray); text-decoration: none;">Tijdlijn &amp; Statistieken</a><br>
+            <a href="/disclaimer/" style="color: var(--scaffold-gray); text-decoration: none;">Disclaimer</a><br>
+            <a href="/statuten/" style="color: var(--scaffold-gray); text-decoration: none;">Concept statuten</a>
+          </p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer.foundingLabel">Oprichting</h4>
-          <p class="footer-date" data-i18n="footer.foundingDate">1 maart 2026</p>
+          <h4 data-i18n="footer.foundation">Stichting i.o.</h4>
+          <p>Burgemeester de Raadtsingel 31<br>Dordrecht<br><span data-i18n="footer.country">Nederland</span></p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p data-i18n="footer.copyright">© 2026 Open AEC Foundation i.o. — Open source voor een open bouwsector</p>
-        <p data-i18n="footer.inspired">Geïnspireerd door de Blender Foundation</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Open AEC Foundation i.o. — Open source voor een open bouwsector</p>
+        <div style="display: flex; gap: var(--sp-4); align-items: center;">
+          <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://chat.whatsapp.com/J4PhnwwXGYP1WT6VQfoJVk" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -1171,172 +1169,94 @@
         nav: {
           about: "Over ons",
           mission: "Missie",
-          tools: "Tools",
+          tools: "Ecosysteem",
           board: "Bestuur",
           contact: "Contact",
           joinBoard: "Word bestuurslid"
         },
         hero: {
-          badge: "Stichting in oprichting",
-          title: "Open source voor een open bouwsector",
-          description: "Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.",
-          joinBtn: "Word bestuurslid →",
+          badge: "Doelstelling: alle bouwsoftware open source voor eind 2026",
+          title: "Open source voor een <span class=\"accent\">open bouwsector</span>",
+          description: "Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige bouwketen \u2014 van ontwerp tot oplevering en beheer.",
+          contactBtn: "Neem contact op \u2192",
           readMore: "Lees meer",
           launchLabel: "Geplande oprichting",
-          launchDate: "1 maart 2026"
+          launchDate: "14 april 2026"
         },
         about: {
           label: "Over ons",
-          title: "Waarom Open AEC Foundation?",
+          title: "Waarom OpenAEC Foundation?",
           description: "De bouwsector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.",
           features: {
-            cost: {
-              title: "Kostenreductie",
-              desc: "Geen licentiekosten, lagere advieskosten. Bouwen wordt voordeliger voor iedereen."
-            },
-            vendor: {
-              title: "Geen vendor lock-in",
-              desc: "Open data formaten zorgen dat bestanden voor altijd leesbaar blijven."
-            },
-            ai: {
-              title: "AI-gereed",
-              desc: "Open source code is beter te integreren met AI en automatisering."
-            },
-            future: {
-              title: "Toekomstbestendig",
-              desc: "Community kan software blijven onderhouden, onafhankelijk van leveranciers."
-            },
-            users: {
-              title: "Door gebruikers gestuurd",
-              desc: "Ontwikkeling wordt bepaald door wat gebruikers nodig hebben, niet door sales."
-            },
-            edu: {
-              title: "Educatie",
-              desc: "Stage- en opleidingsmogelijkheden voor studenten wereldwijd."
-            }
+            cost: { title: "Kostenreductie", desc: "Geen licentiekosten, lagere advieskosten. Bouwen wordt voordeliger voor iedereen." },
+            vendor: { title: "Geen vendor lock-in", desc: "Open data formaten zorgen dat bestanden voor altijd leesbaar blijven." },
+            ai: { title: "AI-gereed", desc: "Open source code is beter te integreren met AI en automatisering." },
+            future: { title: "Toekomstbestendig", desc: "Community kan software blijven onderhouden, onafhankelijk van leveranciers." },
+            users: { title: "Door gebruikers gestuurd", desc: "Ontwikkeling wordt bepaald door wat gebruikers nodig hebben, niet door sales." },
+            edu: { title: "Educatie", desc: "Stage- en opleidingsmogelijkheden voor studenten wereldwijd." }
           }
         },
         mission: {
           label: "Onze missie",
-          title: "\"Het ontwikkelen, ondersteunen en promoten van open source software voor de volledige bouwketen.\"",
+          title: "\"Het ontwikkelen, ondersteunen en promoten van <span class=\"accent\">open source software</span> voor de volledige bouwketen.\"",
           items: {
-            dev: {
-              title: "Ontwikkeling",
-              desc: "Coördineren en financieren van open source softwareontwikkeling"
-            },
-            support: {
-              title: "Ondersteuning",
-              desc: "Beheren van licenties, API-koppelingen en integraties"
-            },
-            edu: {
-              title: "Educatie",
-              desc: "Stage- en opleidingsmogelijkheden voor studenten"
-            },
-            advocacy: {
-              title: "Advocacy",
-              desc: "Promoten van open source en open standaarden"
-            }
+            dev: { title: "Ontwikkeling", desc: "Co\u00f6rdineren en financieren van open source softwareontwikkeling" },
+            support: { title: "Ondersteuning", desc: "Beheren van licenties, API-koppelingen en integraties" },
+            edu: { title: "Educatie", desc: "Stage- en opleidingsmogelijkheden voor studenten" },
+            advocacy: { title: "Advocacy", desc: "Promoten van open source en open standaarden" }
           }
         },
         tools: {
-          label: "Projecten en tools",
-          title: "Verken de huidige OpenAEC-pagina's",
-          description: "Deze website bundelt de projecten en productpagina's die nu al live staan binnen het OpenAEC-ecosysteem.",
+          label: "Ecosysteem",
+          title: "Het OpenAEC-ecosysteem",
+          description: "Onze stichting heeft als doelstelling om de hele bouwsector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.",
+          devNotice: "Alle tools zijn momenteel in actieve ontwikkeling",
           overviewBtn: "Bekijk volledig repository-overzicht",
           items: {
-            openBooks: {
-              title: "OpenBooks",
-              desc: "Digitale collectie met historische architectuur- en bouwboeken, vrij toegankelijk voor ontwerpers, ingenieurs en bouwers.",
-              link: "Bekijk project →"
-            },
-            buildingPy: {
-              title: "building.py",
-              desc: "Python-bibliotheek voor gebouwmodellering, export en open BIM-workflows.",
-              link: "Bekijk project →"
-            },
-            open2d: {
-              title: "Open 2D Studio",
-              desc: "Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.",
-              link: "Bekijk project →"
-            },
-            openPdf: {
-              title: "Open PDF Studio",
-              desc: "Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.",
-              link: "Bekijk project →"
-            },
-            openEnergy: {
-              title: "Open Energy Studio",
-              desc: "Projectpagina voor open energie-analyse en gebouwprestaties.",
-              link: "Bekijk project →"
-            },
-            openPlanner: {
-              title: "Open Planner Studio",
-              desc: "Open plannings- en projectcoördinatiepagina voor bouwteams.",
-              link: "Bekijk project →"
-            },
-            openPointcloud: {
-              title: "Open Pointcloud Studio",
-              desc: "Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.",
-              link: "Bekijk project →"
-            },
-            montyIfc: {
-              title: "Monty IFC Viewer",
-              desc: "Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.",
-              link: "Bekijk project →"
-            },
-            extDrawing: {
-              title: "EXT Drawing Statistics",
-              desc: "Pagina voor tekeningenanalyse en statistieken binnen open engineeringprocessen.",
-              link: "Bekijk project →"
-            }
+            ifcx: { title: "IFCX", desc: "Het universele dataformaat van het OpenAEC-ecosysteem. Alle tools communiceren in IFCX met eigen namespaces voor het volledige gebouwmodel.", link: "Lees meer \u2192" },
+            open2d: { title: "Open 2D Studio", desc: "Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.", link: "Bekijk project \u2192" },
+            openPdf: { title: "Open PDF Studio", desc: "Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.", link: "Bekijk project \u2192" },
+            openEnergy: { title: "Open Energy Studio", desc: "Projectpagina voor open energie-analyse en gebouwprestaties.", link: "Bekijk project \u2192" },
+            openPlanner: { title: "Open Planner Studio", desc: "Open plannings- en projectco\u00f6rdinatiepagina voor bouwteams.", link: "Bekijk project \u2192" },
+            openPointcloud: { title: "Open Pointcloud Studio", desc: "Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.", link: "Bekijk project \u2192" },
+            montyIfc: { title: "Monty IFC Viewer", desc: "Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.", link: "Bekijk project \u2192" },
+            openCalc: { title: "Open Calc Studio", desc: "Open source calculatietool voor kostenramingen en begrotingen in de bouw.", link: "Bekijk project \u2192" },
+            openField: { title: "Open Field Studio", desc: "Open source veldwerk- en inspectiepagina voor bouwplaatsregistratie en kwaliteitscontrole.", link: "Bekijk project \u2192" },
+            yapp: { title: "Y-app", desc: "Open source communicatie- en samenwerkingsplatform voor bouwprojecten.", link: "Bekijk project \u2192" },
+            bimValidator: { title: "BIM Validator", desc: "Open source tool voor het valideren van IFC-modellen tegen standaarden en projecteisen.", link: "Bekijk project \u2192" },
+            openaecDocs: { title: "OpenAEC Docs", desc: "Open source document management systeem voor BIM-projecten. Beheer, deel en archiveer projectdocumenten.", link: "Bekijk project \u2192" },
+            openSpeech: { title: "Open Speech Studio", desc: "Open source spraak-naar-tekst en notulen-tool voor bouwvergaderingen en projectoverleg.", link: "Bekijk project \u2192" },
+            cloudPlatform: { title: "OpenAEC Cloud Platform", desc: "Centraal cloudplatform voor het OpenAEC-ecosysteem. Projectbeheer, gebruikersbeheer, SSO en synchronisatie tussen alle tools.", link: "Bekijk project \u2192" },
+            openHeatloss: { title: "Open Heatloss Studio", desc: "Open source warmteverliesberekening voor gebouwen. Berekent transmissie- en ventilatieverliezen per ruimte conform NEN 12831.", link: "Probeer het nu \u2192" },
+            open3d: { title: "Open 3D Viewer", desc: "Open source 3D-viewer voor het bekijken en inspecteren van BIM-modellen in de browser.", link: "Probeer het nu \u2192" },
+            openSafety: { title: "Open Safety Studio", desc: "Open source tool voor veiligheidsanalyse en risicobeoordeling op bouwprojecten.", link: "Probeer het nu \u2192" }
           }
         },
         board: {
-          label: "Word onderdeel",
-          title: "Bestuursleden gezocht",
-          description: "We zoeken gedreven mensen uit de bouwsector die willen bijdragen aan een open toekomst.",
-          cta: {
-            title: "Bouw mee aan de toekomst",
-            desc: "Het bestuur bestaat uit invloedrijke personen uit de bouwsector: architecten, aannemers, adviseurs en vertegenwoordigers van brancheorganisaties.",
-            button: "Neem contact op"
-          },
-          roles: {
-            architects: "Architecten",
-            contractors: "Aannemers",
-            consultants: "Adviseurs",
-            it: "IT-specialisten",
-            policy: "Beleidsmakers"
+          label: "Bestuur",
+          title: "Het bestuur",
+          moreLink: "Meer over het bestuur",
+          members: {
+            maarten: { name: "Maarten Vroegindeweij", role: "Voorzitter" },
+            jochem: { name: "Jochem Kolfhof", role: "Penningmeester" },
+            martjan: { name: "Martjan den Hoed", role: "Secretaris" },
+            silvia: { name: "Silvia Taurer", role: "Bestuurslid" }
           }
         },
         contact: {
           label: "Contact",
           title: "Neem contact op",
-          person: {
-            title: "Contactpersoon",
-            role: "Initiatiefnemer Open AEC Foundation",
-            addressLabel: "Adres",
-            foundingLabel: "Oprichting",
-            foundingDate: "1 maart 2026"
-          },
-          form: {
-            title: "Stuur een bericht",
-            name: "Naam",
-            namePlaceholder: "Uw naam",
-            email: "E-mail",
-            emailPlaceholder: "uw@email.nl",
-            message: "Bericht",
-            messagePlaceholder: "Ik ben geïnteresseerd in...",
-            submit: "Verstuur bericht"
-          }
+          person: { title: "Contactpersoon", role: "Initiatiefnemer Open AEC Foundation", addressLabel: "Adres", foundingLabel: "Oprichting", foundingDate: "14 april 2026" },
+          form: { title: "Stuur een bericht", name: "Naam", namePlaceholder: "Uw naam", email: "E-mail", emailPlaceholder: "uw@email.nl", message: "Bericht", messagePlaceholder: "Ik ben ge\u00efnteresseerd in...", submit: "Verstuur bericht" }
         },
         footer: {
-          description: "Open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.",
+          description: "Open source software voor de volledige bouwketen \u2014 van ontwerp tot oplevering en beheer.",
           foundation: "Stichting i.o.",
           country: "Nederland",
           foundingLabel: "Oprichting",
-          foundingDate: "1 maart 2026",
-          copyright: "© 2026 Open AEC Foundation i.o. — Open source voor een open bouwsector",
-          inspired: "Geïnspireerd door de Blender Foundation"
+          foundingDate: "14 april 2026",
+          copyright: "\u00a9 2026 Open AEC Foundation i.o. \u2014 Open source voor een open bouwsector",
+          inspired: "Ge\u00efnspireerd door de Blender Foundation"
         }
       },
       en: {
@@ -1347,171 +1267,93 @@
         nav: {
           about: "About us",
           mission: "Mission",
-          tools: "Tools",
+          tools: "Ecosystem",
           board: "Board",
           contact: "Contact",
           joinBoard: "Join the board"
         },
         hero: {
-          badge: "Foundation in formation",
-          title: "Open source for an open construction sector",
-          description: "We develop, support and promote open source software for the entire construction chain — from design to delivery and management.",
-          joinBtn: "Join the board →",
+          badge: "Goal: all construction software open source by end of 2026",
+          title: "Open source for an <span class=\"accent\">open construction sector</span>",
+          description: "We develop, support and promote open source software for the entire construction chain \u2014 from design to delivery and management.",
+          contactBtn: "Get in touch \u2192",
           readMore: "Read more",
           launchLabel: "Planned founding",
-          launchDate: "March 1, 2026"
+          launchDate: "April 14, 2026"
         },
         about: {
           label: "About us",
-          title: "Why Open AEC Foundation?",
+          title: "Why OpenAEC Foundation?",
           description: "The construction sector deserves software that is transparent, future-proof and shaped by its users.",
           features: {
-            cost: {
-              title: "Cost reduction",
-              desc: "No license costs, lower consulting fees. Building becomes more affordable for everyone."
-            },
-            vendor: {
-              title: "No vendor lock-in",
-              desc: "Open data formats ensure files remain readable forever."
-            },
-            ai: {
-              title: "AI-ready",
-              desc: "Open source code integrates better with AI and automation."
-            },
-            future: {
-              title: "Future-proof",
-              desc: "Community can continue maintaining software, independent of vendors."
-            },
-            users: {
-              title: "User-driven",
-              desc: "Development is determined by what users need, not by sales."
-            },
-            edu: {
-              title: "Education",
-              desc: "Internship and training opportunities for students worldwide."
-            }
+            cost: { title: "Cost reduction", desc: "No license costs, lower consulting fees. Building becomes more affordable for everyone." },
+            vendor: { title: "No vendor lock-in", desc: "Open data formats ensure files remain readable forever." },
+            ai: { title: "AI-ready", desc: "Open source code integrates better with AI and automation." },
+            future: { title: "Future-proof", desc: "Community can continue maintaining software, independent of vendors." },
+            users: { title: "User-driven", desc: "Development is determined by what users need, not by sales." },
+            edu: { title: "Education", desc: "Internship and training opportunities for students worldwide." }
           }
         },
         mission: {
           label: "Our mission",
-          title: "\"Developing, supporting and promoting open source software for the entire construction chain.\"",
+          title: "\"Developing, supporting and promoting <span class=\"accent\">open source software</span> for the entire construction chain.\"",
           items: {
-            dev: {
-              title: "Development",
-              desc: "Coordinating and funding open source software development"
-            },
-            support: {
-              title: "Support",
-              desc: "Managing licenses, API connections and integrations"
-            },
-            edu: {
-              title: "Education",
-              desc: "Internship and training opportunities for students"
-            },
-            advocacy: {
-              title: "Advocacy",
-              desc: "Promoting open source and open standards"
-            }
+            dev: { title: "Development", desc: "Coordinating and funding open source software development" },
+            support: { title: "Support", desc: "Managing licenses, API connections and integrations" },
+            edu: { title: "Education", desc: "Internship and training opportunities for students" },
+            advocacy: { title: "Advocacy", desc: "Promoting open source and open standards" }
           }
         },
         tools: {
-          label: "Projects and tools",
-          title: "Explore the current OpenAEC pages",
-          description: "This website now brings together the project and product pages that are already live in the OpenAEC ecosystem.",
+          label: "Ecosystem",
+          title: "The OpenAEC ecosystem",
+          description: "Our foundation's goal is to make the entire construction sector open source this year. These are the tools and projects we're building to make it happen.",
+          devNotice: "All tools are currently in active development",
           overviewBtn: "View full repository overview",
           items: {
-            openBooks: {
-              title: "OpenBooks",
-              desc: "Digital collection of historical architecture and construction books, freely accessible for designers, engineers and builders.",
-              link: "View project →"
-            },
-            buildingPy: {
-              title: "building.py",
-              desc: "Python library for building modelling, export and open BIM workflows.",
-              link: "View project →"
-            },
-            open2d: {
-              title: "Open 2D Studio",
-              desc: "Viewer and product page for 2D documents and drawings in an open design workflow.",
-              link: "View project →"
-            },
-            openPdf: {
-              title: "Open PDF Studio",
-              desc: "Open tooling around PDF-based document flows and technical publishing.",
-              link: "View project →"
-            },
-            openEnergy: {
-              title: "Open Energy Studio",
-              desc: "Project page for open energy analysis and building performance.",
-              link: "View project →"
-            },
-            openPlanner: {
-              title: "Open Planner Studio",
-              desc: "Open planning and project coordination page for construction teams.",
-              link: "View project →"
-            },
-            openPointcloud: {
-              title: "Open Pointcloud Studio",
-              desc: "Viewer and workflow page for point cloud data in renovation and analysis projects.",
-              link: "View project →"
-            },
-            montyIfc: {
-              title: "Monty IFC Viewer",
-              desc: "Lightweight IFC viewer for quick inspection of open BIM models.",
-              link: "View project →"
-            },
-            extDrawing: {
-              title: "EXT Drawing Statistics",
-              desc: "Page for drawing analysis and statistics in open engineering processes.",
-              link: "View project →"
-            }
+            ifcx: { title: "IFCX", desc: "The universal data format of the OpenAEC ecosystem. All tools communicate in IFCX with custom namespaces for the complete building model.", link: "Read more \u2192" },
+            open2d: { title: "Open 2D Studio", desc: "Viewer and product page for 2D documents and drawings in an open design workflow.", link: "View project \u2192" },
+            openPdf: { title: "Open PDF Studio", desc: "Open tooling around PDF-based document flows and technical publishing.", link: "View project \u2192" },
+            openEnergy: { title: "Open Energy Studio", desc: "Project page for open energy analysis and building performance.", link: "View project \u2192" },
+            openPlanner: { title: "Open Planner Studio", desc: "Open planning and project coordination page for construction teams.", link: "View project \u2192" },
+            openPointcloud: { title: "Open Pointcloud Studio", desc: "Viewer and workflow page for point cloud data in renovation and analysis projects.", link: "View project \u2192" },
+            montyIfc: { title: "Monty IFC Viewer", desc: "Lightweight IFC viewer for quick inspection of open BIM models.", link: "View project \u2192" },
+            openCalc: { title: "Open Calc Studio", desc: "Open source cost estimation and budgeting tool for construction.", link: "View project \u2192" },
+            openField: { title: "Open Field Studio", desc: "Open source fieldwork and inspection page for construction site registration and quality control.", link: "View project \u2192" },
+            yapp: { title: "Y-app", desc: "Open source communication and collaboration platform for construction projects.", link: "View project \u2192" },
+            bimValidator: { title: "BIM Validator", desc: "Open source tool for validating IFC models against standards and project requirements.", link: "View project \u2192" },
+            openaecDocs: { title: "OpenAEC Docs", desc: "Open source document management system for BIM projects. Manage, share and archive project documents.", link: "View project \u2192" },
+            openSpeech: { title: "Open Speech Studio", desc: "Open source speech-to-text and meeting notes tool for construction meetings and project consultations.", link: "View project \u2192" },
+            cloudPlatform: { title: "OpenAEC Cloud Platform", desc: "Central cloud platform for the OpenAEC ecosystem. Project management, user management, SSO and synchronisation between all tools.", link: "View project \u2192" },
+            openHeatloss: { title: "Open Heatloss Studio", desc: "Open source heat loss calculation for buildings. Calculates transmission and ventilation losses per room according to NEN 12831.", link: "Try it now \u2192" },
+            open3d: { title: "Open 3D Viewer", desc: "Open source 3D viewer for inspecting BIM models in the browser.", link: "Try it now \u2192" },
+            openSafety: { title: "Open Safety Studio", desc: "Open source tool for safety analysis and risk assessment on construction projects.", link: "Try it now \u2192" }
           }
         },
         board: {
-          label: "Get involved",
-          title: "Board members wanted",
-          description: "We are looking for driven people from the construction sector who want to contribute to an open future.",
-          cta: {
-            title: "Build the future together",
-            desc: "The board consists of influential people from the construction sector: architects, contractors, consultants and representatives of industry organizations.",
-            button: "Get in touch"
-          },
-          roles: {
-            architects: "Architects",
-            contractors: "Contractors",
-            consultants: "Consultants",
-            it: "IT specialists",
-            policy: "Policy makers"
+          label: "Board",
+          title: "The board",
+          moreLink: "More about the board",
+          members: {
+            maarten: { name: "Maarten Vroegindeweij", role: "Chairman" },
+            jochem: { name: "Jochem Kolfhof", role: "Treasurer" },
+            martjan: { name: "Martjan den Hoed", role: "Secretary" },
+            silvia: { name: "Silvia Taurer", role: "Board member" }
           }
         },
         contact: {
           label: "Contact",
           title: "Get in touch",
-          person: {
-            title: "Contact person",
-            role: "Founder Open AEC Foundation",
-            addressLabel: "Address",
-            foundingLabel: "Founding",
-            foundingDate: "March 1, 2026"
-          },
-          form: {
-            title: "Send a message",
-            name: "Name",
-            namePlaceholder: "Your name",
-            email: "Email",
-            emailPlaceholder: "your@email.com",
-            message: "Message",
-            messagePlaceholder: "I am interested in...",
-            submit: "Send message"
-          }
+          person: { title: "Contact person", role: "Founder Open AEC Foundation", addressLabel: "Address", foundingLabel: "Founding", foundingDate: "April 14, 2026" },
+          form: { title: "Send a message", name: "Name", namePlaceholder: "Your name", email: "Email", emailPlaceholder: "your@email.com", message: "Message", messagePlaceholder: "I am interested in...", submit: "Send message" }
         },
         footer: {
-          description: "Open source software for the entire construction chain — from design to delivery and management.",
+          description: "Open source software for the entire construction chain \u2014 from design to delivery and management.",
           foundation: "Foundation i.f.",
           country: "The Netherlands",
           foundingLabel: "Founding",
-          foundingDate: "March 1, 2026",
-          copyright: "© 2026 Open AEC Foundation i.f. — Open source for an open construction sector",
+          foundingDate: "April 14, 2026",
+          copyright: "\u00a9 2026 Open AEC Foundation i.f. \u2014 Open source for an open construction sector",
           inspired: "Inspired by the Blender Foundation"
         }
       }
@@ -1520,26 +1362,20 @@
     // i18n System
     const i18n = {
       currentLang: localStorage.getItem('lang') || 'en',
-
       init() {
         this.setLanguage(this.currentLang);
         this.bindEvents();
       },
-
       getNestedValue(obj, path) {
         return path.split('.').reduce((current, key) => current && current[key], obj);
       },
-
       setLanguage(lang) {
         this.currentLang = lang;
         localStorage.setItem('lang', lang);
         document.documentElement.lang = lang;
-
-        // Update all elements with data-i18n
         document.querySelectorAll('[data-i18n]').forEach(element => {
           const key = element.getAttribute('data-i18n');
           const translation = this.getNestedValue(translations[lang], key);
-
           if (translation) {
             const attr = element.getAttribute('data-i18n-attr');
             if (attr) {
@@ -1549,31 +1385,25 @@
             }
           }
         });
-
-        // Update title
         const titleTranslation = this.getNestedValue(translations[lang], 'meta.title');
-        if (titleTranslation) {
-          document.title = titleTranslation;
-        }
-
-        // Update language buttons
+        if (titleTranslation) document.title = titleTranslation;
         document.querySelectorAll('.lang-btn').forEach(btn => {
           btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
         });
       },
-
       bindEvents() {
         document.querySelectorAll('.lang-btn').forEach(btn => {
-          btn.addEventListener('click', () => {
-            this.setLanguage(btn.getAttribute('data-lang'));
-          });
+          btn.addEventListener('click', () => this.setLanguage(btn.getAttribute('data-lang')));
         });
       }
     };
 
-    // Initialize when DOM is ready
     document.addEventListener('DOMContentLoaded', () => {
       i18n.init();
+      // Email obfuscation
+      var u = 'info'; var d = 'open-aec.com';
+      var el = document.getElementById('email-link');
+      if (el) { el.href = 'mai' + 'lto:' + u + '@' + d; el.textContent = u + '@' + d; }
     });
 
     // Smooth scrolling
@@ -1581,9 +1411,7 @@
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
       });
     });
   </script>
