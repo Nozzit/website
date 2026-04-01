@@ -620,21 +620,24 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar" style="background: var(--deep-forge); border-bottom: 3px solid transparent; border-image: var(--gradient-accent) 1; padding: var(--sp-4) var(--sp-6); position: sticky; top: 0; z-index: 1000;">
-    <div class="nav-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-      <a href="/" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem;">Open<span style="color: var(--amber);">AEC</span></a>
-      <div style="display: flex; gap: var(--sp-6); align-items: center;">
-        <ul class="nav-links" style="display: flex; gap: var(--sp-6); list-style: none; align-items: center;">
-          <li><a href="/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Home</a></li>
-          <li><a href="#ecosysteem" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Ecosysteem</a></li>
-          <li><a href="/roadmap/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Roadmap</a></li>
-          <li><a href="/architectuur/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Architectuur</a></li>
-          <li><a href="/supporters/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Supporters</a></li>
-          <li><a href="#contact" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Contact</a></li>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+      <button class="hamburger" onclick="this.classList.toggle('active');this.parentElement.querySelector('.nav-menu').classList.toggle('active');" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/#ecosysteem" class="nav-link">Ecosysteem</a></li>
+          <li><a href="/roadmap/" class="nav-link">Roadmap</a></li>
+          <li><a href="/architectuur/" class="nav-link">Architectuur</a></li>
+          <li><a href="/supporters/" class="nav-link">Supporters</a></li>
+          <li><a href="/#contact" class="nav-link">Contact</a></li>
         </ul>
-        <div style="display: flex; align-items: center; gap: 2px; background: rgba(255,255,255,0.08); padding: 4px; border-radius: 8px;">
-          <button class="lang-btn" data-lang="nl" style="background: none; border: none; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; cursor: pointer; border-radius: 6px; color: var(--scaffold-gray); font-family: var(--font-body);">NL</button>
-          <button class="lang-btn active" data-lang="en" style="background: white; color: var(--deep-forge); border: none; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; cursor: pointer; border-radius: 6px; font-family: var(--font-body);">EN</button>
+        <div class="lang-switcher">
+          <button class="lang-btn active">NL</button>
+          <button class="lang-btn">EN</button>
         </div>
       </div>
     </div>
@@ -785,7 +788,7 @@
           <a href="/monty-ifc-viewer/" class="tool-link">Productpagina &rarr;</a>
         </article>
         <article class="tool-card">
-          <img class="tool-thumb" src="/shared/assets/screenshots/open-calc-studio.png" alt="Open Calc Studio">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-calc-studio.png" alt="Open Calc Studio" style="filter: blur(4px);">
           <div>
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.openCalc.desc">Open source calculatietool voor kostenramingen en begrotingen in de bouw.</p>
