@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roadmap 2026 — OpenAEC Foundation</title>
-  <meta name="description" content="De roadmap van het OpenAEC-ecosysteem voor 2026. Bekijk de status en planning van alle open source tools voor de bouwsector.">
+  <meta name="description" content="De roadmap van het OpenAEC-ecosysteem voor 2026. Alle tools productie-gereed voor het eind van het jaar.">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
     .page-header {
@@ -15,22 +16,11 @@
       border-image: var(--gradient-accent) 1;
     }
     .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
-    .page-header h1 {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: white;
-      letter-spacing: -0.02em;
-      margin-bottom: var(--sp-4);
-    }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.5rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
     .page-header h1 .accent { color: var(--amber); }
-    .page-header p {
-      font-size: 1.125rem;
-      color: var(--scaffold-gray);
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
+    .page-header p { font-size: 1.125rem; color: var(--scaffold-gray); max-width: 650px; margin: 0 auto; line-height: 1.6; }
+
+    .content { max-width: 800px; margin: 0 auto; }
 
     /* Status badges */
     .status {
@@ -44,7 +34,6 @@
       display: inline-block;
       white-space: nowrap;
     }
-    .status-concept { background: #F4F4F5; color: #3F3F46; }
     .status-development { background: #DBEAFE; color: #1E40AF; }
     .status-alpha { background: #FEF3C7; color: #92400E; }
     .status-beta { background: #FED7AA; color: #9A3412; }
@@ -57,10 +46,10 @@
       flex-wrap: wrap;
       gap: var(--sp-3);
       justify-content: center;
-      margin: calc(-1 * var(--sp-6)) auto var(--sp-8);
+      margin: calc(-1 * var(--sp-6)) auto var(--sp-10);
       position: relative;
       z-index: 1;
-      max-width: 800px;
+      max-width: 700px;
       background: white;
       border: 1px solid #E7E5E4;
       border-radius: var(--radius-lg);
@@ -75,119 +64,65 @@
       color: #57534E;
     }
 
-    /* Timeline */
-    .quarter-section { max-width: 900px; margin: 0 auto; }
-    .quarter-section + .quarter-section { margin-top: var(--sp-12); }
-    .quarter-header {
+    /* Goal block */
+    .goal-block {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
+      text-align: center;
+      margin-bottom: var(--sp-10);
+      border-left: 4px solid var(--amber);
+    }
+    .goal-block h2 { font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: white; margin-bottom: var(--sp-3); }
+    .goal-block p { color: var(--scaffold-gray); font-size: 1rem; line-height: 1.6; max-width: 550px; margin: 0 auto; }
+
+    /* Tool list */
+    .tool-list { list-style: none; padding: 0; margin: 0; }
+    .tool-list li {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: var(--sp-4);
-      margin-bottom: var(--sp-6);
-    }
-    .quarter-label {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--deep-forge);
-      white-space: nowrap;
-    }
-    .quarter-line {
-      flex: 1;
-      height: 2px;
-      background: var(--gradient-accent);
-      border-radius: 1px;
-    }
-    .quarter-period {
-      font-family: var(--font-code);
-      font-size: 0.75rem;
-      color: var(--scaffold-gray);
-      white-space: nowrap;
-    }
-
-    /* Roadmap cards */
-    .roadmap-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: var(--sp-4);
-    }
-    .roadmap-card {
+      padding: var(--sp-4) var(--sp-5);
       background: white;
       border: 1px solid #E7E5E4;
       border-radius: var(--radius-md);
-      padding: var(--sp-5);
-      box-shadow: var(--shadow-sm);
-      transition: box-shadow 0.15s ease, border-color 0.15s ease;
-    }
-    .roadmap-card:hover {
-      box-shadow: var(--shadow-md);
-      border-color: #D6D3D1;
-    }
-    .roadmap-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: var(--sp-2);
       margin-bottom: var(--sp-3);
+      transition: box-shadow 0.15s ease;
     }
-    .roadmap-card h3 {
+    .tool-list li:hover { box-shadow: var(--shadow-md); }
+    .tool-list .tool-name {
       font-family: var(--font-heading);
       font-weight: 700;
       font-size: 1rem;
       color: var(--deep-forge);
     }
-    .roadmap-card p {
-      font-size: 0.8125rem;
-      color: #57534E;
-      line-height: 1.5;
-      margin-bottom: var(--sp-3);
+    .tool-list .tool-desc {
+      font-size: 0.8rem;
+      color: var(--scaffold-gray);
+      margin-top: 2px;
     }
-    .roadmap-milestones {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .roadmap-milestones li {
-      font-size: 0.75rem;
-      color: #57534E;
-      padding: 3px 0;
+    .tool-list .tool-meta {
       display: flex;
       align-items: center;
-      gap: var(--sp-2);
-    }
-    .roadmap-milestones li::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--amber);
+      gap: var(--sp-3);
       flex-shrink: 0;
     }
 
-    .page-footer.footer {
-      background: var(--deep-forge);
-      border-top: 3px solid transparent;
-      border-image: var(--gradient-accent) 1;
-    }
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: var(--sp-4);
-    }
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
     .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
 
     @media (max-width: 768px) {
       .page-header h1 { font-size: 2rem; }
-      .roadmap-grid { grid-template-columns: 1fr; }
+      .tool-list li { flex-direction: column; align-items: flex-start; }
+      .tool-list .tool-meta { width: 100%; justify-content: flex-start; }
       .legend { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
-    <nav class="navbar" style="background: var(--deep-forge); border-bottom: 3px solid transparent; border-image: var(--gradient-accent) 1; padding: var(--sp-4) var(--sp-6);">
+  <nav class="navbar" style="background: var(--deep-forge); border-bottom: 3px solid transparent; border-image: var(--gradient-accent) 1; padding: var(--sp-4) var(--sp-6);">
     <div class="nav-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
       <a href="/" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem;">Open<span style="color: var(--amber);">AEC</span></a>
       <div style="display: flex; gap: var(--sp-6); align-items: center;">
@@ -210,287 +145,151 @@
   <header class="page-header">
     <p class="section-label">OpenAEC Ecosysteem</p>
     <h1>Roadmap <span class="accent">2026</span></h1>
-    <p>Ons doel: alle software in de bouw open source voor het eind van 2026. Dit is de planning waarmee we dat realiseren.</p>
+    <p>Ons doel: alle tools in het ecosysteem productie-gereed voor het eind van 2026. Hieronder de huidige status per tool.</p>
   </header>
 
   <!-- Legend -->
   <div class="legend">
-    <div class="legend-item"><span class="status status-concept">Concept</span> Idee / ontwerp</div>
-    <div class="legend-item"><span class="status status-planned">Gepland</span> Ontwikkeling ingepland</div>
-    <div class="legend-item"><span class="status status-development">In ontwikkeling</span> Actief in ontwikkeling</div>
-    <div class="legend-item"><span class="status status-alpha">Alpha</span> Eerste testversie</div>
-    <div class="legend-item"><span class="status status-beta">Beta</span> Publieke testversie</div>
-    <div class="legend-item"><span class="status status-live">Live</span> Productie-gereed</div>
+    <div class="legend-item"><span class="status status-planned">Gepland</span> Ingepland</div>
+    <div class="legend-item"><span class="status status-development">In ontwikkeling</span> Actief</div>
+    <div class="legend-item"><span class="status status-alpha">Alpha</span> Eerste versie</div>
+    <div class="legend-item"><span class="status status-beta">Beta</span> Testversie</div>
+    <div class="legend-item"><span class="status status-live">Live</span> Productie</div>
   </div>
 
   <section class="section" style="background: var(--blueprint-white);">
+    <div class="content">
 
-    <!-- Q1 -->
-    <div class="quarter-section">
-      <div class="quarter-header">
-        <span class="quarter-label">Q1</span>
-        <div class="quarter-line"></div>
-        <span class="quarter-period">jan — mrt 2026</span>
+      <div class="goal-block">
+        <h2>Doel: eind 2026 alles live</h2>
+        <p>We werken er hard aan om het volledige ecosysteem voor het einde van dit jaar productie-gereed te hebben. Alle tools open source, alle data in IFCX.</p>
       </div>
-      <div class="roadmap-grid">
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>OpenAEC Foundation</h3>
-            <span class="status status-live">Live</span>
+
+      <ul class="tool-list">
+        <li>
+          <div>
+            <div class="tool-name">IFCX</div>
+            <div class="tool-desc">Universeel dataformaat voor het volledige gebouwmodel</div>
           </div>
-          <p>Oprichting stichting, website en eerste publieke communicatie.</p>
-          <ul class="roadmap-milestones">
-            <li>Stichting oprichten</li>
-            <li>Website lanceren</li>
-            <li>LinkedIn & communicatie</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>IFCX</h3>
-            <span class="status status-development">In ontwikkeling</span>
+          <div class="tool-meta"><span class="status status-development">In ontwikkeling</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open 2D Studio</div>
+            <div class="tool-desc">Open source 2D CAD-applicatie</div>
           </div>
-          <p>Definitie van IFCX-namespaces als universeel dataformaat voor alle tools.</p>
-          <ul class="roadmap-milestones">
-            <li>Namespace-architectuur ontwerpen</li>
-            <li>Eerste namespaces definieren</li>
-            <li>Documentatie opzetten</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>BIM Validator</h3>
-            <span class="status status-beta">Beta</span>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open PDF Studio</div>
+            <div class="tool-desc">PDF-editor en annotator</div>
           </div>
-          <p>IFC-validatietool met IDS, NL BIM Basis ILS en RVB BIM Norm.</p>
-          <ul class="roadmap-milestones">
-            <li>IDS-validatie engine</li>
-            <li>NL BIM Basis ILS v2 ingebouwd</li>
-            <li>3D Viewer integratie</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Monty IFC Viewer</h3>
-            <span class="status status-beta">Beta</span>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Energy Studio</div>
+            <div class="tool-desc">Energie-analyse en gebouwprestaties</div>
           </div>
-          <p>Lichtgewicht IFC-viewer voor snelle modelinspectie in de browser.</p>
-          <ul class="roadmap-milestones">
-            <li>WebGL rendering engine</li>
-            <li>Element selectie & properties</li>
-            <li>IFC2x3 & IFC4 support</li>
-          </ul>
-        </div>
-      </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Planner Studio</div>
+            <div class="tool-desc">Projectplanning en -coordinatie</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Pointcloud Studio</div>
+            <div class="tool-desc">Pointcloud-viewer en as-built vergelijking</div>
+          </div>
+          <div class="tool-meta"><span class="status status-alpha">Alpha</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Monty IFC Viewer</div>
+            <div class="tool-desc">Lichtgewicht IFC-viewer</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Calc Studio</div>
+            <div class="tool-desc">Kostenramingen en begrotingen</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Field Studio</div>
+            <div class="tool-desc">Inspectie, oplevering en kwaliteitsborging</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Heatloss Studio</div>
+            <div class="tool-desc">Warmteverliesberekening conform NEN 12831</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Open Speech Studio</div>
+            <div class="tool-desc">Spraakherkenning en notulen met lokale AI</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">Y-app</div>
+            <div class="tool-desc">Communicatie- en samenwerkingsplatform</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">BIM Validator</div>
+            <div class="tool-desc">IFC-validatie tegen IDS, NL BIM Basis ILS, RVB BIM Norm</div>
+          </div>
+          <div class="tool-meta"><span class="status status-beta">Beta</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">OpenAEC Docs</div>
+            <div class="tool-desc">BIM document management platform</div>
+          </div>
+          <div class="tool-meta"><span class="status status-development">In ontwikkeling</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">OpenAEC Cloud Platform</div>
+            <div class="tool-desc">Centraal platform met SSO en synchronisatie</div>
+          </div>
+          <div class="tool-meta"><span class="status status-development">In ontwikkeling</span></div>
+        </li>
+        <li>
+          <div>
+            <div class="tool-name">BIM Modeller</div>
+            <div class="tool-desc">Open source BIM-modelleertool (start juni 2026)</div>
+          </div>
+          <div class="tool-meta"><span class="status status-planned">Gepland</span></div>
+        </li>
+      </ul>
+
     </div>
-
-    <!-- Q2 -->
-    <div class="quarter-section">
-      <div class="quarter-header">
-        <span class="quarter-label">Q2</span>
-        <div class="quarter-line"></div>
-        <span class="quarter-period">apr — jun 2026</span>
-      </div>
-      <div class="roadmap-grid">
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Calc Studio</h3>
-            <span class="status status-alpha">Alpha</span>
-          </div>
-          <p>Open source calculatietool voor kostenramingen en begrotingen.</p>
-          <ul class="roadmap-milestones">
-            <li>STABU/RAW integratie</li>
-            <li>IFCX hoeveelheden koppeling</li>
-            <li>Offerte-export</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open 2D Studio</h3>
-            <span class="status status-development">In ontwikkeling</span>
-          </div>
-          <p>Cross-platform viewer voor 2D-documenten en technische tekeningen.</p>
-          <ul class="roadmap-milestones">
-            <li>PDF/DXF rendering</li>
-            <li>Annotatie-tools</li>
-            <li>IFCX 2D-export</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open PDF Studio</h3>
-            <span class="status status-development">In ontwikkeling</span>
-          </div>
-          <p>Open source PDF-tooling voor technische documentstromen.</p>
-          <ul class="roadmap-milestones">
-            <li>PDF samenstellen & splitsen</li>
-            <li>Stempels & watermerken</li>
-            <li>Rapportgeneratie uit IFCX</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>BIM Validator</h3>
-            <span class="status status-live">Live</span>
-          </div>
-          <p>Productierelease met BCF-export en API.</p>
-          <ul class="roadmap-milestones">
-            <li>BCF 2.1 export</li>
-            <li>REST API & CLI</li>
-            <li>Docker deployment</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>BIM Modeller</h3>
-            <span class="status status-planned">Gepland</span>
-          </div>
-          <p>Open source BIM-modelleertool. Start ontwikkeling juni 2026.</p>
-          <ul class="roadmap-milestones">
-            <li>Architectuur & ontwerp</li>
-            <li>Core IFC-modellering</li>
-            <li>Integratie met Blender/Bonsai</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Q3 -->
-    <div class="quarter-section">
-      <div class="quarter-header">
-        <span class="quarter-label">Q3</span>
-        <div class="quarter-line"></div>
-        <span class="quarter-period">jul — sep 2026</span>
-      </div>
-      <div class="roadmap-grid">
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Energy Studio</h3>
-            <span class="status status-alpha">Alpha</span>
-          </div>
-          <p>Energie-analyse en gebouwprestatieberekeningen.</p>
-          <ul class="roadmap-milestones">
-            <li>BENG-berekeningen</li>
-            <li>U-waarde calculator</li>
-            <li>IFCX energy namespace</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Planner Studio</h3>
-            <span class="status status-development">In ontwikkeling</span>
-          </div>
-          <p>Projectplanning en -coordinatie voor bouwteams.</p>
-          <ul class="roadmap-milestones">
-            <li>Gantt-weergave</li>
-            <li>4D koppeling met IFCX</li>
-            <li>Team-samenwerking</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Field Studio</h3>
-            <span class="status status-beta">Beta</span>
-          </div>
-          <p>Bouwplaatsregistratie, inspecties en kwaliteitscontrole.</p>
-          <ul class="roadmap-milestones">
-            <li>Mobiele inspectie-app</li>
-            <li>Foto's koppelen aan IFCX-elementen</li>
-            <li>Digitale handtekeningen</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Pointcloud Studio</h3>
-            <span class="status status-development">In ontwikkeling</span>
-          </div>
-          <p>Pointcloud-viewer en as-built vergelijking.</p>
-          <ul class="roadmap-milestones">
-            <li>LAS/LAZ import</li>
-            <li>IFCX-model overlay</li>
-            <li>Afwijkingsdetectie</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Q4 -->
-    <div class="quarter-section">
-      <div class="quarter-header">
-        <span class="quarter-label">Q4</span>
-        <div class="quarter-line"></div>
-        <span class="quarter-period">okt — dec 2026</span>
-      </div>
-      <div class="roadmap-grid">
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>IFCX Compleet</h3>
-            <span class="status status-live">Live</span>
-          </div>
-          <p>Alle namespaces voltooid voor het volledige gebouwmodel.</p>
-          <ul class="roadmap-milestones">
-            <li>Alle disciplines gedekt</li>
-            <li>Publieke documentatie</li>
-            <li>buildingSMART afstemming</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Calc Studio</h3>
-            <span class="status status-live">Live</span>
-          </div>
-          <p>Productierelease met volledige IFCX-integratie.</p>
-          <ul class="roadmap-milestones">
-            <li>Volledige STABU/RAW library</li>
-            <li>Multi-project beheer</li>
-            <li>Offerte & factuurkoppeling</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Open Energy Studio</h3>
-            <span class="status status-beta">Beta</span>
-          </div>
-          <p>Publieke testversie met BENG en NTA 8800.</p>
-          <ul class="roadmap-milestones">
-            <li>NTA 8800 berekeningen</li>
-            <li>Maatwerkadvies-export</li>
-            <li>Rapportgeneratie</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>BIM Modeller</h3>
-            <span class="status status-alpha">Alpha</span>
-          </div>
-          <p>Afronding eerste versie open source BIM-modelleertool.</p>
-          <ul class="roadmap-milestones">
-            <li>IFC-authoring workflow</li>
-            <li>IFCX-native opslag</li>
-            <li>Publicatie eerste release</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="roadmap-card-header">
-            <h3>Ecosysteem integratie</h3>
-            <span class="status status-planned">Gepland</span>
-          </div>
-          <p>Alle tools verbonden via IFCX als een samenhangend ecosysteem.</p>
-          <ul class="roadmap-milestones">
-            <li>End-to-end IFCX workflow</li>
-            <li>Centraal projectdashboard</li>
-            <li>SSO & multi-tenant</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
   </section>
 
   <footer class="footer page-footer" style="padding: var(--sp-6);">
     <div class="footer-inner">
-      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
-      <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      <a href="/" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 1.125rem;">Open<span style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      </div>
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>

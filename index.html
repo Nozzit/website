@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="meta.title">Open AEC Foundation - Open source voor een open bouwsector</title>
   <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige bouwketen.">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
     /* ── Page-specific overrides on top of shared/style.css ── */
@@ -619,27 +620,22 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar homepage-nav">
-    <div class="nav-container">
-      <a href="#hero" class="nav-brand">
-        Open<span class="accent">AEC</span>
-      </a>
-      <div class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="#ecosysteem" class="nav-link" data-i18n="nav.tools">Ecosysteem</a></li>
-          <li><a href="/roadmap/" class="nav-link">Roadmap</a></li>
-          <li><a href="/architectuur/" class="nav-link">Architectuur</a></li>
-          <li><a href="/supporters/" class="nav-link">Supporters</a></li>
-          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+  <nav class="navbar" style="background: var(--deep-forge); border-bottom: 3px solid transparent; border-image: var(--gradient-accent) 1; padding: var(--sp-4) var(--sp-6); position: sticky; top: 0; z-index: 1000;">
+    <div class="nav-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+      <a href="/" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem;">Open<span style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-6); align-items: center;">
+        <ul class="nav-links" style="display: flex; gap: var(--sp-6); list-style: none; align-items: center;">
+          <li><a href="/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Home</a></li>
+          <li><a href="#ecosysteem" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Ecosysteem</a></li>
+          <li><a href="/roadmap/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Roadmap</a></li>
+          <li><a href="/architectuur/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Architectuur</a></li>
+          <li><a href="/supporters/" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Supporters</a></li>
+          <li><a href="#contact" style="color: var(--scaffold-gray); font-size: 0.875rem; font-weight: 500; text-decoration: none;">Contact</a></li>
         </ul>
-        <div class="lang-switcher desktop-only">
-          <button class="lang-btn" data-lang="nl">NL</button>
-          <button class="lang-btn active" data-lang="en">EN</button>
+        <div style="display: flex; align-items: center; gap: 2px; background: rgba(255,255,255,0.08); padding: 4px; border-radius: 8px;">
+          <button class="lang-btn" data-lang="nl" style="background: none; border: none; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; cursor: pointer; border-radius: 6px; color: var(--scaffold-gray); font-family: var(--font-body);">NL</button>
+          <button class="lang-btn active" data-lang="en" style="background: white; color: var(--deep-forge); border: none; padding: 6px 12px; font-size: 0.75rem; font-weight: 600; cursor: pointer; border-radius: 6px; font-family: var(--font-body);">EN</button>
         </div>
-      </div>
-      <div class="lang-switcher mobile-only">
-        <button class="lang-btn" data-lang="nl">NL</button>
-        <button class="lang-btn active" data-lang="en">EN</button>
       </div>
     </div>
   </nav>
@@ -689,104 +685,6 @@
         <a href="#over-ons" class="btn btn-ghost btn-lg" data-i18n="hero.readMore">Lees meer</a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- Over Ons Section -->
-  <section class="section section-alt" id="over-ons">
-    <div class="container">
-      <div class="text-center">
-        <p class="section-label" data-i18n="about.label">Over ons</p>
-        <h2 class="section-title" data-i18n="about.title">Waarom OpenAEC Foundation?</h2>
-        <p class="section-desc" data-i18n="about.description">De bouwsector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M24 4v4M24 40v4M4 24h4M40 24h4"/>
-            <circle cx="24" cy="24" r="12"/>
-            <path d="M18 24l3 3 6-6"/>
-          </svg>
-          <h3 data-i18n="about.features.cost.title">Kostenreductie</h3>
-          <p data-i18n="about.features.cost.desc">Geen licentiekosten, lagere advieskosten. Bouwen wordt voordeliger voor iedereen.</p>
-        </div>
-        <div class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="14" cy="14" r="4"/>
-            <circle cx="34" cy="14" r="4"/>
-            <circle cx="14" cy="34" r="4"/>
-            <circle cx="34" cy="34" r="4"/>
-            <path d="M18 14h12M14 18v12M34 18v12M18 34h12"/>
-          </svg>
-          <h3 data-i18n="about.features.ai.title">AI-gereed</h3>
-          <p data-i18n="about.features.ai.desc">Open source code is beter te integreren met AI en automatisering.</p>
-        </div>
-        <div class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 40V20l16-12 16 12v20"/>
-            <path d="M18 40V28h12v12"/>
-            <path d="M2 44h44"/>
-          </svg>
-          <h3 data-i18n="about.features.future.title">Toekomstbestendig</h3>
-          <p data-i18n="about.features.future.desc">Community kan software blijven onderhouden, onafhankelijk van leveranciers.</p>
-        </div>
-        <div class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 44V12l8-8h16l8 8v32"/>
-            <path d="M16 4v8H8"/>
-            <path d="M16 24h16M16 32h10"/>
-            <path d="M32 4v8h8"/>
-          </svg>
-          <h3 data-i18n="about.features.edu.title">Educatie</h3>
-          <p data-i18n="about.features.edu.desc">Stage- en opleidingsmogelijkheden voor studenten wereldwijd.</p>
-        </div>
-        <div class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="6" y="6" width="36" height="36" rx="4"/>
-            <path d="M6 18h36M18 6v36"/>
-            <circle cx="32" cy="32" r="4"/>
-          </svg>
-          <h3 data-i18n="about.features.formats.title">Open formaten</h3>
-          <p data-i18n="about.features.formats.desc">Alle data in open standaarden zoals IFC en IFCX. Geen proprietary formaten, geen afhankelijkheid.</p>
-        </div>
-        <div class="feature-card">
-          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="24" cy="24" r="16"/>
-            <path d="M24 14v10l7 7"/>
-            <path d="M16 8l-2-4M32 8l2-4"/>
-          </svg>
-          <h3 data-i18n="about.features.ux.title">Gebruiksvriendelijkheid</h3>
-          <p data-i18n="about.features.ux.desc">100% focus op gebruiksvriendelijkheid. Software die werkt zoals je verwacht, zonder handleiding.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Missie Section -->
-  <section class="section missie" id="missie">
-    <div class="container text-center">
-      <p class="section-label" data-i18n="mission.label">Onze missie</p>
-      <h2 class="section-title" data-i18n="mission.title">"Het ontwikkelen, ondersteunen en promoten van <span class="accent">open source software</span> voor de volledige bouwketen."</h2>
-
-      <div class="missie-grid">
-        <div class="missie-item">
-          <h3 data-i18n="mission.items.dev.title">Ontwikkeling</h3>
-          <p data-i18n="mission.items.dev.desc">Coordineren en financieren van open source softwareontwikkeling</p>
-        </div>
-        <div class="missie-item">
-          <h3 data-i18n="mission.items.support.title">Ondersteuning</h3>
-          <p data-i18n="mission.items.support.desc">Beheren van licenties, API-koppelingen en integraties</p>
-        </div>
-        <div class="missie-item">
-          <h3 data-i18n="mission.items.edu.title">Educatie</h3>
-          <p data-i18n="mission.items.edu.desc">Stage- en opleidingsmogelijkheden voor studenten</p>
-        </div>
-        <div class="missie-item">
-          <h3 data-i18n="mission.items.advocacy.title">Advocacy</h3>
-          <p data-i18n="mission.items.advocacy.desc">Promoten van open source en open standaarden</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -879,7 +777,7 @@
           </div>
         </article>
         <article class="tool-card">
-          <img class="tool-thumb" src="/shared/assets/screenshots/monty-ifc-viewer.jpeg" alt="Monty IFC Viewer">
+          <img class="tool-thumb" src="/shared/assets/screenshots/monty-ifc-viewer.png" alt="Monty IFC Viewer">
           <div>
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.montyIfc.title" style="margin-bottom:0;">Monty IFC Viewer</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
             <p data-i18n="tools.items.montyIfc.desc">Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.</p>
@@ -980,6 +878,75 @@
         <a href="/offerte/" class="btn btn-primary btn-lg" data-i18n="tools.quoteBtn">Offerte aanvragen</a>
         <a href="/roadmap/" class="btn btn-secondary btn-lg" data-i18n="tools.roadmapBtn">Roadmap 2026</a>
         <a href="/architectuur/" class="btn btn-secondary btn-lg" data-i18n="tools.archBtn">Software architectuur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waarom OpenAEC Section -->
+  <section class="section section-alt" id="over-ons">
+    <div class="container">
+      <div class="text-center">
+        <p class="section-label" data-i18n="about.label">Over ons</p>
+        <h2 class="section-title" data-i18n="about.title">Waarom OpenAEC Foundation?</h2>
+        <p class="section-desc" data-i18n="about.description">De bouwsector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4v4M24 40v4M4 24h4M40 24h4"/><circle cx="24" cy="24" r="12"/><path d="M18 24l3 3 6-6"/></svg>
+          <h3 data-i18n="about.features.cost.title">Kostenreductie</h3>
+          <p data-i18n="about.features.cost.desc">Geen licentiekosten, lagere advieskosten. Bouwen wordt voordeliger voor iedereen.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="4"/><circle cx="34" cy="14" r="4"/><circle cx="14" cy="34" r="4"/><circle cx="34" cy="34" r="4"/><path d="M18 14h12M14 18v12M34 18v12M18 34h12"/></svg>
+          <h3 data-i18n="about.features.ai.title">AI-gereed</h3>
+          <p data-i18n="about.features.ai.desc">Open source code is beter te integreren met AI en automatisering.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40V20l16-12 16 12v20"/><path d="M18 40V28h12v12"/><path d="M2 44h44"/></svg>
+          <h3 data-i18n="about.features.future.title">Toekomstbestendig</h3>
+          <p data-i18n="about.features.future.desc">Community kan software blijven onderhouden, onafhankelijk van leveranciers.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 44V12l8-8h16l8 8v32"/><path d="M16 4v8H8"/><path d="M16 24h16M16 32h10"/><path d="M32 4v8h8"/></svg>
+          <h3 data-i18n="about.features.edu.title">Educatie</h3>
+          <p data-i18n="about.features.edu.desc">Stage- en opleidingsmogelijkheden voor studenten wereldwijd.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 18h36M18 6v36"/><circle cx="32" cy="32" r="4"/></svg>
+          <h3 data-i18n="about.features.formats.title">Open formaten</h3>
+          <p data-i18n="about.features.formats.desc">Alle data in open standaarden zoals IFC en IFCX. Geen proprietary formaten, geen afhankelijkheid.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 7"/><path d="M16 8l-2-4M32 8l2-4"/></svg>
+          <h3 data-i18n="about.features.ux.title">Gebruiksvriendelijkheid</h3>
+          <p data-i18n="about.features.ux.desc">100% focus op gebruiksvriendelijkheid. Software die werkt zoals je verwacht, zonder handleiding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missie Section -->
+  <section class="section missie" id="missie">
+    <div class="container text-center">
+      <p class="section-label" data-i18n="mission.label">Onze missie</p>
+      <h2 class="section-title" data-i18n="mission.title">"Het ontwikkelen, ondersteunen en promoten van <span class="accent">open source software</span> voor de volledige bouwketen."</h2>
+      <div class="missie-grid">
+        <div class="missie-item">
+          <h3 data-i18n="mission.items.dev.title">Ontwikkeling</h3>
+          <p data-i18n="mission.items.dev.desc">Coordineren en financieren van open source softwareontwikkeling</p>
+        </div>
+        <div class="missie-item">
+          <h3 data-i18n="mission.items.support.title">Ondersteuning</h3>
+          <p data-i18n="mission.items.support.desc">Beheren van licenties, API-koppelingen en integraties</p>
+        </div>
+        <div class="missie-item">
+          <h3 data-i18n="mission.items.edu.title">Educatie</h3>
+          <p data-i18n="mission.items.edu.desc">Stage- en opleidingsmogelijkheden voor studenten</p>
+        </div>
+        <div class="missie-item">
+          <h3 data-i18n="mission.items.advocacy.title">Advocacy</h3>
+          <p data-i18n="mission.items.advocacy.desc">Promoten van open source en open standaarden</p>
+        </div>
       </div>
     </div>
   </section>

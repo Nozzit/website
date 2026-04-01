@@ -758,3 +758,12 @@ Files updated:
 </task-notification>
 Full transcript available at: C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a427cc52c1d31dd78.output
 
+### 2026-04-01 16:14
+Roadmap vereenvoudigen . Een lijst met de tools en aagneven dat we eind van het jaar alles geregeld willen hebben
+
+### 2026-04-01 16:22
+Stel de fav icon in. Ik zie nu geen icoontje in de brwoser
+
+### 2026-04-01 16:27
+push naar github
+
