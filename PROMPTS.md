@@ -909,3 +909,30 @@ De gast van Python
 Gast van Blender
 Thomas Krijnen van IfcOpenShell
 
+### 2026-04-01 19:54
+Ik zie de credits niet
+
+### 2026-04-01 19:55
+Bij de credits: Zoek het internet af naar foto's
+
+### 2026-04-01 20:07
+NL en EN allbei ok?
+
+### 2026-04-01 21:10
+Voorzie dit van een update
+
+### 2026-04-01 21:16
+Maak iets dat die feedback bij Open Feedback Studio komt.
+
+### 2026-04-01 21:40
+Maak nog een Call to Action aan: We zijn in de ontwikkelfase. Ben jij een early adatoper een wil je ook staan aan de basis van de toekomst van de IT in de Nederlandse Bouw? Doe dan mee als vrijwilliger. Test de tools en voorzie ons van Feedback, Github Issues en veel ideeen!
+
+### 2026-04-01 21:44
+Staat de website nu standaard op NL?
+
+### 2026-04-01 21:45
+feedback werkt nog niet. Maar het werkt wel bij de andere tools van ons. Dus volgens mij moet je beter kijken hoe je dit werkend kunt krijgen.
+
+### 2026-04-01 23:05
+open-feedback-studio.open-aec.com dat hoeft niet m.i.
+
