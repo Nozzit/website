@@ -888,3 +888,24 @@ NL/EN werkt nog niet goed.
 ### 2026-04-01 19:32
 Voeg ook een feedback knop bovenin de pagina toe. die naar Open Feedback Studio gaat. Net als bij de andere tools.
 
+### 2026-04-01 19:39
+NOem hier dat het gebaseerd is op NextCloud: https://open-aec.com/openaec-docs/
+
+### 2026-04-01 19:41
+Maak een extra pagina aan: Credits. Dat is een eerbetoon aan de pioniers in de Open Source. Voordat het in was, voordat er Claude was. Toen Microsoft Linux nog een kankergezwel noemde. Toe OpenGL nog niet gewonnen had.
+
+Linux
+Ubuntu
+Libre Office
+ERPNext
+Blender
+IfcOpenShell
+That Open Company
+Python
+
+Personen met foto
+Die gast van Linux
+De gast van Python
+Gast van Blender
+Thomas Krijnen van IfcOpenShell
+

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits — OpenAEC Foundation</title>
+  <meta name="description" content="Een eerbetoon aan de pioniers van open source. De mensen en projecten waarop OpenAEC is gebouwd.">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    /* Hero */
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-24) var(--sp-6) var(--sp-16);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-6);
+    }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p {
+      font-size: 1.125rem;
+      color: var(--scaffold-gray);
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .content { max-width: 1100px; margin: 0 auto; }
+
+    /* Section titles */
+    .section-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: var(--deep-forge);
+      margin-bottom: var(--sp-2);
+    }
+    .section-title .accent { color: var(--amber); }
+    .section-subtitle {
+      color: #57534E;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: var(--sp-8);
+      max-width: 700px;
+    }
+    .dark-section .section-title { color: white; }
+    .dark-section .section-subtitle { color: var(--scaffold-gray); }
+
+    /* Stats grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--sp-4);
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      text-align: center;
+      transition: border-color 0.2s ease;
+    }
+    .stat-card:hover { border-color: var(--amber); }
+    .stat-name {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: white;
+      margin-bottom: var(--sp-2);
+    }
+    .stat-number {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--amber);
+      margin-bottom: var(--sp-2);
+    }
+    .stat-desc {
+      font-size: 0.875rem;
+      color: var(--scaffold-gray);
+      line-height: 1.5;
+    }
+
+    /* Pioneer cards */
+    .pioneer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: var(--sp-6);
+    }
+    .pioneer-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.15s ease, border-color 0.15s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .pioneer-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: #D6D3D1;
+    }
+    .pioneer-top {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-4);
+      margin-bottom: var(--sp-4);
+    }
+    .pioneer-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: white;
+      flex-shrink: 0;
+    }
+    .pioneer-info h3 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.0625rem;
+      color: var(--deep-forge);
+      margin-bottom: 2px;
+    }
+    .pioneer-info .pioneer-flag { margin-left: 4px; }
+    .pioneer-info .pioneer-role {
+      font-size: 0.8125rem;
+      color: var(--scaffold-gray);
+      line-height: 1.4;
+    }
+    .pioneer-desc {
+      font-size: 0.875rem;
+      color: #57534E;
+      line-height: 1.6;
+      margin-bottom: var(--sp-3);
+      flex: 1;
+    }
+    .pioneer-quote {
+      font-style: italic;
+      font-size: 0.8125rem;
+      color: var(--amber);
+      line-height: 1.5;
+      margin-bottom: var(--sp-4);
+      padding-left: var(--sp-4);
+      border-left: 2px solid var(--amber);
+    }
+    .pioneer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--amber);
+      text-decoration: none;
+    }
+    .pioneer-link:hover { color: var(--signal-orange); }
+    .pioneer-link svg { flex-shrink: 0; }
+
+    /* Project cards */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--sp-4);
+    }
+    .project-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-5);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.15s ease;
+    }
+    .project-card:hover { box-shadow: var(--shadow-md); }
+    .project-card h4 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--deep-forge);
+      margin-bottom: var(--sp-2);
+    }
+    .project-card p {
+      font-size: 0.8125rem;
+      color: #57534E;
+      line-height: 1.5;
+    }
+
+    /* Closing quote */
+    .closing-quote {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6);
+      text-align: center;
+    }
+    .closing-quote blockquote {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .closing-quote blockquote::before {
+      content: "\201C";
+      font-size: 4rem;
+      color: var(--amber);
+      position: absolute;
+      top: -2rem;
+      left: -1rem;
+      line-height: 1;
+    }
+
+    /* Footer */
+    .page-footer.footer {
+      background: var(--deep-forge);
+      border-top: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+    }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 2rem; }
+      .page-header { padding: var(--sp-16) var(--sp-4) var(--sp-10); }
+      .stats-grid { grid-template-columns: 1fr; }
+      .pioneer-grid { grid-template-columns: 1fr; }
+      .project-grid { grid-template-columns: 1fr; }
+      .closing-quote blockquote { font-size: 1.125rem; }
+      .closing-quote blockquote::before { left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+      <button class="hamburger" onclick="this.classList.toggle('active');this.parentElement.querySelector('.nav-menu').classList.toggle('active');" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/#ecosysteem" class="nav-link">Ecosysteem</a></li>
+          <li><a href="/roadmap/" class="nav-link">Roadmap</a></li>
+          <li><a href="/architectuur/" class="nav-link">Architectuur</a></li>
+          <li><a href="/supporters/" class="nav-link">Supporters</a></li>
+          <li><a href="/credits/" class="nav-link">Credits</a></li>
+          <li><a href="/#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="https://open-feedback-studio.open-aec.com" target="_blank" rel="noopener" class="nav-feedback-btn">Feedback</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="page-header">
+    <p class="section-label">OpenAEC Foundation</p>
+    <h1><span class="accent">Credits</span></h1>
+    <p>Een eerbetoon aan de pioniers van open source. Voordat het 'in' was. Voordat er AI was. Toen Microsoft Linux nog een 'kankergezwel' noemde. Zij bouwden de fundamenten waarop wij verder bouwen.</p>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="section dark-section" style="background: var(--deep-forge);">
+    <div class="content">
+      <h2 class="section-title">Open Source <span class="accent">wint</span></h2>
+      <p class="section-subtitle">De cijfers liegen niet. Open source is geen alternatief meer — het is de standaard.</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-name">Blender</div>
+          <div class="stat-number">300K+</div>
+          <div class="stat-desc">Downloads per week. Van niche-tool naar industrie-standaard. Gebruikt door Netflix, NASA, Epic Games.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-name">Linux</div>
+          <div class="stat-number">96%</div>
+          <div class="stat-desc">Van alle servers draait Linux. 85% van alle smartphones (Android), alle top-500 supercomputers.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-name">Python</div>
+          <div class="stat-number">#1</div>
+          <div class="stat-desc">Programmeertaal ter wereld (TIOBE 2026). Van scripting tot AI, van web tot wetenschap.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-name">LibreOffice</div>
+          <div class="stat-number">200M+</div>
+          <div class="stat-desc">Gebruikers wereldwijd. Het vrije alternatief voor kantoorapplicaties.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-name">ERPNext</div>
+          <div class="stat-number">170+</div>
+          <div class="stat-desc">Landen waar ERPNext wordt gebruikt. Open source ERP dat SAP en Oracle uitdaagt.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-name">Nextcloud</div>
+          <div class="stat-number">50M+</div>
+          <div class="stat-desc">Gebruikers. Het open source alternatief voor Dropbox, Google Drive en OneDrive.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pioneers Section -->
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="content">
+      <h2 class="section-title">Pioniers — <span class="accent">Personen</span></h2>
+      <p class="section-subtitle">De mensen die de moed hadden om anders te denken. Die hun werk weggaven zodat de wereld er beter van werd.</p>
+      <div class="pioneer-grid">
+
+        <!-- Linus Torvalds -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #1a1a2e;">LT</div>
+            <div class="pioneer-info">
+              <h3>Linus Torvalds <span class="pioneer-flag">&#x1F1EB;&#x1F1EE;</span></h3>
+              <div class="pioneer-role">Creator Linux kernel &amp; Git</div>
+            </div>
+          </div>
+          <div class="pioneer-quote">"Talk is cheap. Show me the code."</div>
+          <p class="pioneer-desc">De man die het besturingssysteem van de wereld bouwde als hobbyproject, en later Git creeerde om de samenwerking van duizenden developers mogelijk te maken.</p>
+        </div>
+
+        <!-- Guido van Rossum -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #306998;">GR</div>
+            <div class="pioneer-info">
+              <h3>Guido van Rossum <span class="pioneer-flag">&#x1F1F3;&#x1F1F1;</span></h3>
+              <div class="pioneer-role">Creator Python</div>
+            </div>
+          </div>
+          <div class="pioneer-quote">"Beautiful is better than ugly. Simple is better than complex."</div>
+          <p class="pioneer-desc">De Nederlander die de meest populaire programmeertaal ter wereld creeerde. Python is de taal van AI, wetenschap en het web.</p>
+          <a href="https://www.linkedin.com/in/guido-van-rossum-4a0756/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Ton Roosendaal -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #E87D0D;">TR</div>
+            <div class="pioneer-info">
+              <h3>Ton Roosendaal <span class="pioneer-flag">&#x1F1F3;&#x1F1F1;</span></h3>
+              <div class="pioneer-role">Creator Blender, Blender Foundation</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">In 2002 crowdfunding van &euro;100.000 in 7 weken om Blender vrij te kopen van het failliete NaN Technologies. Vandaag is Blender de industrie-standaard voor 3D creatie.</p>
+          <a href="https://www.linkedin.com/in/tonroosendaal/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Thomas Krijnen -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #2D5F2D;">TK</div>
+            <div class="pioneer-info">
+              <h3>Thomas Krijnen <span class="pioneer-flag">&#x1F1F3;&#x1F1F1;</span></h3>
+              <div class="pioneer-role">Creator IfcOpenShell, AECgeeks</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">De man achter de open BIM revolutie. IfcOpenShell is de ruggengraat van open source BIM-tools en maakt het mogelijk om IFC-bestanden te lezen, schrijven en manipuleren.</p>
+          <a href="https://www.linkedin.com/in/thomas-krijnen/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Dion Moult -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #4A90D9;">DM</div>
+            <div class="pioneer-info">
+              <h3>Dion Moult <span class="pioneer-flag">&#x1F1E6;&#x1F1FA;</span></h3>
+              <div class="pioneer-role">Lead developer Bonsai (BlenderBIM), IfcOpenShell contributor</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">Pionier in open source BIM tools. Bonsai maakt het mogelijk om volwaardige BIM-modellen te maken in Blender, volledig open source.</p>
+          <a href="https://www.linkedin.com/in/dionmoult/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Mark Shuttleworth -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #E95420;">MS</div>
+            <div class="pioneer-info">
+              <h3>Mark Shuttleworth <span class="pioneer-flag">&#x1F1FF;&#x1F1E6;</span></h3>
+              <div class="pioneer-role">Founder Ubuntu/Canonical</div>
+            </div>
+          </div>
+          <div class="pioneer-quote">"Computer is not a device anymore. It is an extension of your mind."</div>
+          <p class="pioneer-desc">Eerste Afrikaan in de ruimte. Stichtte Canonical en maakte Linux toegankelijk voor iedereen met Ubuntu.</p>
+          <a href="https://www.linkedin.com/in/mark-shuttleworth-7aa3285/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Rushabh Mehta -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #0089FF;">RM</div>
+            <div class="pioneer-info">
+              <h3>Rushabh Mehta <span class="pioneer-flag">&#x1F1EE;&#x1F1F3;</span></h3>
+              <div class="pioneer-role">Founder ERPNext/Frappe</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">Open source ERP dat SAP uitdaagt. Frappe Framework en ERPNext bewijzen dat enterprise software niet duur en gesloten hoeft te zijn.</p>
+          <a href="https://www.linkedin.com/in/rushabh-mehta-frappe/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Antonio Gonzalez Viegas -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #6528F7;">AV</div>
+            <div class="pioneer-info">
+              <h3>Antonio Gonz&aacute;lez Viegas <span class="pioneer-flag">&#x1F1EA;&#x1F1F8;</span></h3>
+              <div class="pioneer-role">Founder That Open Company (IFC.js)</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">"An architect who started coding" — bracht open BIM naar het web. That Open Company maakt het mogelijk om IFC-modellen direct in de browser te bekijken en bewerken.</p>
+          <a href="https://www.linkedin.com/in/agviegas/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Richard Stallman -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #A5170A;">RS</div>
+            <div class="pioneer-info">
+              <h3>Richard Stallman <span class="pioneer-flag">&#x1F1FA;&#x1F1F8;</span></h3>
+              <div class="pioneer-role">Founder GNU Project &amp; Free Software Foundation (1983)</div>
+            </div>
+          </div>
+          <div class="pioneer-quote">"Free software is a matter of liberty, not price."</div>
+          <p class="pioneer-desc">De godfather van vrije software. Zonder GNU en de GPL was er geen open source beweging zoals we die kennen.</p>
+        </div>
+
+        <!-- Dennis Ritchie -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #555770;">DR</div>
+            <div class="pioneer-info">
+              <h3>Dennis Ritchie <span class="pioneer-flag">&#x1F1FA;&#x1F1F8;</span> <span style="font-size: 0.75rem; color: var(--scaffold-gray);">&dagger;2011</span></h3>
+              <div class="pioneer-role">Creator C &amp; mede-creator UNIX</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">Zonder C en UNIX was er geen Linux, geen Python, geen internet zoals we het kennen. De stille held wiens werk letterlijk alles mogelijk maakte.</p>
+        </div>
+
+        <!-- Graydon Hoare -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #B7410E;">GH</div>
+            <div class="pioneer-info">
+              <h3>Graydon Hoare <span class="pioneer-flag">&#x1F1E8;&#x1F1E6;</span></h3>
+              <div class="pioneer-role">Creator Rust programmeertaal (bij Mozilla)</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">Rust: de taal waar OpenAEC op gebouwd is. Veiligheid, snelheid en betrouwbaarheid zonder concessies.</p>
+        </div>
+
+        <!-- Solomon Hykes -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #0db7ed;">SH</div>
+            <div class="pioneer-info">
+              <h3>Solomon Hykes <span class="pioneer-flag">&#x1F1EB;&#x1F1F7;</span></h3>
+              <div class="pioneer-role">Creator Docker</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">Revolutioneerde software deployment met containers. Docker maakte het mogelijk om software overal identiek te draaien.</p>
+        </div>
+
+        <!-- Frank Karlitschek -->
+        <div class="pioneer-card">
+          <div class="pioneer-top">
+            <div class="pioneer-avatar" style="background: #0082C9;">FK</div>
+            <div class="pioneer-info">
+              <h3>Frank Karlitschek <span class="pioneer-flag">&#x1F1E9;&#x1F1EA;</span></h3>
+              <div class="pioneer-role">Founder Nextcloud</div>
+            </div>
+          </div>
+          <p class="pioneer-desc">Open source alternatief voor cloud storage. Nextcloud geeft gebruikers controle terug over hun eigen data.</p>
+          <a href="https://www.linkedin.com/in/frankkarlitschek/" target="_blank" rel="noopener" class="pioneer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" style="background: var(--concrete);">
+    <div class="content">
+      <h2 class="section-title">Open Source <span class="accent">Projecten</span></h2>
+      <p class="section-subtitle">De tools en frameworks waarop OpenAEC is gebouwd. Elk project vertegenwoordigt jaren van onbetaald werk door gepassioneerde developers.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>Linux</h4>
+          <p>Het besturingssysteem dat de wereld draait. Van servers tot smartphones.</p>
+        </div>
+        <div class="project-card">
+          <h4>Python</h4>
+          <p>De taal die iedereen kan leren. Van scripting tot machine learning.</p>
+        </div>
+        <div class="project-card">
+          <h4>Blender</h4>
+          <p>3D creatie voor iedereen. Modellering, animatie, rendering en meer.</p>
+        </div>
+        <div class="project-card">
+          <h4>IfcOpenShell</h4>
+          <p>De ruggengraat van open BIM. Lezen, schrijven en manipuleren van IFC-bestanden.</p>
+        </div>
+        <div class="project-card">
+          <h4>Bonsai (BlenderBIM)</h4>
+          <p>BIM modelleren in Blender. Volwaardige BIM-authoring, volledig open source.</p>
+        </div>
+        <div class="project-card">
+          <h4>That Open Company</h4>
+          <p>Open BIM op het web. IFC-modellen bekijken en bewerken in de browser.</p>
+        </div>
+        <div class="project-card">
+          <h4>ERPNext / Frappe</h4>
+          <p>Open source ERP. Boekhouding, projectmanagement, CRM en meer.</p>
+        </div>
+        <div class="project-card">
+          <h4>Nextcloud</h4>
+          <p>Bestandsbeheer en samenwerking. Jouw data, jouw server, jouw regels.</p>
+        </div>
+        <div class="project-card">
+          <h4>Docker</h4>
+          <p>Containers voor deployment. Software overal identiek laten draaien.</p>
+        </div>
+        <div class="project-card">
+          <h4>Rust</h4>
+          <p>Veilige systeemprogrammeertaal. Snelheid zonder concessies aan veiligheid.</p>
+        </div>
+        <div class="project-card">
+          <h4>LibreOffice</h4>
+          <p>Vrije kantoorapplicaties. Documenten, spreadsheets en presentaties voor iedereen.</p>
+        </div>
+        <div class="project-card">
+          <h4>Ubuntu</h4>
+          <p>Linux voor iedereen. Het besturingssysteem dat Linux naar de desktop bracht.</p>
+        </div>
+        <div class="project-card">
+          <h4>Git</h4>
+          <p>Versiebeheer voor de wereld. Samenwerken aan code op globale schaal.</p>
+        </div>
+        <div class="project-card">
+          <h4>Three.js</h4>
+          <p>3D graphics op het web. De basis voor interactieve 3D-ervaringen in de browser.</p>
+        </div>
+        <div class="project-card">
+          <h4>PDF.js</h4>
+          <p>PDF rendering in de browser. Open source alternatief voor proprietary PDF-viewers.</p>
+        </div>
+        <div class="project-card">
+          <h4>Tauri</h4>
+          <p>Lichtgewicht desktop apps. Webtech met native performance en kleine bundles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Quote -->
+  <section class="closing-quote">
+    <blockquote>
+      Wij staan op de schouders van reuzen. Elke regel code die wij schrijven is mogelijk gemaakt door de moed van deze pioniers. Open source is geen trend — het is de toekomst.
+    </blockquote>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+</body>
+</html>
