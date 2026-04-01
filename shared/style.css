@@ -458,7 +458,7 @@ pre code {
   .hero .tagline { font-size: 1rem; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hamburger { display: block; }
-  .nav-links, .nav-menu, .lang-switcher { display: none !important; }
+  .nav-menu { display: none !important; }
   .nav-menu.active {
     display: flex !important;
     flex-direction: column;
