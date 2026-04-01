@@ -767,3 +767,118 @@ Stel de fav icon in. Ik zie nu geen icoontje in de brwoser
 ### 2026-04-01 16:27
 push naar github
 
+### 2026-04-01 16:32
+Maak een LinkedIn post met het nieuws dat de website live is maar ook alle tools.
+
+### 2026-04-01 16:33
+En zoek er 10 goede afbeeldingen bij. Het liefst nieuwe.
+
+### 2026-04-01 17:04
+Check of deze website ook goed werkt op een mobiel
+
+### 2026-04-01 17:10
+Is dat nu beter?
+
+### 2026-04-01 17:15
+ja push!
+
+### 2026-04-01 18:14
+[18:13, 4/1/2026] Maarten zakelijk: Tekst valt weg en je hebt heel dat menu niet meer nu, zou een hamburgermenu doen
+[18:13, 4/1/2026] Maarten zakelijk: Talen-knop werkt ook niet
+[18:13, 4/1/2026] Maarten zakelijk: Op https://www.open-aec.com/bim-validator/ is de tabel niet goed begrensd, waardoor de tabel in mobile buiten de page treed. (Zie bovenaan bij de balk)
+[18:13, 4/1/2026] Maarten zakelijk: Op https://www.open-aec.com/statistieken/ kan je bijvoorbeeld horizontaal scrollen in de tabel, daardoor blijft de page smal
+
+### 2026-04-01 18:16
+<task-notification>
+<task-id>af484b77b14d149f3</task-id>
+<tool-use-id>toolu_01YThVEVNBfqhyCR9e9fd1Nb</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\af484b77b14d149f3.output</output-file>
+<status>completed</status>
+<summary>Agent "Check all subpage navbars" completed</summary>
+<result>Here is the complete report:
+
+---
+
+**Files checked: 35 total HTML files**
+
+**Already correct (correct navbar, shared stylesheet, and favicon) -- 27 files:**
+- `index.html`
+- `architectuur/index.html`
+- `bim-validator/index.html`
+- `diensten/index.html`
+- `disclaimer/index.html`
+- `faq/index.html`
+- `ifcx/index.html`
+- `monty-ifc-viewer/index.html`
+- `offerte/index.html`
+- `open-2d-studio/index.html`
+- `open-3d-viewer/index.html`
+- `open-calc-studio/index.html`
+- `open-energy-studio/index.html`
+- `open-field-studio/index.html`
+- `open-heatloss-studio/index.html`
+- `open-pdf-studio/index.html`
+- `open-planner-studio/index.html`
+- `open-pointcloud-studio/index.html`
+- `open-safety-studio/index.html`
+- `open-speech-studio/index.html`
+- `openaec-cloud/index.html`
+- `openaec-docs/index.html`
+- `over-ons.html`
+- `roadmap/index.html`
+- `statistieken/index.html`
+- `statuten/index.html`
+- `supporters/index.html`
+- `y-app/index.html`
+
+**Fixed -- 3 files (missing favicon only, navbar and stylesheet were correct):**
+- `C:\Users\rickd\Documents\GitHub\website\ext-drawing-statistics\index.html` -- added favicon link
+- `C:\Users\rickd\Documents\GitHub\website\old\building-py\index.html` -- added favicon link
+- `C:\Users\rickd\Documents\GitHub\website\open-books\index.html` -- added favicon link
+
+**Skipped -- 5 standalone/presentation files (completely self-contained with their own inline styles, no shared stylesheet or navbar; adding the standard navbar would break their layout):**
+- `tools-overview.html` -- standalone tools overview page with all inline CSS
+- `presentation foundation/openaec-ecosystem.html` -- standalone presentation
+- `presentation foundation/openaec-presentatie.html` -- standalone presentation
+- `presentation foundation/presentatie.html` -- standalone presentation
+- `presentation foundation/wfc5/index.html` -- standalone presentation
+
+All 27+ website pages that use the shared design system have the exact correct navbar structure with hamburger button, nav-menu wrapper, and all six nav links (Home, Ecosysteem, Roadmap, Architectuur, Supporters, Contact) plus the language switcher.</result>
+<usage><total_tokens>60351</total_tokens><tool_uses>20</tool_uses><duration_ms>99717</duration_ms></usage>
+</task-notification>
+Full transcript available at: C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\af484b77b14d149f3.output
+
+### 2026-04-01 18:17
+<task-notification>
+<task-id>a9f4ea29efa51770b</task-id>
+<tool-use-id>toolu_01NGvWpnqaCeB1qWS7SVASwX</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a9f4ea29efa51770b.output</output-file>
+<status>completed</status>
+<summary>Agent "Fix table overflow on mobile" completed</summary>
+<result>All edits are complete. Here is a summary of what was changed:
+
+**`C:\Users\rickd\Documents\GitHub\website\shared\style.css`:**
+- Added `overflow-x: hidden;` to the `body` rule to prevent horizontal page scrolling
+- Added `.table-wrapper` styles and `table { min-width: 600px; }` inside the `@media (max-width: 768px)` block
+
+**`C:\Users\rickd\Documents\GitHub\website\bim-validator\index.html`:**
+- Wrapped all 7 `<table class="feature-table">` elements in a `<div class="table-wrapper" style="overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; display: block;">` container
+
+**`C:\Users\rickd\Documents\GitHub\website\statistieken\index.html`:**
+- Updated the existing `<div style="overflow-x: auto;">` wrapper around the stats table to include the `table-wrapper` class and the full set of inline styles (`-webkit-overflow-scrolling: touch; max-width: 100%; display: block;`)</result>
+<usage><total_tokens>68111</total_tokens><tool_uses>13</tool_uses><duration_ms>113907</duration_ms></usage>
+</task-notification>
+Full transcript available at: C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a9f4ea29efa51770b.output
+
+### 2026-04-01 18:20
+push naar github
+
+### 2026-04-01 18:59
+Gebruik dit logo van VORM: C:\Users\rickd\Downloads\Nieuwe map (5)
+
+### 2026-04-01 19:01
+Standaard moet het NL zijn.
+
+### 2026-04-01 19:26
+Los dit op
+
