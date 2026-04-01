@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(find C:UsersrickdDocumentsGitHubOpenAEC-style-book -type f -name *.css -o -name *.html -o -name *.json -o -name *.js -o -name *.md -o -name *.yaml -o -name *.yml)",
+      "WebSearch",
+      "Bash(gh repo:*)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/rickd/Documents/GitHub/website/presentation foundation/**)",
+      "Bash(done)",
+      "Bash(ls \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/\"*ield*)",
+      "Bash(ls \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/\"*field*)",
+      "Bash(cp \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/open bim validator/2.png\" bim-validator-2.png)",
+      "Bash(cp \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/open bim validator/3.png\" bim-validator-3.png)",
+      "Bash(cp \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/open bim validator/4.png\" bim-validator-4.png)",
+      "Bash(cp \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/open bim validator/2026-04-01 13-06-53.mp4\" bim-validator-demo.mp4)",
+      "Bash(cp \"C:/Users/rickd/Documents/GitHub/website/presentation foundation/open-field-studio/WhatsApp Image 2026-04-01 at 13.30.55.jpeg\" open-field-studio-2.jpeg)"
+    ]
+  }
+}
