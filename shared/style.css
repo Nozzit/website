@@ -505,6 +505,11 @@ pre code {
     margin-top: var(--sp-3);
     justify-content: flex-start;
   }
+  .nav-menu.active .nav-feedback-btn {
+    display: inline-flex;
+    align-self: flex-start;
+    margin-top: var(--sp-2);
+  }
   .navbar .nav-container { position: relative; }
   .footer-container { flex-direction: column; text-align: center; }
   .section { padding: var(--sp-8) var(--sp-4); }
