@@ -60,6 +60,7 @@ function buildTimeSeries(publicRepos) {
   let cumIssues = preExisting.reduce((s, r) => s + r.open_issues_count, 0);
   let cumCommits = preExisting.reduce((s, r) => s + (r._commitCount || 0), 0);
   let cumSize = preExisting.reduce((s, r) => s + r.size, 0);
+  let locSinceDec2025 = 0; // LOC starts at 0 from Dec 2025
   const reposPerMonth = {};
   const starsPerMonth = {};
   const issuesPerMonth = {};
@@ -73,12 +74,13 @@ function buildTimeSeries(publicRepos) {
     cumIssues += reposThisMonth.reduce((s, r) => s + r.open_issues_count, 0);
     cumCommits += reposThisMonth.reduce((s, r) => s + (r._commitCount || 0), 0);
     cumSize += reposThisMonth.reduce((s, r) => s + r.size, 0);
+    locSinceDec2025 += reposThisMonth.reduce((s, r) => s + r.size, 0) * 25; // only count code from Dec 2025 onwards
 
     reposPerMonth[month] = cumRepos;
     starsPerMonth[month] = cumStars;
     issuesPerMonth[month] = cumIssues;
     commitsPerMonth[month] = cumCommits;
-    sizePerMonth[month] = Math.round(cumSize * 25); // estimated lines of code
+    sizePerMonth[month] = Math.round(locSinceDec2025); // lines of code since Dec 2025
   });
 
   return {
@@ -187,7 +189,7 @@ async function main() {
       totalForks: publicRepos.reduce((s, r) => s + r.forks_count, 0),
       totalOpenIssues: publicRepos.reduce((s, r) => s + r.open_issues_count, 0),
       totalSizeKB: publicRepos.reduce((s, r) => s + r.size, 0),
-      estimatedLinesOfCode: Math.round(publicRepos.reduce((s, r) => s + r.size, 0) * 25),
+      estimatedLinesOfCode: Math.round(publicRepos.filter(r => r.created_at >= '2025-12-01').reduce((s, r) => s + r.size, 0) * 25),
       totalCommits: totalCommits,
       uniqueContributors: contributorSet.size,
       languages: Object.keys(langStats).length,

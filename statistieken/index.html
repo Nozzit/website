@@ -390,13 +390,15 @@
 
   <!-- Section 1: Highlight stats -->
   <section class="section" style="background: var(--blueprint-white);">
-    <div class="highlight-cards" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="highlight-cards" style="grid-template-columns: repeat(4, 1fr);">
       <div class="highlight-card"><div class="number" id="s-repos">—</div><div class="label">Repositories</div></div>
       <div class="highlight-card"><div class="number" id="s-commits">—</div><div class="label">Commits</div></div>
       <div class="highlight-card"><div class="number" id="s-stars">—</div><div class="label">Stars</div></div>
+      <div class="highlight-card"><div class="number" id="s-releases">—</div><div class="label">Releases</div></div>
       <div class="highlight-card"><div class="number" id="s-contributors">—</div><div class="label">Contributors</div></div>
       <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label">Regels code (est.)</div></div>
       <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label">Programmeertalen</div></div>
+      <div class="highlight-card"><div class="number" id="s-issues">—</div><div class="label">Open issues</div></div>
     </div>
     <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
   </section>
@@ -408,19 +410,19 @@
       <div class="trend-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);margin-top:var(--sp-6);">
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
           <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal repos</h4>
-          <div id="chart-cum-repos" style="height:200px;"></div>
+          <div id="chart-cum-repos" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
           <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal commits</h4>
-          <div id="chart-cum-commits" style="height:200px;"></div>
+          <div id="chart-cum-commits" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal stars</h4>
-          <div id="chart-cum-stars" style="height:200px;"></div>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Open issues per maand</h4>
+          <div id="chart-cum-issues" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
           <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Regels code (geschat)</h4>
-          <div id="chart-cum-loc" style="height:200px;"></div>
+          <div id="chart-cum-loc" style="height:250px;"></div>
         </div>
       </div>
     </div>
@@ -429,13 +431,13 @@
   <section class="section" style="background: white;">
     <div class="stats-section">
       <h2>Repos per <span class="accent">maand</span></h2>
-      <div id="chart-monthly" style="height: 300px;"></div>
+      <div id="chart-monthly" style="height: 250px;"></div>
     </div>
   </section>
   <section class="section" style="background: var(--concrete);">
     <div class="stats-section">
       <h2>Verdeling per <span class="accent">programmeertaal</span></h2>
-      <div id="chart-langs" style="height: 300px;"></div>
+      <div id="chart-langs" style="height: 250px;"></div>
     </div>
   </section>
 
@@ -586,6 +588,8 @@ fetch('/data/stats.json')
     document.getElementById('s-contributors').textContent = '10+';
     document.getElementById('s-loc').textContent = '—';
     document.getElementById('s-languages').textContent = '7+';
+    document.getElementById('s-releases').textContent = '100+';
+    document.getElementById('s-issues').textContent = '—';
   });
 
 function renderStats(data) {
@@ -596,6 +600,8 @@ function renderStats(data) {
   document.getElementById('s-contributors').textContent = s.uniqueContributors;
   document.getElementById('s-loc').textContent = s.estimatedLinesOfCode.toLocaleString('nl-NL');
   document.getElementById('s-languages').textContent = s.languages;
+  document.getElementById('s-releases').textContent = data.repos.reduce((s, r) => s + r.releases, 0);
+  document.getElementById('s-issues').textContent = s.totalOpenIssues;
   document.getElementById('stats-updated').textContent = 'Laatste update: ' + data.generated.substring(0, 10);
 
   // Table
@@ -628,7 +634,7 @@ function renderStats(data) {
     const ts = data.timeSeries;
     lineChart('chart-cum-repos', ts.months, ts.cumulativeRepos, '#D97706');
     lineChart('chart-cum-commits', ts.months, ts.cumulativeCommits, '#16A34A');
-    lineChart('chart-cum-stars', ts.months, ts.cumulativeStars, '#F59E0B');
+    lineChart('chart-cum-issues', ts.months, ts.cumulativeIssues, '#EA580C');
     lineChart('chart-cum-loc', ts.months, ts.cumulativeLinesOfCode, '#3178C6', true);
   }
 }
@@ -647,7 +653,7 @@ function lineChart(id, months, dataObj, color, formatLarge) {
   }
 
   // Use HTML/CSS based chart for better text rendering
-  const chartH = 160;
+  const chartH = 200;
   el.innerHTML = `
     <div style="position:relative;height:${chartH + 40}px;">
       <!-- Y-axis labels -->

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-03T18:28:24.930Z",
+  "generated": "2026-04-03T18:38:02.448Z",
   "summary": {
     "totalRepos": 108,
     "publicRepos": 67,
@@ -8,7 +8,7 @@
     "totalForks": 36,
     "totalOpenIssues": 162,
     "totalSizeKB": 11574792,
-    "estimatedLinesOfCode": 289369800,
+    "estimatedLinesOfCode": 19056300,
     "totalCommits": 4177,
     "uniqueContributors": 32,
     "languages": 8
@@ -1277,11 +1277,11 @@
       "2026-04": 4177
     },
     "cumulativeLinesOfCode": {
-      "2025-12": 270987000,
-      "2026-01": 282272925,
-      "2026-02": 285032550,
-      "2026-03": 289358050,
-      "2026-04": 289369800
+      "2025-12": 673500,
+      "2026-01": 11959425,
+      "2026-02": 14719050,
+      "2026-03": 19044550,
+      "2026-04": 19056300
     }
   },
   "historicalTrend": [
