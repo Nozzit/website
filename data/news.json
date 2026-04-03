@@ -1,0 +1,402 @@
+[
+  {
+    "type": "release",
+    "repo": "open-frame-studio",
+    "title": "open-frame-studio v0.1.0 uitgebracht",
+    "description": "Open Frame Studio v0.1.0",
+    "date": "2026-04-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.40.0 uitgebracht",
+    "description": "Open PDF Studio v1.40.0",
+    "date": "2026-04-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.40.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-frame-studio",
+    "title": "Nieuwe repository: open-frame-studio",
+    "description": "Nieuw project gestart",
+    "date": "2026-04-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-calc-studio-extensions",
+    "title": "Nieuwe repository: open-calc-studio-extensions",
+    "description": "Extension catalog for Open Calc Studio",
+    "date": "2026-04-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-extensions"
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio v0.1.3 uitgebracht",
+    "description": "Open Field Studio v0.1.3",
+    "date": "2026-03-31",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.3"
+  },
+  {
+    "type": "release",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Frappe_Claude_Skill_Package v3.1.1 uitgebracht",
+    "description": "v3.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package/releases/tag/v3.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Frappe_Claude_Skill_Package v3.1.0 uitgebracht",
+    "description": "v3.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package/releases/tag/v3.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.37.0 uitgebracht",
+    "description": "Open PDF Studio v1.37.0",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.37.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.36.0 uitgebracht",
+    "description": "Open PDF Studio v1.36.0",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.36.0"
+  },
+  {
+    "type": "release",
+    "repo": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
+    "title": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package v2.1.1 uitgebracht",
+    "description": "v2.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/releases/tag/v2.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
+    "title": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package v2.1.0 uitgebracht",
+    "description": "v2.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/releases/tag/v2.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Tauri-2-Claude-Skill-Package",
+    "title": "Tauri-2-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Tauri-2-Claude-Skill-Package",
+    "title": "Tauri-2-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Nextcloud-Claude-Skill-Package",
+    "title": "Nextcloud-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Nextcloud-Claude-Skill-Package",
+    "title": "Nextcloud-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Fluent-i18n-Claude-Skill-Package",
+    "title": "Fluent-i18n-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Fluent-i18n-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Fluent-i18n-Claude-Skill-Package",
+    "title": "Fluent-i18n-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Fluent-i18n-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Vite-Claude-Skill-Package",
+    "title": "Vite-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Vite-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Vite-Claude-Skill-Package",
+    "title": "Vite-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Vite-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "React-Claude-Skill-Package",
+    "title": "React-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/React-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "React-Claude-Skill-Package",
+    "title": "React-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/React-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "n8n-Claude-Skill-Package",
+    "title": "n8n-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "n8n-Claude-Skill-Package",
+    "title": "n8n-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "pdf-lib-Claude-Skill-Package",
+    "title": "pdf-lib-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "pdf-lib-Claude-Skill-Package",
+    "title": "pdf-lib-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "PDFjs-Claude-Skill-Package",
+    "title": "PDFjs-Claude-Skill-Package v1.2.1 uitgebracht",
+    "description": "v1.2.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/PDFjs-Claude-Skill-Package/releases/tag/v1.2.1"
+  },
+  {
+    "type": "release",
+    "repo": "PDFjs-Claude-Skill-Package",
+    "title": "PDFjs-Claude-Skill-Package v1.2.0 uitgebracht",
+    "description": "v1.2.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/PDFjs-Claude-Skill-Package/releases/tag/v1.2.0"
+  },
+  {
+    "type": "release",
+    "repo": "SolidJS-Claude-Skill-Package",
+    "title": "SolidJS-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/SolidJS-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "SolidJS-Claude-Skill-Package",
+    "title": "SolidJS-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/SolidJS-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Docker-Claude-Skill-Package",
+    "title": "Docker-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Docker-Claude-Skill-Package",
+    "title": "Docker-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Draw.io-Claude-Skill-Package",
+    "title": "Draw.io-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Draw.io-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Draw.io-Claude-Skill-Package",
+    "title": "Draw.io-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Draw.io-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Cross-Tech-AEC-Claude-Skill-Package",
+    "title": "Cross-Tech-AEC-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Cross-Tech-AEC-Claude-Skill-Package",
+    "title": "Cross-Tech-AEC-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "ThatOpen-Claude-Skill-Package",
+    "title": "ThatOpen-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/ThatOpen-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "ThatOpen-Claude-Skill-Package",
+    "title": "ThatOpen-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/ThatOpen-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Three.js-Claude-Skill-Package",
+    "title": "Three.js-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Three.js-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Three.js-Claude-Skill-Package",
+    "title": "Three.js-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Three.js-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Speckle-Claude-Skill-Package",
+    "title": "Speckle-Claude-Skill-Package v1.2.1 uitgebracht",
+    "description": "v1.2.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package/releases/tag/v1.2.1"
+  },
+  {
+    "type": "release",
+    "repo": "Speckle-Claude-Skill-Package",
+    "title": "Speckle-Claude-Skill-Package v1.2.0 uitgebracht",
+    "description": "v1.2.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package/releases/tag/v1.2.0"
+  },
+  {
+    "type": "release",
+    "repo": "QGIS-Claude-Skill-Package",
+    "title": "QGIS-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/QGIS-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "QGIS-Claude-Skill-Package",
+    "title": "QGIS-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/QGIS-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Open-PDF-Studio-Claude-Skill-Package",
+    "title": "Open-PDF-Studio-Claude-Skill-Package v1.1.1 uitgebracht",
+    "description": "v1.1.1: Improved Skill Discoverability",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Open-PDF-Studio-Claude-Skill-Package/releases/tag/v1.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "Open-PDF-Studio-Claude-Skill-Package",
+    "title": "Open-PDF-Studio-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0: Discovery Manifests",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/Open-PDF-Studio-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-cloud",
+    "title": "Nieuwe repository: openaec-cloud",
+    "description": "Shared Nextcloud cloud storage library for OpenAEC tools — hybrid I/O, multi-tenant, project container model",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-cloud"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-ui",
+    "title": "Nieuwe repository: openaec-ui",
+    "description": "OpenAEC shared design tokens and component CSS",
+    "date": "2026-03-30",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-ui"
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio v0.1.2 uitgebracht",
+    "description": "Open Field Studio v0.1.2",
+    "date": "2026-03-28",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.2"
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio v0.1.1 uitgebracht",
+    "description": "Open Field Studio v0.1.1",
+    "date": "2026-03-28",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.1"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-docs",
+    "title": "Nieuwe repository: openaec-docs",
+    "description": "OpenAEC Docs — BIM Document Management Platform",
+    "date": "2026-03-28",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-docs"
+  }
+]

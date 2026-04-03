@@ -389,23 +389,27 @@
 
   <!-- Section 1: Highlight stats -->
   <section class="section" style="background: var(--blueprint-white);">
-    <div class="highlight-cards">
-      <div class="highlight-card">
-        <div class="number">50</div>
-        <div class="label">Repositories</div>
-      </div>
-      <div class="highlight-card">
-        <div class="number">2,428+</div>
-        <div class="label">Commits</div>
-      </div>
-      <div class="highlight-card">
-        <div class="number">139</div>
-        <div class="label">Stars</div>
-      </div>
-      <div class="highlight-card">
-        <div class="number">111</div>
-        <div class="label">Releases</div>
-      </div>
+    <div class="highlight-cards" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="highlight-card"><div class="number" id="s-repos">—</div><div class="label">Repositories</div></div>
+      <div class="highlight-card"><div class="number" id="s-commits">—</div><div class="label">Commits</div></div>
+      <div class="highlight-card"><div class="number" id="s-stars">—</div><div class="label">Stars</div></div>
+      <div class="highlight-card"><div class="number" id="s-contributors">—</div><div class="label">Contributors</div></div>
+      <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label">Regels code (est.)</div></div>
+      <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label">Programmeertalen</div></div>
+    </div>
+    <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
+  </section>
+
+  <section class="section" style="background: white;">
+    <div class="stats-section">
+      <h2>Repos per <span class="accent">maand</span></h2>
+      <div id="chart-monthly" style="height: 300px;"></div>
+    </div>
+  </section>
+  <section class="section" style="background: var(--concrete);">
+    <div class="stats-section">
+      <h2>Verdeling per <span class="accent">programmeertaal</span></h2>
+      <div id="chart-langs" style="height: 300px;"></div>
     </div>
   </section>
 
@@ -513,163 +517,17 @@
               <th>Aangemaakt</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-aec-reports" target="_blank">OpenAEC Reports</a></td>
-              <td><span class="lang-dot lang-ts"></span>TypeScript</td>
-              <td>255</td>
-              <td>4</td>
-              <td>1</td>
-              <td>Feb 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-aec-bim-validator" target="_blank">BIM Validator</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>207</td>
-              <td>14</td>
-              <td>5</td>
-              <td>Mrt 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/dynlex" target="_blank">Dynlex</a></td>
-              <td><span class="lang-dot lang-ts"></span>TypeScript</td>
-              <td>196</td>
-              <td>4</td>
-              <td>2</td>
-              <td>Feb 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-pdf-studio" target="_blank">Open PDF Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>150</td>
-              <td>8</td>
-              <td>3</td>
-              <td>Jan 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-2d-studio" target="_blank">Open 2D Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>140</td>
-              <td>6</td>
-              <td>4</td>
-              <td>Jan 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-pointcloud-studio" target="_blank">Open Pointcloud Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>120</td>
-              <td>5</td>
-              <td>3</td>
-              <td>Feb 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-energy-studio" target="_blank">Open Energy Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>110</td>
-              <td>4</td>
-              <td>2</td>
-              <td>Feb 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank">Open Heatloss Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>105</td>
-              <td>3</td>
-              <td>2</td>
-              <td>Feb 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank">Open Speech Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>95</td>
-              <td>5</td>
-              <td>3</td>
-              <td>Mrt 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-field-studio" target="_blank">Open Field Studio</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>90</td>
-              <td>3</td>
-              <td>2</td>
-              <td>Mrt 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/ifc-factory" target="_blank">IFC Factory</a></td>
-              <td><span class="lang-dot lang-rust"></span>Rust</td>
-              <td>85</td>
-              <td>2</td>
-              <td>3</td>
-              <td>Feb 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/frappe-claude-skill" target="_blank">Frappe Claude Skill</a></td>
-              <td><span class="lang-dot lang-python"></span>Python</td>
-              <td>80</td>
-              <td>6</td>
-              <td>55</td>
-              <td>Jan 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/bcf-platform" target="_blank">BCF Platform</a></td>
-              <td><span class="lang-dot lang-ts"></span>TypeScript</td>
-              <td>75</td>
-              <td>2</td>
-              <td>2</td>
-              <td>Mrt 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/open-aec-docs" target="_blank">OpenAEC Docs</a></td>
-              <td><span class="lang-dot lang-markdown"></span>Markdown</td>
-              <td>60</td>
-              <td>—</td>
-              <td>1</td>
-              <td>Mrt 2026</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/OpenAEC-Foundation/website" target="_blank">Website</a></td>
-              <td><span class="lang-dot lang-html"></span>HTML</td>
-              <td>55</td>
-              <td>—</td>
-              <td>1</td>
-              <td>Mrt 2026</td>
-            </tr>
+          <tbody id="repo-tbody">
+            <tr><td colspan="6" style="text-align:center;color:var(--scaffold-gray);padding:var(--sp-8);">Laden...</td></tr>
           </tbody>
         </table>
       </div>
 
       <!-- Top repos by metric -->
       <div class="top-repos">
-        <div class="top-repo-card">
-          <h4>Meeste commits</h4>
-          <ol>
-            <li><span class="repo-name">OpenAEC Reports</span> <span class="repo-val">255</span></li>
-            <li><span class="repo-name">BIM Validator</span> <span class="repo-val">207</span></li>
-            <li><span class="repo-name">Dynlex</span> <span class="repo-val">196</span></li>
-            <li><span class="repo-name">Open PDF Studio</span> <span class="repo-val">150</span></li>
-            <li><span class="repo-name">Open 2D Studio</span> <span class="repo-val">140</span></li>
-          </ol>
-        </div>
-        <div class="top-repo-card">
-          <h4>Meeste stars</h4>
-          <ol>
-            <li><span class="repo-name">Frappe Claude Skill</span> <span class="repo-val">55</span></li>
-            <li><span class="repo-name">BIM Validator</span> <span class="repo-val">5</span></li>
-            <li><span class="repo-name">Open 2D Studio</span> <span class="repo-val">4</span></li>
-            <li><span class="repo-name">Open PDF Studio</span> <span class="repo-val">3</span></li>
-            <li><span class="repo-name">Pointcloud Studio</span> <span class="repo-val">3</span></li>
-          </ol>
-        </div>
-        <div class="top-repo-card">
-          <h4>Meeste releases</h4>
-          <ol>
-            <li><span class="repo-name">BIM Validator</span> <span class="repo-val">14</span></li>
-            <li><span class="repo-name">Open PDF Studio</span> <span class="repo-val">8</span></li>
-            <li><span class="repo-name">Open 2D Studio</span> <span class="repo-val">6</span></li>
-            <li><span class="repo-name">Frappe Claude Skill</span> <span class="repo-val">6</span></li>
-            <li><span class="repo-name">Pointcloud Studio</span> <span class="repo-val">5</span></li>
-          </ol>
-        </div>
+        <div class="top-repo-card"><h4>Meeste stars</h4><ol id="top-stars"></ol></div>
+        <div class="top-repo-card"><h4>Meeste commits</h4><ol id="top-commits"></ol></div>
+        <div class="top-repo-card"><h4>Grootste repos</h4><ol id="top-size"></ol></div>
       </div>
 
     </div>
@@ -685,5 +543,77 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
+
+<script>
+const LANG_COLORS = {
+  TypeScript:'#3178C6', JavaScript:'#F1E05A', Python:'#3572A5',
+  Rust:'#DEA584', HTML:'#E34C26', CSS:'#563D7C', 'C++':'#F34B7D'
+};
+
+fetch('/data/stats.json')
+  .then(r => r.json())
+  .then(renderStats)
+  .catch(() => {
+    document.getElementById('s-repos').textContent = '50+';
+    document.getElementById('s-stars').textContent = '139+';
+    document.getElementById('s-commits').textContent = '2.400+';
+    document.getElementById('s-contributors').textContent = '10+';
+    document.getElementById('s-loc').textContent = '—';
+    document.getElementById('s-languages').textContent = '7+';
+  });
+
+function renderStats(data) {
+  const s = data.summary;
+  document.getElementById('s-repos').textContent = s.publicRepos;
+  document.getElementById('s-commits').textContent = s.totalCommits.toLocaleString('nl-NL');
+  document.getElementById('s-stars').textContent = s.totalStars;
+  document.getElementById('s-contributors').textContent = s.uniqueContributors;
+  document.getElementById('s-loc').textContent = s.estimatedLinesOfCode.toLocaleString('nl-NL');
+  document.getElementById('s-languages').textContent = s.languages;
+  document.getElementById('stats-updated').textContent = 'Laatste update: ' + data.generated.substring(0, 10);
+
+  // Table
+  const tbody = document.getElementById('repo-tbody');
+  tbody.innerHTML = data.repos.map(r => `<tr>
+    <td><a href="${r.url}" target="_blank">${r.name}</a></td>
+    <td><span class="lang-dot" style="background:${LANG_COLORS[r.language]||'#999'}"></span>${r.language||'—'}</td>
+    <td>${r.commits}</td>
+    <td>${r.releases}${r.latestRelease ? ' ('+r.latestRelease+')' : ''}</td>
+    <td>${r.stars}</td>
+    <td>${r.createdAt}</td>
+  </tr>`).join('');
+
+  // Top repos
+  function topList(id, items) {
+    document.getElementById(id).innerHTML = items.map(i =>
+      `<li><span class="repo-name">${i.name}</span><span class="repo-val">${i.value}</span></li>`
+    ).join('');
+  }
+  topList('top-stars', data.topByStars);
+  topList('top-commits', data.topByCommits);
+  topList('top-size', data.topBySize);
+
+  // Charts
+  barChart('chart-monthly', data.monthlyRepoCreation, 'var(--amber)');
+  barChart('chart-langs', data.languageDistribution, LANG_COLORS);
+}
+
+function barChart(id, dataObj, colors) {
+  const el = document.getElementById(id);
+  const entries = Object.entries(dataObj).sort((a,b) => a[0].localeCompare(b[0]));
+  const max = Math.max(...entries.map(e => e[1]));
+  el.innerHTML = `<div style="display:flex;align-items:flex-end;gap:4px;height:260px;padding-top:20px;">
+    ${entries.map(([k, v]) => {
+      const h = Math.max(6, (v/max)*230);
+      const c = typeof colors === 'object' && colors[k] ? colors[k] : colors;
+      return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+        <span style="font-family:var(--font-code);font-size:0.7rem;color:var(--deep-forge);">${v}</span>
+        <div style="width:100%;max-width:60px;height:${h}px;background:${c};border-radius:4px 4px 0 0;"></div>
+        <span style="font-size:0.6rem;color:var(--scaffold-gray);text-align:center;overflow:hidden;text-overflow:ellipsis;max-width:70px;">${k}</span>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+</script>
 </body>
 </html>
