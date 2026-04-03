@@ -471,8 +471,10 @@ pre code {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2rem; }
-  .hero .tagline { font-size: 1rem; }
+  .hero h1 { font-size: 1.6rem; word-break: break-word; overflow-wrap: anywhere; }
+  .hero .tagline { font-size: 0.95rem; }
+  .hero { padding: var(--sp-8) var(--sp-4) !important; }
+  .page-header h1 { font-size: 1.6rem; word-break: break-word; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hamburger { display: block; }
   .nav-menu { display: none !important; }
