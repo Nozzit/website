@@ -459,10 +459,11 @@ pre code {
 }
 .hamburger span {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 28px;
+  height: 3px;
   background: white;
-  margin: 5px 0;
+  margin: 6px 0;
+  border-radius: 2px;
   transition: all 0.3s ease;
 }
 .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
