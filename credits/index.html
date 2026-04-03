@@ -253,26 +253,8 @@
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
-      <button class="hamburger" onclick="this.classList.toggle('active');this.parentElement.querySelector('.nav-menu').classList.toggle('active');" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="/" class="nav-link">Home</a></li>
-          <li><a href="/#ecosysteem" class="nav-link">Ecosysteem</a></li>
-          <li><a href="/roadmap/" class="nav-link">Roadmap</a></li>
-          <li><a href="/architectuur/" class="nav-link">Architectuur</a></li>
-          <li><a href="/supporters/" class="nav-link">Supporters</a></li>
-          <li><a href="/credits/" class="nav-link">Credits</a></li>
-          <li><a href="/#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <a href="/feedback/" class="nav-feedback-btn">Feedback</a>
-      </div>
-    </div>
-  </nav>
+  <div id="shared-nav"></div>
+<script src="/shared/nav.js"></script>
 
   <!-- Hero -->
   <header class="page-header">
@@ -530,65 +512,68 @@
       <h2 class="section-title">Open Source <span class="accent">Projecten</span></h2>
       <p class="section-subtitle">De tools en frameworks waarop OpenAEC is gebouwd. Elk project vertegenwoordigt jaren van onbetaald werk door gepassioneerde developers.</p>
       <div class="project-grid">
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Linux</h4>
           <p>Het besturingssysteem dat de wereld draait. Van servers tot smartphones.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Python</h4>
           <p>De taal die iedereen kan leren. Van scripting tot machine learning.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Blender" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Blender" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Blender</h4>
           <p>3D creatie voor iedereen. Modellering, animatie, rendering en meer.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://ifcopenshell.org/assets/images/logo.png" alt="IfcOpenShell" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>IfcOpenShell</h4>
           <p>De ruggengraat van open BIM. Lezen, schrijven en manipuleren van IFC-bestanden.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://community.osarch.org/uploads/editor/3o/o20fqfl7wdkp.png" alt="Bonsai" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Bonsai (BlenderBIM)</h4>
           <p>BIM modelleren in Blender. Volwaardige BIM-authoring, volledig open source.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://github.com/ThatOpen.png" alt="That Open Company" style="height: 80px; width: auto; margin-bottom: 12px; border-radius: 8px;">
           <h4>That Open Company</h4>
           <p>Open BIM op het web. IFC-modellen bekijken en bewerken in de browser.</p>
         </div>
-        <div class="project-card">
-          <img src="https://github.com/frappe.png" alt="ERPNext" style="height: 40px; width: auto; margin-bottom: 12px; border-radius: 8px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://github.com/frappe.png" alt="ERPNext" style="height: 80px; width: auto; margin-bottom: 12px; border-radius: 8px;">
           <h4>ERPNext / Frappe</h4>
           <p>Open source ERP. Boekhouding, projectmanagement, CRM en meer.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Nextcloud_Logo.svg" alt="Nextcloud" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Nextcloud_Logo.svg" alt="Nextcloud" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Nextcloud</h4>
           <p>Bestandsbeheer en samenwerking. Jouw data, jouw server, jouw regels.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Docker</h4>
           <p>Containers voor deployment. Software overal identiek laten draaien.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Rust</h4>
           <p>Veilige systeemprogrammeertaal. Snelheid zonder concessies aan veiligheid.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/LibreOffice_Logo_Flat.svg" alt="LibreOffice" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/LibreOffice_Logo_Flat.svg" alt="LibreOffice" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>LibreOffice</h4>
           <p>Vrije kantoorapplicaties. Documenten, spreadsheets en presentaties voor iedereen.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg" alt="Ubuntu" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg" alt="Ubuntu" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Ubuntu</h4>
           <p>Linux voor iedereen. Het besturingssysteem dat Linux naar de desktop bracht.</p>
         </div>
-        <div class="project-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" style="height: 40px; width: auto; margin-bottom: 12px;">
+        <div class="project-card" style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Git</h4>
           <p>Versiebeheer voor de wereld. Samenwerken aan code op globale schaal.</p>
         </div>
