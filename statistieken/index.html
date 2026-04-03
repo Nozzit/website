@@ -449,6 +449,26 @@
     </div>
   </section>
 
+  <!-- News activity -->
+  <section class="section" style="background: var(--night-build);">
+    <div class="stats-section" style="max-width:1000px;margin:0 auto;">
+      <h2 style="color:white;">Nieuws <span class="accent">activiteit</span></h2>
+      <p style="color:var(--scaffold-gray);margin-bottom:var(--sp-6);">Alle releases en nieuwe repositories sinds 1 januari 2026.</p>
+      <div class="highlight-cards" style="grid-template-columns: repeat(3, 1fr); margin-bottom: var(--sp-6);">
+        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-total">—</div><div class="label" style="color:var(--scaffold-gray);">Nieuws items</div></div>
+        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-releases">—</div><div class="label" style="color:var(--scaffold-gray);">Releases</div></div>
+        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-repos">—</div><div class="label" style="color:var(--scaffold-gray);">Nieuwe repos</div></div>
+      </div>
+      <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Releases & nieuwe repos per week</h4>
+        <div id="chart-news-activity" style="height:250px;"></div>
+      </div>
+      <div style="text-align:center;margin-top:var(--sp-6);">
+        <a href="/nieuws/" class="btn btn-primary btn-lg">Bekijk alle nieuws &rarr;</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Section 2: Timeline -->
   <section class="timeline-section">
     <h2>De <span class="accent">Reis</span></h2>
@@ -632,6 +652,27 @@ function renderStats(data) {
   topList('top-stars', data.topByStars);
   topList('top-commits', data.topByCommits);
   topList('top-size', data.topBySize);
+
+  // Load news data for activity chart
+  fetch('/data/news.json')
+    .then(r => r.json())
+    .then(news => {
+      document.getElementById('s-news-total').textContent = news.length;
+      document.getElementById('s-news-releases').textContent = news.filter(n => n.type === 'release').length;
+      document.getElementById('s-news-repos').textContent = news.filter(n => n.type === 'new_repo').length;
+
+      // Group by week for bar chart
+      const byWeek = {};
+      news.forEach(item => {
+        const d = new Date(item.date);
+        const weekStart = new Date(d);
+        weekStart.setDate(d.getDate() - d.getDay() + 1); // Monday
+        const weekLabel = weekStart.toISOString().substring(5, 10); // MM-DD
+        byWeek[weekLabel] = (byWeek[weekLabel] || 0) + 1;
+      });
+      barChart('chart-news-activity', byWeek, 'var(--amber)');
+    })
+    .catch(() => {});
 
   // Bar charts
   barChart('chart-monthly', data.monthlyRepoCreation, 'var(--amber)');

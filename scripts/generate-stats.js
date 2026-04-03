@@ -124,38 +124,42 @@ async function main() {
 
   const newsItems = [];
   const today = new Date().toISOString().substring(0, 10);
+  const newsCutoff = '2026-01-01'; // All news since Jan 1, 2026
 
   for (const repo of publicRepos) {
     try {
-      const releases = await ghFetch(
-        `https://api.github.com/repos/${ORG}/${repo.name}/releases?per_page=5`
+      // Fetch ALL releases (paginated) to get full history
+      const releases = await fetchAllPages(
+        `https://api.github.com/repos/${ORG}/${repo.name}/releases`
       );
       repo._releases = releases.length;
       repo._latestRelease = releases[0]?.tag_name || null;
       repo._latestReleaseDate = releases[0]?.published_at?.substring(0, 10) || null;
 
+      // Include all releases since cutoff date
       releases.forEach(rel => {
-        const daysAgo = (Date.now() - new Date(rel.published_at).getTime()) / 86400000;
-        if (daysAgo <= 7) {
+        const relDate = rel.published_at?.substring(0, 10);
+        if (relDate && relDate >= newsCutoff) {
           newsItems.push({
             type: 'release',
             repo: repo.name,
             title: `${repo.name} ${rel.tag_name} uitgebracht`,
             description: rel.name || `Nieuwe versie ${rel.tag_name}`,
-            date: rel.published_at?.substring(0, 10),
+            date: relDate,
             url: rel.html_url,
           });
         }
       });
+      console.log(`    ${repo.name}: ${releases.length} releases, ${releases.filter(r => r.published_at?.substring(0, 10) >= newsCutoff).length} since ${newsCutoff}`);
     } catch (e) {
       repo._releases = 0;
       repo._latestRelease = null;
     }
   }
 
+  // All repos created since cutoff date
   publicRepos.forEach(repo => {
-    const daysAgo = (Date.now() - new Date(repo.created_at).getTime()) / 86400000;
-    if (daysAgo <= 7) {
+    if (repo.created_at.substring(0, 10) >= newsCutoff) {
       newsItems.push({
         type: 'new_repo',
         repo: repo.name,
@@ -168,6 +172,7 @@ async function main() {
   });
 
   newsItems.sort((a, b) => b.date.localeCompare(a.date));
+  console.log(`\n  Total news items: ${newsItems.length} (${newsItems.filter(n => n.type === 'release').length} releases, ${newsItems.filter(n => n.type === 'new_repo').length} new repos)`);
 
   const langStats = {};
   publicRepos.forEach(r => {

@@ -398,5 +398,1253 @@
     "description": "OpenAEC Docs — BIM Document Management Platform",
     "date": "2026-03-28",
     "url": "https://github.com/OpenAEC-Foundation/openaec-docs"
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio v0.1.0 uitgebracht",
+    "description": "Open Field Studio v0.1.0",
+    "date": "2026-03-27",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.35.0 uitgebracht",
+    "description": "Open 2D Studio v0.35.0",
+    "date": "2026-03-26",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.35.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Open-Field-Studio",
+    "title": "Nieuwe repository: Open-Field-Studio",
+    "description": "Nieuw project gestart",
+    "date": "2026-03-26",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.33.0 uitgebracht",
+    "description": "Open 2D Studio v0.33.0",
+    "date": "2026-03-25",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.33.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.35.0 uitgebracht",
+    "description": "Open PDF Studio v1.35.0",
+    "date": "2026-03-25",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.35.0"
+  },
+  {
+    "type": "release",
+    "repo": "Ifc-Factory",
+    "title": "Ifc-Factory v0.1.0 uitgebracht",
+    "description": "IFCX v0.1.0 - Initial Release",
+    "date": "2026-03-25",
+    "url": "https://github.com/OpenAEC-Foundation/Ifc-Factory/releases/tag/v0.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio dev-aa644abe09d4754b022b2cfe3ff0209d20dc6b6e uitgebracht",
+    "description": "Dev Build aa644abe09d4754b022b2cfe3ff0209d20dc6b6e",
+    "date": "2026-03-25",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/dev-aa644abe09d4754b022b2cfe3ff0209d20dc6b6e"
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio dev-e01c9c8cf80793b71585e82f2ddeb380505d56cb uitgebracht",
+    "description": "Dev Build e01c9c8cf80793b71585e82f2ddeb380505d56cb",
+    "date": "2026-03-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/dev-e01c9c8cf80793b71585e82f2ddeb380505d56cb"
+  },
+  {
+    "type": "new_repo",
+    "repo": "ERPNext-NL-Translation",
+    "title": "Nieuwe repository: ERPNext-NL-Translation",
+    "description": "Nederlandse vertalingen voor ERPNext / Frappe v15+ (470 beoordeelde vertalingen)",
+    "date": "2026-03-24",
+    "url": "https://github.com/OpenAEC-Foundation/ERPNext-NL-Translation"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-monuments-inspect",
+    "title": "Nieuwe repository: open-monuments-inspect",
+    "description": "Open-Monuments Inspect — NEN 2767 conditiemeting Frappe-app (gesynchroniseerd vanuit mono-repo)",
+    "date": "2026-03-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-monuments-inspect"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-monuments-mjop",
+    "title": "Nieuwe repository: open-monuments-mjop",
+    "description": "Open-Monuments MJOP — Meerjarenonderhoudsplan Frappe-app (gesynchroniseerd vanuit mono-repo)",
+    "date": "2026-03-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-monuments-mjop"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.34.0 uitgebracht",
+    "description": "Open PDF Studio v1.34.0",
+    "date": "2026-03-23",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.34.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.5.0 uitgebracht",
+    "description": "v0.5.0 — Dictation Overlay, Audio Feedback & Spell Check",
+    "date": "2026-03-23",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.5.0"
+  },
+  {
+    "type": "release",
+    "repo": "OpenAEC-Workspace-Composer",
+    "title": "OpenAEC-Workspace-Composer v3.0.5 uitgebracht",
+    "description": "OpenAEC Workspace Composer v3.0.5",
+    "date": "2026-03-23",
+    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-Workspace-Composer/releases/tag/v3.0.5"
+  },
+  {
+    "type": "release",
+    "repo": "OpenAEC-Workspace-Composer",
+    "title": "OpenAEC-Workspace-Composer v3.0.0 uitgebracht",
+    "description": "v3.0.0 - Workspace Composer",
+    "date": "2026-03-23",
+    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-Workspace-Composer/releases/tag/v3.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Frappe_Claude_Skill_Package v3.0.0 uitgebracht",
+    "description": "v3.0.0 — 60 Skills, ~95% Frappe Coverage",
+    "date": "2026-03-21",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package/releases/tag/v3.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Speckle-Claude-Skill-Package",
+    "title": "Speckle-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0 — Custom MCP Server",
+    "date": "2026-03-21",
+    "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Frappe_Claude_Skill_Package v2.0.0 uitgebracht",
+    "description": "v2.0.0 — Frappe Framework Skill Package",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package/releases/tag/v2.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Cross-Tech-AEC-Claude-Skill-Package",
+    "title": "Cross-Tech-AEC-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 15 Cross-Technology AEC Skills",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Cross-Tech-AEC-Claude-Skill-Package",
+    "title": "Cross-Tech-AEC-Claude-Skill-Package v0.9.0 uitgebracht",
+    "description": "v0.9.0 — Wave A: 9 Cross-Technology AEC Skills",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package/releases/tag/v0.9.0"
+  },
+  {
+    "type": "release",
+    "repo": "ThatOpen-Claude-Skill-Package",
+    "title": "ThatOpen-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — Complete ThatOpen Skill Package",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/ThatOpen-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Three.js-Claude-Skill-Package",
+    "title": "Three.js-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 24 Deterministic Three.js Skills",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Three.js-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Speckle-Claude-Skill-Package",
+    "title": "Speckle-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — Speckle Data Platform Skill Package",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "QGIS-Claude-Skill-Package",
+    "title": "QGIS-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 19 Deterministic QGIS/PyQGIS Skills",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/QGIS-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Open-PDF-Studio-Claude-Skill-Package",
+    "title": "Open-PDF-Studio-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 6 Skills for Open PDF Studio",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Open-PDF-Studio-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "OpenAEC-Workspace-Composer",
+    "title": "Nieuwe repository: OpenAEC-Workspace-Composer",
+    "description": "Desktop app (Tauri 2 + SolidJS) to compose Claude Code workspaces with curated skill packages, MCP servers, hooks, commands & CORE-documenten — OpenAEC Foundation",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-Workspace-Composer"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Cross-Tech-AEC-Claude-Skill-Package",
+    "title": "Nieuwe repository: Cross-Tech-AEC-Claude-Skill-Package",
+    "description": "15 deterministic Claude skills for cross-technology AEC integration. Bridging IFC, ERPNext, FreeCAD, n8n, Docker, and more",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "ThatOpen-Claude-Skill-Package",
+    "title": "Nieuwe repository: ThatOpen-Claude-Skill-Package",
+    "description": "18 production-ready Claude Code skills for ThatOpen Engine 3.3.x. Building web-based BIM applications",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/ThatOpen-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Three.js-Claude-Skill-Package",
+    "title": "Nieuwe repository: Three.js-Claude-Skill-Package",
+    "description": "24 deterministic skills for Three.js 3D web development with Claude Code. Covers WebGL, WebGPU, React Three Fiber, Drei, physics, IFC, and more.",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Three.js-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Speckle-Claude-Skill-Package",
+    "title": "Nieuwe repository: Speckle-Claude-Skill-Package",
+    "description": "25 deterministic Claude AI skills for Speckle Data Platform. Object model, GraphQL API, Python/C# SDKs, connectors (Revit, Rhino, Blender, AutoCAD, Tekla), viewer, Automate",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "QGIS-Claude-Skill-Package",
+    "title": "Nieuwe repository: QGIS-Claude-Skill-Package",
+    "description": "19 deterministic Claude Code skills for QGIS/PyQGIS spatial analysis, map creation, geoprocessing, and plugin development",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/QGIS-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Open-PDF-Studio-Claude-Skill-Package",
+    "title": "Nieuwe repository: Open-PDF-Studio-Claude-Skill-Package",
+    "description": "6 deterministic Claude skills for open-pdf-studio technology boundaries. PDF.js, pdf-lib, SolidJS, Tauri 2, i18next",
+    "date": "2026-03-20",
+    "url": "https://github.com/OpenAEC-Foundation/Open-PDF-Studio-Claude-Skill-Package"
+  },
+  {
+    "type": "release",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Frappe_Claude_Skill_Package v1.1.0 uitgebracht",
+    "description": "v1.1.0 — V16 Compatibility + USAGE Guide",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Frappe_Claude_Skill_Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 28 Deterministic ERPNext/Frappe Skills",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Tauri-2-Claude-Skill-Package",
+    "title": "Tauri-2-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — Tauri 2 Skill Package",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Nextcloud-Claude-Skill-Package",
+    "title": "Nextcloud-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 24 Deterministic Skills for Nextcloud 28+",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Fluent-i18n-Claude-Skill-Package",
+    "title": "Fluent-i18n-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 16 Deterministic Skills for Project Fluent",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Fluent-i18n-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Vite-Claude-Skill-Package",
+    "title": "Vite-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 22 Deterministic Vite Skills",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Vite-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "React-Claude-Skill-Package",
+    "title": "React-Claude-Skill-Package v1.0.1 uitgebracht",
+    "description": "v1.0.1 — Methodology Compliance Remediation",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/React-Claude-Skill-Package/releases/tag/v1.0.1"
+  },
+  {
+    "type": "release",
+    "repo": "React-Claude-Skill-Package",
+    "title": "React-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — React Claude Skill Package",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/React-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "n8n-Claude-Skill-Package",
+    "title": "n8n-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 21 Skills for n8n v1.x",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "pdf-lib-Claude-Skill-Package",
+    "title": "pdf-lib-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 17 Deterministic Skills for pdf-lib",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package/releases/tag/untagged-806f222cae18a869bea2"
+  },
+  {
+    "type": "release",
+    "repo": "pdf-lib-Claude-Skill-Package",
+    "title": "pdf-lib-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — pdf-lib Skill Package",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "PDFjs-Claude-Skill-Package",
+    "title": "PDFjs-Claude-Skill-Package v1.1.0 uitgebracht",
+    "description": "v1.1.0 — 15 PDF.js Skills",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/PDFjs-Claude-Skill-Package/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "PDFjs-Claude-Skill-Package",
+    "title": "PDFjs-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 13 PDF.js Skills",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/PDFjs-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "SolidJS-Claude-Skill-Package",
+    "title": "SolidJS-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 16 Deterministic SolidJS Skills",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/SolidJS-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Docker-Claude-Skill-Package",
+    "title": "Docker-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — 22 Docker Skills",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "release",
+    "repo": "Draw.io-Claude-Skill-Package",
+    "title": "Draw.io-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — Draw.io Skill Package",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Draw.io-Claude-Skill-Package/releases/tag/v1.0.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Tauri-2-Claude-Skill-Package",
+    "title": "Nieuwe repository: Tauri-2-Claude-Skill-Package",
+    "description": "27 deterministic Claude AI skills for Tauri 2 desktop app development. Rust + TypeScript full-stack skill package",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Nextcloud-Claude-Skill-Package",
+    "title": "Nieuwe repository: Nextcloud-Claude-Skill-Package",
+    "description": "24 deterministic Claude AI skills for Nextcloud 28+ development. PHP, TypeScript, Vue.js, OCS API, WebDAV, app framework",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Fluent-i18n-Claude-Skill-Package",
+    "title": "Nieuwe repository: Fluent-i18n-Claude-Skill-Package",
+    "description": "16 deterministic Claude AI skills for Project Fluent (Mozilla i18n). FTL syntax + TypeScript integration",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Fluent-i18n-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Vite-Claude-Skill-Package",
+    "title": "Nieuwe repository: Vite-Claude-Skill-Package",
+    "description": "22 deterministic Claude AI skills for Vite 6, 7 and 8. Config, plugin API, HMR, SSR, library mode, migration",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Vite-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "React-Claude-Skill-Package",
+    "title": "Nieuwe repository: React-Claude-Skill-Package",
+    "description": "24 deterministic Claude skills for React 18 and 19 development. Hooks, components, Server Components, testing, performance",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/React-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Skill-Package-Workflow-Template",
+    "title": "Nieuwe repository: Skill-Package-Workflow-Template",
+    "description": "Template and 7-phase methodology for building deterministic Claude skill packages",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Skill-Package-Workflow-Template"
+  },
+  {
+    "type": "new_repo",
+    "repo": "n8n-Claude-Skill-Package",
+    "title": "Nieuwe repository: n8n-Claude-Skill-Package",
+    "description": "21 deterministic Claude AI skills for n8n v1.x workflow automation",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "pdf-lib-Claude-Skill-Package",
+    "title": "Nieuwe repository: pdf-lib-Claude-Skill-Package",
+    "description": "17 deterministic skills that teach Claude to write correct pdf-lib code for PDF document generation",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "PDFjs-Claude-Skill-Package",
+    "title": "Nieuwe repository: PDFjs-Claude-Skill-Package",
+    "description": "15 deterministic Claude AI skills for PDF.js (pdfjs-dist 5.x). Rendering, viewer development, error handling, and project scaffolding",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/PDFjs-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "SolidJS-Claude-Skill-Package",
+    "title": "Nieuwe repository: SolidJS-Claude-Skill-Package",
+    "description": "16 deterministic Claude AI skills for SolidJS reactive framework development",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/SolidJS-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Docker-Claude-Skill-Package",
+    "title": "Nieuwe repository: Docker-Claude-Skill-Package",
+    "description": "22 deterministic Claude skills for Docker and Docker Compose. Dockerfile best practices, multi-stage builds, Compose orchestration, container security",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Draw.io-Claude-Skill-Package",
+    "title": "Nieuwe repository: Draw.io-Claude-Skill-Package",
+    "description": "22 deterministic Claude skills for Draw.io diagram generation",
+    "date": "2026-03-19",
+    "url": "https://github.com/OpenAEC-Foundation/Draw.io-Claude-Skill-Package"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.32.0 uitgebracht",
+    "description": "Open PDF Studio v1.32.0",
+    "date": "2026-03-18",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.32.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.31.0 uitgebracht",
+    "description": "Open PDF Studio v1.31.0",
+    "date": "2026-03-18",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.31.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.30.0 uitgebracht",
+    "description": "Open PDF Studio v1.30.0",
+    "date": "2026-03-17",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.30.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-bcf-platform",
+    "title": "Nieuwe repository: openaec-bcf-platform",
+    "description": "BCF 2.1 issue management platform for BIM projects — by 3BM Bouwkunde",
+    "date": "2026-03-17",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-bcf-platform"
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.3.0 uitgebracht",
+    "description": "Open Speech Studio v0.3.0",
+    "date": "2026-03-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.3.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-monuments-core",
+    "title": "Nieuwe repository: open-monuments-core",
+    "description": "Open-Monuments Core — Frappe app voor monumentenregister (Monument, Bouwdeel, Eigenaar, Abonnement)",
+    "date": "2026-03-15",
+    "url": "https://github.com/OpenAEC-Foundation/open-monuments-core"
+  },
+  {
+    "type": "new_repo",
+    "repo": "OpenAEC-BIM-validator",
+    "title": "Nieuwe repository: OpenAEC-BIM-validator",
+    "description": "Browser-based IFC validation tool: upload an IFC model, validate against IDS specifications (NL-BIM, RVB), view results in 3D, export BCF issues. Open source by 3BM Bouwkunde.",
+    "date": "2026-03-12",
+    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.29.0 uitgebracht",
+    "description": "Open PDF Studio v1.29.0",
+    "date": "2026-03-11",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.29.0"
+  },
+  {
+    "type": "release",
+    "repo": "Open-Agents",
+    "title": "Open-Agents v0.3.0 uitgebracht",
+    "description": "v0.3.0 — Sprint 17/21/22 + Agent Library 514",
+    "date": "2026-03-11",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Agents/releases/tag/v0.3.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.25.0 uitgebracht",
+    "description": "Open PDF Studio v1.25.0",
+    "date": "2026-03-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.25.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.24.0 uitgebracht",
+    "description": "Open PDF Studio v1.24.0",
+    "date": "2026-03-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.24.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-speech-studio",
+    "title": "Nieuwe repository: open-speech-studio",
+    "description": "Open source local speech to text ",
+    "date": "2026-03-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio"
+  },
+  {
+    "type": "release",
+    "repo": "dynlex",
+    "title": "dynlex 0.0.1 uitgebracht",
+    "description": "0.0.1",
+    "date": "2026-03-08",
+    "url": "https://github.com/OpenAEC-Foundation/dynlex/releases/tag/0.0.1"
+  },
+  {
+    "type": "new_repo",
+    "repo": "blender-mcp",
+    "title": "Nieuwe repository: blender-mcp",
+    "description": "Nieuw project gestart",
+    "date": "2026-03-07",
+    "url": "https://github.com/OpenAEC-Foundation/blender-mcp"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Computational-Design-Day-Delft-March-2026",
+    "title": "Nieuwe repository: Computational-Design-Day-Delft-March-2026",
+    "description": "Nieuw project gestart",
+    "date": "2026-03-06",
+    "url": "https://github.com/OpenAEC-Foundation/Computational-Design-Day-Delft-March-2026"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.32.0 uitgebracht",
+    "description": "Open 2D Studio v0.32.0",
+    "date": "2026-03-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.32.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2D-studio-AEC-extension",
+    "title": "open-2D-studio-AEC-extension v0.1.0 uitgebracht",
+    "description": "AEC Extension v0.1.0",
+    "date": "2026-03-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-2D-studio-AEC-extension/releases/tag/v0.1.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
+    "title": "Nieuwe repository: Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
+    "description": "73 deterministic Claude AI skills for Blender, Bonsai, IfcOpenShell and Sverchok. AEC Python development skill package",
+    "date": "2026-03-05",
+    "url": "https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-2D-studio-AEC-extension",
+    "title": "Nieuwe repository: open-2D-studio-AEC-extension",
+    "description": "Nieuw project gestart",
+    "date": "2026-03-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-2D-studio-AEC-extension"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.23.0 uitgebracht",
+    "description": "Open PDF Studio v1.23.0",
+    "date": "2026-03-04",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.23.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "OpenAEC-style-book",
+    "title": "Nieuwe repository: OpenAEC-style-book",
+    "description": "Open AEC tools and resources",
+    "date": "2026-03-04",
+    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-style-book"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.22.0 uitgebracht",
+    "description": "Open PDF Studio v1.22.0",
+    "date": "2026-03-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.22.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pointcloud-studio",
+    "title": "open-pointcloud-studio v0.3.0 uitgebracht",
+    "description": "Open Pointcloud Studio v0.3.0",
+    "date": "2026-03-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.3.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.31.0 uitgebracht",
+    "description": "Open 2D Studio v0.31.0",
+    "date": "2026-03-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.31.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.30.0 uitgebracht",
+    "description": "Open 2D Studio v0.30.0",
+    "date": "2026-03-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.30.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.21.0 uitgebracht",
+    "description": "Open PDF Studio v1.21.0",
+    "date": "2026-03-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.21.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-heatloss-studio",
+    "title": "Nieuwe repository: open-heatloss-studio",
+    "description": "Rust rekenbibliotheek voor warmteverliesberekeningen volgens ISSO 51:2023",
+    "date": "2026-03-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio"
+  },
+  {
+    "type": "release",
+    "repo": "open-pointcloud-studio",
+    "title": "open-pointcloud-studio v0.2.0 uitgebracht",
+    "description": "Open Pointcloud Studio v0.2.0",
+    "date": "2026-02-26",
+    "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.2.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Open-Agents",
+    "title": "Nieuwe repository: Open-Agents",
+    "description": "Multi-agent orchestrator for Claude Code. Spawn, coordinate and monitor AI agents in parallel — no API key required.",
+    "date": "2026-02-26",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Agents"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.29.0 uitgebracht",
+    "description": "Open 2D Studio v0.29.0",
+    "date": "2026-02-25",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.29.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.20.0 uitgebracht",
+    "description": "Open PDF Studio v1.20.0",
+    "date": "2026-02-25",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.20.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.27.0 uitgebracht",
+    "description": "Open 2D Studio v0.27.0",
+    "date": "2026-02-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.27.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.18.0 uitgebracht",
+    "description": "Open PDF Studio v1.18.0",
+    "date": "2026-02-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.18.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.17.0 uitgebracht",
+    "description": "Open PDF Studio v1.17.0",
+    "date": "2026-02-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.17.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.16.0 uitgebracht",
+    "description": "Open PDF Studio v1.16.0",
+    "date": "2026-02-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.16.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-pointcloud-studio",
+    "title": "Nieuwe repository: open-pointcloud-studio",
+    "description": "Pointcloud editing tool",
+    "date": "2026-02-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio"
+  },
+  {
+    "type": "release",
+    "repo": "monty-ifc-viewer",
+    "title": "monty-ifc-viewer v1.0.1 uitgebracht",
+    "description": "Monty IFC Viewer v1.0.1",
+    "date": "2026-02-23",
+    "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/tag/v1.0.1"
+  },
+  {
+    "type": "release",
+    "repo": "monty-ifc-viewer",
+    "title": "monty-ifc-viewer v1.0.0 uitgebracht",
+    "description": "Monty IFC Viewer v1.0.0",
+    "date": "2026-02-23",
+    "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/tag/v1.0.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "pyrevit-gis2bim",
+    "title": "Nieuwe repository: pyrevit-gis2bim",
+    "description": "pyRevit extension for loading Dutch GIS data (AHN, BAG3D, BGT, CityJSON, KLIC, WMS) into Autodesk Revit",
+    "date": "2026-02-22",
+    "url": "https://github.com/OpenAEC-Foundation/pyrevit-gis2bim"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-reports",
+    "title": "Nieuwe repository: openaec-reports",
+    "description": "Nieuw project gestart",
+    "date": "2026-02-20",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-reports"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.24.0 uitgebracht",
+    "description": "Open 2D Studio v0.24.0",
+    "date": "2026-02-19",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.24.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.15.0 uitgebracht",
+    "description": "Open PDF Studio v1.15.0",
+    "date": "2026-02-19",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.15.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.13.0 uitgebracht",
+    "description": "Open PDF Studio v1.13.0",
+    "date": "2026-02-17",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.13.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.12.0 uitgebracht",
+    "description": "Open PDF Studio v1.12.0",
+    "date": "2026-02-17",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.12.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Ifc-Factory",
+    "title": "Nieuwe repository: Ifc-Factory",
+    "description": "Ifc Library ",
+    "date": "2026-02-17",
+    "url": "https://github.com/OpenAEC-Foundation/Ifc-Factory"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Ifc-Calc",
+    "title": "Nieuwe repository: Ifc-Calc",
+    "description": "Graphic Calculator ",
+    "date": "2026-02-17",
+    "url": "https://github.com/OpenAEC-Foundation/Ifc-Calc"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.22.0 uitgebracht",
+    "description": "v0.22.0",
+    "date": "2026-02-14",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.22.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.10.0 uitgebracht",
+    "description": "OpenPDFStudio v1.10.0",
+    "date": "2026-02-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.10.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.20.0 uitgebracht",
+    "description": "Open 2D Studio v0.20.0",
+    "date": "2026-02-12",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.20.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.9.0 uitgebracht",
+    "description": "OpenPDFStudio v1.9.0",
+    "date": "2026-02-12",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.9.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.8.0 uitgebracht",
+    "description": "OpenPDFStudio v1.8.0",
+    "date": "2026-02-12",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.8.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.7.0 uitgebracht",
+    "description": "OpenPDFStudio v1.7.0",
+    "date": "2026-02-12",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.7.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.6.0 uitgebracht",
+    "description": "OpenPDFStudio v1.6.0",
+    "date": "2026-02-12",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.6.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.19.0 uitgebracht",
+    "description": "v0.19.0",
+    "date": "2026-02-11",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.19.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.5.0 uitgebracht",
+    "description": "OpenPDFStudio v1.5.0",
+    "date": "2026-02-11",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.5.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.4.0 uitgebracht",
+    "description": "OpenPDFStudio v1.4.0",
+    "date": "2026-02-10",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.4.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.3.0 uitgebracht",
+    "description": "OpenPDFStudio v1.3.0",
+    "date": "2026-02-10",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.3.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.17.0 uitgebracht",
+    "description": "v0.17.0",
+    "date": "2026-02-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.17.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.2.0 uitgebracht",
+    "description": "OpenPDFStudio v1.2.0",
+    "date": "2026-02-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.2.0"
+  },
+  {
+    "type": "release",
+    "repo": "ext-drawing-statistics",
+    "title": "ext-drawing-statistics v1.0.1 uitgebracht",
+    "description": "v1.0.1",
+    "date": "2026-02-09",
+    "url": "https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1"
+  },
+  {
+    "type": "release",
+    "repo": "ext-drawing-statistics",
+    "title": "ext-drawing-statistics v1.0.0 uitgebracht",
+    "description": "v1.0.0",
+    "date": "2026-02-09",
+    "url": "https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Open-2D-Studio-Extensions",
+    "title": "Nieuwe repository: Open-2D-Studio-Extensions",
+    "description": "Nieuw project gestart",
+    "date": "2026-02-09",
+    "url": "https://github.com/OpenAEC-Foundation/Open-2D-Studio-Extensions"
+  },
+  {
+    "type": "new_repo",
+    "repo": "ext-drawing-statistics",
+    "title": "Nieuwe repository: ext-drawing-statistics",
+    "description": "Sample extension for Open 2D Studio - displays shape counts and drawing statistics",
+    "date": "2026-02-09",
+    "url": "https://github.com/OpenAEC-Foundation/ext-drawing-statistics"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.15.0 uitgebracht",
+    "description": "Open 2D Studio v0.15.0",
+    "date": "2026-02-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.15.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.13.0 uitgebracht",
+    "description": "Open 2D Studio v0.13.0",
+    "date": "2026-02-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.13.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "blender-bonsai-training",
+    "title": "Nieuwe repository: blender-bonsai-training",
+    "description": "Nieuw project gestart",
+    "date": "2026-02-06",
+    "url": "https://github.com/OpenAEC-Foundation/blender-bonsai-training"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.11.0 uitgebracht",
+    "description": "Open 2D Studio v0.11.0",
+    "date": "2026-02-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.11.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "dynlex",
+    "title": "Nieuwe repository: dynlex",
+    "description": "Nieuw project gestart",
+    "date": "2026-02-04",
+    "url": "https://github.com/OpenAEC-Foundation/dynlex"
+  },
+  {
+    "type": "new_repo",
+    "repo": "conventions",
+    "title": "Nieuwe repository: conventions",
+    "description": "Nieuw project gestart",
+    "date": "2026-02-04",
+    "url": "https://github.com/OpenAEC-Foundation/conventions"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.9.0 uitgebracht",
+    "description": "Open 2D Studio v0.9.0",
+    "date": "2026-02-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.9.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.8.0 uitgebracht",
+    "description": "Open 2D Studio v0.8.0",
+    "date": "2026-02-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.8.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.1.0 uitgebracht",
+    "description": "v1.1.0",
+    "date": "2026-02-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.7.0 uitgebracht",
+    "description": "Open 2D Studio v0.7.0",
+    "date": "2026-02-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.7.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.6.0 uitgebracht",
+    "description": "Open 2D Studio v0.6.0",
+    "date": "2026-01-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.6.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.5.0 uitgebracht",
+    "description": "Open 2D Modeler v0.5.0",
+    "date": "2026-01-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.5.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.4.0 uitgebracht",
+    "description": "Open 2D Modeler v0.4.0",
+    "date": "2026-01-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.4.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "repo-cleaner",
+    "title": "Nieuwe repository: repo-cleaner",
+    "description": "Tools to apply LGPL 3.0 license across all OpenAEC-Foundation repositories",
+    "date": "2026-01-30",
+    "url": "https://github.com/OpenAEC-Foundation/repo-cleaner"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.3.0 uitgebracht",
+    "description": "Open 2D Modeler v0.3.0",
+    "date": "2026-01-28",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.3.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.0.3-tauri uitgebracht",
+    "description": "OpenPDFStudio v1.0.3-tauri",
+    "date": "2026-01-28",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.0.3-tauri"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.2.0 uitgebracht",
+    "description": "Open 2D Modeler v0.2.0",
+    "date": "2026-01-26",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.2.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.0.3 uitgebracht",
+    "description": "v1.0.3: Add Find/Search feature and improve text selection",
+    "date": "2026-01-26",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.0.3"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.1.1 uitgebracht",
+    "description": "Open 2D Modeler v0.1.1",
+    "date": "2026-01-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.1.1"
+  },
+  {
+    "type": "release",
+    "repo": "open-2d-studio",
+    "title": "open-2d-studio v0.1.0 uitgebracht",
+    "description": "Open 2D Modeler v0.1.0",
+    "date": "2026-01-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.1.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.0.2 uitgebracht",
+    "description": "v1.0.2",
+    "date": "2026-01-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.0.2"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.0.0 uitgebracht",
+    "description": "OpenPDFStudio v1.0.0",
+    "date": "2026-01-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.0.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-pdf-studio",
+    "title": "Nieuwe repository: open-pdf-studio",
+    "description": "Nieuw project gestart",
+    "date": "2026-01-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio"
+  },
+  {
+    "type": "new_repo",
+    "repo": "zaagplan",
+    "title": "Nieuwe repository: zaagplan",
+    "description": "Optimaliseer zaagplannen voor 1D en 2D materialen",
+    "date": "2026-01-18",
+    "url": "https://github.com/OpenAEC-Foundation/zaagplan"
+  },
+  {
+    "type": "new_repo",
+    "repo": "github",
+    "title": "Nieuwe repository: github",
+    "description": "Nieuw project gestart",
+    "date": "2026-01-17",
+    "url": "https://github.com/OpenAEC-Foundation/github"
+  },
+  {
+    "type": "new_repo",
+    "repo": "cpt-viewer",
+    "title": "Nieuwe repository: cpt-viewer",
+    "description": "Viewer of CPT's. GEF / BRO-xml ",
+    "date": "2026-01-16",
+    "url": "https://github.com/OpenAEC-Foundation/cpt-viewer"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Frappe_Claude_Skill_Package",
+    "title": "Nieuwe repository: Frappe_Claude_Skill_Package",
+    "description": "60 deterministic Claude AI skills for Frappe Framework & ERPNext v14-v16 development and operations",
+    "date": "2026-01-14",
+    "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "gis2bim-openanalysis",
+    "title": "Nieuwe repository: gis2bim-openanalysis",
+    "description": "Nieuw project gestart",
+    "date": "2026-01-13",
+    "url": "https://github.com/OpenAEC-Foundation/gis2bim-openanalysis"
+  },
+  {
+    "type": "new_repo",
+    "repo": "ifcgit-4-nextcloud",
+    "title": "Nieuwe repository: ifcgit-4-nextcloud",
+    "description": "Add-on for NextCloud to integrate IfcGit",
+    "date": "2026-01-10",
+    "url": "https://github.com/OpenAEC-Foundation/ifcgit-4-nextcloud"
+  },
+  {
+    "type": "new_repo",
+    "repo": "nextcloud-talk-erp-next-bot",
+    "title": "Nieuwe repository: nextcloud-talk-erp-next-bot",
+    "description": "An application on top of NextCloud ",
+    "date": "2026-01-10",
+    "url": "https://github.com/OpenAEC-Foundation/nextcloud-talk-erp-next-bot"
+  },
+  {
+    "type": "new_repo",
+    "repo": "website",
+    "title": "Nieuwe repository: website",
+    "description": "Website of OpenAec Foundation",
+    "date": "2026-01-08",
+    "url": "https://github.com/OpenAEC-Foundation/website"
+  },
+  {
+    "type": "new_repo",
+    "repo": "monty-ifc-viewer",
+    "title": "Nieuwe repository: monty-ifc-viewer",
+    "description": "Monty IFC-viewer",
+    "date": "2026-01-08",
+    "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer"
+  },
+  {
+    "type": "new_repo",
+    "repo": "nextcloud-claude-bot",
+    "title": "Nieuwe repository: nextcloud-claude-bot",
+    "description": "Nieuw project gestart",
+    "date": "2026-01-03",
+    "url": "https://github.com/OpenAEC-Foundation/nextcloud-claude-bot"
   }
 ]
