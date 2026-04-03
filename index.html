@@ -90,6 +90,8 @@
       max-width: 600px;
       margin: 0 auto var(--sp-8);
       line-height: 1.6;
+      word-break: break-word;
+      overflow-wrap: anywhere;
     }
     .hero-buttons {
       display: flex;
@@ -652,7 +654,9 @@
       .mobile-only { display: flex; }
       .desktop-only { display: none; }
       .section { padding: var(--sp-12) var(--sp-4); }
-      .hero { padding: var(--sp-16) var(--sp-4); min-height: auto; }
+      .hero { padding: var(--sp-16) var(--sp-4); min-height: auto; overflow: visible; }
+      .hero .tagline { font-size: 1rem; max-width: 100%; }
+      .hero .hero-content { max-width: 100%; padding: 0; }
       .features-grid, .tools-grid { grid-template-columns: 1fr; }
       .missie-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
