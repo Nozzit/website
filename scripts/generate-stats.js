@@ -31,85 +31,66 @@ async function fetchAllPages(baseUrl) {
 }
 
 function buildTimeSeries(publicRepos) {
-  // Build cumulative time series from repo creation dates
-  const months = new Set();
-  publicRepos.forEach(r => months.add(r.created_at.substring(0, 7)));
-  const sortedMonths = [...months].sort();
+  // Build DAILY cumulative time series from repo creation dates
+  const startDate = new Date('2025-12-01');
+  const endDate = new Date();
+  endDate.setHours(23, 59, 59);
 
-  // Fill in any gaps, starting from December 2025
-  if (sortedMonths.length >= 2) {
-    const [startY, startM] = [2025, 12]; // Always start from Dec 2025
-    const [endY, endM] = sortedMonths[sortedMonths.length - 1].split('-').map(Number);
-    const allMonths = [];
-    let y = startY, m = startM;
-    while (y < endY || (y === endY && m <= endM)) {
-      allMonths.push(`${y}-${String(m).padStart(2, '0')}`);
-      m++;
-      if (m > 12) { m = 1; y++; }
-    }
-    sortedMonths.length = 0;
-    sortedMonths.push(...allMonths);
+  // Generate all days from start to today
+  const allDays = [];
+  const d = new Date(startDate);
+  while (d <= endDate) {
+    allDays.push(d.toISOString().substring(0, 10));
+    d.setDate(d.getDate() + 1);
   }
 
-  // Cumulative repos per month
-  // Count repos created before the start month as baseline
-  const startMonth = sortedMonths[0];
-  const preExisting = publicRepos.filter(r => r.created_at.substring(0, 7) < startMonth);
+  // Pre-existing repos (before start date)
+  const startDateStr = '2025-12-01';
+  const preExisting = publicRepos.filter(r => r.created_at.substring(0, 10) < startDateStr);
   let cumRepos = preExisting.length;
   let cumStars = preExisting.reduce((s, r) => s + r.stargazers_count, 0);
   let cumIssues = preExisting.reduce((s, r) => s + r.open_issues_count, 0);
   let cumCommits = preExisting.reduce((s, r) => s + (r._commitCount || 0), 0);
-  let cumSize = preExisting.reduce((s, r) => s + r.size, 0);
-  let locSinceDec2025 = 0; // LOC starts at 0 from Dec 2025
-  const reposPerMonth = {};
-  const starsPerMonth = {};
-  const issuesPerMonth = {};
-  const commitsPerMonth = {};
-  const sizePerMonth = {};
+  let locSinceDec2025 = 0;
 
-  sortedMonths.forEach(month => {
-    const reposThisMonth = publicRepos.filter(r => r.created_at.substring(0, 7) === month);
-    cumRepos += reposThisMonth.length;
-    cumStars += reposThisMonth.reduce((s, r) => s + r.stargazers_count, 0);
-    cumIssues += reposThisMonth.reduce((s, r) => s + r.open_issues_count, 0);
-    cumCommits += reposThisMonth.reduce((s, r) => s + (r._commitCount || 0), 0);
-    cumSize += reposThisMonth.reduce((s, r) => s + r.size, 0);
-    locSinceDec2025 += reposThisMonth.reduce((s, r) => s + r.size, 0) * 25; // only count code from Dec 2025 onwards
-
-    reposPerMonth[month] = cumRepos;
-    starsPerMonth[month] = cumStars;
-    issuesPerMonth[month] = cumIssues;
-    commitsPerMonth[month] = cumCommits;
-    sizePerMonth[month] = Math.round(locSinceDec2025); // lines of code since Dec 2025
-  });
-
-  // Estimate contributors per month based on unique contributors per repo created that month
-  const contributorsPerMonth = {};
   const seenContributors = new Set();
-  // Pre-existing contributors
   preExisting.forEach(r => {
-    for (let i = 0; i < (r._contributorCount || 0); i++) {
-      seenContributors.add(`${r.name}-${i}`);
-    }
+    for (let i = 0; i < (r._contributorCount || 0); i++) seenContributors.add(`${r.name}-${i}`);
   });
-  sortedMonths.forEach(month => {
-    const reposThisMonth = publicRepos.filter(r => r.created_at.substring(0, 7) === month);
-    reposThisMonth.forEach(r => {
-      for (let i = 0; i < (r._contributorCount || 0); i++) {
-        seenContributors.add(`${r.name}-${i}`);
-      }
+
+  const data = {};
+  allDays.forEach(day => {
+    const reposToday = publicRepos.filter(r => r.created_at.substring(0, 10) === day);
+    cumRepos += reposToday.length;
+    cumStars += reposToday.reduce((s, r) => s + r.stargazers_count, 0);
+    cumIssues += reposToday.reduce((s, r) => s + r.open_issues_count, 0);
+    cumCommits += reposToday.reduce((s, r) => s + (r._commitCount || 0), 0);
+    locSinceDec2025 += reposToday.reduce((s, r) => s + r.size, 0) * 25;
+    reposToday.forEach(r => {
+      for (let i = 0; i < (r._contributorCount || 0); i++) seenContributors.add(`${r.name}-${i}`);
     });
-    contributorsPerMonth[month] = seenContributors.size;
+
+    data[day] = {
+      repos: cumRepos,
+      stars: cumStars,
+      issues: cumIssues,
+      commits: cumCommits,
+      loc: Math.round(locSinceDec2025),
+      contributors: seenContributors.size,
+    };
+  });
+
+  // Generate month labels for x-axis (first day of each month that appears)
+  const monthLabels = {};
+  allDays.forEach(day => {
+    const month = day.substring(0, 7);
+    if (!monthLabels[month]) monthLabels[month] = day;
   });
 
   return {
-    months: sortedMonths,
-    cumulativeRepos: reposPerMonth,
-    cumulativeStars: starsPerMonth,
-    cumulativeIssues: issuesPerMonth,
-    cumulativeCommits: commitsPerMonth,
-    cumulativeLinesOfCode: sizePerMonth,
-    cumulativeContributors: contributorsPerMonth,
+    days: allDays,
+    data: data,
+    monthLabels: monthLabels,
   };
 }
 

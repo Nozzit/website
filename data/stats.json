@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-03T18:45:42.131Z",
+  "generated": "2026-04-03T18:53:56.449Z",
   "summary": {
     "totalRepos": 108,
     "publicRepos": 67,
@@ -9,7 +9,7 @@
     "totalOpenIssues": 162,
     "totalSizeKB": 11574792,
     "estimatedLinesOfCode": 19056300,
-    "totalCommits": 4176,
+    "totalCommits": 4173,
     "uniqueContributors": 32,
     "languages": 8
   },
@@ -59,7 +59,7 @@
       "forks": 3,
       "openIssues": 55,
       "sizeKB": 291873,
-      "commits": 146,
+      "commits": 143,
       "contributors": 5,
       "releases": 5,
       "latestRelease": "v1.41.0",
@@ -1241,54 +1241,1124 @@
     }
   ],
   "timeSeries": {
-    "months": [
-      "2025-12",
-      "2026-01",
-      "2026-02",
-      "2026-03",
-      "2026-04"
+    "days": [
+      "2025-12-01",
+      "2025-12-02",
+      "2025-12-03",
+      "2025-12-04",
+      "2025-12-05",
+      "2025-12-06",
+      "2025-12-07",
+      "2025-12-08",
+      "2025-12-09",
+      "2025-12-10",
+      "2025-12-11",
+      "2025-12-12",
+      "2025-12-13",
+      "2025-12-14",
+      "2025-12-15",
+      "2025-12-16",
+      "2025-12-17",
+      "2025-12-18",
+      "2025-12-19",
+      "2025-12-20",
+      "2025-12-21",
+      "2025-12-22",
+      "2025-12-23",
+      "2025-12-24",
+      "2025-12-25",
+      "2025-12-26",
+      "2025-12-27",
+      "2025-12-28",
+      "2025-12-29",
+      "2025-12-30",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-01-02",
+      "2026-01-03",
+      "2026-01-04",
+      "2026-01-05",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-09",
+      "2026-01-10",
+      "2026-01-11",
+      "2026-01-12",
+      "2026-01-13",
+      "2026-01-14",
+      "2026-01-15",
+      "2026-01-16",
+      "2026-01-17",
+      "2026-01-18",
+      "2026-01-19",
+      "2026-01-20",
+      "2026-01-21",
+      "2026-01-22",
+      "2026-01-23",
+      "2026-01-24",
+      "2026-01-25",
+      "2026-01-26",
+      "2026-01-27",
+      "2026-01-28",
+      "2026-01-29",
+      "2026-01-30",
+      "2026-01-31",
+      "2026-02-01",
+      "2026-02-02",
+      "2026-02-03",
+      "2026-02-04",
+      "2026-02-05",
+      "2026-02-06",
+      "2026-02-07",
+      "2026-02-08",
+      "2026-02-09",
+      "2026-02-10",
+      "2026-02-11",
+      "2026-02-12",
+      "2026-02-13",
+      "2026-02-14",
+      "2026-02-15",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-02-19",
+      "2026-02-20",
+      "2026-02-21",
+      "2026-02-22",
+      "2026-02-23",
+      "2026-02-24",
+      "2026-02-25",
+      "2026-02-26",
+      "2026-02-27",
+      "2026-02-28",
+      "2026-03-01",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-03-07",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-14",
+      "2026-03-15",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-03-22",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-03-29",
+      "2026-03-30",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-04-02"
     ],
-    "cumulativeRepos": {
-      "2025-12": 6,
-      "2026-01": 18,
-      "2026-02": 29,
-      "2026-03": 65,
-      "2026-04": 67
+    "data": {
+      "2025-12-01": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-02": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-03": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-04": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-05": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-06": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-07": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-08": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-09": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-10": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-11": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-12": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-13": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-14": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-15": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-16": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-17": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-18": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-19": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-20": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-21": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-22": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-23": {
+        "repos": 4,
+        "stars": 51,
+        "issues": 50,
+        "commits": 1112,
+        "loc": 0,
+        "contributors": 22
+      },
+      "2025-12-24": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-25": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-26": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-27": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-28": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-29": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-30": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2025-12-31": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2026-01-01": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2026-01-02": {
+        "repos": 6,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1217,
+        "loc": 673500,
+        "contributors": 29
+      },
+      "2026-01-03": {
+        "repos": 7,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1222,
+        "loc": 673950,
+        "contributors": 32
+      },
+      "2026-01-04": {
+        "repos": 7,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1222,
+        "loc": 673950,
+        "contributors": 32
+      },
+      "2026-01-05": {
+        "repos": 7,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1222,
+        "loc": 673950,
+        "contributors": 32
+      },
+      "2026-01-06": {
+        "repos": 7,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1222,
+        "loc": 673950,
+        "contributors": 32
+      },
+      "2026-01-07": {
+        "repos": 7,
+        "stars": 65,
+        "issues": 67,
+        "commits": 1222,
+        "loc": 673950,
+        "contributors": 32
+      },
+      "2026-01-08": {
+        "repos": 9,
+        "stars": 68,
+        "issues": 69,
+        "commits": 1285,
+        "loc": 3526125,
+        "contributors": 39
+      },
+      "2026-01-09": {
+        "repos": 9,
+        "stars": 68,
+        "issues": 69,
+        "commits": 1285,
+        "loc": 3526125,
+        "contributors": 39
+      },
+      "2026-01-10": {
+        "repos": 11,
+        "stars": 69,
+        "issues": 73,
+        "commits": 1294,
+        "loc": 3544600,
+        "contributors": 42
+      },
+      "2026-01-11": {
+        "repos": 11,
+        "stars": 69,
+        "issues": 73,
+        "commits": 1294,
+        "loc": 3544600,
+        "contributors": 42
+      },
+      "2026-01-12": {
+        "repos": 11,
+        "stars": 69,
+        "issues": 73,
+        "commits": 1294,
+        "loc": 3544600,
+        "contributors": 42
+      },
+      "2026-01-13": {
+        "repos": 12,
+        "stars": 70,
+        "issues": 73,
+        "commits": 1303,
+        "loc": 4570675,
+        "contributors": 45
+      },
+      "2026-01-14": {
+        "repos": 13,
+        "stars": 129,
+        "issues": 74,
+        "commits": 2199,
+        "loc": 4654550,
+        "contributors": 48
+      },
+      "2026-01-15": {
+        "repos": 13,
+        "stars": 129,
+        "issues": 74,
+        "commits": 2199,
+        "loc": 4654550,
+        "contributors": 48
+      },
+      "2026-01-16": {
+        "repos": 14,
+        "stars": 129,
+        "issues": 74,
+        "commits": 2205,
+        "loc": 4656575,
+        "contributors": 51
+      },
+      "2026-01-17": {
+        "repos": 15,
+        "stars": 129,
+        "issues": 74,
+        "commits": 2223,
+        "loc": 4657375,
+        "contributors": 53
+      },
+      "2026-01-18": {
+        "repos": 16,
+        "stars": 130,
+        "issues": 75,
+        "commits": 2233,
+        "loc": 4661825,
+        "contributors": 56
+      },
+      "2026-01-19": {
+        "repos": 16,
+        "stars": 130,
+        "issues": 75,
+        "commits": 2233,
+        "loc": 4661825,
+        "contributors": 56
+      },
+      "2026-01-20": {
+        "repos": 16,
+        "stars": 130,
+        "issues": 75,
+        "commits": 2233,
+        "loc": 4661825,
+        "contributors": 56
+      },
+      "2026-01-21": {
+        "repos": 16,
+        "stars": 130,
+        "issues": 75,
+        "commits": 2233,
+        "loc": 4661825,
+        "contributors": 56
+      },
+      "2026-01-22": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-23": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-24": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-25": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-26": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-27": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-28": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-29": {
+        "repos": 17,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2376,
+        "loc": 11958650,
+        "contributors": 61
+      },
+      "2026-01-30": {
+        "repos": 18,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2383,
+        "loc": 11959425,
+        "contributors": 62
+      },
+      "2026-01-31": {
+        "repos": 18,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2383,
+        "loc": 11959425,
+        "contributors": 62
+      },
+      "2026-02-01": {
+        "repos": 18,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2383,
+        "loc": 11959425,
+        "contributors": 62
+      },
+      "2026-02-02": {
+        "repos": 18,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2383,
+        "loc": 11959425,
+        "contributors": 62
+      },
+      "2026-02-03": {
+        "repos": 18,
+        "stars": 172,
+        "issues": 130,
+        "commits": 2383,
+        "loc": 11959425,
+        "contributors": 62
+      },
+      "2026-02-04": {
+        "repos": 20,
+        "stars": 175,
+        "issues": 130,
+        "commits": 2620,
+        "loc": 12265025,
+        "contributors": 65
+      },
+      "2026-02-05": {
+        "repos": 20,
+        "stars": 175,
+        "issues": 130,
+        "commits": 2620,
+        "loc": 12265025,
+        "contributors": 65
+      },
+      "2026-02-06": {
+        "repos": 21,
+        "stars": 175,
+        "issues": 130,
+        "commits": 2622,
+        "loc": 13008275,
+        "contributors": 66
+      },
+      "2026-02-07": {
+        "repos": 21,
+        "stars": 175,
+        "issues": 130,
+        "commits": 2622,
+        "loc": 13008275,
+        "contributors": 66
+      },
+      "2026-02-08": {
+        "repos": 21,
+        "stars": 175,
+        "issues": 130,
+        "commits": 2622,
+        "loc": 13008275,
+        "contributors": 66
+      },
+      "2026-02-09": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-10": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-11": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-12": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-13": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-14": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-15": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-16": {
+        "repos": 23,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2632,
+        "loc": 13008400,
+        "contributors": 71
+      },
+      "2026-02-17": {
+        "repos": 25,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2676,
+        "loc": 13039175,
+        "contributors": 76
+      },
+      "2026-02-18": {
+        "repos": 25,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2676,
+        "loc": 13039175,
+        "contributors": 76
+      },
+      "2026-02-19": {
+        "repos": 25,
+        "stars": 175,
+        "issues": 132,
+        "commits": 2676,
+        "loc": 13039175,
+        "contributors": 76
+      },
+      "2026-02-20": {
+        "repos": 26,
+        "stars": 175,
+        "issues": 139,
+        "commits": 2931,
+        "loc": 14069750,
+        "contributors": 79
+      },
+      "2026-02-21": {
+        "repos": 26,
+        "stars": 175,
+        "issues": 139,
+        "commits": 2931,
+        "loc": 14069750,
+        "contributors": 79
+      },
+      "2026-02-22": {
+        "repos": 27,
+        "stars": 177,
+        "issues": 142,
+        "commits": 2937,
+        "loc": 14078500,
+        "contributors": 81
+      },
+      "2026-02-23": {
+        "repos": 27,
+        "stars": 177,
+        "issues": 142,
+        "commits": 2937,
+        "loc": 14078500,
+        "contributors": 81
+      },
+      "2026-02-24": {
+        "repos": 28,
+        "stars": 177,
+        "issues": 148,
+        "commits": 2952,
+        "loc": 14104025,
+        "contributors": 85
+      },
+      "2026-02-25": {
+        "repos": 28,
+        "stars": 177,
+        "issues": 148,
+        "commits": 2952,
+        "loc": 14104025,
+        "contributors": 85
+      },
+      "2026-02-26": {
+        "repos": 29,
+        "stars": 180,
+        "issues": 148,
+        "commits": 3274,
+        "loc": 14719050,
+        "contributors": 86
+      },
+      "2026-02-27": {
+        "repos": 29,
+        "stars": 180,
+        "issues": 148,
+        "commits": 3274,
+        "loc": 14719050,
+        "contributors": 86
+      },
+      "2026-02-28": {
+        "repos": 29,
+        "stars": 180,
+        "issues": 148,
+        "commits": 3274,
+        "loc": 14719050,
+        "contributors": 86
+      },
+      "2026-03-01": {
+        "repos": 29,
+        "stars": 180,
+        "issues": 148,
+        "commits": 3274,
+        "loc": 14719050,
+        "contributors": 86
+      },
+      "2026-03-02": {
+        "repos": 30,
+        "stars": 180,
+        "issues": 149,
+        "commits": 3450,
+        "loc": 14757950,
+        "contributors": 89
+      },
+      "2026-03-03": {
+        "repos": 30,
+        "stars": 180,
+        "issues": 149,
+        "commits": 3450,
+        "loc": 14757950,
+        "contributors": 89
+      },
+      "2026-03-04": {
+        "repos": 31,
+        "stars": 181,
+        "issues": 151,
+        "commits": 3462,
+        "loc": 14797650,
+        "contributors": 92
+      },
+      "2026-03-05": {
+        "repos": 33,
+        "stars": 189,
+        "issues": 151,
+        "commits": 3520,
+        "loc": 14910350,
+        "contributors": 96
+      },
+      "2026-03-06": {
+        "repos": 34,
+        "stars": 190,
+        "issues": 151,
+        "commits": 3528,
+        "loc": 14936675,
+        "contributors": 97
+      },
+      "2026-03-07": {
+        "repos": 35,
+        "stars": 190,
+        "issues": 151,
+        "commits": 3667,
+        "loc": 14953950,
+        "contributors": 117
+      },
+      "2026-03-08": {
+        "repos": 35,
+        "stars": 190,
+        "issues": 151,
+        "commits": 3667,
+        "loc": 14953950,
+        "contributors": 117
+      },
+      "2026-03-09": {
+        "repos": 36,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3699,
+        "loc": 16725050,
+        "contributors": 120
+      },
+      "2026-03-10": {
+        "repos": 36,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3699,
+        "loc": 16725050,
+        "contributors": 120
+      },
+      "2026-03-11": {
+        "repos": 36,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3699,
+        "loc": 16725050,
+        "contributors": 120
+      },
+      "2026-03-12": {
+        "repos": 37,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3763,
+        "loc": 18690600,
+        "contributors": 122
+      },
+      "2026-03-13": {
+        "repos": 37,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3763,
+        "loc": 18690600,
+        "contributors": 122
+      },
+      "2026-03-14": {
+        "repos": 37,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3763,
+        "loc": 18690600,
+        "contributors": 122
+      },
+      "2026-03-15": {
+        "repos": 38,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3780,
+        "loc": 18691500,
+        "contributors": 123
+      },
+      "2026-03-16": {
+        "repos": 38,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3780,
+        "loc": 18691500,
+        "contributors": 123
+      },
+      "2026-03-17": {
+        "repos": 39,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3809,
+        "loc": 18700400,
+        "contributors": 125
+      },
+      "2026-03-18": {
+        "repos": 39,
+        "stars": 191,
+        "issues": 159,
+        "commits": 3809,
+        "loc": 18700400,
+        "contributors": 125
+      },
+      "2026-03-19": {
+        "repos": 51,
+        "stars": 202,
+        "issues": 159,
+        "commits": 4022,
+        "loc": 18852450,
+        "contributors": 137
+      },
+      "2026-03-20": {
+        "repos": 58,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4106,
+        "loc": 18995450,
+        "contributors": 144
+      },
+      "2026-03-21": {
+        "repos": 58,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4106,
+        "loc": 18995450,
+        "contributors": 144
+      },
+      "2026-03-22": {
+        "repos": 58,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4106,
+        "loc": 18995450,
+        "contributors": 144
+      },
+      "2026-03-23": {
+        "repos": 58,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4106,
+        "loc": 18995450,
+        "contributors": 144
+      },
+      "2026-03-24": {
+        "repos": 61,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4134,
+        "loc": 19003100,
+        "contributors": 147
+      },
+      "2026-03-25": {
+        "repos": 61,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4134,
+        "loc": 19003100,
+        "contributors": 147
+      },
+      "2026-03-26": {
+        "repos": 62,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4151,
+        "loc": 19040625,
+        "contributors": 149
+      },
+      "2026-03-27": {
+        "repos": 62,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4151,
+        "loc": 19040625,
+        "contributors": 149
+      },
+      "2026-03-28": {
+        "repos": 63,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4153,
+        "loc": 19044025,
+        "contributors": 150
+      },
+      "2026-03-29": {
+        "repos": 63,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4153,
+        "loc": 19044025,
+        "contributors": 150
+      },
+      "2026-03-30": {
+        "repos": 65,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4155,
+        "loc": 19044550,
+        "contributors": 152
+      },
+      "2026-03-31": {
+        "repos": 65,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4155,
+        "loc": 19044550,
+        "contributors": 152
+      },
+      "2026-04-01": {
+        "repos": 67,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4173,
+        "loc": 19056300,
+        "contributors": 156
+      },
+      "2026-04-02": {
+        "repos": 67,
+        "stars": 214,
+        "issues": 162,
+        "commits": 4173,
+        "loc": 19056300,
+        "contributors": 156
+      }
     },
-    "cumulativeStars": {
-      "2025-12": 65,
-      "2026-01": 172,
-      "2026-02": 180,
-      "2026-03": 214,
-      "2026-04": 214
-    },
-    "cumulativeIssues": {
-      "2025-12": 67,
-      "2026-01": 130,
-      "2026-02": 148,
-      "2026-03": 162,
-      "2026-04": 162
-    },
-    "cumulativeCommits": {
-      "2025-12": 1217,
-      "2026-01": 2386,
-      "2026-02": 3277,
-      "2026-03": 4158,
-      "2026-04": 4176
-    },
-    "cumulativeLinesOfCode": {
-      "2025-12": 673500,
-      "2026-01": 11959425,
-      "2026-02": 14719050,
-      "2026-03": 19044550,
-      "2026-04": 19056300
-    },
-    "cumulativeContributors": {
-      "2025-12": 29,
-      "2026-01": 62,
-      "2026-02": 86,
-      "2026-03": 152,
-      "2026-04": 156
+    "monthLabels": {
+      "2025-12": "2025-12-01",
+      "2026-01": "2026-01-01",
+      "2026-02": "2026-02-01",
+      "2026-03": "2026-03-01",
+      "2026-04": "2026-04-01"
     }
   },
   "historicalTrend": [
@@ -1302,7 +2372,7 @@
       "totalOpenIssues": 162,
       "totalSizeKB": 11574792,
       "estimatedLinesOfCode": 19056300,
-      "totalCommits": 4177,
+      "totalCommits": 4176,
       "uniqueContributors": 32,
       "languages": 8
     }

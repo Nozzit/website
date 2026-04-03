@@ -640,13 +640,77 @@ function renderStats(data) {
   // Line charts (time series)
   if (data.timeSeries) {
     const ts = data.timeSeries;
-    lineChart('chart-cum-repos', ts.months, ts.cumulativeRepos, '#D97706');
-    lineChart('chart-cum-commits', ts.months, ts.cumulativeCommits, '#16A34A');
-    lineChart('chart-cum-issues', ts.months, ts.cumulativeIssues, '#EA580C');
-    if (ts.cumulativeContributors) lineChart('chart-cum-contributors', ts.months, ts.cumulativeContributors, '#16A34A');
-    lineChart('chart-cum-stars', ts.months, ts.cumulativeStars, '#F59E0B');
-    lineChart('chart-cum-loc', ts.months, ts.cumulativeLinesOfCode, '#3178C6', true);
+    dailyLineChart('chart-cum-repos', ts, 'repos', '#D97706');
+    dailyLineChart('chart-cum-commits', ts, 'commits', '#16A34A');
+    dailyLineChart('chart-cum-issues', ts, 'issues', '#EA580C');
+    dailyLineChart('chart-cum-contributors', ts, 'contributors', '#16A34A');
+    dailyLineChart('chart-cum-stars', ts, 'stars', '#F59E0B');
+    dailyLineChart('chart-cum-loc', ts, 'loc', '#3178C6', true);
   }
+}
+
+function dailyLineChart(id, ts, field, color, formatLarge) {
+  const el = document.getElementById(id);
+  if (!el || !ts.days) return;
+
+  const days = ts.days;
+  const values = days.map(d => ts.data[d] ? ts.data[d][field] : 0);
+  const max = Math.max(...values) || 1;
+
+  function fmt(v) {
+    if (!formatLarge) return v.toLocaleString('nl-NL');
+    if (v >= 1000000) return (v / 1000000).toFixed(1) + 'M';
+    if (v >= 1000) return (v / 1000).toFixed(0) + 'K';
+    return v;
+  }
+
+  const svgW = 600, svgH = 220;
+  const padL = 65, padR = 15, padT = 25, padB = 35;
+  const chartW = svgW - padL - padR;
+  const chartH = svgH - padT - padB;
+
+  // Build SVG path from daily points
+  const points = values.map((v, i) => ({
+    x: padL + (i / Math.max(1, days.length - 1)) * chartW,
+    y: padT + chartH - ((v / max) * chartH),
+    v
+  }));
+
+  const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+  const areaPath = linePath + ` L${points[points.length-1].x.toFixed(1)},${padT + chartH} L${points[0].x.toFixed(1)},${padT + chartH} Z`;
+
+  // Y-axis grid
+  const yGrid = [0, 0.25, 0.5, 0.75, 1].map(f => {
+    const y = padT + chartH - f * chartH;
+    return `<line x1="${padL}" y1="${y}" x2="${svgW - padR}" y2="${y}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="${padL - 8}" y="${y + 4}" fill="#A1A1AA" font-size="10" font-family="JetBrains Mono, monospace" text-anchor="end">${fmt(Math.round(max * f))}</text>`;
+  }).join('');
+
+  // X-axis: only show month labels (first day of each month)
+  const monthEntries = Object.entries(ts.monthLabels);
+  const xLabels = monthEntries.map(([month, firstDay]) => {
+    const idx = days.indexOf(firstDay);
+    if (idx < 0) return '';
+    const x = padL + (idx / Math.max(1, days.length - 1)) * chartW;
+    return `<line x1="${x}" y1="${padT}" x2="${x}" y2="${padT + chartH}" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="${x}" y="${svgH - 8}" fill="#A1A1AA" font-size="10" font-family="JetBrains Mono, monospace" text-anchor="middle">${month.replace('20',"'")}</text>`;
+  }).join('');
+
+  // Show value at last point
+  const last = points[points.length - 1];
+  const first = points[0];
+  const endLabel = `<text x="${last.x - 4}" y="${last.y - 8}" fill="${color}" font-size="12" font-weight="700" font-family="JetBrains Mono, monospace" text-anchor="end">${fmt(last.v)}</text>
+    <circle cx="${last.x}" cy="${last.y}" r="4" fill="${color}" stroke="var(--deep-forge)" stroke-width="2"/>`;
+
+  el.innerHTML = `
+    <svg viewBox="0 0 ${svgW} ${svgH}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="overflow:visible;">
+      ${yGrid}
+      ${xLabels}
+      <path d="${areaPath}" fill="${color}" fill-opacity="0.1"/>
+      <path d="${linePath}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      ${endLabel}
+    </svg>
+  `;
 }
 
 function lineChart(id, months, dataObj, color, formatLarge) {
