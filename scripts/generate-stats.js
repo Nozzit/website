@@ -30,6 +30,64 @@ async function fetchAllPages(baseUrl) {
   return results;
 }
 
+function buildTimeSeries(publicRepos) {
+  // Build cumulative time series from repo creation dates
+  const months = new Set();
+  publicRepos.forEach(r => months.add(r.created_at.substring(0, 7)));
+  const sortedMonths = [...months].sort();
+
+  // Fill in any gaps between first and last month
+  if (sortedMonths.length >= 2) {
+    const [startY, startM] = sortedMonths[0].split('-').map(Number);
+    const [endY, endM] = sortedMonths[sortedMonths.length - 1].split('-').map(Number);
+    const allMonths = [];
+    let y = startY, m = startM;
+    while (y < endY || (y === endY && m <= endM)) {
+      allMonths.push(`${y}-${String(m).padStart(2, '0')}`);
+      m++;
+      if (m > 12) { m = 1; y++; }
+    }
+    sortedMonths.length = 0;
+    sortedMonths.push(...allMonths);
+  }
+
+  // Cumulative repos per month
+  let cumRepos = 0;
+  let cumStars = 0;
+  let cumIssues = 0;
+  let cumCommits = 0;
+  let cumSize = 0;
+  const reposPerMonth = {};
+  const starsPerMonth = {};
+  const issuesPerMonth = {};
+  const commitsPerMonth = {};
+  const sizePerMonth = {};
+
+  sortedMonths.forEach(month => {
+    const reposThisMonth = publicRepos.filter(r => r.created_at.substring(0, 7) === month);
+    cumRepos += reposThisMonth.length;
+    cumStars += reposThisMonth.reduce((s, r) => s + r.stargazers_count, 0);
+    cumIssues += reposThisMonth.reduce((s, r) => s + r.open_issues_count, 0);
+    cumCommits += reposThisMonth.reduce((s, r) => s + (r._commitCount || 0), 0);
+    cumSize += reposThisMonth.reduce((s, r) => s + r.size, 0);
+
+    reposPerMonth[month] = cumRepos;
+    starsPerMonth[month] = cumStars;
+    issuesPerMonth[month] = cumIssues;
+    commitsPerMonth[month] = cumCommits;
+    sizePerMonth[month] = Math.round(cumSize * 25); // estimated lines of code
+  });
+
+  return {
+    months: sortedMonths,
+    cumulativeRepos: reposPerMonth,
+    cumulativeStars: starsPerMonth,
+    cumulativeIssues: issuesPerMonth,
+    cumulativeCommits: commitsPerMonth,
+    cumulativeLinesOfCode: sizePerMonth,
+  };
+}
+
 async function main() {
   console.log('Fetching all repos...');
   const repos = await fetchAllPages(`https://api.github.com/orgs/${ORG}/repos?type=all`);
@@ -153,10 +211,21 @@ async function main() {
     topByStars: [...publicRepos].sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 5).map(r => ({ name: r.name, value: r.stargazers_count })),
     topByCommits: [...publicRepos].sort((a, b) => (b._commitCount || 0) - (a._commitCount || 0)).slice(0, 5).map(r => ({ name: r.name, value: r._commitCount })),
     topBySize: [...publicRepos].sort((a, b) => b.size - a.size).slice(0, 5).map(r => ({ name: r.name, value: Math.round(r.size / 1024) + ' MB' })),
+    // Time series: cumulative repos, contributors, stars, issues per month
+    timeSeries: buildTimeSeries(publicRepos, contributorSet),
   };
 
   const dataDir = path.join(__dirname, '..', 'data');
   const historyDir = path.join(dataDir, 'history');
+
+  // Also read existing history files to build a historical trend
+  const historyFiles = fs.existsSync(historyDir) ? fs.readdirSync(historyDir).filter(f => f.endsWith('.json')).sort() : [];
+  stats.historicalTrend = historyFiles.map(f => {
+    try {
+      const d = JSON.parse(fs.readFileSync(path.join(historyDir, f), 'utf8'));
+      return { date: f.replace('.json', ''), ...d };
+    } catch { return null; }
+  }).filter(Boolean);
   fs.mkdirSync(dataDir, { recursive: true });
   fs.mkdirSync(historyDir, { recursive: true });
 

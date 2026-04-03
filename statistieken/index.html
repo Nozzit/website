@@ -371,6 +371,7 @@
       .stats-table thead th,
       .stats-table tbody td { padding: var(--sp-2); }
       .top-repos { grid-template-columns: 1fr; }
+      .trend-grid { grid-template-columns: 1fr !important; }
     }
     @media (max-width: 480px) {
       .highlight-cards { grid-template-columns: 1fr; }
@@ -398,6 +399,31 @@
       <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label">Programmeertalen</div></div>
     </div>
     <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
+  </section>
+
+  <!-- Trend charts -->
+  <section class="section" style="background: var(--night-build);">
+    <div class="stats-section" style="max-width:1000px;margin:0 auto;">
+      <h2 style="color:white;">Groei in de <span class="accent">tijd</span></h2>
+      <div class="trend-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);margin-top:var(--sp-6);">
+        <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal repos</h4>
+          <div id="chart-cum-repos" style="height:200px;"></div>
+        </div>
+        <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal commits</h4>
+          <div id="chart-cum-commits" style="height:200px;"></div>
+        </div>
+        <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal stars</h4>
+          <div id="chart-cum-stars" style="height:200px;"></div>
+        </div>
+        <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Regels code (geschat)</h4>
+          <div id="chart-cum-loc" style="height:200px;"></div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="section" style="background: white;">
@@ -593,9 +619,67 @@ function renderStats(data) {
   topList('top-commits', data.topByCommits);
   topList('top-size', data.topBySize);
 
-  // Charts
+  // Bar charts
   barChart('chart-monthly', data.monthlyRepoCreation, 'var(--amber)');
   barChart('chart-langs', data.languageDistribution, LANG_COLORS);
+
+  // Line charts (time series)
+  if (data.timeSeries) {
+    const ts = data.timeSeries;
+    lineChart('chart-cum-repos', ts.months, ts.cumulativeRepos, '#D97706');
+    lineChart('chart-cum-commits', ts.months, ts.cumulativeCommits, '#16A34A');
+    lineChart('chart-cum-stars', ts.months, ts.cumulativeStars, '#F59E0B');
+    lineChart('chart-cum-loc', ts.months, ts.cumulativeLinesOfCode, '#3178C6', true);
+  }
+}
+
+function lineChart(id, months, dataObj, color, formatLarge) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const values = months.map(m => dataObj[m] || 0);
+  const max = Math.max(...values);
+  const w = 100; // percentage width
+  const h = 180;
+  const padX = 0;
+  const padY = 10;
+
+  const points = values.map((v, i) => {
+    const x = padX + (i / Math.max(1, values.length - 1)) * (w - padX * 2);
+    const y = h - padY - ((v / (max || 1)) * (h - padY * 2));
+    return { x, y, v, label: months[i] };
+  });
+
+  const pathD = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
+  const areaD = pathD + ` L ${points[points.length-1].x} ${h} L ${points[0].x} ${h} Z`;
+
+  function fmt(v) {
+    if (!formatLarge) return v.toLocaleString('nl-NL');
+    if (v >= 1000000) return (v / 1000000).toFixed(1) + 'M';
+    if (v >= 1000) return (v / 1000).toFixed(0) + 'K';
+    return v;
+  }
+
+  el.innerHTML = `
+    <svg viewBox="0 0 ${w} ${h + 30}" width="100%" height="100%" preserveAspectRatio="none" style="overflow:visible;">
+      <!-- Grid lines -->
+      ${[0, 0.25, 0.5, 0.75, 1].map(f => {
+        const y = h - padY - f * (h - padY * 2);
+        const val = Math.round(max * f);
+        return `<line x1="${padX}" y1="${y}" x2="${w}" y2="${y}" stroke="rgba(255,255,255,0.08)" stroke-width="0.3"/>
+                <text x="0" y="${y - 2}" fill="#A1A1AA" font-size="3" font-family="JetBrains Mono, monospace">${fmt(val)}</text>`;
+      }).join('')}
+      <!-- Area fill -->
+      <path d="${areaD}" fill="${color}" fill-opacity="0.15"/>
+      <!-- Line -->
+      <path d="${pathD}" fill="none" stroke="${color}" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Dots and labels -->
+      ${points.map((p, i) => `
+        <circle cx="${p.x}" cy="${p.y}" r="1.5" fill="${color}"/>
+        <text x="${p.x}" y="${p.y - 4}" fill="${color}" font-size="3" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="700">${fmt(p.v)}</text>
+        <text x="${p.x}" y="${h + 10}" fill="#A1A1AA" font-size="2.5" font-family="JetBrains Mono, monospace" text-anchor="middle">${p.label}</text>
+      `).join('')}
+    </svg>
+  `;
 }
 
 function barChart(id, dataObj, colors) {
