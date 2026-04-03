@@ -638,19 +638,6 @@ function lineChart(id, months, dataObj, color, formatLarge) {
   if (!el) return;
   const values = months.map(m => dataObj[m] || 0);
   const max = Math.max(...values);
-  const w = 100; // percentage width
-  const h = 180;
-  const padX = 0;
-  const padY = 10;
-
-  const points = values.map((v, i) => {
-    const x = padX + (i / Math.max(1, values.length - 1)) * (w - padX * 2);
-    const y = h - padY - ((v / (max || 1)) * (h - padY * 2));
-    return { x, y, v, label: months[i] };
-  });
-
-  const pathD = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
-  const areaD = pathD + ` L ${points[points.length-1].x} ${h} L ${points[0].x} ${h} Z`;
 
   function fmt(v) {
     if (!formatLarge) return v.toLocaleString('nl-NL');
@@ -659,26 +646,31 @@ function lineChart(id, months, dataObj, color, formatLarge) {
     return v;
   }
 
+  // Use HTML/CSS based chart for better text rendering
+  const chartH = 160;
   el.innerHTML = `
-    <svg viewBox="0 0 ${w} ${h + 30}" width="100%" height="100%" preserveAspectRatio="none" style="overflow:visible;">
-      <!-- Grid lines -->
-      ${[0, 0.25, 0.5, 0.75, 1].map(f => {
-        const y = h - padY - f * (h - padY * 2);
+    <div style="position:relative;height:${chartH + 40}px;">
+      <!-- Y-axis labels -->
+      ${[0, 0.5, 1].map(f => {
+        const bottom = f * chartH;
         const val = Math.round(max * f);
-        return `<line x1="${padX}" y1="${y}" x2="${w}" y2="${y}" stroke="rgba(255,255,255,0.08)" stroke-width="0.3"/>
-                <text x="0" y="${y - 2}" fill="#A1A1AA" font-size="3" font-family="JetBrains Mono, monospace">${fmt(val)}</text>`;
+        return `<div style="position:absolute;left:0;bottom:${bottom + 24}px;width:100%;border-top:1px solid rgba(255,255,255,0.06);">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:#A1A1AA;position:absolute;top:-14px;left:0;">${fmt(val)}</span>
+        </div>`;
       }).join('')}
-      <!-- Area fill -->
-      <path d="${areaD}" fill="${color}" fill-opacity="0.15"/>
-      <!-- Line -->
-      <path d="${pathD}" fill="none" stroke="${color}" stroke-width="1" stroke-linejoin="round"/>
-      <!-- Dots and labels -->
-      ${points.map((p, i) => `
-        <circle cx="${p.x}" cy="${p.y}" r="1.5" fill="${color}"/>
-        <text x="${p.x}" y="${p.y - 4}" fill="${color}" font-size="3" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="700">${fmt(p.v)}</text>
-        <text x="${p.x}" y="${h + 10}" fill="#A1A1AA" font-size="2.5" font-family="JetBrains Mono, monospace" text-anchor="middle">${p.label}</text>
-      `).join('')}
-    </svg>
+      <!-- Bars + line points -->
+      <div style="display:flex;align-items:flex-end;height:${chartH}px;gap:8px;padding-top:16px;margin-bottom:24px;">
+        ${values.map((v, i) => {
+          const h = Math.max(4, (v / (max || 1)) * (chartH - 20));
+          const label = months[i].replace('20', "'");
+          return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;font-weight:700;color:${color};">${fmt(v)}</span>
+            <div style="width:100%;max-width:48px;height:${h}px;background:${color};border-radius:6px 6px 0 0;opacity:0.8;"></div>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#A1A1AA;white-space:nowrap;">${label}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>
   `;
 }
 

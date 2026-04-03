@@ -36,9 +36,9 @@ function buildTimeSeries(publicRepos) {
   publicRepos.forEach(r => months.add(r.created_at.substring(0, 7)));
   const sortedMonths = [...months].sort();
 
-  // Fill in any gaps between first and last month
+  // Fill in any gaps, starting from December 2025
   if (sortedMonths.length >= 2) {
-    const [startY, startM] = sortedMonths[0].split('-').map(Number);
+    const [startY, startM] = [2025, 12]; // Always start from Dec 2025
     const [endY, endM] = sortedMonths[sortedMonths.length - 1].split('-').map(Number);
     const allMonths = [];
     let y = startY, m = startM;
@@ -52,11 +52,14 @@ function buildTimeSeries(publicRepos) {
   }
 
   // Cumulative repos per month
-  let cumRepos = 0;
-  let cumStars = 0;
-  let cumIssues = 0;
-  let cumCommits = 0;
-  let cumSize = 0;
+  // Count repos created before the start month as baseline
+  const startMonth = sortedMonths[0];
+  const preExisting = publicRepos.filter(r => r.created_at.substring(0, 7) < startMonth);
+  let cumRepos = preExisting.length;
+  let cumStars = preExisting.reduce((s, r) => s + r.stargazers_count, 0);
+  let cumIssues = preExisting.reduce((s, r) => s + r.open_issues_count, 0);
+  let cumCommits = preExisting.reduce((s, r) => s + (r._commitCount || 0), 0);
+  let cumSize = preExisting.reduce((s, r) => s + r.size, 0);
   const reposPerMonth = {};
   const starsPerMonth = {};
   const issuesPerMonth = {};
