@@ -83,6 +83,25 @@ function buildTimeSeries(publicRepos) {
     sizePerMonth[month] = Math.round(locSinceDec2025); // lines of code since Dec 2025
   });
 
+  // Estimate contributors per month based on unique contributors per repo created that month
+  const contributorsPerMonth = {};
+  const seenContributors = new Set();
+  // Pre-existing contributors
+  preExisting.forEach(r => {
+    for (let i = 0; i < (r._contributorCount || 0); i++) {
+      seenContributors.add(`${r.name}-${i}`);
+    }
+  });
+  sortedMonths.forEach(month => {
+    const reposThisMonth = publicRepos.filter(r => r.created_at.substring(0, 7) === month);
+    reposThisMonth.forEach(r => {
+      for (let i = 0; i < (r._contributorCount || 0); i++) {
+        seenContributors.add(`${r.name}-${i}`);
+      }
+    });
+    contributorsPerMonth[month] = seenContributors.size;
+  });
+
   return {
     months: sortedMonths,
     cumulativeRepos: reposPerMonth,
@@ -90,6 +109,7 @@ function buildTimeSeries(publicRepos) {
     cumulativeIssues: issuesPerMonth,
     cumulativeCommits: commitsPerMonth,
     cumulativeLinesOfCode: sizePerMonth,
+    cumulativeContributors: contributorsPerMonth,
   };
 }
 

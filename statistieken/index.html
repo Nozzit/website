@@ -424,6 +424,14 @@
           <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Regels code (geschat)</h4>
           <div id="chart-cum-loc" style="height:250px;"></div>
         </div>
+        <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief contributors</h4>
+          <div id="chart-cum-contributors" style="height:250px;"></div>
+        </div>
+        <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief stars</h4>
+          <div id="chart-cum-stars" style="height:250px;"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -635,6 +643,8 @@ function renderStats(data) {
     lineChart('chart-cum-repos', ts.months, ts.cumulativeRepos, '#D97706');
     lineChart('chart-cum-commits', ts.months, ts.cumulativeCommits, '#16A34A');
     lineChart('chart-cum-issues', ts.months, ts.cumulativeIssues, '#EA580C');
+    if (ts.cumulativeContributors) lineChart('chart-cum-contributors', ts.months, ts.cumulativeContributors, '#16A34A');
+    lineChart('chart-cum-stars', ts.months, ts.cumulativeStars, '#F59E0B');
     lineChart('chart-cum-loc', ts.months, ts.cumulativeLinesOfCode, '#3178C6', true);
   }
 }
@@ -704,9 +714,9 @@ function barChart(id, dataObj, colors) {
   const el = document.getElementById(id);
   const entries = Object.entries(dataObj).sort((a,b) => a[0].localeCompare(b[0]));
   const max = Math.max(...entries.map(e => e[1]));
-  el.innerHTML = `<div style="display:flex;align-items:flex-end;gap:4px;height:260px;padding-top:20px;">
+  el.innerHTML = `<div style="display:flex;align-items:flex-end;gap:4px;height:220px;padding-top:20px;">
     ${entries.map(([k, v]) => {
-      const h = Math.max(6, (v/max)*230);
+      const h = Math.max(6, (v/max)*190);
       const c = typeof colors === 'object' && colors[k] ? colors[k] : colors;
       return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
         <span style="font-family:var(--font-code);font-size:0.7rem;color:var(--deep-forge);">${v}</span>
