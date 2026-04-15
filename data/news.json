@@ -771,14 +771,6 @@
     "type": "release",
     "repo": "pdf-lib-Claude-Skill-Package",
     "title": "pdf-lib-Claude-Skill-Package v1.0.0 uitgebracht",
-    "description": "v1.0.0 — 17 Deterministic Skills for pdf-lib",
-    "date": "2026-03-19",
-    "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package/releases/tag/untagged-806f222cae18a869bea2"
-  },
-  {
-    "type": "release",
-    "repo": "pdf-lib-Claude-Skill-Package",
-    "title": "pdf-lib-Claude-Skill-Package v1.0.0 uitgebracht",
     "description": "v1.0.0 — pdf-lib Skill Package",
     "date": "2026-03-19",
     "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package/releases/tag/v1.0.0"
