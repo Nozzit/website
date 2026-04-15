@@ -2,6 +2,54 @@
   {
     "type": "release",
     "repo": "open-frame-studio",
+    "title": "open-frame-studio v0.2.0 uitgebracht",
+    "description": "Open Frame Studio v0.2.0",
+    "date": "2026-04-08",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.2.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.43.0 uitgebracht",
+    "description": "Open PDF Studio v1.43.0",
+    "date": "2026-04-07",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.43.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.41.0 uitgebracht",
+    "description": "Open PDF Studio v1.41.0",
+    "date": "2026-04-07",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.41.0"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-cloud",
+    "title": "Nieuwe repository: openaec-cloud",
+    "description": "Shared Nextcloud cloud storage library for OpenAEC tools — hybrid I/O, multi-tenant, multi-manifest (ADR-001)",
+    "date": "2026-04-06",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-cloud"
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.7.0 uitgebracht",
+    "description": "Open Speech Studio v0.7.0",
+    "date": "2026-04-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.7.0"
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio dev-298916de1c8b786d8a316782e84472b6bf996fb0 uitgebracht",
+    "description": "Dev Build 298916de1c8b786d8a316782e84472b6bf996fb0",
+    "date": "2026-04-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/dev-298916de1c8b786d8a316782e84472b6bf996fb0"
+  },
+  {
+    "type": "release",
+    "repo": "open-frame-studio",
     "title": "open-frame-studio v0.1.0 uitgebracht",
     "description": "Open Frame Studio v0.1.0",
     "date": "2026-04-02",
@@ -361,14 +409,6 @@
   },
   {
     "type": "new_repo",
-    "repo": "openaec-cloud",
-    "title": "Nieuwe repository: openaec-cloud",
-    "description": "Shared Nextcloud cloud storage library for OpenAEC tools — hybrid I/O, multi-tenant, project container model",
-    "date": "2026-03-30",
-    "url": "https://github.com/OpenAEC-Foundation/openaec-cloud"
-  },
-  {
-    "type": "new_repo",
     "repo": "openaec-ui",
     "title": "Nieuwe repository: openaec-ui",
     "description": "OpenAEC shared design tokens and component CSS",
@@ -467,7 +507,7 @@
     "type": "new_repo",
     "repo": "ERPNext-NL-Translation",
     "title": "Nieuwe repository: ERPNext-NL-Translation",
-    "description": "Nederlandse vertalingen voor ERPNext / Frappe v15+ (470 beoordeelde vertalingen)",
+    "description": "Kwalitatieve Nederlandse vertalingen voor ERPNext, Frappe en 5 extra apps (16.797 vertalingen, 7 apps, AI quality scored, 1.431+ verbeterd)",
     "date": "2026-03-24",
     "url": "https://github.com/OpenAEC-Foundation/ERPNext-NL-Translation"
   },
@@ -1574,6 +1614,14 @@
     "description": "Optimaliseer zaagplannen voor 1D en 2D materialen",
     "date": "2026-01-18",
     "url": "https://github.com/OpenAEC-Foundation/zaagplan"
+  },
+  {
+    "type": "new_repo",
+    "repo": "OpenAEC-zaagplan",
+    "title": "Nieuwe repository: OpenAEC-zaagplan",
+    "description": "Optimaliseer zaagplannen voor 1D en 2D materialen",
+    "date": "2026-01-18",
+    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-zaagplan"
   },
   {
     "type": "new_repo",
