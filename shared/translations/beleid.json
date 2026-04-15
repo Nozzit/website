@@ -1,0 +1,49 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Policy &amp; <span class=\"accent\">Positions</span>",
+    "desc": "Our principles on open standards, interoperability, public access and privacy in the construction sector."
+  },
+  "cleanroom": {
+    "title": "Clean Room Reverse Engineering",
+    "p1": "The OpenAEC Foundation aims to reverse engineer all closed binary formats (<em>closed binary formats</em>) used in construction via the <strong>clean room</strong> principle.",
+    "p2": "This is fully permitted under European law based on <strong>EU Software Directive 2009/24/EC, Article 6</strong>, which expressly allows reverse engineering for interoperability purposes. The goal is to make these formats compatible with the open ecosystem.",
+    "method": "Our approach:",
+    "li1": "We develop our own implementations without using proprietary source code",
+    "li2": "All analysis is based on publicly available specifications and independent research",
+    "li3": "No confidential documentation or leaked information from third parties is used",
+    "li4": "The resulting implementations are fully open source",
+    "see_also": "See also the <a href=\"/disclaimer/\">Clean Room Declaration on our disclaimer page</a> for the legal basis of this approach.",
+    "legal": "<strong>Legal basis:</strong> Directive 2009/24/EC of the European Parliament and of the Council on the legal protection of computer programs, Article 6 — Decompilation."
+  },
+  "permits": {
+    "title": "Free access to permit applications",
+    "p1": "<strong>Position:</strong> everything needed to submit a permit application must be <strong>100% freely accessible</strong> to all citizens and companies.",
+    "p2": "Software needed for submitting, viewing or validating permit applications must not create a financial or technical barrier. This applies to both file formats and the applications that process them.",
+    "positions": "Our positions:",
+    "li1": "The government must not depend on proprietary software for its public processes",
+    "li2": "Every citizen and company must be able to comply with legal submission obligations without license costs",
+    "li3": "Open standards and open source software are essential for a democratic and accessible construction process",
+    "li4": "Permit authorities should base their systems on open, documented formats",
+    "closing": "The OpenAEC Foundation develops free tools that guarantee this access, regardless of which commercial software other parties in the process use."
+  },
+  "standards": {
+    "title": "Open Standards",
+    "p1": "The OpenAEC Foundation uses <strong>IFC and IFCX</strong> as the basis for all data exchange in the construction sector. These open standards managed by buildingSMART International guarantee that construction data remains readable and exchangeable, independent of software choices.",
+    "principles": "Our core principles:",
+    "li1": "<strong>No vendor lock-in</strong> — proprietary formats should never be the only way to store or exchange data",
+    "li2": "<strong>Sustainable readability</strong> — all data must remain readable, regardless of which software you use or which vendor still exists",
+    "li3": "<strong>Interoperability as a right</strong> — the ability to export data to open formats is a fundamental user requirement, not a premium feature",
+    "li4": "<strong>Standards over formats</strong> — we build on and contribute to open standards, not competing closed ecosystems"
+  },
+  "privacy": {
+    "title": "Privacy &amp; Data",
+    "p1": "The OpenAEC Foundation believes that construction data belongs to the user — not to the software provider, not to the cloud, and not to us.",
+    "principles": "Our principles:",
+    "li1": "<strong>Local where possible</strong> — all tools run locally on your device by default, without a server connection",
+    "li2": "<strong>No tracking</strong> — we do not collect usage data, analytics or telemetry",
+    "li3": "<strong>No data collection</strong> — your project data, models and documents never leave your computer, unless you explicitly and consciously initiate it",
+    "li4": "<strong>Transparent code</strong> — because all our software is open source, you can verify yourself that these promises are kept",
+    "closing": "For hosted services (such as OpenAEC Cloud), a separate, also published privacy policy applies. Minimal data collection is also central to that policy."
+  }
+}

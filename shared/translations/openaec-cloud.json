@@ -1,0 +1,42 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "OpenAEC <span class=\"accent\">Cloud</span> Platform",
+    "desc": "Central cloud platform for the OpenAEC ecosystem. Project management, user management, SSO and synchronization.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Why OpenAEC <span class=\"accent\">Cloud</span>?",
+    "desc": "The OpenAEC ecosystem consists of many tools that work together. The Cloud Platform serves as the central hub: project management, user authentication, file synchronization and API gateway for all connected applications."
+  },
+  "features": {
+    "title": "Features",
+    "projects": {
+      "title": "Project management",
+      "desc": "Central project management for all OpenAEC tools. Create a project once, available everywhere."
+    },
+    "sso": {
+      "title": "User management &amp; SSO",
+      "desc": "Single Sign-On for the entire ecosystem. Log in once, access all tools with role-based authorization."
+    },
+    "sync": {
+      "title": "File synchronization",
+      "desc": "Automatic file synchronization between all tools. Always the latest version, available everywhere."
+    },
+    "nextcloud": {
+      "title": "NextCloud integration",
+      "desc": "Seamless integration with NextCloud for secure file storage and sharing with full control over data."
+    },
+    "multitenant": {
+      "title": "Multi-tenant",
+      "desc": "Support for multiple organizations on the same platform with complete data separation and custom configuration."
+    },
+    "api": {
+      "title": "API Gateway",
+      "desc": "Central API gateway for all OpenAEC services. Secure communication between tools with rate limiting and monitoring."
+    }
+  },
+  "cta": {
+    "github": "View on GitHub"
+  }
+}

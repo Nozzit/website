@@ -1,0 +1,46 @@
+{
+  "header": {
+    "label": "Point cloud viewer",
+    "title": "Open <span class=\"accent\">Pointcloud</span> Studio",
+    "desc": "A cross-platform pointcloud viewer built with Tauri, React, and Three.js. Import LAS/LAZ files with octree-based LOD rendering.",
+    "downloadBtn": "Download v0.3.0",
+    "sourceBtn": "View source"
+  },
+  "download": {
+    "title": "Download v0.3.0"
+  },
+  "features": {
+    "heading": "Features",
+    "laslaz": {
+      "title": "LAS/LAZ import",
+      "desc": "Import industry-standard LAS and compressed LAZ pointcloud files from laser scanners and photogrammetry."
+    },
+    "colors": {
+      "title": "Color modes",
+      "desc": "View point clouds colored by RGB, elevation, classification, or intensity."
+    },
+    "classification": {
+      "title": "Classification filtering",
+      "desc": "Filter points by ASPRS classification codes. Toggle visibility of ground, buildings, vegetation, and other classes."
+    },
+    "edl": {
+      "title": "Eye-Dome Lighting",
+      "desc": "EDL shading for enhanced depth perception and visual clarity of point cloud surfaces."
+    },
+    "octree": {
+      "title": "Octree-based LOD",
+      "desc": "Level-of-detail rendering with adjustable point size and point budget for smooth navigation of large datasets."
+    },
+    "themes": {
+      "title": "Themes",
+      "desc": "Dark, Light, Blue, and High Contrast themes."
+    }
+  },
+  "cta": {
+    "demo": "Live demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

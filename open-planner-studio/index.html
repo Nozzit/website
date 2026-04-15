@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Planner Studio — OpenAEC Foundation</title>
   <meta name="description" content="Open-source construction planning application with Gantt charts, Critical Path Method, WBS, and native IFC 4.3 file format. Built with Tauri 2.">
+  <meta name="i18n-page" content="open-planner-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -27,12 +28,12 @@
 <script src="/shared/nav.js"></script>
 
   <section class="hero">
-    <span class="section-label">Construction planning</span>
-    <h1>Open <span class="accent">Planner</span> Studio</h1>
-    <p class="tagline">Open-source construction planning with Gantt charts, Critical Path Method, and native IFC 4.3 file format. Built for the construction sector.</p>
+    <span class="section-label" data-i18n="header.label">Construction planning</span>
+    <h1 data-i18n="header.title">Open <span class="accent">Planner</span> Studio</h1>
+    <p class="tagline" data-i18n="header.desc">Open-source construction planning with Gantt charts, Critical Path Method, and native IFC 4.3 file format. Built for the construction sector.</p>
     <div class="btn-group">
-      <a href="#download" class="btn btn-primary btn-lg">Download v2026.2.0</a>
-      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg">View source</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn">Download v2026.2.0</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">View source</a>
     </div>
   </section>
 
@@ -49,7 +50,7 @@
 
   <section class="section" id="download"><div class="container">
     <div class="download-section">
-      <h3>Download v2026.2.0</h3>
+      <h3 data-i18n="download.title">Download v2026.2.0</h3>
       <div class="download-grid">
         <div class="download-item"><div class="os">Windows</div><div class="size">2.4 MB</div>
           <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.2.0/Open.Planner.Studio_2026.2.0_x64-setup.exe" class="btn btn-primary btn-sm">Download .exe</a></div>
@@ -64,66 +65,66 @@
   </div></section>
 
   <section class="section section-alt"><div class="container">
-    <h2>Features</h2>
+    <h2 data-i18n="features.heading">Features</h2>
     <div class="features" style="margin-top:var(--sp-8)">
       <div class="feature">
-        <h4>Gantt charts</h4>
-        <p>Interactive Canvas-rendered Gantt diagrams with drag and drop, zoom, and timeline navigation.</p>
+        <h4 data-i18n="features.gantt.title">Gantt charts</h4>
+        <p data-i18n="features.gantt.desc">Interactive Canvas-rendered Gantt diagrams with drag and drop, zoom, and timeline navigation.</p>
       </div>
       <div class="feature">
-        <h4>Critical Path Method</h4>
-        <p>Automatic CPM calculation with critical path identification and float analysis.</p>
+        <h4 data-i18n="features.cpm.title">Critical Path Method</h4>
+        <p data-i18n="features.cpm.desc">Automatic CPM calculation with critical path identification and float analysis.</p>
       </div>
       <div class="feature">
-        <h4>Work Breakdown Structure</h4>
-        <p>Hierarchical task structure with collapsible chapters. Excel-style table editor with inline editing.</p>
+        <h4 data-i18n="features.wbs.title">Work Breakdown Structure</h4>
+        <p data-i18n="features.wbs.desc">Hierarchical task structure with collapsible chapters. Excel-style table editor with inline editing.</p>
       </div>
       <div class="feature">
-        <h4>IFC 4.3 native</h4>
-        <p>Save and open planning files in IFC 4.3 format (buildingSMART standard). Built-in IFC code editor with generate and apply.</p>
+        <h4 data-i18n="features.ifc.title">IFC 4.3 native</h4>
+        <p data-i18n="features.ifc.desc">Save and open planning files in IFC 4.3 format (buildingSMART standard). Built-in IFC code editor with generate and apply.</p>
       </div>
       <div class="feature">
-        <h4>Resource management</h4>
-        <p>Manage labor, equipment, and subcontractors. Construction-specific features: holidays, building recess, inspection moments, and phasing.</p>
+        <h4 data-i18n="features.resources.title">Resource management</h4>
+        <p data-i18n="features.resources.desc">Manage labor, equipment, and subcontractors. Construction-specific features: holidays, building recess, inspection moments, and phasing.</p>
       </div>
       <div class="feature">
-        <h4>4D BIM-ready</h4>
-        <p>Link planning tasks to IFC building model elements for 4D construction sequence visualization.</p>
+        <h4 data-i18n="features.bim4d.title">4D BIM-ready</h4>
+        <p data-i18n="features.bim4d.desc">Link planning tasks to IFC building model elements for 4D construction sequence visualization.</p>
       </div>
       <div class="feature">
-        <h4>Reporting</h4>
-        <p>Live print preview in the ribbon with configurable report options. Context menu for quick task actions.</p>
+        <h4 data-i18n="features.reporting.title">Reporting</h4>
+        <p data-i18n="features.reporting.desc">Live print preview in the ribbon with configurable report options. Context menu for quick task actions.</p>
       </div>
       <div class="feature">
-        <h4>Multilingual</h4>
-        <p>Interface in 6 languages: Nederlands, English, Francais, Deutsch, Espanol, and Zhongwen.</p>
+        <h4 data-i18n="features.multilingual.title">Multilingual</h4>
+        <p data-i18n="features.multilingual.desc">Interface in 6 languages: Nederlands, English, Francais, Deutsch, Espanol, and Zhongwen.</p>
       </div>
       <div class="feature">
-        <h4>Ribbon toolbar</h4>
-        <p>Microsoft Office-style ribbon with tabs: Start, Planning, View, Settings, Table, IFC, and Report.</p>
+        <h4 data-i18n="features.ribbon.title">Ribbon toolbar</h4>
+        <p data-i18n="features.ribbon.desc">Microsoft Office-style ribbon with tabs: Start, Planning, View, Settings, Table, IFC, and Report.</p>
       </div>
     </div>
   </div></section>
 
   <section class="section"><div class="container">
-    <h2>Tech stack</h2>
+    <h2 data-i18n="tech.heading">Tech stack</h2>
     <div class="features" style="margin-top:var(--sp-8)">
-      <div class="feature"><h4>Tauri 2.0</h4><p>Native desktop application with Rust backend.</p></div>
-      <div class="feature"><h4>React 18 + TypeScript</h4><p>Component-based UI with Zustand + Immer state management.</p></div>
-      <div class="feature"><h4>HTML5 Canvas 2D</h4><p>Gantt chart rendering. TailwindCSS styling, Vite 5 build.</p></div>
+      <div class="feature"><h4 data-i18n="tech.tauri.title">Tauri 2.0</h4><p data-i18n="tech.tauri.desc">Native desktop application with Rust backend.</p></div>
+      <div class="feature"><h4 data-i18n="tech.react.title">React 18 + TypeScript</h4><p data-i18n="tech.react.desc">Component-based UI with Zustand + Immer state management.</p></div>
+      <div class="feature"><h4 data-i18n="tech.canvas.title">HTML5 Canvas 2D</h4><p data-i18n="tech.canvas.desc">Gantt chart rendering. TailwindCSS styling, Vite 5 build.</p></div>
     </div>
   </div></section>
 
   <section style="background: var(--concrete); padding: 3rem 1.5rem; text-align: center;">
     <div style="max-width: 900px; margin: 0 auto; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Live demo &rarr;</a>
-      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">GitHub &rarr;</a>
+      <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.demo">Live demo &rarr;</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" data-i18n="cta.github">GitHub &rarr;</a>
     </div>
   </section>
 
   <footer class="footer"><div class="footer-container">
     <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
-    <span>Build free. Build together.</span>
+    <span data-i18n="footer.slogan">Build free. Build together.</span>
     <a href="https://github.com/OpenAEC-Foundation">GitHub</a>
   </div></footer>
   <script>
@@ -147,5 +148,6 @@
       };
     })();
   </script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

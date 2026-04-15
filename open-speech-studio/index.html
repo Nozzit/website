@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Speech Studio — OpenAEC Foundation</title>
   <meta name="description" content="Open Speech Studio: open source spraak-naar-tekst en notulen-tool voor bouwvergaderingen en projectoverleg.">
+  <meta name="i18n-page" content="open-speech-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -114,10 +115,10 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Ecosysteem</p>
-    <h1>Open Speech <span class="accent">Studio</span></h1>
-    <p>Gratis spraakherkenning voor iedereen met een lokale AI op je eigen PC. 1 installatiebestand. Geen gedoe.</p>
-    <span class="status-badge">v0.5.0</span>
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">Open Speech <span class="accent">Studio</span></h1>
+    <p data-i18n="header.desc">Gratis spraakherkenning voor iedereen met een lokale AI op je eigen PC. 1 installatiebestand. Geen gedoe.</p>
+    <span class="status-badge" data-i18n="header.badge">v0.5.0</span>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -129,49 +130,49 @@
 
     <div class="content">
       <div class="content-block">
-        <h2>Wat kan <span class="accent">het</span>?</h2>
+        <h2 data-i18n="features.heading">Wat kan <span class="accent">het</span>?</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>Dicteer overal</h3>
-            <p>Dicteer tekst direct in elke applicatie via een overlay. Gebruik CTRL+Windows of CTRL+SHIFT+Spatie om overal in je OS speech-to-text te doen.</p>
+            <h3 data-i18n="features.dictate.title">Dicteer overal</h3>
+            <p data-i18n="features.dictate.desc">Dicteer tekst direct in elke applicatie via een overlay. Gebruik CTRL+Windows of CTRL+SHIFT+Spatie om overal in je OS speech-to-text te doen.</p>
           </div>
           <div class="feature-card">
-            <h3>Transcribeer audiobestanden</h3>
-            <p>Transcribeer audiobestanden met parallelle verwerking. Meerdere bestanden tegelijk, snel en nauwkeurig.</p>
+            <h3 data-i18n="features.transcribe.title">Transcribeer audiobestanden</h3>
+            <p data-i18n="features.transcribe.desc">Transcribeer audiobestanden met parallelle verwerking. Meerdere bestanden tegelijk, snel en nauwkeurig.</p>
           </div>
           <div class="feature-card">
-            <h3>Vergaderingen opnemen</h3>
-            <p>Neem vergaderingen op en transcribeer in real-time. Automatische notulen en samenvattingen.</p>
+            <h3 data-i18n="features.meetings.title">Vergaderingen opnemen</h3>
+            <p data-i18n="features.meetings.desc">Neem vergaderingen op en transcribeer in real-time. Automatische notulen en samenvattingen.</p>
           </div>
           <div class="feature-card">
-            <h3>GPU-versnelling</h3>
-            <p>CUDA GPU-versnelling voor snellere resultaten. Optimaal gebruik van je hardware voor maximale performance.</p>
+            <h3 data-i18n="features.gpu.title">GPU-versnelling</h3>
+            <p data-i18n="features.gpu.desc">CUDA GPU-versnelling voor snellere resultaten. Optimaal gebruik van je hardware voor maximale performance.</p>
           </div>
           <div class="feature-card">
-            <h3>100% lokaal</h3>
-            <p>Alles draait lokaal op je eigen computer. Je data verlaat nooit je PC. Geen cloud, geen abonnement, geen limieten.</p>
+            <h3 data-i18n="features.local.title">100% lokaal</h3>
+            <p data-i18n="features.local.desc">Alles draait lokaal op je eigen computer. Je data verlaat nooit je PC. Geen cloud, geen abonnement, geen limieten.</p>
           </div>
           <div class="feature-card">
-            <h3>Whisper AI + Tauri + Rust</h3>
-            <p>Gebouwd met OpenAI Whisper AI voor spraakherkenning, Tauri voor de desktop-app en Rust voor de backend. Open source.</p>
+            <h3 data-i18n="features.tech.title">Whisper AI + Tauri + Rust</h3>
+            <p data-i18n="features.tech.desc">Gebouwd met OpenAI Whisper AI voor spraakherkenning, Tauri voor de desktop-app en Rust voor de backend. Open source.</p>
           </div>
         </div>
       </div>
 
       <div class="content-block" style="background: var(--night-build); border-radius: var(--radius-lg); padding: var(--sp-8); text-align: center; border-left: 4px solid var(--amber);">
-        <h2 style="color: white; margin-bottom: var(--sp-2);">Sneltoetsen</h2>
-        <p style="color: var(--scaffold-gray); margin-bottom: var(--sp-4);">Start speech-to-text overal in je besturingssysteem:</p>
+        <h2 style="color: white; margin-bottom: var(--sp-2);" data-i18n="shortcuts.title">Sneltoetsen</h2>
+        <p style="color: var(--scaffold-gray); margin-bottom: var(--sp-4);" data-i18n="shortcuts.desc">Start speech-to-text overal in je besturingssysteem:</p>
         <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
           <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 8px 20px; border-radius: var(--radius-md); font-family: var(--font-code); font-size: 0.9rem; color: var(--amber);">CTRL + Windows</span>
-          <span style="color: var(--scaffold-gray);">of</span>
+          <span style="color: var(--scaffold-gray);" data-i18n="shortcuts.or">of</span>
           <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 8px 20px; border-radius: var(--radius-md); font-family: var(--font-code); font-size: 0.9rem; color: var(--amber);">CTRL + SHIFT + Spatie</span>
         </div>
       </div>
 
       <div class="content-block" style="text-align: center; margin-top: var(--sp-10);">
         <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
-          <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Download installer</a>
-          <a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">GitHub</a>
+          <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.download">Download installer</a>
+          <a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" data-i18n="cta.github">GitHub</a>
         </div>
       </div>
     </div>
@@ -187,5 +188,6 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
+<script src="/shared/i18n.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nieuws — OpenAEC Foundation</title>
   <meta name="description" content="Het laatste nieuws uit het OpenAEC-ecosysteem. Nieuwe releases, repositories en updates automatisch bijgehouden via GitHub.">
+  <meta name="i18n-page" content="nieuws">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -298,9 +299,9 @@
   <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <span class="section-label">OpenAEC Ecosysteem</span>
-    <h1>Nieuws & <span class="accent">Updates</span></h1>
-    <p>Automatisch bijgehouden: alle releases, nieuwe repositories en activiteit uit het OpenAEC-ecosysteem op GitHub.</p>
+    <span class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</span>
+    <h1 data-i18n="header.title">Nieuws & <span class="accent">Updates</span></h1>
+    <p data-i18n="header.desc">Automatisch bijgehouden: alle releases, nieuwe repositories en activiteit uit het OpenAEC-ecosysteem op GitHub.</p>
   </header>
 
   <section class="news-section">
@@ -311,10 +312,10 @@
 
       <!-- Filter buttons -->
       <div class="filter-bar">
-        <span class="filter-label">Filter:</span>
-        <button class="filter-btn active" data-filter="all">Alles</button>
+        <span class="filter-label" data-i18n="filter.label">Filter:</span>
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Alles</button>
         <button class="filter-btn" data-filter="release">Releases</button>
-        <button class="filter-btn" data-filter="new_repo">Nieuwe repos</button>
+        <button class="filter-btn" data-filter="new_repo" data-i18n="filter.new_repos">Nieuwe repos</button>
       </div>
 
       <!-- News feed -->
@@ -486,5 +487,6 @@
           '<div class="news-empty"><p>Kon nieuws niet laden. Probeer het later opnieuw.</p></div>';
       });
   </script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

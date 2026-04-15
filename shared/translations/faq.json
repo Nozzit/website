@@ -1,0 +1,24 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "Frequently asked questions about open source in construction, our revenue model and the future of the ecosystem."
+  },
+  "q1": {
+    "title": "Why everything open source?"
+  },
+  "q2": {
+    "title": "But isn't AI-written software of poor quality?"
+  },
+  "q3": {
+    "title": "How do you make money?"
+  },
+  "q4": {
+    "title": "Can I also host the tools myself?"
+  },
+  "q5": {
+    "title": "What technology are the tools built on?"
+  },
+  "q6": {
+    "title": "How can I contribute?"
+  }
+}

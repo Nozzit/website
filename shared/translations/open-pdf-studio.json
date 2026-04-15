@@ -1,0 +1,77 @@
+{
+  "header": {
+    "label": "Open-source PDF editor",
+    "title": "Open <span class=\"accent\">PDF</span> Studio",
+    "desc": "Professional-grade PDF annotation, markup, and editing without subscriptions, telemetry, or bloatware. Built with Tauri 2 and SolidJS.",
+    "downloadBtn": "Download v1.23.0",
+    "sourceBtn": "View source"
+  },
+  "download": {
+    "title": "Download v1.23.0"
+  },
+  "features": {
+    "heading": "Features",
+    "annotations": {
+      "title": "20+ annotation tools",
+      "desc": "Highlight, underline, strikethrough, shapes (rectangle, ellipse, polygon, cloud, arrow), freehand pen, text boxes, callouts, sticky notes, stamps, and image insertion."
+    },
+    "measurement": {
+      "title": "Measurement tools",
+      "desc": "Distance, area, and perimeter measurement with scale calibration (mm, cm, inches, points). Object snapping to endpoints, midpoints, centers, and edges."
+    },
+    "signatures": {
+      "title": "Signatures and stamps",
+      "desc": "Draw multi-stroke signatures and save up to 5 for quick reuse. 10 built-in stamps including Approved, Rejected, Draft, Confidential, and Final."
+    },
+    "pages": {
+      "title": "Page management",
+      "desc": "Insert, delete, extract, replace, and reorder pages via drag-and-drop thumbnails. Merge multiple PDFs. Rotate pages 90/180/270 degrees."
+    },
+    "redaction": {
+      "title": "Redaction",
+      "desc": "Mark areas and apply to permanently remove sensitive content from documents."
+    },
+    "forms": {
+      "title": "Forms support",
+      "desc": "Fill interactive PDF forms (AcroForms and XFA). Create text fields, checkboxes, and radio buttons with JavaScript validation."
+    },
+    "watermarks": {
+      "title": "Watermarks and headers/footers",
+      "desc": "Text and image watermarks with opacity, rotation, and position control. Headers and footers with page number, date, time, and filename variables."
+    },
+    "export": {
+      "title": "Export and print",
+      "desc": "Export pages as PNG or JPEG at 72-600 DPI. Full print dialog with live preview, page range, scaling, and print-as-image option. XFDF annotation export/import."
+    },
+    "multitab": {
+      "title": "Multi-tab and sessions",
+      "desc": "Work with multiple PDFs in tabs. Save and restore named workspace snapshots. Recent files with pin/unpin."
+    },
+    "languages": {
+      "title": "39 languages",
+      "desc": "Full interface translation including RTL support for Arabic, Hebrew, Farsi, and Urdu. 5 themes: Dark, Light, Blue, High Contrast, and System."
+    }
+  },
+  "tech": {
+    "heading": "Tech stack",
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Rust backend for native performance and small binary size."
+    },
+    "solid": {
+      "title": "SolidJS",
+      "desc": "Reactive UI framework with fine-grained updates."
+    },
+    "pdfjs": {
+      "title": "PDF.js + pdf-lib",
+      "desc": "Mozilla PDF.js for rendering, pdf-lib for document manipulation."
+    }
+  },
+  "cta": {
+    "demo": "Live demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

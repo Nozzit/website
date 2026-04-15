@@ -1,0 +1,59 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Open Field <span class=\"accent\">Studio</span>",
+    "desc": "Free &amp; open-source tool for inspection, handover and quality assurance in construction projects.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Why Open Field <span class=\"accent\">Studio</span>?",
+    "desc": "Inspections and handovers on the construction site require reliable tools that also work offline. Open Field Studio combines checklists, defect registration and reporting in an app that works fully offline and is available in four languages."
+  },
+  "features": {
+    "title": "Features",
+    "tickets": {
+      "title": "Tickets &amp; defects on floor plan",
+      "desc": "Register defects and remarks directly on the floor plan. Visual overview of all open items per location."
+    },
+    "checklists": {
+      "title": "15 checklist templates (NEN 2767)",
+      "desc": "Ready-made checklists conforming to NEN 2767 and other standards. Customizable to project-specific requirements."
+    },
+    "energy": {
+      "title": "Energy label survey (NTA 8800)",
+      "desc": "Perform energy label surveys conforming to NTA 8800 directly on-site with structured input forms."
+    },
+    "monument": {
+      "title": "Monument inspection",
+      "desc": "Specific inspection modules for heritage buildings with attention to cultural-historical values."
+    },
+    "handover": {
+      "title": "Handover with signatures",
+      "desc": "Digital handover reports with signature functionality. All parties sign directly on screen."
+    },
+    "dashboard": {
+      "title": "Dashboard with live statistics",
+      "desc": "Real-time overview of all inspections, open defects and progress per project."
+    },
+    "camera": {
+      "title": "Camera integration",
+      "desc": "Take photos directly from the app and link them to defects, checklists or locations on the floor plan."
+    },
+    "languages": {
+      "title": "4 languages (NL/EN/DE/FR)",
+      "desc": "Fully available in Dutch, English, German and French. Ideal for international projects."
+    },
+    "offline": {
+      "title": "Fully offline",
+      "desc": "Works without internet connection on the construction site. Sync when you are back online."
+    },
+    "reports": {
+      "title": "Professional report export",
+      "desc": "Export inspections and handovers as professional PDF reports with photos and floor plans."
+    }
+  },
+  "cta": {
+    "demo": "View live demo",
+    "github": "View on GitHub"
+  }
+}

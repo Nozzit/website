@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Software architectuur — OpenAEC Foundation</title>
   <meta name="description" content="De technische architectuur achter het OpenAEC-ecosysteem. Tauri, Rust, multi-platform: een codebase voor web, Windows, Linux en macOS.">
+  <meta name="i18n-page" content="architectuur">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -233,9 +234,9 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Ecosysteem</p>
-    <h1>Software <span class="accent">architectuur</span></h1>
-    <p>Een codebase, alle platformen. Onze tools draaien als web-app, als desktop-applicatie op Windows, Linux en macOS, en als mobiele app — vanuit dezelfde broncode.</p>
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">Software <span class="accent">architectuur</span></h1>
+    <p data-i18n="header.desc">Een codebase, alle platformen. Onze tools draaien als web-app, als desktop-applicatie op Windows, Linux en macOS, en als mobiele app — vanuit dezelfde broncode.</p>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -243,18 +244,18 @@
 
       <!-- Intro -->
       <div class="content-block">
-        <h2>Een codebase, <span class="accent">overal</span></h2>
-        <p>Elke tool in het OpenAEC-ecosysteem wordt ontwikkeld als een enkele applicatie die op alle platformen draait. Geen aparte versies voor web en desktop, geen dubbel onderhoud. Dezelfde code, dezelfde features, overal.</p>
-        <p>Dit bereiken we door te bouwen op Tauri en Rust als fundament, met een moderne web-frontend die zowel in de browser als in een native shell draait.</p>
+        <h2 data-i18n="intro.title">Een codebase, <span class="accent">overal</span></h2>
+        <p data-i18n="intro.p1">Elke tool in het OpenAEC-ecosysteem wordt ontwikkeld als een enkele applicatie die op alle platformen draait. Geen aparte versies voor web en desktop, geen dubbel onderhoud. Dezelfde code, dezelfde features, overal.</p>
+        <p data-i18n="intro.p2">Dit bereiken we door te bouwen op Tauri en Rust als fundament, met een moderne web-frontend die zowel in de browser als in een native shell draait.</p>
       </div>
 
       <!-- Architecture diagram -->
       <div class="content-block">
-        <h2>Architectuur <span class="accent">overzicht</span></h2>
+        <h2 data-i18n="diagram.title">Architectuur <span class="accent">overzicht</span></h2>
         <div class="arch-diagram">
           <div class="arch-layers">
             <div class="arch-layer layer-platform">
-              <span class="arch-layer-label">Platformen</span>
+              <span class="arch-layer-label" data-i18n="diagram.platforms">Platformen</span>
               <div class="arch-layer-items">
                 <span class="arch-item">Windows</span>
                 <span class="arch-item">macOS</span>
@@ -266,7 +267,7 @@
             </div>
             <div class="arch-arrow">&darr;</div>
             <div class="arch-layer layer-runtime">
-              <span class="arch-layer-label">Runtime</span>
+              <span class="arch-layer-label" data-i18n="diagram.runtime">Runtime</span>
               <div class="arch-layer-items">
                 <span class="arch-item">Tauri 2.0</span>
                 <span class="arch-item">WebView (native)</span>
@@ -279,8 +280,8 @@
               <div class="arch-layer-items">
                 <span class="arch-item">IFC Parser</span>
                 <span class="arch-item">IFCX Engine</span>
-                <span class="arch-item">Validatie</span>
-                <span class="arch-item">Berekeningen</span>
+                <span class="arch-item" data-i18n="diagram.validation">Validatie</span>
+                <span class="arch-item" data-i18n="diagram.calculations">Berekeningen</span>
                 <span class="arch-item">File I/O</span>
                 <span class="arch-item">API Client</span>
               </div>
@@ -312,31 +313,31 @@
 
       <!-- Tech stack -->
       <div class="content-block">
-        <h2>Technologie <span class="accent">stack</span></h2>
+        <h2 data-i18n="tech.title">Technologie <span class="accent">stack</span></h2>
         <div class="tech-grid">
           <div class="tech-card">
             <h3>Tauri 2.0 <span class="tech-badge">Core</span></h3>
-            <p>Framework voor het bouwen van desktop- en mobiele apps met webtechnologie. Gebruikt de native webview van het OS in plaats van Chromium — resulteert in kleine installatiebestanden (&lt;10MB) en laag geheugengebruik.</p>
+            <p data-i18n="tech.tauri_desc">Framework voor het bouwen van desktop- en mobiele apps met webtechnologie. Gebruikt de native webview van het OS in plaats van Chromium — resulteert in kleine installatiebestanden (&lt;10MB) en laag geheugengebruik.</p>
           </div>
           <div class="tech-card">
             <h3>Rust <span class="tech-badge">Backend</span></h3>
-            <p>De core-logica van elke tool is geschreven in Rust: IFC-parsing, validatie, berekeningen en bestandsverwerking. Rust biedt geheugen-veiligheid, hoge performance en compileert naar elk platform.</p>
+            <p data-i18n="tech.rust_desc">De core-logica van elke tool is geschreven in Rust: IFC-parsing, validatie, berekeningen en bestandsverwerking. Rust biedt geheugen-veiligheid, hoge performance en compileert naar elk platform.</p>
           </div>
           <div class="tech-card">
             <h3>WebAssembly <span class="tech-badge">Web</span></h3>
-            <p>Dezelfde Rust-code compileert naar WebAssembly (WASM) voor de webversie. Hierdoor draait de volledige rekenlogica ook in de browser, met near-native performance.</p>
+            <p data-i18n="tech.wasm_desc">Dezelfde Rust-code compileert naar WebAssembly (WASM) voor de webversie. Hierdoor draait de volledige rekenlogica ook in de browser, met near-native performance.</p>
           </div>
           <div class="tech-card">
             <h3>HTML / CSS / JS <span class="tech-badge">UI</span></h3>
-            <p>De gebruikersinterface is gebouwd met standaard webtechnologie. Geen zware frameworks — lichtgewicht, snel en onderhoudbaar. Dezelfde UI draait in Tauri en in de browser.</p>
+            <p data-i18n="tech.ui_desc">De gebruikersinterface is gebouwd met standaard webtechnologie. Geen zware frameworks — lichtgewicht, snel en onderhoudbaar. Dezelfde UI draait in Tauri en in de browser.</p>
           </div>
           <div class="tech-card">
             <h3>Three.js <span class="tech-badge">3D</span></h3>
-            <p>3D-visualisatie van IFC-modellen via Three.js en That Open Engine. WebGL-gebaseerd, draait overal waar een browser draait.</p>
+            <p data-i18n="tech.threejs_desc">3D-visualisatie van IFC-modellen via Three.js en That Open Engine. WebGL-gebaseerd, draait overal waar een browser draait.</p>
           </div>
           <div class="tech-card">
             <h3>FastAPI <span class="tech-badge">API</span></h3>
-            <p>Server-side API's gebouwd met Python FastAPI voor async validatie, documentbeheer en integraties. Deployed via Docker.</p>
+            <p data-i18n="tech.fastapi_desc">Server-side API's gebouwd met Python FastAPI voor async validatie, documentbeheer en integraties. Deployed via Docker.</p>
           </div>
         </div>
       </div>
@@ -344,56 +345,56 @@
       <!-- One system highlight -->
       <div class="content-block">
         <div class="highlight-block">
-          <h3>Lokaal en in de cloud — een systeem</h3>
-          <p>Elke OpenAEC-tool werkt standalone op je eigen machine, zonder internetverbinding. Maar wanneer je verbinding maakt, synchroniseert alles naadloos met de cloud via het OpenAEC-platform. Projecten, documenten en modeldata stromen automatisch tussen lokale installaties en de server. Je kiest zelf: volledig lokaal, volledig in de cloud, of een hybride setup.</p>
+          <h3 data-i18n="highlight.title">Lokaal en in de cloud — een systeem</h3>
+          <p data-i18n="highlight.desc">Elke OpenAEC-tool werkt standalone op je eigen machine, zonder internetverbinding. Maar wanneer je verbinding maakt, synchroniseert alles naadloos met de cloud via het OpenAEC-platform. Projecten, documenten en modeldata stromen automatisch tussen lokale installaties en de server. Je kiest zelf: volledig lokaal, volledig in de cloud, of een hybride setup.</p>
         </div>
       </div>
 
       <!-- Platform comparison -->
       <div class="content-block">
-        <h2>Platform <span class="accent">vergelijking</span></h2>
+        <h2 data-i18n="comparison.title">Platform <span class="accent">vergelijking</span></h2>
         <table class="platform-table">
           <thead>
             <tr>
-              <th>Functie</th>
+              <th data-i18n="comparison.feature">Functie</th>
               <th>Desktop (Tauri)</th>
               <th>Web (Browser)</th>
-              <th>Mobiel (Tauri)</th>
+              <th data-i18n="comparison.mobile">Mobiel (Tauri)</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Offline werken</td><td class="check">&#10003;</td><td>Beperkt (PWA)</td><td class="check">&#10003;</td></tr>
-            <tr><td>Bestandstoegang</td><td class="check">&#10003; Volledig</td><td>Beperkt (upload)</td><td class="check">&#10003;</td></tr>
-            <tr><td>IFC-verwerking</td><td class="check">&#10003; Native Rust</td><td class="check">&#10003; WASM</td><td class="check">&#10003; Native Rust</td></tr>
+            <tr><td data-i18n="comparison.offline">Offline werken</td><td class="check">&#10003;</td><td data-i18n="comparison.limited_pwa">Beperkt (PWA)</td><td class="check">&#10003;</td></tr>
+            <tr><td data-i18n="comparison.file_access">Bestandstoegang</td><td class="check" data-i18n="comparison.full">&#10003; Volledig</td><td data-i18n="comparison.limited_upload">Beperkt (upload)</td><td class="check">&#10003;</td></tr>
+            <tr><td data-i18n="comparison.ifc_processing">IFC-verwerking</td><td class="check">&#10003; Native Rust</td><td class="check">&#10003; WASM</td><td class="check">&#10003; Native Rust</td></tr>
             <tr><td>3D Viewer</td><td class="check">&#10003;</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
-            <tr><td>Installatiegrootte</td><td>&lt;10 MB</td><td>0 MB</td><td>&lt;15 MB</td></tr>
-            <tr><td>Auto-update</td><td class="check">&#10003;</td><td>Altijd actueel</td><td class="check">&#10003;</td></tr>
-            <tr><td>Camera toegang</td><td>&#8212;</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
-            <tr><td>Systeemintegratie</td><td class="check">&#10003; Volledig</td><td>Beperkt</td><td class="check">&#10003;</td></tr>
+            <tr><td data-i18n="comparison.install_size">Installatiegrootte</td><td>&lt;10 MB</td><td>0 MB</td><td>&lt;15 MB</td></tr>
+            <tr><td data-i18n="comparison.auto_update">Auto-update</td><td class="check">&#10003;</td><td data-i18n="comparison.always_current">Altijd actueel</td><td class="check">&#10003;</td></tr>
+            <tr><td data-i18n="comparison.camera">Camera toegang</td><td>&#8212;</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+            <tr><td data-i18n="comparison.system_integration">Systeemintegratie</td><td class="check" data-i18n="comparison.full2">&#10003; Volledig</td><td data-i18n="comparison.limited">Beperkt</td><td class="check">&#10003;</td></tr>
           </tbody>
         </table>
       </div>
 
       <!-- Extensibility -->
       <div class="content-block">
-        <h2>Uitbreidbaarheid &amp; <span class="accent">integratie</span></h2>
-        <p style="color: #57534E; line-height: 1.7; margin-bottom: var(--sp-6);">Elke tool in het ecosysteem is ontworpen om uitgebreid en geïntegreerd te worden. Vier lagen van uitbreidbaarheid:</p>
+        <h2 data-i18n="extensibility.title">Uitbreidbaarheid &amp; <span class="accent">integratie</span></h2>
+        <p style="color: #57534E; line-height: 1.7; margin-bottom: var(--sp-6);" data-i18n="extensibility.desc">Elke tool in het ecosysteem is ontworpen om uitgebreid en geïntegreerd te worden. Vier lagen van uitbreidbaarheid:</p>
         <div class="tech-grid">
           <div class="tech-card">
             <h3>Open Feedback Studio <span class="tech-badge">Feedback</span></h3>
-            <p>Ingebouwd feedbacksysteem in elke tool. Gebruikers kunnen direct vanuit de applicatie feedback geven, bugs melden en feature requests indienen. Gekoppeld aan het centrale platform.</p>
+            <p data-i18n="extensibility.feedback_desc">Ingebouwd feedbacksysteem in elke tool. Gebruikers kunnen direct vanuit de applicatie feedback geven, bugs melden en feature requests indienen. Gekoppeld aan het centrale platform.</p>
           </div>
           <div class="tech-card">
             <h3>REST API <span class="tech-badge">API</span></h3>
-            <p>Elke tool biedt een REST API voor integratie met externe systemen. Automatiseer workflows, koppel met ERP-systemen of bouw eigen dashboards bovenop het ecosysteem.</p>
+            <p data-i18n="extensibility.api_desc">Elke tool biedt een REST API voor integratie met externe systemen. Automatiseer workflows, koppel met ERP-systemen of bouw eigen dashboards bovenop het ecosysteem.</p>
           </div>
           <div class="tech-card">
             <h3>MCP Servers <span class="tech-badge">AI</span></h3>
-            <p>Model Context Protocol (MCP) servers voor elke tool. Hiermee kunnen AI-agents (zoals Claude) direct communiceren met de tools — modellen valideren, documenten genereren of berekeningen uitvoeren via natuurlijke taal.</p>
+            <p data-i18n="extensibility.mcp_desc">Model Context Protocol (MCP) servers voor elke tool. Hiermee kunnen AI-agents (zoals Claude) direct communiceren met de tools — modellen valideren, documenten genereren of berekeningen uitvoeren via natuurlijke taal.</p>
           </div>
           <div class="tech-card">
             <h3>Extensions <span class="tech-badge">Plugins</span></h3>
-            <p>Elke tool ondersteunt extensions voor maatwerk-functionaliteit. Bouw je eigen plugins in TypeScript of Rust en deel ze met de community via het extension register.</p>
+            <p data-i18n="extensibility.extensions_desc">Elke tool ondersteunt extensions voor maatwerk-functionaliteit. Bouw je eigen plugins in TypeScript of Rust en deel ze met de community via het extension register.</p>
           </div>
         </div>
       </div>
@@ -401,48 +402,48 @@
       <!-- Standing on shoulders -->
       <div class="content-block">
         <div class="highlight-block">
-          <h3>Bouwen op bestaande open source projecten</h3>
-          <p>We vinden het wiel niet opnieuw uit. Het OpenAEC-ecosysteem bouwt zoveel mogelijk verder op bewezen open source projecten uit de BIM- en 3D-wereld:</p>
+          <h3 data-i18n="opensource.title">Bouwen op bestaande open source projecten</h3>
+          <p data-i18n="opensource.desc">We vinden het wiel niet opnieuw uit. Het OpenAEC-ecosysteem bouwt zoveel mogelijk verder op bewezen open source projecten uit de BIM- en 3D-wereld:</p>
         </div>
         <div class="tech-grid" style="margin-top: var(--sp-6);">
           <div class="tech-card">
             <h3>That Open Engine</h3>
-            <p>De 3D-rendering en IFC-parsing in onze viewers is gebaseerd op That Open Engine (voorheen IFC.js). Een krachtige TypeScript/Three.js library voor BIM in de browser.</p>
+            <p data-i18n="opensource.thatopen_desc">De 3D-rendering en IFC-parsing in onze viewers is gebaseerd op That Open Engine (voorheen IFC.js). Een krachtige TypeScript/Three.js library voor BIM in de browser.</p>
           </div>
           <div class="tech-card">
             <h3>Blender &amp; Bonsai</h3>
-            <p>Voor 3D-modellering en BIM-authoring integreren we met Blender en het Bonsai add-on (voorheen BlenderBIM). De krachtigste open source 3D-tool ter wereld.</p>
+            <p data-i18n="opensource.blender_desc">Voor 3D-modellering en BIM-authoring integreren we met Blender en het Bonsai add-on (voorheen BlenderBIM). De krachtigste open source 3D-tool ter wereld.</p>
           </div>
           <div class="tech-card">
             <h3>IfcOpenShell</h3>
-            <p>De industriestandaard Python/C++ library voor het lezen, schrijven en manipuleren van IFC-bestanden. De ruggengraat van onze server-side IFC-verwerking.</p>
+            <p data-i18n="opensource.ifcopenshell_desc">De industriestandaard Python/C++ library voor het lezen, schrijven en manipuleren van IFC-bestanden. De ruggengraat van onze server-side IFC-verwerking.</p>
           </div>
           <div class="tech-card">
             <h3>PDF.js &amp; pdf-lib</h3>
-            <p>Mozilla's PDF.js voor rendering en pdf-lib voor het programmatisch aanmaken en bewerken van PDF-documenten. Bewezen technologie, miljoenen gebruikers.</p>
+            <p data-i18n="opensource.pdfjs_desc">Mozilla's PDF.js voor rendering en pdf-lib voor het programmatisch aanmaken en bewerken van PDF-documenten. Bewezen technologie, miljoenen gebruikers.</p>
           </div>
         </div>
       </div>
 
       <!-- Why this approach -->
       <div class="content-block">
-        <h2>Waarom deze <span class="accent">aanpak</span>?</h2>
+        <h2 data-i18n="why.title">Waarom deze <span class="accent">aanpak</span>?</h2>
         <div class="tech-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
           <div class="tech-card">
-            <h3>Klein &amp; snel</h3>
-            <p>Geen Electron, geen Chromium. Tauri gebruikt de native webview — installatiebestanden zijn kleiner dan 10MB en het geheugengebruik is minimaal.</p>
+            <h3 data-i18n="why.small_title">Klein &amp; snel</h3>
+            <p data-i18n="why.small_desc">Geen Electron, geen Chromium. Tauri gebruikt de native webview — installatiebestanden zijn kleiner dan 10MB en het geheugengebruik is minimaal.</p>
           </div>
           <div class="tech-card">
-            <h3>Veilig</h3>
-            <p>Rust voorkomt geheugenfouten, buffer overflows en race conditions. De applicatie is veilig by design.</p>
+            <h3 data-i18n="why.safe_title">Veilig</h3>
+            <p data-i18n="why.safe_desc">Rust voorkomt geheugenfouten, buffer overflows en race conditions. De applicatie is veilig by design.</p>
           </div>
           <div class="tech-card">
-            <h3>Open source</h3>
-            <p>Tauri, Rust, en alle gebruikte bibliotheken zijn open source. Geen vendor lock-in op framework-niveau.</p>
+            <h3 data-i18n="why.opensource_title">Open source</h3>
+            <p data-i18n="why.opensource_desc">Tauri, Rust, en alle gebruikte bibliotheken zijn open source. Geen vendor lock-in op framework-niveau.</p>
           </div>
           <div class="tech-card">
-            <h3>Toekomstbestendig</h3>
-            <p>Web-standaarden en Rust zijn technologieen met lange levensduur. Geen framework-churn, geen breaking changes.</p>
+            <h3 data-i18n="why.futureproof_title">Toekomstbestendig</h3>
+            <p data-i18n="why.futureproof_desc">Web-standaarden en Rust zijn technologieen met lange levensduur. Geen framework-churn, geen breaking changes.</p>
           </div>
         </div>
       </div>
@@ -457,5 +458,6 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

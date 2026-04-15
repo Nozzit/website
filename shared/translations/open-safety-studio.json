@@ -1,0 +1,29 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "desc": "Open source tool for safety analysis and risk assessment on construction projects."
+  },
+  "why": {
+    "title": "Why Open Safety <span class=\"accent\">Studio</span>?",
+    "desc": "Safety on the construction site is not a luxury but an obligation. Open Safety Studio helps with creating risk inventories, health & safety plans and safety checks, linked to the BIM model so risks become spatially visible."
+  },
+  "features": {
+    "title": "Features",
+    "risk_title": "Risk inventory",
+    "risk_desc": "Systematic inventory of safety risks per construction phase, location and type of work in accordance with occupational health and safety legislation.",
+    "vg_title": "H&S plan generation",
+    "vg_desc": "Automatically generate Health & Safety plans based on the risk inventory and project data.",
+    "checks_title": "Safety inspections",
+    "checks_desc": "Digital checklists for safety inspections on the construction site. Register deviations and track corrective actions.",
+    "ifcx_title": "IFCX connection",
+    "ifcx_desc": "Link risks and safety measures to specific locations and elements in the BIM model via IFCX.",
+    "incident_title": "Incident registration",
+    "incident_desc": "Register incidents, near-misses and unsafe situations. Analyze patterns and take preventive measures.",
+    "reporting_title": "Reporting & compliance",
+    "reporting_desc": "Generate reports for internal audits and external supervisors. Prove compliance with laws and regulations."
+  },
+  "cta": {
+    "demo": "View live demo",
+    "github": "View on GitHub"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "News & <span class=\"accent\">Updates</span>",
+    "desc": "Automatically tracked: all releases, new repositories and activity from the OpenAEC ecosystem on GitHub."
+  },
+  "filter": {
+    "label": "Filter:",
+    "all": "All",
+    "new_repos": "New repos"
+  }
+}

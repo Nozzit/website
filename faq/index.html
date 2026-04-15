@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ — OpenAEC Foundation</title>
   <meta name="description" content="Veelgestelde vragen over de OpenAEC Foundation, open source in de bouw, en ons verdienmodel.">
+  <meta name="i18n-page" content="faq">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -105,9 +106,9 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Foundation</p>
+    <p class="section-label" data-i18n="header.label">OpenAEC Foundation</p>
     <h1><span class="accent">FAQ</span></h1>
-    <p>Veelgestelde vragen over open source in de bouw, ons verdienmodel en de toekomst van het ecosysteem.</p>
+    <p data-i18n="header.desc">Veelgestelde vragen over open source in de bouw, ons verdienmodel en de toekomst van het ecosysteem.</p>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -115,7 +116,7 @@
 
       <!-- Q1 -->
       <div class="faq-item">
-        <div class="faq-q">Waarom alles open source?</div>
+        <div class="faq-q" data-i18n="q1.title">Waarom alles open source?</div>
         <div class="faq-a">
           <p>De bouwsector is een van de laatste grote industrieën die nog volledig draait op gesloten, proprietary software. Dat brengt hoge licentiekosten, vendor lock-in en afhankelijkheid van een handvol leveranciers.</p>
           <p>Open source verandert dat fundamenteel:</p>
@@ -134,7 +135,7 @@
 
       <!-- Q2 -->
       <div class="faq-item">
-        <div class="faq-q">Maar met AI geschreven software is toch van slechte kwaliteit?</div>
+        <div class="faq-q" data-i18n="q2.title">Maar met AI geschreven software is toch van slechte kwaliteit?</div>
         <div class="faq-a">
           <p>Nee. AI is een hulpmiddel, net als een compiler of een IDE. De kwaliteit van software hangt af van de architectuur, het ontwerp en de review — niet van wie (of wat) de code typt.</p>
           <p>Onze tools worden ontworpen door ervaren engineers uit de bouwsector. AI versnelt het ontwikkelproces, maar de architecturale keuzes, de domeinkennis en de kwaliteitscontrole zijn menselijk. Bovendien: open source betekent dat iedereen de code kan reviewen en verbeteren.</p>
@@ -143,7 +144,7 @@
 
       <!-- Q3 -->
       <div class="faq-item">
-        <div class="faq-q">Hoe verdienen jullie geld?</div>
+        <div class="faq-q" data-i18n="q3.title">Hoe verdienen jullie geld?</div>
         <div class="faq-a">
           <p>Vooralsnog wordt er veel geïnvesteerd om dit jaar het volledige ecosysteem werkend te krijgen. Alles is en blijft open source. Je kunt alles downloaden via <a href="https://github.com/OpenAEC-Foundation" target="_blank">onze GitHub</a>.</p>
           <p>Als stichting leveren we diensten rondom het ecosysteem:</p>
@@ -162,7 +163,7 @@
 
       <!-- Q4 -->
       <div class="faq-item">
-        <div class="faq-q">Kan ik de tools ook zelf hosten?</div>
+        <div class="faq-q" data-i18n="q4.title">Kan ik de tools ook zelf hosten?</div>
         <div class="faq-a">
           <p>Absoluut. Alle tools zijn open source en kunnen zelfstandig geïnstalleerd worden op je eigen server. De meeste tools bieden Docker-images voor eenvoudige deployment. Je hebt volledige controle over je data en infrastructuur.</p>
           <p>Als je liever geen beheer wilt, bieden wij managed hosting aan met SLA.</p>
@@ -171,7 +172,7 @@
 
       <!-- Q5 -->
       <div class="faq-item">
-        <div class="faq-q">Op welke technologie zijn de tools gebouwd?</div>
+        <div class="faq-q" data-i18n="q5.title">Op welke technologie zijn de tools gebouwd?</div>
         <div class="faq-a">
           <p>Alle tools in het ecosysteem zijn gebouwd op dezelfde stack: <strong>Tauri 2.0</strong> (Rust backend) met een web-frontend. Dit betekent dat elke tool draait als desktop-applicatie (Windows, macOS, Linux), als web-app en als mobiele app — vanuit dezelfde codebase.</p>
           <p>Lees meer op onze <a href="/architectuur/">architectuur pagina</a>.</p>
@@ -180,7 +181,7 @@
 
       <!-- Q6 -->
       <div class="faq-item">
-        <div class="faq-q">Hoe kan ik bijdragen?</div>
+        <div class="faq-q" data-i18n="q6.title">Hoe kan ik bijdragen?</div>
         <div class="faq-a">
           <p>Er zijn meerdere manieren om bij te dragen:</p>
           <ul>
@@ -205,5 +206,6 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

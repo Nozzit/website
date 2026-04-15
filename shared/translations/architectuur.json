@@ -1,0 +1,77 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Software <span class=\"accent\">architecture</span>",
+    "desc": "One codebase, all platforms. Our tools run as a web app, as a desktop application on Windows, Linux and macOS, and as a mobile app — from the same source code."
+  },
+  "intro": {
+    "title": "One codebase, <span class=\"accent\">everywhere</span>",
+    "p1": "Every tool in the OpenAEC ecosystem is developed as a single application that runs on all platforms. No separate versions for web and desktop, no double maintenance. The same code, the same features, everywhere.",
+    "p2": "We achieve this by building on Tauri and Rust as the foundation, with a modern web frontend that runs both in the browser and in a native shell."
+  },
+  "diagram": {
+    "title": "Architecture <span class=\"accent\">overview</span>",
+    "platforms": "Platforms",
+    "runtime": "Runtime",
+    "validation": "Validation",
+    "calculations": "Calculations"
+  },
+  "tech": {
+    "title": "Technology <span class=\"accent\">stack</span>",
+    "tauri_desc": "Framework for building desktop and mobile apps with web technology. Uses the native webview of the OS instead of Chromium — resulting in small installation files (&lt;10MB) and low memory usage.",
+    "rust_desc": "The core logic of every tool is written in Rust: IFC parsing, validation, calculations and file processing. Rust offers memory safety, high performance and compiles to every platform.",
+    "wasm_desc": "The same Rust code compiles to WebAssembly (WASM) for the web version. This allows the full computation logic to also run in the browser, with near-native performance.",
+    "ui_desc": "The user interface is built with standard web technology. No heavy frameworks — lightweight, fast and maintainable. The same UI runs in Tauri and in the browser.",
+    "threejs_desc": "3D visualization of IFC models via Three.js and That Open Engine. WebGL-based, runs everywhere a browser runs.",
+    "fastapi_desc": "Server-side APIs built with Python FastAPI for async validation, document management and integrations. Deployed via Docker."
+  },
+  "highlight": {
+    "title": "Local and in the cloud — one system",
+    "desc": "Every OpenAEC tool works standalone on your own machine, without an internet connection. But when you connect, everything synchronizes seamlessly with the cloud via the OpenAEC platform. Projects, documents and model data flow automatically between local installations and the server. You choose: fully local, fully in the cloud, or a hybrid setup."
+  },
+  "comparison": {
+    "title": "Platform <span class=\"accent\">comparison</span>",
+    "feature": "Feature",
+    "mobile": "Mobile (Tauri)",
+    "offline": "Offline work",
+    "limited_pwa": "Limited (PWA)",
+    "file_access": "File access",
+    "full": "&#10003; Full",
+    "limited_upload": "Limited (upload)",
+    "ifc_processing": "IFC processing",
+    "install_size": "Installation size",
+    "auto_update": "Auto-update",
+    "always_current": "Always current",
+    "camera": "Camera access",
+    "system_integration": "System integration",
+    "full2": "&#10003; Full",
+    "limited": "Limited"
+  },
+  "extensibility": {
+    "title": "Extensibility &amp; <span class=\"accent\">integration</span>",
+    "desc": "Every tool in the ecosystem is designed to be extended and integrated. Four layers of extensibility:",
+    "feedback_desc": "Built-in feedback system in every tool. Users can provide feedback, report bugs and submit feature requests directly from the application. Connected to the central platform.",
+    "api_desc": "Every tool offers a REST API for integration with external systems. Automate workflows, connect with ERP systems or build your own dashboards on top of the ecosystem.",
+    "mcp_desc": "Model Context Protocol (MCP) servers for every tool. This allows AI agents (like Claude) to communicate directly with the tools — validate models, generate documents or perform calculations via natural language.",
+    "extensions_desc": "Every tool supports extensions for custom functionality. Build your own plugins in TypeScript or Rust and share them with the community via the extension registry."
+  },
+  "opensource": {
+    "title": "Building on existing open source projects",
+    "desc": "We don't reinvent the wheel. The OpenAEC ecosystem builds as much as possible on proven open source projects from the BIM and 3D world:",
+    "thatopen_desc": "The 3D rendering and IFC parsing in our viewers is based on That Open Engine (formerly IFC.js). A powerful TypeScript/Three.js library for BIM in the browser.",
+    "blender_desc": "For 3D modeling and BIM authoring we integrate with Blender and the Bonsai add-on (formerly BlenderBIM). The most powerful open source 3D tool in the world.",
+    "ifcopenshell_desc": "The industry-standard Python/C++ library for reading, writing and manipulating IFC files. The backbone of our server-side IFC processing.",
+    "pdfjs_desc": "Mozilla's PDF.js for rendering and pdf-lib for programmatically creating and editing PDF documents. Proven technology, millions of users."
+  },
+  "why": {
+    "title": "Why this <span class=\"accent\">approach</span>?",
+    "small_title": "Small &amp; fast",
+    "small_desc": "No Electron, no Chromium. Tauri uses the native webview — installation files are smaller than 10MB and memory usage is minimal.",
+    "safe_title": "Secure",
+    "safe_desc": "Rust prevents memory errors, buffer overflows and race conditions. The application is secure by design.",
+    "opensource_title": "Open source",
+    "opensource_desc": "Tauri, Rust, and all libraries used are open source. No vendor lock-in at framework level.",
+    "futureproof_title": "Future-proof",
+    "futureproof_desc": "Web standards and Rust are technologies with long lifespans. No framework churn, no breaking changes."
+  }
+}

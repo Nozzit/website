@@ -1,0 +1,44 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Open Speech <span class=\"accent\">Studio</span>",
+    "desc": "Free speech recognition for everyone with a local AI on your own PC. 1 installer file. No hassle.",
+    "badge": "v0.5.0"
+  },
+  "features": {
+    "heading": "What can <span class=\"accent\">it</span> do?",
+    "dictate": {
+      "title": "Dictate anywhere",
+      "desc": "Dictate text directly in any application via an overlay. Use CTRL+Windows or CTRL+SHIFT+Space to do speech-to-text anywhere in your OS."
+    },
+    "transcribe": {
+      "title": "Transcribe audio files",
+      "desc": "Transcribe audio files with parallel processing. Multiple files simultaneously, fast and accurate."
+    },
+    "meetings": {
+      "title": "Record meetings",
+      "desc": "Record meetings and transcribe in real-time. Automatic minutes and summaries."
+    },
+    "gpu": {
+      "title": "GPU acceleration",
+      "desc": "CUDA GPU acceleration for faster results. Optimal use of your hardware for maximum performance."
+    },
+    "local": {
+      "title": "100% local",
+      "desc": "Everything runs locally on your own computer. Your data never leaves your PC. No cloud, no subscription, no limits."
+    },
+    "tech": {
+      "title": "Whisper AI + Tauri + Rust",
+      "desc": "Built with OpenAI Whisper AI for speech recognition, Tauri for the desktop app and Rust for the backend. Open source."
+    }
+  },
+  "shortcuts": {
+    "title": "Keyboard shortcuts",
+    "desc": "Start speech-to-text anywhere in your operating system:",
+    "or": "or"
+  },
+  "cta": {
+    "download": "Download installer",
+    "github": "GitHub"
+  }
+}

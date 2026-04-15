@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAEC Docs — OpenAEC Foundation</title>
   <meta name="description" content="OpenAEC Docs: open source BIM document management platform. Beheer, deel en archiveer projectdocumenten.">
+  <meta name="i18n-page" content="openaec-docs">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -51,10 +52,10 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Ecosysteem</p>
-    <h1>OpenAEC <span class="accent">Docs</span></h1>
-    <p>Open source BIM document management platform. Beheer, deel en archiveer alle projectdocumenten op een centrale plek.</p>
-    <span class="status-badge">Beta</span>
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">OpenAEC <span class="accent">Docs</span></h1>
+    <p data-i18n="header.desc">Open source BIM document management platform. Beheer, deel en archiveer alle projectdocumenten op een centrale plek.</p>
+    <span class="status-badge" data-i18n="header.badge">Beta</span>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -66,9 +67,9 @@
 
     <div class="content">
       <div class="content-block">
-        <h2>Wat is OpenAEC <span class="accent">Docs</span>?</h2>
-        <p>OpenAEC Docs is een document management systeem (DMS) speciaal ontworpen voor BIM-projecten in de bouwsector. Het is gebaseerd op <a href="https://nextcloud.com" target="_blank" rel="noopener" style="color: var(--amber);">Nextcloud</a> — het populairste open source platform voor bestandsbeheer en samenwerking. Het biedt een centrale plek voor het beheren, delen en archiveren van alle projectdocumenten — van tekeningen en rapporten tot contracten en vergunningen.</p>
-        <p>Gebouwd op Nextcloud met aanvullende Rust en TypeScript modules voor BIM-specifieke functionaliteit.</p>
+        <h2 data-i18n="what.title">Wat is OpenAEC <span class="accent">Docs</span>?</h2>
+        <p data-i18n="what.desc">OpenAEC Docs is een document management systeem (DMS) speciaal ontworpen voor BIM-projecten in de bouwsector. Het is gebaseerd op <a href="https://nextcloud.com" target="_blank" rel="noopener" style="color: var(--amber);">Nextcloud</a> — het populairste open source platform voor bestandsbeheer en samenwerking. Het biedt een centrale plek voor het beheren, delen en archiveren van alle projectdocumenten — van tekeningen en rapporten tot contracten en vergunningen.</p>
+        <p data-i18n="what.tech">Gebouwd op Nextcloud met aanvullende Rust en TypeScript modules voor BIM-specifieke functionaliteit.</p>
 
         <div class="tech-pills">
           <span class="tech-pill">Nextcloud</span>
@@ -80,39 +81,39 @@
       </div>
 
       <div class="content-block">
-        <h2>Functionaliteiten</h2>
+        <h2 data-i18n="features.title">Functionaliteiten</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>Documentbeheer</h3>
-            <p>Upload, organiseer en doorzoek documenten per project, discipline of fase. Automatische metadata-extractie.</p>
+            <h3 data-i18n="features.documents.title">Documentbeheer</h3>
+            <p data-i18n="features.documents.desc">Upload, organiseer en doorzoek documenten per project, discipline of fase. Automatische metadata-extractie.</p>
           </div>
           <div class="feature-card">
-            <h3>Versiebeheer</h3>
-            <p>Volledige versiegeschiedenis van elk document. Vergelijk versies en herstel eerdere revisies.</p>
+            <h3 data-i18n="features.versioning.title">Versiebeheer</h3>
+            <p data-i18n="features.versioning.desc">Volledige versiegeschiedenis van elk document. Vergelijk versies en herstel eerdere revisies.</p>
           </div>
           <div class="feature-card">
-            <h3>IFCX-koppeling</h3>
-            <p>Documenten koppelen aan IFCX-modelelementen. Bekijk gerelateerde documenten direct vanuit het BIM-model.</p>
+            <h3 data-i18n="features.ifcx.title">IFCX-koppeling</h3>
+            <p data-i18n="features.ifcx.desc">Documenten koppelen aan IFCX-modelelementen. Bekijk gerelateerde documenten direct vanuit het BIM-model.</p>
           </div>
           <div class="feature-card">
-            <h3>Toegangscontrole</h3>
-            <p>Rol-gebaseerde rechten per project en map. Bepaal wie documenten mag bekijken, bewerken of verwijderen.</p>
+            <h3 data-i18n="features.access.title">Toegangscontrole</h3>
+            <p data-i18n="features.access.desc">Rol-gebaseerde rechten per project en map. Bepaal wie documenten mag bekijken, bewerken of verwijderen.</p>
           </div>
           <div class="feature-card">
-            <h3>Zoeken &amp; filteren</h3>
-            <p>Full-text zoeken door documenten en metadata. Filter op type, datum, auteur of status.</p>
+            <h3 data-i18n="features.search.title">Zoeken &amp; filteren</h3>
+            <p data-i18n="features.search.desc">Full-text zoeken door documenten en metadata. Filter op type, datum, auteur of status.</p>
           </div>
           <div class="feature-card">
-            <h3>API &amp; integratie</h3>
-            <p>REST API voor integratie met andere tools in het OpenAEC-ecosysteem. Webhooks voor automatisering.</p>
+            <h3 data-i18n="features.api.title">API &amp; integratie</h3>
+            <p data-i18n="features.api.desc">REST API voor integratie met andere tools in het OpenAEC-ecosysteem. Webhooks voor automatisering.</p>
           </div>
         </div>
       </div>
 
       <div class="content-block">
         <div class="highlight-block">
-          <h3>Self-hosted &amp; privacy-first</h3>
-          <p>OpenAEC Docs draait op je eigen server via Docker. Volledige controle over je data, geen cloud-afhankelijkheid. Ideaal voor organisaties met strenge privacy- en compliance-eisen.</p>
+          <h3 data-i18n="highlight.title">Self-hosted &amp; privacy-first</h3>
+          <p data-i18n="highlight.desc">OpenAEC Docs draait op je eigen server via Docker. Volledige controle over je data, geen cloud-afhankelijkheid. Ideaal voor organisaties met strenge privacy- en compliance-eisen.</p>
         </div>
       </div>
     </div>
@@ -128,5 +129,6 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
+<script src="/shared/i18n.js"></script>
 </body>
 </html>

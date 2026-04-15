@@ -1,0 +1,65 @@
+{
+  "header": {
+    "label": "Energy performance — NTA 8800",
+    "title": "Open <span class=\"accent\">Energy</span> Studio",
+    "desc": "Open-source building energy performance calculator following the Dutch NTA 8800 standard. BENG calculations, U-value analysis, heat pump sizing, and thermal bridge assessment.",
+    "downloadBtn": "Download v2026.2.0",
+    "sourceBtn": "View source"
+  },
+  "download": {
+    "title": "Download v2026.2.0"
+  },
+  "features": {
+    "heading": "Features",
+    "beng": {
+      "title": "BENG calculations",
+      "desc": "Building Energy Performance (BENG) calculations following the Dutch NTA 8800 standard with BENG indicator visualization."
+    },
+    "uvalue": {
+      "title": "U-value calculator",
+      "desc": "Calculate thermal transmittance (U-value) of wall, roof, and floor constructions."
+    },
+    "heatpump": {
+      "title": "Heat pump sizing",
+      "desc": "Calculate required heat pump capacity based on building properties and climate data."
+    },
+    "thermal": {
+      "title": "Thermal bridge calculator",
+      "desc": "Assess thermal bridges and their impact on energy performance."
+    },
+    "charts": {
+      "title": "Energy breakdown charts",
+      "desc": "Visual energy breakdown and monthly performance analysis charts."
+    },
+    "building3d": {
+      "title": "3D building view",
+      "desc": "3D visualization of the building envelope and its thermal properties."
+    },
+    "projects": {
+      "title": "Project management",
+      "desc": "Project browser for managing multiple buildings. Properties panel for detailed parameter editing."
+    },
+    "reporting": {
+      "title": "Reporting",
+      "desc": "Generate energy performance reports with print preview. Ribbon toolbar interface with settings dialog."
+    }
+  },
+  "tech": {
+    "heading": "Tech stack",
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Native desktop application with Rust backend. CalVer versioning (YEAR.MONTH.BUILD)."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Component-based UI with Vite build tooling."
+    }
+  },
+  "cta": {
+    "demo": "Live demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

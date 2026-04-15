@@ -1,0 +1,30 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "Legal information about the OpenAEC Foundation and the use of our software."
+  },
+  "foundation": {
+    "title": "Foundation",
+    "desc": "The OpenAEC Foundation (Stichting OpenAEC Foundation) is established in the Netherlands and is subject to Dutch law. The foundation is a non-profit organization."
+  },
+  "licenses": {
+    "title": "Open source licenses",
+    "desc": "All software from the OpenAEC Foundation is released under recognized open source licenses (MIT, LGPL, CC BY-SA). Consult the individual repositories on <a href=\"https://github.com/OpenAEC-Foundation\" target=\"_blank\">GitHub</a> for the specific license per project."
+  },
+  "cleanroom": {
+    "title": "Clean Room Declaration",
+    "p1": "Insofar as the OpenAEC Foundation develops software that interoperates with closed (proprietary) file formats, this is done exclusively on the basis of clean room reverse engineering in accordance with the European Software Directive (Directive 2009/24/EC)."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "desc": "The OpenAEC Foundation does not collect personal data through its tools. Tools that run locally process all data on your own device. Our privacy policy applies to hosted services."
+  },
+  "liability": {
+    "title": "Liability",
+    "desc": "The software is provided \"as is\", without any warranty. The OpenAEC Foundation is not liable for damages resulting from the use of the software. See the specific open source license per project for the full disclaimer provisions."
+  },
+  "statutes": {
+    "title": "Draft articles of association",
+    "desc": "The draft articles of association of the foundation are available on our website. <a href=\"/statuten/\">View the draft articles of association</a>."
+  }
+}

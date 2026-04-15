@@ -1,0 +1,31 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "<span class=\"accent\">Services</span>",
+    "desc": "The OpenAEC Foundation provides professional services around the open source ecosystem."
+  },
+  "ecosystem": {
+    "title": "The OpenAEC Ecosystem as a service",
+    "desc": "All tools available in one integrated ecosystem. Redundantly set up, with Single Sign-On (SSO) and local AI as orchestrator for controlling all tools. One platform, one login, maximum productivity."
+  },
+  "consultancy": {
+    "title": "Consultancy",
+    "desc": "Advice on implementation, integration and optimization of OpenAEC tools within your organization. From strategic advice to hands-on implementation guidance."
+  },
+  "hosting": {
+    "title": "Hosting &amp; SLA",
+    "desc": "Managed hosting of all tools in the ecosystem with guaranteed uptime and professional support. We handle the infrastructure, you use the tools."
+  },
+  "extensions": {
+    "title": "Extensions &amp; custom development",
+    "desc": "We develop extensions on the software for specific client requirements. The base remains open source — the extension becomes property of the client or is contributed to the ecosystem."
+  },
+  "donations": {
+    "title": "Donations",
+    "desc": "Support the development of open source software for the construction sector. Every contribution helps us develop the ecosystem faster and make it available."
+  },
+  "subsidies": {
+    "title": "Grants",
+    "desc": "We actively work on obtaining government grants for innovation and digitalization in construction. Together with our partners we focus on sustainable funding."
+  }
+}

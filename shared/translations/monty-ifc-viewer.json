@@ -1,0 +1,53 @@
+{
+  "header": {
+    "label": "BIM / IFC viewer",
+    "title": "Monty <span class=\"accent\">IFC</span> Viewer",
+    "desc": "Web-based IFC viewer with build sequence visualization. Load IFC files, animate the construction sequence step by step, and inspect element properties.",
+    "downloadBtn": "Download v1.0.1",
+    "demoBtn": "Live demo"
+  },
+  "download": {
+    "title": "Download v1.0.1"
+  },
+  "features": {
+    "heading": "Features",
+    "loading": {
+      "title": "IFC file loading",
+      "desc": "Drag and drop IFC files into the viewer or use the file picker. Parsed with the web-ifc library."
+    },
+    "visualization": {
+      "title": "3D visualization",
+      "desc": "Interactive 3D rendering of BIM models with Three.js. Zoom, pan, and rotate around the model."
+    },
+    "sequence": {
+      "title": "Build sequence animation",
+      "desc": "Visualize the construction sequence step by step with play, pause, previous, and next controls. Choose which IFC parameter drives the sequence order."
+    },
+    "properties": {
+      "title": "Element properties",
+      "desc": "Click on any element to select and highlight it. View all IFC properties of the selected element."
+    }
+  },
+  "tech": {
+    "heading": "Tech stack",
+    "threejs": {
+      "title": "Three.js",
+      "desc": "3D rendering engine for interactive model visualization."
+    },
+    "webifc": {
+      "title": "web-ifc",
+      "desc": "IFC parsing library by IFCjs for reading Industry Foundation Classes files."
+    },
+    "vanilla": {
+      "title": "Vanilla JavaScript",
+      "desc": "No framework dependencies. Lightweight and fast."
+    },
+    "author": "Created by Piet Mol"
+  },
+  "cta": {
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

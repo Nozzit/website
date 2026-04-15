@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tijdlijn & Statistieken — OpenAEC Foundation</title>
   <meta name="description" content="De geschiedenis en cijfers achter het OpenAEC-ecosysteem. Van het eerste idee tot een compleet open source platform.">
+  <meta name="i18n-page" content="statistieken">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -383,9 +384,9 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Foundation</p>
-    <h1>Tijdlijn & <span class="accent">Statistieken</span></h1>
-    <p>De geschiedenis en cijfers achter het OpenAEC-ecosysteem. Van het eerste idee tot een compleet open source platform.</p>
+    <p class="section-label" data-i18n="header.label">OpenAEC Foundation</p>
+    <h1 data-i18n="header.title">Tijdlijn & <span class="accent">Statistieken</span></h1>
+    <p data-i18n="header.desc">De geschiedenis en cijfers achter het OpenAEC-ecosysteem. Van het eerste idee tot een compleet open source platform.</p>
   </header>
 
   <!-- Section 1: Highlight stats -->
@@ -396,8 +397,8 @@
       <div class="highlight-card"><div class="number" id="s-stars">—</div><div class="label">Stars</div></div>
       <div class="highlight-card"><div class="number" id="s-releases">—</div><div class="label">Releases</div></div>
       <div class="highlight-card"><div class="number" id="s-contributors">—</div><div class="label">Contributors</div></div>
-      <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label">Regels code (est.)</div></div>
-      <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label">Programmeertalen</div></div>
+      <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label" data-i18n="stats.loc">Regels code (est.)</div></div>
+      <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label" data-i18n="stats.languages">Programmeertalen</div></div>
       <div class="highlight-card"><div class="number" id="s-issues">—</div><div class="label">Open issues</div></div>
     </div>
     <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
@@ -406,30 +407,30 @@
   <!-- Trend charts -->
   <section class="section" style="background: var(--night-build);">
     <div class="stats-section" style="max-width:1000px;margin:0 auto;">
-      <h2 style="color:white;">Groei in de <span class="accent">tijd</span></h2>
+      <h2 style="color:white;" data-i18n="growth.title">Groei in de <span class="accent">tijd</span></h2>
       <div class="trend-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);margin-top:var(--sp-6);">
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal repos</h4>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.cum_repos">Cumulatief aantal repos</h4>
           <div id="chart-cum-repos" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief aantal commits</h4>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.cum_commits">Cumulatief aantal commits</h4>
           <div id="chart-cum-commits" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Open issues per maand</h4>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.open_issues">Open issues per maand</h4>
           <div id="chart-cum-issues" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Regels code (geschat)</h4>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.loc">Regels code (geschat)</h4>
           <div id="chart-cum-loc" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief contributors</h4>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.cum_contributors">Cumulatief contributors</h4>
           <div id="chart-cum-contributors" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Cumulatief stars</h4>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.cum_stars">Cumulatief stars</h4>
           <div id="chart-cum-stars" style="height:250px;"></div>
         </div>
       </div>
@@ -438,13 +439,13 @@
 
   <section class="section" style="background: white;">
     <div class="stats-section">
-      <h2>Repos per <span class="accent">maand</span></h2>
+      <h2 data-i18n="charts.repos_month">Repos per <span class="accent">maand</span></h2>
       <div id="chart-monthly" style="height: 250px;"></div>
     </div>
   </section>
   <section class="section" style="background: var(--concrete);">
     <div class="stats-section">
-      <h2>Verdeling per <span class="accent">programmeertaal</span></h2>
+      <h2 data-i18n="charts.lang_dist">Verdeling per <span class="accent">programmeertaal</span></h2>
       <div id="chart-langs" style="height: 250px;"></div>
     </div>
   </section>
@@ -452,26 +453,26 @@
   <!-- News activity -->
   <section class="section" style="background: var(--night-build);">
     <div class="stats-section" style="max-width:1000px;margin:0 auto;">
-      <h2 style="color:white;">Nieuws <span class="accent">activiteit</span></h2>
-      <p style="color:var(--scaffold-gray);margin-bottom:var(--sp-6);">Alle releases en nieuwe repositories sinds 1 januari 2026.</p>
+      <h2 style="color:white;" data-i18n="news.title">Nieuws <span class="accent">activiteit</span></h2>
+      <p style="color:var(--scaffold-gray);margin-bottom:var(--sp-6);" data-i18n="news.subtitle">Alle releases en nieuwe repositories sinds 1 januari 2026.</p>
       <div class="highlight-cards" style="grid-template-columns: repeat(3, 1fr); margin-bottom: var(--sp-6);">
-        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-total">—</div><div class="label" style="color:var(--scaffold-gray);">Nieuws items</div></div>
+        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-total">—</div><div class="label" style="color:var(--scaffold-gray);" data-i18n="news.items">Nieuws items</div></div>
         <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-releases">—</div><div class="label" style="color:var(--scaffold-gray);">Releases</div></div>
-        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-repos">—</div><div class="label" style="color:var(--scaffold-gray);">Nieuwe repos</div></div>
+        <div class="highlight-card" style="background:var(--deep-forge);border-color:rgba(255,255,255,0.1);"><div class="number" id="s-news-repos">—</div><div class="label" style="color:var(--scaffold-gray);" data-i18n="news.new_repos">Nieuwe repos</div></div>
       </div>
       <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-        <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Releases & nieuwe repos per week</h4>
+        <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="news.chart_title">Releases & nieuwe repos per week</h4>
         <div id="chart-news-activity" style="height:250px;"></div>
       </div>
       <div style="text-align:center;margin-top:var(--sp-6);">
-        <a href="/nieuws/" class="btn btn-primary btn-lg">Bekijk alle nieuws &rarr;</a>
+        <a href="/nieuws/" class="btn btn-primary btn-lg" data-i18n="news.view_all">Bekijk alle nieuws &rarr;</a>
       </div>
     </div>
   </section>
 
   <!-- Section 2: Timeline -->
   <section class="timeline-section">
-    <h2>De <span class="accent">Reis</span></h2>
+    <h2 data-i18n="timeline.title">De <span class="accent">Reis</span></h2>
     <div class="timeline">
 
       <!-- Januari 2026 -->
@@ -560,17 +561,17 @@
   <!-- Section 3: Repository statistics -->
   <section class="section" style="background: var(--blueprint-white);">
     <div class="stats-section">
-      <h2>Repository overzicht</h2>
+      <h2 data-i18n="repos.title">Repository overzicht</h2>
       <div class="table-wrapper" style="overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; display: block;">
         <table class="stats-table">
           <thead>
             <tr>
               <th>Repository</th>
-              <th>Taal</th>
+              <th data-i18n="repos.language">Taal</th>
               <th>Commits</th>
               <th>Releases</th>
               <th>Stars</th>
-              <th>Aangemaakt</th>
+              <th data-i18n="repos.created">Aangemaakt</th>
             </tr>
           </thead>
           <tbody id="repo-tbody">
@@ -581,9 +582,9 @@
 
       <!-- Top repos by metric -->
       <div class="top-repos">
-        <div class="top-repo-card"><h4>Meeste stars</h4><ol id="top-stars"></ol></div>
-        <div class="top-repo-card"><h4>Meeste commits</h4><ol id="top-commits"></ol></div>
-        <div class="top-repo-card"><h4>Grootste repos</h4><ol id="top-size"></ol></div>
+        <div class="top-repo-card"><h4 data-i18n="top.stars">Meeste stars</h4><ol id="top-stars"></ol></div>
+        <div class="top-repo-card"><h4 data-i18n="top.commits">Meeste commits</h4><ol id="top-commits"></ol></div>
+        <div class="top-repo-card"><h4 data-i18n="top.size">Grootste repos</h4><ol id="top-size"></ol></div>
       </div>
 
     </div>
@@ -832,5 +833,6 @@ function barChart(id, dataObj, colors) {
   </div>`;
 }
 </script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "desc": "All OpenAEC tools communicate in IFCX. We add all the namespaces needed to store the complete building model in IFCX ourselves."
+  },
+  "why": {
+    "title": "Why <span class=\"accent\">IFCX</span>?",
+    "p1": "IFCX is the next generation of the IFC data format. Where classic IFC (IFC2x3, IFC4) uses a fixed schema, IFCX offers a flexible, extensible model based on namespaces. This makes it possible to add domain-specific information without modifying the core schema.",
+    "p2": "For the OpenAEC Foundation, IFCX is the logical choice: it is open, extensible and aligns with our vision that the entire construction sector should run on open standards."
+  },
+  "universal": {
+    "title": "IFCX as universal language",
+    "desc": "Within the OpenAEC ecosystem, IFCX is the central data format. Every tool — from cost estimation to validation, from 2D drawings to 3D viewers — reads and writes IFCX. This means data flows seamlessly between all parts of the construction chain, without conversion or data loss."
+  },
+  "model": {
+    "title": "Everything in <span class=\"accent\">one model</span>",
+    "desc": "We store everything in IFC. Not just the geometry, but all data that has any relationship with the BIM model is stored in this format:"
+  },
+  "tools": {
+    "title": "Tools that speak <span class=\"accent\">IFCX</span>",
+    "desc": "All tools in the OpenAEC ecosystem are built around IFCX as the central format:"
+  },
+  "standard": {
+    "title": "Open <span class=\"accent\">standard</span>",
+    "p1": "All OpenAEC namespaces are published openly and are free to use under an open license. We work together with buildingSMART and the Dutch BIM community to align our namespaces with international standards.",
+    "p2": "By developing and maintaining all necessary namespaces ourselves, we ensure that IFCX can actually contain a complete building model — from first sketch to handover and management."
+  },
+  "cta": {
+    "title": "Join in?",
+    "desc": "Want to contribute to the development of IFCX namespaces or connect your tool to the OpenAEC ecosystem? Contact us.",
+    "button": "Contact us"
+  }
+}

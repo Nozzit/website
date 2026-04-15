@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Open Heatloss <span class=\"accent\">Studio</span>",
+    "desc": "Open source heat loss calculation for buildings conforming to NEN 12831.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Why Open Heatloss <span class=\"accent\">Studio</span>?",
+    "desc": "Heat loss calculations are essential for the design of heating systems and building energy performance. Open Heatloss Studio offers an accessible, open source alternative to expensive commercial software, fully conforming to NEN 12831."
+  },
+  "features": {
+    "title": "Features",
+    "nen12831": {
+      "title": "NEN 12831 calculations",
+      "desc": "Full heat loss calculations conforming to NEN 12831. Accurate results for heating system design."
+    },
+    "transmission": {
+      "title": "Transmission losses per room",
+      "desc": "Detailed calculation of transmission losses per room, including correction factors for ground-coupled constructions."
+    },
+    "ventilation": {
+      "title": "Ventilation losses",
+      "desc": "Calculation of ventilation losses based on ventilation system, air volume flow and infiltration."
+    },
+    "ifcx": {
+      "title": "IFCX integration",
+      "desc": "Import building geometry and construction properties directly from IFCX models for faster input."
+    },
+    "reports": {
+      "title": "Report generation",
+      "desc": "Generate clear reports with heat loss per room, total overviews and graphical representations."
+    },
+    "library": {
+      "title": "Building physics library",
+      "desc": "Extensive library with material properties, construction build-ups and standard U-values."
+    }
+  },
+  "cta": {
+    "demo": "View live demo",
+    "github": "View on GitHub"
+  }
+}

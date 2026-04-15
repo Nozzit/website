@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Open Calc <span class=\"accent\">Studio</span>",
+    "desc": "Open source cost estimation tool for construction budgets and cost calculations.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Why Open Calc <span class=\"accent\">Studio</span>?",
+    "desc": "Cost estimates and budgets are essential for every construction project, but existing tools are expensive and proprietary. Open Calc Studio offers a fully open source alternative with direct connections to STABU/RAW and the IFCX ecosystem."
+  },
+  "features": {
+    "title": "Features",
+    "stabu": {
+      "title": "STABU/RAW integration",
+      "desc": "Full support for STABU and RAW standards for standardized specifications and cost estimates."
+    },
+    "ifcx": {
+      "title": "IFCX quantity linking",
+      "desc": "Automatically extract quantities from IFCX models for accurate calculations directly from the BIM model."
+    },
+    "export": {
+      "title": "Quote export",
+      "desc": "Generate professional quotes and export to PDF, Excel or other common formats."
+    },
+    "multiproject": {
+      "title": "Multi-project management",
+      "desc": "Manage multiple projects simultaneously with clear dashboards and project comparisons."
+    },
+    "library": {
+      "title": "Cost library",
+      "desc": "Build and maintain a reusable library with unit prices, materials and labor standards."
+    },
+    "reports": {
+      "title": "Report generation",
+      "desc": "Create detailed reports with cost overviews, comparisons and trend analyses."
+    }
+  },
+  "cta": {
+    "demo": "View live demo",
+    "github": "View on GitHub"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "BCF Manager <span class=\"accent\">Studio</span>",
+    "desc": "Open-source BCF 2.1 issue management platform for BIM projects. Manage issues, communicate with teams and link to IFC models.",
+    "badge": "In development"
+  },
+  "bcf": {
+    "title": "What is BCF?",
+    "desc": "BIM Collaboration Format (BCF) is an open standard (buildingSMART) for exchanging issues and comments between BIM software. It enables reporting, discussing and resolving problems in a building model — regardless of which software the parties involved are using.",
+    "list1": "Open standard: BCF 2.1 (XML) and BCF API 3.0 (REST)",
+    "list2": "Software-independent: works with any BIM package that supports BCF",
+    "list3": "Viewpoints: visual snapshots of the 3D model for each issue",
+    "list4": "Metadata: priority, status, assignment, deadlines, labels"
+  },
+  "why": {
+    "title": "Why BCF Manager <span class=\"accent\">Studio</span>?",
+    "desc1": "Existing BCF tools are often part of expensive, proprietary BIM platforms. BCF Manager Studio offers a standalone, open-source alternative that anyone can use — free, without license fees, without vendor lock-in.",
+    "desc2": "The platform runs locally or on your own server. Your data stays yours. Connect it to your own IFC viewer, share issues with your team, and export to any BCF-compatible package."
+  },
+  "features": {
+    "title": "Features",
+    "issues": {
+      "title": "BCF 2.1 issue management",
+      "desc": "Create, edit and manage issues conforming to the BCF 2.1 standard. Full support for topics, comments, viewpoints and snapshots."
+    },
+    "viewpoints": {
+      "title": "Viewpoints with 3D snapshots",
+      "desc": "Link visual viewpoints to issues with camera position, selection and visibility. Directly visible in your IFC viewer."
+    },
+    "collaboration": {
+      "title": "Team collaboration",
+      "desc": "Assign issues to team members, set deadlines, add comments and track status. Real-time synchronization between all participants."
+    },
+    "xml": {
+      "title": "BCF XML import/export",
+      "desc": "Import and export BCF files (XML format) for exchange with Solibri, Navisworks, BIMcollab and other BCF-compatible software."
+    },
+    "api": {
+      "title": "REST API (BCF API 3.0)",
+      "desc": "Full BCF API 3.0 implementation for integration with external tools, dashboards and automation."
+    },
+    "projects": {
+      "title": "Project management",
+      "desc": "Organize issues per project with labels, priorities, milestones and filters. Clear dashboard with statistics."
+    },
+    "ifc": {
+      "title": "IFC integration",
+      "desc": "Link issues directly to IFC elements via GlobalId. Navigate from an issue directly to the relevant element in your model."
+    },
+    "selfhosted": {
+      "title": "Self-hosted",
+      "desc": "Run the platform on your own server or locally. Full control over your data, no cloud dependency."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "desc": "Receive notifications for new issues, status changes and replies. Configurable per project and per user."
+    }
+  },
+  "tech": {
+    "title": "Technology",
+    "desc": "Built with the same technology stack as the entire OpenAEC ecosystem: a Rust backend for performance and security, a TypeScript frontend for usability, and Tauri 2 for cross-platform distribution."
+  },
+  "cta": {
+    "github": "GitHub &rarr;"
+  }
+}

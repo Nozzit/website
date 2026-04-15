@@ -1,0 +1,45 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Timeline & <span class=\"accent\">Statistics</span>",
+    "desc": "The history and numbers behind the OpenAEC ecosystem. From the first idea to a complete open source platform."
+  },
+  "stats": {
+    "loc": "Lines of code (est.)",
+    "languages": "Programming languages"
+  },
+  "growth": {
+    "title": "Growth over <span class=\"accent\">time</span>"
+  },
+  "charts": {
+    "cum_repos": "Cumulative repositories",
+    "cum_commits": "Cumulative commits",
+    "open_issues": "Open issues per month",
+    "loc": "Lines of code (estimated)",
+    "cum_contributors": "Cumulative contributors",
+    "cum_stars": "Cumulative stars",
+    "repos_month": "Repos per <span class=\"accent\">month</span>",
+    "lang_dist": "Distribution per <span class=\"accent\">programming language</span>"
+  },
+  "news": {
+    "title": "News <span class=\"accent\">activity</span>",
+    "subtitle": "All releases and new repositories since January 1, 2026.",
+    "items": "News items",
+    "new_repos": "New repos",
+    "chart_title": "Releases & new repos per week",
+    "view_all": "View all news &rarr;"
+  },
+  "timeline": {
+    "title": "The <span class=\"accent\">Journey</span>"
+  },
+  "repos": {
+    "title": "Repository overview",
+    "language": "Language",
+    "created": "Created"
+  },
+  "top": {
+    "stars": "Most stars",
+    "commits": "Most commits",
+    "size": "Largest repos"
+  }
+}

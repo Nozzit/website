@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Offerte aanvragen — OpenAEC Foundation</title>
   <meta name="description" content="Vraag een offerte aan voor het OpenAEC-ecosysteem. Selecteer de tools die u nodig heeft en het aantal gebruikers.">
+  <meta name="i18n-page" content="offerte">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -319,9 +320,9 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Ecosysteem</p>
-    <h1>Offerte <span class="accent">aanvragen</span></h1>
-    <p>Selecteer de tools die u nodig heeft, geef het aantal gebruikers op en vraag een offerte op maat aan.</p>
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">Offerte <span class="accent">aanvragen</span></h1>
+    <p data-i18n="header.desc">Selecteer de tools die u nodig heeft, geef het aantal gebruikers op en vraag een offerte op maat aan.</p>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -329,15 +330,15 @@
 
       <!-- Steps -->
       <div class="steps">
-        <div class="step active" data-step="1"><span class="step-num">1</span> <span>Tools selecteren</span></div>
-        <div class="step" data-step="2"><span class="step-num">2</span> <span>Gegevens</span></div>
-        <div class="step" data-step="3"><span class="step-num">3</span> <span>Bevestigen</span></div>
+        <div class="step active" data-step="1"><span class="step-num">1</span> <span data-i18n="steps.select">Tools selecteren</span></div>
+        <div class="step" data-step="2"><span class="step-num">2</span> <span data-i18n="steps.details">Gegevens</span></div>
+        <div class="step" data-step="3"><span class="step-num">3</span> <span data-i18n="steps.confirm">Bevestigen</span></div>
       </div>
 
       <!-- Step 1: Tool selection -->
       <div id="step1">
         <div class="form-section">
-          <h2>Selecteer uw tools</h2>
+          <h2 data-i18n="step1.title">Selecteer uw tools</h2>
           <div class="tool-select-grid" id="toolGrid"></div>
         </div>
         <div class="form-nav">
@@ -349,14 +350,14 @@
       <!-- Step 2: Contact details -->
       <div id="step2" hidden>
         <div class="form-section">
-          <h2>Uw gegevens</h2>
+          <h2 data-i18n="step2.title">Uw gegevens</h2>
           <div class="form-row">
             <div class="form-group">
-              <label for="q-name">Naam *</label>
+              <label for="q-name" data-i18n="form.name">Naam *</label>
               <input type="text" id="q-name" placeholder="Uw naam" required>
             </div>
             <div class="form-group">
-              <label for="q-company">Bedrijf</label>
+              <label for="q-company" data-i18n="form.company">Bedrijf</label>
               <input type="text" id="q-company" placeholder="Bedrijfsnaam">
             </div>
           </div>
@@ -366,12 +367,12 @@
               <input type="email" id="q-email" placeholder="uw@email.nl" required>
             </div>
             <div class="form-group">
-              <label for="q-phone">Telefoon</label>
+              <label for="q-phone" data-i18n="form.phone">Telefoon</label>
               <input type="tel" id="q-phone" placeholder="06-12345678">
             </div>
           </div>
           <div class="form-group">
-            <label for="q-notes">Opmerkingen</label>
+            <label for="q-notes" data-i18n="form.notes">Opmerkingen</label>
             <textarea id="q-notes" placeholder="Beschrijf uw situatie of specifieke wensen..."></textarea>
           </div>
         </div>
@@ -384,21 +385,21 @@
       <!-- Step 3: Summary -->
       <div id="step3" hidden>
         <div class="form-section">
-          <h2>Overzicht offerte-aanvraag</h2>
+          <h2 data-i18n="step3.title">Overzicht offerte-aanvraag</h2>
 
           <div class="summary-box">
-            <h3>Geselecteerde tools</h3>
+            <h3 data-i18n="summary.tools">Geselecteerde tools</h3>
             <ul class="summary-list" id="summaryTools"></ul>
           </div>
 
           <div class="summary-box">
-            <h3>Contactgegevens</h3>
+            <h3 data-i18n="summary.contact">Contactgegevens</h3>
             <ul class="summary-list" id="summaryContact"></ul>
           </div>
         </div>
         <div class="form-nav">
           <button class="btn btn-secondary" onclick="goToStep(2)">&larr; Terug</button>
-          <button class="btn btn-primary btn-lg" onclick="submitQuote()">Offerte aanvragen</button>
+          <button class="btn btn-primary btn-lg" onclick="submitQuote()" data-i18n="submit.button">Offerte aanvragen</button>
         </div>
       </div>
 
@@ -408,9 +409,9 @@
           <circle cx="12" cy="12" r="10"/>
           <path d="M8 12l3 3 5-5"/>
         </svg>
-        <h2>Aanvraag verzonden</h2>
-        <p>Bedankt voor uw offerte-aanvraag. Wij nemen zo snel mogelijk contact met u op.</p>
-        <a href="/" class="btn btn-primary" style="margin-top: var(--sp-6); display: inline-flex;">Terug naar home</a>
+        <h2 data-i18n="success.title">Aanvraag verzonden</h2>
+        <p data-i18n="success.desc">Bedankt voor uw offerte-aanvraag. Wij nemen zo snel mogelijk contact met u op.</p>
+        <a href="/" class="btn btn-primary" style="margin-top: var(--sp-6); display: inline-flex;" data-i18n="success.home">Terug naar home</a>
       </div>
 
     </div>
@@ -545,5 +546,6 @@
       document.querySelector('.steps').style.display = 'none';
     }
   </script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

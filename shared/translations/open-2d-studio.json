@@ -1,0 +1,61 @@
+{
+  "header": {
+    "label": "Open-source 2D CAD",
+    "title": "Open <span class=\"accent\">2D</span> Studio",
+    "desc": "A free, open-source 2D CAD application for technical drawings, floor plans, and mechanical designs. Lightweight, fast alternative to commercial CAD software.",
+    "downloadBtn": "Download v0.31.0",
+    "sourceBtn": "View source"
+  },
+  "download": {
+    "title": "Download v0.31.0"
+  },
+  "features": {
+    "heading": "Features",
+    "drawing": {
+      "title": "Drawing tools",
+      "desc": "Line, rectangle, circle, arc, polyline, ellipse, and text. CAD-style command input for precise control."
+    },
+    "snapping": {
+      "title": "Precision and snapping",
+      "desc": "Snap to grid and object snaps: endpoint, midpoint, center, intersection. Configurable grid system."
+    },
+    "layers": {
+      "title": "Layer management",
+      "desc": "Multiple layers with visibility, lock, and color controls. Organize drawings into logical groups."
+    },
+    "dxf": {
+      "title": "DXF import/export",
+      "desc": "Read and write DXF files via the Rust dxf-rs backend for interoperability with AutoCAD, BricsCAD, and other CAD software."
+    },
+    "properties": {
+      "title": "Properties and selection",
+      "desc": "Edit stroke color, width, and line style. Click, box select, or Shift+Click to build selections. Multi-select alignment and distribution."
+    },
+    "extensions": {
+      "title": "Extensions",
+      "desc": "Extensible architecture for add-ins. See <a href=\"/ext-drawing-statistics\">Drawing Statistics</a> for an example extension."
+    }
+  },
+  "tech": {
+    "heading": "Tech stack",
+    "tauri": {
+      "title": "Tauri 2.0",
+      "desc": "~10 MB app size, ~30 MB RAM usage, native performance via Rust backend."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Component-based UI with type safety and Zustand state management."
+    },
+    "canvas": {
+      "title": "Canvas 2D rendering",
+      "desc": "Fast rendering that handles 10k+ elements smoothly."
+    }
+  },
+  "cta": {
+    "demo": "Live demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Request a <span class=\"accent\">quote</span>",
+    "desc": "Select the tools you need, specify the number of users and request a custom quote."
+  },
+  "steps": {
+    "select": "Select tools",
+    "details": "Details",
+    "confirm": "Confirm"
+  },
+  "step1": {
+    "title": "Select your tools"
+  },
+  "step2": {
+    "title": "Your details"
+  },
+  "form": {
+    "name": "Name *",
+    "company": "Company",
+    "phone": "Phone",
+    "notes": "Remarks"
+  },
+  "step3": {
+    "title": "Quote request overview"
+  },
+  "summary": {
+    "tools": "Selected tools",
+    "contact": "Contact details"
+  },
+  "submit": {
+    "button": "Request quote"
+  },
+  "success": {
+    "title": "Request sent",
+    "desc": "Thank you for your quote request. We will contact you as soon as possible.",
+    "home": "Back to home"
+  }
+}

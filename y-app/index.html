@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y-app — OpenAEC Foundation</title>
   <meta name="description" content="Y-app: open source communicatie- en samenwerkingsplatform voor bouwprojecten. Chat, bestanden delen en projectcoördinatie.">
+  <meta name="i18n-page" content="y-app">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -123,9 +124,9 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Ecosysteem</p>
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
     <h1>Y-<span class="accent">app</span></h1>
-    <p>Open source communicatie- en samenwerkingsplatform voor bouwprojecten. Chat, bestanden delen en projectcoördinatie — alles in een app.</p>
+    <p data-i18n="header.desc">Open source communicatie- en samenwerkingsplatform voor bouwprojecten. Chat, bestanden delen en projectcoördinatie — alles in een app.</p>
     <span class="status-badge">Beta</span>
   </header>
 
@@ -147,36 +148,36 @@
 
     <div class="content">
       <div class="content-block">
-        <h2>Waarom <span class="accent">Y-app</span>?</h2>
-        <p>Bouwprojecten vereisen constante communicatie tussen tientallen partijen. E-mail, WhatsApp en losse tools leiden tot informatieverlies. Y-app brengt alle communicatie samen op een plek, gekoppeld aan het project en het BIM-model via IFCX.</p>
+        <h2 data-i18n="why.title">Waarom <span class="accent">Y-app</span>?</h2>
+        <p data-i18n="why.desc">Bouwprojecten vereisen constante communicatie tussen tientallen partijen. E-mail, WhatsApp en losse tools leiden tot informatieverlies. Y-app brengt alle communicatie samen op een plek, gekoppeld aan het project en het BIM-model via IFCX.</p>
       </div>
 
       <div class="content-block">
-        <h2>Functionaliteiten</h2>
+        <h2 data-i18n="features.title">Functionaliteiten</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>Projectchat</h3>
-            <p>Realtime chat per project, per discipline of per onderwerp. Berichten zijn doorzoekbaar en gekoppeld aan het project.</p>
+            <h3 data-i18n="features.chat_title">Projectchat</h3>
+            <p data-i18n="features.chat_desc">Realtime chat per project, per discipline of per onderwerp. Berichten zijn doorzoekbaar en gekoppeld aan het project.</p>
           </div>
           <div class="feature-card">
-            <h3>Bestanden delen</h3>
-            <p>Upload en deel documenten, tekeningen en IFC-modellen. Automatische versiebeheer en koppeling met OpenAEC Docs.</p>
+            <h3 data-i18n="features.files_title">Bestanden delen</h3>
+            <p data-i18n="features.files_desc">Upload en deel documenten, tekeningen en IFC-modellen. Automatische versiebeheer en koppeling met OpenAEC Docs.</p>
           </div>
           <div class="feature-card">
-            <h3>Notificaties</h3>
-            <p>Slimme notificaties per kanaal. Kies zelf wat je wilt volgen en hoe je op de hoogte gehouden wordt.</p>
+            <h3 data-i18n="features.notif_title">Notificaties</h3>
+            <p data-i18n="features.notif_desc">Slimme notificaties per kanaal. Kies zelf wat je wilt volgen en hoe je op de hoogte gehouden wordt.</p>
           </div>
           <div class="feature-card">
-            <h3>IFCX-integratie</h3>
-            <p>Berichten en bestanden koppelen aan IFCX-elementen. Communiceer direct over specifieke onderdelen van het model.</p>
+            <h3 data-i18n="features.ifcx_title">IFCX-integratie</h3>
+            <p data-i18n="features.ifcx_desc">Berichten en bestanden koppelen aan IFCX-elementen. Communiceer direct over specifieke onderdelen van het model.</p>
           </div>
           <div class="feature-card">
-            <h3>Multi-platform</h3>
-            <p>Beschikbaar als web-app, desktop-app (Windows, macOS, Linux) en mobiele app via Tauri.</p>
+            <h3 data-i18n="features.multi_title">Multi-platform</h3>
+            <p data-i18n="features.multi_desc">Beschikbaar als web-app, desktop-app (Windows, macOS, Linux) en mobiele app via Tauri.</p>
           </div>
           <div class="feature-card">
-            <h3>Open source</h3>
-            <p>Volledige broncode beschikbaar. Host het op je eigen server voor maximale controle over data en privacy.</p>
+            <h3 data-i18n="features.oss_title">Open source</h3>
+            <p data-i18n="features.oss_desc">Volledige broncode beschikbaar. Host het op je eigen server voor maximale controle over data en privacy.</p>
           </div>
         </div>
       </div>
@@ -214,5 +215,6 @@
       };
     })();
   </script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

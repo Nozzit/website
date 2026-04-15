@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAEC BCF Manager Studio — OpenAEC Foundation</title>
   <meta name="description" content="OpenAEC BCF Manager Studio: open-source BCF 2.1 issue management platform voor BIM-projecten. Beheer issues, communiceer met teams en koppel aan IFC-modellen.">
+  <meta name="i18n-page" content="bcf-manager-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -169,10 +170,10 @@
   <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Ecosysteem</p>
-    <h1>BCF Manager <span class="accent">Studio</span></h1>
-    <p>Open-source BCF 2.1 issue management platform voor BIM-projecten. Beheer issues, communiceer met teams en koppel aan IFC-modellen.</p>
-    <span class="status-badge">In ontwikkeling</span>
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">BCF Manager <span class="accent">Studio</span></h1>
+    <p data-i18n="header.desc">Open-source BCF 2.1 issue management platform voor BIM-projecten. Beheer issues, communiceer met teams en koppel aan IFC-modellen.</p>
+    <span class="status-badge" data-i18n="header.badge">In ontwikkeling</span>
     <div class="version-info">26 commits &middot; Rust + TypeScript &middot; By 3BM Bouwkunde</div>
   </header>
 
@@ -181,66 +182,66 @@
 
       <!-- BCF explainer -->
       <div class="bcf-explainer">
-        <h3>Wat is BCF?</h3>
-        <p>BIM Collaboration Format (BCF) is een open standaard (buildingSMART) voor het uitwisselen van issues en opmerkingen tussen BIM-software. Het maakt het mogelijk om problemen in een bouwmodel te melden, bespreken en oplossen — ongeacht welke software de betrokken partijen gebruiken.</p>
+        <h3 data-i18n="bcf.title">Wat is BCF?</h3>
+        <p data-i18n="bcf.desc">BIM Collaboration Format (BCF) is een open standaard (buildingSMART) voor het uitwisselen van issues en opmerkingen tussen BIM-software. Het maakt het mogelijk om problemen in een bouwmodel te melden, bespreken en oplossen — ongeacht welke software de betrokken partijen gebruiken.</p>
         <ul>
-          <li>Open standaard: BCF 2.1 (XML) en BCF API 3.0 (REST)</li>
-          <li>Software-onafhankelijk: werkt met elk BIM-pakket dat BCF ondersteunt</li>
-          <li>Viewpoints: visuele snapshots van het 3D-model bij elke issue</li>
-          <li>Metadata: prioriteit, status, toewijzing, deadlines, labels</li>
+          <li data-i18n="bcf.list1">Open standaard: BCF 2.1 (XML) en BCF API 3.0 (REST)</li>
+          <li data-i18n="bcf.list2">Software-onafhankelijk: werkt met elk BIM-pakket dat BCF ondersteunt</li>
+          <li data-i18n="bcf.list3">Viewpoints: visuele snapshots van het 3D-model bij elke issue</li>
+          <li data-i18n="bcf.list4">Metadata: prioriteit, status, toewijzing, deadlines, labels</li>
         </ul>
       </div>
 
       <div class="content-block">
-        <h2>Waarom BCF Manager <span class="accent">Studio</span>?</h2>
-        <p>Bestaande BCF-tools zijn vaak onderdeel van dure, propriëtaire BIM-platforms. BCF Manager Studio biedt een zelfstandig, open-source alternatief dat iedereen kan gebruiken — gratis, zonder licentiekosten, zonder vendor lock-in.</p>
-        <p>Het platform draait lokaal of op je eigen server. Je data blijft van jou. Koppel het aan je eigen IFC-viewer, deel issues met je team, en exporteer naar elk BCF-compatibel pakket.</p>
+        <h2 data-i18n="why.title">Waarom BCF Manager <span class="accent">Studio</span>?</h2>
+        <p data-i18n="why.desc1">Bestaande BCF-tools zijn vaak onderdeel van dure, propriëtaire BIM-platforms. BCF Manager Studio biedt een zelfstandig, open-source alternatief dat iedereen kan gebruiken — gratis, zonder licentiekosten, zonder vendor lock-in.</p>
+        <p data-i18n="why.desc2">Het platform draait lokaal of op je eigen server. Je data blijft van jou. Koppel het aan je eigen IFC-viewer, deel issues met je team, en exporteer naar elk BCF-compatibel pakket.</p>
       </div>
 
       <div class="content-block">
-        <h2>Functionaliteiten</h2>
+        <h2 data-i18n="features.title">Functionaliteiten</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>BCF 2.1 issue management</h3>
-            <p>Maak, bewerk en beheer issues conform de BCF 2.1 standaard. Volledige ondersteuning voor topics, comments, viewpoints en snapshots.</p>
+            <h3 data-i18n="features.issues.title">BCF 2.1 issue management</h3>
+            <p data-i18n="features.issues.desc">Maak, bewerk en beheer issues conform de BCF 2.1 standaard. Volledige ondersteuning voor topics, comments, viewpoints en snapshots.</p>
           </div>
           <div class="feature-card">
-            <h3>Viewpoints met 3D-snapshots</h3>
-            <p>Koppel visuele viewpoints aan issues met camera-positie, selectie en zichtbaarheid. Direct zichtbaar in je IFC-viewer.</p>
+            <h3 data-i18n="features.viewpoints.title">Viewpoints met 3D-snapshots</h3>
+            <p data-i18n="features.viewpoints.desc">Koppel visuele viewpoints aan issues met camera-positie, selectie en zichtbaarheid. Direct zichtbaar in je IFC-viewer.</p>
           </div>
           <div class="feature-card">
-            <h3>Team-samenwerking</h3>
-            <p>Wijs issues toe aan teamleden, stel deadlines in, voeg comments toe en volg de status. Real-time synchronisatie tussen alle deelnemers.</p>
+            <h3 data-i18n="features.collaboration.title">Team-samenwerking</h3>
+            <p data-i18n="features.collaboration.desc">Wijs issues toe aan teamleden, stel deadlines in, voeg comments toe en volg de status. Real-time synchronisatie tussen alle deelnemers.</p>
           </div>
           <div class="feature-card">
-            <h3>BCF XML import/export</h3>
-            <p>Importeer en exporteer BCF-bestanden (XML-formaat) voor uitwisseling met Solibri, Navisworks, BIMcollab en andere BCF-compatibele software.</p>
+            <h3 data-i18n="features.xml.title">BCF XML import/export</h3>
+            <p data-i18n="features.xml.desc">Importeer en exporteer BCF-bestanden (XML-formaat) voor uitwisseling met Solibri, Navisworks, BIMcollab en andere BCF-compatibele software.</p>
           </div>
           <div class="feature-card">
-            <h3>REST API (BCF API 3.0)</h3>
-            <p>Volledige BCF API 3.0 implementatie voor integratie met externe tools, dashboards en automatisering.</p>
+            <h3 data-i18n="features.api.title">REST API (BCF API 3.0)</h3>
+            <p data-i18n="features.api.desc">Volledige BCF API 3.0 implementatie voor integratie met externe tools, dashboards en automatisering.</p>
           </div>
           <div class="feature-card">
-            <h3>Projectbeheer</h3>
-            <p>Organiseer issues per project met labels, prioriteiten, milestones en filters. Overzichtelijk dashboard met statistieken.</p>
+            <h3 data-i18n="features.projects.title">Projectbeheer</h3>
+            <p data-i18n="features.projects.desc">Organiseer issues per project met labels, prioriteiten, milestones en filters. Overzichtelijk dashboard met statistieken.</p>
           </div>
           <div class="feature-card">
-            <h3>IFC-koppeling</h3>
-            <p>Koppel issues direct aan IFC-elementen via GlobalId. Navigeer vanuit een issue direct naar het betreffende element in je model.</p>
+            <h3 data-i18n="features.ifc.title">IFC-koppeling</h3>
+            <p data-i18n="features.ifc.desc">Koppel issues direct aan IFC-elementen via GlobalId. Navigeer vanuit een issue direct naar het betreffende element in je model.</p>
           </div>
           <div class="feature-card">
-            <h3>Self-hosted</h3>
-            <p>Draai het platform op je eigen server of lokaal. Volledige controle over je data, geen cloud-afhankelijkheid.</p>
+            <h3 data-i18n="features.selfhosted.title">Self-hosted</h3>
+            <p data-i18n="features.selfhosted.desc">Draai het platform op je eigen server of lokaal. Volledige controle over je data, geen cloud-afhankelijkheid.</p>
           </div>
           <div class="feature-card">
-            <h3>Notificaties</h3>
-            <p>Ontvang meldingen bij nieuwe issues, statuswijzigingen en reacties. Configureerbaar per project en per gebruiker.</p>
+            <h3 data-i18n="features.notifications.title">Notificaties</h3>
+            <p data-i18n="features.notifications.desc">Ontvang meldingen bij nieuwe issues, statuswijzigingen en reacties. Configureerbaar per project en per gebruiker.</p>
           </div>
         </div>
       </div>
 
       <div class="content-block">
-        <h2>Technologie</h2>
+        <h2 data-i18n="tech.title">Technologie</h2>
         <div class="tech-stack">
           <span class="tech-tag">Rust</span>
           <span class="tech-tag">TypeScript</span>
@@ -250,14 +251,14 @@
           <span class="tech-tag">REST API</span>
           <span class="tech-tag">Docker</span>
         </div>
-        <p>Gebouwd met dezelfde technologie-stack als het hele OpenAEC-ecosysteem: een Rust-backend voor prestaties en veiligheid, een TypeScript-frontend voor gebruiksvriendelijkheid, en Tauri 2 voor cross-platform distributie.</p>
+        <p data-i18n="tech.desc">Gebouwd met dezelfde technologie-stack als het hele OpenAEC-ecosysteem: een Rust-backend voor prestaties en veiligheid, een TypeScript-frontend voor gebruiksvriendelijkheid, en Tauri 2 voor cross-platform distributie.</p>
       </div>
 
       <div class="content-block">
         <div class="cta-links">
           <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform" target="_blank" rel="noopener" class="cta-secondary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            GitHub &rarr;
+            <span data-i18n="cta.github">GitHub &rarr;</span>
           </a>
         </div>
       </div>
@@ -281,5 +282,6 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
+<script src="/shared/i18n.js"></script>
 </body>
 </html>

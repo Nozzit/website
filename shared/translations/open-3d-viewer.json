@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Open 3D <span class=\"accent\">Viewer</span>",
+    "desc": "Open source 3D viewer for viewing and inspecting BIM models in the browser.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Why Open 3D <span class=\"accent\">Viewer</span>?",
+    "desc": "Viewing BIM models often requires expensive desktop software. Open 3D Viewer offers a lightweight, browser-based 3D viewer that allows anyone to inspect IFC and other 3D models without installation."
+  },
+  "features": {
+    "title": "Features",
+    "webgl": {
+      "title": "WebGL 3D rendering",
+      "desc": "Fast 3D rendering in the browser via WebGL. View complex models without plugins or installation."
+    },
+    "import": {
+      "title": "IFC/STEP/OBJ import",
+      "desc": "Support for commonly used 3D formats including IFC, STEP and OBJ. Drag and drop files directly into the viewer."
+    },
+    "selection": {
+      "title": "Element selection &amp; properties",
+      "desc": "Click on elements to view properties. Search the model by type, material or other attributes."
+    },
+    "clipping": {
+      "title": "Sections &amp; clipping planes",
+      "desc": "Create cross-sections through the model with clipping planes. View internal constructions and hidden elements."
+    },
+    "measure": {
+      "title": "Measurement tools",
+      "desc": "Measure distances, areas and angles directly in the 3D model. Ideal for quick checks on site."
+    },
+    "multiformat": {
+      "title": "Multi-format support",
+      "desc": "Besides BIM formats, also support for point clouds, 2D drawings and other commonly used formats."
+    }
+  },
+  "cta": {
+    "demo": "View live demo",
+    "github": "View on GitHub"
+  }
+}

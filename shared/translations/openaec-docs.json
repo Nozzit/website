@@ -1,0 +1,44 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "OpenAEC <span class=\"accent\">Docs</span>",
+    "desc": "Open source BIM document management platform. Manage, share and archive all project documents in one central place.",
+    "badge": "Beta"
+  },
+  "what": {
+    "title": "What is OpenAEC <span class=\"accent\">Docs</span>?",
+    "desc": "OpenAEC Docs is a document management system (DMS) specifically designed for BIM projects in the construction industry. It is based on <a href=\"https://nextcloud.com\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--amber);\">Nextcloud</a> — the most popular open source platform for file management and collaboration. It provides a central place for managing, sharing and archiving all project documents — from drawings and reports to contracts and permits.",
+    "tech": "Built on Nextcloud with additional Rust and TypeScript modules for BIM-specific functionality."
+  },
+  "features": {
+    "title": "Features",
+    "documents": {
+      "title": "Document management",
+      "desc": "Upload, organize and search documents by project, discipline or phase. Automatic metadata extraction."
+    },
+    "versioning": {
+      "title": "Version control",
+      "desc": "Complete version history of every document. Compare versions and restore previous revisions."
+    },
+    "ifcx": {
+      "title": "IFCX integration",
+      "desc": "Link documents to IFCX model elements. View related documents directly from the BIM model."
+    },
+    "access": {
+      "title": "Access control",
+      "desc": "Role-based permissions per project and folder. Determine who can view, edit or delete documents."
+    },
+    "search": {
+      "title": "Search &amp; filter",
+      "desc": "Full-text search through documents and metadata. Filter by type, date, author or status."
+    },
+    "api": {
+      "title": "API &amp; integration",
+      "desc": "REST API for integration with other tools in the OpenAEC ecosystem. Webhooks for automation."
+    }
+  },
+  "highlight": {
+    "title": "Self-hosted &amp; privacy-first",
+    "desc": "OpenAEC Docs runs on your own server via Docker. Full control over your data, no cloud dependency. Ideal for organizations with strict privacy and compliance requirements."
+  }
+}
