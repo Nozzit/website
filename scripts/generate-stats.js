@@ -137,17 +137,41 @@ async function main() {
       repo._latestRelease = releases[0]?.tag_name || null;
       repo._latestReleaseDate = releases[0]?.published_at?.substring(0, 10) || null;
 
-      // Include all releases since cutoff date
+      // Group releases by date for this repo
+      const releasesByDate = {};
       releases.forEach(rel => {
         const relDate = rel.published_at?.substring(0, 10);
         if (relDate && relDate >= newsCutoff) {
+          if (!releasesByDate[relDate]) releasesByDate[relDate] = [];
+          releasesByDate[relDate].push(rel);
+        }
+      });
+
+      // Create one news item per repo per day
+      Object.entries(releasesByDate).forEach(([date, rels]) => {
+        const tags = rels.map(r => r.tag_name);
+        if (rels.length === 1) {
           newsItems.push({
             type: 'release',
             repo: repo.name,
-            title: `${repo.name} ${rel.tag_name} uitgebracht`,
-            description: rel.name || `Nieuwe versie ${rel.tag_name}`,
-            date: relDate,
-            url: rel.html_url,
+            title: `${repo.name} ${tags[0]} uitgebracht`,
+            description: rels[0].name || `Nieuwe versie ${tags[0]}`,
+            date: date,
+            url: rels[0].html_url,
+            count: 1,
+          });
+        } else {
+          // Multiple releases on same day
+          const first = tags[tags.length - 1];
+          const last = tags[0];
+          newsItems.push({
+            type: 'release',
+            repo: repo.name,
+            title: `${repo.name}: ${rels.length} releases (${first} \u2192 ${last})`,
+            description: `Versies: ${tags.reverse().join(', ')}`,
+            date: date,
+            url: rels[0].html_url,
+            count: rels.length,
           });
         }
       });
