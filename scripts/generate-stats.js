@@ -126,7 +126,8 @@ async function main() {
   const today = new Date().toISOString().substring(0, 10);
   const newsCutoff = '2026-01-01'; // All news since Jan 1, 2026
 
-  for (const repo of publicRepos) {
+  // Fetch releases from ALL repos (including private) for news feed
+  for (const repo of repos) {
     try {
       // Fetch ALL releases (paginated) to get full history
       const releases = await fetchAllPages(
@@ -157,8 +158,8 @@ async function main() {
     }
   }
 
-  // All repos created since cutoff date
-  publicRepos.forEach(repo => {
+  // All repos created since cutoff date (including private)
+  repos.forEach(repo => {
     if (repo.created_at.substring(0, 10) >= newsCutoff) {
       newsItems.push({
         type: 'new_repo',
