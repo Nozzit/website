@@ -1511,7 +1511,7 @@
 
     // i18n System
     const i18n = {
-      currentLang: localStorage.getItem('lang') || 'nl',
+      currentLang: localStorage.getItem('openaec-lang') || 'nl',
       init() {
         this.setLanguage(this.currentLang);
         this.bindEvents();
@@ -1521,7 +1521,7 @@
       },
       setLanguage(lang) {
         this.currentLang = lang;
-        localStorage.setItem('lang', lang);
+        localStorage.setItem('openaec-lang', lang);
         document.documentElement.lang = lang;
         document.querySelectorAll('[data-i18n]').forEach(element => {
           const key = element.getAttribute('data-i18n');

@@ -53,6 +53,8 @@
             el.innerHTML = translation;
           }
         });
+        // Also apply nav inline translations
+        applyInlineTranslations(lang);
       })
       .catch(() => {
         // Silent fail on fetch - still apply inline translations
