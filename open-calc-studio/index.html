@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Calc Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open Calc Studio: open source calculatietool voor kostenramingen en begrotingen in de bouw.">
+  <meta name="description" content="Open Calc Studio: open-source begrotings- en calculatietool voor de bouw. STABU/RAW, IFCX-koppeling, MCP-integratie, extensies en AI-gestuurde calculatie.">
   <meta name="i18n-page" content="open-calc-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
@@ -48,8 +48,17 @@
       color: #9A3412;
       margin-top: var(--sp-4);
     }
+    .version-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-code);
+      font-size: 0.7rem;
+      color: var(--scaffold-gray);
+      margin-top: var(--sp-2);
+    }
 
-    .content { max-width: 850px; margin: 0 auto; }
+    .content { max-width: 900px; margin: 0 auto; }
     .content h2 {
       font-family: var(--font-heading);
       font-weight: 700;
@@ -61,28 +70,16 @@
     .content p { font-size: 1rem; color: #57534E; line-height: 1.7; margin-bottom: var(--sp-4); }
     .content-block + .content-block { margin-top: var(--sp-12); }
 
-    /* Slider */
-    .media-slider { max-width: 850px; margin: 0 auto var(--sp-10); position: relative; }
+    /* Screenshot */
+    .media-slider { max-width: 900px; margin: 0 auto var(--sp-10); position: relative; }
     .slider-container { position: relative; overflow: hidden; border-radius: var(--radius-lg); background: var(--night-build); }
     .slider-track { display: flex; transition: transform 0.4s ease; }
     .slider-slide { min-width: 100%; }
     .slider-slide img { width: 100%; display: block; border-radius: var(--radius-lg); }
-    .slider-btn {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: rgba(0,0,0,0.5); color: white; border: none;
-      width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
-      font-size: 1.25rem; display: flex; align-items: center; justify-content: center; z-index: 2;
-    }
-    .slider-btn:hover { background: rgba(0,0,0,0.7); }
-    .slider-prev { left: var(--sp-3); }
-    .slider-next { right: var(--sp-3); }
-    .slider-dots { display: flex; justify-content: center; gap: var(--sp-2); padding: var(--sp-3) 0; }
-    .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: #D6D3D1; border: none; cursor: pointer; }
-    .slider-dot.active { background: var(--amber); }
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: var(--sp-6);
       margin: var(--sp-8) 0;
     }
@@ -92,7 +89,9 @@
       border-radius: var(--radius-lg);
       padding: var(--sp-6);
       box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.15s ease;
     }
+    .feature-card:hover { box-shadow: var(--shadow-md); }
     .feature-card h3 {
       font-family: var(--font-heading);
       font-weight: 700;
@@ -102,11 +101,55 @@
     }
     .feature-card p { font-size: 0.875rem; color: #57534E; line-height: 1.6; margin-bottom: 0; }
 
+    /* Highlight block */
+    .highlight-block {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
+      margin: var(--sp-8) 0;
+    }
+    .highlight-block h3 { color: var(--amber); font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: var(--sp-4); }
+    .highlight-block p { color: var(--scaffold-gray); font-size: 0.9rem; line-height: 1.7; margin-bottom: var(--sp-3); }
+    .highlight-block ul { list-style: none; padding: 0; margin: 0; }
+    .highlight-block ul li {
+      position: relative;
+      padding: var(--sp-2) 0 var(--sp-2) var(--sp-5);
+      color: var(--scaffold-gray);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .highlight-block ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+
+    .tech-stack {
+      display: flex;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+      margin: var(--sp-4) 0;
+    }
+    .tech-tag {
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      background: var(--concrete);
+      color: var(--deep-forge);
+    }
+
     .cta-links { display: flex; gap: var(--sp-4); flex-wrap: wrap; margin-top: var(--sp-6); }
     .cta-links a {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 20px; border-radius: var(--radius-md);
-      font-family: var(--font-heading); font-weight: 600; font-size: 0.875rem;
+      padding: 12px 24px; border-radius: var(--radius-md);
+      font-family: var(--font-heading); font-weight: 600; font-size: 0.9rem;
       text-decoration: none; transition: opacity 0.2s;
     }
     .cta-links a:hover { opacity: 0.85; }
@@ -131,14 +174,15 @@
   </style>
 </head>
 <body>
-    <div id="shared-nav"></div>
-<script src="/shared/nav.js"></script>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
 
   <header class="page-header">
     <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
     <h1 data-i18n="header.title">Open Calc <span class="accent">Studio</span></h1>
-    <p data-i18n="header.desc">Open source calculatietool voor kostenramingen en begrotingen in de bouw.</p>
+    <p data-i18n="header.desc">Open-source begrotings- en calculatietool voor de bouw. Van kostenraming tot eindafrekening, met directe koppelingen naar STABU/RAW, IFCX en AI.</p>
     <span class="status-badge" data-i18n="header.badge">Beta</span>
+    <div class="version-info">v0.4.0 &middot; TypeScript + Rust &middot; Tauri 2 &middot; 6 open issues</div>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -146,16 +190,31 @@
     <!-- Screenshot -->
     <div class="media-slider">
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-calc-studio.png" alt="Open Calc Studio - Overzicht" style="filter: blur(4px);"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-calc-studio.png" alt="Open Calc Studio - Begrotingsoverzicht"></div>
         </div>
       </div>
     </div>
 
     <div class="content">
+
+      <!-- MCP / AI highlight -->
+      <div class="highlight-block">
+        <h3 data-i18n="mcp.title">AI-gestuurde calculatie via MCP</h3>
+        <p data-i18n="mcp.desc">Open Calc Studio is volledig aanspreekbaar via het Model Context Protocol (MCP). Dit betekent dat AI-assistenten zoals Claude direct begrotingen kunnen aanmaken, items kunnen toevoegen, herberekenen en exporteren — zonder handmatige invoer.</p>
+        <ul>
+          <li data-i18n="mcp.item1">Begrotingen aanmaken en beheren vanuit Claude Code of andere AI-tools</li>
+          <li data-i18n="mcp.item2">Automatisch hoeveelheden overnemen uit IFC/IFCX-modellen</li>
+          <li data-i18n="mcp.item3">Referentieprojecten opzoeken voor realistische eenheidsprijzen</li>
+          <li data-i18n="mcp.item4">Export naar PDF en IFCX direct vanuit de AI-workflow</li>
+          <li data-i18n="mcp.item5">Uitbreidbaar via extensies uit de extension catalog</li>
+        </ul>
+      </div>
+
       <div class="content-block">
         <h2 data-i18n="why.title">Waarom Open Calc <span class="accent">Studio</span>?</h2>
-        <p data-i18n="why.desc">Kostenramingen en begrotingen zijn essentieel bij elk bouwproject, maar bestaande tools zijn duur en gesloten. Open Calc Studio biedt een volledig open source alternatief met directe koppelingen naar STABU/RAW en het IFCX-ecosysteem.</p>
+        <p data-i18n="why.desc1">Kostenramingen en begrotingen zijn essentieel bij elk bouwproject. Bestaande calculatiesoftware kost duizenden euro's per licentie en sluit je op in propriëtaire formaten. Open Calc Studio biedt een volledig open-source alternatief dat net zo krachtig is.</p>
+        <p data-i18n="why.desc2">Met directe koppelingen naar STABU/RAW-systematiek, IFCX-modellen voor automatische hoeveelheden, en AI-integratie via MCP is Open Calc Studio gebouwd voor de toekomst van calculatie in de bouw.</p>
       </div>
 
       <div class="content-block">
@@ -163,29 +222,55 @@
         <div class="features-grid">
           <div class="feature-card">
             <h3 data-i18n="features.stabu.title">STABU/RAW integratie</h3>
-            <p data-i18n="features.stabu.desc">Volledige ondersteuning van STABU- en RAW-systematiek voor gestandaardiseerde bestekken en kostenramingen.</p>
+            <p data-i18n="features.stabu.desc">Volledige ondersteuning van STABU- en RAW-systematiek voor gestandaardiseerde bestekken en kostenramingen conform Nederlandse normen.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.ifcx.title">IFCX hoeveelheden koppeling</h3>
-            <p data-i18n="features.ifcx.desc">Automatisch hoeveelheden overnemen uit IFCX-modellen voor nauwkeurige calculaties direct vanuit het BIM-model.</p>
+            <h3 data-i18n="features.ifcx.title">IFCX hoeveelheden</h3>
+            <p data-i18n="features.ifcx.desc">Automatisch hoeveelheden overnemen uit IFCX-modellen. Koppel begrotingsposten direct aan modelonderdelen voor nauwkeurige calculaties.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.export.title">Offerte-export</h3>
-            <p data-i18n="features.export.desc">Genereer professionele offertes en exporteer naar PDF, Excel of andere gangbare formaten.</p>
+            <h3 data-i18n="features.mcp.title">MCP Server</h3>
+            <p data-i18n="features.mcp.desc">Volledig aanspreekbaar via Model Context Protocol. AI-assistenten kunnen begrotingen aanmaken, bewerken en exporteren.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.multiproject.title">Multi-project beheer</h3>
-            <p data-i18n="features.multiproject.desc">Beheer meerdere projecten tegelijk met overzichtelijke dashboards en projectvergelijkingen.</p>
+            <h3 data-i18n="features.extensions.title">Extension systeem</h3>
+            <p data-i18n="features.extensions.desc">Uitbreidbaar via een extensie-catalogus. Voeg branche-specifieke calculatiemethoden, templates en koppelingen toe.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.library.title">Kostenbibliotheek</h3>
-            <p data-i18n="features.library.desc">Bouw en onderhoud een herbruikbare bibliotheek met eenheidsprijzen, materialen en arbeidsnormen.</p>
+            <h3 data-i18n="features.chapters.title">Hoofdstukken &amp; paragrafen</h3>
+            <p data-i18n="features.chapters.desc">Organiseer begrotingen in hoofdstukken, paragrafen en begrotingsposten. Flexibele hiërarchie met automatische nummering.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.reports.title">Rapportgeneratie</h3>
-            <p data-i18n="features.reports.desc">Maak gedetailleerde rapporten met kostenoverzichten, vergelijkingen en trendanalyses.</p>
+            <h3 data-i18n="features.reference.title">Referentieprojecten</h3>
+            <p data-i18n="features.reference.desc">Zoek eenheidsprijzen op uit referentieprojecten. Bouw een herbruikbare database van prijzen en kengetallen op.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.export.title">PDF &amp; IFCX export</h3>
+            <p data-i18n="features.export.desc">Exporteer begrotingen als professionele PDF-rapporten of als IFCX-data voor uitwisseling met andere tools in het ecosysteem.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.staart.title">Staartkosten</h3>
+            <p data-i18n="features.staart.desc">Configureerbare staartkosten: algemene bouwplaatskosten, winst &amp; risico, CAR-verzekering en andere opslagen automatisch berekend.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.recalc.title">Herberekening</h3>
+            <p data-i18n="features.recalc.desc">Eén klik herberekening van de volledige begroting. Alle subtotalen, BTW en staartkosten worden automatisch bijgewerkt.</p>
           </div>
         </div>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="tech.title">Technologie</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">Tauri 2</span>
+          <span class="tech-tag">MCP Server</span>
+          <span class="tech-tag">IFCX</span>
+          <span class="tech-tag">STABU/RAW</span>
+          <span class="tech-tag">PDF export</span>
+        </div>
+        <p data-i18n="tech.desc">Gebouwd met TypeScript en Rust via Tauri 2. Draait als desktop-applicatie op Windows, macOS en Linux, en als web-applicatie in de browser. Inclusief MCP Server voor AI-integratie en extensie-systeem voor maatwerk.</p>
       </div>
 
       <div class="content-block">
@@ -194,6 +279,9 @@
           <a href="https://github.com/OpenAEC-Foundation/open-calc-studio" target="_blank" rel="noopener" class="cta-secondary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             <span data-i18n="cta.github">Bekijk op GitHub</span>
+          </a>
+          <a href="https://github.com/OpenAEC-Foundation/open-calc-studio-extensions" target="_blank" rel="noopener" class="cta-secondary" style="background: var(--scaffold-gray); color: var(--deep-forge);">
+            <span data-i18n="cta.extensions">Extension catalogus</span>
           </a>
         </div>
       </div>
@@ -210,6 +298,6 @@
       <p>&copy; 2026 OpenAEC Foundation</p>
     </div>
   </footer>
-<script src="/shared/i18n.js"></script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

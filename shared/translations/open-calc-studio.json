@@ -2,42 +2,69 @@
   "header": {
     "label": "OpenAEC Ecosystem",
     "title": "Open Calc <span class=\"accent\">Studio</span>",
-    "desc": "Open source cost estimation tool for construction budgets and cost calculations.",
+    "desc": "Open-source budgeting and cost estimation tool for construction. From cost estimates to final accounts, with direct connections to STABU/RAW, IFCX and AI.",
     "badge": "Beta"
+  },
+  "mcp": {
+    "title": "AI-powered estimation via MCP",
+    "desc": "Open Calc Studio is fully accessible via the Model Context Protocol (MCP). This means AI assistants like Claude can directly create budgets, add items, recalculate and export — without manual input.",
+    "item1": "Create and manage budgets from Claude Code or other AI tools",
+    "item2": "Automatically extract quantities from IFC/IFCX models",
+    "item3": "Look up reference projects for realistic unit prices",
+    "item4": "Export to PDF and IFCX directly from the AI workflow",
+    "item5": "Extensible via the extension catalog"
   },
   "why": {
     "title": "Why Open Calc <span class=\"accent\">Studio</span>?",
-    "desc": "Cost estimates and budgets are essential for every construction project, but existing tools are expensive and proprietary. Open Calc Studio offers a fully open source alternative with direct connections to STABU/RAW and the IFCX ecosystem."
+    "desc1": "Cost estimates and budgets are essential for every construction project. Existing estimation software costs thousands of euros per license and locks you into proprietary formats. Open Calc Studio offers a fully open-source alternative that is just as powerful.",
+    "desc2": "With direct connections to STABU/RAW standards, IFCX models for automatic quantities, and AI integration via MCP, Open Calc Studio is built for the future of construction estimation."
   },
   "features": {
     "title": "Features",
     "stabu": {
       "title": "STABU/RAW integration",
-      "desc": "Full support for STABU and RAW standards for standardized specifications and cost estimates."
+      "desc": "Full support for STABU and RAW standards for standardized specifications and cost estimates according to Dutch norms."
     },
     "ifcx": {
-      "title": "IFCX quantity linking",
-      "desc": "Automatically extract quantities from IFCX models for accurate calculations directly from the BIM model."
+      "title": "IFCX quantities",
+      "desc": "Automatically extract quantities from IFCX models. Link budget items directly to model elements for accurate calculations."
+    },
+    "mcp": {
+      "title": "MCP Server",
+      "desc": "Fully accessible via Model Context Protocol. AI assistants can create, edit and export budgets."
+    },
+    "extensions": {
+      "title": "Extension system",
+      "desc": "Extensible via an extension catalog. Add industry-specific calculation methods, templates and integrations."
+    },
+    "chapters": {
+      "title": "Chapters & sections",
+      "desc": "Organize budgets into chapters, sections and budget items. Flexible hierarchy with automatic numbering."
+    },
+    "reference": {
+      "title": "Reference projects",
+      "desc": "Look up unit prices from reference projects. Build a reusable database of prices and key figures."
     },
     "export": {
-      "title": "Quote export",
-      "desc": "Generate professional quotes and export to PDF, Excel or other common formats."
+      "title": "PDF & IFCX export",
+      "desc": "Export budgets as professional PDF reports or as IFCX data for exchange with other tools in the ecosystem."
     },
-    "multiproject": {
-      "title": "Multi-project management",
-      "desc": "Manage multiple projects simultaneously with clear dashboards and project comparisons."
+    "staart": {
+      "title": "Overhead costs",
+      "desc": "Configurable overhead costs: general site costs, profit & risk, CAR insurance and other surcharges automatically calculated."
     },
-    "library": {
-      "title": "Cost library",
-      "desc": "Build and maintain a reusable library with unit prices, materials and labor standards."
-    },
-    "reports": {
-      "title": "Report generation",
-      "desc": "Create detailed reports with cost overviews, comparisons and trend analyses."
+    "recalc": {
+      "title": "Recalculation",
+      "desc": "One-click recalculation of the entire budget. All subtotals, VAT and overhead costs are automatically updated."
     }
+  },
+  "tech": {
+    "title": "Technology",
+    "desc": "Built with TypeScript and Rust via Tauri 2. Runs as a desktop application on Windows, macOS and Linux, and as a web application in the browser. Includes MCP Server for AI integration and extension system for customization."
   },
   "cta": {
     "demo": "View live demo",
-    "github": "View on GitHub"
+    "github": "View on GitHub",
+    "extensions": "Extension catalog"
   }
 }
