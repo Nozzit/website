@@ -1,17 +1,17 @@
 {
-  "generated": "2026-04-15T18:08:30.141Z",
+  "generated": "2026-05-05T06:43:28.966Z",
   "summary": {
-    "totalRepos": 111,
-    "publicRepos": 68,
-    "privateRepos": 43,
-    "totalStars": 255,
-    "totalForks": 45,
-    "totalOpenIssues": 170,
-    "totalSizeKB": 11638459,
-    "estimatedLinesOfCode": 20647975,
-    "totalCommits": 4545,
+    "totalRepos": 69,
+    "publicRepos": 69,
+    "privateRepos": 0,
+    "totalStars": 525,
+    "totalForks": 71,
+    "totalOpenIssues": 172,
+    "totalSizeKB": 11637951,
+    "estimatedLinesOfCode": 20635275,
+    "totalCommits": 4669,
     "uniqueContributors": 32,
-    "languages": 9
+    "languages": 8
   },
   "languageDistribution": {
     "HTML": 6,
@@ -21,8 +21,7 @@
     "JavaScript": 6,
     "C++": 1,
     "Shell": 1,
-    "Rust": 3,
-    "Svelte": 1
+    "Rust": 5
   },
   "monthlyRepoCreation": {
     "2018-12": 1,
@@ -32,16 +31,34 @@
     "2026-01": 13,
     "2026-02": 11,
     "2026-03": 35,
-    "2026-04": 3
+    "2026-04": 3,
+    "2026-05": 1
   },
   "repos": [
+    {
+      "name": "open-pdf-studio",
+      "description": null,
+      "language": "HTML",
+      "stars": 274,
+      "forks": 22,
+      "openIssues": 59,
+      "sizeKB": 336971,
+      "commits": 216,
+      "contributors": 5,
+      "releases": 38,
+      "latestRelease": "v1.45.0",
+      "latestReleaseDate": "2026-04-23",
+      "createdAt": "2026-01-22",
+      "updatedAt": "2026-05-05",
+      "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio"
+    },
     {
       "name": "Frappe_Claude_Skill_Package",
       "description": "60 deterministic Claude AI skills for Frappe Framework & ERPNext v14-v16 development and operations",
       "language": "Python",
-      "stars": 74,
-      "forks": 21,
-      "openIssues": 1,
+      "stars": 92,
+      "forks": 27,
+      "openIssues": 2,
       "sizeKB": 3355,
       "commits": 896,
       "contributors": 3,
@@ -49,25 +66,8 @@
       "latestRelease": "v3.1.1",
       "latestReleaseDate": "2026-03-30",
       "createdAt": "2026-01-14",
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-04-30",
       "url": "https://github.com/OpenAEC-Foundation/Frappe_Claude_Skill_Package"
-    },
-    {
-      "name": "open-pdf-studio",
-      "description": null,
-      "language": "HTML",
-      "stars": 44,
-      "forks": 4,
-      "openIssues": 62,
-      "sizeKB": 336281,
-      "commits": 159,
-      "contributors": 5,
-      "releases": 37,
-      "latestRelease": "v1.43.0",
-      "latestReleaseDate": "2026-04-07",
-      "createdAt": "2026-01-22",
-      "updatedAt": "2026-04-14",
-      "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio"
     },
     {
       "name": "building-py",
@@ -90,18 +90,35 @@
       "name": "open-2d-studio",
       "description": null,
       "language": "TypeScript",
-      "stars": 15,
-      "forks": 3,
+      "stars": 17,
+      "forks": 4,
       "openIssues": 16,
-      "sizeKB": 6149,
+      "sizeKB": 37584,
       "commits": 90,
       "contributors": 4,
       "releases": 25,
       "latestRelease": "v0.35.0",
       "latestReleaseDate": "2026-03-26",
       "createdAt": "2025-12-24",
-      "updatedAt": "2026-04-12",
+      "updatedAt": "2026-05-02",
       "url": "https://github.com/OpenAEC-Foundation/open-2d-studio"
+    },
+    {
+      "name": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
+      "description": "73 deterministic Claude AI skills for Blender, Bonsai, IfcOpenShell and Sverchok. AEC Python development skill package",
+      "language": "HTML",
+      "stars": 17,
+      "forks": 2,
+      "openIssues": 0,
+      "sizeKB": 4207,
+      "commits": 41,
+      "contributors": 1,
+      "releases": 2,
+      "latestRelease": "v2.1.1",
+      "latestReleaseDate": "2026-03-30",
+      "createdAt": "2026-03-05",
+      "updatedAt": "2026-05-04",
+      "url": "https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package"
     },
     {
       "name": "inb-template",
@@ -121,21 +138,38 @@
       "url": "https://github.com/OpenAEC-Foundation/inb-template"
     },
     {
-      "name": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
-      "description": "73 deterministic Claude AI skills for Blender, Bonsai, IfcOpenShell and Sverchok. AEC Python development skill package",
-      "language": "HTML",
-      "stars": 13,
-      "forks": 2,
+      "name": "QGIS-Claude-Skill-Package",
+      "description": "19 deterministic Claude Code skills for QGIS/PyQGIS spatial analysis, map creation, geoprocessing, and plugin development",
+      "language": null,
+      "stars": 12,
+      "forks": 1,
       "openIssues": 0,
-      "sizeKB": 4207,
-      "commits": 41,
+      "sizeKB": 457,
+      "commits": 7,
       "contributors": 1,
-      "releases": 2,
-      "latestRelease": "v2.1.1",
+      "releases": 3,
+      "latestRelease": "v1.1.1",
       "latestReleaseDate": "2026-03-30",
-      "createdAt": "2026-03-05",
-      "updatedAt": "2026-04-13",
-      "url": "https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package"
+      "createdAt": "2026-03-20",
+      "updatedAt": "2026-05-05",
+      "url": "https://github.com/OpenAEC-Foundation/QGIS-Claude-Skill-Package"
+    },
+    {
+      "name": "Speckle-Claude-Skill-Package",
+      "description": "25 deterministic Claude AI skills for Speckle Data Platform. Object model, GraphQL API, Python/C# SDKs, connectors (Revit, Rhino, Blender, AutoCAD, Tekla), viewer, Automate",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 0,
+      "openIssues": 0,
+      "sizeKB": 578,
+      "commits": 11,
+      "contributors": 1,
+      "releases": 4,
+      "latestRelease": "v1.2.1",
+      "latestReleaseDate": "2026-03-30",
+      "createdAt": "2026-03-20",
+      "updatedAt": "2026-05-04",
+      "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package"
     },
     {
       "name": "open-books",
@@ -155,23 +189,6 @@
       "url": "https://github.com/OpenAEC-Foundation/open-books"
     },
     {
-      "name": "QGIS-Claude-Skill-Package",
-      "description": "19 deterministic Claude Code skills for QGIS/PyQGIS spatial analysis, map creation, geoprocessing, and plugin development",
-      "language": null,
-      "stars": 7,
-      "forks": 1,
-      "openIssues": 0,
-      "sizeKB": 457,
-      "commits": 7,
-      "contributors": 1,
-      "releases": 3,
-      "latestRelease": "v1.1.1",
-      "latestReleaseDate": "2026-03-30",
-      "createdAt": "2026-03-20",
-      "updatedAt": "2026-04-15",
-      "url": "https://github.com/OpenAEC-Foundation/QGIS-Claude-Skill-Package"
-    },
-    {
       "name": "ThatOpen-Claude-Skill-Package",
       "description": "18 production-ready Claude Code skills for ThatOpen Engine 3.3.x. Building web-based BIM applications",
       "language": null,
@@ -189,6 +206,40 @@
       "url": "https://github.com/OpenAEC-Foundation/ThatOpen-Claude-Skill-Package"
     },
     {
+      "name": "Open-Agents",
+      "description": "Multi-agent orchestrator for Claude Code. Spawn, coordinate and monitor AI agents in parallel — no API key required.",
+      "language": "TypeScript",
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 0,
+      "sizeKB": 24601,
+      "commits": 322,
+      "contributors": 1,
+      "releases": 1,
+      "latestRelease": "v0.3.0",
+      "latestReleaseDate": "2026-03-11",
+      "createdAt": "2026-02-26",
+      "updatedAt": "2026-04-30",
+      "url": "https://github.com/OpenAEC-Foundation/Open-Agents"
+    },
+    {
+      "name": "Docker-Claude-Skill-Package",
+      "description": "22 deterministic Claude skills for Docker and Docker Compose. Dockerfile best practices, multi-stage builds, Compose orchestration, container security",
+      "language": null,
+      "stars": 4,
+      "forks": 1,
+      "openIssues": 0,
+      "sizeKB": 529,
+      "commits": 13,
+      "contributors": 1,
+      "releases": 3,
+      "latestRelease": "v1.1.1",
+      "latestReleaseDate": "2026-03-30",
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-04-23",
+      "url": "https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package"
+    },
+    {
       "name": "dynlex",
       "description": null,
       "language": "C++",
@@ -204,40 +255,6 @@
       "createdAt": "2026-02-04",
       "updatedAt": "2026-04-07",
       "url": "https://github.com/OpenAEC-Foundation/dynlex"
-    },
-    {
-      "name": "Open-Agents",
-      "description": "Multi-agent orchestrator for Claude Code. Spawn, coordinate and monitor AI agents in parallel — no API key required.",
-      "language": "TypeScript",
-      "stars": 3,
-      "forks": 0,
-      "openIssues": 0,
-      "sizeKB": 24601,
-      "commits": 322,
-      "contributors": 1,
-      "releases": 2,
-      "latestRelease": "v0.3.0",
-      "latestReleaseDate": null,
-      "createdAt": "2026-02-26",
-      "updatedAt": "2026-03-25",
-      "url": "https://github.com/OpenAEC-Foundation/Open-Agents"
-    },
-    {
-      "name": "Docker-Claude-Skill-Package",
-      "description": "22 deterministic Claude skills for Docker and Docker Compose. Dockerfile best practices, multi-stage builds, Compose orchestration, container security",
-      "language": null,
-      "stars": 3,
-      "forks": 1,
-      "openIssues": 0,
-      "sizeKB": 529,
-      "commits": 13,
-      "contributors": 1,
-      "releases": 3,
-      "latestRelease": "v1.1.1",
-      "latestReleaseDate": "2026-03-30",
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-04-14",
-      "url": "https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package"
     },
     {
       "name": "Draw.io-Claude-Skill-Package",
@@ -266,9 +283,9 @@
       "sizeKB": 3052,
       "commits": 34,
       "contributors": 1,
-      "releases": 3,
-      "latestRelease": "v3.0.6",
-      "latestReleaseDate": null,
+      "releases": 2,
+      "latestRelease": "v3.0.5",
+      "latestReleaseDate": "2026-03-23",
       "createdAt": "2026-03-20",
       "updatedAt": "2026-04-08",
       "url": "https://github.com/OpenAEC-Foundation/OpenAEC-Workspace-Composer"
@@ -291,37 +308,20 @@
       "url": "https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package"
     },
     {
-      "name": "Speckle-Claude-Skill-Package",
-      "description": "25 deterministic Claude AI skills for Speckle Data Platform. Object model, GraphQL API, Python/C# SDKs, connectors (Revit, Rhino, Blender, AutoCAD, Tekla), viewer, Automate",
-      "language": "TypeScript",
-      "stars": 3,
-      "forks": 0,
-      "openIssues": 0,
-      "sizeKB": 578,
-      "commits": 11,
-      "contributors": 1,
-      "releases": 4,
-      "latestRelease": "v1.2.1",
-      "latestReleaseDate": "2026-03-30",
-      "createdAt": "2026-03-20",
-      "updatedAt": "2026-04-08",
-      "url": "https://github.com/OpenAEC-Foundation/Speckle-Claude-Skill-Package"
-    },
-    {
       "name": "website",
       "description": "Website of OpenAec Foundation",
       "language": "HTML",
       "stars": 2,
       "forks": 0,
       "openIssues": 0,
-      "sizeKB": 111500,
-      "commits": 66,
+      "sizeKB": 111711,
+      "commits": 71,
       "contributors": 3,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-01-08",
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-05-02",
       "url": "https://github.com/OpenAEC-Foundation/website"
     },
     {
@@ -331,14 +331,14 @@
       "stars": 2,
       "forks": 0,
       "openIssues": 3,
-      "sizeKB": 5768,
-      "commits": 19,
+      "sizeKB": 5828,
+      "commits": 21,
       "contributors": 2,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-02-22",
-      "updatedAt": "2026-04-13",
+      "updatedAt": "2026-04-23",
       "url": "https://github.com/OpenAEC-Foundation/pyrevit-gis2bim"
     },
     {
@@ -347,16 +347,33 @@
       "language": "TypeScript",
       "stars": 2,
       "forks": 0,
-      "openIssues": 9,
-      "sizeKB": 70901,
-      "commits": 60,
+      "openIssues": 13,
+      "sizeKB": 70968,
+      "commits": 77,
       "contributors": 3,
-      "releases": 6,
-      "latestRelease": "v0.7.0",
-      "latestReleaseDate": "2026-04-03",
+      "releases": 3,
+      "latestRelease": "v0.10.0",
+      "latestReleaseDate": "2026-04-24",
       "createdAt": "2026-03-09",
-      "updatedAt": "2026-04-13",
+      "updatedAt": "2026-04-28",
       "url": "https://github.com/OpenAEC-Foundation/open-speech-studio"
+    },
+    {
+      "name": "Nextcloud-Claude-Skill-Package",
+      "description": "24 deterministic Claude AI skills for Nextcloud 28+ development. PHP, TypeScript, Vue.js, OCS API, WebDAV, app framework",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "sizeKB": 555,
+      "commits": 28,
+      "contributors": 1,
+      "releases": 3,
+      "latestRelease": "v1.1.1",
+      "latestReleaseDate": "2026-03-30",
+      "createdAt": "2026-03-19",
+      "updatedAt": "2026-04-16",
+      "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package"
     },
     {
       "name": "SolidJS-Claude-Skill-Package",
@@ -399,14 +416,14 @@
       "stars": 1,
       "forks": 0,
       "openIssues": 2,
-      "sizeKB": 2965,
-      "commits": 36,
-      "contributors": 1,
+      "sizeKB": 2996,
+      "commits": 45,
+      "contributors": 3,
       "releases": 2,
       "latestRelease": "v1.0.1",
       "latestReleaseDate": "2026-02-23",
       "createdAt": "2026-01-08",
-      "updatedAt": "2026-04-15",
+      "updatedAt": "2026-04-28",
       "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer"
     },
     {
@@ -467,14 +484,14 @@
       "stars": 1,
       "forks": 0,
       "openIssues": 2,
-      "sizeKB": 1588,
-      "commits": 13,
+      "sizeKB": 1642,
+      "commits": 15,
       "contributors": 3,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-03-04",
-      "updatedAt": "2026-04-13",
+      "updatedAt": "2026-04-22",
       "url": "https://github.com/OpenAEC-Foundation/OpenAEC-style-book"
     },
     {
@@ -510,23 +527,6 @@
       "createdAt": "2026-03-19",
       "updatedAt": "2026-03-30",
       "url": "https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package"
-    },
-    {
-      "name": "Nextcloud-Claude-Skill-Package",
-      "description": "24 deterministic Claude AI skills for Nextcloud 28+ development. PHP, TypeScript, Vue.js, OCS API, WebDAV, app framework",
-      "language": "Python",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "sizeKB": 555,
-      "commits": 28,
-      "contributors": 1,
-      "releases": 3,
-      "latestRelease": "v1.1.1",
-      "latestReleaseDate": "2026-03-30",
-      "createdAt": "2026-03-19",
-      "updatedAt": "2026-04-01",
-      "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package"
     },
     {
       "name": "Fluent-i18n-Claude-Skill-Package",
@@ -606,9 +606,9 @@
       "sizeKB": 433,
       "commits": 14,
       "contributors": 1,
-      "releases": 4,
-      "latestRelease": "v1.0.0",
-      "latestReleaseDate": "2026-03-19",
+      "releases": 3,
+      "latestRelease": "v1.1.1",
+      "latestReleaseDate": "2026-03-30",
       "createdAt": "2026-03-19",
       "updatedAt": "2026-03-30",
       "url": "https://github.com/OpenAEC-Foundation/pdf-lib-Claude-Skill-Package"
@@ -665,21 +665,55 @@
       "url": "https://github.com/OpenAEC-Foundation/Open-PDF-Studio-Claude-Skill-Package"
     },
     {
+      "name": "ERPNext-NL-Translation",
+      "description": "Kwalitatieve Nederlandse vertalingen voor ERPNext, Frappe en 5 extra apps — 24.507 AI-reviewed vertalingen, ~99% dekking van Frappe/ERPNext v16 source, inclusief case/whitespace code-variants",
+      "language": "Python",
+      "stars": 1,
+      "forks": 1,
+      "openIssues": 0,
+      "sizeKB": 14480,
+      "commits": 193,
+      "contributors": 1,
+      "releases": 0,
+      "latestRelease": null,
+      "latestReleaseDate": null,
+      "createdAt": "2026-03-24",
+      "updatedAt": "2026-04-27",
+      "url": "https://github.com/OpenAEC-Foundation/ERPNext-NL-Translation"
+    },
+    {
       "name": "open-frame-studio",
       "description": null,
-      "language": "Svelte",
+      "language": "Rust",
       "stars": 1,
       "forks": 0,
       "openIssues": 0,
-      "sizeKB": 584,
-      "commits": 26,
+      "sizeKB": 668,
+      "commits": 29,
       "contributors": 3,
       "releases": 2,
       "latestRelease": "v0.2.0",
       "latestReleaseDate": "2026-04-08",
       "createdAt": "2026-04-01",
-      "updatedAt": "2026-04-08",
+      "updatedAt": "2026-04-17",
       "url": "https://github.com/OpenAEC-Foundation/open-frame-studio"
+    },
+    {
+      "name": "open-calc-studio",
+      "description": "Open Source Calculatieprogramma voor de bouwsector",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "sizeKB": 1345,
+      "commits": 6,
+      "contributors": 2,
+      "releases": 11,
+      "latestRelease": "v0.7.8",
+      "latestReleaseDate": "2026-05-05",
+      "createdAt": "2026-05-02",
+      "updatedAt": "2026-05-04",
+      "url": "https://github.com/OpenAEC-Foundation/open-calc-studio"
     },
     {
       "name": "open-fem2d-studio",
@@ -773,14 +807,14 @@
       "stars": 0,
       "forks": 0,
       "openIssues": 0,
-      "sizeKB": 174,
-      "commits": 5,
+      "sizeKB": 183,
+      "commits": 6,
       "contributors": 1,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-01-18",
-      "updatedAt": "2026-04-13",
+      "updatedAt": "2026-04-16",
       "url": "https://github.com/OpenAEC-Foundation/OpenAEC-zaagplan"
     },
     {
@@ -909,14 +943,14 @@
       "stars": 0,
       "forks": 0,
       "openIssues": 7,
-      "sizeKB": 41259,
-      "commits": 262,
+      "sizeKB": 4132,
+      "commits": 235,
       "contributors": 3,
-      "releases": 1,
-      "latestRelease": "v0.2.0-alpha",
+      "releases": 0,
+      "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-02-20",
-      "updatedAt": "2026-04-14",
+      "updatedAt": "2026-04-22",
       "url": "https://github.com/OpenAEC-Foundation/openaec-reports"
     },
     {
@@ -939,18 +973,18 @@
     {
       "name": "open-heatloss-studio",
       "description": "Rust rekenbibliotheek voor warmteverliesberekeningen volgens ISSO 51:2023",
-      "language": "TypeScript",
+      "language": "Rust",
       "stars": 0,
       "forks": 0,
       "openIssues": 1,
-      "sizeKB": 1703,
-      "commits": 228,
+      "sizeKB": 2547,
+      "commits": 260,
       "contributors": 3,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-03-02",
-      "updatedAt": "2026-04-14",
+      "updatedAt": "2026-04-26",
       "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio"
     },
     {
@@ -994,14 +1028,14 @@
       "stars": 0,
       "forks": 0,
       "openIssues": 0,
-      "sizeKB": 78656,
-      "commits": 68,
+      "sizeKB": 78703,
+      "commits": 74,
       "contributors": 2,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-03-12",
-      "updatedAt": "2026-04-13",
+      "updatedAt": "2026-04-21",
       "url": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator"
     },
     {
@@ -1028,14 +1062,14 @@
       "stars": 0,
       "forks": 0,
       "openIssues": 0,
-      "sizeKB": 406,
-      "commits": 34,
+      "sizeKB": 533,
+      "commits": 40,
       "contributors": 2,
       "releases": 0,
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-03-17",
-      "updatedAt": "2026-04-14",
+      "updatedAt": "2026-04-21",
       "url": "https://github.com/OpenAEC-Foundation/openaec-bcf-platform"
     },
     {
@@ -1054,23 +1088,6 @@
       "createdAt": "2026-03-19",
       "updatedAt": "2026-03-25",
       "url": "https://github.com/OpenAEC-Foundation/Skill-Package-Workflow-Template"
-    },
-    {
-      "name": "ERPNext-NL-Translation",
-      "description": "Kwalitatieve Nederlandse vertalingen voor ERPNext, Frappe en 5 extra apps (16.797 vertalingen, 7 apps, AI quality scored, 1.431+ verbeterd)",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "openIssues": 0,
-      "sizeKB": 12865,
-      "commits": 188,
-      "contributors": 1,
-      "releases": 0,
-      "latestRelease": null,
-      "latestReleaseDate": null,
-      "createdAt": "2026-03-24",
-      "updatedAt": "2026-04-09",
-      "url": "https://github.com/OpenAEC-Foundation/ERPNext-NL-Translation"
     },
     {
       "name": "open-monuments-inspect",
@@ -1154,7 +1171,7 @@
       "latestRelease": null,
       "latestReleaseDate": null,
       "createdAt": "2026-03-30",
-      "updatedAt": "2026-03-30",
+      "updatedAt": "2026-04-22",
       "url": "https://github.com/OpenAEC-Foundation/openaec-ui"
     },
     {
@@ -1194,12 +1211,12 @@
   ],
   "topByStars": [
     {
-      "name": "Frappe_Claude_Skill_Package",
-      "value": 74
+      "name": "open-pdf-studio",
+      "value": 274
     },
     {
-      "name": "open-pdf-studio",
-      "value": 44
+      "name": "Frappe_Claude_Skill_Package",
+      "value": 92
     },
     {
       "name": "building-py",
@@ -1207,11 +1224,11 @@
     },
     {
       "name": "open-2d-studio",
-      "value": 15
+      "value": 17
     },
     {
-      "name": "inb-template",
-      "value": 13
+      "name": "Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package",
+      "value": 17
     }
   ],
   "topByCommits": [
@@ -1228,12 +1245,12 @@
       "value": 322
     },
     {
-      "name": "openaec-reports",
-      "value": 262
+      "name": "open-heatloss-studio",
+      "value": 260
     },
     {
-      "name": "open-heatloss-studio",
-      "value": 228
+      "name": "openaec-reports",
+      "value": 235
     }
   ],
   "topBySize": [
@@ -1243,7 +1260,7 @@
     },
     {
       "name": "open-pdf-studio",
-      "value": "328 MB"
+      "value": "329 MB"
     },
     {
       "name": "project-ocondat",
@@ -1379,7 +1396,6 @@
       "2026-03-27",
       "2026-03-28",
       "2026-03-29",
-      "2026-03-29",
       "2026-03-30",
       "2026-03-31",
       "2026-04-01",
@@ -1395,7 +1411,28 @@
       "2026-04-11",
       "2026-04-12",
       "2026-04-13",
-      "2026-04-14"
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-18",
+      "2026-04-19",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24",
+      "2026-04-25",
+      "2026-04-26",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-01",
+      "2026-05-02",
+      "2026-05-03",
+      "2026-05-04",
+      "2026-05-05"
     ],
     "data": {
       "2025-12-01": {
@@ -1584,899 +1621,1067 @@
       },
       "2025-12-24": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-25": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-26": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-27": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-28": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-29": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-30": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2025-12-31": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2026-01-01": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2026-01-02": {
         "repos": 6,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1217,
-        "loc": 673500,
+        "loc": 1459375,
         "contributors": 29
       },
       "2026-01-03": {
         "repos": 7,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1222,
-        "loc": 673950,
+        "loc": 1459825,
         "contributors": 32
       },
       "2026-01-04": {
         "repos": 7,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1222,
-        "loc": 673950,
+        "loc": 1459825,
         "contributors": 32
       },
       "2026-01-05": {
         "repos": 7,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1222,
-        "loc": 673950,
+        "loc": 1459825,
         "contributors": 32
       },
       "2026-01-06": {
         "repos": 7,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1222,
-        "loc": 673950,
+        "loc": 1459825,
         "contributors": 32
       },
       "2026-01-07": {
         "repos": 7,
-        "stars": 66,
+        "stars": 68,
         "issues": 67,
         "commits": 1222,
-        "loc": 673950,
+        "loc": 1459825,
         "contributors": 32
       },
       "2026-01-08": {
         "repos": 9,
-        "stars": 69,
+        "stars": 71,
         "issues": 69,
-        "commits": 1324,
-        "loc": 3535575,
-        "contributors": 36
+        "commits": 1338,
+        "loc": 4327500,
+        "contributors": 38
       },
       "2026-01-09": {
         "repos": 9,
-        "stars": 69,
+        "stars": 71,
         "issues": 69,
-        "commits": 1324,
-        "loc": 3535575,
-        "contributors": 36
+        "commits": 1338,
+        "loc": 4327500,
+        "contributors": 38
       },
       "2026-01-10": {
         "repos": 11,
-        "stars": 70,
+        "stars": 72,
         "issues": 73,
-        "commits": 1333,
-        "loc": 3554050,
-        "contributors": 39
+        "commits": 1347,
+        "loc": 4345975,
+        "contributors": 41
       },
       "2026-01-11": {
         "repos": 11,
-        "stars": 70,
+        "stars": 72,
         "issues": 73,
-        "commits": 1333,
-        "loc": 3554050,
-        "contributors": 39
+        "commits": 1347,
+        "loc": 4345975,
+        "contributors": 41
       },
       "2026-01-12": {
         "repos": 11,
-        "stars": 70,
+        "stars": 72,
         "issues": 73,
-        "commits": 1333,
-        "loc": 3554050,
-        "contributors": 39
+        "commits": 1347,
+        "loc": 4345975,
+        "contributors": 41
       },
       "2026-01-13": {
         "repos": 12,
-        "stars": 71,
+        "stars": 73,
         "issues": 73,
-        "commits": 1342,
-        "loc": 4580125,
-        "contributors": 42
+        "commits": 1356,
+        "loc": 5372050,
+        "contributors": 44
       },
       "2026-01-14": {
         "repos": 13,
-        "stars": 145,
-        "issues": 74,
-        "commits": 2238,
-        "loc": 4664000,
-        "contributors": 45
+        "stars": 165,
+        "issues": 75,
+        "commits": 2252,
+        "loc": 5455925,
+        "contributors": 47
       },
       "2026-01-15": {
         "repos": 13,
-        "stars": 145,
-        "issues": 74,
-        "commits": 2238,
-        "loc": 4664000,
-        "contributors": 45
+        "stars": 165,
+        "issues": 75,
+        "commits": 2252,
+        "loc": 5455925,
+        "contributors": 47
       },
       "2026-01-16": {
         "repos": 14,
-        "stars": 145,
-        "issues": 74,
-        "commits": 2244,
-        "loc": 4666025,
-        "contributors": 48
+        "stars": 165,
+        "issues": 75,
+        "commits": 2258,
+        "loc": 5457950,
+        "contributors": 50
       },
       "2026-01-17": {
         "repos": 15,
-        "stars": 145,
-        "issues": 74,
-        "commits": 2262,
-        "loc": 4666825,
-        "contributors": 50
+        "stars": 165,
+        "issues": 75,
+        "commits": 2276,
+        "loc": 5458750,
+        "contributors": 52
       },
       "2026-01-18": {
         "repos": 17,
-        "stars": 146,
-        "issues": 75,
-        "commits": 2277,
-        "loc": 4675625,
-        "contributors": 54
+        "stars": 166,
+        "issues": 76,
+        "commits": 2292,
+        "loc": 5467775,
+        "contributors": 56
       },
       "2026-01-19": {
         "repos": 17,
-        "stars": 146,
-        "issues": 75,
-        "commits": 2277,
-        "loc": 4675625,
-        "contributors": 54
+        "stars": 166,
+        "issues": 76,
+        "commits": 2292,
+        "loc": 5467775,
+        "contributors": 56
       },
       "2026-01-20": {
         "repos": 17,
-        "stars": 146,
-        "issues": 75,
-        "commits": 2277,
-        "loc": 4675625,
-        "contributors": 54
+        "stars": 166,
+        "issues": 76,
+        "commits": 2292,
+        "loc": 5467775,
+        "contributors": 56
       },
       "2026-01-21": {
         "repos": 17,
-        "stars": 146,
-        "issues": 75,
-        "commits": 2277,
-        "loc": 4675625,
-        "contributors": 54
+        "stars": 166,
+        "issues": 76,
+        "commits": 2292,
+        "loc": 5467775,
+        "contributors": 56
       },
       "2026-01-22": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-23": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-24": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-25": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-26": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-27": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-28": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-29": {
         "repos": 18,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2436,
-        "loc": 13082650,
-        "contributors": 59
+        "stars": 440,
+        "issues": 135,
+        "commits": 2508,
+        "loc": 13892050,
+        "contributors": 61
       },
       "2026-01-30": {
         "repos": 19,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2444,
-        "loc": 13083525,
-        "contributors": 60
+        "stars": 440,
+        "issues": 135,
+        "commits": 2516,
+        "loc": 13892925,
+        "contributors": 62
       },
       "2026-01-31": {
         "repos": 19,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2444,
-        "loc": 13083525,
-        "contributors": 60
+        "stars": 440,
+        "issues": 135,
+        "commits": 2516,
+        "loc": 13892925,
+        "contributors": 62
       },
       "2026-02-01": {
         "repos": 19,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2444,
-        "loc": 13083525,
-        "contributors": 60
+        "stars": 440,
+        "issues": 135,
+        "commits": 2516,
+        "loc": 13892925,
+        "contributors": 62
       },
       "2026-02-02": {
         "repos": 19,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2444,
-        "loc": 13083525,
-        "contributors": 60
+        "stars": 440,
+        "issues": 135,
+        "commits": 2516,
+        "loc": 13892925,
+        "contributors": 62
       },
       "2026-02-03": {
         "repos": 19,
-        "stars": 190,
-        "issues": 137,
-        "commits": 2444,
-        "loc": 13083525,
-        "contributors": 60
+        "stars": 440,
+        "issues": 135,
+        "commits": 2516,
+        "loc": 13892925,
+        "contributors": 62
       },
       "2026-02-04": {
         "repos": 21,
-        "stars": 193,
-        "issues": 137,
-        "commits": 2685,
-        "loc": 13394425,
-        "contributors": 63
+        "stars": 443,
+        "issues": 135,
+        "commits": 2757,
+        "loc": 14203825,
+        "contributors": 65
       },
       "2026-02-05": {
         "repos": 21,
-        "stars": 193,
-        "issues": 137,
-        "commits": 2685,
-        "loc": 13394425,
-        "contributors": 63
+        "stars": 443,
+        "issues": 135,
+        "commits": 2757,
+        "loc": 14203825,
+        "contributors": 65
       },
       "2026-02-06": {
         "repos": 22,
-        "stars": 193,
-        "issues": 137,
-        "commits": 2687,
-        "loc": 14137675,
-        "contributors": 64
+        "stars": 443,
+        "issues": 135,
+        "commits": 2759,
+        "loc": 14947075,
+        "contributors": 66
       },
       "2026-02-07": {
         "repos": 22,
-        "stars": 193,
-        "issues": 137,
-        "commits": 2687,
-        "loc": 14137675,
-        "contributors": 64
+        "stars": 443,
+        "issues": 135,
+        "commits": 2759,
+        "loc": 14947075,
+        "contributors": 66
       },
       "2026-02-08": {
         "repos": 22,
-        "stars": 193,
-        "issues": 137,
-        "commits": 2687,
-        "loc": 14137675,
-        "contributors": 64
+        "stars": 443,
+        "issues": 135,
+        "commits": 2759,
+        "loc": 14947075,
+        "contributors": 66
       },
       "2026-02-09": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-10": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-11": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-12": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-13": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-14": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-15": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-16": {
         "repos": 24,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2697,
-        "loc": 14137800,
-        "contributors": 69
+        "stars": 443,
+        "issues": 137,
+        "commits": 2769,
+        "loc": 14947200,
+        "contributors": 71
       },
       "2026-02-17": {
         "repos": 26,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2741,
-        "loc": 14168575,
-        "contributors": 74
+        "stars": 443,
+        "issues": 137,
+        "commits": 2813,
+        "loc": 14977975,
+        "contributors": 76
       },
       "2026-02-18": {
         "repos": 26,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2741,
-        "loc": 14168575,
-        "contributors": 74
+        "stars": 443,
+        "issues": 137,
+        "commits": 2813,
+        "loc": 14977975,
+        "contributors": 76
       },
       "2026-02-19": {
         "repos": 26,
-        "stars": 193,
-        "issues": 139,
-        "commits": 2741,
-        "loc": 14168575,
-        "contributors": 74
+        "stars": 443,
+        "issues": 137,
+        "commits": 2813,
+        "loc": 14977975,
+        "contributors": 76
       },
       "2026-02-20": {
         "repos": 27,
-        "stars": 193,
-        "issues": 146,
-        "commits": 3003,
-        "loc": 15200050,
-        "contributors": 77
+        "stars": 443,
+        "issues": 144,
+        "commits": 3048,
+        "loc": 15081275,
+        "contributors": 79
       },
       "2026-02-21": {
         "repos": 27,
-        "stars": 193,
-        "issues": 146,
-        "commits": 3003,
-        "loc": 15200050,
-        "contributors": 77
+        "stars": 443,
+        "issues": 144,
+        "commits": 3048,
+        "loc": 15081275,
+        "contributors": 79
       },
       "2026-02-22": {
         "repos": 28,
-        "stars": 195,
-        "issues": 149,
-        "commits": 3022,
-        "loc": 15344250,
-        "contributors": 79
+        "stars": 445,
+        "issues": 147,
+        "commits": 3069,
+        "loc": 15226975,
+        "contributors": 81
       },
       "2026-02-23": {
         "repos": 28,
-        "stars": 195,
-        "issues": 149,
-        "commits": 3022,
-        "loc": 15344250,
-        "contributors": 79
+        "stars": 445,
+        "issues": 147,
+        "commits": 3069,
+        "loc": 15226975,
+        "contributors": 81
       },
       "2026-02-24": {
         "repos": 29,
-        "stars": 195,
-        "issues": 155,
-        "commits": 3037,
-        "loc": 15369775,
-        "contributors": 83
+        "stars": 445,
+        "issues": 153,
+        "commits": 3084,
+        "loc": 15252500,
+        "contributors": 85
       },
       "2026-02-25": {
         "repos": 29,
-        "stars": 195,
-        "issues": 155,
-        "commits": 3037,
-        "loc": 15369775,
-        "contributors": 83
+        "stars": 445,
+        "issues": 153,
+        "commits": 3084,
+        "loc": 15252500,
+        "contributors": 85
       },
       "2026-02-26": {
         "repos": 30,
-        "stars": 198,
-        "issues": 155,
-        "commits": 3359,
-        "loc": 15984800,
-        "contributors": 84
+        "stars": 449,
+        "issues": 153,
+        "commits": 3406,
+        "loc": 15867525,
+        "contributors": 86
       },
       "2026-02-27": {
         "repos": 30,
-        "stars": 198,
-        "issues": 155,
-        "commits": 3359,
-        "loc": 15984800,
-        "contributors": 84
+        "stars": 449,
+        "issues": 153,
+        "commits": 3406,
+        "loc": 15867525,
+        "contributors": 86
       },
       "2026-02-28": {
         "repos": 30,
-        "stars": 198,
-        "issues": 155,
-        "commits": 3359,
-        "loc": 15984800,
-        "contributors": 84
+        "stars": 449,
+        "issues": 153,
+        "commits": 3406,
+        "loc": 15867525,
+        "contributors": 86
       },
       "2026-03-01": {
         "repos": 30,
-        "stars": 198,
-        "issues": 155,
-        "commits": 3359,
-        "loc": 15984800,
-        "contributors": 84
+        "stars": 449,
+        "issues": 153,
+        "commits": 3406,
+        "loc": 15867525,
+        "contributors": 86
       },
       "2026-03-02": {
         "repos": 31,
-        "stars": 198,
-        "issues": 156,
-        "commits": 3587,
-        "loc": 16027375,
-        "contributors": 87
+        "stars": 449,
+        "issues": 154,
+        "commits": 3666,
+        "loc": 15931200,
+        "contributors": 89
       },
       "2026-03-03": {
         "repos": 31,
-        "stars": 198,
-        "issues": 156,
-        "commits": 3587,
-        "loc": 16027375,
-        "contributors": 87
+        "stars": 449,
+        "issues": 154,
+        "commits": 3666,
+        "loc": 15931200,
+        "contributors": 89
       },
       "2026-03-04": {
         "repos": 32,
-        "stars": 199,
-        "issues": 158,
-        "commits": 3600,
-        "loc": 16067075,
-        "contributors": 90
+        "stars": 450,
+        "issues": 156,
+        "commits": 3681,
+        "loc": 15972250,
+        "contributors": 92
       },
       "2026-03-05": {
         "repos": 34,
-        "stars": 212,
-        "issues": 158,
-        "commits": 3658,
-        "loc": 16179775,
-        "contributors": 94
+        "stars": 467,
+        "issues": 156,
+        "commits": 3739,
+        "loc": 16084950,
+        "contributors": 96
       },
       "2026-03-06": {
         "repos": 35,
-        "stars": 213,
-        "issues": 158,
-        "commits": 3666,
-        "loc": 16206100,
-        "contributors": 95
+        "stars": 468,
+        "issues": 156,
+        "commits": 3747,
+        "loc": 16111275,
+        "contributors": 97
       },
       "2026-03-07": {
         "repos": 36,
-        "stars": 213,
-        "issues": 158,
-        "commits": 3805,
-        "loc": 16223375,
-        "contributors": 115
+        "stars": 468,
+        "issues": 156,
+        "commits": 3886,
+        "loc": 16128550,
+        "contributors": 117
       },
       "2026-03-08": {
         "repos": 36,
-        "stars": 213,
-        "issues": 158,
-        "commits": 3805,
-        "loc": 16223375,
-        "contributors": 115
+        "stars": 468,
+        "issues": 156,
+        "commits": 3886,
+        "loc": 16128550,
+        "contributors": 117
       },
       "2026-03-09": {
         "repos": 37,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3865,
-        "loc": 17995900,
-        "contributors": 118
+        "stars": 470,
+        "issues": 169,
+        "commits": 3963,
+        "loc": 17902750,
+        "contributors": 120
       },
       "2026-03-10": {
         "repos": 37,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3865,
-        "loc": 17995900,
-        "contributors": 118
+        "stars": 470,
+        "issues": 169,
+        "commits": 3963,
+        "loc": 17902750,
+        "contributors": 120
       },
       "2026-03-11": {
         "repos": 37,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3865,
-        "loc": 17995900,
-        "contributors": 118
+        "stars": 470,
+        "issues": 169,
+        "commits": 3963,
+        "loc": 17902750,
+        "contributors": 120
       },
       "2026-03-12": {
         "repos": 38,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3933,
-        "loc": 19962300,
-        "contributors": 120
+        "stars": 470,
+        "issues": 169,
+        "commits": 4037,
+        "loc": 19870325,
+        "contributors": 122
       },
       "2026-03-13": {
         "repos": 38,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3933,
-        "loc": 19962300,
-        "contributors": 120
+        "stars": 470,
+        "issues": 169,
+        "commits": 4037,
+        "loc": 19870325,
+        "contributors": 122
       },
       "2026-03-14": {
         "repos": 38,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3933,
-        "loc": 19962300,
-        "contributors": 120
+        "stars": 470,
+        "issues": 169,
+        "commits": 4037,
+        "loc": 19870325,
+        "contributors": 122
       },
       "2026-03-15": {
         "repos": 39,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3950,
-        "loc": 19963200,
-        "contributors": 121
+        "stars": 470,
+        "issues": 169,
+        "commits": 4054,
+        "loc": 19871225,
+        "contributors": 123
       },
       "2026-03-16": {
         "repos": 39,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3950,
-        "loc": 19963200,
-        "contributors": 121
+        "stars": 470,
+        "issues": 169,
+        "commits": 4054,
+        "loc": 19871225,
+        "contributors": 123
       },
       "2026-03-17": {
         "repos": 40,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3984,
-        "loc": 19973350,
-        "contributors": 123
+        "stars": 470,
+        "issues": 169,
+        "commits": 4094,
+        "loc": 19884550,
+        "contributors": 125
       },
       "2026-03-18": {
         "repos": 40,
-        "stars": 215,
-        "issues": 167,
-        "commits": 3984,
-        "loc": 19973350,
-        "contributors": 123
+        "stars": 470,
+        "issues": 169,
+        "commits": 4094,
+        "loc": 19884550,
+        "contributors": 125
       },
       "2026-03-19": {
         "repos": 52,
-        "stars": 231,
-        "issues": 167,
-        "commits": 4197,
-        "loc": 20125400,
-        "contributors": 135
+        "stars": 488,
+        "issues": 169,
+        "commits": 4307,
+        "loc": 20036600,
+        "contributors": 137
       },
       "2026-03-20": {
         "repos": 59,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4281,
-        "loc": 20268400,
-        "contributors": 142
+        "stars": 522,
+        "issues": 172,
+        "commits": 4391,
+        "loc": 20179600,
+        "contributors": 144
       },
       "2026-03-21": {
         "repos": 59,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4281,
-        "loc": 20268400,
-        "contributors": 142
+        "stars": 522,
+        "issues": 172,
+        "commits": 4391,
+        "loc": 20179600,
+        "contributors": 144
       },
       "2026-03-22": {
         "repos": 59,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4281,
-        "loc": 20268400,
-        "contributors": 142
+        "stars": 522,
+        "issues": 172,
+        "commits": 4391,
+        "loc": 20179600,
+        "contributors": 144
       },
       "2026-03-23": {
         "repos": 59,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4281,
-        "loc": 20268400,
-        "contributors": 142
+        "stars": 522,
+        "issues": 172,
+        "commits": 4391,
+        "loc": 20179600,
+        "contributors": 144
       },
       "2026-03-24": {
         "repos": 62,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4493,
-        "loc": 20590825,
-        "contributors": 145
+        "stars": 523,
+        "issues": 172,
+        "commits": 4608,
+        "loc": 20542400,
+        "contributors": 147
       },
       "2026-03-25": {
         "repos": 62,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4493,
-        "loc": 20590825,
-        "contributors": 145
+        "stars": 523,
+        "issues": 172,
+        "commits": 4608,
+        "loc": 20542400,
+        "contributors": 147
       },
       "2026-03-26": {
         "repos": 63,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4510,
-        "loc": 20628350,
-        "contributors": 147
+        "stars": 523,
+        "issues": 172,
+        "commits": 4625,
+        "loc": 20579925,
+        "contributors": 149
       },
       "2026-03-27": {
         "repos": 63,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4510,
-        "loc": 20628350,
-        "contributors": 147
+        "stars": 523,
+        "issues": 172,
+        "commits": 4625,
+        "loc": 20579925,
+        "contributors": 149
       },
       "2026-03-28": {
         "repos": 64,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4515,
-        "loc": 20632550,
-        "contributors": 148
+        "stars": 523,
+        "issues": 172,
+        "commits": 4630,
+        "loc": 20584125,
+        "contributors": 150
       },
       "2026-03-29": {
         "repos": 64,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4515,
-        "loc": 20632550,
-        "contributors": 148
+        "stars": 523,
+        "issues": 172,
+        "commits": 4630,
+        "loc": 20584125,
+        "contributors": 150
       },
       "2026-03-30": {
         "repos": 65,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4516,
-        "loc": 20632675,
-        "contributors": 149
+        "stars": 523,
+        "issues": 172,
+        "commits": 4631,
+        "loc": 20584250,
+        "contributors": 151
       },
       "2026-03-31": {
         "repos": 65,
-        "stars": 254,
-        "issues": 170,
-        "commits": 4516,
-        "loc": 20632675,
-        "contributors": 149
+        "stars": 523,
+        "issues": 172,
+        "commits": 4631,
+        "loc": 20584250,
+        "contributors": 151
       },
       "2026-04-01": {
         "repos": 67,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4543,
-        "loc": 20647275,
-        "contributors": 153
+        "stars": 524,
+        "issues": 172,
+        "commits": 4661,
+        "loc": 20600950,
+        "contributors": 155
       },
       "2026-04-02": {
         "repos": 67,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4543,
-        "loc": 20647275,
-        "contributors": 153
+        "stars": 524,
+        "issues": 172,
+        "commits": 4661,
+        "loc": 20600950,
+        "contributors": 155
       },
       "2026-04-03": {
         "repos": 67,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4543,
-        "loc": 20647275,
-        "contributors": 153
+        "stars": 524,
+        "issues": 172,
+        "commits": 4661,
+        "loc": 20600950,
+        "contributors": 155
       },
       "2026-04-04": {
         "repos": 67,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4543,
-        "loc": 20647275,
-        "contributors": 153
+        "stars": 524,
+        "issues": 172,
+        "commits": 4661,
+        "loc": 20600950,
+        "contributors": 155
       },
       "2026-04-05": {
         "repos": 67,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4543,
-        "loc": 20647275,
-        "contributors": 153
+        "stars": 524,
+        "issues": 172,
+        "commits": 4661,
+        "loc": 20600950,
+        "contributors": 155
       },
       "2026-04-06": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-07": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-08": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-09": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-10": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-11": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-12": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-13": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
       },
       "2026-04-14": {
         "repos": 68,
-        "stars": 255,
-        "issues": 170,
-        "commits": 4545,
-        "loc": 20647975,
-        "contributors": 154
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-15": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-16": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-17": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-18": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-19": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-20": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-21": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-22": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-23": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-24": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-25": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-26": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-27": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-28": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-29": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-04-30": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-05-01": {
+        "repos": 68,
+        "stars": 524,
+        "issues": 172,
+        "commits": 4663,
+        "loc": 20601650,
+        "contributors": 156
+      },
+      "2026-05-02": {
+        "repos": 69,
+        "stars": 525,
+        "issues": 172,
+        "commits": 4669,
+        "loc": 20635275,
+        "contributors": 158
+      },
+      "2026-05-03": {
+        "repos": 69,
+        "stars": 525,
+        "issues": 172,
+        "commits": 4669,
+        "loc": 20635275,
+        "contributors": 158
+      },
+      "2026-05-04": {
+        "repos": 69,
+        "stars": 525,
+        "issues": 172,
+        "commits": 4669,
+        "loc": 20635275,
+        "contributors": 158
+      },
+      "2026-05-05": {
+        "repos": 69,
+        "stars": 525,
+        "issues": 172,
+        "commits": 4669,
+        "loc": 20635275,
+        "contributors": 158
       }
     },
     "monthLabels": {
@@ -2484,7 +2689,8 @@
       "2026-01": "2026-01-01",
       "2026-02": "2026-02-01",
       "2026-03": "2026-03-01",
-      "2026-04": "2026-04-01"
+      "2026-04": "2026-04-01",
+      "2026-05": "2026-05-01"
     }
   },
   "historicalTrend": [
@@ -2504,15 +2710,15 @@
     },
     {
       "date": "2026-04-15",
-      "totalRepos": 110,
+      "totalRepos": 111,
       "publicRepos": 68,
-      "privateRepos": 42,
+      "privateRepos": 43,
       "totalStars": 255,
       "totalForks": 45,
-      "totalOpenIssues": 169,
-      "totalSizeKB": 11638231,
-      "estimatedLinesOfCode": 20642275,
-      "totalCommits": 4518,
+      "totalOpenIssues": 170,
+      "totalSizeKB": 11638459,
+      "estimatedLinesOfCode": 20647975,
+      "totalCommits": 4545,
       "uniqueContributors": 32,
       "languages": 9
     }
