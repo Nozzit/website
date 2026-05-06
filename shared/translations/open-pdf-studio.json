@@ -1,4 +1,10 @@
 {
+  "releases": {
+    "title": "Release notes",
+    "desc": "Version history fetched live from GitHub. Showing the latest 15 releases.",
+    "loading": "Loading releases...",
+    "viewAll": "View all releases on GitHub &rarr;"
+  },
   "header": {
     "label": "Open-source PDF editor",
     "title": "Open <span class=\"accent\">PDF</span> Studio",

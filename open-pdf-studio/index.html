@@ -124,6 +124,107 @@
     </div>
   </div></section>
 
+  <!-- Release Notes -->
+  <section style="background: white; padding: 3rem 1.5rem;">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem; color: var(--deep-forge); margin-bottom: var(--sp-2);" data-i18n="releases.title">Release notes</h2>
+      <p style="color: #57534E; margin-bottom: var(--sp-6);" data-i18n="releases.desc">Versiegeschiedenis live opgehaald van GitHub. Toont de laatste 15 releases.</p>
+      <div id="release-notes" style="display: flex; flex-direction: column; gap: var(--sp-3);">
+        <p style="color: var(--scaffold-gray); font-size: 0.875rem;" data-i18n="releases.loading">Releases laden...</p>
+      </div>
+      <p style="margin-top: var(--sp-4); font-size: 0.8125rem; color: var(--scaffold-gray);">
+        <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases" target="_blank" rel="noopener" style="color: var(--amber);" data-i18n="releases.viewAll">Bekijk alle releases op GitHub &rarr;</a>
+      </p>
+    </div>
+  </section>
+
+  <style>
+    .release-card {
+      background: var(--blueprint-white);
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-md);
+      padding: var(--sp-4) var(--sp-5);
+      transition: border-color 0.15s ease;
+    }
+    .release-card:hover { border-color: var(--amber); }
+    .release-card.latest { border-color: var(--amber); background: #FFFBEB; }
+    .release-card.nightly { border-color: #6366F1; background: #EEF2FF; }
+    .release-header {
+      display: flex; align-items: center; gap: var(--sp-3);
+      flex-wrap: wrap; margin-bottom: var(--sp-2);
+    }
+    .release-tag {
+      font-family: var(--font-code); font-weight: 700; font-size: 0.95rem;
+      color: var(--deep-forge);
+    }
+    .release-date {
+      font-family: var(--font-code); font-size: 0.75rem;
+      color: var(--scaffold-gray);
+    }
+    .release-badge {
+      font-family: var(--font-code); font-size: 0.65rem;
+      font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 2px 8px; border-radius: var(--radius-full);
+    }
+    .badge-latest { background: #FED7AA; color: #9A3412; }
+    .badge-nightly { background: #C7D2FE; color: #3730A3; }
+    .release-title { font-size: 0.875rem; color: var(--deep-forge); font-weight: 600; }
+    .release-body {
+      font-size: 0.8125rem; color: #57534E; line-height: 1.5;
+      margin-top: var(--sp-2); white-space: pre-wrap;
+      max-height: 200px; overflow-y: auto;
+    }
+    .release-link {
+      font-size: 0.75rem; color: var(--amber); text-decoration: none;
+      margin-top: var(--sp-2); display: inline-block;
+    }
+  </style>
+
+  <script>
+    (function() {
+      fetch('https://api.github.com/repos/OpenAEC-Foundation/open-pdf-studio/releases?per_page=15')
+        .then(r => r.json())
+        .then(releases => {
+          const container = document.getElementById('release-notes');
+          if (!container || !Array.isArray(releases)) return;
+
+          container.innerHTML = releases.map((rel, idx) => {
+            const isNightly = rel.tag_name === 'nightly' || rel.prerelease;
+            const isLatest = idx === 0 && !isNightly;
+            const cardClass = isNightly ? 'nightly' : (isLatest ? 'latest' : '');
+            const badge = isLatest
+              ? '<span class="release-badge badge-latest">Latest</span>'
+              : isNightly
+              ? '<span class="release-badge badge-nightly">Nightly</span>'
+              : '';
+            const date = rel.published_at?.substring(0, 10) || '';
+            const body = (rel.body || '')
+              .replace(/</g, '&lt;')
+              .replace(/^## .*$/gm, '')
+              .replace(/^### Downloads[\s\S]*$/m, '')
+              .trim();
+
+            return `
+              <div class="release-card ${cardClass}">
+                <div class="release-header">
+                  <span class="release-tag">${rel.tag_name}</span>
+                  <span class="release-date">${date}</span>
+                  ${badge}
+                </div>
+                <div class="release-title">${rel.name || rel.tag_name}</div>
+                ${body ? `<div class="release-body">${body}</div>` : ''}
+                <a href="${rel.html_url}" target="_blank" rel="noopener" class="release-link">Bekijk op GitHub &rarr;</a>
+              </div>
+            `;
+          }).join('');
+        })
+        .catch(() => {
+          const container = document.getElementById('release-notes');
+          if (container) container.innerHTML = '<p style="color: var(--scaffold-gray);">Kon release notes niet laden.</p>';
+        });
+    })();
+  </script>
+
   <section style="background: var(--concrete); padding: 3rem 1.5rem; text-align: center;">
     <div style="max-width: 900px; margin: 0 auto; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="https://open-pdf-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.demo">Live demo &rarr;</a>
