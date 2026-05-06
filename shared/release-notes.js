@@ -212,7 +212,13 @@
       ? group.firstDate
       : `${group.firstDate} ${t('until')} ${group.lastDate}`;
 
-    const changesList = group.allChanges.map(c => `<li>${escapeHtml(c)}</li>`).join('');
+    // Use EN version of changes if available and language is EN
+    const lang = getLang();
+    const changes = (lang === 'en' && Array.isArray(group.allChangesEn))
+      ? group.allChangesEn
+      : group.allChanges;
+
+    const changesList = changes.map(c => `<li>${escapeHtml(c)}</li>`).join('');
     const releaseRows = group.releases.map(r => `
       <div class="rn-release-row">
         <span class="rn-release-tag">${escapeHtml(r.tag)}</span>
