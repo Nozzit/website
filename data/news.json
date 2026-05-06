@@ -1,5 +1,180 @@
 [
   {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio: 2 releases (nightly → v1.47.4)",
+    "description": "Versies: nightly, v1.47.4",
+    "date": "2026-05-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.47.4",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.7.8 uitgebracht",
+    "description": "Open Calc Studio v0.7.8",
+    "date": "2026-05-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.8",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio-2",
+    "title": "open-calc-studio-2 v0.7.3 uitgebracht",
+    "description": "v0.7.3 - PDF empty-logo decoder fix",
+    "date": "2026-05-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2/releases/tag/v0.7.3",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio: 10 releases (v0.5.0 → v0.7.3)",
+    "description": "Versies: v0.5.0, v0.5.1, v0.5.2, v0.6.0, v0.6.1, v0.6.2, v0.7.0, v0.7.1, v0.7.2, v0.7.3",
+    "date": "2026-05-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.3",
+    "count": 10
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-calc-studio",
+    "title": "Nieuwe repository: open-calc-studio",
+    "description": "Open Source Calculatieprogramma voor de bouwsector",
+    "date": "2026-05-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio"
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio-2",
+    "title": "open-calc-studio-2: 4 releases (v0.6.1 → v0.7.1)",
+    "description": "Versies: v0.6.1, v0.6.2, v0.7.0, v0.7.1",
+    "date": "2026-05-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2/releases/tag/v0.7.1",
+    "count": 4
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.10.0 uitgebracht",
+    "description": "Open Speech Studio v0.10.0",
+    "date": "2026-04-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.45.0 uitgebracht",
+    "description": "Open PDF Studio v1.45.0",
+    "date": "2026-04-23",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.45.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio-2",
+    "title": "open-calc-studio-2: 2 releases (v0.5.2 → v0.6.0)",
+    "description": "Versies: v0.5.2, v0.6.0",
+    "date": "2026-04-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2/releases/tag/v0.6.0",
+    "count": 2
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-speech-studio-AI",
+    "title": "Nieuwe repository: open-speech-studio-AI",
+    "description": "Nieuw project gestart",
+    "date": "2026-04-22",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio-AI"
+  },
+  {
+    "type": "release",
+    "repo": "Y-app",
+    "title": "Y-app v0.15.0 uitgebracht",
+    "description": "Y-app v0.15.0",
+    "date": "2026-04-21",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.15.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Y-app",
+    "title": "Y-app v0.14.0 uitgebracht",
+    "description": "Y-app v0.14.0",
+    "date": "2026-04-20",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.14.0",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "Open-Auth",
+    "title": "Nieuwe repository: Open-Auth",
+    "description": "Nieuw project gestart",
+    "date": "2026-04-20",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Auth"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-tenants",
+    "title": "Nieuwe repository: openaec-tenants",
+    "description": "OpenAEC tenant-specifieke brand/templates/fonts — bind-mount voor Reports service",
+    "date": "2026-04-20",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-tenants"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-geonl",
+    "title": "Nieuwe repository: openaec-geonl",
+    "description": "GIS data naar IFC en PDF — OpenAEC desktop & web tool voor Nederlandse bouwprojecten (Rust + Tauri + Svelte)",
+    "date": "2026-04-20",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-geonl"
+  },
+  {
+    "type": "release",
+    "repo": "Y-app",
+    "title": "Y-app v0.13.0 uitgebracht",
+    "description": "Y-app v0.13.0",
+    "date": "2026-04-17",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.13.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio-2",
+    "title": "open-calc-studio-2 v0.5.1 uitgebracht",
+    "description": "v0.5.1 — OpenAEC brand alignment",
+    "date": "2026-04-17",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2/releases/tag/v0.5.1",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Y-app",
+    "title": "Y-app v0.12.0 uitgebracht",
+    "description": "Y-app v0.12.0",
+    "date": "2026-04-16",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.12.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio-2",
+    "title": "open-calc-studio-2 v0.5.0 uitgebracht",
+    "description": "v0.5.0",
+    "date": "2026-04-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2/releases/tag/v0.5.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.8.0 uitgebracht",
+    "description": "Open Speech Studio v0.8.0",
+    "date": "2026-04-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.8.0",
+    "count": 1
+  },
+  {
     "type": "new_repo",
     "repo": "Open-Live-Feedbacksystem",
     "title": "Nieuwe repository: Open-Live-Feedbacksystem",
@@ -52,30 +227,12 @@
     "count": 2
   },
   {
-    "type": "release",
-    "repo": "OpenAEC-agent-dashboard",
-    "title": "OpenAEC-agent-dashboard v0.2.0-beta uitgebracht",
-    "description": "v0.2.0-beta — Monitoring & Kosten Dashboard",
-    "date": "2026-04-07",
-    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-agent-dashboard/releases/tag/v0.2.0-beta",
-    "count": 1
-  },
-  {
     "type": "new_repo",
     "repo": "openaec-cloud",
     "title": "Nieuwe repository: openaec-cloud",
     "description": "Shared Nextcloud cloud storage library for OpenAEC tools — hybrid I/O, multi-tenant, multi-manifest (ADR-001)",
     "date": "2026-04-06",
     "url": "https://github.com/OpenAEC-Foundation/openaec-cloud"
-  },
-  {
-    "type": "release",
-    "repo": "open-speech-studio",
-    "title": "open-speech-studio: 2 releases (dev-298916de1c8b786d8a316782e84472b6bf996fb0 → v0.7.0)",
-    "description": "Versies: dev-298916de1c8b786d8a316782e84472b6bf996fb0, v0.7.0",
-    "date": "2026-04-03",
-    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.7.0",
-    "count": 2
   },
   {
     "type": "release",
@@ -148,11 +305,11 @@
   },
   {
     "type": "new_repo",
-    "repo": "OpenAEC-AI",
-    "title": "Nieuwe repository: OpenAEC-AI",
+    "repo": "open-pdf-studio-ai",
+    "title": "Nieuwe repository: open-pdf-studio-ai",
     "description": "Nieuw project gestart",
     "date": "2026-03-31",
-    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-AI"
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio-ai"
   },
   {
     "type": "release",
@@ -335,29 +492,12 @@
     "count": 2
   },
   {
-    "type": "release",
-    "repo": "OpenAEC-agent-dashboard",
-    "title": "OpenAEC-agent-dashboard v0.2.0 uitgebracht",
-    "description": "v0.2.0 — Subagent Activity Monitor",
-    "date": "2026-03-30",
-    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-agent-dashboard/releases/tag/v0.2.0",
-    "count": 1
-  },
-  {
     "type": "new_repo",
     "repo": "bedrijven-huisstijlen",
     "title": "Nieuwe repository: bedrijven-huisstijlen",
     "description": "Nieuw project gestart",
     "date": "2026-03-30",
     "url": "https://github.com/OpenAEC-Foundation/bedrijven-huisstijlen"
-  },
-  {
-    "type": "new_repo",
-    "repo": "OpenAEC-agent-dashboard",
-    "title": "Nieuwe repository: OpenAEC-agent-dashboard",
-    "description": "Nieuw project gestart",
-    "date": "2026-03-30",
-    "url": "https://github.com/OpenAEC-Foundation/OpenAEC-agent-dashboard"
   },
   {
     "type": "new_repo",
@@ -447,15 +587,6 @@
   },
   {
     "type": "release",
-    "repo": "open-speech-studio",
-    "title": "open-speech-studio dev-aa644abe09d4754b022b2cfe3ff0209d20dc6b6e uitgebracht",
-    "description": "Dev Build aa644abe09d4754b022b2cfe3ff0209d20dc6b6e",
-    "date": "2026-03-25",
-    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/dev-aa644abe09d4754b022b2cfe3ff0209d20dc6b6e",
-    "count": 1
-  },
-  {
-    "type": "release",
     "repo": "open-ecoscore-studio",
     "title": "open-ecoscore-studio v0.2.0 uitgebracht",
     "description": "Open EcoScore Studio v0.2.0",
@@ -464,19 +595,10 @@
     "count": 1
   },
   {
-    "type": "release",
-    "repo": "open-speech-studio",
-    "title": "open-speech-studio dev-e01c9c8cf80793b71585e82f2ddeb380505d56cb uitgebracht",
-    "description": "Dev Build e01c9c8cf80793b71585e82f2ddeb380505d56cb",
-    "date": "2026-03-24",
-    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/dev-e01c9c8cf80793b71585e82f2ddeb380505d56cb",
-    "count": 1
-  },
-  {
     "type": "new_repo",
     "repo": "ERPNext-NL-Translation",
     "title": "Nieuwe repository: ERPNext-NL-Translation",
-    "description": "Kwalitatieve Nederlandse vertalingen voor ERPNext, Frappe en 5 extra apps (16.797 vertalingen, 7 apps, AI quality scored, 1.431+ verbeterd)",
+    "description": "Kwalitatieve Nederlandse vertalingen voor ERPNext, Frappe en 5 extra apps — 24.507 AI-reviewed vertalingen, ~99% dekking van Frappe/ERPNext v16 source, inclusief case/whitespace code-variants",
     "date": "2026-03-24",
     "url": "https://github.com/OpenAEC-Foundation/ERPNext-NL-Translation"
   },
@@ -910,11 +1032,11 @@
   },
   {
     "type": "release",
-    "repo": "open-calc-studio",
-    "title": "open-calc-studio v0.1.0 uitgebracht",
+    "repo": "open-calc-studio-2",
+    "title": "open-calc-studio-2 v0.1.0 uitgebracht",
     "description": "Open Calc Studio v0.1.0",
     "date": "2026-03-17",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.1.0",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2/releases/tag/v0.1.0",
     "count": 1
   },
   {
@@ -924,15 +1046,6 @@
     "description": "BCF 2.1 issue management platform for BIM projects — by 3BM Bouwkunde",
     "date": "2026-03-17",
     "url": "https://github.com/OpenAEC-Foundation/openaec-bcf-platform"
-  },
-  {
-    "type": "release",
-    "repo": "open-speech-studio",
-    "title": "open-speech-studio v0.3.0 uitgebracht",
-    "description": "Open Speech Studio v0.3.0",
-    "date": "2026-03-16",
-    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.3.0",
-    "count": 1
   },
   {
     "type": "new_repo",
@@ -1072,11 +1185,11 @@
   },
   {
     "type": "new_repo",
-    "repo": "open-calc-studio",
-    "title": "Nieuwe repository: open-calc-studio",
+    "repo": "open-calc-studio-2",
+    "title": "Nieuwe repository: open-calc-studio-2",
     "description": "Open source Calculation Tool",
     "date": "2026-03-05",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio"
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio-2"
   },
   {
     "type": "new_repo",
