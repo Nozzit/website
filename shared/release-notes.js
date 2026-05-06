@@ -95,11 +95,26 @@
       .rn-group-header {
         background: var(--blueprint-white);
         padding: var(--sp-4) var(--sp-5);
-        border-bottom: 1px solid #E7E5E4;
+        border-bottom: 1px solid transparent;
         display: flex; align-items: center; gap: var(--sp-3);
         flex-wrap: wrap;
+        cursor: pointer;
+        user-select: none;
       }
+      .rn-group.expanded .rn-group-header { border-bottom-color: #E7E5E4; }
+      .rn-group-header:hover { background: #F5F5F4; }
       .rn-group.latest .rn-group-header { background: #FFFBEB; }
+      .rn-group.latest .rn-group-header:hover { background: #FEF3C7; }
+      .rn-group-toggle {
+        margin-left: auto;
+        font-family: var(--font-code);
+        font-size: 0.75rem;
+        color: var(--scaffold-gray);
+        transition: transform 0.2s ease;
+      }
+      .rn-group.expanded .rn-group-toggle { transform: rotate(90deg); color: var(--amber); }
+      .rn-group-body { display: none; }
+      .rn-group.expanded .rn-group-body { display: block; }
       .rn-group-version {
         font-family: var(--font-code);
         font-weight: 700;
@@ -116,7 +131,7 @@
         padding: 2px 8px; border-radius: var(--radius-full);
         background: #FED7AA; color: #9A3412;
       }
-      .rn-group-body { padding: var(--sp-4) var(--sp-5); background: white; }
+      .rn-group.expanded .rn-group-body { padding: var(--sp-4) var(--sp-5); background: white; }
 
       .rn-changes-list {
         list-style: none;
@@ -200,10 +215,26 @@
       .replace(/>/g, '&gt;');
   }
 
+  const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+
   async function fetchData(repo) {
+    // Try localStorage cache first
+    const cacheKey = `rn-${repo}`;
+    try {
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) {
+        const { data, ts } = JSON.parse(cached);
+        if (Date.now() - ts < CACHE_TTL) return data;
+      }
+    } catch (e) {}
+
     const res = await fetch(`/data/release-notes/${repo}.json`);
     if (!res.ok) throw new Error('No data file');
-    return res.json();
+    const data = await res.json();
+    try {
+      sessionStorage.setItem(cacheKey, JSON.stringify({ data, ts: Date.now() }));
+    } catch (e) {}
+    return data;
   }
 
   function renderGroup(group, isLatest) {
@@ -218,6 +249,29 @@
       ? group.allChangesEn
       : group.allChanges;
 
+    return `
+      <div class="rn-group ${isLatest ? 'latest expanded' : ''}" data-group-index="${group._idx}">
+        <div class="rn-group-header" data-toggle-group>
+          <span class="rn-group-version">v${group.minorVersion}</span>
+          <span class="rn-group-meta">
+            ${group.releaseCount} ${group.releaseCount === 1 ? t('release') : t('releases')}
+            · ${group.changeCount} ${group.changeCount === 1 ? t('change') : t('changes')}
+            · ${dateRange}
+          </span>
+          ${isLatest ? `<span class="rn-group-badge">${t('latest')}</span>` : ''}
+          <span class="rn-group-toggle">▶</span>
+        </div>
+        <div class="rn-group-body"></div>
+      </div>
+    `;
+  }
+
+  // Lazy render group body content on first expand
+  function renderGroupBody(group) {
+    const lang = getLang();
+    const changes = (lang === 'en' && Array.isArray(group.allChangesEn))
+      ? group.allChangesEn
+      : group.allChanges;
     const changesList = changes.map(c => `<li>${escapeHtml(c)}</li>`).join('');
     const releaseRows = group.releases.map(r => `
       <div class="rn-release-row">
@@ -230,33 +284,23 @@
     `).join('');
 
     return `
-      <div class="rn-group ${isLatest ? 'latest' : ''}">
-        <div class="rn-group-header">
-          <span class="rn-group-version">v${group.minorVersion}</span>
-          <span class="rn-group-meta">
-            ${group.releaseCount} ${group.releaseCount === 1 ? t('release') : t('releases')}
-            · ${group.changeCount} ${group.changeCount === 1 ? t('change') : t('changes')}
-            · ${dateRange}
-          </span>
-          ${isLatest ? `<span class="rn-group-badge">${t('latest')}</span>` : ''}
+      ${changes.length > 0
+        ? `<ol class="rn-changes-list">${changesList}</ol>`
+        : '<p class="rn-loading">—</p>'}
+      ${group.releases.length > 1 ? `
+        <div class="rn-releases-detail">
+          ${releaseRows}
         </div>
-        <div class="rn-group-body">
-          ${group.allChanges.length > 0
-            ? `<ol class="rn-changes-list">${changesList}</ol>`
-            : '<p class="rn-loading">—</p>'}
-          ${group.releases.length > 1 ? `
-            <div class="rn-releases-detail">
-              ${releaseRows}
-            </div>
-          ` : ''}
-        </div>
-      </div>
+      ` : ''}
     `;
   }
 
   function renderAll(container, data) {
     const totalChanges = data.totalChanges;
     const totalReleases = data.totalReleases;
+
+    // Assign indices for lazy lookup
+    data.groups.forEach((g, i) => { g._idx = i; });
 
     container.innerHTML = `
       <div class="rn-header-block">
@@ -284,6 +328,31 @@
         <a href="https://github.com/OpenAEC-Foundation/${data.repo}/releases" target="_blank" rel="noopener">${t('viewAll')}</a>
       </p>
     `;
+
+    // Render the first (latest) group's body immediately
+    const firstGroup = container.querySelector('.rn-group.expanded');
+    if (firstGroup && data.groups[0]) {
+      const body = firstGroup.querySelector('.rn-group-body');
+      if (body) body.innerHTML = renderGroupBody(data.groups[0]);
+    }
+
+    // Click handler for collapsible groups (event delegation)
+    container.querySelectorAll('[data-toggle-group]').forEach(header => {
+      header.addEventListener('click', () => {
+        const group = header.parentElement;
+        const idx = parseInt(group.getAttribute('data-group-index'), 10);
+        const wasExpanded = group.classList.contains('expanded');
+
+        if (!wasExpanded) {
+          // Lazy-render body on first expand
+          const body = group.querySelector('.rn-group-body');
+          if (body && !body.innerHTML.trim() && data.groups[idx]) {
+            body.innerHTML = renderGroupBody(data.groups[idx]);
+          }
+        }
+        group.classList.toggle('expanded');
+      });
+    });
   }
 
   async function init() {
