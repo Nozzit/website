@@ -1,0 +1,75 @@
+{
+  "repo": "open-pointcloud-studio",
+  "generated": "2026-05-06T07:47:00.881Z",
+  "totalReleases": 2,
+  "totalChanges": 10,
+  "latestStable": {
+    "tag": "v0.3.0",
+    "name": "Open Pointcloud Studio v0.3.0",
+    "date": "2026-03-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.3.0"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "0.3",
+      "releases": [
+        {
+          "tag": "v0.3.0",
+          "name": "Open Pointcloud Studio v0.3.0",
+          "date": "2026-03-03",
+          "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.3.0",
+          "changes": [
+            "LAS/LAZ point cloud loading and visualization",
+            "Octree-based level of detail rendering",
+            "3D navigation with orbit, pan, and zoom",
+            "Point cloud tools and surface reconstruction",
+            "Multi-format export support"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "LAS/LAZ point cloud loading and visualization",
+        "Octree-based level of detail rendering",
+        "3D navigation with orbit, pan, and zoom",
+        "Point cloud tools and surface reconstruction",
+        "Multi-format export support"
+      ],
+      "firstDate": "2026-03-03",
+      "lastDate": "2026-03-03",
+      "releaseCount": 1,
+      "changeCount": 5
+    },
+    {
+      "minorVersion": "0.2",
+      "releases": [
+        {
+          "tag": "v0.2.0",
+          "name": "Open Pointcloud Studio v0.2.0",
+          "date": "2026-02-26",
+          "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.2.0",
+          "changes": [
+            "LAS/LAZ point cloud loading and visualization",
+            "Octree-based level of detail rendering",
+            "3D navigation with orbit, pan, and zoom",
+            "Point cloud tools and surface reconstruction",
+            "Multi-format export support"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "LAS/LAZ point cloud loading and visualization",
+        "Octree-based level of detail rendering",
+        "3D navigation with orbit, pan, and zoom",
+        "Point cloud tools and surface reconstruction",
+        "Multi-format export support"
+      ],
+      "firstDate": "2026-02-26",
+      "lastDate": "2026-02-26",
+      "releaseCount": 1,
+      "changeCount": 5
+    }
+  ]
+}

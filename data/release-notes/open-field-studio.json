@@ -1,0 +1,99 @@
+{
+  "repo": "open-field-studio",
+  "generated": "2026-05-06T07:47:02.815Z",
+  "totalReleases": 4,
+  "totalChanges": 19,
+  "latestStable": {
+    "tag": "v0.1.3",
+    "name": "Open Field Studio v0.1.3",
+    "date": "2026-03-31",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.3"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "0.1",
+      "releases": [
+        {
+          "tag": "v0.1.3",
+          "name": "Open Field Studio v0.1.3",
+          "date": "2026-03-31",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.3",
+          "changes": [
+            "Tickets & gebrekenregistratie op plattegronden",
+            "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+            "Energielabel opname — volledige NTA 8800 data-verzameling",
+            "Monument inspectie — constructie, interieur, vocht/schade",
+            "Oplevering met proces-verbaal en digitale handtekeningen",
+            "Dashboard met real-time statistieken",
+            "Camera-integratie voor foto-opname op locatie",
+            "4 talen: Nederlands, Engels, Duits, Frans",
+            "HTML/PDF rapporten"
+          ],
+          "patchNum": 3
+        },
+        {
+          "tag": "v0.1.2",
+          "name": "Open Field Studio v0.1.2",
+          "date": "2026-03-28",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.2",
+          "changes": [],
+          "patchNum": 2
+        },
+        {
+          "tag": "v0.1.1",
+          "name": "Open Field Studio v0.1.1",
+          "date": "2026-03-28",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.1",
+          "changes": [
+            "HTML/PDF rapporten"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.1.0",
+          "name": "Open Field Studio v0.1.0",
+          "date": "2026-03-27",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.0",
+          "changes": [
+            "Tickets & gebrekenregistratie op plattegronden",
+            "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+            "Energielabel opname — volledige NTA 8800 data-verzameling",
+            "Monument inspectie — constructie, interieur, vocht/schade",
+            "Oplevering met proces-verbaal en digitale handtekeningen",
+            "Dashboard met real-time statistieken",
+            "Camera-integratie voor foto-opname op locatie",
+            "4 talen: Nederlands, Engels, Duits, Frans",
+            "HTML/PDF rapporten"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Tickets & gebrekenregistratie op plattegronden",
+        "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+        "Energielabel opname — volledige NTA 8800 data-verzameling",
+        "Monument inspectie — constructie, interieur, vocht/schade",
+        "Oplevering met proces-verbaal en digitale handtekeningen",
+        "Dashboard met real-time statistieken",
+        "Camera-integratie voor foto-opname op locatie",
+        "4 talen: Nederlands, Engels, Duits, Frans",
+        "HTML/PDF rapporten",
+        "HTML/PDF rapporten",
+        "Tickets & gebrekenregistratie op plattegronden",
+        "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+        "Energielabel opname — volledige NTA 8800 data-verzameling",
+        "Monument inspectie — constructie, interieur, vocht/schade",
+        "Oplevering met proces-verbaal en digitale handtekeningen",
+        "Dashboard met real-time statistieken",
+        "Camera-integratie voor foto-opname op locatie",
+        "4 talen: Nederlands, Engels, Duits, Frans",
+        "HTML/PDF rapporten"
+      ],
+      "firstDate": "2026-03-27",
+      "lastDate": "2026-03-31",
+      "releaseCount": 4,
+      "changeCount": 19
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "repo": "open-2d-studio",
+  "generated": "2026-05-06T07:46:57.888Z",
+  "totalReleases": 25,
+  "totalChanges": 151,
+  "latestStable": {
+    "tag": "v0.35.0",
+    "name": "Open 2D Studio v0.35.0",
+    "date": "2026-03-26",
+    "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.35.0"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "0.35",
+      "releases": [
+        {
+          "tag": "v0.35.0",
+          "name": "Open 2D Studio v0.35.0",
+          "date": "2026-03-26",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.35.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-03-26",
+      "lastDate": "2026-03-26",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.33",
+      "releases": [
+        {
+          "tag": "v0.33.0",
+          "name": "Open 2D Studio v0.33.0",
+          "date": "2026-03-25",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.33.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-03-25",
+      "lastDate": "2026-03-25",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.32",
+      "releases": [
+        {
+          "tag": "v0.32.0",
+          "name": "Open 2D Studio v0.32.0",
+          "date": "2026-03-05",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.32.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-03-05",
+      "lastDate": "2026-03-05",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.31",
+      "releases": [
+        {
+          "tag": "v0.31.0",
+          "name": "Open 2D Studio v0.31.0",
+          "date": "2026-03-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.31.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-03-02",
+      "lastDate": "2026-03-02",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.30",
+      "releases": [
+        {
+          "tag": "v0.30.0",
+          "name": "Open 2D Studio v0.30.0",
+          "date": "2026-03-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.30.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-03-02",
+      "lastDate": "2026-03-02",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.29",
+      "releases": [
+        {
+          "tag": "v0.29.0",
+          "name": "Open 2D Studio v0.29.0",
+          "date": "2026-02-25",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.29.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-25",
+      "lastDate": "2026-02-25",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.27",
+      "releases": [
+        {
+          "tag": "v0.27.0",
+          "name": "Open 2D Studio v0.27.0",
+          "date": "2026-02-24",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.27.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-24",
+      "lastDate": "2026-02-24",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.24",
+      "releases": [
+        {
+          "tag": "v0.24.0",
+          "name": "Open 2D Studio v0.24.0",
+          "date": "2026-02-19",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.24.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-19",
+      "lastDate": "2026-02-19",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.22",
+      "releases": [
+        {
+          "tag": "v0.22.0",
+          "name": "v0.22.0",
+          "date": "2026-02-14",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.22.0",
+          "changes": [
+            "**Settings Modal** — Centralized settings with 4 tabs (Drawing Aids, Grid & Snap, Display, Units & Scale) accessible from MenuBar and StatusBar",
+            "**Block Definitions** — Block definition and block instance support with DXF import/export",
+            "**Title Block Editing** — Inline title block field editing with click detection and hover highlights",
+            "**Viewport Move** — Keyboard viewport move in sheet mode (G key)",
+            "**Pattern Import** — SVG multi-pattern import dialog with grouping and search",
+            "**Pattern Manager** — Resizable modal with dynamic preview",
+            "**Axis Lock** — Move tool axis lock (X/Y keys) with dynamic input support",
+            "**UI Cleanup** — Reordered Quick Access Toolbar, removed POS/LWT/ROT from status bar (moved to Settings)"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Settings Modal** — Centralized settings with 4 tabs (Drawing Aids, Grid & Snap, Display, Units & Scale) accessible from MenuBar and StatusBar",
+        "**Block Definitions** — Block definition and block instance support with DXF import/export",
+        "**Title Block Editing** — Inline title block field editing with click detection and hover highlights",
+        "**Viewport Move** — Keyboard viewport move in sheet mode (G key)",
+        "**Pattern Import** — SVG multi-pattern import dialog with grouping and search",
+        "**Pattern Manager** — Resizable modal with dynamic preview",
+        "**Axis Lock** — Move tool axis lock (X/Y keys) with dynamic input support",
+        "**UI Cleanup** — Reordered Quick Access Toolbar, removed POS/LWT/ROT from status bar (moved to Settings)"
+      ],
+      "firstDate": "2026-02-14",
+      "lastDate": "2026-02-14",
+      "releaseCount": 1,
+      "changeCount": 8
+    },
+    {
+      "minorVersion": "0.20",
+      "releases": [
+        {
+          "tag": "v0.20.0",
+          "name": "Open 2D Studio v0.20.0",
+          "date": "2026-02-12",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.20.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-12",
+      "lastDate": "2026-02-12",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.19",
+      "releases": [
+        {
+          "tag": "v0.19.0",
+          "name": "v0.19.0",
+          "date": "2026-02-11",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.19.0",
+          "changes": [
+            "**Leader annotation tool** with multi-leader support, arrow options, and grip editing",
+            "**Text Style Manager** for reusable named text formatting presets",
+            "**Bundled Osifont (ISO 3098)** as default font; text sizes now in paper mm",
+            "**File format v3** with automatic v2→v3 migration for font/size values",
+            "**Section profile labels** in canvas, sheet viewports, and PDF export",
+            "**Body-drag move** for selected shapes; Shift+drag proportional edge scaling",
+            "**Sheet drawing frame border**, viewport alignment guides, lineweight toggle default OFF",
+            "**Inline text editor formatting toolbar** (bold, italic, underline, alignment)",
+            "**Standard title block PDF export**, viewport clipping, drawing frame in PDF",
+            "**Double-click viewport** to enter drawing; drawing tools disabled in sheet mode",
+            "Default 1:100 scale, 10000×10000 boundary, two default sheets, tick-mark dimensions",
+            "Fixed text bounds scaling, box selection, clipboard offsets, and dimension settings"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Leader annotation tool** with multi-leader support, arrow options, and grip editing",
+        "**Text Style Manager** for reusable named text formatting presets",
+        "**Bundled Osifont (ISO 3098)** as default font; text sizes now in paper mm",
+        "**File format v3** with automatic v2→v3 migration for font/size values",
+        "**Section profile labels** in canvas, sheet viewports, and PDF export",
+        "**Body-drag move** for selected shapes; Shift+drag proportional edge scaling",
+        "**Sheet drawing frame border**, viewport alignment guides, lineweight toggle default OFF",
+        "**Inline text editor formatting toolbar** (bold, italic, underline, alignment)",
+        "**Standard title block PDF export**, viewport clipping, drawing frame in PDF",
+        "**Double-click viewport** to enter drawing; drawing tools disabled in sheet mode",
+        "Default 1:100 scale, 10000×10000 boundary, two default sheets, tick-mark dimensions",
+        "Fixed text bounds scaling, box selection, clipboard offsets, and dimension settings"
+      ],
+      "firstDate": "2026-02-11",
+      "lastDate": "2026-02-11",
+      "releaseCount": 1,
+      "changeCount": 12
+    },
+    {
+      "minorVersion": "0.17",
+      "releases": [
+        {
+          "tag": "v0.17.0",
+          "name": "v0.17.0",
+          "date": "2026-02-09",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.17.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-02-09",
+      "lastDate": "2026-02-09",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.15",
+      "releases": [
+        {
+          "tag": "v0.15.0",
+          "name": "Open 2D Studio v0.15.0",
+          "date": "2026-02-06",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.15.0",
+          "changes": [
+            "Grid-based pattern picker with search, categories, favorites, and recently used patterns",
+            "Foreground and background pattern layers with independent angle, scale, and color",
+            "Named Filled Region Types for reusable pattern configurations with management dialog",
+            "Expanded built-in pattern library from 6 to 26 patterns (material, geometric, masonry, etc.)",
+            "Enhanced pattern editor with larger preview, template gallery, visual angle picker, and dash presets",
+            "Granular draw order controls: Bring Forward and Send Backward in context menu and ribbon",
+            "Boundary visibility toggle and inner loop (cutout) support for hatch shapes",
+            "Masking toggle for opaque/transparent filled regions",
+            "Live canvas preview when hovering patterns in the picker",
+            "Save/load support for all new hatch fields with backward compatibility"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Grid-based pattern picker with search, categories, favorites, and recently used patterns",
+        "Foreground and background pattern layers with independent angle, scale, and color",
+        "Named Filled Region Types for reusable pattern configurations with management dialog",
+        "Expanded built-in pattern library from 6 to 26 patterns (material, geometric, masonry, etc.)",
+        "Enhanced pattern editor with larger preview, template gallery, visual angle picker, and dash presets",
+        "Granular draw order controls: Bring Forward and Send Backward in context menu and ribbon",
+        "Boundary visibility toggle and inner loop (cutout) support for hatch shapes",
+        "Masking toggle for opaque/transparent filled regions",
+        "Live canvas preview when hovering patterns in the picker",
+        "Save/load support for all new hatch fields with backward compatibility"
+      ],
+      "firstDate": "2026-02-06",
+      "lastDate": "2026-02-06",
+      "releaseCount": 1,
+      "changeCount": 10
+    },
+    {
+      "minorVersion": "0.13",
+      "releases": [
+        {
+          "tag": "v0.13.0",
+          "name": "Open 2D Studio v0.13.0",
+          "date": "2026-02-06",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.13.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-06",
+      "lastDate": "2026-02-06",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.11",
+      "releases": [
+        {
+          "tag": "v0.11.0",
+          "name": "Open 2D Studio v0.11.0",
+          "date": "2026-02-05",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.11.0",
+          "changes": [
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-05",
+      "lastDate": "2026-02-05",
+      "releaseCount": 1,
+      "changeCount": 1
+    },
+    {
+      "minorVersion": "0.9",
+      "releases": [
+        {
+          "tag": "v0.9.0",
+          "name": "Open 2D Studio v0.9.0",
+          "date": "2026-02-03",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.9.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-03",
+      "lastDate": "2026-02-03",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.8",
+      "releases": [
+        {
+          "tag": "v0.8.0",
+          "name": "Open 2D Studio v0.8.0",
+          "date": "2026-02-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.8.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-02",
+      "lastDate": "2026-02-02",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.7",
+      "releases": [
+        {
+          "tag": "v0.7.0",
+          "name": "Open 2D Studio v0.7.0",
+          "date": "2026-02-01",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.7.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-02-01",
+      "lastDate": "2026-02-01",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.6",
+      "releases": [
+        {
+          "tag": "v0.6.0",
+          "name": "Open 2D Studio v0.6.0",
+          "date": "2026-01-30",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.6.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "CAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "CAD-style command line interface"
+      ],
+      "firstDate": "2026-01-30",
+      "lastDate": "2026-01-30",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.5",
+      "releases": [
+        {
+          "tag": "v0.5.0",
+          "name": "Open 2D Modeler v0.5.0",
+          "date": "2026-01-30",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.5.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "AutoCAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "AutoCAD-style command line interface"
+      ],
+      "firstDate": "2026-01-30",
+      "lastDate": "2026-01-30",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.4",
+      "releases": [
+        {
+          "tag": "v0.4.0",
+          "name": "Open 2D Modeler v0.4.0",
+          "date": "2026-01-30",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.4.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "AutoCAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "AutoCAD-style command line interface"
+      ],
+      "firstDate": "2026-01-30",
+      "lastDate": "2026-01-30",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.3",
+      "releases": [
+        {
+          "tag": "v0.3.0",
+          "name": "Open 2D Modeler v0.3.0",
+          "date": "2026-01-28",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.3.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "AutoCAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "AutoCAD-style command line interface"
+      ],
+      "firstDate": "2026-01-28",
+      "lastDate": "2026-01-28",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.2",
+      "releases": [
+        {
+          "tag": "v0.2.0",
+          "name": "Open 2D Modeler v0.2.0",
+          "date": "2026-01-26",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.2.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "AutoCAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "AutoCAD-style command line interface"
+      ],
+      "firstDate": "2026-01-26",
+      "lastDate": "2026-01-26",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.1",
+      "releases": [
+        {
+          "tag": "v0.1.1",
+          "name": "Open 2D Modeler v0.1.1",
+          "date": "2026-01-22",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.1.1",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "AutoCAD-style command line interface"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.1.0",
+          "name": "Open 2D Modeler v0.1.0",
+          "date": "2026-01-22",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.1.0",
+          "changes": [
+            "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+            "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+            "Undo/Redo support",
+            "Grid and snap functionality",
+            "Layer management",
+            "AutoCAD-style command line interface"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "AutoCAD-style command line interface",
+        "Drawing tools: Line, Rectangle, Circle, Arc, Polyline, Ellipse",
+        "Modify tools: Move, Copy, Rotate, Scale, Mirror, Offset",
+        "Undo/Redo support",
+        "Grid and snap functionality",
+        "Layer management",
+        "AutoCAD-style command line interface"
+      ],
+      "firstDate": "2026-01-22",
+      "lastDate": "2026-01-22",
+      "releaseCount": 2,
+      "changeCount": 12
+    }
+  ]
+}

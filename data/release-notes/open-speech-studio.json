@@ -1,0 +1,127 @@
+{
+  "repo": "open-speech-studio",
+  "generated": "2026-05-06T07:47:02.059Z",
+  "totalReleases": 3,
+  "totalChanges": 28,
+  "latestStable": {
+    "tag": "v0.10.0",
+    "name": "Open Speech Studio v0.10.0",
+    "date": "2026-04-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.0"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "0.10",
+      "releases": [
+        {
+          "tag": "v0.10.0",
+          "name": "Open Speech Studio v0.10.0",
+          "date": "2026-04-24",
+          "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-24",
+      "lastDate": "2026-04-24",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.8",
+      "releases": [
+        {
+          "tag": "v0.8.0",
+          "name": "Open Speech Studio v0.8.0",
+          "date": "2026-04-16",
+          "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.8.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-16",
+      "lastDate": "2026-04-16",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.5",
+      "releases": [
+        {
+          "tag": "v0.5.0",
+          "name": "v0.5.0 — Dictation Overlay, Audio Feedback & Spell Check",
+          "date": "2026-03-23",
+          "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.5.0",
+          "changes": [
+            "Floating popup (bottom-right corner) shows recording status, transcription progress, and estimated time remaining",
+            "Audio level bar confirms your microphone is working while recording",
+            "Transparent window without borders — clean, minimal design",
+            "**Ctrl + Win** and **Ctrl + Shift + Space** both work as hold-to-record",
+            "Ctrl+Win uses a low-level Windows keyboard hook to bypass OS interception",
+            "Both shortcuts shown across all UI screens",
+            "Rising blip when you press the hotkey (recording starts)",
+            "Falling blip when you release (recording stops)",
+            "Pleasant major chord chime on successful transcription",
+            "Low buzz on error",
+            "Works in both dictation and meeting recording",
+            "Automatic post-transcription spelling correction with built-in word lists (Dutch, English, German, French)",
+            "Shows original text (strikethrough) alongside corrected version",
+            "Toggle on/off in Settings > Speech",
+            "Users can add custom word lists in the config directory",
+            "~80 pre-loaded terms for the AEC/BIM industry: IFC, buildingSMART, FreeCAD, ArchiCAD, Speckle, CityGML, NL-SfB, and more",
+            "Whisper misrecognitions like \"open aec\" → \"OpenAEC\" are automatically corrected",
+            "Settings > Speech shows detected GPU name, VRAM, driver version",
+            "Recommendation whether GPU acceleration is beneficial for your hardware",
+            "Non-WAV audio files (OGG, MP3, M4A, OPUS, MP4, WebM) are automatically converted via ffmpeg",
+            "WhatsApp voice messages (.ogg) now fully supported",
+            "Auto-transcribe interval: automatically captures segments every 1–30 minutes (default: 5 min)",
+            "Overlay popup shows during meeting recording",
+            "Model selection synced with the Models page — always in sync",
+            "Audio feedback on start/stop/segment capture",
+            "Per-model tracking with sensible defaults (tiny: 0.15x, base: 0.25x, small: 0.5x, etc.)",
+            "Estimate improves automatically with each transcription",
+            "Countdown shown in the overlay during transcription"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Floating popup (bottom-right corner) shows recording status, transcription progress, and estimated time remaining",
+        "Audio level bar confirms your microphone is working while recording",
+        "Transparent window without borders — clean, minimal design",
+        "**Ctrl + Win** and **Ctrl + Shift + Space** both work as hold-to-record",
+        "Ctrl+Win uses a low-level Windows keyboard hook to bypass OS interception",
+        "Both shortcuts shown across all UI screens",
+        "Rising blip when you press the hotkey (recording starts)",
+        "Falling blip when you release (recording stops)",
+        "Pleasant major chord chime on successful transcription",
+        "Low buzz on error",
+        "Works in both dictation and meeting recording",
+        "Automatic post-transcription spelling correction with built-in word lists (Dutch, English, German, French)",
+        "Shows original text (strikethrough) alongside corrected version",
+        "Toggle on/off in Settings > Speech",
+        "Users can add custom word lists in the config directory",
+        "~80 pre-loaded terms for the AEC/BIM industry: IFC, buildingSMART, FreeCAD, ArchiCAD, Speckle, CityGML, NL-SfB, and more",
+        "Whisper misrecognitions like \"open aec\" → \"OpenAEC\" are automatically corrected",
+        "Settings > Speech shows detected GPU name, VRAM, driver version",
+        "Recommendation whether GPU acceleration is beneficial for your hardware",
+        "Non-WAV audio files (OGG, MP3, M4A, OPUS, MP4, WebM) are automatically converted via ffmpeg",
+        "WhatsApp voice messages (.ogg) now fully supported",
+        "Auto-transcribe interval: automatically captures segments every 1–30 minutes (default: 5 min)",
+        "Overlay popup shows during meeting recording",
+        "Model selection synced with the Models page — always in sync",
+        "Audio feedback on start/stop/segment capture",
+        "Per-model tracking with sensible defaults (tiny: 0.15x, base: 0.25x, small: 0.5x, etc.)",
+        "Estimate improves automatically with each transcription",
+        "Countdown shown in the overlay during transcription"
+      ],
+      "firstDate": "2026-03-23",
+      "lastDate": "2026-03-23",
+      "releaseCount": 1,
+      "changeCount": 28
+    }
+  ]
+}

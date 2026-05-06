@@ -26,6 +26,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate-stats.js
 
+      - name: Generate release notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-release-notes.js
+
       - name: Cleanup old history (keep 90 days)
         run: |
           find data/history -name "*.json" -mtime +90 -delete 2>/dev/null || true

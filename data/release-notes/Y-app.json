@@ -1,0 +1,351 @@
+{
+  "repo": "Y-app",
+  "generated": "2026-05-06T07:47:06.537Z",
+  "totalReleases": 19,
+  "totalChanges": 35,
+  "latestStable": {
+    "tag": "v0.15.0",
+    "name": "Y-app v0.15.0",
+    "date": "2026-04-21",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.15.0"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "1.1",
+      "releases": [
+        {
+          "tag": "v1.1.0",
+          "name": "v1.1.0",
+          "date": "2026-03-18",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v1.1.0",
+          "changes": [
+            "**Vergadernotities (Meeting Notes)** module voor het vastleggen van vergadernotities",
+            "**Leads** module voor het beheren van leads en prospects",
+            "**Liquiditeitsplanning** module voor cashflow-prognoses",
+            "**Brieven** module voor het opstellen en beheren van zakelijke correspondentie",
+            "**Record Locking** component om gelijktijdige bewerkingen te voorkomen",
+            "**Optionele modules** -- modules kunnen nu in- en uitgeschakeld worden via Instellingen",
+            "**Delivery Notes statistieken** in het Financieel Dashboard",
+            "**Medewerker onboarding**, functiebeschrijvingen en visitekaartjes bij HR",
+            "**E-mail: Rich text editor** met opmaak (vet, cursief, lijsten, afbeeldingen, kleur, links)",
+            "**E-mail: Handtekening uit ERPNext** (Email Account, User, Employee) met afbeeldingen",
+            "**E-mail: Vervolgacties** — Taak, Offerte, Project of Inkoopfactuur aanmaken vanuit email",
+            "**E-mail: Project koppeling** met slimme matching op afzender, onderwerp en klant",
+            "**E-mail: CRM zoeken** — contacten doorzoeken vanuit email",
+            "**E-mail: Contact status** — toon of afzender in ERPNext zit, zo niet: direct toevoegen",
+            "**E-mail: ERPNext indicator** — toon of email als Communication in ERPNext staat",
+            "**E-mail: Bijlage preview** — PDF en afbeeldingen inline bekijken",
+            "**E-mail: gelezen/ongelezen** functionaliteit met badges en markeer gelezen/ongelezen",
+            "**E-mail: NextCloud File Picker** met Link- en Bijlage-opties",
+            "**Sidebar badge counts** voor Email en Berichten (ongelezen teller)",
+            "**Module zoekfilter** in de navigatiebalk om snel modules te vinden",
+            "**Release notes pagina** met GitHub releases integratie",
+            "**Over Y-app** sectie in Instellingen met versie-info en release notes",
+            "**Facturabel (billable)** fix voor urenregistratie",
+            "**Vakantieplanning** fixes (DST-correctie, contracturen vanuit Shift Plan, alle medewerkers in kalender, en meer)",
+            "**Cache progressive fallback** voor ERPNext veld-compatibiliteit",
+            "**Sidebar**: Taken en Subtaken onder Quick Start, secties visueel verbeterd",
+            "Backend poort gewijzigd naar 3500"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Vergadernotities (Meeting Notes)** module voor het vastleggen van vergadernotities",
+        "**Leads** module voor het beheren van leads en prospects",
+        "**Liquiditeitsplanning** module voor cashflow-prognoses",
+        "**Brieven** module voor het opstellen en beheren van zakelijke correspondentie",
+        "**Record Locking** component om gelijktijdige bewerkingen te voorkomen",
+        "**Optionele modules** -- modules kunnen nu in- en uitgeschakeld worden via Instellingen",
+        "**Delivery Notes statistieken** in het Financieel Dashboard",
+        "**Medewerker onboarding**, functiebeschrijvingen en visitekaartjes bij HR",
+        "**E-mail: Rich text editor** met opmaak (vet, cursief, lijsten, afbeeldingen, kleur, links)",
+        "**E-mail: Handtekening uit ERPNext** (Email Account, User, Employee) met afbeeldingen",
+        "**E-mail: Vervolgacties** — Taak, Offerte, Project of Inkoopfactuur aanmaken vanuit email",
+        "**E-mail: Project koppeling** met slimme matching op afzender, onderwerp en klant",
+        "**E-mail: CRM zoeken** — contacten doorzoeken vanuit email",
+        "**E-mail: Contact status** — toon of afzender in ERPNext zit, zo niet: direct toevoegen",
+        "**E-mail: ERPNext indicator** — toon of email als Communication in ERPNext staat",
+        "**E-mail: Bijlage preview** — PDF en afbeeldingen inline bekijken",
+        "**E-mail: gelezen/ongelezen** functionaliteit met badges en markeer gelezen/ongelezen",
+        "**E-mail: NextCloud File Picker** met Link- en Bijlage-opties",
+        "**Sidebar badge counts** voor Email en Berichten (ongelezen teller)",
+        "**Module zoekfilter** in de navigatiebalk om snel modules te vinden",
+        "**Release notes pagina** met GitHub releases integratie",
+        "**Over Y-app** sectie in Instellingen met versie-info en release notes",
+        "**Facturabel (billable)** fix voor urenregistratie",
+        "**Vakantieplanning** fixes (DST-correctie, contracturen vanuit Shift Plan, alle medewerkers in kalender, en meer)",
+        "**Cache progressive fallback** voor ERPNext veld-compatibiliteit",
+        "**Sidebar**: Taken en Subtaken onder Quick Start, secties visueel verbeterd",
+        "Backend poort gewijzigd naar 3500"
+      ],
+      "firstDate": "2026-03-18",
+      "lastDate": "2026-03-18",
+      "releaseCount": 1,
+      "changeCount": 27
+    },
+    {
+      "minorVersion": "0.15",
+      "releases": [
+        {
+          "tag": "v0.15.0",
+          "name": "Y-app v0.15.0",
+          "date": "2026-04-21",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.15.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-21",
+      "lastDate": "2026-04-21",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.14",
+      "releases": [
+        {
+          "tag": "v0.14.0",
+          "name": "Y-app v0.14.0",
+          "date": "2026-04-20",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.14.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-20",
+      "lastDate": "2026-04-20",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.13",
+      "releases": [
+        {
+          "tag": "v0.13.0",
+          "name": "Y-app v0.13.0",
+          "date": "2026-04-17",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.13.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-17",
+      "lastDate": "2026-04-17",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.12",
+      "releases": [
+        {
+          "tag": "v0.12.0",
+          "name": "Y-app v0.12.0",
+          "date": "2026-04-16",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.12.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-16",
+      "lastDate": "2026-04-16",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.11",
+      "releases": [
+        {
+          "tag": "v0.11.6",
+          "name": "Y-app v0.11.6",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.6",
+          "changes": [],
+          "patchNum": 6
+        },
+        {
+          "tag": "v0.11.5",
+          "name": "Y-app v0.11.5",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.5",
+          "changes": [],
+          "patchNum": 5
+        },
+        {
+          "tag": "v0.11.4",
+          "name": "Y-app v0.11.4",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.4",
+          "changes": [],
+          "patchNum": 4
+        },
+        {
+          "tag": "v0.11.3",
+          "name": "Y-app v0.11.3",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.3",
+          "changes": [],
+          "patchNum": 3
+        },
+        {
+          "tag": "v0.11.2",
+          "name": "Y-app v0.11.2",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.2",
+          "changes": [],
+          "patchNum": 2
+        },
+        {
+          "tag": "v0.11.1",
+          "name": "Y-app v0.11.1",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.1",
+          "changes": [],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.11.0",
+          "name": "Y-app v0.11.0",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.11.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-14",
+      "lastDate": "2026-04-14",
+      "releaseCount": 7,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.10",
+      "releases": [
+        {
+          "tag": "v0.10.0",
+          "name": "Y-app v0.10.0",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.10.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-14",
+      "lastDate": "2026-04-14",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.9",
+      "releases": [
+        {
+          "tag": "v0.9.0",
+          "name": "Y-app v0.9.0",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.9.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-14",
+      "lastDate": "2026-04-14",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.8",
+      "releases": [
+        {
+          "tag": "v0.8.0",
+          "name": "Y-app v0.8.0",
+          "date": "2026-04-14",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.8.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-14",
+      "lastDate": "2026-04-14",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.7",
+      "releases": [
+        {
+          "tag": "v0.7.1",
+          "name": "Y-app v0.7.1",
+          "date": "2026-04-13",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.7.1",
+          "changes": [],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.7.0",
+          "name": "Y-app v0.7.0",
+          "date": "2026-04-13",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.7.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-04-13",
+      "lastDate": "2026-04-13",
+      "releaseCount": 2,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "0.3",
+      "releases": [
+        {
+          "tag": "v0.3.3",
+          "name": "v0.3.3",
+          "date": "2026-03-21",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.3.3",
+          "changes": [],
+          "patchNum": 3
+        },
+        {
+          "tag": "v0.3.2",
+          "name": "v0.3.2 — Y-mini isolation fix, modern scrollbars, improved login",
+          "date": "2026-03-21",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.3.2",
+          "changes": [
+            "**Y-mini credentials isolation** — module-level initialization moved into `startServer()`, Y-mini now correctly starts with 0 instances",
+            "**isMiniMode reference error** — crash in save-session endpoint fixed",
+            "**OAuth2 Graph API** — explicit scopes for Teams (Chat.Read) and Calendar (Calendars.Read)",
+            "**Modern scrollbars** — thin, rounded scrollbars in Electron (WebKit + Firefox)",
+            "**Improved Y-mini login screen** — glassmorphism design with animations, version footer, gradient background",
+            "**Comprehensive README** — full feature overview of all 40+ modules and integrations",
+            "Y-mini portable output now goes to `release/` instead of `release-mini/`",
+            "Better error messages for missing Azure consent"
+          ],
+          "patchNum": 2
+        }
+      ],
+      "allChanges": [
+        "**Y-mini credentials isolation** — module-level initialization moved into `startServer()`, Y-mini now correctly starts with 0 instances",
+        "**isMiniMode reference error** — crash in save-session endpoint fixed",
+        "**OAuth2 Graph API** — explicit scopes for Teams (Chat.Read) and Calendar (Calendars.Read)",
+        "**Modern scrollbars** — thin, rounded scrollbars in Electron (WebKit + Firefox)",
+        "**Improved Y-mini login screen** — glassmorphism design with animations, version footer, gradient background",
+        "**Comprehensive README** — full feature overview of all 40+ modules and integrations",
+        "Y-mini portable output now goes to `release/` instead of `release-mini/`",
+        "Better error messages for missing Azure consent"
+      ],
+      "firstDate": "2026-03-21",
+      "lastDate": "2026-03-21",
+      "releaseCount": 2,
+      "changeCount": 8
+    }
+  ]
+}

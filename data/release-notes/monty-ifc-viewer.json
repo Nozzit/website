@@ -1,0 +1,60 @@
+{
+  "repo": "monty-ifc-viewer",
+  "generated": "2026-05-06T07:47:04.334Z",
+  "totalReleases": 2,
+  "totalChanges": 8,
+  "latestStable": {
+    "tag": "v1.0.1",
+    "name": "Monty IFC Viewer v1.0.1",
+    "date": "2026-02-23",
+    "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/tag/v1.0.1"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "1.0",
+      "releases": [
+        {
+          "tag": "v1.0.1",
+          "name": "Monty IFC Viewer v1.0.1",
+          "date": "2026-02-23",
+          "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/tag/v1.0.1",
+          "changes": [
+            "IFC file viewer with 3D visualization",
+            "Build sequence animation",
+            "Parameter-based element coloring",
+            "Multi-document support with tab switching"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v1.0.0",
+          "name": "Monty IFC Viewer v1.0.0",
+          "date": "2026-02-23",
+          "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/tag/v1.0.0",
+          "changes": [
+            "IFC file viewer with 3D visualization",
+            "Build sequence animation",
+            "Parameter-based element coloring",
+            "Multi-document support with tab switching"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "IFC file viewer with 3D visualization",
+        "Build sequence animation",
+        "Parameter-based element coloring",
+        "Multi-document support with tab switching",
+        "IFC file viewer with 3D visualization",
+        "Build sequence animation",
+        "Parameter-based element coloring",
+        "Multi-document support with tab switching"
+      ],
+      "firstDate": "2026-02-23",
+      "lastDate": "2026-02-23",
+      "releaseCount": 2,
+      "changeCount": 8
+    }
+  ]
+}

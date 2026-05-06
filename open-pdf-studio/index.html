@@ -30,9 +30,9 @@
   <section class="hero">
     <span class="section-label" data-i18n="header.label">Open-source PDF editor</span>
     <h1 data-i18n="header.title">Open <span class="accent">PDF</span> Studio</h1>
-    <p class="tagline" data-i18n="header.desc">Professional PDF annotation, markup and editing — without subscriptions, telemetry, or bloatware. Powered by a custom <strong>Rust PDF engine</strong> for fast vector PDF rendering, even on large CAD-style drawings. Built with Tauri 2 and SolidJS.</p>
+    <p class="tagline" data-i18n="header.desc">Professional-grade PDF annotation, markup, and editing without subscriptions, telemetry, or bloatware. Built with Tauri 2 and SolidJS.</p>
     <div class="btn-group">
-      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn">Download v1.47.5</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn">Download v1.47.0</a>
       <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">View source</a>
     </div>
   </section>
@@ -42,6 +42,11 @@
         <div class="slider-track" id="sliderTrack">
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio.jpeg" alt="Open PDF Studio screenshot"></div>
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio-2.jpeg" alt="Open PDF Studio screenshot 2"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio-3.png" alt="Open PDF Studio screenshot 3"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio-4.png" alt="Open PDF Studio screenshot 4"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio-5.png" alt="Open PDF Studio screenshot 5"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio-6.jpeg" alt="Open PDF Studio screenshot 6"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pdf-studio-7.jpeg" alt="Open PDF Studio screenshot 7"></div>
         </div>
         <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
         <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
@@ -49,20 +54,29 @@
       <div class="slider-dots" id="sliderDots"></div>
     </div>
 
+    <!-- Rust PDF performance highlight -->
+    <section class="section" style="background: var(--night-build); padding: 3rem 1.5rem;">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <p style="font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--warm-gold); margin-bottom: var(--sp-4);" data-i18n="performance.label">Rust PDF Engine</p>
+        <h2 style="color: white; font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: var(--sp-4);" data-i18n="performance.title">Razendsnelle <span style="color: var(--amber);">vector PDFs</span></h2>
+        <p style="color: var(--scaffold-gray); font-size: 1rem; line-height: 1.7; max-width: 700px; margin: 0 auto;" data-i18n="performance.desc">Open PDF Studio gebruikt een eigen Rust PDF-engine voor maximale prestaties. Vector-PDF-bestanden — zoals technische tekeningen, plattegronden en complexe diagrammen — worden razendsnel gerenderd, zelfs bij honderden pagina's. Geen JavaScript-bottleneck, geen wachten op rendering.</p>
+      </div>
+    </section>
+
   <section class="section" id="download"><div class="container">
     <div class="download-section">
-      <h3 data-i18n="download.title">Download v1.47.5</h3>
+      <h3 data-i18n="download.title">Download v1.47.0</h3>
       <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size">19.9 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.5/Open.PDF.Studio_1.47.5_x64-setup.exe" class="btn btn-primary btn-sm">Download .exe</a></div>
-        <div class="download-item"><div class="os">macOS (universal)</div><div class="size">35.2 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.5/Open.PDF.Studio_1.47.5_universal.dmg" class="btn btn-primary btn-sm">Download .dmg</a></div>
-        <div class="download-item"><div class="os">Linux (deb)</div><div class="size">18.5 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.5/Open.PDF.Studio_1.47.5_amd64.deb" class="btn btn-primary btn-sm">Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size">95.3 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.5/Open.PDF.Studio_1.47.5_amd64.AppImage" class="btn btn-primary btn-sm">Download AppImage</a></div>
-        <div class="download-item"><div class="os">Android</div><div class="size">31.7 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.5/open-pdf-studio-release.apk" class="btn btn-primary btn-sm">Download .apk</a></div>
+        <div class="download-item"><div class="os">Windows</div><div class="size">8.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.0/Open.PDF.Studio_1.47.0_x64-setup.exe" class="btn btn-primary btn-sm">Download .exe</a></div>
+        <div class="download-item"><div class="os">macOS (universal)</div><div class="size">22.2 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.0/Open.PDF.Studio_1.47.0_universal.dmg" class="btn btn-primary btn-sm">Download .dmg</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size">11.7 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.0/Open.PDF.Studio_1.47.0_amd64.deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size">85.1 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.0/Open.PDF.Studio_1.47.0_amd64.AppImage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+        <div class="download-item"><div class="os">Android</div><div class="size">21.9 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.0/open-pdf-studio-release.apk" class="btn btn-primary btn-sm">Download .apk</a></div>
         <div class="download-item"><div class="os">Linux (snap)</div><div class="size">via Snap Store</div>
           <a href="https://snapcraft.io/open-pdf-studio" class="btn btn-primary btn-sm">Snap Store</a></div>
       </div>
@@ -124,106 +138,9 @@
     </div>
   </div></section>
 
-  <!-- Release Notes -->
-  <section style="background: white; padding: 3rem 1.5rem;">
-    <div style="max-width: 900px; margin: 0 auto;">
-      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem; color: var(--deep-forge); margin-bottom: var(--sp-2);" data-i18n="releases.title">Release notes</h2>
-      <p style="color: #57534E; margin-bottom: var(--sp-6);" data-i18n="releases.desc">Versiegeschiedenis live opgehaald van GitHub. Toont de laatste 15 releases.</p>
-      <div id="release-notes" style="display: flex; flex-direction: column; gap: var(--sp-3);">
-        <p style="color: var(--scaffold-gray); font-size: 0.875rem;" data-i18n="releases.loading">Releases laden...</p>
-      </div>
-      <p style="margin-top: var(--sp-4); font-size: 0.8125rem; color: var(--scaffold-gray);">
-        <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio/releases" target="_blank" rel="noopener" style="color: var(--amber);" data-i18n="releases.viewAll">Bekijk alle releases op GitHub &rarr;</a>
-      </p>
-    </div>
-  </section>
-
-  <style>
-    .release-card {
-      background: var(--blueprint-white);
-      border: 1px solid #E7E5E4;
-      border-radius: var(--radius-md);
-      padding: var(--sp-4) var(--sp-5);
-      transition: border-color 0.15s ease;
-    }
-    .release-card:hover { border-color: var(--amber); }
-    .release-card.latest { border-color: var(--amber); background: #FFFBEB; }
-    .release-card.nightly { border-color: #6366F1; background: #EEF2FF; }
-    .release-header {
-      display: flex; align-items: center; gap: var(--sp-3);
-      flex-wrap: wrap; margin-bottom: var(--sp-2);
-    }
-    .release-tag {
-      font-family: var(--font-code); font-weight: 700; font-size: 0.95rem;
-      color: var(--deep-forge);
-    }
-    .release-date {
-      font-family: var(--font-code); font-size: 0.75rem;
-      color: var(--scaffold-gray);
-    }
-    .release-badge {
-      font-family: var(--font-code); font-size: 0.65rem;
-      font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;
-      padding: 2px 8px; border-radius: var(--radius-full);
-    }
-    .badge-latest { background: #FED7AA; color: #9A3412; }
-    .badge-nightly { background: #C7D2FE; color: #3730A3; }
-    .release-title { font-size: 0.875rem; color: var(--deep-forge); font-weight: 600; }
-    .release-body {
-      font-size: 0.8125rem; color: #57534E; line-height: 1.5;
-      margin-top: var(--sp-2); white-space: pre-wrap;
-      max-height: 200px; overflow-y: auto;
-    }
-    .release-link {
-      font-size: 0.75rem; color: var(--amber); text-decoration: none;
-      margin-top: var(--sp-2); display: inline-block;
-    }
-  </style>
-
-  <script>
-    (function() {
-      fetch('https://api.github.com/repos/OpenAEC-Foundation/open-pdf-studio/releases?per_page=15')
-        .then(r => r.json())
-        .then(releases => {
-          const container = document.getElementById('release-notes');
-          if (!container || !Array.isArray(releases)) return;
-
-          container.innerHTML = releases.map((rel, idx) => {
-            const isNightly = rel.tag_name === 'nightly' || rel.prerelease;
-            const isLatest = idx === 0 && !isNightly;
-            const cardClass = isNightly ? 'nightly' : (isLatest ? 'latest' : '');
-            const badge = isLatest
-              ? '<span class="release-badge badge-latest">Latest</span>'
-              : isNightly
-              ? '<span class="release-badge badge-nightly">Nightly</span>'
-              : '';
-            const date = rel.published_at?.substring(0, 10) || '';
-            const body = (rel.body || '')
-              .replace(/</g, '&lt;')
-              .replace(/^## .*$/gm, '')
-              .replace(/^### Downloads[\s\S]*$/m, '')
-              .trim();
-
-            return `
-              <div class="release-card ${cardClass}">
-                <div class="release-header">
-                  <span class="release-tag">${rel.tag_name}</span>
-                  <span class="release-date">${date}</span>
-                  ${badge}
-                </div>
-                <div class="release-title">${rel.name || rel.tag_name}</div>
-                ${body ? `<div class="release-body">${body}</div>` : ''}
-                <a href="${rel.html_url}" target="_blank" rel="noopener" class="release-link">Bekijk op GitHub &rarr;</a>
-              </div>
-            `;
-          }).join('');
-        })
-        .catch(() => {
-          const container = document.getElementById('release-notes');
-          if (container) container.innerHTML = '<p style="color: var(--scaffold-gray);">Kon release notes niet laden.</p>';
-        });
-    })();
-  </script>
+  <!-- Release Notes (shared component) -->
+  <div data-release-notes="open-pdf-studio" data-limit="15"></div>
+  <script src="/shared/release-notes.js"></script>
 
   <section style="background: var(--concrete); padding: 3rem 1.5rem; text-align: center;">
     <div style="max-width: 900px; margin: 0 auto; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">

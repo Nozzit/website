@@ -1,0 +1,79 @@
+{
+  "repo": "open-frame-studio",
+  "generated": "2026-05-06T07:47:03.593Z",
+  "totalReleases": 2,
+  "totalChanges": 12,
+  "latestStable": {
+    "tag": "v0.2.0",
+    "name": "Open Frame Studio v0.2.0",
+    "date": "2026-04-08",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.2.0"
+  },
+  "nightly": null,
+  "groups": [
+    {
+      "minorVersion": "0.2",
+      "releases": [
+        {
+          "tag": "v0.2.0",
+          "name": "Open Frame Studio v0.2.0",
+          "date": "2026-04-08",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.2.0",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)"
+      ],
+      "firstDate": "2026-04-08",
+      "lastDate": "2026-04-08",
+      "releaseCount": 1,
+      "changeCount": 6
+    },
+    {
+      "minorVersion": "0.1",
+      "releases": [
+        {
+          "tag": "v0.1.0",
+          "name": "Open Frame Studio v0.1.0",
+          "date": "2026-04-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.1.0",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)"
+      ],
+      "firstDate": "2026-04-02",
+      "lastDate": "2026-04-02",
+      "releaseCount": 1,
+      "changeCount": 6
+    }
+  ]
+}

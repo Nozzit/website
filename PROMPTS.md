@@ -936,3 +936,291 @@ feedback werkt nog niet. Maar het werkt wel bij de andere tools van ons. Dus vol
 ### 2026-04-01 23:05
 open-feedback-studio.open-aec.com dat hoeft niet m.i.
 
+### 2026-04-01 23:09
+Voeg toe op de website van de Foundation bij inkomsten --> extensions ontwikkelen op de software voor specifieke wensen van opdrachtgevers.
+
+### 2026-04-01 23:42
+Bij diensten voeg ook toe: Alle tools beschikbaar in 1 ecosysteem, redundant, Single Sign On (SSO) en met Lokale AI als orchestrator voor de aansturing.
+
+### 2026-04-03 10:01
+Je mag ook het logo van Van Dorp Installatie Techniek toevoegen aan de contributors en ook het logo van betonstaal.nl
+
+### 2026-04-03 10:06
+Het een de preview van de website goed, wat dit niet er niet uit.
+
+### 2026-04-03 10:18
+go
+
+### 2026-04-03 10:48
+Ik eerste dat als ik het de website op m'n telefoon bekeek, dat die eerste tekst een beetje buiten het scherm of waar valt. Dus 'open source komt buiten het scherm als ik nu op een telefoon bekijk. Het gaan voor over het eerste stukje. En wat ook mooi zou zijn, is dat als je bovenaan deze website in de mobile view een voor hamburger krijgt, waar je een die lopen kan klappen. Nu uit alles in een hele lange pagina onder elkaar. En bij de andere pagina's waar je dan naartoe ligt, moet ook ditzelfde menu dan zichtbaar zijn.
+
+### 2026-04-03 11:16
+De tekst 'Wij onwikkelen etc'valt ook nog deels buiten het scherm in mobile view
+
+### 2026-04-03 11:19
+Hamburger menu icon mag meer met de 'drie streepjes' zijn. Bij Monty IFC-Viewer een link naar de live versie toevoegen.
+
+### 2026-04-03 16:52
+Ik wil dat de pagina's een shared nav hebben. Een drop-in html
+
+### 2026-04-03 18:51
+Ja!
+
+### 2026-04-03 19:26
+Laat de website in preview zien
+
+### 2026-04-03 19:55
+Ik wil een pagina aanmaken met statistieken. Dus aantal repo's. Aantal contributors, stars, commits, lines of code, code per maand. etc.
+
+### 2026-04-03 20:11
+1
+
+### 2026-04-03 20:20
+Bij de statsitieken zou ik wat meer grafieken willen zien qua ontwikkeling. Dus aantal repo's, aantal contributors. Ook aantal issues in de tijd.
+
+### 2026-04-03 20:26
+Laat de statistieken starten vanaf december 2025
+
+### 2026-04-03 20:36
+De regels code wil ik rekenen vanaf 1 januari
+
+### 2026-04-03 20:42
+De grafiek moet een lijn grafiek zijn en geen kolom diagram
+
+### 2026-04-03 20:51
+De statistiek breedte moet per dag zijn. wel alleen maanden vermleden op de x-as. Nu is het per maand en vlakt de statistiek af terwijl dat niet klopt omdat het nu net de 1e van de maand is.
+
+### 2026-04-03 20:56
+Ik wel ook dat je hier een pagina gaan toevoegen met iets van beleid en dat we er een stuk over zitten over juridies, dat ergens ook staan dat bij voornemens zijn om, in principe wat volgens het Europees echt toegestaan is, om elk 'closed binary'-formaat, dat wat een doelstelling van de stichting, om alles 'closed binary'-formaten te ontlenen in het 'clean room', dat deze 'compatible' worden in het nieuwe ecosysteem. Dat bij ook voor een bestelling hebben dat alles worden en alles dat die het nog is om een vergunningsaanvraag te kunnen doen, 100% gratis toegankelijk moeten kunnen zijn voor alles burgers en bedrijven.
+
+### 2026-04-03 21:46
+https://www.open-aec.com/nieuws/ . Breid dit uit t/m 1 januari. Het mogen best 1200 items zijn. En dat ook weer in een statistiek zetten
+
+### 2026-04-07 13:28
+Maak een productpagina aan op de website voor OpenAEC BCF Manager Studio.
+
+### 2026-04-10 11:54
+Ik mis nog die BCF Manager Studio op de voorpagina. En ik wil eigenlijk even dat je even een refresh doet op de GitHub repository. Wat is er allemaal bij gekomen? En zet die ook even bij de producten op de frontpage erbij.
+
+### 2026-04-10 21:18
+Open Agents mag ervanaf
+
+### 2026-04-11 12:09
+Maak een issue bij OpenSpeed Studio aan op GitHub. Die zegt eigenlijk dat het optioneel is om een enter commando na het transcriptie toe te voegen. Want dan, nadat de transcriptie heeft plaatsgevonden, wordt die gelijk gepusht en dan vindt de prompt gelijk plaats.
+
+### 2026-04-15 12:07
+De nieuwsblokken zijn niet meer geüpdatet sinds 2 april. Kun je deze even updaten, tot nu, op basis van alle activiteiten die er op GitHub hebben plaatsgevoren. En nu kun je ook even kijken of die GitHub Action misschien ingetriggerd kan worden, want nu werkt het niet.
+
+### 2026-04-15 12:17
+Zijn er geen releases geweest sinds 8 april? Dat kan ik me bijna niet voorstellen.
+
+### 2026-04-15 15:18
+The english version of the website is not complete. Update the complete website for the english version
+
+### 2026-04-15 15:33
+<task-notification>
+<task-id>ae6a5a493b9a78054</task-id>
+<tool-use-id>toolu_01VGVwbuQqgzn5rdLULA6Tjf</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\ae6a5a493b9a78054.output</output-file>
+<status>completed</status>
+<summary>Agent "Translate tool product pages batch 1" completed</summary>
+<result>All 6 JSON files are valid. Here is a summary of what was done:
+
+---
+
+**All 6 product pages have been fully prepared for i18n.** For each page, three changes were made:
+
+### HTML changes (per page):
+1. **Added `&lt;meta name="i18n-page" content="..."&gt;` in `&lt;head&gt;`** -- tells the i18n system which translation JSON to fetch
+2. **Added `data-i18n="..."` attributes to all translatable text elements** -- marks elements for translation
+3. **Added `&lt;script src="/shared/i18n.js"&gt;&lt;/script&gt;` before `&lt;/body&gt;`** -- loads the translation engine
+
+### Translation JSON files created:
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-2d-studio.json` (26 keys)
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-pdf-studio.json` (34 keys)
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-energy-studio.json` (29 keys)
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-planner-studio.json` (32 keys)
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-pointcloud-studio.json` (22 keys)
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\monty-ifc-viewer.json` (22 keys)
+
+### Key structure used consistently across all pages:
+- `header.*` -- hero section (label, title, desc, downloadBtn, sourceBtn)
+- `download.title` -- download section heading
+- `features.heading` + `features.&lt;name&gt;.title` / `features.&lt;name&gt;.desc` -- feature cards
+- `tech.heading` + `tech.&lt;name&gt;.title` / `tech.&lt;name&gt;.desc` -- tech stack cards
+- `cta.demo` / `cta.github` -- bottom call-to-action buttons
+- `footer.slogan` -- footer tagline
+
+Total: **165 `data-i18n` attributes** across the 6 HTML files, all with matching keys in the JSON translation files. No commits were made.</result>
+<usage><total_tokens>100503</total_tokens><tool_uses>73</tool_uses><duration_ms>562979</duration_ms></usage>
+</task-notification>
+
+### 2026-04-15 15:34
+<task-notification>
+<task-id>addc15236544dfb3c</task-id>
+<tool-use-id>toolu_011UBANCMUfS2Aif66f93H2a</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\addc15236544dfb3c.output</output-file>
+<status>completed</status>
+<summary>Agent "Translate tool product pages batch 2" completed</summary>
+<result>Good counts -- bcf-manager-studio has 35 data-i18n attributes (it's the largest page), open-field-studio has 29, open-speech-studio has 22. All looks correct.
+
+Here is a summary of what was done:
+
+**All 8 product pages have been fully i18n-ized with English translations:**
+
+### HTML modifications (per page):
+1. Added `&lt;meta name="i18n-page" content="pagename"&gt;` in `&lt;head&gt;`
+2. Added `&lt;script src="/shared/i18n.js"&gt;&lt;/script&gt;` before `&lt;/body&gt;`
+3. Added `data-i18n` attributes to all translatable text elements (header labels, titles, descriptions, status badges, section headings, feature card titles/descriptions, CTA button text, highlight blocks, BCF explainer content, tech descriptions)
+
+### Files modified:
+- `C:\Users\rickd\Documents\GitHub\website\open-calc-studio\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\open-field-studio\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\open-heatloss-studio\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\open-speech-studio\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\open-3d-viewer\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\openaec-cloud\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\openaec-docs\index.html`
+- `C:\Users\rickd\Documents\GitHub\website\bcf-manager-studio\index.html`
+
+### Files created (English translation JSONs):
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-calc-studio.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-field-studio.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-heatloss-studio.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-speech-studio.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\open-3d-viewer.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\openaec-cloud.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\openaec-docs.json`
+- `C:\Users\rickd\Documents\GitHub\website\shared\translations\bcf-manager-studio.json`
+
+### Key translation decisions:
+- "OpenAEC Ecosysteem" -&gt; "OpenAEC Ecosystem" (consistent across all pages)
+- "Functionaliteiten" -&gt; "Features"
+- "Bekijk op GitHub" -&gt; "View on GitHub"
+- "Live demo bekijken" -&gt; "View live demo"
+- "In ontwikkeling" -&gt; "In development" (BCF Manager Studio badge)
+- "Sneltoetsen" -&gt; "Keyboard shortcuts" (Speech Studio)
+- Brand names (STABU/RAW, IFCX, NEN 12831, NTA 8800, BCF, Nextcloud, etc.) kept as-is
+- HTML markup within translations preserved (e.g. `&lt;span class="accent"&gt;`)</result>
+<usage><total_tokens>124392</total_tokens><tool_uses>88</tool_uses><duration_ms>588332</duration_ms></usage>
+</task-notification>
+
+### 2026-04-15 15:39
+<task-notification>
+<task-id>ac5ae5c781fb414c4</task-id>
+<tool-use-id>toolu_01HgPTLZzSHJC3HyeLrBZ6MA</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\ac5ae5c781fb414c4.output</output-file>
+<status>completed</status>
+<summary>Agent "Translate content and utility pages" completed</summary>
+<result>Everything looks correct. Let me provide a summary of what was done.
+
+All 15 pages have been fully processed with the i18n system:
+
+**For each HTML file, the following was added:**
+1. `&lt;meta name="i18n-page" content="pagename"&gt;` in `&lt;head&gt;`
+2. `&lt;script src="/shared/i18n.js"&gt;&lt;/script&gt;` before `&lt;/body&gt;`
+3. `data-i18n="section.key"` attributes on all translatable text elements
+
+**Translation JSON files created in `/shared/translations/`:**
+
+| # | HTML File | JSON File | data-i18n attrs |
+|---|-----------|-----------|-----------------|
+| 1 | `architectuur/index.html` | `architectuur.json` | 51 |
+| 2 | `beleid/index.html` | `beleid.json` | 37 |
+| 3 | `credits/index.html` | `credits.json` | 8 |
+| 4 | `diensten/index.html` | `diensten.json` | 15 |
+| 5 | `disclaimer/index.html` | `disclaimer.json` | 14 |
+| 6 | `faq/index.html` | `faq.json` | 8 |
+| 7 | `ifcx/index.html` | `ifcx.json` | 17 |
+| 8 | `roadmap/index.html` | `roadmap.json` | 9 |
+| 9 | `supporters/index.html` | `supporters.json` | 15 |
+| 10 | `over-ons.html` | `over-ons.json` | 20 |
+| 11 | `offerte/index.html` | `offerte.json` | 19 |
+| 12 | `nieuws/index.html` | `nieuws.json` | 6 |
+| 13 | `statistieken/index.html` | `statistieken.json` | 27 |
+| 14 | `y-app/index.html` | `y-app.json` | 17 |
+| 15 | `open-safety-studio/index.html` | `open-safety-studio.json` | 19 |
+
+**Translation notes applied:**
+- "Stichting" translated to "Foundation"
+- "Bouwsector" translated to "Construction sector"
+- "Kostenraming" translated to "Cost estimation"
+- "Vergunningsaanvraag" translated to "Permit application"
+- "Warmteverlies" translated to "Heat loss"
+- "Oplevering" translated to "Handover"
+- "Bouwplaats" translated to "Construction site"
+- "Ondersteuning" translated to "Support"
+- EU Directive references kept accurate (2009/24/EC)
+
+**Key files modified:** All 15 HTML files listed above were modified in-place. 15 new JSON files were created under `C:\Users\rickd\Documents\GitHub\website\shared\translations\`. The existing `shared/i18n.js` was not modified -- it already handles the translation system correctly by reading the `i18n-page` meta tag and fetching the corresponding JSON file.</result>
+<usage><total_tokens>197896</total_tokens><tool_uses>97</tool_uses><duration_ms>907355</duration_ms></usage>
+</task-notification>
+
+### 2026-04-15 20:03
+Bij de engelse versie is Statistieken nog steeds nederlands.
+
+### 2026-04-15 20:06
+Bij newsitems: Als er op 1 dag meerdere releases van 1 app uitkomen moet die gegroepeerd zijn in 1 nieuwsitem
+
+### 2026-05-01 16:43
+Geef deze pagina een update: https://www.open-aec.com/open-calc-studio/
+
+### 2026-05-01 17:09
+Zet een nieuwe screenshot bij Open Calc Studio C:\Users\rickd\Documents\GitHub\website\open-calc-studio
+
+### 2026-05-01 17:13
+Pas ook het screenshot van de OpenCore Studio aan op de hoofdpagina. https://www.open-aec.com/
+
+### 2026-05-01 17:17
+Copy en paste werkt neit bij de spreadsheets tool
+
+### 2026-05-01 17:18
+delete moet werken bij een selectie van cellen
+
+### 2026-05-02 07:09
+https://www.open-aec.com/open-calc-studio/ versie klopt niet --> 0.7.2 moet dat zijn
+
+### 2026-05-04 11:43
+Open even de presentatie van de Foundation.
+
+### 2026-05-04 20:59
+Check even de laatste edits van GIthub
+
+### 2026-05-04 21:02
+we werken nu vanaf open-calc-studio
+
+### 2026-05-06 09:33
+Update de nieuwspagina.
+
+### 2026-05-06 09:43
+Ik wil eigenlijk bij de pagina, bij alle product pages van de software, vind ik eigenlijk dat er een scherm wordt geïnteresseerd met release notes. En deze moet aan de ene kant dus gewoon uit release notes komen, die bij releases staan in GitHub in principe. Maar het moet ook wel geüpdate worden in het Engels en in het Nederlands. Dus ik denk dat het eigenlijk toch een dubbele pagina is.
+
+### 2026-05-06 09:49
+<task-notification>
+<task-id>a64ef2bad63e3bc4a</task-id>
+<tool-use-id>toolu_01GSxcAkXcjZvwLPPDg8czzs</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a64ef2bad63e3bc4a.output</output-file>
+<status>completed</status>
+<summary>Agent "Add release notes to all product pages" completed</summary>
+<result>All 14 files were edited successfully. Each one now has the release notes component injected immediately before the `&lt;footer` tag with the correct repo name.
+
+Files updated (with their REPO_NAME):
+- `C:\Users\rickd\Documents\GitHub\website\open-2d-studio\index.html` → `open-2d-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-calc-studio\index.html` → `open-calc-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-energy-studio\index.html` → `open-energy-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-planner-studio\index.html` → `open-planner-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-pointcloud-studio\index.html` → `open-pointcloud-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-heatloss-studio\index.html` → `open-heatloss-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-speech-studio\index.html` → `open-speech-studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-field-studio\index.html` → `Open-Field-Studio`
+- `C:\Users\rickd\Documents\GitHub\website\open-3d-viewer\index.html` → `open-3d-viewer`
+- `C:\Users\rickd\Documents\GitHub\website\monty-ifc-viewer\index.html` → `monty-ifc-viewer`
+- `C:\Users\rickd\Documents\GitHub\website\openaec-cloud\index.html` → `openaec-cloud`
+- `C:\Users\rickd\Documents\GitHub\website\openaec-docs\index.html` → `openaec-docs`
+- `C:\Users\rickd\Documents\GitHub\website\bcf-manager-studio\index.html` → `openaec-bcf-platform`
+- `C:\Users\rickd\Documents\GitHub\website\y-app\index.html` → `Y-app`
+
+No commits made, as requested.</result>
+<usage><total_tokens>43038</total_tokens><tool_uses>29</tool_uses><duration_ms>56627</duration_ms></usage>
+</task-notification>
+
