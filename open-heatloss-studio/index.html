@@ -125,8 +125,9 @@
   <header class="page-header">
     <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
     <h1 data-i18n="header.title">Open Heatloss <span class="accent">Studio</span></h1>
-    <p data-i18n="header.desc">Open source warmteverliesberekening voor gebouwen conform NEN 12831.</p>
+    <p data-i18n="header.desc">Open source warmteverliesberekening voor woningen en utiliteit conform NEN 12831 en ISSO 51:2023. Rust rekenkern, IFCX-integratie, PDF-rapporten.</p>
     <span class="status-badge" data-i18n="header.badge">Beta</span>
+    <div style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-code); font-size: 0.7rem; color: var(--scaffold-gray); margin-top: var(--sp-2);">260 commits &middot; Rust + TypeScript &middot; Tauri 2 &middot; NEN 12831 / ISSO 51</div>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
@@ -146,9 +147,23 @@
     </div>
 
     <div class="content">
+      <!-- Norm explainer -->
+      <div class="bcf-explainer">
+        <h3 data-i18n="norm.title">Welke normen worden ondersteund?</h3>
+        <p data-i18n="norm.desc">Open Heatloss Studio implementeert de officiële Nederlandse en Europese normen voor warmteverliesberekeningen. Volledig conform de geldende methodieken voor verwarmingsontwerp en energieprestaties.</p>
+        <ul>
+          <li data-i18n="norm.list1"><strong>NEN-EN 12831-1:2017</strong> — Energieprestatie van gebouwen, methode voor berekening van het ontwerpwarmteverlies</li>
+          <li data-i18n="norm.list2"><strong>NEN 12831-1+NEN 1:2019/A1:2021</strong> — Nederlandse nationale aanvulling</li>
+          <li data-i18n="norm.list3"><strong>ISSO 51:2023</strong> — Warmteverliesberekening voor woningen en woongebouwen</li>
+          <li data-i18n="norm.list4"><strong>ISSO 53/57</strong> — Methodieken voor utiliteitsbouw en complexe gebouwen</li>
+          <li data-i18n="norm.list5"><strong>NTA 8800</strong> — Energieprestatie integraal (BENG)</li>
+        </ul>
+      </div>
+
       <div class="content-block">
         <h2 data-i18n="why.title">Waarom Open Heatloss <span class="accent">Studio</span>?</h2>
-        <p data-i18n="why.desc">Warmteverliesberekeningen zijn essentieel voor het ontwerp van verwarmingssystemen en energieprestaties van gebouwen. Open Heatloss Studio biedt een toegankelijk, open source alternatief voor dure commerciële software, volledig conform NEN 12831.</p>
+        <p data-i18n="why.desc">Warmteverliesberekeningen zijn essentieel voor het ontwerp van verwarmingssystemen en energieprestaties van gebouwen. Open Heatloss Studio biedt een toegankelijk, open source alternatief voor dure commerciële software, volledig conform NEN 12831 en ISSO 51:2023.</p>
+        <p data-i18n="why.desc2">Gebouwd op een Rust rekenkern voor maximale snelheid en nauwkeurigheid — duizenden ruimtes worden in seconden berekend. Alles draait lokaal, geen cloud-afhankelijkheid, je projectdata blijft van jou.</p>
       </div>
 
       <div class="content-block">
@@ -156,29 +171,116 @@
         <div class="features-grid">
           <div class="feature-card">
             <h3 data-i18n="features.nen12831.title">NEN 12831 berekeningen</h3>
-            <p data-i18n="features.nen12831.desc">Volledige warmteverliesberekeningen conform NEN 12831. Nauwkeurige resultaten voor het ontwerp van verwarmingssystemen.</p>
+            <p data-i18n="features.nen12831.desc">Volledige warmteverliesberekeningen conform NEN-EN 12831-1:2017 inclusief Nederlandse nationale aanvulling.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.transmission.title">Transmissieverliezen per ruimte</h3>
-            <p data-i18n="features.transmission.desc">Gedetailleerde berekening van transmissieverliezen per ruimte, inclusief correctiefactoren voor grondgebonden constructies.</p>
+            <h3 data-i18n="features.isso51.title">ISSO 51:2023</h3>
+            <p data-i18n="features.isso51.desc">Specifieke methodiek voor warmteverliesberekening van woningen en woongebouwen volgens ISSO publicatie 51 (2023).</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.transmission.title">Transmissieverliezen</h3>
+            <p data-i18n="features.transmission.desc">Per ruimte, per constructie-onderdeel. Inclusief U-waarde berekening, lineaire warmtebruggen (Ψ-waarden) en thermische bruggen.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.ground.title">Grondgebonden constructies</h3>
+            <p data-i18n="features.ground.desc">Correctiefactoren voor vloer-op-grond, kelderwanden, kruipruimtes en aangrenzende onverwarmde ruimtes (b-factoren).</p>
           </div>
           <div class="feature-card">
             <h3 data-i18n="features.ventilation.title">Ventilatieverliezen</h3>
-            <p data-i18n="features.ventilation.desc">Berekening van ventilatieverliezen op basis van ventilatiesysteem, luchtvolumestroom en infiltratie.</p>
+            <p data-i18n="features.ventilation.desc">Natuurlijke en mechanische ventilatie, balansventilatie met WTW, lokale toevoer/afvoer en infiltratie n50-meting.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.ifcx.title">IFCX-koppeling</h3>
-            <p data-i18n="features.ifcx.desc">Importeer gebouwgeometrie en constructie-eigenschappen direct uit IFCX-modellen voor snellere invoer.</p>
+            <h3 data-i18n="features.heatup.title">Opwarmtoeslag</h3>
+            <p data-i18n="features.heatup.desc">Berekening van extra benodigd vermogen voor opwarmen na nachtverlaging — conform tabellen NEN 12831 Annex F.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.climate.title">Klimaatdata KNMI</h3>
+            <p data-i18n="features.climate.desc">Ontwerpbinnen- en buitentemperaturen per locatie. KNMI klimaatzones automatisch geselecteerd op basis van postcode.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.uvalue.title">U-waarde calculator</h3>
+            <p data-i18n="features.uvalue.desc">Bereken U-waarden van constructies laag voor laag. Materiaalbibliotheek met λ-waarden conform NEN-EN 12524 en NTA 8800.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.thermal.title">Thermische bruggen</h3>
+            <p data-i18n="features.thermal.desc">Lineaire warmtebruggen (Ψ) volgens NEN-EN ISO 14683. Standaard waarden of detail-gebaseerde berekening per knooppunt.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.ifcx.title">IFCX-import</h3>
+            <p data-i18n="features.ifcx.desc">Importeer gebouwgeometrie, ruimtes, constructies en U-waarden direct uit IFC/IFCX-modellen voor snelle invoer.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.zones.title">Zonering</h3>
+            <p data-i18n="features.zones.desc">Groepeer ruimtes per verwarmingszone, regelaar of stooklocatie. Verschillende setpoints per zone mogelijk.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.radiator.title">Radiatorenberekening</h3>
+            <p data-i18n="features.radiator.desc">Bepaal radiatorvermogen per ruimte op basis van warmteverlies, watertemperatuur en exponent. Selectie uit fabrikantbibliotheek.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.floor.title">Vloerverwarming</h3>
+            <p data-i18n="features.floor.desc">Vermogensberekening vloerverwarming per ruimte, met systeemtemperatuur, verdeelafstand en aanvoertemperatuur.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.heatpump.title">Warmtepomp dimensionering</h3>
+            <p data-i18n="features.heatpump.desc">Pre-dimensionering warmtepomp op basis van totaal warmteverlies bij ontwerptemperatuur. SCOP-indicatie per type.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.boiler.title">Ketelvermogen</h3>
+            <p data-i18n="features.boiler.desc">Bepaling boilervermogen inclusief warmwatervoorziening, gelijktijdigheidsfactoren en buffervolumes.</p>
           </div>
           <div class="feature-card">
             <h3 data-i18n="features.reports.title">Rapportgeneratie</h3>
-            <p data-i18n="features.reports.desc">Genereer overzichtelijke rapporten met warmteverlies per ruimte, totaaloverzichten en grafische weergaven.</p>
+            <p data-i18n="features.reports.desc">Volledige PDF-rapporten met dekblad, samenvatting, ruimte-overzichten, constructie-bijlagen en grafieken. Geschikt voor vergunningsaanvraag.</p>
           </div>
           <div class="feature-card">
-            <h3 data-i18n="features.library.title">Bouwfysische bibliotheek</h3>
-            <p data-i18n="features.library.desc">Uitgebreide bibliotheek met materiaalproperties, constructie-opbouwen en standaard U-waarden.</p>
+            <h3 data-i18n="features.export.title">Exports</h3>
+            <p data-i18n="features.export.desc">Export naar Excel (XLSX) voor verdere analyse, IFCX voor BIM-integratie, en JSON voor automatisering en API-koppelingen.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.library.title">Materiaalbibliotheek</h3>
+            <p data-i18n="features.library.desc">200+ standaard materialen met λ, ρ en c. Inclusief bouwfysische data uit NEN-EN 12524, NTA 8800 en gangbare leveranciers.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.constructions.title">Constructie-opbouwen</h3>
+            <p data-i18n="features.constructions.desc">Voorgedefinieerde constructie-opbouwen (gevels, daken, vloeren) met automatische U-waarde. Maak en hergebruik je eigen opbouwen.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.compare.title">Variantenstudie</h3>
+            <p data-i18n="features.compare.desc">Vergelijk meerdere ontwerpvarianten naast elkaar. Wat-als-analyses voor isolatie, ventilatie en zon-oriëntatie.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.dashboard.title">Dashboard</h3>
+            <p data-i18n="features.dashboard.desc">Realtime overzicht: totaal warmteverlies, verlies per zone, top-10 ruimtes met hoogste verlies, energie-indicatoren.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.cli.title">CLI & batch</h3>
+            <p data-i18n="features.cli.desc">Command-line interface voor batch-berekeningen. Integreer in CI-pipelines of automatiseer voor portfolios.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.local.title">100% lokaal</h3>
+            <p data-i18n="features.local.desc">Alle berekeningen draaien lokaal op je eigen machine. Geen cloud, geen tracking. Je projectdata blijft van jou.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.crossplatform.title">Cross-platform</h3>
+            <p data-i18n="features.crossplatform.desc">Beschikbaar voor Windows, macOS, Linux én als web-applicatie. Tauri 2 + Rust voor maximale prestaties.</p>
           </div>
         </div>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="tech.title">Technologie</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Tauri 2</span>
+          <span class="tech-tag">NEN 12831</span>
+          <span class="tech-tag">ISSO 51:2023</span>
+          <span class="tech-tag">IFC/IFCX</span>
+          <span class="tech-tag">PDF.js</span>
+          <span class="tech-tag">REST API</span>
+        </div>
+        <p data-i18n="tech.desc">Een Rust-rekenkern voor de norm-conforme berekeningen, een TypeScript/SolidJS-frontend voor de interface, en Tauri 2 voor cross-platform distributie. Dezelfde stack als het hele OpenAEC-ecosysteem voor naadloze integratie.</p>
       </div>
 
       <div class="content-block">
