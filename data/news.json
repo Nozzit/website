@@ -2,11 +2,37 @@
   {
     "type": "release",
     "repo": "open-pdf-studio",
-    "title": "open-pdf-studio: 2 releases (nightly → v1.47.4)",
-    "description": "Versies: nightly, v1.47.4",
+    "title": "open-pdf-studio nightly uitgebracht",
+    "description": "Nightly build 1.47.13-nightly.20260509.1bdcf91",
+    "date": "2026-05-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "nextcloud-sharelink",
+    "title": "Nieuwe repository: nextcloud-sharelink",
+    "description": "Little tool to add NextCloud link to right click menu",
+    "date": "2026-05-08",
+    "url": "https://github.com/OpenAEC-Foundation/nextcloud-sharelink"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.47.13 uitgebracht",
+    "description": "Open PDF Studio v1.47.13",
+    "date": "2026-05-07",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.47.13",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio: 7 releases (v1.47.4 → v1.47.12)",
+    "description": "Versies: v1.47.4, v1.47.5, v1.47.8, v1.47.9, v1.47.10, v1.47.11, v1.47.12",
     "date": "2026-05-06",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.47.4",
-    "count": 2
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.47.12",
+    "count": 7
   },
   {
     "type": "release",
