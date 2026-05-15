@@ -142,9 +142,46 @@
             </video>
           </div>
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-studio.png" alt="Open Heatloss Studio - Overzicht"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-1.png" alt="Open Heatloss Studio - Projectinvoer"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-2.png" alt="Open Heatloss Studio - Ruimte-eigenschappen"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-3.png" alt="Open Heatloss Studio - Constructie-opbouw"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-4.png" alt="Open Heatloss Studio - U-waarde berekening"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-5.png" alt="Open Heatloss Studio - Transmissieverliezen"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-6.png" alt="Open Heatloss Studio - Ventilatieverliezen"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-7.png" alt="Open Heatloss Studio - Resultaten per ruimte"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-8.png" alt="Open Heatloss Studio - Zonering"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-9.png" alt="Open Heatloss Studio - Rapportgeneratie"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-10.png" alt="Open Heatloss Studio - Dashboard"></div>
         </div>
+        <button class="slider-btn slider-prev" onclick="slideMove(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; z-index: 2; left: 12px;">&lsaquo;</button>
+        <button class="slider-btn slider-next" onclick="slideMove(1)" style="position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; z-index: 2; right: 12px;">&rsaquo;</button>
       </div>
+      <div class="slider-dots" id="sliderDots" style="display: flex; justify-content: center; gap: 8px; padding: 12px 0;"></div>
     </div>
+    <script>
+      (function() {
+        const track = document.getElementById('sliderTrack');
+        const dots = document.getElementById('sliderDots');
+        if (!track) return;
+        const slides = track.children;
+        let current = 0;
+        for (let i = 0; i < slides.length; i++) {
+          const d = document.createElement('button');
+          d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+          d.style.cssText = 'width:8px;height:8px;border-radius:50%;border:none;cursor:pointer;background:' + (i === 0 ? '#D97706' : '#D6D3D1') + ';';
+          d.onclick = () => goTo(i);
+          dots.appendChild(d);
+        }
+        function goTo(i) {
+          current = (i + slides.length) % slides.length;
+          track.style.transform = 'translateX(-' + (current * 100) + '%)';
+          Array.from(dots.children).forEach((dot, idx) => {
+            dot.style.background = idx === current ? '#D97706' : '#D6D3D1';
+          });
+        }
+        window.slideMove = (dir) => goTo(current + dir);
+      })();
+    </script>
 
     <div class="content">
       <!-- Norm explainer -->
