@@ -2,7 +2,7 @@
   "header": {
     "label": "OpenAEC Foundation",
     "title": "Policy &amp; <span class=\"accent\">Positions</span>",
-    "desc": "Our principles on open standards, interoperability, public access and privacy in the construction sector."
+    "desc": "Our principles on open standards, interoperability, public access and privacy in the AEC industry."
   },
   "cleanroom": {
     "title": "Clean Room Reverse Engineering",
@@ -29,7 +29,7 @@
   },
   "standards": {
     "title": "Open Standards",
-    "p1": "The OpenAEC Foundation uses <strong>IFC and IFCX</strong> as the basis for all data exchange in the construction sector. These open standards managed by buildingSMART International guarantee that construction data remains readable and exchangeable, independent of software choices.",
+    "p1": "The OpenAEC Foundation uses <strong>IFC and IFCX</strong> as the basis for all data exchange in the AEC industry. These open standards managed by buildingSMART International guarantee that construction data remains readable and exchangeable, independent of software choices.",
     "principles": "Our core principles:",
     "li1": "<strong>No vendor lock-in</strong> — proprietary formats should never be the only way to store or exchange data",
     "li2": "<strong>Sustainable readability</strong> — all data must remain readable, regardless of which software you use or which vendor still exists",

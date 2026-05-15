@@ -2,11 +2,11 @@
   "header": {
     "label": "About us",
     "title": "The board",
-    "desc": "The people behind the OpenAEC Foundation. Together we are committed to open source software in the construction sector."
+    "desc": "The people behind the OpenAEC Foundation. Together we are committed to open source software in the AEC industry."
   },
   "maarten": {
     "role": "Chairman",
-    "desc": "Initiator of the OpenAEC Foundation and driving force behind building.py and various open source BIM tools for the construction sector."
+    "desc": "Initiator of the OpenAEC Foundation and driving force behind building.py and various open source BIM tools for the AEC industry."
   },
   "jochem": {
     "role": "Treasurer",
@@ -22,8 +22,8 @@
   },
   "mission": {
     "title": "Why <span class=\"accent\">OpenAEC</span>?",
-    "p1": "The construction sector is one of the last major industries that still largely runs on closed, proprietary software. We want to change that.",
-    "p2": "The OpenAEC Foundation develops, supports and promotes open source software for the entire construction chain — from design to handover and management. Our goal: make the entire construction sector open source this year."
+    "p1": "The AEC industry is one of the last major industries that still largely runs on closed, proprietary software. We want to change that.",
+    "p2": "The OpenAEC Foundation develops, supports and promotes open source software for the entire AEC chain (buildings, infrastructure, civil engineering) — from design to handover and management. Our goal: make the entire AEC industry open source this year."
   },
   "values": {
     "transparency_title": "Transparency",

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="meta.title">Open AEC Foundation - Open source voor een open bouwsector</title>
-  <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige bouwketen.">
+  <title data-i18n="meta.title">Open AEC Foundation - Open source voor een open bouw- en infrasector</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek).">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -285,6 +285,8 @@
     .tool-tag-beta { background: #FED7AA; color: #9A3412; }
     .tool-tag-dev { background: #DBEAFE; color: #1E40AF; }
     .tool-tag-alpha { background: #FEF3C7; color: #92400E; }
+    .tool-tag-civil { background: #DCFCE7; color: #166534; }
+    .tool-tag-gww { background: #CFFAFE; color: #155E75; }
     .tool-tag-live {
       background: #DCFCE7;
       color: #166534;
@@ -728,9 +730,9 @@
         <text x="122" y="108" font-family="'Inter', system-ui, sans-serif" font-weight="400" font-size="10" fill="#A1A1AA" opacity="0.6" letter-spacing="0.15em">FOUNDATION</text>
       </svg>
 
-      <h1 data-i18n="hero.title">Open source voor een <span class="accent">open bouwsector</span></h1>
+      <h1 data-i18n="hero.title">Open source voor een <span class="accent">open bouw- en infrasector</span></h1>
 
-      <p class="tagline" data-i18n="hero.description">Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.</p>
+      <p class="tagline" data-i18n="hero.description">Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) — van ontwerp tot oplevering en beheer.</p>
 
       <div class="hero-buttons">
         <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.contactBtn">Neem contact op &rarr;</a>
@@ -746,7 +748,7 @@
       <div class="text-center">
         <p class="section-label" data-i18n="tools.label">Ecosysteem</p>
         <h2 class="section-title" data-i18n="tools.title">Het OpenAEC-ecosysteem</h2>
-        <p class="section-desc" data-i18n="tools.description">Onze stichting heeft als doelstelling om de hele bouwsector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.</p>
+        <p class="section-desc" data-i18n="tools.description">Onze stichting heeft als doelstelling om de hele AEC-sector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.</p>
         <p style="display: inline-flex; align-items: center; gap: 6px; background: #DBEAFE; color: #1E40AF; padding: 6px 14px; border-radius: var(--radius-full); font-family: var(--font-code); font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-top: var(--sp-4);" data-i18n="tools.devNotice">Alle tools zijn momenteel in actieve ontwikkeling</p>
       </div>
 
@@ -806,7 +808,7 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-planner-studio.jpeg" alt="Open Planner Studio">
           <div>
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPlanner.title" style="margin-bottom:0;">Open Planner Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
-            <p data-i18n="tools.items.openPlanner.desc">Open plannings- en projectcoördinatiepagina voor bouwteams.</p>
+            <p data-i18n="tools.items.openPlanner.desc">Open plannings- en projectcoördinatietool voor bouw, GWW en civiele projecten.</p>
           </div>
           <div class="tool-links">
             <a href="/open-planner-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
@@ -848,7 +850,7 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-calc-studio-new.png" alt="Open Calc Studio">
           <div>
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
-            <p data-i18n="tools.items.openCalc.desc">Open source calculatietool voor kostenramingen en begrotingen in de bouw.</p>
+            <p data-i18n="tools.items.openCalc.desc">Open source calculatietool voor kostenramingen en begrotingen — voor bouw, GWW en civiele projecten.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 6 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.7</span>
@@ -956,8 +958,8 @@
         </article>
         <article class="tool-card" data-repo="open-frame-studio">
           <div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openFrame.title">Open Frame Studio</h3><span class="tool-tag tool-tag-alpha">Alpha</span></div>
-            <p data-i18n="tools.items.openFrame.desc">Open source constructieve analyse tool. 2D frame-berekeningen voor balken, kolommen en portaalconstructies.</p>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openFrame.title">Open Frame Studio</h3><span class="tool-tag tool-tag-alpha">Alpha</span><span class="tool-tag tool-tag-civil">B&amp;U + Civiel</span></div>
+            <p data-i18n="tools.items.openFrame.desc">Open source constructieve analyse tool. 2D frame-berekeningen voor balken, kolommen, portaalconstructies en civieltechnische draagstructuren.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 29 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.2</span>
@@ -970,8 +972,8 @@
         </article>
         <article class="tool-card" data-repo="cpt-viewer">
           <div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.cptViewer.title">CPT Viewer</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
-            <p data-i18n="tools.items.cptViewer.desc">Viewer voor sonderingen (GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata.</p>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.cptViewer.title">CPT Viewer</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-gww">GWW / Geotechniek</span></div>
+            <p data-i18n="tools.items.cptViewer.desc">GWW-tool: viewer voor sonderingen (CPT, GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering en grondwerk.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 6 commits</span>
             </div>
@@ -991,12 +993,39 @@
   </section>
 
   <!-- Waarom OpenAEC Section -->
+  <!-- Scope section: AEC breed -->
+  <section class="section" style="background: var(--night-build); padding: var(--sp-12) var(--sp-6); text-align: center;">
+    <div class="container">
+      <p style="font-family: var(--font-code); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--warm-gold); margin-bottom: var(--sp-4);" data-i18n="scope.label">Toepassingsgebied</p>
+      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem; color: white; margin-bottom: var(--sp-4);" data-i18n="scope.title">Bouw, GWW &amp; <span style="color: var(--amber);">civiele techniek</span></h2>
+      <p style="color: var(--scaffold-gray); font-size: 1rem; line-height: 1.7; max-width: 800px; margin: 0 auto var(--sp-8);" data-i18n="scope.desc">OpenAEC dekt de volledige <strong>Architecture, Engineering &amp; Construction</strong> keten: van woning- en utiliteitsbouw tot grond-, weg- en waterbouw (GWW), bruggen, tunnels, wegen, sporen, kunstwerken en infrastructurele projecten. Onze tools en het IFCX-ecosysteem ondersteunen IfcBuilding, IfcRoad, IfcRail, IfcBridge, IfcTunnel en IfcMarineFacility — conform IFC 4.3.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--sp-4); max-width: 900px; margin: 0 auto;">
+        <div style="background: var(--deep-forge); border-radius: var(--radius-md); padding: var(--sp-4); text-align: left;">
+          <div style="font-family: var(--font-heading); font-weight: 700; color: var(--amber); font-size: 0.9rem; margin-bottom: 6px;" data-i18n="scope.bu.title">Bouw &amp; utiliteit (B&amp;U)</div>
+          <div style="color: var(--scaffold-gray); font-size: 0.8125rem; line-height: 1.5;" data-i18n="scope.bu.desc">Woningen, kantoren, scholen, ziekenhuizen — van ontwerp tot oplevering en beheer.</div>
+        </div>
+        <div style="background: var(--deep-forge); border-radius: var(--radius-md); padding: var(--sp-4); text-align: left;">
+          <div style="font-family: var(--font-heading); font-weight: 700; color: var(--amber); font-size: 0.9rem; margin-bottom: 6px;" data-i18n="scope.gww.title">GWW</div>
+          <div style="color: var(--scaffold-gray); font-size: 0.8125rem; line-height: 1.5;" data-i18n="scope.gww.desc">Grond-, weg- en waterbouw: wegen, dijken, waterkeringen, riolering, grondwerk.</div>
+        </div>
+        <div style="background: var(--deep-forge); border-radius: var(--radius-md); padding: var(--sp-4); text-align: left;">
+          <div style="font-family: var(--font-heading); font-weight: 700; color: var(--amber); font-size: 0.9rem; margin-bottom: 6px;" data-i18n="scope.civil.title">Civiele techniek</div>
+          <div style="color: var(--scaffold-gray); font-size: 0.8125rem; line-height: 1.5;" data-i18n="scope.civil.desc">Bruggen, tunnels, viaducten, sluizen, havens, spoorwegen, geotechniek.</div>
+        </div>
+        <div style="background: var(--deep-forge); border-radius: var(--radius-md); padding: var(--sp-4); text-align: left;">
+          <div style="font-family: var(--font-heading); font-weight: 700; color: var(--amber); font-size: 0.9rem; margin-bottom: 6px;" data-i18n="scope.infra.title">Infrastructuur</div>
+          <div style="color: var(--scaffold-gray); font-size: 0.8125rem; line-height: 1.5;" data-i18n="scope.infra.desc">Energie- en nutsnetwerken, telecom, transport, openbare ruimte, monumenten.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-alt" id="over-ons">
     <div class="container">
       <div class="text-center">
         <p class="section-label" data-i18n="about.label">Over ons</p>
         <h2 class="section-title" data-i18n="about.title">Waarom OpenAEC Foundation?</h2>
-        <p class="section-desc" data-i18n="about.description">De bouwsector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.</p>
+        <p class="section-desc" data-i18n="about.description">De AEC-sector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card">
@@ -1037,7 +1066,7 @@
   <section class="section missie" id="missie">
     <div class="container text-center">
       <p class="section-label" data-i18n="mission.label">Onze missie</p>
-      <h2 class="section-title" data-i18n="mission.title">"Het ontwikkelen, ondersteunen en promoten van <span class="accent">open source software</span> voor de volledige bouwketen."</h2>
+      <h2 class="section-title" data-i18n="mission.title">"Het ontwikkelen, ondersteunen en promoten van <span class="accent">open source software</span> voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek)."</h2>
       <div class="missie-grid">
         <div class="missie-item">
           <h3 data-i18n="mission.items.dev.title">Ontwikkeling</h3>
@@ -1196,7 +1225,7 @@
       <div class="footer-grid">
         <div>
           <a href="#hero" class="nav-brand">Open<span class="accent">AEC</span></a>
-          <p class="footer-desc" data-i18n="footer.description">Open source software voor de volledige bouwketen — van ontwerp tot oplevering en beheer.</p>
+          <p class="footer-desc" data-i18n="footer.description">Open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) — van ontwerp tot oplevering en beheer.</p>
         </div>
         <div class="footer-section">
           <h4 data-i18n="footer.pagesTitle">Pagina's</h4>
@@ -1222,7 +1251,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p data-i18n="footer.copyright">&copy; 2026 Open AEC Foundation i.o. — Open source voor een open bouwsector</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Open AEC Foundation i.o. — Open source voor een open bouw- en infrasector</p>
         <div style="display: flex; gap: var(--sp-4); align-items: center;">
           <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
@@ -1246,8 +1275,8 @@
     const translations = {
       nl: {
         meta: {
-          title: "Open AEC Foundation - Open source voor een open bouwsector",
-          description: "Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige bouwketen."
+          title: "Open AEC Foundation - Open source voor een open bouw- en infrasector",
+          description: "Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek)."
         },
         nav: {
           home: "Home",
@@ -1265,17 +1294,26 @@
         },
         hero: {
           badge: "Doelstelling: alle bouwsoftware open source voor eind 2026",
-          title: "Open source voor een <span class=\"accent\">open bouwsector</span>",
-          description: "Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige bouwketen \u2014 van ontwerp tot oplevering en beheer.",
+          title: "Open source voor een <span class=\"accent\">open bouw- en infrasector</span>",
+          description: "Wij ontwikkelen, ondersteunen en promoten open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) \u2014 van ontwerp tot oplevering en beheer.",
           contactBtn: "Neem contact op \u2192",
           readMore: "Lees meer",
           launchLabel: "Geplande oprichting",
           launchDate: "14 april 2026"
         },
+        scope: {
+          label: "Toepassingsgebied",
+          title: "Bouw, GWW &amp; <span style=\"color: var(--amber);\">civiele techniek</span>",
+          desc: "OpenAEC dekt de volledige <strong>Architecture, Engineering &amp; Construction</strong> keten: van woning- en utiliteitsbouw tot grond-, weg- en waterbouw (GWW), bruggen, tunnels, wegen, sporen, kunstwerken en infrastructurele projecten. Onze tools en het IFCX-ecosysteem ondersteunen IfcBuilding, IfcRoad, IfcRail, IfcBridge, IfcTunnel en IfcMarineFacility — conform IFC 4.3.",
+          bu: { title: "Bouw &amp; utiliteit (B&amp;U)", desc: "Woningen, kantoren, scholen, ziekenhuizen — van ontwerp tot oplevering en beheer." },
+          gww: { title: "GWW", desc: "Grond-, weg- en waterbouw: wegen, dijken, waterkeringen, riolering, grondwerk." },
+          civil: { title: "Civiele techniek", desc: "Bruggen, tunnels, viaducten, sluizen, havens, spoorwegen, geotechniek." },
+          infra: { title: "Infrastructuur", desc: "Energie- en nutsnetwerken, telecom, transport, openbare ruimte, monumenten." }
+        },
         about: {
           label: "Over ons",
           title: "Waarom OpenAEC Foundation?",
-          description: "De bouwsector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.",
+          description: "De AEC-sector verdient software die transparant, toekomstbestendig en door de gebruikers zelf vormgegeven wordt.",
           features: {
             cost: { title: "Kostenreductie", desc: "Geen licentiekosten, lagere advieskosten. Bouwen wordt voordeliger voor iedereen." },
             vendor: { title: "Geen vendor lock-in", desc: "Open data formaten zorgen dat bestanden voor altijd leesbaar blijven." },
@@ -1289,7 +1327,7 @@
         },
         mission: {
           label: "Onze missie",
-          title: "\"Het ontwikkelen, ondersteunen en promoten van <span class=\"accent\">open source software</span> voor de volledige bouwketen.\"",
+          title: "\"Het ontwikkelen, ondersteunen en promoten van <span class=\"accent\">open source software</span> voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek).\"",
           items: {
             dev: { title: "Ontwikkeling", desc: "Co\u00f6rdineren en financieren van open source softwareontwikkeling" },
             support: { title: "Ondersteuning", desc: "Beheren van licenties, API-koppelingen en integraties" },
@@ -1300,7 +1338,7 @@
         tools: {
           label: "Ecosysteem",
           title: "Het OpenAEC-ecosysteem",
-          description: "Onze stichting heeft als doelstelling om de hele bouwsector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.",
+          description: "Onze stichting heeft als doelstelling om de hele AEC-sector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.",
           devNotice: "Alle tools zijn momenteel in actieve ontwikkeling",
           overviewBtn: "Bekijk volledig repository-overzicht",
           items: {
@@ -1311,7 +1349,7 @@
             openPlanner: { title: "Open Planner Studio", desc: "Open plannings- en projectco\u00f6rdinatiepagina voor bouwteams.", link: "Bekijk project \u2192" },
             openPointcloud: { title: "Open Pointcloud Studio", desc: "Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.", link: "Bekijk project \u2192" },
             montyIfc: { title: "Monty IFC Viewer", desc: "Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.", link: "Bekijk project \u2192" },
-            openCalc: { title: "Open Calc Studio", desc: "Open source calculatietool voor kostenramingen en begrotingen in de bouw.", link: "Bekijk project \u2192" },
+            openCalc: { title: "Open Calc Studio", desc: "Open source calculatietool voor kostenramingen en begrotingen — voor bouw, GWW en civiele projecten.", link: "Bekijk project \u2192" },
             openField: { title: "Open Field Studio", desc: "Open source veldwerk- en inspectiepagina voor bouwplaatsregistratie en kwaliteitscontrole.", link: "Bekijk project \u2192" },
             yapp: { title: "Y-app", desc: "Open source communicatie- en samenwerkingsplatform voor bouwprojecten.", link: "Bekijk project \u2192" },
             bimValidator: { title: "BIM Validator", desc: "Open source tool voor het valideren van IFC-modellen tegen standaarden en projecteisen.", link: "Bekijk project \u2192" },
@@ -1322,8 +1360,8 @@
             open3d: { title: "Open 3D Viewer", desc: "Open source 3D-viewer voor het bekijken en inspecteren van BIM-modellen in de browser.", link: "Probeer het nu \u2192" },
             openSafety: { title: "Open Safety Studio", desc: "Open source tool voor veiligheidsanalyse en risicobeoordeling op bouwprojecten.", link: "Probeer het nu \u2192" },
             bcfManager: { title: "BCF Manager Studio", desc: "Open-source BCF 2.1 issue management platform voor BIM-projecten. Beheer issues, communiceer met teams en koppel aan IFC-modellen.", badge: "In ontwikkeling" },
-            openFrame: { title: "Open Frame Studio", desc: "Open source constructieve analyse tool. 2D frame-berekeningen voor balken, kolommen en portaalconstructies." },
-            cptViewer: { title: "CPT Viewer", desc: "Viewer voor sonderingen (GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata." }
+            openFrame: { title: "Open Frame Studio", desc: "Open source constructieve analyse tool. 2D frame-berekeningen voor balken, kolommen, portaalconstructies en civieltechnische draagstructuren." },
+            cptViewer: { title: "CPT Viewer", desc: "GWW-tool: viewer voor sonderingen (CPT, GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering en grondwerk." }
           },
           productPage: "Productpagina",
           productPageLink: "Productpagina &rarr;",
@@ -1365,7 +1403,7 @@
           form: { title: "Stuur een bericht", name: "Naam", namePlaceholder: "Uw naam", email: "E-mail", emailPlaceholder: "uw@email.nl", message: "Bericht", messagePlaceholder: "Ik ben ge\u00efnteresseerd in...", submit: "Verstuur bericht" }
         },
         footer: {
-          description: "Open source software voor de volledige bouwketen \u2014 van ontwerp tot oplevering en beheer.",
+          description: "Open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) \u2014 van ontwerp tot oplevering en beheer.",
           pagesTitle: "Pagina's",
           pages: {
             about: "Over ons",
@@ -1384,14 +1422,14 @@
           country: "Nederland",
           foundingLabel: "Oprichting",
           foundingDate: "14 april 2026",
-          copyright: "\u00a9 2026 Open AEC Foundation i.o. \u2014 Open source voor een open bouwsector",
+          copyright: "\u00a9 2026 Open AEC Foundation i.o. \u2014 Open source voor een open bouw- en infrasector",
           inspired: "Ge\u00efnspireerd door de Blender Foundation"
         }
       },
       en: {
         meta: {
-          title: "Open AEC Foundation - Open source for an open construction sector",
-          description: "Open AEC Foundation develops, supports and promotes open source software for the entire construction chain."
+          title: "Open AEC Foundation - Open source for an open construction & infrastructure industry",
+          description: "Open AEC Foundation develops, supports and promotes open source software for the entire AEC chain (buildings, infrastructure, civil engineering)."
         },
         nav: {
           home: "Home",
@@ -1409,17 +1447,26 @@
         },
         hero: {
           badge: "Goal: all construction software open source by end of 2026",
-          title: "Open source for an <span class=\"accent\">open construction sector</span>",
-          description: "We develop, support and promote open source software for the entire construction chain \u2014 from design to delivery and management.",
+          title: "Open source for an <span class=\"accent\">open construction & infrastructure industry</span>",
+          description: "We develop, support and promote open source software for the entire AEC chain (buildings, infrastructure, civil engineering) \u2014 from design to delivery and management.",
           contactBtn: "Get in touch \u2192",
           readMore: "Read more",
           launchLabel: "Planned founding",
           launchDate: "April 14, 2026"
         },
+        scope: {
+          label: "Scope",
+          title: "Buildings, infrastructure &amp; <span style=\"color: var(--amber);\">civil engineering</span>",
+          desc: "OpenAEC covers the full <strong>Architecture, Engineering &amp; Construction</strong> chain: from residential and commercial buildings to roads, bridges, tunnels, railways, water infrastructure and civil works. Our tools and the IFCX ecosystem support IfcBuilding, IfcRoad, IfcRail, IfcBridge, IfcTunnel and IfcMarineFacility — conforming to IFC 4.3.",
+          bu: { title: "Buildings &amp; utilities", desc: "Homes, offices, schools, hospitals — from design to delivery and management." },
+          gww: { title: "Civil infrastructure", desc: "Roads, dikes, water barriers, sewerage, earthworks." },
+          civil: { title: "Civil engineering", desc: "Bridges, tunnels, viaducts, locks, harbours, railways, geotechnics." },
+          infra: { title: "Infrastructure", desc: "Energy and utility networks, telecom, transport, public space, monuments." }
+        },
         about: {
           label: "About us",
           title: "Why OpenAEC Foundation?",
-          description: "The construction sector deserves software that is transparent, future-proof and shaped by its users.",
+          description: "The AEC industry deserves software that is transparent, future-proof and shaped by its users.",
           features: {
             cost: { title: "Cost reduction", desc: "No license costs, lower consulting fees. Building becomes more affordable for everyone." },
             vendor: { title: "No vendor lock-in", desc: "Open data formats ensure files remain readable forever." },
@@ -1433,7 +1480,7 @@
         },
         mission: {
           label: "Our mission",
-          title: "\"Developing, supporting and promoting <span class=\"accent\">open source software</span> for the entire construction chain.\"",
+          title: "\"Developing, supporting and promoting <span class=\"accent\">open source software</span> for the entire AEC chain (buildings, infrastructure, civil engineering).\"",
           items: {
             dev: { title: "Development", desc: "Coordinating and funding open source software development" },
             support: { title: "Support", desc: "Managing licenses, API connections and integrations" },
@@ -1444,7 +1491,7 @@
         tools: {
           label: "Ecosystem",
           title: "The OpenAEC ecosystem",
-          description: "Our foundation's goal is to make the entire construction sector open source this year. These are the tools and projects we're building to make it happen.",
+          description: "Our foundation's goal is to make the entire AEC industry (buildings, infrastructure, civil engineering) open source this year. These are the tools and projects we're building to make it happen.",
           devNotice: "All tools are currently in active development",
           overviewBtn: "View full repository overview",
           items: {
@@ -1452,10 +1499,10 @@
             open2d: { title: "Open 2D Studio", desc: "Viewer and product page for 2D documents and drawings in an open design workflow.", link: "View project \u2192" },
             openPdf: { title: "Open PDF Studio", desc: "Open tooling around PDF-based document flows and technical publishing.", link: "View project \u2192" },
             openEnergy: { title: "Open Energy Studio", desc: "Project page for open energy analysis and building performance.", link: "View project \u2192" },
-            openPlanner: { title: "Open Planner Studio", desc: "Open planning and project coordination page for construction teams.", link: "View project \u2192" },
+            openPlanner: { title: "Open Planner Studio", desc: "Open planning and project coordination tool for buildings, infrastructure and civil works.", link: "View project \u2192" },
             openPointcloud: { title: "Open Pointcloud Studio", desc: "Viewer and workflow page for point cloud data in renovation and analysis projects.", link: "View project \u2192" },
             montyIfc: { title: "Monty IFC Viewer", desc: "Lightweight IFC viewer for quick inspection of open BIM models.", link: "View project \u2192" },
-            openCalc: { title: "Open Calc Studio", desc: "Open source cost estimation and budgeting tool for construction.", link: "View project \u2192" },
+            openCalc: { title: "Open Calc Studio", desc: "Open source cost estimation and budgeting tool for buildings, infrastructure and civil works.", link: "View project \u2192" },
             openField: { title: "Open Field Studio", desc: "Open source fieldwork and inspection page for construction site registration and quality control.", link: "View project \u2192" },
             yapp: { title: "Y-app", desc: "Open source communication and collaboration platform for construction projects.", link: "View project \u2192" },
             bimValidator: { title: "BIM Validator", desc: "Open source tool for validating IFC models against standards and project requirements.", link: "View project \u2192" },
@@ -1466,8 +1513,8 @@
             open3d: { title: "Open 3D Viewer", desc: "Open source 3D viewer for inspecting BIM models in the browser.", link: "Try it now \u2192" },
             openSafety: { title: "Open Safety Studio", desc: "Open source tool for safety analysis and risk assessment on construction projects.", link: "Try it now \u2192" },
             bcfManager: { title: "BCF Manager Studio", desc: "Open-source BCF 2.1 issue management platform for BIM projects. Manage issues, communicate with teams and link to IFC models.", badge: "In development" },
-            openFrame: { title: "Open Frame Studio", desc: "Open source structural analysis tool. 2D frame calculations for beams, columns and portal structures." },
-            cptViewer: { title: "CPT Viewer", desc: "Viewer for cone penetration tests (GEF / BRO-xml). View and analyze geotechnical soil investigation data." }
+            openFrame: { title: "Open Frame Studio", desc: "Open source structural analysis tool. 2D frame calculations for beams, columns, portal structures and civil load-bearing systems." },
+            cptViewer: { title: "CPT Viewer", desc: "Civil engineering tool: viewer for cone penetration tests (CPT, GEF / BRO-xml). Analyze geotechnical soil data for foundations and earthworks." }
           },
           productPage: "Product page",
           productPageLink: "Product page &rarr;",
@@ -1509,7 +1556,7 @@
           form: { title: "Send a message", name: "Name", namePlaceholder: "Your name", email: "Email", emailPlaceholder: "your@email.com", message: "Message", messagePlaceholder: "I am interested in...", submit: "Send message" }
         },
         footer: {
-          description: "Open source software for the entire construction chain \u2014 from design to delivery and management.",
+          description: "Open source software for the entire AEC chain (buildings, infrastructure, civil engineering) \u2014 from design to delivery and management.",
           pagesTitle: "Pages",
           pages: {
             about: "About us",
@@ -1528,7 +1575,7 @@
           country: "The Netherlands",
           foundingLabel: "Founding",
           foundingDate: "April 14, 2026",
-          copyright: "\u00a9 2026 Open AEC Foundation i.f. \u2014 Open source for an open construction sector",
+          copyright: "\u00a9 2026 Open AEC Foundation i.f. \u2014 Open source for an open construction & infrastructure industry",
           inspired: "Inspired by the Blender Foundation"
         }
       }

@@ -5,7 +5,7 @@
   },
   "why": {
     "title": "Why become a <span style=\"color: var(--amber);\">supporter</span>?",
-    "desc": "As a supporter of the OpenAEC Foundation you invest in the future of open source software for the construction sector. You contribute to the development of professional tools that are accessible to everyone."
+    "desc": "As a supporter of the OpenAEC Foundation you invest in the future of open source software for the AEC industry. You contribute to the development of professional tools that are accessible to everyone."
   },
   "benefits": {
     "influence_title": "Influence on development",
@@ -22,6 +22,6 @@
   },
   "cta": {
     "title": "Become a supporter?",
-    "desc": "Contact us to discuss the possibilities. Together we make the construction sector open source."
+    "desc": "Contact us to discuss the possibilities. Together we make the AEC industry open source."
   }
 }

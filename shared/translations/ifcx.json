@@ -6,11 +6,15 @@
   "why": {
     "title": "Why <span class=\"accent\">IFCX</span>?",
     "p1": "IFCX is the next generation of the IFC data format. Where classic IFC (IFC2x3, IFC4) uses a fixed schema, IFCX offers a flexible, extensible model based on namespaces. This makes it possible to add domain-specific information without modifying the core schema.",
-    "p2": "For the OpenAEC Foundation, IFCX is the logical choice: it is open, extensible and aligns with our vision that the entire construction sector should run on open standards."
+    "p2": "For the OpenAEC Foundation, IFCX is the logical choice: it is open, extensible and aligns with our vision that the entire AEC ecosystem should run on open standards."
   },
   "universal": {
     "title": "IFCX as universal language",
-    "desc": "Within the OpenAEC ecosystem, IFCX is the central data format. Every tool — from cost estimation to validation, from 2D drawings to 3D viewers — reads and writes IFCX. This means data flows seamlessly between all parts of the construction chain, without conversion or data loss."
+    "desc": "Within the OpenAEC ecosystem, IFCX is the central data format. Every tool — from cost estimation to validation, from 2D drawings to 3D viewers — reads and writes IFCX. This means data flows seamlessly between all parts of the AEC chain, without conversion or data loss."
+  },
+  "civil": {
+    "title": "IFC 4.3: from buildings to infrastructure",
+    "desc": "IFCX builds on IFC 4.3, which supports not only buildings but full civil infrastructure. This means OpenAEC covers residential and commercial buildings, as well as roads, bridges, tunnels, railways, water infrastructure and marine facilities."
   },
   "model": {
     "title": "Everything in <span class=\"accent\">one model</span>",

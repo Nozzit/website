@@ -17,7 +17,7 @@
   "why": {
     "title": "Why Open Calc <span class=\"accent\">Studio</span>?",
     "desc1": "Cost estimates and budgets are essential for every construction project. Existing estimation software costs thousands of euros per license and locks you into proprietary formats. Open Calc Studio offers a fully open-source alternative that is just as powerful.",
-    "desc2": "With direct connections to STABU/RAW standards, IFCX models for automatic quantities, and AI integration via MCP, Open Calc Studio is built for the future of construction estimation."
+    "desc2": "With direct connections to STABU/RAW standards, IFCX models for automatic quantities, and AI integration via MCP, Open Calc Studio is built for the future of AEC cost estimation."
   },
   "features": {
     "title": "Features",
