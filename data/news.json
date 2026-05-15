@@ -3,10 +3,60 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.47.13-nightly.20260509.1bdcf91",
-    "date": "2026-05-09",
+    "description": "Nightly build 1.47.13-nightly.20260515.1bdcf91",
+    "date": "2026-05-15",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-heatloss-studio",
+    "title": "open-heatloss-studio v0.1.1-pr13.alpha uitgebracht",
+    "description": "v0.1.1-pr13.alpha — PR #13 testing build",
+    "date": "2026-05-15",
+    "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/v0.1.1-pr13.alpha",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "crates-warehouse",
+    "title": "Nieuwe repository: crates-warehouse",
+    "description": "Warehouse with RUST crates",
+    "date": "2026-05-15",
+    "url": "https://github.com/OpenAEC-Foundation/crates-warehouse"
+  },
+  {
+    "type": "new_repo",
+    "repo": "verification-files",
+    "title": "Nieuwe repository: verification-files",
+    "description": "repository with files of clients! DO NOT MAKE THIS PUBLIC!!!",
+    "date": "2026-05-15",
+    "url": "https://github.com/OpenAEC-Foundation/verification-files"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Intolve",
+    "title": "Nieuwe repository: Intolve",
+    "description": "Nieuw project gestart",
+    "date": "2026-05-15",
+    "url": "https://github.com/OpenAEC-Foundation/Intolve"
+  },
+  {
+    "type": "release",
+    "repo": "open-heatloss-studio",
+    "title": "open-heatloss-studio v0.1.0-alpha.1 uitgebracht",
+    "description": "v0.1.0-alpha.1 — first public testing build",
+    "date": "2026-05-11",
+    "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/v0.1.0-alpha.1",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "bouwkundig-ingenieur",
+    "title": "Nieuwe repository: bouwkundig-ingenieur",
+    "description": "Vaardigheden van een bouwkundig ingenieur",
+    "date": "2026-05-11",
+    "url": "https://github.com/OpenAEC-Foundation/bouwkundig-ingenieur"
   },
   {
     "type": "new_repo",
