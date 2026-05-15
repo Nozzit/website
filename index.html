@@ -1639,10 +1639,13 @@
     });
   </script>
   <script>
-  // Auto-news feed from data/news.json
-  fetch('/data/news.json')
-    .then(r => r.json())
-    .then(news => {
+  // Auto-news feed (auto + manual sources, sorted by date desc)
+  Promise.all([
+    fetch('/data/news.json').then(r => r.ok ? r.json() : []),
+    fetch('/data/manual-news.json').then(r => r.ok ? r.json() : []).catch(() => [])
+  ])
+    .then(([autoNews, manualNews]) => {
+      const news = [...manualNews, ...autoNews].sort((a, b) => b.date.localeCompare(a.date));
       const feed = document.getElementById('news-feed');
       if (!feed || !news.length) return;
       feed.innerHTML = news.slice(0, 5).map(item => `
