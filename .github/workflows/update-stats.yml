@@ -34,6 +34,9 @@ jobs:
       - name: Update homepage tool stats (static)
         run: node scripts/build-homepage-stats.js
 
+      - name: Build /api/tools.json machine-readable catalog
+        run: node scripts/build-tools-api.js
+
       - name: Cleanup old history (keep 90 days)
         run: |
           find data/history -name "*.json" -mtime +90 -delete 2>/dev/null || true
@@ -44,7 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ index.html
+          git add data/ index.html api/
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
