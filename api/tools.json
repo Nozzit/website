@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-05-18T10:19:00.704Z",
+  "generated": "2026-05-19T07:09:16.817Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -16,12 +16,12 @@
   },
   "totalTools": 17,
   "totalStats": {
-    "publicRepos": 71,
-    "totalStars": 570,
-    "totalCommits": 4745,
+    "publicRepos": 72,
+    "totalStars": 583,
+    "totalCommits": 4918,
     "contributors": 32,
     "languages": 8,
-    "sourceDate": "2026-05-15T17:57:36.678Z"
+    "sourceDate": "2026-05-19T07:09:07.139Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -118,14 +118,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
         "commits": 240,
-        "stars": 297,
-        "forks": 27,
-        "openIssues": 57,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
-        "releases": 48,
+        "stars": 301,
+        "forks": 28,
+        "openIssues": 58,
+        "latestVersion": "v1.47.13",
+        "latestReleaseDate": "2026-05-07",
+        "releases": 47,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-05-14"
+        "updatedAt": "2026-05-19"
       }
     },
     {
@@ -219,14 +219,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-calc-studio",
       "stats": {
         "commits": 6,
-        "stars": 1,
+        "stars": 3,
         "forks": 0,
         "openIssues": 0,
         "latestVersion": "v0.7.8",
         "latestReleaseDate": "2026-05-05",
         "releases": 11,
         "createdAt": "2026-05-02",
-        "updatedAt": "2026-05-04"
+        "updatedAt": "2026-05-18"
       }
     },
     {
@@ -268,15 +268,15 @@
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
-        "commits": 293,
+        "commits": 411,
         "stars": 0,
         "forks": 0,
-        "openIssues": 7,
+        "openIssues": 2,
         "latestVersion": "v0.1.1-pr13.alpha",
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
         "createdAt": "2026-03-02",
-        "updatedAt": "2026-05-15"
+        "updatedAt": "2026-05-18"
       }
     },
     {
@@ -533,10 +533,10 @@
         "commits": 77,
         "stars": 2,
         "forks": 0,
-        "openIssues": 14,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
-        "releases": 4,
+        "openIssues": 15,
+        "latestVersion": "v0.10.0",
+        "latestReleaseDate": "2026-04-24",
+        "releases": 3,
         "createdAt": "2026-03-09",
         "updatedAt": "2026-04-28"
       }
@@ -794,17 +794,7 @@
       ],
       "productPage": "https://github.com/OpenAEC-Foundation/cpt-viewer",
       "githubRepo": "https://github.com/OpenAEC-Foundation/cpt-viewer",
-      "stats": {
-        "commits": 6,
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
-        "latestVersion": null,
-        "latestReleaseDate": null,
-        "releases": 0,
-        "createdAt": "2026-01-16",
-        "updatedAt": "2026-03-25"
-      }
+      "stats": null
     },
     {
       "id": "y-app",
