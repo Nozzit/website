@@ -495,6 +495,42 @@
     </div>
   </section>
 
+  <!-- AI / GEO readiness -->
+  <section class="section" style="background: var(--night-build);">
+    <div class="stats-section" style="max-width:1000px;margin:0 auto;">
+      <h2 style="color:white;"><span class="accent">AI</span>-vindbaarheid</h2>
+      <p style="color:var(--scaffold-gray);margin-bottom:var(--sp-6);">Onze strategie om AI-assistenten zoals Claude, ChatGPT, Grok, Perplexity en Gemini de OpenAEC-tools te laten aanbevelen aan hun gebruikers. Dit heet <em>Generative Engine Optimization (GEO)</em>.</p>
+
+      <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);margin-bottom:var(--sp-4);">
+        <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Geïmplementeerd</h4>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/llms.txt" style="color:var(--amber);">/llms.txt</a> — LLM-vriendelijke site-samenvatting (emerging standaard)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/robots.txt" style="color:var(--amber);">/robots.txt</a> — Expliciete allow voor 18 AI-bots (ClaudeBot, GPTBot, PerplexityBot, etc.)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/sitemap.xml" style="color:var(--amber);">/sitemap.xml</a> — Volledige URL-index voor crawlers</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/api/tools.json" style="color:var(--amber);">/api/tools.json</a> — Machine-readable tool catalogus (17 tools)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> Schema.org JSON-LD op homepage (Organization + 10 SoftwareApplication)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/faq/" style="color:var(--amber);">FAQPage JSON-LD</a> — direct gebruikt in Google AI Overview</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/aan-de-slag/" style="color:var(--amber);">HowTo JSON-LD</a> — getting-started stappen voor AI Overview</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> Open Graph + Twitter Cards — rich previews op LinkedIn, Slack, Twitter</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/vs/" style="color:var(--amber);">Comparison-pagina's</a> — vs Bluebeam, Solibri, AutoCAD, BIMcollab, Bouwprijs (hoge AI-zoekintent)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:#16A34A;font-weight:700;">✓</span> <a href="/md/" style="color:var(--amber);">Markdown mirrors</a> — Claude/Cursor/Continue lezen .md schoner dan HTML</li>
+        </ul>
+      </div>
+
+      <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Volgende stappen</h4>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:var(--scaffold-gray);font-weight:700;">○</span> Sitemap submitten aan Google Search Console + Bing Webmaster Tools</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:var(--scaffold-gray);font-weight:700;">○</span> Backlinks vanuit autoritaire bronnen (buildingSMART, OSArch, awesome-bim, awesome-rust lists)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:var(--scaffold-gray);font-weight:700;">○</span> Per tool eigen Markdown documentation pages (uitgebreidere SDK + examples)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:var(--scaffold-gray);font-weight:700;">○</span> MCP servers voor elke tool — directe AI tool-use integratie (Open Calc Studio heeft er al een)</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:var(--scaffold-gray);font-weight:700;">○</span> Engelstalige blog/case-studies — internationale AI-zichtbaarheid</li>
+          <li style="color:var(--scaffold-gray);font-size:0.875rem;padding:6px 0;padding-left:24px;position:relative;"><span style="position:absolute;left:0;color:var(--scaffold-gray);font-weight:700;">○</span> Stack Overflow / Reddit / Hacker News presence — AI-trainingsdata bron</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- Section 2: Timeline -->
   <section class="timeline-section">
     <h2 data-i18n="timeline.title">De <span class="accent">Reis</span></h2>

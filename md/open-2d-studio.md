@@ -1,0 +1,74 @@
+# Open 2D Studio
+
+> 2D CAD application with drawing tools, DXF import/export, layers and dimensions.
+
+**Status:** beta
+**License:** LGPL-3.0
+**Platforms:** Windows, macOS, Linux
+**Category:** CAD
+**Current version:** v0.35.0 (2026-03-26)
+**Tool ID:** `open-2d-studio`
+**GitHub repo:** `OpenAEC-Foundation/open-2d-studio`
+
+## Live stats
+
+- Stars: **17**
+- Commits: **90**
+- Forks: **4**
+- Open issues: **17**
+- Releases: **25**
+- Total downloads: **565**
+- Downloads by platform: Windows (232), Windows (MSI) (73), Linux (deb) (72), Linux (AppImage) (68), Linux (rpm) (50), Archive (34), Android (16), macOS (16), Linux (snap) (4)
+
+## Key features
+
+- Drawing primitives: line, polyline, arc, circle, rectangle, hatch
+- Layer management with visibility and lock
+- Linear and angular dimensioning
+- DXF import and export
+- Snap, ortho, grid
+- Undo/redo history
+
+## Tech stack
+
+`Rust` · `React` · `TypeScript` · `Tauri 2` · `Canvas 2D` · `Zustand`
+
+## When to use this
+
+Producing 2D drawings, marking up DXFs, simple drafting workflows where AutoCAD LT or LibreCAD would normally be used.
+
+## Alternative to
+
+- AutoCAD LT
+- LibreCAD
+- NanoCAD
+- DraftSight
+
+## Standards & integration
+
+- DXF
+
+All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
+
+## Download & links
+
+- Product page: https://www.open-aec.com/open-2d-studio/
+- Live demo: https://open-2d-studio.open-aec.com/
+- GitHub repo: https://github.com/OpenAEC-Foundation/open-2d-studio
+- Latest stable release: https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.35.0
+- Nightly builds: https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/nightly
+
+## Direct downloads (most popular)
+
+- [Windows · Open.2D.Studio_0.31.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64-setup.exe) (v0.31.0 — 4.4 MB)
+- [Windows (MSI) · Open.2D.Studio_0.31.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64_en-US.msi) (v0.31.0 — 5.6 MB)
+- [Linux (deb) · Open.2D.Studio_0.31.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.deb) (v0.31.0 — 5.7 MB)
+- [Linux (AppImage) · Open.2D.Studio_0.31.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.AppImage) (v0.31.0 — 79.5 MB)
+- [Windows · Open.2D.Studio_0.35.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_x64-setup.exe) (v0.35.0 — 4 MB)
+- [macOS · Open.2D.Studio_0.31.0_aarch64.dmg](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_aarch64.dmg) (v0.31.0 — 5.3 MB)
+- [Windows · Open.2D.Studio_0.22.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.22.0/Open.2D.Studio_0.22.0_x64-setup.exe) (v0.22.0 — 3.6 MB)
+- [Android · open-2d-studio-android.apk](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/open-2d-studio-android.apk) (v0.31.0 — 55.2 MB)
+
+---
+
+Part of the [OpenAEC Foundation](https://www.open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.

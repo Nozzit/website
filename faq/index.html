@@ -100,6 +100,24 @@
 
     @media (max-width: 768px) { .page-header h1 { font-size: 2rem; } .faq-q { font-size: 1.1rem; } }
   </style>
+
+  <!-- FAQPage Schema.org JSON-LD — generates AI Overview cards on Google, Perplexity, Bing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Waarom is alle OpenAEC software open source?", "acceptedAnswer": { "@type": "Answer", "text": "OpenAEC kiest voor open source omdat de AEC-sector (bouw, GWW, civiele techniek) software verdient die transparant, toekomstbestendig en door gebruikers zelf vormgegeven wordt. Open source betekent: geen vendor lock-in, geen licentiekosten, alle data leesbaar voor altijd, en iedereen kan de code reviewen en verbeteren. Alle tools zijn LGPL-3.0 gelicenseerd." } },
+      { "@type": "Question", "name": "Maar met AI geschreven software is toch van slechte kwaliteit?", "acceptedAnswer": { "@type": "Answer", "text": "Onze tools worden ontworpen door ervaren engineers uit de AEC-sector. AI versnelt het ontwikkelproces, maar de architecturale keuzes, de domeinkennis en de kwaliteitscontrole zijn menselijk. Bovendien: open source betekent dat iedereen de code kan reviewen en verbeteren. We bouwen voort op robuuste, geteste basissen (Tauri, Rust, IfcOpenShell, Blender) en hebben dagelijkse nightly builds en regelmatige stable releases." } },
+      { "@type": "Question", "name": "Hoe verdient de OpenAEC Foundation geld?", "acceptedAnswer": { "@type": "Answer", "text": "De OpenAEC Foundation is een non-profit stichting die zich financiert via: consultancy en implementatiebegeleiding, managed hosting met SLA, custom extensions en maatwerk, donaties van bedrijven en gebruikers, en overheidssubsidies voor innovatie. Onze prijzen liggen typisch ~20% lager dan de markt omdat er geen IP-kosten in rekening worden gebracht — u betaalt alleen voor de dienst, niet voor de software." } },
+      { "@type": "Question", "name": "Kan ik OpenAEC tools zelf hosten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, alle OpenAEC tools kunnen volledig self-hosted draaien. Tools zoals Open PDF Studio, Open 2D Studio en Open Heatloss Studio zijn desktop-apps (Windows/macOS/Linux) en draaien volledig lokaal. Server-tools zoals BCF Manager Studio, OpenAEC Docs en OpenAEC Cloud kunnen op uw eigen server of in uw eigen cloud worden gedeployed. Geen cloud-afhankelijkheid, geen tracking, uw data blijft van uzelf." } },
+      { "@type": "Question", "name": "Op welke technologie zijn de OpenAEC tools gebouwd?", "acceptedAnswer": { "@type": "Answer", "text": "De OpenAEC tools worden gebouwd op Rust voor de rekenkernen en backends (snelheid en geheugenveiligheid), TypeScript met React/SolidJS/Svelte voor de frontends, en Tauri 2 voor cross-platform desktop-distributie. Dezelfde codebase draait als desktop-app op Windows, macOS, Linux en als web-applicatie. Installers zijn klein (typisch 8-20 MB) — veel kleiner dan Electron-apps." } },
+      { "@type": "Question", "name": "Hoe kan ik bijdragen aan OpenAEC?", "acceptedAnswer": { "@type": "Answer", "text": "Iedereen kan bijdragen via GitHub (github.com/OpenAEC-Foundation): bug reports, feature requests, pull requests, vertalingen, documentatie, testing en feedback. Voor bedrijven: u kunt supporter worden, sponsor zijn, of custom extensions laten ontwikkelen. Alle tools zijn LGPL-3.0 — fork, modificeer, contribute." } },
+      { "@type": "Question", "name": "Welke normen en standaarden ondersteunt OpenAEC?", "acceptedAnswer": { "@type": "Answer", "text": "OpenAEC ondersteunt alle open AEC-standaarden: IFC 2x3, IFC 4 en IFC 4.3 (inclusief civil schemas IfcRoad, IfcRail, IfcBridge, IfcTunnel, IfcMarineFacility), BCF 2.1 (XML) en BCF API 3.0 (REST), IDS (NL-BIM Basis ILS en RVB BIM Norm), NEN 12831, NEN 2767, NTA 8800, ISSO 51:2023, STABU en RAW. Daarnaast IFCX als universeel intern dataformaat." } },
+      { "@type": "Question", "name": "Voor welke projecten zijn OpenAEC tools geschikt?", "acceptedAnswer": { "@type": "Answer", "text": "OpenAEC dekt de volledige AEC-keten: bouw & utiliteit (B&U: woningen, kantoren, scholen, ziekenhuizen), GWW (grond-, weg- en waterbouw: wegen, dijken, waterkeringen, riolering), civiele techniek (bruggen, tunnels, viaducten, sluizen, havens, spoorwegen, geotechniek) en infrastructuur (energie- en nutsnetwerken, telecom, monumenten). Een ecosysteem voor de hele sector." } }
+    ]
+  }
+  </script>
 </head>
 <body>
     <div id="shared-nav"></div>

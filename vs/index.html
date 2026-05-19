@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open source alternatieven voor Bluebeam, Solibri, AutoCAD en meer — OpenAEC Foundation</title>
+  <meta name="description" content="Vergelijk open source AEC-software van de OpenAEC Foundation met commerciële alternatieven zoals Bluebeam Revu, Solibri, AutoCAD LT, BIMcollab en Bouwprijs. Eerlijke, feitelijke vergelijkingen.">
+  <meta name="i18n-page" content="vs-index">
+  <meta name="keywords" content="open source alternatief, Bluebeam alternatief, Solibri alternatief, AutoCAD alternatief, BIMcollab alternatief, OpenAEC vergelijking">
+  <link rel="canonical" href="https://openaec.foundation/vs/">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-4);
+    }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p {
+      font-size: 1.125rem;
+      color: var(--scaffold-gray);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .vs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--sp-6);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .vs-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+      text-decoration: none;
+      color: var(--deep-forge);
+      display: flex;
+      flex-direction: column;
+    }
+    .vs-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--amber);
+      transform: translateY(-2px);
+    }
+    .vs-card .label {
+      font-family: var(--font-code);
+      font-size: 0.7rem;
+      color: var(--amber);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-2);
+    }
+    .vs-card h2 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      margin-bottom: var(--sp-3);
+      color: var(--deep-forge);
+    }
+    .vs-card h2 .vs-sep {
+      color: var(--scaffold-gray);
+      font-weight: 400;
+      margin: 0 6px;
+    }
+    .vs-card p {
+      font-size: 0.9rem;
+      color: #57534E;
+      line-height: 1.55;
+      flex-grow: 1;
+    }
+    .vs-card .meta {
+      margin-top: var(--sp-4);
+      padding-top: var(--sp-4);
+      border-top: 1px solid #E7E5E4;
+      font-size: 0.75rem;
+      color: var(--scaffold-gray);
+      display: flex;
+      justify-content: space-between;
+      gap: var(--sp-2);
+    }
+    .vs-card .meta strong { color: var(--deep-forge); }
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">Vergelijkingen</p>
+    <h1 data-i18n="header.title">Open source <span class="accent">alternatieven</span></h1>
+    <p data-i18n="header.desc">Eerlijke, feitelijke vergelijkingen tussen OpenAEC tools en commerciele software in de bouwsector. Geen marketing, alleen feiten zodat u zelf kunt kiezen wat het beste past.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="vs-grid">
+
+        <a href="/vs/bluebeam/" class="vs-card">
+          <span class="label">PDF markup</span>
+          <h2>OpenAEC<span class="vs-sep">vs</span>Bluebeam Revu</h2>
+          <p>Open PDF Studio versus Bluebeam Revu — vergelijk PDF-annotatie, meet-tools, redactie en samenwerking. Welke past beter bij uw workflow?</p>
+          <div class="meta">
+            <span>Tool: <strong>Open PDF Studio</strong></span>
+            <span>Licentie: <strong>LGPL-3.0</strong></span>
+          </div>
+        </a>
+
+        <a href="/vs/solibri/" class="vs-card">
+          <span class="label">BIM validatie</span>
+          <h2>OpenAEC<span class="vs-sep">vs</span>Solibri</h2>
+          <p>BIM Validator, BCF Manager Studio en Monty IFC Viewer versus Solibri Office — IFC-validatie en model checking met open standaarden.</p>
+          <div class="meta">
+            <span>Tools: <strong>3 modules</strong></span>
+            <span>Standaarden: <strong>IDS, NL-BIM</strong></span>
+          </div>
+        </a>
+
+        <a href="/vs/autocad/" class="vs-card">
+          <span class="label">2D CAD</span>
+          <h2>OpenAEC<span class="vs-sep">vs</span>AutoCAD LT</h2>
+          <p>Open 2D Studio versus AutoCAD LT — 2D-tekenen met layers, dimensies en DXF-export. Cross-platform, gebouwd met Rust en Tauri.</p>
+          <div class="meta">
+            <span>Tool: <strong>Open 2D Studio</strong></span>
+            <span>Versie: <strong>v0.35</strong></span>
+          </div>
+        </a>
+
+        <a href="/vs/bimcollab/" class="vs-card">
+          <span class="label">BCF samenwerking</span>
+          <h2>OpenAEC<span class="vs-sep">vs</span>BIMcollab</h2>
+          <p>BCF Manager Studio versus BIMcollab — issue management voor BIM-projecten met BCF 2.1 en BCF API 3.0. Self-hosted of cloud, u kiest.</p>
+          <div class="meta">
+            <span>Tool: <strong>BCF Manager Studio</strong></span>
+            <span>API: <strong>BCF 3.0</strong></span>
+          </div>
+        </a>
+
+        <a href="/vs/bouwprijs/" class="vs-card">
+          <span class="label">Kostencalculatie (NL)</span>
+          <h2>OpenAEC<span class="vs-sep">vs</span>Bouwprijs / IBIS-Trad</h2>
+          <p>Open Calc Studio versus Bouwprijs en IBIS-Trad — Nederlandse bouwkostencalculatie met STABU- en RAW-ondersteuning, plus AI-integratie via MCP.</p>
+          <div class="meta">
+            <span>Tool: <strong>Open Calc Studio</strong></span>
+            <span>AI: <strong>MCP server</strong></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container" style="max-width: 900px;">
+      <h2 data-i18n="why.title">Waarom <span class="accent">vergelijken</span>?</h2>
+      <p data-i18n="why.p1">Open source software wordt vaak gezien als een minderwaardig alternatief voor commerciele tools. Dat is een misvatting. Voor veel toepassingen in de AEC-sector zijn open source alternatieven inmiddels volwassen, snel en compleet — vaak met betere ondersteuning voor open standaarden zoals IFC, BCF en IDS.</p>
+      <p data-i18n="why.p2">Tegelijk zijn commerciele tools soms wel degelijk de juiste keuze. Ze hebben jaren van verfijning, grote ecosystemen en bewezen integraties. Wij geloven in eerlijke vergelijkingen zodat u een onderbouwde keuze kunt maken — of u nu kiest voor open source, commercieel of beide.</p>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span data-i18n="footer.slogan">Build free. Build together.</span>
+    <p>&copy; 2026 OpenAEC Foundation</p>
+  </div></footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Open source alternatieven voor AEC-software",
+    "description": "Vergelijkingen tussen OpenAEC tools en commerciele AEC-software zoals Bluebeam, Solibri, AutoCAD, BIMcollab en Bouwprijs.",
+    "url": "https://openaec.foundation/vs/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://openaec.foundation"
+    },
+    "hasPart": [
+      { "@type": "WebPage", "name": "OpenAEC vs Bluebeam Revu", "url": "https://openaec.foundation/vs/bluebeam/" },
+      { "@type": "WebPage", "name": "OpenAEC vs Solibri", "url": "https://openaec.foundation/vs/solibri/" },
+      { "@type": "WebPage", "name": "OpenAEC vs AutoCAD LT", "url": "https://openaec.foundation/vs/autocad/" },
+      { "@type": "WebPage", "name": "OpenAEC vs BIMcollab", "url": "https://openaec.foundation/vs/bimcollab/" },
+      { "@type": "WebPage", "name": "OpenAEC vs Bouwprijs", "url": "https://openaec.foundation/vs/bouwprijs/" }
+    ]
+  }
+  </script>
+
+  <script src="/shared/i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAEC Open 2D Studio vs AutoCAD LT — open source 2D CAD alternatief</title>
+  <meta name="description" content="Vergelijk Open 2D Studio (gratis, LGPL-3.0, Rust + Tauri) met AutoCAD LT (typisch €500-700/gebruiker/jaar). 2D-tekenen met layers, dimensies, hatch en DXF. Cross-platform.">
+  <meta name="i18n-page" content="vs-autocad">
+  <meta name="keywords" content="AutoCAD alternatief, open source CAD, Open 2D Studio, AutoCAD LT vergelijking, gratis 2D tekenen, DXF editor">
+  <link rel="canonical" href="https://openaec.foundation/vs/autocad/">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header { background: var(--night-build); padding: var(--sp-20) var(--sp-6) var(--sp-12); text-align: center; border-bottom: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.25rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p { font-size: 1.0625rem; color: var(--scaffold-gray); max-width: 720px; margin: 0 auto; line-height: 1.6; }
+    .compare-table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #E7E5E4; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); font-size: 0.9375rem; }
+    .compare-table th, .compare-table td { padding: var(--sp-4); text-align: left; border-bottom: 1px solid #E7E5E4; vertical-align: top; }
+    .compare-table thead th { background: var(--night-build); color: white; font-family: var(--font-heading); font-size: 0.95rem; }
+    .compare-table thead th:first-child { width: 30%; }
+    .compare-table thead th .badge { display: block; font-family: var(--font-code); font-size: 0.65rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.08em; color: var(--warm-gold); margin-top: 4px; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table .feat { font-weight: 600; color: var(--deep-forge); background: var(--concrete); }
+    .yes { color: #15803D; font-weight: 600; }
+    .no { color: #B91C1C; font-weight: 600; }
+    .partial { color: var(--amber); font-weight: 600; }
+    .choose-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--sp-6); margin-top: var(--sp-6); }
+    .choose-card { background: white; border: 1px solid #E7E5E4; border-radius: var(--radius-lg); padding: var(--sp-6); box-shadow: var(--shadow-sm); }
+    .choose-card.openaec { border-top: 4px solid var(--amber); }
+    .choose-card.competitor { border-top: 4px solid #57534E; }
+    .choose-card h3 { font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: var(--sp-4); color: var(--deep-forge); }
+    .choose-card ul { list-style: none; padding: 0; margin: 0; }
+    .choose-card li { padding: var(--sp-2) 0 var(--sp-2) var(--sp-6); position: relative; font-size: 0.9375rem; line-height: 1.55; color: #44403C; }
+    .choose-card li::before { content: "→"; position: absolute; left: 0; color: var(--amber); font-weight: 700; }
+    .choose-card.competitor li::before { color: #57534E; }
+    .cta-block { background: var(--night-build); color: white; border-radius: var(--radius-lg); padding: var(--sp-10) var(--sp-6); text-align: center; max-width: 800px; margin: 0 auto; }
+    .cta-block h2 { color: white; margin-bottom: var(--sp-4); }
+    .cta-block p { color: var(--scaffold-gray); max-width: 600px; margin: 0 auto var(--sp-6); line-height: 1.6; }
+    .summary-lead { max-width: 780px; margin: 0 auto; font-size: 1.0625rem; line-height: 1.7; color: #44403C; }
+    .summary-lead p { margin-bottom: var(--sp-4); }
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .compare-table { font-size: 0.8125rem; }
+      .compare-table th, .compare-table td { padding: var(--sp-3); }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">Vergelijking</p>
+    <h1 data-i18n="header.title">OpenAEC <span class="accent">vs</span> AutoCAD LT</h1>
+    <p data-i18n="header.desc">Open 2D Studio is een open source 2D CAD-tool gebouwd met Rust en Tauri. Vergelijk met AutoCAD LT op functies, prijs, platforms en licentiemodel.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="summary-lead">
+        <p><strong>AutoCAD LT</strong> is de afgeslankte 2D-versie van Autodesk's iconische AutoCAD, voor het eerst uitgebracht in 1993. Het is de de-facto standaard voor 2D-tekenwerk in architectuur, civiele techniek en installatietechniek met een diep ecosysteem aan plug-ins, families en uitwisselingsformaten. AutoCAD LT kost typisch €500-700 per gebruiker per jaar (abonnement, jaarlijks of meerjarig).</p>
+        <p><strong>Open 2D Studio</strong> van de OpenAEC Foundation is een open source 2D CAD-applicatie (huidige versie v0.35, 90+ commits, 17 stars op GitHub). Gebouwd met Rust en Tauri voor snelheid en lage geheugendruk, cross-platform op Windows, macOS en Linux. Ondersteunt line, arc, circle, polyline, hatch, layers, dimensies en DXF-uitwisseling. Licentie: LGPL-3.0.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom: var(--sp-8);">Functie-vergelijking</h2>
+      <div style="overflow-x: auto;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Kenmerk</th>
+              <th>Open 2D Studio<span class="badge">OpenAEC Foundation, v0.35</span></th>
+              <th>AutoCAD LT<span class="badge">Autodesk Inc.</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="feat">Prijs</td><td class="yes">Gratis</td><td>~€500-700/gebruiker/jaar</td></tr>
+            <tr><td class="feat">Licentie</td><td>LGPL-3.0 (open source)</td><td>Commercieel, proprietary</td></tr>
+            <tr><td class="feat">Licentiekosten per gebruiker</td><td class="yes">€0</td><td>Abonnement, jaarlijks</td></tr>
+            <tr><td class="feat">Platforms</td><td class="yes">Windows, macOS, Linux</td><td class="partial">Windows, macOS (web/mobile beperkt)</td></tr>
+            <tr><td class="feat">Tech stack</td><td>Rust + Tauri (native, low memory)</td><td>C++ (proprietary)</td></tr>
+            <tr><td class="feat">Line / Arc / Circle</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Polyline</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Hatch</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Layers</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Dimensies</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">DXF import/export</td><td class="yes">Ja</td><td class="yes">Ja (native DWG ook)</td></tr>
+            <tr><td class="feat">DWG (native)</td><td class="partial">Via DXF-conversie</td><td class="yes">Native</td></tr>
+            <tr><td class="feat">3D modeling</td><td class="no">Nee (2D only)</td><td class="no">Nee in LT (3D in full AutoCAD)</td></tr>
+            <tr><td class="feat">LISP / AutoLISP / macros</td><td class="no">Niet ondersteund</td><td class="yes">Beperkt in LT</td></tr>
+            <tr><td class="feat">Plug-in ecosysteem</td><td class="partial">Klein, groeiend</td><td class="yes">Groot, gevestigd</td></tr>
+            <tr><td class="feat">Templates / families</td><td class="partial">Beperkt</td><td class="yes">Uitgebreid</td></tr>
+            <tr><td class="feat">Telemetrie</td><td class="yes">Geen</td><td class="no">Ja</td></tr>
+            <tr><td class="feat">Source code</td><td class="yes">GitHub, publiek</td><td class="no">Gesloten</td></tr>
+            <tr><td class="feat">Volwassenheid</td><td class="partial">v0.35, in actieve ontwikkeling</td><td class="yes">30+ jaar (sinds 1993)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">Wanneer kiest u welke?</h2>
+      <div class="choose-grid">
+        <div class="choose-card openaec">
+          <h3>Kies <span class="accent">Open 2D Studio</span> als...</h3>
+          <ul>
+            <li>U geen jaarlijks abonnement van €500-700 wilt betalen voor basis 2D-tekenwerk.</li>
+            <li>U op Linux werkt (AutoCAD LT draait niet native op Linux).</li>
+            <li>U op een lichte machine werkt en lage geheugendruk waardeert (Tauri-applicatie).</li>
+            <li>U eenvoudig DXF-tekeningen wilt maken of bewerken zonder vendor lock-in.</li>
+            <li>U als zelfstandige, student of klein bureau professionele 2D-tools nodig heeft.</li>
+            <li>U bereid bent te werken met een tool die nog volwassen wordt (v0.35).</li>
+            <li>U open source wilt steunen of zelf wilt bijdragen aan de development.</li>
+          </ul>
+        </div>
+        <div class="choose-card competitor">
+          <h3>Kies AutoCAD LT als...</h3>
+          <ul>
+            <li>U intensief DWG uitwisselt met andere bureaus die op AutoCAD draaien.</li>
+            <li>U geavanceerde 2D-functionaliteit nodig heeft die in de gevestigde AutoCAD-workflow zit.</li>
+            <li>U toegang nodig heeft tot het uitgebreide plug-in en template ecosysteem van Autodesk.</li>
+            <li>U commerciele support, training en certificering nodig heeft.</li>
+            <li>Uw organisatie al jarenlang in AutoCAD-workflows werkt met diepe macro-investeringen.</li>
+            <li>U maximale stabiliteit en feature-volledigheid prefereert boven kostenbesparing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Probeer Open 2D Studio</h2>
+        <p>Download Open 2D Studio voor Windows, macOS of Linux. Open source, geen abonnement, geen telemetrie. Een eerlijk alternatief in actieve ontwikkeling.</p>
+        <div class="btn-group">
+          <a href="/open-2d-studio/" class="btn btn-primary btn-lg">Open 2D Studio</a>
+          <a href="https://github.com/OpenAEC-Foundation/open-2d-studio" class="btn btn-ghost btn-lg" style="color:white;border-color:white;">Bekijk source op GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span data-i18n="footer.slogan">Build free. Build together.</span>
+    <p>&copy; 2026 OpenAEC Foundation</p>
+  </div></footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Open 2D Studio",
+    "alternateName": "OpenAEC Open 2D Studio",
+    "description": "Open source 2D CAD-applicatie van de OpenAEC Foundation, gebouwd met Rust en Tauri. Gratis, LGPL-3.0 alternatief voor AutoCAD LT met line, arc, circle, polyline, hatch, layers, dimensies en DXF-uitwisseling. Cross-platform op Windows, macOS en Linux.",
+    "brand": { "@type": "Brand", "name": "OpenAEC Foundation" },
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "DesignApplication",
+    "softwareVersion": "0.35",
+    "url": "https://openaec.foundation/open-2d-studio/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+    "isAccessibleForFree": true,
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een open source alternatief voor AutoCAD LT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open 2D Studio van de OpenAEC Foundation is een open source 2D CAD-applicatie gebouwd met Rust en Tauri. Het ondersteunt line, arc, circle, polyline, hatch, layers, dimensies en DXF-uitwisseling onder LGPL-3.0 licentie en draait cross-platform op Windows, macOS en Linux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Draait Open 2D Studio op Linux?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Open 2D Studio draait native op Windows, macOS en Linux. AutoCAD LT heeft geen native Linux-versie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ondersteunt Open 2D Studio DWG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open 2D Studio gebruikt DXF als primair uitwisselingsformaat. DWG-uitwisseling kan via DXF-conversie. AutoCAD LT ondersteunt DWG native."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="/shared/i18n.js"></script>
+</body>
+</html>

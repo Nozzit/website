@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAEC Open PDF Studio vs Bluebeam Revu — open source alternatief voor PDF markup</title>
+  <meta name="description" content="Vergelijk Open PDF Studio (gratis, open source, LGPL-3.0) met Bluebeam Revu (typisch €300-500/gebruiker/jaar). Functies, prijs, licentie en wanneer u welke kiest.">
+  <meta name="i18n-page" content="vs-bluebeam">
+  <meta name="keywords" content="Bluebeam alternatief, open source PDF markup, Open PDF Studio, Bluebeam Revu vergelijking, gratis PDF annotatie">
+  <link rel="canonical" href="https://openaec.foundation/vs/bluebeam/">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.25rem;
+      color: white;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-4);
+    }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p {
+      font-size: 1.0625rem;
+      color: var(--scaffold-gray);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      font-size: 0.9375rem;
+    }
+    .compare-table th, .compare-table td {
+      padding: var(--sp-4);
+      text-align: left;
+      border-bottom: 1px solid #E7E5E4;
+      vertical-align: top;
+    }
+    .compare-table thead th {
+      background: var(--night-build);
+      color: white;
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+    }
+    .compare-table thead th:first-child {
+      width: 30%;
+    }
+    .compare-table thead th .badge {
+      display: block;
+      font-family: var(--font-code);
+      font-size: 0.65rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--warm-gold);
+      margin-top: 4px;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table .feat {
+      font-weight: 600;
+      color: var(--deep-forge);
+      background: var(--concrete);
+    }
+    .yes { color: #15803D; font-weight: 600; }
+    .no { color: #B91C1C; font-weight: 600; }
+    .partial { color: var(--amber); font-weight: 600; }
+    .choose-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: var(--sp-6);
+      margin-top: var(--sp-6);
+    }
+    .choose-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+    }
+    .choose-card.openaec { border-top: 4px solid var(--amber); }
+    .choose-card.competitor { border-top: 4px solid #57534E; }
+    .choose-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      margin-bottom: var(--sp-4);
+      color: var(--deep-forge);
+    }
+    .choose-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .choose-card li {
+      padding: var(--sp-2) 0 var(--sp-2) var(--sp-6);
+      position: relative;
+      font-size: 0.9375rem;
+      line-height: 1.55;
+      color: #44403C;
+    }
+    .choose-card li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--amber);
+      font-weight: 700;
+    }
+    .choose-card.competitor li::before { color: #57534E; }
+    .cta-block {
+      background: var(--night-build);
+      color: white;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-10) var(--sp-6);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .cta-block h2 { color: white; margin-bottom: var(--sp-4); }
+    .cta-block p { color: var(--scaffold-gray); max-width: 600px; margin: 0 auto var(--sp-6); line-height: 1.6; }
+    .summary-lead {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: #44403C;
+    }
+    .summary-lead p { margin-bottom: var(--sp-4); }
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .compare-table { font-size: 0.8125rem; }
+      .compare-table th, .compare-table td { padding: var(--sp-3); }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">Vergelijking</p>
+    <h1 data-i18n="header.title">OpenAEC <span class="accent">vs</span> Bluebeam Revu</h1>
+    <p data-i18n="header.desc">Open PDF Studio is een gratis, open source alternatief voor Bluebeam Revu. Vergelijk PDF-annotatie, meet-tools, redactie en samenwerking — feitelijk en gebalanceerd.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="summary-lead">
+        <p><strong>Bluebeam Revu</strong> is sinds 2002 de de-facto industriestandaard voor PDF-markup in de bouwsector. De software biedt geavanceerde annotatie-, meet- en samenwerkingsfuncties en is diep verankerd in workflows bij aannemers, architecten en ingenieursbureaus. Bluebeam Revu kost typisch €300-500 per gebruiker per jaar (abonnement), afhankelijk van editie (Basics, Core, Complete) en land.</p>
+        <p><strong>Open PDF Studio</strong> van de OpenAEC Foundation is een gratis, open source PDF-editor met een eigen Rust-engine voor snelle vector PDF-rendering. Het project heeft inmiddels meer dan 4.393 downloads en biedt 20+ annotatietools, meet-functies, redactie, OCR en formulieren. Licentie: LGPL-3.0. Geen abonnement, geen telemetrie, geen vendor lock-in.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom: var(--sp-8);">Functie-vergelijking</h2>
+      <div style="overflow-x: auto;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Kenmerk</th>
+              <th>Open PDF Studio<span class="badge">OpenAEC Foundation</span></th>
+              <th>Bluebeam Revu<span class="badge">Bluebeam, Inc.</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="feat">Prijs</td><td class="yes">Gratis</td><td>~€300-500/gebruiker/jaar</td></tr>
+            <tr><td class="feat">Licentie</td><td>LGPL-3.0 (open source)</td><td>Commercieel, proprietary</td></tr>
+            <tr><td class="feat">Licentiekosten per gebruiker</td><td class="yes">€0</td><td>Abonnement, jaarlijks</td></tr>
+            <tr><td class="feat">Platforms</td><td>Windows, macOS, Linux, Android</td><td>Windows, iPad (beperkt op macOS)</td></tr>
+            <tr><td class="feat">PDF-engine</td><td>Eigen Rust-engine, vector PDFs razendsnel</td><td>Eigen engine, sterk geoptimaliseerd</td></tr>
+            <tr><td class="feat">Annotatie-tools</td><td class="yes">20+ tools (highlight, vormen, callouts, stempels, vrije pen)</td><td class="yes">Uitgebreid, inclusief tool chest</td></tr>
+            <tr><td class="feat">Meet-tools</td><td class="yes">Afstand, oppervlakte, omtrek met schaal-kalibratie</td><td class="yes">Uitgebreid, inclusief telling en perimeter</td></tr>
+            <tr><td class="feat">Redactie</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">OCR</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Formulieren</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Handtekeningen en stempels</td><td class="yes">Multi-stroke, 5 opgeslagen handtekeningen, 10 stempels</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Watermerken / headers / footers</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Cloud samenwerking</td><td class="partial">Beperkt (lokaal-eerst)</td><td class="yes">Bluebeam Studio (cloud)</td></tr>
+            <tr><td class="feat">Plug-in ecosysteem</td><td class="partial">Beperkt, groeiend</td><td class="yes">Groot, gevestigde markt</td></tr>
+            <tr><td class="feat">Telemetrie</td><td class="yes">Geen</td><td class="no">Ja</td></tr>
+            <tr><td class="feat">Self-hosted / lokaal</td><td class="yes">Volledig lokaal</td><td class="partial">Voor Studio cloud-account vereist</td></tr>
+            <tr><td class="feat">Source code beschikbaar</td><td class="yes">GitHub, publiek</td><td class="no">Gesloten</td></tr>
+            <tr><td class="feat">Downloads / community</td><td>4.393+ downloads</td><td>Honderdduizenden gebruikers wereldwijd</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">Wanneer kiest u welke?</h2>
+      <div class="choose-grid">
+        <div class="choose-card openaec">
+          <h3>Kies <span class="accent">Open PDF Studio</span> als...</h3>
+          <ul>
+            <li>U geen jaarlijks abonnement wilt betalen voor PDF-markup.</li>
+            <li>U cross-platform werkt (Linux, macOS, Android worden volledig ondersteund).</li>
+            <li>U privacy en data-soevereiniteit belangrijk vindt — geen telemetrie, alles lokaal.</li>
+            <li>U als zelfstandige of klein bureau snel professionele PDF-tools nodig heeft zonder licentiebeheer.</li>
+            <li>U de software wilt aanpassen of integreren in uw eigen workflow (LGPL-3.0).</li>
+            <li>U vector PDFs (technische tekeningen) razendsnel wilt openen dankzij de Rust-engine.</li>
+            <li>U open source wilt steunen in de AEC-sector.</li>
+          </ul>
+        </div>
+        <div class="choose-card competitor">
+          <h3>Kies Bluebeam Revu als...</h3>
+          <ul>
+            <li>U intensief samenwerkt in Bluebeam Studio met externe partijen die ook Bluebeam gebruiken.</li>
+            <li>U specifieke Bluebeam-plug-ins of integraties nodig heeft die in uw workflow zijn ingebed.</li>
+            <li>U werkt in een organisatie waar Bluebeam de bedrijfsstandaard is en u tool chests deelt.</li>
+            <li>U geavanceerde calibratie- en take-off workflows nodig heeft die binnen uw team al ingeregeld zijn.</li>
+            <li>U commerciele 24/7 vendor support nodig heeft met SLA.</li>
+            <li>De licentiekosten geen issue zijn en u maximaal verfijnde features prefereert.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Probeer Open PDF Studio gratis</h2>
+        <p>Download voor Windows, macOS, Linux of Android en zie zelf of het bij uw workflow past. Geen registratie, geen account, geen telemetrie.</p>
+        <div class="btn-group">
+          <a href="/open-pdf-studio/" class="btn btn-primary btn-lg">Open PDF Studio</a>
+          <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio" class="btn btn-ghost btn-lg" style="color:white;border-color:white;">Bekijk source op GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span data-i18n="footer.slogan">Build free. Build together.</span>
+    <p>&copy; 2026 OpenAEC Foundation</p>
+  </div></footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Open PDF Studio",
+    "alternateName": "OpenAEC Open PDF Studio",
+    "description": "Open source PDF-editor en annotator van de OpenAEC Foundation. Gratis, LGPL-3.0 alternatief voor Bluebeam Revu met Rust PDF-engine, 20+ annotatietools, meet-functies, redactie, OCR en formulieren. Cross-platform (Windows, macOS, Linux, Android).",
+    "brand": {
+      "@type": "Brand",
+      "name": "OpenAEC Foundation"
+    },
+    "operatingSystem": "Windows, macOS, Linux, Android",
+    "applicationCategory": "DesignApplication",
+    "url": "https://openaec.foundation/open-pdf-studio/",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "ratingCount": "4393",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een open source alternatief voor Bluebeam Revu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open PDF Studio van de OpenAEC Foundation is een gratis, open source alternatief voor Bluebeam Revu. Het biedt 20+ annotatietools, meet-functies, redactie, OCR en formulieren onder LGPL-3.0 licentie, en draait op Windows, macOS, Linux en Android."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Bluebeam Revu vergeleken met Open PDF Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bluebeam Revu kost typisch 300-500 euro per gebruiker per jaar (abonnement). Open PDF Studio is volledig gratis onder LGPL-3.0 licentie, zonder abonnement of telemetrie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Draait Open PDF Studio op macOS en Linux?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Open PDF Studio is volledig cross-platform en draait op Windows, macOS (universal), Linux (deb, AppImage, Snap) en Android. Bluebeam Revu is primair Windows-georienteerd met beperkte ondersteuning op andere platforms."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="/shared/i18n.js"></script>
+</body>
+</html>

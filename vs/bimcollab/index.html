@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAEC BCF Manager Studio vs BIMcollab — self-hosted, open source BCF</title>
+  <meta name="description" content="Vergelijk BCF Manager Studio (gratis, open source, self-hosted) met BIMcollab (typisch €300-800/gebruiker/jaar, cloud-only). BCF 2.1, BCF API 3.0, en wanneer u welke kiest.">
+  <meta name="i18n-page" content="vs-bimcollab">
+  <meta name="keywords" content="BIMcollab alternatief, open source BCF, BCF Manager Studio, BCF API 3.0, self-hosted BIM issue management">
+  <link rel="canonical" href="https://openaec.foundation/vs/bimcollab/">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header { background: var(--night-build); padding: var(--sp-20) var(--sp-6) var(--sp-12); text-align: center; border-bottom: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.25rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p { font-size: 1.0625rem; color: var(--scaffold-gray); max-width: 720px; margin: 0 auto; line-height: 1.6; }
+    .compare-table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #E7E5E4; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); font-size: 0.9375rem; }
+    .compare-table th, .compare-table td { padding: var(--sp-4); text-align: left; border-bottom: 1px solid #E7E5E4; vertical-align: top; }
+    .compare-table thead th { background: var(--night-build); color: white; font-family: var(--font-heading); font-size: 0.95rem; }
+    .compare-table thead th:first-child { width: 30%; }
+    .compare-table thead th .badge { display: block; font-family: var(--font-code); font-size: 0.65rem; font-weight: 400; text-transform: uppercase; letter-spacing: 0.08em; color: var(--warm-gold); margin-top: 4px; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table .feat { font-weight: 600; color: var(--deep-forge); background: var(--concrete); }
+    .yes { color: #15803D; font-weight: 600; }
+    .no { color: #B91C1C; font-weight: 600; }
+    .partial { color: var(--amber); font-weight: 600; }
+    .choose-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--sp-6); margin-top: var(--sp-6); }
+    .choose-card { background: white; border: 1px solid #E7E5E4; border-radius: var(--radius-lg); padding: var(--sp-6); box-shadow: var(--shadow-sm); }
+    .choose-card.openaec { border-top: 4px solid var(--amber); }
+    .choose-card.competitor { border-top: 4px solid #57534E; }
+    .choose-card h3 { font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: var(--sp-4); color: var(--deep-forge); }
+    .choose-card ul { list-style: none; padding: 0; margin: 0; }
+    .choose-card li { padding: var(--sp-2) 0 var(--sp-2) var(--sp-6); position: relative; font-size: 0.9375rem; line-height: 1.55; color: #44403C; }
+    .choose-card li::before { content: "→"; position: absolute; left: 0; color: var(--amber); font-weight: 700; }
+    .choose-card.competitor li::before { color: #57534E; }
+    .cta-block { background: var(--night-build); color: white; border-radius: var(--radius-lg); padding: var(--sp-10) var(--sp-6); text-align: center; max-width: 800px; margin: 0 auto; }
+    .cta-block h2 { color: white; margin-bottom: var(--sp-4); }
+    .cta-block p { color: var(--scaffold-gray); max-width: 600px; margin: 0 auto var(--sp-6); line-height: 1.6; }
+    .summary-lead { max-width: 780px; margin: 0 auto; font-size: 1.0625rem; line-height: 1.7; color: #44403C; }
+    .summary-lead p { margin-bottom: var(--sp-4); }
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 1.75rem; }
+      .compare-table { font-size: 0.8125rem; }
+      .compare-table th, .compare-table td { padding: var(--sp-3); }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">Vergelijking</p>
+    <h1 data-i18n="header.title">OpenAEC <span class="accent">vs</span> BIMcollab</h1>
+    <p data-i18n="header.desc">BCF Manager Studio biedt self-hosted, open source issue management voor BIM-projecten met BCF 2.1 en BCF API 3.0. Vergelijk met BIMcollab op functies, prijs en architectuur.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="summary-lead">
+        <p><strong>BIMcollab</strong> is een gevestigde SaaS-oplossing voor BIM issue management, breed gebruikt in Europa. Het integreert met Revit, Archicad, Tekla, Navisworks en Solibri via plug-ins en biedt een gebruiksvriendelijke web-interface. BIMcollab is cloud-only en kost typisch €300-800 per gebruiker per jaar (afhankelijk van Zoom-, Cloud- of Nexus-editie en project-aantal).</p>
+        <p><strong>BCF Manager Studio</strong> van de OpenAEC Foundation is een gratis, open source BCF-tool die volledig BCF 2.1 en BCF API 3.0 ondersteunt. U kunt het self-hosten (eigen server) of lokaal draaien — uw data blijft bij u, geen verplichte cloud. Naadloze koppeling met de OpenAEC BIM Validator en Monty IFC Viewer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom: var(--sp-8);">Functie-vergelijking</h2>
+      <div style="overflow-x: auto;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Kenmerk</th>
+              <th>BCF Manager Studio<span class="badge">OpenAEC Foundation</span></th>
+              <th>BIMcollab<span class="badge">KUBUS bv</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="feat">Prijs</td><td class="yes">Gratis</td><td>~€300-800/gebruiker/jaar</td></tr>
+            <tr><td class="feat">Licentie</td><td>Open source (LGPL-3.0)</td><td>Commercieel, SaaS-abonnement</td></tr>
+            <tr><td class="feat">Licentiekosten per gebruiker</td><td class="yes">€0</td><td>Abonnement, jaarlijks</td></tr>
+            <tr><td class="feat">Deployment-model</td><td class="yes">Self-hosted of lokaal</td><td class="no">Cloud-only (SaaS)</td></tr>
+            <tr><td class="feat">BCF 2.1</td><td class="yes">Native</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">BCF API 3.0</td><td class="yes">Native, ingebouwd</td><td class="partial">Beperkt / via roadmap</td></tr>
+            <tr><td class="feat">Data-locatie / soevereiniteit</td><td class="yes">U bepaalt zelf</td><td class="partial">Vendor-hosted (EU-regio)</td></tr>
+            <tr><td class="feat">Web-interface</td><td class="yes">Ja</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Revit plug-in</td><td class="partial">Beperkt</td><td class="yes">Volwassen</td></tr>
+            <tr><td class="feat">Archicad plug-in</td><td class="partial">Beperkt</td><td class="yes">Volwassen</td></tr>
+            <tr><td class="feat">Tekla plug-in</td><td class="partial">Beperkt</td><td class="yes">Volwassen</td></tr>
+            <tr><td class="feat">Navisworks plug-in</td><td class="partial">Via BCF-export</td><td class="yes">Ja</td></tr>
+            <tr><td class="feat">Issue tracking dashboard</td><td class="yes">Ja</td><td class="yes">Uitgebreid</td></tr>
+            <tr><td class="feat">Integratie met BIM Validator</td><td class="yes">Native</td><td class="no">Niet van toepassing</td></tr>
+            <tr><td class="feat">Self-hosted op eigen infrastructuur</td><td class="yes">Volledig</td><td class="no">Niet mogelijk</td></tr>
+            <tr><td class="feat">Source code</td><td class="yes">GitHub, publiek</td><td class="no">Gesloten</td></tr>
+            <tr><td class="feat">Telemetrie</td><td class="yes">Geen</td><td class="partial">Ja</td></tr>
+            <tr><td class="feat">Support</td><td>Community + GitHub</td><td class="yes">Commercieel, SLA</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">Wanneer kiest u welke?</h2>
+      <div class="choose-grid">
+        <div class="choose-card openaec">
+          <h3>Kies <span class="accent">BCF Manager Studio</span> als...</h3>
+          <ul>
+            <li>U self-hosted wilt werken — uw BIM-data blijft op uw eigen server.</li>
+            <li>U data-soevereiniteit of GDPR/AVG-vereisten heeft die cloud-only oplossingen lastig maken.</li>
+            <li>U BCF API 3.0 native nodig heeft (de nieuwste versie van de standaard).</li>
+            <li>U geen jaarlijks abonnement per gebruiker wilt betalen.</li>
+            <li>U als consultant of klein bureau projecten draait waarin u BCF wilt uitwisselen.</li>
+            <li>U BCF-issues wilt koppelen aan IDS-validatieresultaten via de OpenAEC BIM Validator.</li>
+            <li>U de tool wilt aanpassen of integreren in een bestaande issue tracker.</li>
+          </ul>
+        </div>
+        <div class="choose-card competitor">
+          <h3>Kies BIMcollab als...</h3>
+          <ul>
+            <li>U intensief samenwerkt met partners die al in BIMcollab werken.</li>
+            <li>U volwassen plug-ins voor Revit, Archicad, Tekla en Navisworks nodig heeft.</li>
+            <li>U geen self-hosting wilt regelen en een kant-en-klare SaaS prefereert.</li>
+            <li>U commerciele support met SLA en onboarding nodig heeft.</li>
+            <li>Uw organisatie al in de BIMcollab Zoom/Nexus/Cloud workflow werkt.</li>
+            <li>U specifieke BIMcollab-features gebruikt zoals Smart Issues, statistieken of geavanceerde dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Probeer BCF Manager Studio</h2>
+        <p>Self-hosted BCF issue management voor BIM-projecten. Open source, geen abonnement, geen verplichte cloud. Werk samen met partners via de open BCF-standaard.</p>
+        <div class="btn-group">
+          <a href="/bcf-manager-studio/" class="btn btn-primary btn-lg">BCF Manager Studio</a>
+          <a href="https://github.com/OpenAEC-Foundation" class="btn btn-ghost btn-lg" style="color:white;border-color:white;">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-container">
+    <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
+    <span data-i18n="footer.slogan">Build free. Build together.</span>
+    <p>&copy; 2026 OpenAEC Foundation</p>
+  </div></footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "BCF Manager Studio",
+    "alternateName": "OpenAEC BCF Manager Studio",
+    "description": "Open source, self-hosted BCF issue management tool van de OpenAEC Foundation. Gratis alternatief voor BIMcollab met native ondersteuning voor BCF 2.1 en BCF API 3.0. Naadloze integratie met OpenAEC BIM Validator en Monty IFC Viewer.",
+    "brand": { "@type": "Brand", "name": "OpenAEC Foundation" },
+    "operatingSystem": "Browser, Windows, macOS, Linux",
+    "applicationCategory": "BusinessApplication",
+    "url": "https://openaec.foundation/bcf-manager-studio/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+    "isAccessibleForFree": true,
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is een open source alternatief voor BIMcollab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BCF Manager Studio van de OpenAEC Foundation is een gratis, open source alternatief voor BIMcollab. Het ondersteunt BCF 2.1 en BCF API 3.0 native en kan self-hosted of lokaal draaien — uw data blijft bij u, geen verplichte cloud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik BCF Manager Studio self-hosted draaien?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, BCF Manager Studio is ontworpen voor self-hosting. U draait het op uw eigen server of lokaal, zodat uw BIM-data binnen uw eigen infrastructuur blijft. BIMcollab is daarentegen cloud-only (SaaS)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ondersteunt BCF Manager Studio BCF API 3.0?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, BCF Manager Studio ondersteunt BCF API 3.0 native — de nieuwste versie van de open BCF-standaard van buildingSMART."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="/shared/i18n.js"></script>
+</body>
+</html>
