@@ -77,6 +77,7 @@ async function processRepo(repo) {
   const byPlatform = {};
   const byVersion = {};
   const topAssets = [];
+  const allAssets = []; // for snapshot: every asset with id + count
 
   releases.forEach(rel => {
     const isNightly = rel.tag_name === 'nightly' || rel.prerelease;
@@ -91,6 +92,16 @@ async function processRepo(repo) {
       if (!isNightly) {
         byVersion[rel.tag_name] = (byVersion[rel.tag_name] || 0) + asset.download_count;
       }
+
+      // Track every asset by id for daily snapshot
+      allAssets.push({
+        id: asset.id,
+        repo,
+        tag: rel.tag_name,
+        name: asset.name,
+        platform,
+        downloads: asset.download_count,
+      });
 
       if (asset.download_count > 0) {
         topAssets.push({
@@ -116,6 +127,7 @@ async function processRepo(repo) {
     byPlatform,
     byVersion,
     topAssets: topAssets.slice(0, 10),
+    _allAssets: allAssets, // internal: for snapshot
   };
 }
 
@@ -145,25 +157,60 @@ async function main() {
   // Top tools by downloads
   const ranked = [...perTool].sort((a, b) => b.totalDownloads - a.totalDownloads);
 
+  // Strip internal _allAssets before writing public file
+  const publicPerTool = perTool.map(({ _allAssets, ...rest }) => rest);
+
   const output = {
     generated: new Date().toISOString(),
     grandTotal,
     totalRepos: perTool.length,
     platformTotals,
     rankedByDownloads: ranked.map(t => ({ repo: t.repo, downloads: t.totalDownloads, releases: t.releases })),
-    perTool,
+    perTool: publicPerTool,
   };
 
   const dataDir = path.join(__dirname, '..', 'data');
   fs.mkdirSync(dataDir, { recursive: true });
   fs.writeFileSync(path.join(dataDir, 'downloads.json'), JSON.stringify(output, null, 2));
 
+  // Write compact daily snapshot for tracking deltas over time
+  const historyDir = path.join(dataDir, 'history-downloads');
+  fs.mkdirSync(historyDir, { recursive: true });
+  const today = new Date().toISOString().substring(0, 10);
+  const snapshot = {
+    date: today,
+    generated: output.generated,
+    grandTotal,
+    perRepo: {},
+    perAsset: {},
+  };
+  perTool.forEach(t => {
+    snapshot.perRepo[t.repo] = t.totalDownloads;
+    t._allAssets.forEach(a => {
+      snapshot.perAsset[a.id] = {
+        repo: a.repo,
+        tag: a.tag,
+        platform: a.platform,
+        downloads: a.downloads,
+      };
+    });
+  });
+  fs.writeFileSync(path.join(historyDir, `${today}.json`), JSON.stringify(snapshot, null, 2));
+
+  // Cleanup snapshots older than 365 days
+  const oneYearAgo = new Date(Date.now() - 365 * 86400000).toISOString().substring(0, 10);
+  fs.readdirSync(historyDir).forEach(f => {
+    if (f.endsWith('.json') && f.substring(0, 10) < oneYearAgo) {
+      fs.unlinkSync(path.join(historyDir, f));
+    }
+  });
+
   console.log(`\nGrand total: ${grandTotal} downloads across ${perTool.length} tools`);
   console.log('Per platform:');
   Object.entries(platformTotals).sort((a, b) => b[1] - a[1]).forEach(([p, n]) => {
     console.log(`  ${p.padEnd(20)} ${n}`);
   });
-  console.log('\nWritten to data/downloads.json');
+  console.log(`\nWritten to data/downloads.json + data/history-downloads/${today}.json`);
 }
 
 main().catch(err => {

@@ -31,10 +31,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate-release-notes.js
 
-      - name: Generate downloads stats
+      - name: Generate downloads stats (+ daily snapshot)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate-downloads.js
+
+      - name: Compute download trends (weekly deltas)
+        run: node scripts/compute-download-trends.js
 
       - name: Update homepage tool stats (static)
         run: node scripts/build-homepage-stats.js
