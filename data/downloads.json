@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-19T11:10:12.024Z",
-  "grandTotal": 5161,
+  "generated": "2026-05-19T11:35:34.714Z",
+  "grandTotal": 5166,
   "totalRepos": 16,
   "platformTotals": {
     "Android": 634,
@@ -8,8 +8,8 @@
     "Linux (AppImage)": 473,
     "Archive": 105,
     "Linux (deb)": 422,
-    "macOS": 486,
-    "Windows": 2750,
+    "macOS": 490,
+    "Windows": 2751,
     "Linux (rpm)": 74,
     "Windows (MSI)": 112,
     "Other": 0
@@ -17,12 +17,12 @@
   "rankedByDownloads": [
     {
       "repo": "open-pdf-studio",
-      "downloads": 4393,
+      "downloads": 4397,
       "releases": 48
     },
     {
       "repo": "open-2d-studio",
-      "downloads": 565,
+      "downloads": 566,
       "releases": 25
     },
     {
@@ -99,7 +99,7 @@
   "perTool": [
     {
       "repo": "open-pdf-studio",
-      "totalDownloads": 4393,
+      "totalDownloads": 4397,
       "totalAssets": 429,
       "releases": 48,
       "byPlatform": {
@@ -108,14 +108,14 @@
         "Linux (AppImage)": 401,
         "Archive": 71,
         "Linux (deb)": 339,
-        "macOS": 465,
+        "macOS": 469,
         "Windows": 2364,
         "Linux (rpm)": 23,
         "Windows (MSI)": 29
       },
       "byVersion": {
         "v1.47.3": 1,
-        "v1.47.13": 902,
+        "v1.47.13": 906,
         "v1.47.12": 34,
         "v1.47.11": 10,
         "v1.47.10": 15,
@@ -256,7 +256,7 @@
     },
     {
       "repo": "open-2d-studio",
-      "totalDownloads": 565,
+      "totalDownloads": 566,
       "totalAssets": 200,
       "releases": 25,
       "byPlatform": {
@@ -267,14 +267,14 @@
         "Linux (AppImage)": 68,
         "Archive": 34,
         "Linux (deb)": 72,
-        "Windows": 232,
+        "Windows": 233,
         "Windows (MSI)": 73
       },
       "byVersion": {
         "v0.35.0": 36,
         "v0.33.0": 1,
         "v0.32.0": 18,
-        "v0.31.0": 189,
+        "v0.31.0": 190,
         "v0.30.0": 15,
         "v0.29.0": 22,
         "v0.27.0": 27,
@@ -302,7 +302,7 @@
           "tag": "v0.31.0",
           "name": "Open.2D.Studio_0.31.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 106,
+          "downloads": 107,
           "sizeMB": 4.4,
           "date": "2026-03-02",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64-setup.exe"

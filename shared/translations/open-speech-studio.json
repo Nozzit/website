@@ -2,30 +2,145 @@
   "header": {
     "label": "OpenAEC Ecosystem",
     "title": "Open Speech <span class=\"accent\">Studio</span>",
-    "desc": "Free speech recognition for everyone with a local AI on your own PC. 1 installer file. No hassle.",
-    "badge": "v0.5.0"
+    "desc": "Free local speech recognition with Whisper AI. Press <strong style=\"color:white;\">CTRL+Win</strong> and dictate into any application - chat, email, terminal, IDE. No cloud, no subscription, no limits. v0.9.0 stable, 1 installer, ready in 30 seconds.",
+    "badge": "v0.9.0 STABLE",
+    "meta": "v0.9.0 &middot; 77 commits &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
+    "cta": {
+      "download": "Download installer (.exe)",
+      "github": "View on GitHub"
+    }
   },
-  "features": {
-    "heading": "What can <span class=\"accent\">it</span> do?",
-    "dictate": {
-      "title": "Dictate anywhere",
-      "desc": "Dictate text directly in any application via an overlay. Use CTRL+Windows or CTRL+SHIFT+Space to do speech-to-text anywhere in your OS."
-    },
-    "transcribe": {
-      "title": "Transcribe audio files",
-      "desc": "Transcribe audio files with parallel processing. Multiple files simultaneously, fast and accurate."
+  "usecases": {
+    "heading": "Use cases for <span class=\"accent\">AEC professionals</span>",
+    "intro": "Whether you're inspecting on-site, taking minutes in a project meeting, or dictating an email between tasks - Open Speech Studio works everywhere, even offline.",
+    "inspection": {
+      "tag": "JOB SITE",
+      "title": "On-site inspections",
+      "desc": "Dictate findings directly into Open Field Studio while taking photos. No taking off gloves, no typing on a tiny screen. Just talk - done."
     },
     "meetings": {
-      "title": "Record meetings",
-      "desc": "Record meetings and transcribe in real-time. Automatic minutes and summaries."
+      "tag": "MEETINGS",
+      "title": "Meeting minutes",
+      "desc": "Real-time transcription of project meetings on location. Fully processed locally - no privacy concerns about client names, prices, or confidential project data in the cloud."
+    },
+    "email": {
+      "tag": "COMMUNICATION",
+      "title": "Quick emails on-site",
+      "desc": "Dictate into Outlook or Gmail between tasks. Hands-free when your hands are dirty, you're wearing safety gloves, or holding a ladder."
+    },
+    "ai": {
+      "tag": "AI WORKFLOW",
+      "title": "Writing AI prompts",
+      "desc": "Dictate a prompt for Claude or ChatGPT much faster than typing. Speaking is ~3x faster and you often phrase more naturally - ideal for long, detailed prompts."
+    },
+    "code": {
+      "tag": "DEVELOPERS",
+      "title": "Code comments and commits",
+      "desc": "Dictate code explanations, docstrings, and commit messages directly into your IDE or terminal. Works seamlessly in VS Code, Cursor, Neovim - anywhere you can enter text."
+    },
+    "accessibility": {
+      "tag": "ACCESSIBILITY",
+      "title": "Accessibility",
+      "desc": "For RSI patients, people with motor impairments, or temporary injuries. Work your entire computer completely keyboard-free - GDPR-safe and subscription-free."
+    }
+  },
+  "why": {
+    "heading": "Why local?",
+    "intro": "Cloud speech recognition sends your voice to third-party servers. Open Speech Studio does everything on your own PC - faster, safer, and without monthly costs.",
+    "privacy": {
+      "title": "Privacy",
+      "desc": "Your voice never leaves your computer. GDPR-safe automatically - no DPA needed with external providers, no risk of data breaches."
+    },
+    "cost": {
+      "title": "No subscription",
+      "desc": "Otter.ai charges ~&euro;20/month. Dragon NaturallySpeaking ~&euro;500 one-time. Open Speech Studio is free forever - open source LGPL-3.0.",
+      "callout": "&euro;0 forever"
+    },
+    "limits": {
+      "title": "No rate limits",
+      "desc": "Dictate 10 hours a day if you want. No API quotas, no 'Fair Use Policy', no surprise invoices. Your hardware is the only limit."
+    }
+  },
+  "compare": {
+    "feature": "Feature",
+    "us": "Open Speech Studio",
+    "dragon": "Dragon NaturallySpeaking",
+    "otter": "Otter.ai",
+    "price": "Price",
+    "price.us": "&euro;0 (open source)",
+    "price.dragon": "~&euro;500 one-time",
+    "price.otter": "~&euro;20/month",
+    "local": "100% local",
+    "gdpr": "GDPR-safe without DPA",
+    "langs": "Languages",
+    "langs.us": "99 languages (Whisper)",
+    "langs.dragon": "~6 languages",
+    "langs.otter": "~10 languages",
+    "gpu": "GPU acceleration (CUDA)",
+    "opensource": "Open source",
+    "opensource.us": "Yes (LGPL-3.0)",
+    "yes": "Yes",
+    "yes2": "Yes",
+    "yes3": "Yes",
+    "yes4": "Yes",
+    "yes5": "Yes",
+    "no": "No (cloud)",
+    "no2": "No",
+    "no3": "No",
+    "no4": "No",
+    "no5": "No",
+    "na": "N/A (cloud)"
+  },
+  "features": {
+    "heading": "Features - what can <span class=\"accent\">it</span> do?",
+    "intro": "Open Speech Studio is more than a dictation tool. It's a complete speech-to-text suite with audio file transcription, meeting recordings, multiple Whisper models, and export to standard subtitle formats.",
+    "dictate": {
+      "title": "Dictate anywhere",
+      "desc": "Dictate text directly into any application via a system-wide overlay. Works in Outlook, Word, Chrome, VS Code, Slack, Teams - literally anywhere in your OS."
+    },
+    "transcribe": {
+      "title": "Audio file transcription",
+      "desc": "Transcribe audio files (.mp3, .wav, .m4a, .ogg) with parallel processing. Multiple files at once, fast and accurate."
+    },
+    "meetings": {
+      "title": "Real-time meeting transcription",
+      "desc": "Record project meetings and watch the transcription appear in real time. Automatic minutes, even offline on the job site."
     },
     "gpu": {
-      "title": "GPU acceleration",
-      "desc": "CUDA GPU acceleration for faster results. Optimal use of your hardware for maximum performance."
+      "title": "CUDA GPU acceleration",
+      "desc": "CUDA GPU acceleration for faster results. On a modern GPU, Whisper Large runs nearly real-time - optimal use of your hardware."
+    },
+    "shortcuts": {
+      "title": "Keyboard shortcuts",
+      "desc": "CTRL+Win for the overlay, CTRL+SHIFT+Space as alternative. No mouse click needed, no menu hunting - dictation starts in &lt;100ms."
+    },
+    "models": {
+      "title": "Whisper AI models",
+      "desc": "5 models: tiny, base, small, medium, large. Choose between speed (tiny) or accuracy (large). Memory usage 1-10GB depending on model."
+    },
+    "languages": {
+      "title": "99 languages",
+      "desc": "Whisper supports 99 languages: Dutch, English, German, French, Spanish, Polish, Arabic, Mandarin and many more. Automatic language detection."
+    },
+    "overlay": {
+      "title": "Spotify-style overlay",
+      "desc": "Sleek, minimalist overlay UI with live waveform visualization. Stays out of the way, disappears automatically after inserting."
+    },
+    "history": {
+      "title": "History",
+      "desc": "Full history of transcriptions - searchable, reusable. Everything stored locally, you stay in control."
+    },
+    "export": {
+      "title": "Export TXT, SRT, VTT",
+      "desc": "Export transcriptions as plain text (.txt) or as subtitles (.srt, .vtt) for video content with timestamps."
+    },
+    "clipboard": {
+      "title": "Clipboard integration",
+      "desc": "Automatic clipboard integration - dictate and paste directly, or let text auto-insert at the cursor position."
     },
     "local": {
       "title": "100% local",
-      "desc": "Everything runs locally on your own computer. Your data never leaves your PC. No cloud, no subscription, no limits."
+      "desc": "Everything runs locally on your own computer. Your data never leaves your PC. No cloud, no subscription, no limits. GDPR-safe out of the box."
     },
     "tech": {
       "title": "Whisper AI + Tauri + Rust",
@@ -35,7 +150,19 @@
   "shortcuts": {
     "title": "Keyboard shortcuts",
     "desc": "Start speech-to-text anywhere in your operating system:",
-    "or": "or"
+    "or": "or",
+    "note": "Configurable in settings - choose your own shortcut if it conflicts with other software."
+  },
+  "tech": {
+    "heading": "Tech <span class=\"accent\">stack</span>",
+    "desc": "Open Speech Studio is built on a modern, performant stack. <strong>OpenAI Whisper</strong> for state-of-the-art speech recognition. <strong>Rust</strong> for a lightweight, fast backend (no Python runtime needed). <strong>Tauri 2</strong> for the desktop app - much lighter than Electron (~10MB instead of 200MB). <strong>TypeScript + Svelte</strong> for the UI. Fully open source under LGPL-3.0."
+  },
+  "finalcta": {
+    "heading": "Download now <span class=\"accent\">- 30 second setup</span>",
+    "desc": "1 installer file (.exe), no registration, no account, no credit card. Ready to dictate in &lt;1 minute. Works on Windows 10 and Windows 11.",
+    "download": "Download installer (.exe)",
+    "github": "View source on GitHub",
+    "meta": "v0.9.0 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40MB download"
   },
   "cta": {
     "download": "Download installer",

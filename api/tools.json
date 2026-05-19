@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-05-19T17:45:13.967Z",
+  "generated": "2026-05-19T17:48:37.336Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -802,7 +802,7 @@
     {
       "id": "cpt-viewer",
       "repo": "cpt-viewer",
-      "name": "CPT Viewer",
+      "name": "Open Geotechniek Studio",
       "category": "Civil / Geotechnical",
       "status": "beta",
       "description": "Viewer for cone penetration tests (CPT, GEF/BRO-xml). Analyze geotechnical soil investigation data for foundations and earthworks.",

@@ -244,7 +244,7 @@ const TOOLS = [
   {
     id: 'cpt-viewer',
     repo: 'cpt-viewer',
-    name: 'CPT Viewer',
+    name: 'Open Geotechniek Studio',
     category: 'Civil / Geotechnical',
     status: 'beta',
     description: 'Viewer for cone penetration tests (CPT, GEF/BRO-xml). Analyze geotechnical soil investigation data for foundations and earthworks.',
