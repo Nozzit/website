@@ -400,6 +400,7 @@
       <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label" data-i18n="stats.loc">Regels code (est.)</div></div>
       <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label" data-i18n="stats.languages">Programmeertalen</div></div>
       <div class="highlight-card"><div class="number" id="s-issues">—</div><div class="label">Open issues</div></div>
+      <div class="highlight-card"><div class="number" id="s-downloads">—</div><div class="label">Downloads</div></div>
     </div>
     <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
   </section>
@@ -466,6 +467,30 @@
       </div>
       <div style="text-align:center;margin-top:var(--sp-6);">
         <a href="/nieuws/" class="btn btn-primary btn-lg" data-i18n="news.view_all">Bekijk alle nieuws &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads activity -->
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="stats-section" style="max-width:1000px;margin:0 auto;">
+      <h2>Installer <span class="accent">downloads</span></h2>
+      <p style="color:#57534E;margin-bottom:var(--sp-6);">Aantal downloads per platform en per tool, live opgehaald van GitHub Releases.</p>
+
+      <div class="highlight-cards" style="grid-template-columns: repeat(3, 1fr); margin-bottom: var(--sp-6);">
+        <div class="highlight-card"><div class="number" id="s-dl-total">—</div><div class="label">Totaal downloads</div></div>
+        <div class="highlight-card"><div class="number" id="s-dl-tools">—</div><div class="label">Tools met downloads</div></div>
+        <div class="highlight-card"><div class="number" id="s-dl-top-platform">—</div><div class="label">Populairste platform</div></div>
+      </div>
+
+      <div style="background:white;border:1px solid #E7E5E4;border-radius:var(--radius-lg);padding:var(--sp-6);margin-bottom:var(--sp-6);">
+        <h4 style="color:var(--deep-forge);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Downloads per platform</h4>
+        <div id="chart-dl-platform" style="height:250px;"></div>
+      </div>
+
+      <div style="background:white;border:1px solid #E7E5E4;border-radius:var(--radius-lg);padding:var(--sp-6);">
+        <h4 style="color:var(--deep-forge);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);">Top tools — meeste downloads</h4>
+        <div id="dl-ranking"></div>
       </div>
     </div>
   </section>
@@ -672,6 +697,42 @@ function renderStats(data) {
         byWeek[weekLabel] = (byWeek[weekLabel] || 0) + 1;
       });
       barChart('chart-news-activity', byWeek, 'var(--amber)');
+    })
+    .catch(() => {});
+
+  // Load downloads data
+  fetch('/data/downloads.json')
+    .then(r => r.json())
+    .then(dl => {
+      const totalEl = document.getElementById('s-downloads');
+      if (totalEl) totalEl.textContent = dl.grandTotal.toLocaleString('nl-NL');
+      const dlTotal = document.getElementById('s-dl-total');
+      if (dlTotal) dlTotal.textContent = dl.grandTotal.toLocaleString('nl-NL');
+      const dlTools = document.getElementById('s-dl-tools');
+      if (dlTools) dlTools.textContent = dl.rankedByDownloads.filter(t => t.downloads > 0).length;
+      const topPlatform = Object.entries(dl.platformTotals).sort((a, b) => b[1] - a[1])[0];
+      const dlTopP = document.getElementById('s-dl-top-platform');
+      if (dlTopP && topPlatform) dlTopP.textContent = topPlatform[0];
+
+      // Platform bar chart
+      barChart('chart-dl-platform', dl.platformTotals, 'var(--amber)');
+
+      // Top tools ranking
+      const ranking = document.getElementById('dl-ranking');
+      if (ranking) {
+        const ranked = dl.rankedByDownloads.filter(t => t.downloads > 0);
+        const max = ranked[0]?.downloads || 1;
+        ranking.innerHTML = ranked.map(t => {
+          const pct = (t.downloads / max * 100).toFixed(0);
+          return `<div style="display:flex;align-items:center;gap:var(--sp-3);padding:var(--sp-2) 0;border-bottom:1px solid #F5F5F4;">
+            <span style="flex:0 0 200px;font-weight:600;color:var(--deep-forge);font-size:0.875rem;">${t.repo}</span>
+            <div style="flex:1;background:#F5F5F4;border-radius:4px;height:8px;position:relative;overflow:hidden;">
+              <div style="position:absolute;left:0;top:0;bottom:0;width:${pct}%;background:var(--amber);"></div>
+            </div>
+            <span style="flex:0 0 80px;text-align:right;font-family:var(--font-code);font-size:0.875rem;color:var(--deep-forge);">${t.downloads.toLocaleString('nl-NL')}</span>
+          </div>`;
+        }).join('');
+      }
     })
     .catch(() => {});
 
