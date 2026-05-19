@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-05-18T10:19:00.704Z",
+  "generated": "2026-05-19T17:45:13.967Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -500,27 +500,48 @@
       "name": "Open Speech Studio",
       "category": "Productivity",
       "status": "beta",
-      "description": "Local speech-to-text using Whisper AI. CTRL+Win shortcut for OS-wide dictation. Audio file transcription, real-time meeting transcription, GPU acceleration. Privacy-first, no cloud.",
+      "featured": true,
+      "description": "Free, local, open-source speech-to-text powered by Whisper AI. Press CTRL+Win or CTRL+Shift+Space to dictate in ANY application (chat, email, terminal, IDE, Word, etc.). 100% local — your voice never leaves your computer. Cross-platform (Windows/macOS/Linux). 99 languages supported. GPU acceleration via CUDA. Real-time meeting transcription with speaker diarization. Audio file batch processing. Privacy-first, GDPR-safe automatically. Single installer (.exe), ready in 30 seconds. v0.9.0 stable.",
       "keywords": [
         "speech-to-text",
+        "STT",
         "dictation",
+        "dicteer",
+        "voice typing",
         "transcription",
+        "transcriptie",
         "Whisper",
+        "Whisper AI",
         "meeting notes",
         "spraakherkenning",
-        "Dragon alternative"
+        "voice recognition",
+        "local speech recognition",
+        "offline dictation",
+        "privacy-first",
+        "GDPR speech",
+        "free Dragon alternative",
+        "free Otter alternative",
+        "CTRL Win",
+        "CUDA speech"
       ],
       "alternatives": [
         "Dragon NaturallySpeaking",
+        "Dragon Professional",
         "Otter.ai",
-        "Microsoft dictate"
+        "Microsoft Speech-to-text",
+        "Google Speech-to-text",
+        "AWS Transcribe",
+        "Whisper.cpp",
+        "Speechmatics"
       ],
+      "competitorPricing": "Dragon NaturallySpeaking ~€500-700 one-time, Otter.ai ~€15-20/month, Speechmatics enterprise pricing — vs Open Speech Studio: free forever",
       "license": "LGPL-3.0",
       "techStack": [
         "TypeScript",
         "Rust",
         "Tauri 2",
-        "Whisper AI"
+        "Whisper AI",
+        "CUDA"
       ],
       "platforms": [
         "Windows",
@@ -528,6 +549,20 @@
         "Linux"
       ],
       "productPage": "https://www.open-aec.com/open-speech-studio/",
+      "comparisonPage": "https://www.open-aec.com/vs/dragon/",
+      "useCases": [
+        "Inspecties op de bouwplaats: handsfree dictate van bevindingen",
+        "Real-time vergader-transcriptie (zonder cloud, GDPR-safe)",
+        "E-mails op locatie als handen vies/bezet zijn",
+        "AI-prompts voor Claude/ChatGPT sneller dan typen",
+        "Code-comments, docstrings, commit messages",
+        "Accessibility: RSI of motorische beperkingen"
+      ],
+      "shortcuts": [
+        "CTRL+Win — overlay dictation",
+        "CTRL+Shift+Space — alternative shortcut"
+      ],
+      "languages": 99,
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-speech-studio",
       "stats": {
         "commits": 77,

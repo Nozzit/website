@@ -1,5 +1,12 @@
 [
   {
+    "type": "announcement",
+    "title": "Uitgelicht: Open Speech Studio v0.9.0 — gratis lokale spraakherkenning",
+    "description": "Druk CTRL+Win en dicteer in elke Windows-applicatie via Whisper AI. 100% lokaal — je stem verlaat nooit je computer. Geen abonnement, geen cloud, geen limiet. Gratis alternatief voor Dragon NaturallySpeaking (~€500) en Otter.ai (~€20/mnd).",
+    "date": "2026-05-19",
+    "url": "/open-speech-studio/"
+  },
+  {
     "type": "linkedin",
     "title": "LinkedIn-post: Open Heatloss Studio alpha gelanceerd",
     "description": "We hebben op LinkedIn aangekondigd dat Open Heatloss Studio in alpha staat. Open source warmteverliesberekening conform NEN 12831 en ISSO 51:2023, gebouwd in Rust + Tauri.",
