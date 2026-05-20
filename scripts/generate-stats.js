@@ -35,16 +35,19 @@ function buildTimeSeries(publicRepos, currentSummary) {
   // data/history/YYYY-MM-DD.json snapshots (recorded daily by this script).
   // For dates BEFORE the first snapshot, falls back to a synthetic series
   // built from repo creation dates (less accurate but better than empty).
-  const startDate = new Date('2025-12-01');
+  // Use UTC throughout to avoid day-boundary drift (CEST is UTC+2 → local
+  // midnight is the previous day's 22:00 UTC, which shifted ISO dates by 1
+  // and excluded today from the series).
+  const startDate = new Date(Date.UTC(2025, 11, 1, 12, 0, 0));
   const endDate = new Date();
-  endDate.setHours(23, 59, 59);
+  endDate.setUTCHours(23, 59, 59);
 
-  // Generate all days from start to today
+  // Generate all days from start to today, formatted as YYYY-MM-DD (UTC)
   const allDays = [];
   const d = new Date(startDate);
   while (d <= endDate) {
     allDays.push(d.toISOString().substring(0, 10));
-    d.setDate(d.getDate() + 1);
+    d.setUTCDate(d.getUTCDate() + 1);
   }
 
   // Load all daily snapshots (sorted by date)
@@ -72,16 +75,36 @@ function buildTimeSeries(publicRepos, currentSummary) {
       totalCommits: currentSummary.totalCommits,
       uniqueContributors: currentSummary.uniqueContributors,
       totalOpenIssues: currentSummary.totalOpenIssues,
+      openIssues: currentSummary.openIssues,
+      closedIssues: currentSummary.closedIssues,
+      openPRs: currentSummary.openPRs,
+      closedPRs: currentSummary.closedPRs,
+      mergedPRs: currentSummary.mergedPRs,
       estimatedLinesOfCode: currentSummary.estimatedLinesOfCode,
     };
     if (!snapshotDays.includes(today)) snapshotDays.push(today);
   }
 
+  // For old snapshots that lack closedIssues, estimate it by scaling today's
+  // closed/open ratio against the snapshot's open-issue count. Not historically
+  // exact, but produces a sensible curve that becomes accurate as new daily
+  // snapshots accumulate.
+  const todayClosed = currentSummary?.closedIssues ?? 0;
+  const todayOpen   = currentSummary?.openIssues ?? currentSummary?.totalOpenIssues ?? 1;
+  const closedPerOpen = todayOpen > 0 ? (todayClosed / todayOpen) : 0;
+
   function snapshotValues(snap) {
+    const openIssues = snap.openIssues ?? snap.totalOpenIssues ?? 0;
+    const closedIssues = snap.closedIssues != null
+      ? snap.closedIssues
+      : Math.round(openIssues * closedPerOpen);
     return {
       repos: snap.publicRepos ?? snap.totalRepos ?? 0,
       stars: snap.totalStars ?? 0,
-      issues: snap.totalOpenIssues ?? 0,
+      issues: snap.totalOpenIssues ?? openIssues,
+      openIssues: openIssues,
+      closedIssues: closedIssues,
+      totalIssues: openIssues + closedIssues,
       commits: snap.totalCommits ?? 0,
       loc: snap.estimatedLinesOfCode ?? 0,
       contributors: snap.uniqueContributors ?? 0,
@@ -108,10 +131,14 @@ function buildTimeSeries(publicRepos, currentSummary) {
     cumCommits += reposToday.reduce((s, r) => s + (r._commitCount || 0), 0);
     locSinceDec2025 += reposToday.reduce((s, r) => s + r.size, 0) * 25;
     cumContributors += reposToday.reduce((s, r) => s + (r._contributorCount || 0), 0);
+    const synthClosed = Math.round(cumIssues * closedPerOpen);
     synthetic[day] = {
       repos: cumRepos,
       stars: cumStars,
       issues: cumIssues,
+      openIssues: cumIssues,
+      closedIssues: synthClosed,
+      totalIssues: cumIssues + synthClosed,
       commits: cumCommits,
       loc: Math.round(locSinceDec2025),
       // synthetic contributor count is a sum-of-counts (over-counts duplicates),
@@ -148,7 +175,7 @@ function buildTimeSeries(publicRepos, currentSummary) {
   if (firstSnapDay && synthetic[firstSnapDay]) {
     const firstSnapVals = snapshotValues(snapshots[firstSnapDay]);
     const synthPeak = synthetic[firstSnapDay];
-    const FIELDS = ['repos','stars','issues','commits','loc','contributors'];
+    const FIELDS = ['repos','stars','issues','openIssues','closedIssues','totalIssues','commits','loc','contributors'];
     const factors = {};
     FIELDS.forEach(f => {
       factors[f] = synthPeak[f] > 0 ? (firstSnapVals[f] / synthPeak[f]) : 1;

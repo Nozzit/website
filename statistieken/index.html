@@ -422,8 +422,13 @@
           <div id="chart-cum-commits" style="height:250px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
-          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.open_issues">Open issues per maand</h4>
-          <div id="chart-cum-issues" style="height:250px;"></div>
+          <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.issues_combined">Issues — open, closed, totaal</h4>
+          <div style="display:flex;gap:var(--sp-3);margin-bottom:var(--sp-2);font-family:var(--font-code);font-size:0.7rem;color:#A1A1AA;">
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#22D3EE;margin-right:4px;vertical-align:middle;"></span>Open</span>
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#34D399;margin-right:4px;vertical-align:middle;"></span>Closed</span>
+            <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#F59E0B;margin-right:4px;vertical-align:middle;"></span>Totaal</span>
+          </div>
+          <div id="chart-cum-issues" style="height:225px;"></div>
         </div>
         <div style="background:var(--deep-forge);border-radius:var(--radius-lg);padding:var(--sp-6);">
           <h4 style="color:var(--amber);font-family:var(--font-code);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:var(--sp-4);" data-i18n="charts.loc">Regels code (geschat)</h4>
@@ -792,7 +797,12 @@ function renderStats(data) {
     const ts = data.timeSeries;
     dailyLineChart('chart-cum-repos', ts, 'repos', '#D97706');
     dailyLineChart('chart-cum-commits', ts, 'commits', '#16A34A');
-    dailyLineChart('chart-cum-issues', ts, 'issues', '#EA580C');
+    // Combined issues chart: open + closed + total on one axis
+    multiDailyLineChart('chart-cum-issues', ts, [
+      { field: 'openIssues',   color: '#22D3EE', label: 'Open' },
+      { field: 'closedIssues', color: '#34D399', label: 'Closed' },
+      { field: 'totalIssues',  color: '#F59E0B', label: 'Totaal' },
+    ]);
     dailyLineChart('chart-cum-contributors', ts, 'contributors', '#16A34A');
     dailyLineChart('chart-cum-stars', ts, 'stars', '#F59E0B');
     dailyLineChart('chart-cum-loc', ts, 'loc', '#3178C6', true);
@@ -859,6 +869,66 @@ function dailyLineChart(id, ts, field, color, formatLarge) {
       <path d="${areaPath}" fill="${color}" fill-opacity="0.1"/>
       <path d="${linePath}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
       ${endLabel}
+    </svg>
+  `;
+}
+
+// Multi-series version of dailyLineChart — same axes/grid, N lines overlaid.
+// `series` = [{ field, color, label }, ...]
+function multiDailyLineChart(id, ts, series) {
+  const el = document.getElementById(id);
+  if (!el || !ts.days) return;
+  const days = ts.days;
+  const seriesValues = series.map(s => days.map(d => (ts.data[d] && ts.data[d][s.field] != null) ? ts.data[d][s.field] : 0));
+  const max = Math.max(1, ...seriesValues.flat());
+
+  const svgW = 600, svgH = 220;
+  const padL = 65, padR = 60, padT = 25, padB = 35;
+  const chartW = svgW - padL - padR;
+  const chartH = svgH - padT - padB;
+
+  function pointsFor(values) {
+    return values.map((v, i) => ({
+      x: padL + (i / Math.max(1, days.length - 1)) * chartW,
+      y: padT + chartH - ((v / max) * chartH),
+      v,
+    }));
+  }
+
+  // Y-axis grid + labels (5 ticks)
+  const yGrid = [0, 0.25, 0.5, 0.75, 1].map(f => {
+    const y = padT + chartH - f * chartH;
+    return `<line x1="${padL}" y1="${y}" x2="${svgW - padR}" y2="${y}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+      <text x="${padL - 8}" y="${y + 4}" fill="#A1A1AA" font-size="10" font-family="JetBrains Mono, monospace" text-anchor="end">${Math.round(max * f).toLocaleString('nl-NL')}</text>`;
+  }).join('');
+
+  // X-axis: month labels
+  const monthEntries = Object.entries(ts.monthLabels);
+  const xLabels = monthEntries.map(([month, firstDay]) => {
+    const idx = days.indexOf(firstDay);
+    if (idx < 0) return '';
+    const x = padL + (idx / Math.max(1, days.length - 1)) * chartW;
+    return `<line x1="${x}" y1="${padT}" x2="${x}" y2="${padT + chartH}" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="${x}" y="${svgH - 8}" fill="#A1A1AA" font-size="10" font-family="JetBrains Mono, monospace" text-anchor="middle">${month.replace('20',"'")}</text>`;
+  }).join('');
+
+  // Render each series — area + line + end-label
+  const seriesSvg = series.map((s, si) => {
+    const pts = pointsFor(seriesValues[si]);
+    const linePath = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+    const last = pts[pts.length - 1];
+    return `
+      <path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${last.x}" cy="${last.y}" r="3.5" fill="${s.color}" stroke="var(--deep-forge)" stroke-width="2"/>
+      <text x="${last.x + 6}" y="${last.y + 4}" fill="${s.color}" font-size="11" font-weight="700" font-family="JetBrains Mono, monospace">${last.v.toLocaleString('nl-NL')}</text>
+    `;
+  }).join('');
+
+  el.innerHTML = `
+    <svg viewBox="0 0 ${svgW} ${svgH}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="overflow:visible;">
+      ${yGrid}
+      ${xLabels}
+      ${seriesSvg}
     </svg>
   `;
 }
