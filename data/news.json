@@ -3,10 +3,121 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.47.13-nightly.20260515.1bdcf91",
-    "date": "2026-05-15",
+    "description": "Nightly build 1.59.0-nightly.20260520.531dadb",
+    "date": "2026-05-20",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "TailwindCSS-Claude-Skill-Package",
+    "title": "TailwindCSS-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 : Tailwind CSS Skill Package (30 skills)",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/TailwindCSS-Claude-Skill-Package/releases/tag/v1.0.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "shadcn-ui-Claude-Skill-Package",
+    "title": "shadcn-ui-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 - shadcn ui Skill Package",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package/releases/tag/v1.0.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Frontend-Design-Claude-Skill-Package",
+    "title": "Frontend-Design-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 : Frontend Design Skill Package",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/Frontend-Design-Claude-Skill-Package/releases/tag/v1.0.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Rust-Claude-Skill-Package",
+    "title": "Rust-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 : Rust Skill Package",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/Rust-Claude-Skill-Package/releases/tag/v1.0.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "MariaDB-Claude-Skill-Package",
+    "title": "MariaDB-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 : MariaDB Skill Package",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/MariaDB-Claude-Skill-Package/releases/tag/v1.0.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "PostgreSQL-Claude-Skill-Package",
+    "title": "PostgreSQL-Claude-Skill-Package v1.0.0 uitgebracht",
+    "description": "v1.0.0 — PostgreSQL Skill Package",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/PostgreSQL-Claude-Skill-Package/releases/tag/v1.0.0",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "TailwindCSS-Claude-Skill-Package",
+    "title": "Nieuwe repository: TailwindCSS-Claude-Skill-Package",
+    "description": "Deterministic Claude skills for Tailwind CSS v3.4 + v4",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/TailwindCSS-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "shadcn-ui-Claude-Skill-Package",
+    "title": "Nieuwe repository: shadcn-ui-Claude-Skill-Package",
+    "description": "42 deterministic Claude AI skills for shadcn ui evergreen-2026 (CLI shadcn@4.7.0) covering copy-not-install paradigm, variant API (cva), theming v3+v4, RSC boundaries, react-hook-form composition, TanStack DataTable, and 7 anti-pattern skills",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/shadcn-ui-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Frontend-Design-Claude-Skill-Package",
+    "title": "Nieuwe repository: Frontend-Design-Claude-Skill-Package",
+    "description": "36 deterministic Claude skills for framework-agnostic modern frontend design (HTML5, modern CSS, ES2024, Web APIs, WCAG 2.2, evergreen-2026)",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/Frontend-Design-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "Rust-Claude-Skill-Package",
+    "title": "Nieuwe repository: Rust-Claude-Skill-Package",
+    "description": "44 deterministic Claude skills for Rust 1.85+, edition 2024 : ownership, borrowing, lifetimes, traits, async, macros, unsafe, cargo, error handling",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/Rust-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "MariaDB-Claude-Skill-Package",
+    "title": "Nieuwe repository: MariaDB-Claude-Skill-Package",
+    "description": "31 deterministic Claude skills for MariaDB : storage engines, schema design, indexing, query optimization, replication, Galera, JSON, backup, security, MySQL migration",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/MariaDB-Claude-Skill-Package"
+  },
+  {
+    "type": "new_repo",
+    "repo": "PostgreSQL-Claude-Skill-Package",
+    "title": "Nieuwe repository: PostgreSQL-Claude-Skill-Package",
+    "description": "38 deterministic Claude skills for PostgreSQL 15, 16, 17 : schema, indexing, MVCC, JSON/JSONB, PostGIS, pgvector, RLS, replication, partitioning, performance, migrations",
+    "date": "2026-05-19",
+    "url": "https://github.com/OpenAEC-Foundation/PostgreSQL-Claude-Skill-Package"
+  },
+  {
+    "type": "release",
+    "repo": "open-geotechniek-studio",
+    "title": "open-geotechniek-studio: 2 releases (v0.2.0 → v0.2.1)",
+    "description": "Versies: v0.2.0, v0.2.1",
+    "date": "2026-05-18",
+    "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.2.1",
+    "count": 2
   },
   {
     "type": "release",
@@ -1524,11 +1635,11 @@
   },
   {
     "type": "new_repo",
-    "repo": "Ifc-Calc",
-    "title": "Nieuwe repository: Ifc-Calc",
-    "description": "Graphic Calculator ",
+    "repo": "Open-Calculations-Studio",
+    "title": "Nieuwe repository: Open-Calculations-Studio",
+    "description": "Open desktop-applicatie voor constructieve berekeningen op basis van CalcPAD-syntax, met live IFCX en IFC4x3 STEP export — opvolger van CalcPAD onder de OpenAEC Foundation.",
     "date": "2026-02-17",
-    "url": "https://github.com/OpenAEC-Foundation/Ifc-Calc"
+    "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio"
   },
   {
     "type": "release",
@@ -1947,11 +2058,11 @@
   },
   {
     "type": "new_repo",
-    "repo": "cpt-viewer",
-    "title": "Nieuwe repository: cpt-viewer",
+    "repo": "open-geotechniek-studio",
+    "title": "Nieuwe repository: open-geotechniek-studio",
     "description": "Viewer of CPT's. GEF / BRO-xml ",
     "date": "2026-01-16",
-    "url": "https://github.com/OpenAEC-Foundation/cpt-viewer"
+    "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio"
   },
   {
     "type": "new_repo",

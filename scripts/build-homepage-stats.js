@@ -22,6 +22,16 @@ function formatVersion(tag) {
 const ICON_COMMIT = '<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg>';
 const ICON_VERSION = '<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg>';
 const ICON_STAR = '<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>';
+const ICON_DATE = '<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg>';
+
+// Format date: "2026-05-19" -> "19 mei 2026"
+const MONTHS_NL = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+function formatDate(iso) {
+  if (!iso) return null;
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return iso;
+  return `${parseInt(m[3], 10)} ${MONTHS_NL[parseInt(m[2], 10) - 1]} ${m[1]}`;
+}
 
 function buildStatsHtml(repo) {
   const parts = [];
@@ -34,6 +44,10 @@ function buildStatsHtml(repo) {
   }
   if (repo.stars != null && repo.stars > 0) {
     parts.push(`<span class="tool-stat">${ICON_STAR} ${repo.stars}</span>`);
+  }
+  const updated = formatDate(repo.updatedAt);
+  if (updated) {
+    parts.push(`<span class="tool-stat" title="Laatst gewijzigd op GitHub">${ICON_DATE} ${updated}</span>`);
   }
   return parts.length > 0
     ? `<div class="tool-stats">\n              ${parts.join('\n              ')}\n            </div>`
