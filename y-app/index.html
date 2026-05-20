@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Y-app — OpenAEC Foundation</title>
-  <meta name="description" content="Y-app: open source communicatie- en samenwerkingsplatform voor bouwprojecten. Chat, bestanden delen en projectcoördinatie.">
+  <title>Y-app — De Everything-app voor je bedrijf — OpenAEC Foundation</title>
+  <meta name="description" content="Y-app: de Everything-app voor je bedrijf. Multi-tenant ERPNext-werkomgeving die e-mail, ERP, facturen, uren, projecten, agenda, bestanden, AI en tientallen bedrijfsmodules bundelt in één web-applicatie. Eén account, meerdere ERPNext-instances.">
   <meta name="i18n-page" content="y-app">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Y-app",
+    "alternateName": "Y-app — Everything-app voor je bedrijf",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web (browser)",
+    "url": "https://y-app.impertio.app",
+    "description": "Multi-tenant ERPNext-werkomgeving. E-mail, ERP, facturen, uren, projecten, agenda, NextCloud-bestanden, Claude AI en tientallen bedrijfsmodules in één web-app. Eén Y-app account, meerdere ERPNext-instances met versleutelde credential-opslag.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" }
+  }
+  </script>
+
   <style>
     .page-header {
       background: var(--night-build);
@@ -16,171 +33,627 @@
       border-bottom: 3px solid transparent;
       border-image: var(--gradient-accent) 1;
     }
-    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
     .page-header h1 {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: white;
-      letter-spacing: -0.02em;
-      margin-bottom: var(--sp-4);
+      font-family: var(--font-heading); font-weight: 700; font-size: 2.5rem;
+      color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4);
     }
     .page-header h1 .accent { color: var(--amber); }
     .page-header p {
-      font-size: 1.125rem;
-      color: var(--scaffold-gray);
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
+      font-size: 1.125rem; color: var(--scaffold-gray);
+      max-width: 760px; margin: 0 auto; line-height: 1.6;
     }
+    .header-badges { margin-top: var(--sp-4); }
     .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--font-code);
-      font-size: 0.7rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 4px 14px;
-      border-radius: var(--radius-full);
-      background: #FED7AA;
-      color: #9A3412;
-      margin-top: var(--sp-4);
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.7rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 4px 14px; border-radius: var(--radius-full);
+      background: #FED7AA; color: #9A3412;
+      margin-right: 6px;
+    }
+    .category-badge { background: #DBEAFE; color: #1E40AF; }
+    .url-badge {
+      background: rgba(217, 119, 6, 0.15); color: var(--amber);
+      border: 1px solid rgba(217, 119, 6, 0.4);
+    }
+    .url-badge a { color: var(--amber); text-decoration: none; }
+    .version-info {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.7rem;
+      color: var(--scaffold-gray); margin-top: var(--sp-3);
     }
 
-    .content { max-width: 850px; margin: 0 auto; }
+    .content { max-width: 1000px; margin: 0 auto; }
     .content h2 {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--deep-forge);
-      margin-bottom: var(--sp-4);
+      font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem;
+      color: var(--deep-forge); margin-bottom: var(--sp-4);
     }
     .content h2 .accent { color: var(--amber); }
     .content p { font-size: 1rem; color: #57534E; line-height: 1.7; margin-bottom: var(--sp-4); }
     .content-block + .content-block { margin-top: var(--sp-12); }
 
-    /* Slider */
-    .media-slider { max-width: 850px; margin: 0 auto var(--sp-10); position: relative; }
-    .slider-container { position: relative; overflow: hidden; border-radius: var(--radius-lg); background: var(--night-build); }
-    .slider-track { display: flex; transition: transform 0.4s ease; }
-    .slider-slide { min-width: 100%; }
-    .slider-slide img { width: 100%; display: block; border-radius: var(--radius-lg); }
-    .slider-btn {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: rgba(0,0,0,0.5); color: white; border: none;
-      width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
-      font-size: 1.25rem; display: flex; align-items: center; justify-content: center; z-index: 2;
-    }
-    .slider-btn:hover { background: rgba(0,0,0,0.7); }
-    .slider-prev { left: var(--sp-3); }
-    .slider-next { right: var(--sp-3); }
-    .slider-dots { display: flex; justify-content: center; gap: var(--sp-2); padding: var(--sp-3) 0; }
-    .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: #D6D3D1; border: none; cursor: pointer; }
-    .slider-dot.active { background: var(--amber); }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: var(--sp-6);
+    /* Dark explainer block */
+    .explainer {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
       margin: var(--sp-8) 0;
+    }
+    .explainer h3 { color: var(--amber); font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: var(--sp-4); }
+    .explainer p { color: var(--scaffold-gray); font-size: 0.9rem; line-height: 1.7; margin-bottom: var(--sp-3); }
+    .explainer ul { list-style: none; padding: 0; margin: 0; }
+    .explainer ul li {
+      position: relative;
+      padding: var(--sp-2) 0 var(--sp-2) var(--sp-5);
+      color: var(--scaffold-gray);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .explainer ul li::before {
+      content: ''; position: absolute; left: 0; top: 12px;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--amber);
+    }
+    .explainer.highlight {
+      background: linear-gradient(135deg, var(--night-build) 0%, var(--deep-forge) 100%);
+      border-left: 4px solid var(--amber);
+    }
+
+    /* How-it-works steps */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--sp-4);
+      margin: var(--sp-6) 0;
+    }
+    .step {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+    .step-number {
+      position: absolute; top: -14px; left: var(--sp-5);
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--amber); color: var(--deep-forge);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-heading); font-weight: 700; font-size: 0.875rem;
+    }
+    .step h3 {
+      font-family: var(--font-heading); font-weight: 700;
+      font-size: 0.95rem; color: var(--deep-forge);
+      margin-top: var(--sp-2); margin-bottom: var(--sp-2);
+    }
+    .step p { font-size: 0.85rem; color: #57534E; line-height: 1.55; margin: 0; }
+
+    /* Feature category groups */
+    .feature-category { margin-top: var(--sp-8); }
+    .feature-category h3 {
+      font-family: var(--font-heading); font-weight: 700;
+      font-size: 1.1rem; color: var(--deep-forge);
+      margin-bottom: var(--sp-4);
+      padding-bottom: var(--sp-2);
+      border-bottom: 2px solid var(--amber);
+      display: inline-block;
+    }
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--sp-4);
     }
     .feature-card {
       background: white;
       border: 1px solid #E7E5E4;
       border-radius: var(--radius-lg);
-      padding: var(--sp-6);
+      padding: var(--sp-5);
       box-shadow: var(--shadow-sm);
     }
-    .feature-card h3 {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--deep-forge);
+    .feature-card h4 {
+      font-family: var(--font-heading); font-weight: 700;
+      font-size: 0.95rem; color: var(--deep-forge);
       margin-bottom: var(--sp-2);
     }
-    .feature-card p { font-size: 0.875rem; color: #57534E; line-height: 1.6; margin-bottom: 0; }
+    .feature-card p { font-size: 0.85rem; color: #57534E; line-height: 1.55; margin-bottom: 0; }
 
-    .page-footer.footer {
-      background: var(--deep-forge);
-      border-top: 3px solid transparent;
-      border-image: var(--gradient-accent) 1;
+    /* Mode comparison table */
+    .mode-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: var(--sp-6) 0;
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #E7E5E4;
     }
-    .footer-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4);
+    .mode-table th, .mode-table td {
+      padding: var(--sp-3) var(--sp-4);
+      text-align: left;
+      border-bottom: 1px solid #F5F5F4;
+      font-size: 0.875rem;
     }
+    .mode-table th {
+      background: var(--concrete);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--deep-forge);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .mode-table td:first-child {
+      font-weight: 600;
+      color: var(--deep-forge);
+    }
+    .mode-table .yes { color: #15803D; font-weight: 700; }
+    .mode-table .no { color: #B91C1C; }
+    .mode-table tr:last-child td { border-bottom: none; }
+
+    /* Integrations */
+    .integrations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--sp-4);
+      margin: var(--sp-6) 0;
+    }
+    .integration-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-5);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .integration-card h4 {
+      font-family: var(--font-heading); font-weight: 700;
+      font-size: 0.95rem; color: var(--deep-forge);
+      margin-bottom: var(--sp-2);
+    }
+    .integration-card p {
+      font-size: 0.8rem; color: #57534E;
+      line-height: 1.5; margin: 0;
+    }
+
+    /* Tech stack */
+    .tech-stack { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin: var(--sp-4) 0; }
+    .tech-tag {
+      font-family: var(--font-code); font-size: 0.75rem; font-weight: 500;
+      padding: 4px 12px; border-radius: var(--radius-full);
+      background: var(--concrete); color: var(--deep-forge);
+    }
+
+    /* CTAs */
+    .cta-links { display: flex; gap: var(--sp-4); flex-wrap: wrap; margin-top: var(--sp-6); }
+    .cta-links a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--radius-md);
+      font-family: var(--font-heading); font-weight: 600; font-size: 0.9rem;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .cta-links a:hover { opacity: 0.85; }
+    .cta-primary { background: var(--amber); color: var(--deep-forge); }
+    .cta-secondary { background: var(--deep-forge); color: white; }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
     .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
 
     @media (max-width: 768px) {
-      .page-header h1 { font-size: 2rem; }
-      .features-grid { grid-template-columns: 1fr; }
+      .page-header h1 { font-size: 1.9rem; word-break: break-word; }
+      .feature-list { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; }
+      .mode-table { font-size: 0.8rem; }
+      .mode-table th, .mode-table td { padding: var(--sp-2) var(--sp-3); }
     }
   </style>
 </head>
 <body>
-    <div id="shared-nav"></div>
-<script src="/shared/nav.js"></script>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
 
   <header class="page-header">
     <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
-    <h1>Y-<span class="accent">app</span></h1>
-    <p data-i18n="header.desc">Open source communicatie- en samenwerkingsplatform voor bouwprojecten. Chat, bestanden delen en projectcoördinatie — alles in een app.</p>
-    <span class="status-badge">Beta</span>
+    <h1>Y-<span class="accent">app</span> — De Everything-app voor je bedrijf</h1>
+    <p data-i18n="header.desc">De Everything-app voor je bedrijf — e-mail, ERP, facturen, uren, projecten, communicatie en meer in één tool. <strong style="color: white;">Multi-tenant: één account, meerdere ERPNext-instances.</strong></p>
+    <div class="header-badges">
+      <span class="status-badge">Beta</span>
+      <span class="status-badge category-badge">Everything-app</span>
+      <span class="status-badge url-badge"><a href="https://y-app.impertio.app" target="_blank" rel="noopener">y-app.impertio.app &rarr;</a></span>
+    </div>
+    <div class="version-info">React 19 + TypeScript + Vite 7 &middot; Node.js 20 + Express &middot; ERPNext + NextCloud + Office 365 &middot; AES-256-GCM credential vault</div>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
-
-    <!-- Slider -->
-    <div class="media-slider">
-      <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app.jpeg" alt="Y-app - Overzicht"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-2.png" alt="Y-app - Email"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-3.png" alt="Y-app - Email detail"></div>
-        </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
-      </div>
-      <div class="slider-dots" id="sliderDots"></div>
-    </div>
-
     <div class="content">
-      <div class="content-block">
-        <h2 data-i18n="why.title">Waarom <span class="accent">Y-app</span>?</h2>
-        <p data-i18n="why.desc">Bouwprojecten vereisen constante communicatie tussen tientallen partijen. E-mail, WhatsApp en losse tools leiden tot informatieverlies. Y-app brengt alle communicatie samen op een plek, gekoppeld aan het project en het BIM-model via IFCX.</p>
+
+      <!-- What is Y-app? -->
+      <div class="explainer">
+        <h3>Wat is Y-app?</h3>
+        <p>Y-app is geen chat-tool en geen losse ERP-frontend. Het is een <strong style="color: white;">"Everything-app"</strong> — een multi-tenant ERPNext-werkomgeving die je hele bedrijfsstack bundelt in één web-applicatie. E-mail (IMAP/SMTP + Office 365), ERP (ERPNext), bestanden (NextCloud), chat (Teams, NextCloud Talk, Telegram), agenda, AI-assistent (Claude) en tientallen bedrijfsmodules — bereikbaar vanuit één tabblad in je browser.</p>
+        <ul>
+          <li><strong style="color: white;">Multi-tenant</strong> — koppel meerdere ERPNext-instances aan één Y-app account</li>
+          <li><strong style="color: white;">Versleutelde vault</strong> — credentials in server-side SQLite met AES-256-GCM, PBKDF2-SHA256 (210k iter)</li>
+          <li><strong style="color: white;">Geen browser-tabs nodig</strong> — wissel tussen instances via interne tabs met eigen routing en sessie</li>
+          <li><strong style="color: white;">Werkgever- of werknemer-modus</strong> — beperk modules per instance via een dropdown</li>
+          <li><strong style="color: white;">Volledige NL/EN i18n</strong> — 1190+ vertalingen, schakelbaar op runtime</li>
+        </ul>
       </div>
 
+      <!-- How it works -->
       <div class="content-block">
-        <h2 data-i18n="features.title">Functionaliteiten</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-i18n="features.chat_title">Projectchat</h3>
-            <p data-i18n="features.chat_desc">Realtime chat per project, per discipline of per onderwerp. Berichten zijn doorzoekbaar en gekoppeld aan het project.</p>
+        <h2>Hoe het <span class="accent">werkt</span></h2>
+        <p>Y-app draait op je eigen server (of via impertio.app). Zelf-signup, instance-beheer en mode-switching gebeuren binnen de app — geen IT-tickets nodig.</p>
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h3>Maak een Y-app account</h3>
+            <p>Zelf-signup met e-mail en wachtwoord. Bcrypt met 12 rounds, HttpOnly session cookies, sessie-scoped credential-cache.</p>
           </div>
-          <div class="feature-card">
-            <h3 data-i18n="features.files_title">Bestanden delen</h3>
-            <p data-i18n="features.files_desc">Upload en deel documenten, tekeningen en IFC-modellen. Automatische versiebeheer en koppeling met OpenAEC Docs.</p>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h3>Voeg ERPNext-instances toe</h3>
+            <p>Voor elk bedrijf of klant: URL, naam, kleur en credentials. Direct versleuteld opgeslagen in de server-side vault.</p>
           </div>
-          <div class="feature-card">
-            <h3 data-i18n="features.notif_title">Notificaties</h3>
-            <p data-i18n="features.notif_desc">Slimme notificaties per kanaal. Kies zelf wat je wilt volgen en hoe je op de hoogte gehouden wordt.</p>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h3>Wissel via in-app tabs</h3>
+            <p>Geen browser-tabs: schakel tussen instances binnen Y-app. Elke tab heeft eigen routing-state, ERPNext-sessie en cache.</p>
           </div>
-          <div class="feature-card">
-            <h3 data-i18n="features.ifcx_title">IFCX-integratie</h3>
-            <p data-i18n="features.ifcx_desc">Berichten en bestanden koppelen aan IFCX-elementen. Communiceer direct over specifieke onderdelen van het model.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-i18n="features.multi_title">Multi-platform</h3>
-            <p data-i18n="features.multi_desc">Beschikbaar als web-app, desktop-app (Windows, macOS, Linux) en mobiele app via Tauri.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-i18n="features.oss_title">Open source</h3>
-            <p data-i18n="features.oss_desc">Volledige broncode beschikbaar. Host het op je eigen server voor maximale controle over data en privacy.</p>
+          <div class="step">
+            <span class="step-number">4</span>
+            <h3>Employer of Employee mode</h3>
+            <p>Switch per instance tussen volledige modules (Employer) of een beperkte set voor medewerkers (Employee).</p>
           </div>
         </div>
       </div>
+
+      <!-- Security USP -->
+      <div class="explainer highlight">
+        <h3>Multi-tenant en versleuteld — zelfs de host kan je credentials niet lezen</h3>
+        <p>Y-app draait op een zero-knowledge principe voor je ERPNext-credentials. Elke combinatie van e-mail, ERPNext-key en OAuth2-token wordt versleuteld in een server-side SQLite vault met een masterkey die <strong style="color: white;">alleen ontsleutelbaar is met jouw Y-app wachtwoord</strong>.</p>
+        <ul>
+          <li><strong style="color: white;">AES-256-GCM</strong> — authenticated encryption voor elke credential</li>
+          <li><strong style="color: white;">PBKDF2-SHA256, 210.000 iteraties</strong> — moderne OWASP-aanbeveling voor key derivation</li>
+          <li><strong style="color: white;">Masterkey-bestand met mode 600</strong> — alleen leesbaar voor het Y-app proces</li>
+          <li><strong style="color: white;">AsyncLocalStorage per request</strong> — credentials nooit gedeeld tussen gebruikers in dezelfde Node-proces</li>
+          <li><strong style="color: white;">Zelfs de host kan je data niet zien</strong> — zonder jouw login is de vault een blob willekeurige bytes</li>
+          <li><strong style="color: white;">Eén account, meerdere bedrijven</strong> — ideaal voor accountants, consultants, holdings en franchise-organisaties</li>
+        </ul>
+      </div>
+
+      <!-- Features -->
+      <div class="content-block">
+        <h2>Wat zit erin? — <span class="accent">de modules</span></h2>
+        <p>Y-app bundelt tientallen modules in zeven domeinen. Elke module is direct gekoppeld aan de actieve ERPNext-instance — geen losse logins, geen aparte URLs.</p>
+
+        <!-- Communicatie -->
+        <div class="feature-category">
+          <h3>Communicatie &amp; Samenwerking</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>Webmail</h4>
+              <p>Volwaardige IMAP/SMTP-client met caching, mapbeheer, bijlages, rich-text editor, sjablonen en handtekeningen. Wachtwoord-auth of Office 365 OAuth2.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Messenger</h4>
+              <p>Multi-platform chat: NextCloud Talk, MS Teams (Graph API), Telegram (Bot API). Eén overzicht voor alle gesprekken.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Contacten</h4>
+              <p>Samengevoegde contactdatabase uit ERPNext en e-mail-historie. Eén bron voor klanten, leveranciers en collega's.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Brieven</h4>
+              <p>Documentgeneratie met sjablonen: standaardbrief, offerte, orderbevestiging, betalingsherinnering.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Vergader-notulen</h4>
+              <p>Lokale opslag met agenda, actiepunten, deadlines en koppeling naar projecten en taken.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projecten -->
+        <div class="feature-category">
+          <h3>Projecten &amp; Taken</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>Projecten met kaartweergave</h4>
+              <p>Leaflet-kaart met projectlocaties, status-tracking en taken-tellers per project.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Taken</h4>
+              <p>Volledige CRUD met status, prioriteit, sortering, filtering en toewijzing aan medewerkers.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Subtaken</h4>
+              <p>Geneste taakstructuur voor het opdelen van complexere werkpakketten.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Planning (Gantt)</h4>
+              <p>Week- of meerwekenweergave met drag-and-drop, medewerker-filter, prioriteit-kleuren en vakantiedagen-integratie.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Offertes</h4>
+              <p>Quote-overzicht met filters en detail-view, direct gekoppeld aan ERPNext Quotation.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Verkooporders</h4>
+              <p>Orderbevestigingen en status-tracking — van quote tot delivery note.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Leveringsnotas</h4>
+              <p>Delivery-status en klant-koppeling voor uitlevering en logistieke planning.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Leads</h4>
+              <p>Lead-management en kwalificatie, met opvolg-acties en conversie naar opportunity.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Todo</h4>
+              <p>Persoonlijke takenlijst per gebruiker — los van project-taken.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HR -->
+        <div class="feature-category">
+          <h3>HR &amp; Personeel</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>Medewerkers</h4>
+              <p>Volledig personeelsoverzicht met foto, contactgegevens, contracten en verlof-allocaties.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Vakantieplanning</h4>
+              <p>Verlofaanvragen en -allocaties in kalenderweergave, met overuren-registratie.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Declaraties</h4>
+              <p>Onkostendeclaraties indienen, accorderen en uitbetalen — incl. bijlagen.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Tijdregistratie</h4>
+              <p>Uren boeken met project-koppeling, billable/niet-billable, "Nu"-knop en goedkeur-workflow.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Loonadministratie</h4>
+              <p>Loonbelasting- en salaris-rapportages per periode.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Financieel -->
+        <div class="feature-category">
+          <h3>Financieel &amp; Boekhouding</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>Financieel dashboard</h4>
+              <p>Omzet-grafieken per project of medewerker, billable %, top-klanten en maandelijkse trends.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Omzet</h4>
+              <p>Maandelijkse omzet-trends met year-over-year vergelijking.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Verkoopfacturen</h4>
+              <p>Openstaande facturen met ageing-analyse (0-30, 31-60, 61-90, 90+ dagen) en e-mail herinneringen.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Inkoopfacturen</h4>
+              <p>Leveranciers-facturen registreren, accorderen en betalen.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Openstaand</h4>
+              <p>Debiteuren-analyse met betaalvoorwaarden en aanmaning-status.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Kostinzicht</h4>
+              <p>Kosten-analyse en trending per kostenplaats of project.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Grootboek</h4>
+              <p>Rekeningschema en journaalposten — chart of accounts navigeerbaar.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Banktransacties</h4>
+              <p>Bankafschriften en reconciliatie met openstaande posten.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Boekprogramma</h4>
+              <p>Journaalposten en memoriaalboekingen direct invoeren.</p>
+            </div>
+            <div class="feature-card">
+              <h4>BTW-aangifte</h4>
+              <p>Kwartaal-BTW berekening op basis van belastingrekeningen.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Jaarrekening</h4>
+              <p>Jaarafsluiting, balans en winst-/verliesrekening.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Rentabiliteit</h4>
+              <p>Per-project en per-klant rentabiliteits-analyse.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Liquiditeit</h4>
+              <p>Cashflow-prognose op basis van openstaande posten en verwachte betalingen.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bestanden -->
+        <div class="feature-category">
+          <h3>Bestanden &amp; Kennis</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>NextCloud Files</h4>
+              <p>WebDAV file-browser met mapnavigatie, preview, upload/download en deel-links.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Wiki</h4>
+              <p>Markdown-kennisbank met zoeken, publish/unpublish en rich rendering.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agenda -->
+        <div class="feature-category">
+          <h3>Agenda</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>Multi-source kalender</h4>
+              <p>ERPNext events, taken, verlof en urenstaten plus iCalendar (ICS) feeds en Office 365 OAuth2 — alles in één agenda.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Maand-, week- of dag-view</h4>
+              <p>Schakel tussen overzichten, filter op bron en plan vergaderingen op een klik.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Jitsi video-meetings</h4>
+              <p>Genereer een Jitsi Meet-link direct in de uitnodiging — geen extra accounts nodig.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Systeem -->
+        <div class="feature-category">
+          <h3>Systeem &amp; DevOps</h3>
+          <div class="feature-list">
+            <div class="feature-card">
+              <h4>AI Agent (Claude)</h4>
+              <p>Claude AI-assistent met context over je ERPNext-data. SSE streaming, file-context en multi-turn conversaties.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Terminal</h4>
+              <p>WebSocket-shell (PowerShell of bash) per actieve instance — handig voor admins en developers.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Health check</h4>
+              <p>Status-monitoring per instance, IMAP- en OAuth2-token validatie.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Global search (Ctrl+K)</h4>
+              <p>Zoek door alle ERPNext-records van de actieve instance — vanaf elk scherm.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Instance management</h4>
+              <p>Zelf instances toevoegen, bewerken of verwijderen. Geen IT-ticket nodig.</p>
+            </div>
+            <div class="feature-card">
+              <h4>NL / EN i18n</h4>
+              <p>Volledig vertaald met 1190+ vertalingen, runtime taalwissel via react-i18next.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Employer vs Employee mode comparison -->
+      <div class="content-block">
+        <h2>Employer vs Employee <span class="accent">mode</span></h2>
+        <p>Per instance kies je in een dropdown of de gebruiker werkgever-toegang krijgt (alle modules) of werknemer-toegang (beperkte set, focus op eigen taken).</p>
+        <table class="mode-table">
+          <thead>
+            <tr>
+              <th>Module</th>
+              <th style="text-align: center;">Employer</th>
+              <th style="text-align: center;">Employee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Webmail, Messenger, Contacten</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="yes">Ja</td></tr>
+            <tr><td>Projecten &amp; Taken &amp; Planning</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="yes">Ja</td></tr>
+            <tr><td>Tijdregistratie &amp; Declaraties</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="yes">Ja</td></tr>
+            <tr><td>Agenda &amp; Vergader-notulen</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="yes">Ja</td></tr>
+            <tr><td>NextCloud Files &amp; Wiki</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="yes">Ja</td></tr>
+            <tr><td>Offertes, Verkooporders, Leveringen, Leads</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="no">Beperkt</td></tr>
+            <tr><td>Medewerkers, Vakantieplanning, Loonadministratie</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="no">Nee</td></tr>
+            <tr><td>Financieel dashboard, Verkoop-/Inkoopfacturen, Openstaand</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="no">Nee</td></tr>
+            <tr><td>Grootboek, Banktransacties, BTW, Jaarrekening</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="no">Nee</td></tr>
+            <tr><td>Rentabiliteit &amp; Liquiditeit</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="no">Nee</td></tr>
+            <tr><td>Terminal &amp; AI Agent</td><td style="text-align: center;" class="yes">Ja</td><td style="text-align: center;" class="no">Nee</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Integrations -->
+      <div class="content-block">
+        <h2>Integraties</h2>
+        <p>Y-app praat met de tools die je waarschijnlijk al gebruikt — geen lock-in, geen migratie.</p>
+        <div class="integrations-grid">
+          <div class="integration-card">
+            <h4>ERPNext</h4>
+            <p>REST API en session bridge — alle DocTypes beschikbaar.</p>
+          </div>
+          <div class="integration-card">
+            <h4>Office 365</h4>
+            <p>OAuth2 + Microsoft Graph API voor mail en agenda.</p>
+          </div>
+          <div class="integration-card">
+            <h4>NextCloud</h4>
+            <p>WebDAV + OCS API voor files, talk en deel-links.</p>
+          </div>
+          <div class="integration-card">
+            <h4>Telegram</h4>
+            <p>Bot API voor zakelijke chat en notificaties.</p>
+          </div>
+          <div class="integration-card">
+            <h4>Jitsi Meet</h4>
+            <p>URL-generatie voor video-meetings, zonder account.</p>
+          </div>
+          <div class="integration-card">
+            <h4>Claude AI</h4>
+            <p>CLI-spawning + SSE streaming met ERPNext-context.</p>
+          </div>
+          <div class="integration-card">
+            <h4>iCalendar (ICS)</h4>
+            <p>Lees externe feeds in de Y-app agenda.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack -->
+      <div class="content-block">
+        <h2>Technologie</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">React 19</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Vite 7</span>
+          <span class="tech-tag">TailwindCSS 4</span>
+          <span class="tech-tag">react-router-dom 7</span>
+          <span class="tech-tag">react-i18next</span>
+          <span class="tech-tag">Node.js 20+</span>
+          <span class="tech-tag">Express 4</span>
+          <span class="tech-tag">WebSocket (ws)</span>
+          <span class="tech-tag">better-sqlite3</span>
+          <span class="tech-tag">bcryptjs (12 rounds)</span>
+          <span class="tech-tag">AES-256-GCM</span>
+          <span class="tech-tag">PBKDF2-SHA256 (210k)</span>
+          <span class="tech-tag">AsyncLocalStorage</span>
+          <span class="tech-tag">SQLite (WAL)</span>
+          <span class="tech-tag">Leaflet + react-leaflet</span>
+          <span class="tech-tag">xterm.js</span>
+          <span class="tech-tag">PM2</span>
+          <span class="tech-tag">tsx --watch</span>
+          <span class="tech-tag">nginx</span>
+        </div>
+        <p>React 19 + TypeScript + Vite 7 + TailwindCSS 4 op de frontend, Node.js 20 + Express 4 + WebSocket op de backend. Authenticatie via bcryptjs (12 rounds), HttpOnly cookies en AsyncLocalStorage voor per-request credential scoping. Versleuteling met AES-256-GCM en PBKDF2-SHA256 (210k iteraties), gegevens in een SQLite-database (WAL mode). Productie draait onder PM2, achter een nginx reverse proxy met TLS termination, WebSocket upgrade en statische dist-serving. Development via tsx --watch.</p>
+      </div>
+
+      <!-- CTAs -->
+      <div class="content-block">
+        <div class="cta-links">
+          <a href="https://y-app.impertio.app" target="_blank" rel="noopener" class="cta-primary">Live demo &rarr;</a>
+          <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" class="cta-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub repository</span>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -199,26 +672,6 @@
     </div>
   </footer>
 
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-  </script>
   <script src="/shared/i18n.js"></script>
 </body>
 </html>

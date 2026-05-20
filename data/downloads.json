@@ -1,38 +1,38 @@
 {
-  "generated": "2026-05-19T11:35:34.714Z",
-  "grandTotal": 5166,
+  "generated": "2026-05-20T07:31:41.581Z",
+  "grandTotal": 5224,
   "totalRepos": 16,
   "platformTotals": {
-    "Android": 634,
-    "Linux (snap)": 105,
-    "Linux (AppImage)": 473,
+    "Android": 652,
+    "Linux (snap)": 106,
+    "Linux (AppImage)": 477,
     "Archive": 105,
-    "Linux (deb)": 422,
-    "macOS": 490,
-    "Windows": 2751,
+    "Linux (deb)": 429,
+    "macOS": 494,
+    "Windows": 2774,
     "Linux (rpm)": 74,
-    "Windows (MSI)": 112,
+    "Windows (MSI)": 113,
     "Other": 0
   },
   "rankedByDownloads": [
     {
       "repo": "open-pdf-studio",
-      "downloads": 4397,
+      "downloads": 4445,
       "releases": 48
     },
     {
       "repo": "open-2d-studio",
-      "downloads": 566,
+      "downloads": 573,
       "releases": 25
     },
     {
       "repo": "open-calc-studio",
-      "downloads": 73,
+      "downloads": 75,
       "releases": 11
     },
     {
       "repo": "open-speech-studio",
-      "downloads": 36,
+      "downloads": 37,
       "releases": 4
     },
     {
@@ -99,31 +99,31 @@
   "perTool": [
     {
       "repo": "open-pdf-studio",
-      "totalDownloads": 4397,
-      "totalAssets": 429,
+      "totalDownloads": 4445,
+      "totalAssets": 421,
       "releases": 48,
       "byPlatform": {
-        "Android": 600,
-        "Linux (snap)": 101,
-        "Linux (AppImage)": 401,
+        "Android": 617,
+        "Linux (snap)": 102,
+        "Linux (AppImage)": 405,
         "Archive": 71,
-        "Linux (deb)": 339,
-        "macOS": 469,
-        "Windows": 2364,
+        "Linux (deb)": 345,
+        "macOS": 472,
+        "Windows": 2381,
         "Linux (rpm)": 23,
         "Windows (MSI)": 29
       },
       "byVersion": {
         "v1.47.3": 1,
-        "v1.47.13": 906,
-        "v1.47.12": 34,
-        "v1.47.11": 10,
+        "v1.47.13": 946,
+        "v1.47.12": 38,
+        "v1.47.11": 11,
         "v1.47.10": 15,
         "v1.47.9": 28,
         "v1.47.8": 17,
         "v1.47.5": 93,
         "v1.47.4": 18,
-        "v1.45.0": 1311,
+        "v1.45.0": 1312,
         "v1.43.0": 672,
         "v1.41.0": 47,
         "v1.40.0": 218,
@@ -137,7 +137,7 @@
         "v1.29.0": 58,
         "v1.25.0": 43,
         "v1.24.0": 5,
-        "v1.23.0": 231,
+        "v1.23.0": 232,
         "v1.22.0": 33,
         "v1.21.0": 28,
         "v1.20.0": 84,
@@ -147,7 +147,7 @@
         "v1.15.0": 10,
         "v1.13.0": 16,
         "v1.12.0": 24,
-        "v1.10.0": 16,
+        "v1.10.0": 17,
         "v1.9.0": 33,
         "v1.8.0": 4,
         "v1.7.0": 1,
@@ -175,7 +175,7 @@
           "tag": "v1.47.13",
           "name": "Open.PDF.Studio_1.47.13_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 378,
+          "downloads": 389,
           "sizeMB": 13.7,
           "date": "2026-05-07",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.13/Open.PDF.Studio_1.47.13_x64-setup.exe"
@@ -202,7 +202,7 @@
           "tag": "v1.47.13",
           "name": "open-pdf-studio-release.apk",
           "platform": "Android",
-          "downloads": 182,
+          "downloads": 199,
           "sizeMB": 30.3,
           "date": "2026-05-07",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.13/open-pdf-studio-release.apk"
@@ -229,7 +229,7 @@
           "tag": "v1.23.0",
           "name": "Open.PDF.Studio_1.23.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 120,
+          "downloads": 121,
           "sizeMB": 8.3,
           "date": "2026-03-04",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.23.0/Open.PDF.Studio_1.23.0_x64-setup.exe"
@@ -238,7 +238,7 @@
           "tag": "v1.45.0",
           "name": "Open.PDF.Studio_1.45.0_amd64.AppImage",
           "platform": "Linux (AppImage)",
-          "downloads": 106,
+          "downloads": 107,
           "sizeMB": 90.8,
           "date": "2026-04-23",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.45.0/Open.PDF.Studio_1.45.0_amd64.AppImage"
@@ -256,25 +256,25 @@
     },
     {
       "repo": "open-2d-studio",
-      "totalDownloads": 566,
+      "totalDownloads": 573,
       "totalAssets": 200,
       "releases": 25,
       "byPlatform": {
-        "Android": 16,
+        "Android": 17,
         "Linux (snap)": 4,
         "Linux (rpm)": 50,
-        "macOS": 16,
+        "macOS": 17,
         "Linux (AppImage)": 68,
         "Archive": 34,
-        "Linux (deb)": 72,
-        "Windows": 233,
-        "Windows (MSI)": 73
+        "Linux (deb)": 73,
+        "Windows": 236,
+        "Windows (MSI)": 74
       },
       "byVersion": {
         "v0.35.0": 36,
         "v0.33.0": 1,
         "v0.32.0": 18,
-        "v0.31.0": 190,
+        "v0.31.0": 196,
         "v0.30.0": 15,
         "v0.29.0": 22,
         "v0.27.0": 27,
@@ -282,7 +282,7 @@
         "v0.22.0": 44,
         "v0.20.0": 21,
         "v0.19.0": 12,
-        "v0.17.0": 23,
+        "v0.17.0": 24,
         "v0.15.0": 12,
         "v0.13.0": 6,
         "v0.11.0": 10,
@@ -302,7 +302,7 @@
           "tag": "v0.31.0",
           "name": "Open.2D.Studio_0.31.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 107,
+          "downloads": 110,
           "sizeMB": 4.4,
           "date": "2026-03-02",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64-setup.exe"
@@ -311,7 +311,7 @@
           "tag": "v0.31.0",
           "name": "Open.2D.Studio_0.31.0_x64_en-US.msi",
           "platform": "Windows (MSI)",
-          "downloads": 21,
+          "downloads": 22,
           "sizeMB": 5.6,
           "date": "2026-03-02",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64_en-US.msi"
@@ -347,10 +347,19 @@
           "tag": "v0.31.0",
           "name": "Open.2D.Studio_0.31.0_aarch64.dmg",
           "platform": "macOS",
-          "downloads": 10,
+          "downloads": 11,
           "sizeMB": 5.3,
           "date": "2026-03-02",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_aarch64.dmg"
+        },
+        {
+          "tag": "v0.31.0",
+          "name": "open-2d-studio-android.apk",
+          "platform": "Android",
+          "downloads": 10,
+          "sizeMB": 55.2,
+          "date": "2026-03-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/open-2d-studio-android.apk"
         },
         {
           "tag": "v0.22.0",
@@ -360,15 +369,6 @@
           "sizeMB": 3.6,
           "date": "2026-02-14",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.22.0/Open.2D.Studio_0.22.0_x64-setup.exe"
-        },
-        {
-          "tag": "v0.31.0",
-          "name": "open-2d-studio-android.apk",
-          "platform": "Android",
-          "downloads": 9,
-          "sizeMB": 55.2,
-          "date": "2026-03-02",
-          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/open-2d-studio-android.apk"
         },
         {
           "tag": "v0.35.0",
@@ -392,19 +392,19 @@
     },
     {
       "repo": "open-calc-studio",
-      "totalDownloads": 73,
+      "totalDownloads": 75,
       "totalAssets": 15,
       "releases": 11,
       "byPlatform": {
         "Linux (rpm)": 0,
         "macOS": 0,
         "Linux (deb)": 1,
-        "Windows": 72,
+        "Windows": 74,
         "Windows (MSI)": 0
       },
       "byVersion": {
         "v0.7.8": 10,
-        "v0.7.3": 50,
+        "v0.7.3": 52,
         "v0.7.2": 3,
         "v0.7.1": 1,
         "v0.7.0": 1,
@@ -420,7 +420,7 @@
           "tag": "v0.7.3",
           "name": "Open.Calc.Studio_0.7.3_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 50,
+          "downloads": 52,
           "sizeMB": 32.6,
           "date": "2026-05-02",
           "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.7.3/Open.Calc.Studio_0.7.3_x64-setup.exe"
@@ -657,18 +657,18 @@
     },
     {
       "repo": "open-speech-studio",
-      "totalDownloads": 36,
+      "totalDownloads": 37,
       "totalAssets": 17,
       "releases": 4,
       "byPlatform": {
         "macOS": 2,
         "Linux (deb)": 8,
-        "Windows": 21,
+        "Windows": 22,
         "Windows (MSI)": 5
       },
       "byVersion": {
         "v0.9.0": 0,
-        "v0.10.0": 24,
+        "v0.10.0": 25,
         "v0.8.0": 7,
         "v0.5.0": 5
       },
@@ -677,7 +677,7 @@
           "tag": "v0.10.0",
           "name": "Open.Speech.Studio_0.10.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 11,
+          "downloads": 12,
           "sizeMB": 679.2,
           "date": "2026-04-24",
           "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.0/Open.Speech.Studio_0.10.0_x64-setup.exe"

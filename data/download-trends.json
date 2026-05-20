@@ -1,19 +1,19 @@
 {
-  "generated": "2026-05-19T11:35:34.833Z",
+  "generated": "2026-05-20T07:31:41.839Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-05-19",
-  "snapshotCount": 1,
+  "lastSnapshot": "2026-05-20",
+  "snapshotCount": 2,
   "weekCount": 1,
   "weeklyDeltas": [],
   "totalDelta": {
-    "open-pdf-studio": 0,
-    "open-2d-studio": 0,
-    "open-calc-studio": 0,
+    "open-pdf-studio": 48,
+    "open-2d-studio": 7,
+    "open-calc-studio": 2,
     "open-energy-studio": 0,
     "open-planner-studio": 0,
     "open-pointcloud-studio": 0,
     "open-heatloss-studio": 0,
-    "open-speech-studio": 0,
+    "open-speech-studio": 1,
     "Open-Field-Studio": 0,
     "open-frame-studio": 0,
     "monty-ifc-viewer": 0,
@@ -23,5 +23,5 @@
     "openaec-cloud": 0,
     "Y-app": 0
   },
-  "totalDownloadsAdded": 0
+  "totalDownloadsAdded": 58
 }

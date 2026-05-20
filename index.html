@@ -68,7 +68,7 @@
       { "@type": "SoftwareApplication", "position": 6, "name": "Open Pointcloud Studio", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/open-pointcloud-studio/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.3.0", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Point cloud viewer (LAS, LAZ). RGB/elevation/classification rendering, EDL, octree LoD." },
       { "@type": "SoftwareApplication", "position": 7, "name": "Open Frame Studio", "applicationCategory": "EngineeringApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/open-frame-studio/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.2.0", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "2D structural frame analysis for buildings and civil load-bearing systems." },
       { "@type": "SoftwareApplication", "position": 8, "name": "Open Field Studio", "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux, Android, iOS", "url": "https://www.open-aec.com/open-field-studio/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "license": "https://creativecommons.org/licenses/by-sa/4.0/", "description": "Site inspection & quality control. Defect pinning on floorplans, NEN 2767 checklists, offline-first." },
-      { "@type": "SoftwareApplication", "position": 9, "name": "Monty IFC Viewer", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/monty-ifc-viewer/", "downloadUrl": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "1.0.1", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Lightweight IFC viewer for quick BIM model inspection." },
+      { "@type": "SoftwareApplication", "position": 9, "name": "Monty IFC Viewer", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/monty-ifc-viewer/", "downloadUrl": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "1.0.1", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "IFC viewer designed for on-site assembly. Quick BIM model inspection on tablet and mobile." },
       { "@type": "SoftwareApplication", "position": 10, "name": "BCF Manager Studio", "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux, Web", "url": "https://www.open-aec.com/bcf-manager-studio/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "BCF 2.1 issue management platform for BIM projects. BCF API 3.0, IFC GlobalId linking." }
     ]
   }
@@ -971,7 +971,7 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/monty-ifc-viewer.png" alt="Monty IFC Viewer">
           <div>
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.montyIfc.title" style="margin-bottom:0;">Monty IFC Viewer</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
-            <p data-i18n="tools.items.montyIfc.desc">Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.</p>
+            <p data-i18n="tools.items.montyIfc.desc">IFC-viewer bedoeld voor montage op de bouw. Snelle inspectie van open BIM-modellen op tablet en mobiel.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 45 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v1.0</span>
@@ -982,6 +982,20 @@
           <div class="tool-links">
             <a href="/monty-ifc-viewer/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://monty-ifc-viewer.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
+          </div>
+        </article>
+        <article class="tool-card" data-repo="Open-Calculations-Studio">
+          <div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openCalculations.title">Open Calculations Studio</h3><span class="tool-tag tool-tag-dev">In ontwikkeling</span><span class="tool-tag tool-tag-civil">B&amp;U + Civiel</span></div>
+            <p data-i18n="tools.items.openCalculations.desc">Open opvolger van <strong>CalcPAD</strong>. Constructieve handberekeningen met eenheden, KaTeX-formules, SVG-tekeningen en live IFCX + IFC4x3 STEP export. Bestaande .cpd bestanden werken zonder migratie.</p>
+            <div class="tool-stats">
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 58 commits</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 20 mei 2026</span>
+            </div>
+            </div>
+          <div class="tool-links">
+            <a href="/open-calculations-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="https://github.com/OpenAEC-Foundation/Open-Calculations-Studio" target="_blank" rel="noopener" class="tool-link">GitHub &rarr;</a>
           </div>
         </article>
         <article class="tool-card" data-repo="open-2d-studio">
@@ -1116,20 +1130,6 @@
             </div>
           <div class="tool-links">
             <a href="https://github.com/OpenAEC-Foundation/open-frame-studio" target="_blank" rel="noopener" class="tool-link">GitHub &rarr;</a>
-          </div>
-        </article>
-        <article class="tool-card" data-repo="Open-Calculations-Studio">
-          <div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openCalculations.title">Open Calculations Studio</h3><span class="tool-tag tool-tag-dev">In ontwikkeling</span><span class="tool-tag tool-tag-civil">B&amp;U + Civiel</span></div>
-            <p data-i18n="tools.items.openCalculations.desc">Open opvolger van <strong>CalcPAD</strong>. Constructieve handberekeningen met eenheden, KaTeX-formules, SVG-tekeningen en live IFCX + IFC4x3 STEP export. Bestaande .cpd bestanden werken zonder migratie.</p>
-            <div class="tool-stats">
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 58 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 20 mei 2026</span>
-            </div>
-          </div>
-          <div class="tool-links">
-            <a href="/open-calculations-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
-            <a href="https://github.com/OpenAEC-Foundation/Open-Calculations-Studio" target="_blank" rel="noopener" class="tool-link">GitHub &rarr;</a>
           </div>
         </article>
       </div>
@@ -1512,7 +1512,7 @@
             openEnergy: { title: "Open Energy Studio", desc: "Projectpagina voor open energie-analyse en gebouwprestaties.", link: "Bekijk project \u2192" },
             openPlanner: { title: "Open Planner Studio", desc: "Open plannings- en projectco\u00f6rdinatiepagina voor bouwteams.", link: "Bekijk project \u2192" },
             openPointcloud: { title: "Open Pointcloud Studio", desc: "Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.", link: "Bekijk project \u2192" },
-            montyIfc: { title: "Monty IFC Viewer", desc: "Lichtgewicht IFC-viewer voor snelle inspectie van open BIM-modellen.", link: "Bekijk project \u2192" },
+            montyIfc: { title: "Monty IFC Viewer", desc: "IFC-viewer bedoeld voor montage op de bouw. Snelle inspectie van open BIM-modellen op tablet en mobiel.", link: "Bekijk project \u2192" },
             openCalc: { title: "Open Calc Studio", desc: "Open source calculatietool voor kostenramingen en begrotingen — voor bouw, GWW en civiele projecten.", link: "Bekijk project \u2192" },
             openField: { title: "Open Field Studio", desc: "Open source veldwerk- en inspectiepagina voor bouwplaatsregistratie en kwaliteitscontrole.", link: "Bekijk project \u2192" },
             yapp: { title: "Y-app", desc: "Open source communicatie- en samenwerkingsplatform voor bouwprojecten.", link: "Bekijk project \u2192" },
@@ -1679,7 +1679,7 @@
             openEnergy: { title: "Open Energy Studio", desc: "Project page for open energy analysis and building performance.", link: "View project \u2192" },
             openPlanner: { title: "Open Planner Studio", desc: "Open planning and project coordination tool for buildings, infrastructure and civil works.", link: "View project \u2192" },
             openPointcloud: { title: "Open Pointcloud Studio", desc: "Viewer and workflow page for point cloud data in renovation and analysis projects.", link: "View project \u2192" },
-            montyIfc: { title: "Monty IFC Viewer", desc: "Lightweight IFC viewer for quick inspection of open BIM models.", link: "View project \u2192" },
+            montyIfc: { title: "Monty IFC Viewer", desc: "IFC viewer designed for on-site assembly. Quick inspection of open BIM models on tablet and mobile.", link: "View project \u2192" },
             openCalc: { title: "Open Calc Studio", desc: "Open source cost estimation and budgeting tool for buildings, infrastructure and civil works.", link: "View project \u2192" },
             openField: { title: "Open Field Studio", desc: "Open source fieldwork and inspection page for construction site registration and quality control.", link: "View project \u2192" },
             yapp: { title: "Y-app", desc: "Open source communication and collaboration platform for construction projects.", link: "View project \u2192" },
