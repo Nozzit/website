@@ -48,23 +48,126 @@
       border-radius: var(--radius-lg);
       padding: var(--sp-6);
       text-align: center;
-      box-shadow: var(--shadow-sm);
-      transition: box-shadow 0.15s ease, transform 0.15s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .highlight-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0) 0%, rgba(217, 119, 6, 0) 60%, rgba(217, 119, 6, 0.08) 100%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
     }
     .highlight-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -10px rgba(217, 119, 6, 0.28), 0 4px 12px -4px rgba(0,0,0,0.06);
+      border-color: var(--amber);
+      transform: translateY(-4px) scale(1.01);
     }
+    .highlight-card:hover::before { opacity: 1; }
     .highlight-card .number {
       font-family: var(--font-heading);
       font-weight: 700;
       font-size: 2.25rem;
       color: var(--amber);
+      transition: transform 0.25s ease;
+      font-variant-numeric: tabular-nums;
     }
+    .highlight-card:hover .number { transform: scale(1.06); }
     .highlight-card .label {
       font-size: 0.875rem;
       color: var(--scaffold-gray);
       margin-top: var(--sp-1);
+    }
+
+    /* Chart tooltip (shared by all SVG charts) */
+    .chart-tip {
+      position: fixed;
+      pointer-events: none;
+      background: var(--deep-forge);
+      color: white;
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      line-height: 1.4;
+      box-shadow: 0 12px 28px -6px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.15);
+      border: 1px solid rgba(217, 119, 6, 0.5);
+      opacity: 0;
+      transform: translate(-50%, -120%);
+      transition: opacity 0.12s ease, transform 0.12s ease;
+      z-index: 9999;
+      white-space: nowrap;
+    }
+    .chart-tip.visible { opacity: 1; transform: translate(-50%, -135%); }
+    .chart-tip .tip-key { color: var(--amber); font-weight: 700; }
+    .chart-tip .tip-val { color: white; font-weight: 700; }
+    .chart-tip .tip-row { display: flex; gap: 10px; align-items: center; }
+    .chart-tip .tip-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+    /* Chart bar interactivity */
+    .chart-bar { transition: filter 0.18s ease, opacity 0.18s ease; cursor: pointer; }
+    .chart-bar:hover { filter: brightness(1.15) drop-shadow(0 4px 10px rgba(0,0,0,0.18)); }
+    .chart-grid { pointer-events: none; }
+    .chart-tick { fill: #A1A1AA; font-family: var(--font-code); font-size: 10px; }
+    .chart-tick-light { fill: rgba(255,255,255,0.6); }
+
+    /* Horizontal bar chart row */
+    .hbar-row {
+      display: grid;
+      grid-template-columns: 130px 1fr 70px;
+      align-items: center;
+      gap: var(--sp-3);
+      padding: 8px 0;
+      border-bottom: 1px solid #E7E5E4;
+      transition: background-color 0.18s ease, padding-left 0.18s ease;
+    }
+    .hbar-row:hover { background: rgba(217, 119, 6, 0.06); padding-left: 6px; }
+    .hbar-row:last-child { border-bottom: none; }
+    .hbar-label {
+      display: flex; align-items: center; gap: 8px;
+      font-family: var(--font-heading); font-weight: 600;
+      font-size: 0.875rem; color: var(--deep-forge);
+    }
+    .hbar-label .lang-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .hbar-track {
+      position: relative;
+      height: 22px;
+      background: #F5F5F4;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .hbar-fill {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 0;
+      border-radius: 999px;
+      transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .hbar-fill::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent 40%, rgba(255,255,255,0.35) 50%, transparent 60%);
+      transform: translateX(-100%);
+      transition: transform 1.2s ease 0.4s;
+    }
+    .hbar-row:hover .hbar-fill::after { transform: translateX(100%); }
+    .hbar-value {
+      text-align: right;
+      font-family: var(--font-code);
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--deep-forge);
+    }
+    .hbar-value .hbar-pct {
+      font-weight: 400;
+      color: var(--scaffold-gray);
+      font-size: 0.75rem;
+      margin-left: 4px;
     }
 
     /* Timeline */
@@ -455,7 +558,8 @@
   <section class="section" style="background: var(--concrete);">
     <div class="stats-section">
       <h2 data-i18n="charts.lang_dist">Verdeling per <span class="accent">programmeertaal</span></h2>
-      <div id="chart-langs" style="height: 250px;"></div>
+      <p style="color:#57534E;font-size:0.875rem;margin-bottom:var(--sp-4);">Aantal repositories per primaire programmeertaal van het OpenAEC-ecosysteem.</p>
+      <div id="chart-langs" style="max-width:700px;"></div>
     </div>
   </section>
 
@@ -693,21 +797,42 @@ fetch('/data/stats.json')
     document.getElementById('s-closed-prs').textContent = '—';
   });
 
+// Count-up animation: ticks the number from 0 to the final value over `dur` ms.
+// Respects prefers-reduced-motion; only triggers when the element is visible.
+function countUp(id, value, opts) {
+  const el = document.getElementById(id);
+  if (!el || value == null) return;
+  const target = typeof value === 'number' ? value : Number(String(value).replace(/[^\d.-]/g, ''));
+  if (!isFinite(target)) { el.textContent = value; return; }
+  const dur = (opts && opts.dur) || 1200;
+  const fmt = (opts && opts.fmt) || ((n) => Math.round(n).toLocaleString('nl-NL'));
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { el.textContent = fmt(target); return; }
+  const start = performance.now();
+  function tick(now) {
+    const t = Math.min(1, (now - start) / dur);
+    const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+    el.textContent = fmt(target * eased);
+    if (t < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
 function renderStats(data) {
   const s = data.summary;
-  document.getElementById('s-repos').textContent = s.publicRepos;
-  document.getElementById('s-commits').textContent = s.totalCommits.toLocaleString('nl-NL');
-  document.getElementById('s-stars').textContent = s.totalStars;
-  document.getElementById('s-contributors').textContent = s.uniqueContributors;
-  document.getElementById('s-loc').textContent = s.estimatedLinesOfCode.toLocaleString('nl-NL');
-  document.getElementById('s-languages').textContent = s.languages;
-  document.getElementById('s-releases').textContent = data.repos.reduce((s, r) => s + r.releases, 0);
+  countUp('s-repos', s.publicRepos);
+  countUp('s-commits', s.totalCommits);
+  countUp('s-stars', s.totalStars);
+  countUp('s-contributors', s.uniqueContributors);
+  countUp('s-loc', s.estimatedLinesOfCode);
+  countUp('s-languages', s.languages, { dur: 700 });
+  countUp('s-releases', data.repos.reduce((acc, r) => acc + r.releases, 0));
   // Prefer split-by-search-API fields, fall back to the legacy GitHub field
   // (which inflates because it also counts open PRs)
-  document.getElementById('s-issues').textContent = (s.openIssues != null ? s.openIssues : s.totalOpenIssues);
-  document.getElementById('s-closed-issues').textContent = s.closedIssues != null ? s.closedIssues : '—';
-  document.getElementById('s-merged-prs').textContent = s.mergedPRs != null ? s.mergedPRs : '—';
-  document.getElementById('s-closed-prs').textContent = s.closedPRs != null ? s.closedPRs : '—';
+  countUp('s-issues', s.openIssues != null ? s.openIssues : s.totalOpenIssues);
+  countUp('s-closed-issues', s.closedIssues != null ? s.closedIssues : 0);
+  countUp('s-merged-prs',    s.mergedPRs    != null ? s.mergedPRs    : 0);
+  countUp('s-closed-prs',    s.closedPRs    != null ? s.closedPRs    : 0);
   document.getElementById('stats-updated').textContent = 'Laatste update: ' + data.generated.substring(0, 10);
 
   // Table
@@ -735,9 +860,9 @@ function renderStats(data) {
   fetch('/data/news.json')
     .then(r => r.json())
     .then(news => {
-      document.getElementById('s-news-total').textContent = news.length;
-      document.getElementById('s-news-releases').textContent = news.filter(n => n.type === 'release').length;
-      document.getElementById('s-news-repos').textContent = news.filter(n => n.type === 'new_repo').length;
+      countUp('s-news-total', news.length);
+      countUp('s-news-releases', news.filter(n => n.type === 'release').length);
+      countUp('s-news-repos', news.filter(n => n.type === 'new_repo').length);
 
       // Group by week for bar chart
       const byWeek = {};
@@ -756,12 +881,9 @@ function renderStats(data) {
   fetch('/data/downloads.json')
     .then(r => r.json())
     .then(dl => {
-      const totalEl = document.getElementById('s-downloads');
-      if (totalEl) totalEl.textContent = dl.grandTotal.toLocaleString('nl-NL');
-      const dlTotal = document.getElementById('s-dl-total');
-      if (dlTotal) dlTotal.textContent = dl.grandTotal.toLocaleString('nl-NL');
-      const dlTools = document.getElementById('s-dl-tools');
-      if (dlTools) dlTools.textContent = dl.rankedByDownloads.filter(t => t.downloads > 0).length;
+      if (document.getElementById('s-downloads')) countUp('s-downloads', dl.grandTotal);
+      if (document.getElementById('s-dl-total'))  countUp('s-dl-total', dl.grandTotal);
+      if (document.getElementById('s-dl-tools'))  countUp('s-dl-tools', dl.rankedByDownloads.filter(t => t.downloads > 0).length);
       const topPlatform = Object.entries(dl.platformTotals).sort((a, b) => b[1] - a[1])[0];
       const dlTopP = document.getElementById('s-dl-top-platform');
       if (dlTopP && topPlatform) dlTopP.textContent = topPlatform[0];
@@ -789,8 +911,16 @@ function renderStats(data) {
     .catch(() => {});
 
   // Bar charts
-  barChart('chart-monthly', data.monthlyRepoCreation, 'var(--amber)');
-  barChart('chart-langs', data.languageDistribution, LANG_COLORS);
+  // Monthly repos: nicer NL month labels (2026-01 -> jan '26)
+  const MONTHS_NL_SHORT = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+  barChart('chart-monthly', data.monthlyRepoCreation, 'var(--amber)', {
+    labelFmt: (k) => {
+      const m = k.match(/^(\d{4})-(\d{2})/);
+      return m ? MONTHS_NL_SHORT[+m[2] - 1] + " '" + m[1].slice(2) : k;
+    },
+  });
+  // Languages: switch to clean horizontal bars
+  barChartH('chart-langs', data.languageDistribution, LANG_COLORS);
 
   // Line charts (time series)
   if (data.timeSeries) {
@@ -869,8 +999,44 @@ function dailyLineChart(id, ts, field, color, formatLarge) {
       <path d="${areaPath}" fill="${color}" fill-opacity="0.1"/>
       <path d="${linePath}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
       ${endLabel}
+      <g class="hover-layer">
+        <line class="hover-crosshair" x1="0" y1="${padT}" x2="0" y2="${padT + chartH}" stroke="${color}" stroke-width="1" stroke-dasharray="3 3" style="display:none;"/>
+        <circle class="hover-dot" r="5" fill="${color}" stroke="var(--deep-forge)" stroke-width="2" style="display:none;"/>
+        <rect class="hover-track" x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="transparent" style="cursor:crosshair;"/>
+      </g>
     </svg>
   `;
+  // Hover interactivity — show date + value at nearest point
+  const svg = el.querySelector('svg');
+  const track = el.querySelector('.hover-track');
+  const cross = el.querySelector('.hover-crosshair');
+  const dot   = el.querySelector('.hover-dot');
+  if (!track) return;
+  track.addEventListener('mousemove', (e) => {
+    const r = svg.getBoundingClientRect();
+    const sx = (e.clientX - r.left) / r.width * svgW;
+    const ratio = Math.min(1, Math.max(0, (sx - padL) / chartW));
+    const idx = Math.round(ratio * (days.length - 1));
+    const p = points[idx];
+    cross.setAttribute('x1', p.x);
+    cross.setAttribute('x2', p.x);
+    cross.style.display = '';
+    dot.setAttribute('cx', p.x);
+    dot.setAttribute('cy', p.y);
+    dot.style.display = '';
+    const html = `
+      <div class="tip-row"><span class="tip-dot" style="background:${color}"></span><span class="tip-key">${days[idx]}</span></div>
+      <div class="tip-val">${fmt(p.v)}</div>`;
+    // anchor tooltip at the SVG point's screen position
+    const sxScreen = r.left + (p.x / svgW) * r.width;
+    const syScreen = r.top  + (p.y / svgH) * r.height;
+    showTip(html, sxScreen, syScreen);
+  });
+  track.addEventListener('mouseleave', () => {
+    cross.style.display = 'none';
+    dot.style.display = 'none';
+    hideTip();
+  });
 }
 
 // Multi-series version of dailyLineChart — same axes/grid, N lines overlaid.
@@ -929,8 +1095,37 @@ function multiDailyLineChart(id, ts, series) {
       ${yGrid}
       ${xLabels}
       ${seriesSvg}
+      <g class="hover-layer">
+        <line class="hover-crosshair" x1="0" y1="${padT}" x2="0" y2="${padT + chartH}" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-dasharray="3 3" style="display:none;"/>
+        <rect class="hover-track" x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="transparent" style="cursor:crosshair;"/>
+      </g>
     </svg>
   `;
+  const svg = el.querySelector('svg');
+  const track = el.querySelector('.hover-track');
+  const cross = el.querySelector('.hover-crosshair');
+  if (!track) return;
+  track.addEventListener('mousemove', (e) => {
+    const r = svg.getBoundingClientRect();
+    const sx = (e.clientX - r.left) / r.width * svgW;
+    const ratio = Math.min(1, Math.max(0, (sx - padL) / chartW));
+    const idx = Math.round(ratio * (days.length - 1));
+    const x = padL + (idx / Math.max(1, days.length - 1)) * chartW;
+    cross.setAttribute('x1', x);
+    cross.setAttribute('x2', x);
+    cross.style.display = '';
+    const rows = series.map((s, si) => `
+      <div class="tip-row"><span class="tip-dot" style="background:${s.color}"></span><span class="tip-key">${s.label}</span> <span class="tip-val">${(seriesValues[si][idx] || 0).toLocaleString('nl-NL')}</span></div>
+    `).join('');
+    const html = `<div style="color:var(--scaffold-gray);margin-bottom:4px;">${days[idx]}</div>${rows}`;
+    const sxScreen = r.left + (x / svgW) * r.width;
+    const syScreen = r.top  + (padT / svgH) * r.height;
+    showTip(html, sxScreen, syScreen);
+  });
+  track.addEventListener('mouseleave', () => {
+    cross.style.display = 'none';
+    hideTip();
+  });
 }
 
 function lineChart(id, months, dataObj, color, formatLarge) {
@@ -994,21 +1189,123 @@ function lineChart(id, months, dataObj, color, formatLarge) {
   `;
 }
 
-function barChart(id, dataObj, colors) {
+// ───────────────────────────────────────────────────────────────────
+//  Chart tooltip — one shared instance, positioned with mouse events
+// ───────────────────────────────────────────────────────────────────
+function ensureChartTip() {
+  let tip = document.querySelector('.chart-tip');
+  if (!tip) {
+    tip = document.createElement('div');
+    tip.className = 'chart-tip';
+    document.body.appendChild(tip);
+  }
+  return tip;
+}
+function showTip(html, x, y) {
+  const tip = ensureChartTip();
+  tip.innerHTML = html;
+  tip.style.left = x + 'px';
+  tip.style.top  = y + 'px';
+  tip.classList.add('visible');
+}
+function hideTip() {
+  const tip = document.querySelector('.chart-tip');
+  if (tip) tip.classList.remove('visible');
+}
+
+// ───────────────────────────────────────────────────────────────────
+//  Bar chart — SVG, vertical, hover-tooltip, axis grid, value labels
+// ───────────────────────────────────────────────────────────────────
+function barChart(id, dataObj, colors, opts) {
   const el = document.getElementById(id);
-  const entries = Object.entries(dataObj).sort((a,b) => a[0].localeCompare(b[0]));
+  if (!el) return;
+  const labelFmt = (opts && opts.labelFmt) || ((k) => k);
+  const valFmt   = (opts && opts.valFmt)   || ((v) => v.toLocaleString('nl-NL'));
+  const entries  = Object.entries(dataObj).sort((a, b) => a[0].localeCompare(b[0]));
+  const max = Math.max(1, ...entries.map(e => e[1]));
+
+  const W = Math.max(600, entries.length * 60);
+  const H = 240;
+  const padL = 50, padR = 20, padT = 24, padB = 50;
+  const chartW = W - padL - padR;
+  const chartH = H - padT - padB;
+  const barW = (chartW / entries.length) * 0.62;
+  const step = chartW / entries.length;
+
+  // Y-axis grid (5 ticks)
+  const yGrid = [0, 0.25, 0.5, 0.75, 1].map(f => {
+    const y = padT + chartH - f * chartH;
+    return `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="#E7E5E4" stroke-width="1"/>
+      <text x="${padL - 8}" y="${y + 4}" text-anchor="end" class="chart-tick">${Math.round(max * f).toLocaleString('nl-NL')}</text>`;
+  }).join('');
+
+  // Bars
+  const bars = entries.map(([k, v], i) => {
+    const cx = padL + step * (i + 0.5);
+    const h = (v / max) * chartH;
+    const y = padT + chartH - h;
+    const x = cx - barW / 2;
+    const c = (typeof colors === 'object' && colors[k]) ? colors[k] : colors;
+    const tipKey = labelFmt(k);
+    const tipVal = valFmt(v);
+    return `
+      <g class="chart-bar-group" data-key="${k}" data-val="${v}" data-tipkey="${tipKey}" data-tipval="${tipVal}" data-color="${c}">
+        <rect class="chart-bar" x="${x}" y="${y}" width="${barW}" height="${h}" fill="${c}" rx="4" ry="4"/>
+        <text x="${cx}" y="${y - 6}" text-anchor="middle" font-family="var(--font-code)" font-size="10" font-weight="700" fill="var(--deep-forge)">${tipVal}</text>
+        <text x="${cx}" y="${H - padB + 16}" text-anchor="middle" class="chart-tick" font-size="10">${labelFmt(k)}</text>
+      </g>
+    `;
+  }).join('');
+
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="overflow:visible;">
+    <g class="chart-grid">${yGrid}</g>
+    <line x1="${padL}" y1="${padT + chartH}" x2="${W - padR}" y2="${padT + chartH}" stroke="#A8A29E" stroke-width="1"/>
+    ${bars}
+  </svg>`;
+
+  // Hover-tooltip wiring
+  el.querySelectorAll('.chart-bar-group').forEach(g => {
+    g.addEventListener('mouseenter', (e) => {
+      const rect = g.getBoundingClientRect();
+      const html = `
+        <div class="tip-row"><span class="tip-dot" style="background:${g.dataset.color}"></span><span class="tip-key">${g.dataset.tipkey}</span></div>
+        <div class="tip-val">${g.dataset.tipval}</div>`;
+      showTip(html, rect.left + rect.width / 2, rect.top);
+    });
+    g.addEventListener('mouseleave', hideTip);
+  });
+}
+
+// ───────────────────────────────────────────────────────────────────
+//  Horizontal bar chart — better for category lists like programming
+//  languages. Renders DOM rows with animated track-fills + percent.
+// ───────────────────────────────────────────────────────────────────
+function barChartH(id, dataObj, colors) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const entries = Object.entries(dataObj).sort((a, b) => b[1] - a[1]);
+  const total = entries.reduce((s, e) => s + e[1], 0) || 1;
   const max = Math.max(...entries.map(e => e[1]));
-  el.innerHTML = `<div style="display:flex;align-items:flex-end;gap:4px;height:220px;padding-top:20px;">
-    ${entries.map(([k, v]) => {
-      const h = Math.max(6, (v/max)*190);
-      const c = typeof colors === 'object' && colors[k] ? colors[k] : colors;
-      return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;">
-        <span style="font-family:var(--font-code);font-size:0.7rem;color:var(--deep-forge);">${v}</span>
-        <div style="width:100%;max-width:60px;height:${h}px;background:${c};border-radius:4px 4px 0 0;"></div>
-        <span style="font-size:0.6rem;color:var(--scaffold-gray);text-align:center;overflow:hidden;text-overflow:ellipsis;max-width:70px;">${k}</span>
-      </div>`;
-    }).join('')}
-  </div>`;
+
+  el.innerHTML = entries.map(([k, v]) => {
+    const c = (typeof colors === 'object' && colors[k]) ? colors[k] : (colors || 'var(--amber)');
+    const widthPct = ((v / max) * 100).toFixed(1);
+    const sharePct = ((v / total) * 100).toFixed(1);
+    return `
+      <div class="hbar-row" data-key="${k}" data-val="${v}">
+        <div class="hbar-label"><span class="lang-dot" style="background:${c}"></span>${k}</div>
+        <div class="hbar-track"><div class="hbar-fill" style="background:${c};" data-target-width="${widthPct}%"></div></div>
+        <div class="hbar-value">${v.toLocaleString('nl-NL')}<span class="hbar-pct">${sharePct}%</span></div>
+      </div>
+    `;
+  }).join('');
+
+  // Animate fills in after a tick (gives CSS transition something to play with)
+  requestAnimationFrame(() => {
+    el.querySelectorAll('.hbar-fill').forEach(b => {
+      b.style.width = b.dataset.targetWidth;
+    });
+  });
 }
 </script>
   <script src="/shared/i18n.js"></script>
