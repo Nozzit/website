@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Geotechniek Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Open Geotechniek Studio: open-source viewer voor sonderingen (CPT, GEF), boringen (BHR, BRO-xml) en geotechnische grondonderzoeksdata. Voor GWW en civiele projecten.">
+  <meta name="i18n-page" content="open-geotechniek-studio">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Open Geotechniek Studio",
+    "applicationCategory": "EngineeringApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "softwareVersion": "0.2.4",
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "url": "https://www.open-aec.com/open-geotechniek-studio/",
+    "description": "Open-source viewer for cone penetration tests (CPT, GEF) and borings (BHR, BRO-xml). Soil layer interpretation, Robertson SBT classification, IFCX integration. For civil engineering and GWW projects.",
+    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" }
+  }
+  </script>
+
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.5rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p { font-size: 1.125rem; color: var(--scaffold-gray); max-width: 700px; margin: 0 auto; line-height: 1.6; }
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.7rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 4px 14px; border-radius: var(--radius-full);
+      background: #FED7AA; color: #9A3412;
+      margin-top: var(--sp-4); margin-right: 6px;
+    }
+    .gww-badge { background: #CFFAFE; color: #155E75; }
+    .version-info {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.7rem;
+      color: var(--scaffold-gray); margin-top: var(--sp-2);
+    }
+
+    .content { max-width: 900px; margin: 0 auto; }
+    .content h2 { font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--deep-forge); margin-bottom: var(--sp-4); }
+    .content h2 .accent { color: var(--amber); }
+    .content p { font-size: 1rem; color: #57534E; line-height: 1.7; margin-bottom: var(--sp-4); }
+    .content-block + .content-block { margin-top: var(--sp-12); }
+
+    /* Slider */
+    .media-slider { max-width: 1100px; margin: 0 auto var(--sp-10); position: relative; }
+    .slider-container { position: relative; overflow: hidden; border-radius: var(--radius-lg); background: var(--night-build); box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
+    .slider-track { display: flex; transition: transform 0.4s ease; }
+    .slider-slide { min-width: 100%; }
+    .slider-slide img { width: 100%; display: block; }
+    .slider-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(0,0,0,0.5); color: white; border: none;
+      width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+      font-size: 1.5rem; display: flex; align-items: center; justify-content: center;
+      z-index: 2;
+    }
+    .slider-btn:hover { background: rgba(0,0,0,0.7); }
+    .slider-prev { left: 12px; }
+    .slider-next { right: 12px; }
+    .slider-dots { display: flex; justify-content: center; gap: 8px; padding: 12px 0; }
+    .slider-dot { width: 10px; height: 10px; border-radius: 50%; border: none; cursor: pointer; background: #D6D3D1; }
+    .slider-dot.active { background: var(--amber); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--sp-6);
+      margin: var(--sp-8) 0;
+    }
+    .feature-card {
+      background: white; border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg); padding: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+    }
+    .feature-card h3 { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; color: var(--deep-forge); margin-bottom: var(--sp-2); }
+    .feature-card p { font-size: 0.875rem; color: #57534E; line-height: 1.6; margin-bottom: 0; }
+
+    /* Explainer block */
+    .explainer {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
+      margin: var(--sp-8) 0;
+    }
+    .explainer h3 { color: var(--amber); font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: var(--sp-4); }
+    .explainer p { color: var(--scaffold-gray); font-size: 0.9rem; line-height: 1.7; margin-bottom: var(--sp-3); }
+    .explainer ul { list-style: none; padding: 0; margin: 0; }
+    .explainer ul li {
+      position: relative;
+      padding: var(--sp-2) 0 var(--sp-2) var(--sp-5);
+      color: var(--scaffold-gray);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .explainer ul li::before {
+      content: ''; position: absolute; left: 0; top: 12px;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--amber);
+    }
+
+    .tech-stack { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin: var(--sp-4) 0; }
+    .tech-tag {
+      font-family: var(--font-code); font-size: 0.75rem; font-weight: 500;
+      padding: 4px 12px; border-radius: var(--radius-full);
+      background: var(--concrete); color: var(--deep-forge);
+    }
+
+    .cta-links { display: flex; gap: var(--sp-4); flex-wrap: wrap; margin-top: var(--sp-6); }
+    .cta-links a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--radius-md);
+      font-family: var(--font-heading); font-weight: 600; font-size: 0.9rem;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .cta-links a:hover { opacity: 0.85; }
+    .cta-primary { background: var(--amber); color: var(--deep-forge); }
+    .cta-secondary { background: var(--deep-forge); color: white; }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 1.8rem; word-break: break-word; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">Open <span class="accent">Geotechniek</span> Studio</h1>
+    <p data-i18n="header.desc">Open-source viewer voor sonderingen (CPT, GEF) en boringen (BHR, BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering, grondwerk en civiele projecten.</p>
+    <div>
+      <span class="status-badge" data-i18n="header.badge">Beta</span>
+      <span class="status-badge gww-badge" data-i18n="header.gww">GWW / Geotechniek</span>
+    </div>
+    <div class="version-info">v0.2.4 &middot; Rust + Tauri 2 &middot; GEF + BRO-xml support &middot; Robertson SBT</div>
+  </header>
+
+  <section class="section" style="background: var(--blueprint-white);">
+
+    <!-- Screenshots slider -->
+    <div class="media-slider">
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-1.png" alt="Open Geotechniek Studio - CPT sondering met Robertson SBT-classificatie" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'padding:120px 40px;text-align:center;color:white;\'><h3 style=\'color:var(--amber);margin-bottom:16px;\'>Screenshot 1: CPT-sondering</h3><p style=\'color:var(--scaffold-gray);max-width:600px;margin:0 auto;\'>Conusweerstand (qc), plaatselijke wrijving (fs), wrijvingsgetal (Rf) en Robertson SBT-classificatie per laag. Locatie op de kaart, eigenschappen-paneel met grondopbouw per diepte (top/bot/zone).</p></div>';"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-2.png" alt="Open Geotechniek Studio - BHR boring met grondsoort-lagen volgens BRO" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'padding:120px 40px;text-align:center;color:white;\'><h3 style=\'color:var(--amber);margin-bottom:16px;\'>Screenshot 2: BHR-boring</h3><p style=\'color:var(--scaffold-gray);max-width:600px;margin:0 auto;\'>Boringsgegevens uit BRO-xml met visualisatie van grondsoort-lagen (sterkSiltigZand, matigSiltigeKlei, veenNietGespecificeerd, mineraalarmVeen, etc.) inclusief bijmengingen, structuur en humusgehalte conform NEN5104.</p></div>';"></div>
+        </div>
+        <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
+        <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+
+    <div class="content">
+
+      <!-- What is it? -->
+      <div class="explainer">
+        <h3 data-i18n="what.title">Wat is Open Geotechniek Studio?</h3>
+        <p data-i18n="what.desc">Open Geotechniek Studio is een desktop-applicatie voor het visualiseren en analyseren van geotechnische gegevens uit de Nederlandse Basisregistratie Ondergrond (BRO). Open elk GEF- of BRO-xml bestand en bekijk sondering- of boringsdata met automatische Robertson SBT classificatie, grondopbouw-detectie en laagindeling.</p>
+        <ul>
+          <li data-i18n="what.list1">CPT-sonderingen (GEF formaat) — conusweerstand, wrijving, waterspanning</li>
+          <li data-i18n="what.list2">Boringen (BRO-xml) — grondsoorten conform NEN5104, BIMRO/IMBRO/A kwaliteitsregimes</li>
+          <li data-i18n="what.list3">Robertson SBT classificatie — automatische bodemtype-bepaling per diepte</li>
+          <li data-i18n="what.list4">Multi-tab — meerdere sonderingen/boringen tegelijk vergelijken</li>
+          <li data-i18n="what.list5">Kaart-view — alle metingen op locatie (RD-coördinaten)</li>
+          <li data-i18n="what.list6">Rapportage — export naar PDF voor projectdossiers</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="why.title">Waarom Open <span class="accent">Geotechniek</span> Studio?</h2>
+        <p data-i18n="why.desc1">Geotechnische software is in de Nederlandse markt vaak duur en gefragmenteerd: verschillende tools voor sonderingen, boringen, paalberekeningen en rapportages. Open Geotechniek Studio brengt het samen — gratis, open source en volledig conform de Nederlandse standaarden (BRO, NEN5104, IMBRO/A).</p>
+        <p data-i18n="why.desc2">Voor de hele GWW- en civiele sector: van fundering-ingenieurs tot kabel-/leiding-aannemers, van constructeurs tot waterschap-projecten. Lees BRO-data direct, exporteer naar IFCX voor BIM-integratie, en deel professionele rapporten zonder licentiekosten.</p>
+      </div>
+
+      <!-- Standards explainer -->
+      <div class="explainer">
+        <h3 data-i18n="standards.title">Ondersteunde standaarden</h3>
+        <p data-i18n="standards.desc">Open Geotechniek Studio leest en interpreteert de officiële Nederlandse geotechnische formaten:</p>
+        <ul>
+          <li data-i18n="standards.list1"><strong>GEF</strong> — Geotechnical Exchange Format voor CPT-sonderingen</li>
+          <li data-i18n="standards.list2"><strong>BRO-xml (BHR-GT)</strong> — Basisregistratie Ondergrond Geotechnisch booronderzoek</li>
+          <li data-i18n="standards.list3"><strong>NEN 5104</strong> — Geotechnische beschrijving van grondmonsters</li>
+          <li data-i18n="standards.list4"><strong>IMBRO / IMBRO-A</strong> — Informatiemodel BRO (kwaliteitsregimes)</li>
+          <li data-i18n="standards.list5"><strong>Robertson SBT</strong> — Soil Behavior Type classificatie</li>
+          <li data-i18n="standards.list6"><strong>RD-coördinaten</strong> — Rijksdriehoekstelsel voor locaties</li>
+          <li data-i18n="standards.list7"><strong>NAP</strong> — Normaal Amsterdams Peil voor maaiveld en dieptes</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="features.title">Functionaliteiten</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-i18n="features.cpt.title">CPT visualisatie</h3>
+            <p data-i18n="features.cpt.desc">Conusweerstand (qc), plaatselijke wrijving (fs), wrijvingsgetal (Rf) en eventueel waterspanning (u2) per diepte, met crosshair en waarde-overlay.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.bhr.title">BHR boringen</h3>
+            <p data-i18n="features.bhr.desc">Visualisatie van boringen met grondsoort-lagen, bijmengingen, structuur, humusgehalte en kleur — direct uit BRO-xml.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.sbt.title">Robertson SBT</h3>
+            <p data-i18n="features.sbt.desc">Automatische Soil Behavior Type classificatie volgens Robertson (1990) — van Gevoelig fijnkorrelig tot Zeer vast zand/klei.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.layers.title">Grondopbouw</h3>
+            <p data-i18n="features.layers.desc">Automatische detectie van grondopbouw per diepte (top, bot, zone). Pas zelf de laagindeling aan op basis van metingen.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.map.title">Kaart-view</h3>
+            <p data-i18n="features.map.desc">Alle metingen op locatie via RD-coördinaten. Meerdere sonderingen op één kaart voor projectoverzicht.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.multitab.title">Multi-tab</h3>
+            <p data-i18n="features.multitab.desc">Open meerdere CPT's en boringen tegelijk in tabs. Vergelijk diepte, lagen en eigenschappen naast elkaar.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.report.title">Rapportage</h3>
+            <p data-i18n="features.report.desc">Genereer professionele PDF-rapporten met sonderingen, boringen, situatieschets en grondopbouw — geschikt voor projectdossier.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.situatie.title">Situatietekening</h3>
+            <p data-i18n="features.situatie.desc">Bouw een situatieschets met alle metingen in het project. Plot lijnen, secties en grondopbouw-doorsnedes.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.ifc.title">IFC / IFCX export</h3>
+            <p data-i18n="features.ifc.desc">Exporteer geotechnische data als IFC-elementen of in IFCX-namespace voor naadloze integratie met BIM-modellen en Open Frame Studio.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.metadata.title">Metadata</h3>
+            <p data-i18n="features.metadata.desc">Volledige boring- en sonderingsgegevens: bronhouder, kwaliteitsregime, boormethode, levering, beschrijfdatum, NEN5104plus codering.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.rawxml.title">Ruwe data (XML)</h3>
+            <p data-i18n="features.rawxml.desc">Inspecteer de onderliggende BRO-xml of GEF-bron direct vanuit de app voor verificatie en debugging.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.local.title">100% lokaal</h3>
+            <p data-i18n="features.local.desc">Alle data blijft op je eigen machine. Geen cloud, geen uploads naar derde partijen — privacy en GDPR vanzelfsprekend.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="useCases.title">Gebruikersprofielen</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-i18n="useCases.geotech.title">Geotechnisch adviseurs</h3>
+            <p data-i18n="useCases.geotech.desc">Snel BRO-data inzien voor paal-, fundatie- en zettingsadvies. Vergelijk meerdere sonderingen voor projectinterpretatie.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="useCases.civil.title">Civiel constructeurs</h3>
+            <p data-i18n="useCases.civil.desc">Onderbouw fundering-keuzes voor bruggen, viaducten, tunnels en kunstwerken op basis van CPT-grafieken.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="useCases.gww.title">GWW-aannemers</h3>
+            <p data-i18n="useCases.gww.desc">Beoordeel ontgravingsdiepte, grondverbetering en ontwatering vóór een GWW-project start.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="useCases.bim.title">BIM-coördinatoren</h3>
+            <p data-i18n="useCases.bim.desc">Integreer geotechnische data in BIM-modellen via IFCX. Eén waarheid voor bovengrond én ondergrond.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="tech.title">Technologie</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Tauri 2</span>
+          <span class="tech-tag">GEF parser</span>
+          <span class="tech-tag">BRO-xml</span>
+          <span class="tech-tag">NEN 5104</span>
+          <span class="tech-tag">Robertson SBT</span>
+        </div>
+        <p data-i18n="tech.desc">Een Rust-rekenkern voor snelle parsing van GEF en BRO-xml, een TypeScript-frontend voor de UI, en Tauri 2 voor cross-platform distributie (Windows, macOS, Linux). Dezelfde stack als het hele OpenAEC-ecosysteem voor naadloze integratie.</p>
+      </div>
+
+      <div class="content-block">
+        <div class="cta-links">
+          <a href="https://github.com/OpenAEC-Foundation/cpt-viewer/releases" target="_blank" rel="noopener" class="cta-primary" data-i18n="cta.download">Download installer</a>
+          <a href="https://github.com/OpenAEC-Foundation/cpt-viewer" target="_blank" rel="noopener" class="cta-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <span data-i18n="cta.github">GitHub</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Release Notes (shared component) -->
+  <div data-release-notes="cpt-viewer"></div>
+  <script src="/shared/release-notes.js"></script>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); font-size: 0.75rem; text-decoration: none;">GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); font-size: 0.75rem; text-decoration: none;">LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      const track = document.getElementById('sliderTrack');
+      const dots = document.getElementById('sliderDots');
+      if (!track) return;
+      const slides = track.children;
+      let current = 0;
+      for (let i = 0; i < slides.length; i++) {
+        const d = document.createElement('button');
+        d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        d.style.cssText = 'width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;background:' + (i === 0 ? '#D97706' : '#D6D3D1') + ';';
+        d.onclick = () => goTo(i);
+        dots.appendChild(d);
+      }
+      function goTo(i) {
+        current = (i + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        Array.from(dots.children).forEach((dot, idx) => {
+          dot.style.background = idx === current ? '#D97706' : '#D6D3D1';
+        });
+      }
+      window.slideMove = (dir) => goTo(current + dir);
+    })();
+  </script>
+  <script src="/shared/i18n.js"></script>
+</body>
+</html>
