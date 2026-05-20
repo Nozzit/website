@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-05-20T07:44:05.146Z",
+  "generated": "2026-05-20T07:50:12.122Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -21,7 +21,7 @@
     "totalCommits": 5510,
     "contributors": 32,
     "languages": 8,
-    "sourceDate": "2026-05-20T07:31:14.660Z"
+    "sourceDate": "2026-05-20T07:50:11.868Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
