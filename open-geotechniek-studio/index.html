@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Geotechniek Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open Geotechniek Studio: open-source viewer voor sonderingen (CPT, GEF), boringen (BHR, BRO-xml) en geotechnische grondonderzoeksdata. Voor GWW en civiele projecten.">
+  <meta name="description" content="Open Geotechniek Studio: open-source desktop-tool voor sonderingen (CPT/GEF), boringen (BHR/BRO-xml), situatietekeningen en automatisch offertes opvragen bij Nederlandse sondeerbedrijven. Voor GWW, civiele en funderingsprojecten.">
   <meta name="i18n-page" content="open-geotechniek-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
@@ -151,7 +151,7 @@
   <header class="page-header">
     <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
     <h1 data-i18n="header.title">Open <span class="accent">Geotechniek</span> Studio</h1>
-    <p data-i18n="header.desc">Open-source viewer voor sonderingen (CPT, GEF) en boringen (BHR, BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering, grondwerk en civiele projecten.</p>
+    <p data-i18n="header.desc">Open-source desktop-tool voor sonderingen (CPT/GEF), boringen (BHR/BRO-xml) en situatietekeningen. <strong style="color: white;">Vraag automatisch offertes op</strong> bij de dichtstbijzijnde Nederlandse sondeerbedrijven. Voor GWW, civiele en funderingsprojecten.</p>
     <div>
       <span class="status-badge" data-i18n="header.badge">Beta</span>
       <span class="status-badge gww-badge" data-i18n="header.gww">GWW / Geotechniek</span>
@@ -169,6 +169,7 @@
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-2.png" alt="Open Geotechniek Studio - BHR boring met grondsoort-lagen volgens BRO" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'padding:120px 40px;text-align:center;color:white;\'><h3 style=\'color:var(--amber);margin-bottom:16px;\'>Screenshot 2: BHR-boring</h3><p style=\'color:var(--scaffold-gray);max-width:600px;margin:0 auto;\'>Boringsgegevens uit BRO-xml met visualisatie van grondsoort-lagen (sterkSiltigZand, matigSiltigeKlei, veenNietGespecificeerd, mineraalarmVeen, etc.) inclusief bijmengingen, structuur en humusgehalte conform NEN5104.</p></div>';"></div>
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-3.png" alt="Open Geotechniek Studio - Kaart-view met 66 sonderingen uit BRO op Kadaster luchtfoto" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'padding:120px 40px;text-align:center;color:white;\'><h3 style=\'color:var(--amber);margin-bottom:16px;\'>Screenshot 3: Kaart-view met BRO-integratie</h3><p style=\'color:var(--scaffold-gray);max-width:600px;margin:0 auto;\'>Interactieve kaart met directe BRO-integratie: 66 sonderingen automatisch geladen rond projectlocatie. Kadaster luchtfoto, BAG-gebouwen, kadastrale grenzen, AHN hoogtekaart, BGT topografie en historische luchtfoto&apos;s (2016-2025) als laaglagen.</p></div>';"></div>
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-4.png" alt="Open Geotechniek Studio - Rapport-tab met professioneel PDF sonderingsrapport" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'padding:120px 40px;text-align:center;color:white;\'><h3 style=\'color:var(--amber);margin-bottom:16px;\'>Screenshot 4: PDF-rapport genereren</h3><p style=\'color:var(--scaffold-gray);max-width:600px;margin:0 auto;\'>Genereer professionele PDF-rapporten met voorblad, co&ouml;rdinatentabel, overzichtskaart, per-sondering pagina&apos;s, Robertson SBT-legenda en metadata-overzicht. Klaar voor projectdossier, vergunningsaanvraag of opdrachtgever.</p></div>';"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-5.png" alt="Open Geotechniek Studio - Situatietekening en automatisch offertes opvragen bij sondeerbedrijven" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'padding:120px 40px;text-align:center;color:white;\'><h3 style=\'color:var(--amber);margin-bottom:16px;\'>Screenshot 5: Situatietekening + offertes opvragen</h3><p style=\'color:var(--scaffold-gray);max-width:600px;margin:0 auto;\'>Teken een sonderingsraster op A3-situatietekening met professionele titelbalk. Klik &quot;Offertes opvragen&quot; en de tool selecteert automatisch de 3 dichtstbijzijnde sondeerbedrijven uit de catalogus (43 NL bedrijven) en opent Outlook met een vooraf ingevuld offertemail.</p></div>';"></div>
         </div>
         <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
         <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
@@ -250,7 +251,7 @@
           </div>
           <div class="feature-card">
             <h3 data-i18n="features.situatie.title">Situatietekening</h3>
-            <p data-i18n="features.situatie.desc">Bouw een situatieschets met alle metingen in het project. Plot lijnen, secties en grondopbouw-doorsnedes.</p>
+            <p data-i18n="features.situatie.desc">Volledige tekenfunctionaliteit voor situatietekeningen: sonderingen en boringen plaatsen, sonderingsrasters genereren, RD-coördinaten, maatlijnen, trim/extend/mirror/offset operaties. Importeer Image/PDF of SVG-kaders als referentie. Export naar professionele A3-PDF met OpenAEC-titelbalk.</p>
           </div>
           <div class="feature-card">
             <h3 data-i18n="features.ifc.title">IFC / IFCX export</h3>
@@ -269,6 +270,20 @@
             <p data-i18n="features.local.desc">Alle data blijft op je eigen machine. Geen cloud, geen uploads naar derde partijen — privacy en GDPR vanzelfsprekend.</p>
           </div>
         </div>
+      </div>
+
+      <!-- Quotes USP highlight -->
+      <div class="explainer" style="background: linear-gradient(135deg, var(--night-build) 0%, var(--deep-forge) 100%); border-left: 4px solid var(--amber);">
+        <h3 data-i18n="quotes.title">⚡ Uniek: automatisch offertes opvragen bij sondeerbedrijven</h3>
+        <p data-i18n="quotes.desc">Teken een sonderingsraster op je situatietekening en klik <strong style="color: white;">"Offertes opvragen"</strong>. Open Geotechniek Studio sorteert automatisch alle Nederlandse sondeerbedrijven op afstand tot je projectlocatie, selecteert de 3 dichtstbijzijnde voor, en opent Outlook met een vooraf ingevulde offertemail — inclusief je situatietekening als bijlage.</p>
+        <ul>
+          <li data-i18n="quotes.list1"><strong style="color: white;">43 Nederlandse sondeerbedrijven</strong> in de catalogus (en groeiend)</li>
+          <li data-i18n="quotes.list2">Gesorteerd op <strong style="color: white;">afstand</strong> tot je projectlocatie (RD-coördinaten)</li>
+          <li data-i18n="quotes.list3">Pre-selectie van de 3 dichtstbijzijnde — aanpasbaar voordat je verzendt</li>
+          <li data-i18n="quotes.list4">Outlook integratie met vooraf ingevulde projectinfo, locatie en specificaties</li>
+          <li data-i18n="quotes.list5"><strong style="color: white;">Geen tussenpersonen</strong>, geen commissies — direct contact tussen opdrachtgever en sondeerbedrijf</li>
+          <li data-i18n="quotes.list6">Catalogus open source: bedrijven kunnen zichzelf toevoegen via GitHub pull request</li>
+        </ul>
       </div>
 
       <div class="content-block">
