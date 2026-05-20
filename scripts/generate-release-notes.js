@@ -24,6 +24,7 @@ const TOOL_REPOS = [
   'open-speech-studio',
   'open-field-studio',
   'open-frame-studio',
+  'open-geotechniek-studio',
   'monty-ifc-viewer',
   'OpenAEC-BIM-validator',
   'openaec-bcf-platform',
@@ -98,7 +99,20 @@ async function processRepo(repo) {
   console.log(`  ${releases.length} releases found`);
 
   // Filter out nightly/draft
-  const stable = releases.filter(r => !r.draft && !r.prerelease && r.tag_name !== 'nightly');
+  let stable = releases.filter(r => !r.draft && !r.prerelease && r.tag_name !== 'nightly');
+
+  // Per-repo exclusion of "bad" historical version ranges that pre-date a
+  // version reset. Y-app reset from v1.x.x back down to v0.x.x in 2026-03,
+  // so the old v1.x tags are confusing and should not be surfaced.
+  const EXCLUDE_TAGS = {
+    'Y-app': /^v1\./i,
+  };
+  if (EXCLUDE_TAGS[repo]) {
+    const pattern = EXCLUDE_TAGS[repo];
+    const before = stable.length;
+    stable = stable.filter(r => !pattern.test(r.tag_name));
+    console.log(`  excluding ${before - stable.length} legacy releases matching ${pattern} (pre-reset versions)`);
+  }
 
   // Group by minor version
   const groups = {};

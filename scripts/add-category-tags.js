@@ -16,7 +16,7 @@ const CATS = {
   'open-pdf-studio':            ['A','E','C','I'],
   'open-calc-studio':           ['C','I'],
   'open-heatloss-studio':       ['E'],
-  'cpt-viewer':                 ['E','I'],   // (data-repo for Open Geotechniek Studio)
+  'open-geotechniek-studio':    ['E','I'],
   'open-speech-studio':         ['A','E','C','I'],
   'open-books':                 ['A'],
   'y-app':                      ['A','E','C','I'],

@@ -266,6 +266,24 @@
     <div class="version-info">React 19 + TypeScript + Vite 7 &middot; Node.js 20 + Express &middot; ERPNext + NextCloud + Office 365 &middot; AES-256-GCM credential vault</div>
   </header>
 
+  <!-- Screenshot slider -->
+  <section class="section" style="background: var(--blueprint-white); padding: var(--sp-10) var(--sp-6) var(--sp-4);">
+    <div class="content" style="max-width: 1100px;">
+      <div class="media-slider">
+        <div class="slider-container">
+          <div class="slider-track" id="sliderTrack">
+            <div class="slider-slide"><img src="/shared/assets/screenshots/y-app.jpeg" alt="Y-app — multi-tenant ERPNext werkomgeving"></div>
+            <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-2.png" alt="Y-app — e-mail, ERP en projecten in één app"></div>
+            <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-3.png" alt="Y-app — dashboard met financiële overzichten"></div>
+          </div>
+          <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige screenshot">&lsaquo;</button>
+          <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende screenshot">&rsaquo;</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" style="background: var(--blueprint-white);">
     <div class="content">
 
@@ -660,6 +678,32 @@
   <!-- Release Notes (shared component) -->
   <div data-release-notes="Y-app"></div>
   <script src="/shared/release-notes.js"></script>
+
+  <script>
+    // Screenshot slider
+    (function() {
+      const track = document.getElementById('sliderTrack');
+      const dots = document.getElementById('sliderDots');
+      if (!track) return;
+      const slides = track.children;
+      let current = 0;
+      for (let i = 0; i < slides.length; i++) {
+        const d = document.createElement('button');
+        d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        d.style.cssText = 'width:10px;height:10px;border-radius:50%;border:none;cursor:pointer;background:' + (i === 0 ? '#D97706' : '#D6D3D1') + ';';
+        d.onclick = () => goTo(i);
+        dots.appendChild(d);
+      }
+      function goTo(i) {
+        current = (i + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        Array.from(dots.children).forEach((dot, idx) => {
+          dot.style.background = idx === current ? '#D97706' : '#D6D3D1';
+        });
+      }
+      window.slideMove = (dir) => goTo(current + dir);
+    })();
+  </script>
 
   <footer class="footer page-footer" style="padding: var(--sp-6);">
     <div class="footer-inner">

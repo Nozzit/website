@@ -286,12 +286,10 @@
     return `
       ${changes.length > 0
         ? `<ol class="rn-changes-list">${changesList}</ol>`
-        : '<p class="rn-loading">—</p>'}
-      ${group.releases.length > 1 ? `
-        <div class="rn-releases-detail">
-          ${releaseRows}
-        </div>
-      ` : ''}
+        : `<p class="rn-loading">${getLang() === 'en' ? 'No changelog parsed — see release on GitHub below.' : 'Geen changelog beschikbaar — bekijk de release op GitHub hieronder.'}</p>`}
+      <div class="rn-releases-detail">
+        ${releaseRows}
+      </div>
     `;
   }
 
