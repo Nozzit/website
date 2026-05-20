@@ -126,7 +126,8 @@ async function main() {
   const today = new Date().toISOString().substring(0, 10);
   const newsCutoff = '2026-01-01'; // All news since Jan 1, 2026
 
-  // Fetch releases from ALL repos (including private) for news feed
+  // Fetch releases from ALL repos (we still need release counts for private repos
+  // internally), but news items are ONLY emitted for public repos below.
   for (const repo of repos) {
     try {
       // Fetch ALL releases (paginated) to get full history
@@ -136,6 +137,12 @@ async function main() {
       repo._releases = releases.length;
       repo._latestRelease = releases[0]?.tag_name || null;
       repo._latestReleaseDate = releases[0]?.published_at?.substring(0, 10) || null;
+
+      // SECURITY: never publish private-repo activity in the public news feed.
+      if (repo.private) {
+        console.log(`    ${repo.name}: PRIVATE — releases hidden from news feed`);
+        continue;
+      }
 
       // Group releases by date for this repo
       const releasesByDate = {};
@@ -182,8 +189,8 @@ async function main() {
     }
   }
 
-  // All repos created since cutoff date (including private)
-  repos.forEach(repo => {
+  // PUBLIC repos created since cutoff date (private repos are never announced)
+  publicRepos.forEach(repo => {
     if (repo.created_at.substring(0, 10) >= newsCutoff) {
       newsItems.push({
         type: 'new_repo',
