@@ -30,8 +30,11 @@ async function fetchAllPages(baseUrl) {
   return results;
 }
 
-function buildTimeSeries(publicRepos) {
-  // Build DAILY cumulative time series from repo creation dates
+function buildTimeSeries(publicRepos, currentSummary) {
+  // Build DAILY time series. Prefers AUTHORITATIVE data from
+  // data/history/YYYY-MM-DD.json snapshots (recorded daily by this script).
+  // For dates BEFORE the first snapshot, falls back to a synthetic series
+  // built from repo creation dates (less accurate but better than empty).
   const startDate = new Date('2025-12-01');
   const endDate = new Date();
   endDate.setHours(23, 59, 59);
@@ -44,7 +47,49 @@ function buildTimeSeries(publicRepos) {
     d.setDate(d.getDate() + 1);
   }
 
-  // Pre-existing repos (before start date)
+  // Load all daily snapshots (sorted by date)
+  const historyDir = path.join(__dirname, '..', 'data', 'history');
+  const snapshots = {};
+  try {
+    fs.readdirSync(historyDir)
+      .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+      .forEach(f => {
+        const day = f.replace('.json', '');
+        try { snapshots[day] = JSON.parse(fs.readFileSync(path.join(historyDir, f), 'utf8')); }
+        catch (e) { /* ignore corrupt snapshot */ }
+      });
+  } catch (e) { /* no history dir yet */ }
+  const snapshotDays = Object.keys(snapshots).sort();
+  const firstSnapDay = snapshotDays[0];
+  const today = endDate.toISOString().substring(0, 10);
+
+  // Today's values are always the freshest — overwrite/insert today's snapshot
+  // so the chart line ends on the current totals even before the next daily run.
+  if (currentSummary) {
+    snapshots[today] = {
+      publicRepos: currentSummary.publicRepos,
+      totalStars: currentSummary.totalStars,
+      totalCommits: currentSummary.totalCommits,
+      uniqueContributors: currentSummary.uniqueContributors,
+      totalOpenIssues: currentSummary.totalOpenIssues,
+      estimatedLinesOfCode: currentSummary.estimatedLinesOfCode,
+    };
+    if (!snapshotDays.includes(today)) snapshotDays.push(today);
+  }
+
+  function snapshotValues(snap) {
+    return {
+      repos: snap.publicRepos ?? snap.totalRepos ?? 0,
+      stars: snap.totalStars ?? 0,
+      issues: snap.totalOpenIssues ?? 0,
+      commits: snap.totalCommits ?? 0,
+      loc: snap.estimatedLinesOfCode ?? 0,
+      contributors: snap.uniqueContributors ?? 0,
+    };
+  }
+
+  // Synthetic pre-snapshot fallback (creation-based) — only used for days
+  // BEFORE we started recording snapshots.
   const startDateStr = '2025-12-01';
   const preExisting = publicRepos.filter(r => r.created_at.substring(0, 10) < startDateStr);
   let cumRepos = preExisting.length;
@@ -52,33 +97,71 @@ function buildTimeSeries(publicRepos) {
   let cumIssues = preExisting.reduce((s, r) => s + r.open_issues_count, 0);
   let cumCommits = preExisting.reduce((s, r) => s + (r._commitCount || 0), 0);
   let locSinceDec2025 = 0;
+  let cumContributors = preExisting.reduce((s, r) => s + (r._contributorCount || 0), 0);
+  const synthetic = {};
 
-  const seenContributors = new Set();
-  preExisting.forEach(r => {
-    for (let i = 0; i < (r._contributorCount || 0); i++) seenContributors.add(`${r.name}-${i}`);
-  });
-
-  const data = {};
-  allDays.forEach(day => {
+  function buildSyntheticForDay(day) {
     const reposToday = publicRepos.filter(r => r.created_at.substring(0, 10) === day);
     cumRepos += reposToday.length;
     cumStars += reposToday.reduce((s, r) => s + r.stargazers_count, 0);
     cumIssues += reposToday.reduce((s, r) => s + r.open_issues_count, 0);
     cumCommits += reposToday.reduce((s, r) => s + (r._commitCount || 0), 0);
     locSinceDec2025 += reposToday.reduce((s, r) => s + r.size, 0) * 25;
-    reposToday.forEach(r => {
-      for (let i = 0; i < (r._contributorCount || 0); i++) seenContributors.add(`${r.name}-${i}`);
-    });
-
-    data[day] = {
+    cumContributors += reposToday.reduce((s, r) => s + (r._contributorCount || 0), 0);
+    synthetic[day] = {
       repos: cumRepos,
       stars: cumStars,
       issues: cumIssues,
       commits: cumCommits,
       loc: Math.round(locSinceDec2025),
-      contributors: seenContributors.size,
+      // synthetic contributor count is a sum-of-counts (over-counts duplicates),
+      // so we clamp it to the current unique total to avoid wildly wrong values.
+      contributors: Math.min(cumContributors, currentSummary?.uniqueContributors ?? cumContributors),
     };
+  }
+
+  // Helper: find latest snapshot ≤ day
+  function snapshotAtOrBefore(day) {
+    let best = null;
+    for (const sd of snapshotDays) {
+      if (sd <= day) best = sd;
+      else break;
+    }
+    return best ? snapshots[best] : null;
+  }
+
+  const data = {};
+  allDays.forEach(day => {
+    // Always advance synthetic series so the fallback stays continuous.
+    buildSyntheticForDay(day);
+
+    // Prefer snapshot if we have one ≤ this day
+    if (firstSnapDay && day >= firstSnapDay) {
+      const snap = snapshotAtOrBefore(day);
+      if (snap) { data[day] = snapshotValues(snap); return; }
+    }
+    data[day] = synthetic[day];
   });
+
+  // Smooth join: scale pre-snapshot synthetic data so it ramps up to the
+  // first snapshot's values (otherwise the chart shows an unrealistic dip).
+  if (firstSnapDay && synthetic[firstSnapDay]) {
+    const firstSnapVals = snapshotValues(snapshots[firstSnapDay]);
+    const synthPeak = synthetic[firstSnapDay];
+    const FIELDS = ['repos','stars','issues','commits','loc','contributors'];
+    const factors = {};
+    FIELDS.forEach(f => {
+      factors[f] = synthPeak[f] > 0 ? (firstSnapVals[f] / synthPeak[f]) : 1;
+    });
+    for (const day of allDays) {
+      if (day >= firstSnapDay) break;
+      const scaled = {};
+      FIELDS.forEach(f => {
+        scaled[f] = Math.round((synthetic[day][f] || 0) * factors[f]);
+      });
+      data[day] = scaled;
+    }
+  }
 
   // Generate month labels for x-axis (first day of each month that appears)
   const monthLabels = {};
@@ -217,21 +300,23 @@ async function main() {
     monthlyCreation[month] = (monthlyCreation[month] || 0) + 1;
   });
 
+  const summary = {
+    totalRepos: repos.length,
+    publicRepos: publicRepos.length,
+    privateRepos: repos.length - publicRepos.length,
+    totalStars: publicRepos.reduce((s, r) => s + r.stargazers_count, 0),
+    totalForks: publicRepos.reduce((s, r) => s + r.forks_count, 0),
+    totalOpenIssues: publicRepos.reduce((s, r) => s + r.open_issues_count, 0),
+    totalSizeKB: publicRepos.reduce((s, r) => s + r.size, 0),
+    estimatedLinesOfCode: Math.round(publicRepos.filter(r => r.created_at >= '2025-12-01').reduce((s, r) => s + r.size, 0) * 25),
+    totalCommits: totalCommits,
+    uniqueContributors: contributorSet.size,
+    languages: Object.keys(langStats).length,
+  };
+
   const stats = {
     generated: new Date().toISOString(),
-    summary: {
-      totalRepos: repos.length,
-      publicRepos: publicRepos.length,
-      privateRepos: repos.length - publicRepos.length,
-      totalStars: publicRepos.reduce((s, r) => s + r.stargazers_count, 0),
-      totalForks: publicRepos.reduce((s, r) => s + r.forks_count, 0),
-      totalOpenIssues: publicRepos.reduce((s, r) => s + r.open_issues_count, 0),
-      totalSizeKB: publicRepos.reduce((s, r) => s + r.size, 0),
-      estimatedLinesOfCode: Math.round(publicRepos.filter(r => r.created_at >= '2025-12-01').reduce((s, r) => s + r.size, 0) * 25),
-      totalCommits: totalCommits,
-      uniqueContributors: contributorSet.size,
-      languages: Object.keys(langStats).length,
-    },
+    summary: summary,
     languageDistribution: langStats,
     monthlyRepoCreation: monthlyCreation,
     repos: publicRepos.map(r => ({
@@ -254,8 +339,8 @@ async function main() {
     topByStars: [...publicRepos].sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 5).map(r => ({ name: r.name, value: r.stargazers_count })),
     topByCommits: [...publicRepos].sort((a, b) => (b._commitCount || 0) - (a._commitCount || 0)).slice(0, 5).map(r => ({ name: r.name, value: r._commitCount })),
     topBySize: [...publicRepos].sort((a, b) => b.size - a.size).slice(0, 5).map(r => ({ name: r.name, value: Math.round(r.size / 1024) + ' MB' })),
-    // Time series: cumulative repos, contributors, stars, issues per month
-    timeSeries: buildTimeSeries(publicRepos, contributorSet),
+    // Time series: prefers data/history/*.json snapshots for accuracy
+    timeSeries: buildTimeSeries(publicRepos, summary),
   };
 
   const dataDir = path.join(__dirname, '..', 'data');

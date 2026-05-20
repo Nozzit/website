@@ -331,15 +331,6 @@
   },
   {
     "type": "release",
-    "repo": "Nextcloud-Claude-Skill-Package",
-    "title": "Nextcloud-Claude-Skill-Package: 2 releases (v1.1.0 → v1.1.1)",
-    "description": "Versies: v1.1.0, v1.1.1",
-    "date": "2026-03-30",
-    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package/releases/tag/v1.1.1",
-    "count": 2
-  },
-  {
-    "type": "release",
     "repo": "Fluent-i18n-Claude-Skill-Package",
     "title": "Fluent-i18n-Claude-Skill-Package: 2 releases (v1.1.0 → v1.1.1)",
     "description": "Versies: v1.1.0, v1.1.1",
@@ -759,15 +750,6 @@
   },
   {
     "type": "release",
-    "repo": "Nextcloud-Claude-Skill-Package",
-    "title": "Nextcloud-Claude-Skill-Package v1.0.0 uitgebracht",
-    "description": "v1.0.0 — 24 Deterministic Skills for Nextcloud 28+",
-    "date": "2026-03-19",
-    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package/releases/tag/v1.0.0",
-    "count": 1
-  },
-  {
-    "type": "release",
     "repo": "Fluent-i18n-Claude-Skill-Package",
     "title": "Fluent-i18n-Claude-Skill-Package v1.0.0 uitgebracht",
     "description": "v1.0.0 — 16 Deterministic Skills for Project Fluent",
@@ -854,14 +836,6 @@
     "description": "27 deterministic Claude AI skills for Tauri 2 desktop app development. Rust + TypeScript full-stack skill package",
     "date": "2026-03-19",
     "url": "https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package"
-  },
-  {
-    "type": "new_repo",
-    "repo": "Nextcloud-Claude-Skill-Package",
-    "title": "Nieuwe repository: Nextcloud-Claude-Skill-Package",
-    "description": "24 deterministic Claude AI skills for Nextcloud 28+ development. PHP, TypeScript, Vue.js, OCS API, WebDAV, app framework",
-    "date": "2026-03-19",
-    "url": "https://github.com/OpenAEC-Foundation/Nextcloud-Claude-Skill-Package"
   },
   {
     "type": "new_repo",
