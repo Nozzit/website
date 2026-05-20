@@ -177,12 +177,37 @@ function buildTimeSeries(publicRepos, currentSummary) {
   };
 }
 
+// Get a single `total_count` from the GitHub search API for an issue/PR query.
+// Cheap (one request) and the only reliable way to split issues from PRs.
+async function searchCount(query) {
+  try {
+    const url = `https://api.github.com/search/issues?q=${encodeURIComponent(query)}&per_page=1`;
+    const data = await ghFetch(url);
+    return data.total_count ?? 0;
+  } catch (e) {
+    console.warn(`  Warning: search query failed (${query}): ${e.message}`);
+    return null;
+  }
+}
+
 async function main() {
   console.log('Fetching all repos...');
   const repos = await fetchAllPages(`https://api.github.com/orgs/${ORG}/repos?type=all`);
   const publicRepos = repos.filter(r => !r.private);
 
   console.log(`Found ${repos.length} repos (${publicRepos.length} public)`);
+
+  // Org-wide issue/PR counts via search API (one request each)
+  console.log('Fetching org-wide issue & PR counts...');
+  const [openIssues, closedIssues, openPRs, closedPRs, mergedPRs] = await Promise.all([
+    searchCount(`org:${ORG} is:issue is:open`),
+    searchCount(`org:${ORG} is:issue is:closed`),
+    searchCount(`org:${ORG} is:pr is:open`),
+    searchCount(`org:${ORG} is:pr is:closed`),
+    searchCount(`org:${ORG} is:pr is:merged`),
+  ]);
+  console.log(`  Issues: ${openIssues} open, ${closedIssues} closed`);
+  console.log(`  PRs:    ${openPRs} open, ${closedPRs} closed (${mergedPRs} merged)`);
 
   const contributorSet = new Set();
   let totalCommits = 0;
@@ -306,7 +331,14 @@ async function main() {
     privateRepos: repos.length - publicRepos.length,
     totalStars: publicRepos.reduce((s, r) => s + r.stargazers_count, 0),
     totalForks: publicRepos.reduce((s, r) => s + r.forks_count, 0),
+    // GitHub's `open_issues_count` counts BOTH issues AND PRs — keep the legacy
+    // field for back-compat but expose the clean split via the search-API fields.
     totalOpenIssues: publicRepos.reduce((s, r) => s + r.open_issues_count, 0),
+    openIssues: openIssues,
+    closedIssues: closedIssues,
+    openPRs: openPRs,
+    closedPRs: closedPRs,
+    mergedPRs: mergedPRs,
     totalSizeKB: publicRepos.reduce((s, r) => s + r.size, 0),
     estimatedLinesOfCode: Math.round(publicRepos.filter(r => r.created_at >= '2025-12-01').reduce((s, r) => s + r.size, 0) * 25),
     totalCommits: totalCommits,

@@ -400,6 +400,9 @@
       <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label" data-i18n="stats.loc">Regels code (est.)</div></div>
       <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label" data-i18n="stats.languages">Programmeertalen</div></div>
       <div class="highlight-card"><div class="number" id="s-issues">—</div><div class="label">Open issues</div></div>
+      <div class="highlight-card"><div class="number" id="s-closed-issues">—</div><div class="label">Closed issues</div></div>
+      <div class="highlight-card"><div class="number" id="s-merged-prs">—</div><div class="label">Merged PRs</div></div>
+      <div class="highlight-card"><div class="number" id="s-closed-prs">—</div><div class="label">Closed PRs</div></div>
       <div class="highlight-card"><div class="number" id="s-downloads">—</div><div class="label">Downloads</div></div>
     </div>
     <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
@@ -680,6 +683,9 @@ fetch('/data/stats.json')
     document.getElementById('s-languages').textContent = '7+';
     document.getElementById('s-releases').textContent = '100+';
     document.getElementById('s-issues').textContent = '—';
+    document.getElementById('s-closed-issues').textContent = '—';
+    document.getElementById('s-merged-prs').textContent = '—';
+    document.getElementById('s-closed-prs').textContent = '—';
   });
 
 function renderStats(data) {
@@ -691,7 +697,12 @@ function renderStats(data) {
   document.getElementById('s-loc').textContent = s.estimatedLinesOfCode.toLocaleString('nl-NL');
   document.getElementById('s-languages').textContent = s.languages;
   document.getElementById('s-releases').textContent = data.repos.reduce((s, r) => s + r.releases, 0);
-  document.getElementById('s-issues').textContent = s.totalOpenIssues;
+  // Prefer split-by-search-API fields, fall back to the legacy GitHub field
+  // (which inflates because it also counts open PRs)
+  document.getElementById('s-issues').textContent = (s.openIssues != null ? s.openIssues : s.totalOpenIssues);
+  document.getElementById('s-closed-issues').textContent = s.closedIssues != null ? s.closedIssues : '—';
+  document.getElementById('s-merged-prs').textContent = s.mergedPRs != null ? s.mergedPRs : '—';
+  document.getElementById('s-closed-prs').textContent = s.closedPRs != null ? s.closedPRs : '—';
   document.getElementById('stats-updated').textContent = 'Laatste update: ' + data.generated.substring(0, 10);
 
   // Table
