@@ -354,6 +354,13 @@
     .tool-tag-alpha { background: #FEF3C7; color: #92400E; }
     .tool-tag-civil { background: #DCFCE7; color: #166534; }
     .tool-tag-gww { background: #CFFAFE; color: #155E75; }
+    .tool-tag-available {
+      background: #16A34A; color: white;
+      font-weight: 700;
+    }
+    .tool-tag-available::before {
+      content: '✓ ';
+    }
     .tool-tag-live {
       background: #DCFCE7;
       color: #166534;
@@ -875,7 +882,7 @@
         <article class="tool-card" data-repo="open-pdf-studio">
           <img class="tool-thumb" src="/shared/assets/screenshots/open-pdf-studio.jpeg" alt="Open PDF Studio">
           <div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPdf.title" style="margin-bottom:0;">Open PDF Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPdf.title" style="margin-bottom:0;">Open PDF Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.openPdf.desc">Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 240 commits</span>
@@ -891,7 +898,7 @@
         <article class="tool-card" data-repo="open-calc-studio">
           <img class="tool-thumb" src="/shared/assets/screenshots/open-calc-studio-new.png" alt="Open Calc Studio">
           <div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-live"><svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg> Live</span></div>
             <p data-i18n="tools.items.openCalc.desc">Open source calculatietool voor kostenramingen en begrotingen — voor bouw, GWW en civiele projecten.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 6 commits</span>
@@ -920,8 +927,9 @@
           </div>
         </article>
         <article class="tool-card" data-repo="cpt-viewer">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-geotechniek-studio-3.jpg" alt="Open Geotechniek Studio">
           <div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.cptViewer.title">Open Geotechniek Studio</h3><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-gww">GWW / Geotechniek</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.cptViewer.title">Open Geotechniek Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-gww">GWW / Geotechniek</span></div>
             <p data-i18n="tools.items.cptViewer.desc">GWW-tool: viewer voor sonderingen (CPT, GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering en grondwerk.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 6 commits</span>
