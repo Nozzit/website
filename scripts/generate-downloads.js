@@ -23,6 +23,8 @@ const TOOL_REPOS = [
   'open-speech-studio',
   'Open-Field-Studio',
   'open-frame-studio',
+  'open-geotechniek-studio',
+  'Open-Calculations-Studio',
   'monty-ifc-viewer',
   'OpenAEC-BIM-validator',
   'openaec-bcf-platform',
