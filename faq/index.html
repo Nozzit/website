@@ -108,8 +108,9 @@
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "Waarom is alle OpenAEC software open source?", "acceptedAnswer": { "@type": "Answer", "text": "OpenAEC kiest voor open source omdat de AEC-sector (bouw, GWW, civiele techniek) software verdient die transparant, toekomstbestendig en door gebruikers zelf vormgegeven wordt. Open source betekent: geen vendor lock-in, geen licentiekosten, alle data leesbaar voor altijd, en iedereen kan de code reviewen en verbeteren. Alle tools zijn LGPL-3.0 gelicenseerd." } },
-      { "@type": "Question", "name": "Maar met AI geschreven software is toch van slechte kwaliteit?", "acceptedAnswer": { "@type": "Answer", "text": "Onze tools worden ontworpen door ervaren engineers uit de AEC-sector. AI versnelt het ontwikkelproces, maar de architecturale keuzes, de domeinkennis en de kwaliteitscontrole zijn menselijk. Bovendien: open source betekent dat iedereen de code kan reviewen en verbeteren. We bouwen voort op robuuste, geteste basissen (Tauri, Rust, IfcOpenShell, Blender) en hebben dagelijkse nightly builds en regelmatige stable releases." } },
-      { "@type": "Question", "name": "Hoe verdient de OpenAEC Foundation geld?", "acceptedAnswer": { "@type": "Answer", "text": "De OpenAEC Foundation is een non-profit stichting die zich financiert via: consultancy en implementatiebegeleiding, managed hosting met SLA, custom extensions en maatwerk, donaties van bedrijven en gebruikers, en overheidssubsidies voor innovatie. Onze prijzen liggen typisch ~20% lager dan de markt omdat er geen IP-kosten in rekening worden gebracht — u betaalt alleen voor de dienst, niet voor de software." } },
+      { "@type": "Question", "name": "Blijven de tools altijd gratis?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Alle OpenAEC tools blijven gratis en open source — voor altijd. Dat is geen marketingbelofte maar een licentiekwestie: alle tools staan onder LGPL-3.0 en die kan niet eenzijdig worden ingetrokken. Als de ontwikkeling van een tool stopt, kan iedereen het project overnemen, forken of het ideeëngoed in een eigen tool integreren — net zoals wij dat hebben gedaan met CalcPAD-concepten in Open Calculations Studio. Geen freemium, geen plotselinge betaalmuur, geen vendor lock-in." } },
+      { "@type": "Question", "name": "Met AI geschreven software is toch van slechte kwaliteit?", "acceptedAnswer": { "@type": "Answer", "text": "Wij ontwikkelen alle software binnen OpenAEC met AI-coding. Onze stelling: kwaliteit hangt af van hoe je het controleert, niet wie het schrijft. We borgen kwaliteit via verificatieberekeningen (geijkt tegen normen), visuele tests, open-source peer review op GitHub, en klassieke software-engineering (tests, builds, semver). AI-fouten zijn niet gevaarlijker dan menselijke fouten — alleen anders verdeeld. De richting van de beweging is duidelijk: begin 2026 was de output significant slechter dan nu (mei 2026), en over een half tot een jaar zal AI-gegenereerde code waarschijnlijk kwalitatief beter zijn dan wat de meeste menselijke ontwikkelaars vandaag schrijven. Bij vendor-risico: we zijn leveranciers-onafhankelijk (Claude, OpenAI, Grok, Gemini, Mistral, DeepSeek, Qwen, plus lokale open-weight modellen). Zelfs bij driedubbele tokenprijzen blijft AI-coding economisch interessanter dan een traditioneel ontwikkelteam." } },
+      { "@type": "Question", "name": "Hoe verdient de OpenAEC Foundation geld?", "acceptedAnswer": { "@type": "Answer", "text": "De OpenAEC Foundation is een non-profit stichting die zich financiert via: consultancy en implementatiebegeleiding, managed hosting met SLA, custom extensions en maatwerk, AI-ondersteuning op de tools (toekomstig — premium AI-assistenten als optionele betaalde dienst, terwijl de tools zelf gratis blijven), donaties van bedrijven en gebruikers, en overheidssubsidies voor innovatie. Onze prijzen liggen typisch ~20% lager dan de markt omdat er geen IP-kosten in rekening worden gebracht — u betaalt alleen voor de dienst, niet voor de software." } },
       { "@type": "Question", "name": "Kan ik OpenAEC tools zelf hosten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, alle OpenAEC tools kunnen volledig self-hosted draaien. Tools zoals Open PDF Studio, Open 2D Studio en Open Heatloss Studio zijn desktop-apps (Windows/macOS/Linux) en draaien volledig lokaal. Server-tools zoals BCF Manager Studio, OpenAEC Docs en OpenAEC Cloud kunnen op uw eigen server of in uw eigen cloud worden gedeployed. Geen cloud-afhankelijkheid, geen tracking, uw data blijft van uzelf." } },
       { "@type": "Question", "name": "Op welke technologie zijn de OpenAEC tools gebouwd?", "acceptedAnswer": { "@type": "Answer", "text": "De OpenAEC tools worden gebouwd op Rust voor de rekenkernen en backends (snelheid en geheugenveiligheid), TypeScript met React/SolidJS/Svelte voor de frontends, en Tauri 2 voor cross-platform desktop-distributie. Dezelfde codebase draait als desktop-app op Windows, macOS, Linux en als web-applicatie. Installers zijn klein (typisch 8-20 MB) — veel kleiner dan Electron-apps." } },
       { "@type": "Question", "name": "Hoe kan ik bijdragen aan OpenAEC?", "acceptedAnswer": { "@type": "Answer", "text": "Iedereen kan bijdragen via GitHub (github.com/OpenAEC-Foundation): bug reports, feature requests, pull requests, vertalingen, documentatie, testing en feedback. Voor bedrijven: u kunt supporter worden, sponsor zijn, of custom extensions laten ontwikkelen. Alle tools zijn LGPL-3.0 — fork, modificeer, contribute." } },
@@ -151,25 +152,48 @@
         </div>
       </div>
 
-      <!-- Q2 -->
+      <!-- Q2 (gratis blijven?) — new -->
       <div class="faq-item">
-        <div class="faq-q" data-i18n="q2.title">Maar met AI geschreven software is toch van slechte kwaliteit?</div>
-        <div class="faq-a">
-          <p>Nee. AI is een hulpmiddel, net als een compiler of een IDE. De kwaliteit van software hangt af van de architectuur, het ontwerp en de review — niet van wie (of wat) de code typt.</p>
-          <p>Onze tools worden ontworpen door ervaren engineers uit de AEC-sector. AI versnelt het ontwikkelproces, maar de architecturale keuzes, de domeinkennis en de kwaliteitscontrole zijn menselijk. Bovendien: open source betekent dat iedereen de code kan reviewen en verbeteren.</p>
+        <div class="faq-q" data-i18n="q2.title">Blijven de tools altijd gratis?</div>
+        <div class="faq-a" data-i18n="q2.body">
+          <p>Ja, alle OpenAEC tools blijven gratis en open source — voor altijd. Dat is geen marketingbelofte, het is een licentiekwestie: alle tools staan onder <strong>LGPL-3.0</strong>. Die licentie kunnen we niet eenzijdig intrekken. Ook als de stichting morgen stopt of een andere koers kiest, blijft de huidige code voor iedereen vrij beschikbaar.</p>
+          <p><strong>Wat als de ontwikkeling van één van onze tools stopt?</strong></p>
+          <p>Dat kan gebeuren — niet elke tool blijft door ons doorontwikkeld. Maar omdat alles open source is, kan iedereen het ontwikkelproject overnemen, forken, of het ideeëngoed in een eigen tool integreren. Een mooi voorbeeld is <strong>CalcPAD</strong>: de open-source variant van die rekentool werd stopgezet, en wij hebben een belangrijk deel van het ideeëngoed daarvan opgenomen in <strong>Open Calculations Studio</strong>. Open source garandeert dat goede ideeën niet verloren gaan met een bedrijf.</p>
+          <p><strong>Geen freemium, geen plotselinge betaalmuur, geen vendor lock-in.</strong> Wat vandaag gratis is, is morgen ook gratis. Onze inkomsten halen we uit diensten op het ecosysteem (zie ons verdienmodel) — niet uit het verkopen van licenties.</p>
+        </div>
+      </div>
+
+      <!-- Q7 (AI-coding visie) — rewritten -->
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="q7.title">Met AI geschreven software is toch van slechte kwaliteit?</div>
+        <div class="faq-a" data-i18n="q7.body">
+          <p>We zien dat anders. Wij ontwikkelen alle software binnen OpenAEC met AI-coding — niet als experiment, maar als bewuste werkwijze. Dat verdient uitleg, want het is een nieuwe manier van ontwikkelen die nog wennen is.</p>
+          <p><strong>Onze stelling</strong>: kwaliteit hangt af van hoe je het <em>controleert</em>, niet wie het schrijft. Wij hebben zelf een programmeerachtergrond, maar het grootste deel van wat de AI produceert begrijpen we niet regel-voor-regel. Dat hoeft ook niet. Wat telt is of de uitkomst correct is. Daar sturen wij op met:</p>
+          <ul>
+            <li><strong>Verificatieberekeningen</strong> — rekentools (Open Calculations Studio, Open Heatloss Studio) worden geijkt tegen referentievoorbeelden uit normen en handboeken. Wijkt iets af, dan klopt het niet.</li>
+            <li><strong>Visuele tests</strong> — viewers en grafische tools worden vergeleken met screenshots van gevalideerde uitkomsten.</li>
+            <li><strong>Open source als peer review</strong> — al onze code staat publiek op GitHub. Iedereen kan meelezen, fouten vinden en pull requests indienen.</li>
+            <li><strong>Klassieke software-engineering</strong> — tests, builds, deploys, semver-versies. Niets anders dan een goed traditioneel team doet.</li>
+          </ul>
+          <p>Traditioneel ontwikkelde software is óók afhankelijk van mensen, en menselijke fouten zijn al decennia de grootste oorzaak van bugs. AI-fouten zijn niet gevaarlijker — ze zijn anders verdeeld. De vangnetten hierboven vangen beide soorten op.</p>
+          <p><strong>"Maar mensen kunnen de gegenereerde code niet onderhouden"</strong> — vandaag (mei 2026) zit daar nog een kern van waarheid in. AI-code is niet altijd zo leesbaar als handgeschreven code. Maar bedenk waar we vandaan komen: begin 2026 was de output significant slechter dan nu. Over een half jaar is er weer een grote stap voorwaarts, en zal onderhoud ook steeds vaker door AI gebeuren — onder onze regie.</p>
+          <p>Belangrijker nog dan het huidige niveau is <strong>de richting van de beweging</strong>. Onze stelling — en die is vandaag (mei 2026) bij sommigen nog discutabel — is dat AI-coding over een half tot een jaar niet alleen sneller en goedkoper zal zijn, maar <strong>kwalitatief beter</strong> dan wat de meeste menselijke ontwikkelaars vandaag schrijven. De richting is onmiskenbaar; alleen het exacte tempo verschilt nog van schatting tot schatting.</p>
+          <p><strong>"Wat als de AI-leverancier stopt of de prijzen verdrievoudigt?"</strong> — geen probleem. We zijn leveranciers-onafhankelijk. Anthropic Claude is onze huidige primaire keuze, maar OpenAI, xAI Grok, Google Gemini, Mistral, DeepSeek en Qwen zijn direct uitwisselbaar. En lokale modellen (Llama, Qwen open-weights) draaien op een gewone GPU. Zelfs bij driedubbele tokenprijzen blijft AI-coding economisch interessanter dan een team fulltime traditionele ontwikkelaars.</p>
+          <p><strong>De conclusie</strong>: AI-coding is geen experiment meer. Twintig tools, vijfduizend downloads, supporters die ze in productie gebruiken — allemaal op deze manier gebouwd. We pretenderen niet dat AI-coding zonder discipline kan, maar discipline is geen reden om de techniek af te wijzen. Het is reden om hem te omarmen, met de juiste vangnetten erbij.</p>
         </div>
       </div>
 
       <!-- Q3 -->
       <div class="faq-item">
         <div class="faq-q" data-i18n="q3.title">Hoe verdienen jullie geld?</div>
-        <div class="faq-a">
+        <div class="faq-a" data-i18n="q3.body">
           <p>Vooralsnog wordt er veel geïnvesteerd om dit jaar het volledige ecosysteem werkend te krijgen. Alles is en blijft open source. Je kunt alles downloaden via <a href="https://github.com/OpenAEC-Foundation" target="_blank">onze GitHub</a>.</p>
           <p>Als stichting leveren we diensten rondom het ecosysteem:</p>
           <ul>
             <li><strong>Consultancy</strong> — advies over implementatie, integratie en optimalisatie van de tools binnen jouw organisatie</li>
             <li><strong>Hosting &amp; SLA</strong> — managed hosting van de tools met gegarandeerde uptime en ondersteuning. Vraag een <a href="/offerte/">offerte aan</a> voor bijvoorbeeld de BIM Validator</li>
             <li><strong>Extensions &amp; maatwerk</strong> — ontwikkeling van uitbreidingen op de software voor specifieke wensen van opdrachtgevers. De basis blijft open source, de extensie wordt eigendom van de opdrachtgever of wordt bijgedragen aan het ecosysteem</li>
+            <li><strong>AI-ondersteuning op de tools</strong> <em>(toekomstig)</em> — premium AI-assistenten ingebed in de tools: automatische rapportage, slimme suggesties bij berekeningen, IFC-extractie via natuurlijke taal, batch-validatie van honderden modellen tegelijk. <strong>De tools zelf blijven gratis</strong>; de AI-laag is een optionele betaalde dienst voor wie er gebruik van wil maken.</li>
             <li><strong>Donaties</strong> — bedrijven en individuen die de missie steunen</li>
             <li><strong>Subsidies</strong> — overheidssubsidies voor innovatie en digitalisering in de bouw</li>
           </ul>

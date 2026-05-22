@@ -31,45 +31,60 @@
       return;
     }
 
-    // For English, find the page's translation data
+    // For non-NL languages, find the page's translation data.
+    // EN  → /shared/translations/<page>.json  (legacy default, always exists)
+    // FR  → /shared/translations/<page>.fr.json  (with EN fallback if absent)
     const pageId = document.querySelector('meta[name="i18n-page"]')?.content;
     if (!pageId) {
-      // No page-specific translations, but still apply inline nav translations
       applyInlineTranslations(lang);
       return;
     }
 
-    fetch(`/shared/translations/${pageId}.json`)
-      .then(r => r.json())
+    const urls = lang === 'fr'
+      ? [`/shared/translations/${pageId}.fr.json`, `/shared/translations/${pageId}.json`]
+      : [`/shared/translations/${pageId}.json`];
+
+    function loadFirstAvailable(list) {
+      if (!list.length) return Promise.resolve(null);
+      return fetch(list[0])
+        .then(r => r.ok ? r.json() : loadFirstAvailable(list.slice(1)))
+        .catch(() => loadFirstAvailable(list.slice(1)));
+    }
+
+    loadFirstAvailable(urls)
       .then(translations => {
+        if (!translations) { applyInlineTranslations(lang); return; }
         document.querySelectorAll('[data-i18n]').forEach(el => {
           const key = el.getAttribute('data-i18n');
-          // Save original Dutch content
           if (!el.getAttribute('data-i18n-nl')) {
             el.setAttribute('data-i18n-nl', el.innerHTML);
           }
           const translation = key.split('.').reduce((obj, k) => obj?.[k], translations);
           if (translation) {
-            el.innerHTML = translation;
+            const attr = el.getAttribute('data-i18n-attr');
+            if (attr) el.setAttribute(attr, translation);
+            else el.innerHTML = translation;
           }
         });
-        // Also apply nav inline translations
         applyInlineTranslations(lang);
       })
-      .catch(() => {
-        // Silent fail on fetch - still apply inline translations
-        applyInlineTranslations(lang);
-      });
+      .catch(() => applyInlineTranslations(lang));
   }
 
   function applyInlineTranslations(lang) {
-    // Apply translations from data-i18n-en attributes (used by nav links)
-    document.querySelectorAll('[data-i18n-en]').forEach(el => {
+    // Apply translations from data-i18n-en / data-i18n-fr attributes (used by nav links).
+    // FR falls back to EN if no FR attribute is present.
+    document.querySelectorAll('[data-i18n-en], [data-i18n-fr]').forEach(el => {
       if (!el.getAttribute('data-i18n-nl')) {
         el.setAttribute('data-i18n-nl', el.innerHTML);
       }
-      if (lang === 'en') {
+      if (lang === 'en' && el.getAttribute('data-i18n-en')) {
         el.innerHTML = el.getAttribute('data-i18n-en');
+      } else if (lang === 'fr') {
+        const fr = el.getAttribute('data-i18n-fr');
+        const en = el.getAttribute('data-i18n-en');
+        if (fr) el.innerHTML = fr;
+        else if (en) el.innerHTML = en;
       }
     });
   }

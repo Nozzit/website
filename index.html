@@ -843,6 +843,7 @@
         <div class="lang-switcher">
           <button class="lang-btn active" data-lang="nl">NL</button>
           <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
         </div>
       </div>
     </div>
@@ -2009,6 +2010,111 @@
           copyright: "\u00a9 2026 Open AEC Foundation i.f. \u2014 Open source for an open construction & infrastructure industry",
           inspired: "Inspired by the Blender Foundation"
         }
+      },
+      // French translations \u2014 covers the most-visible UI strings. Anything missing
+      // here falls back to EN (handled in setLanguage). Tool descriptions inherit
+      // from EN until a tool-specific FR override is added.
+      fr: {
+        meta: {
+          title: "Open AEC Foundation \u2014 L'open source pour un secteur ouvert de la construction et de l'infrastructure",
+          description: "Open AEC Foundation d\u00e9veloppe, soutient et promeut des logiciels open source pour toute la cha\u00eene AEC (b\u00e2timent, infrastructure, g\u00e9nie civil)."
+        },
+        nav: {
+          home: "Accueil",
+          ecosystem: "\u00c9cosyst\u00e8me",
+          roadmap: "Feuille de route",
+          architecture: "Architecture",
+          supporters: "Partenaires",
+          credits: "Cr\u00e9dits",
+          contact: "Contact",
+          about: "\u00c0 propos",
+          mission: "Mission",
+          tools: "\u00c9cosyst\u00e8me",
+          board: "Conseil",
+          financial: "Financier",
+          documents: "Documents"
+        },
+        hero: {
+          stableTools: "outils stables",
+          openSourceTools: "Outils open source",
+          aiFoundation: "Open Source AEC Foundation",
+          ai_a: "AI",
+          ai_e: "First",
+          ai_c: "Foundation",
+          title: "Open <span class=\"accent\">source</span> pour un secteur ouvert de la <br><span class=\"accent\">construction et de l'infrastructure</span>",
+          subtitle: "L'OpenAEC Foundation d\u00e9veloppe, soutient et promeut des logiciels <strong>open source</strong> pour toute la cha\u00eene AEC : b\u00e2timent, infrastructure, g\u00e9nie civil et utilit\u00e9s. Notre premi\u00e8re mission : rendre le secteur enti\u00e8rement open source en 2026.",
+          cta: {
+            tools: "Voir les outils",
+            mission: "Notre mission",
+            news: "Actualit\u00e9s",
+            roadmap: "Feuille de route",
+            quote: "Demander un devis"
+          }
+        },
+        scope: {
+          label: "Domaine d'application",
+          title: "B\u00e2timent, infrastructure &amp; <span style=\"color: var(--amber);\">g\u00e9nie civil</span>",
+          desc: "OpenAEC couvre toute la cha\u00eene <strong>Architecture, Engineering &amp; Construction</strong> : du r\u00e9sidentiel et tertiaire aux routes, ponts, tunnels, voies ferr\u00e9es, infrastructures hydrauliques et ouvrages d'art. Nos outils et l'\u00e9cosyst\u00e8me IFCX prennent en charge IfcBuilding, IfcRoad, IfcRail, IfcBridge, IfcTunnel et IfcMarineFacility \u2014 conformes \u00e0 IFC 4.3.",
+          bu: { title: "B\u00e2timent &amp; tertiaire", desc: "Logements, bureaux, \u00e9coles, h\u00f4pitaux \u2014 de la conception \u00e0 la livraison et \u00e0 la gestion." },
+          gww: { title: "Infrastructure civile", desc: "Routes, digues, ouvrages hydrauliques, assainissement, terrassements." },
+          civil: { title: "G\u00e9nie civil", desc: "Ponts, tunnels, viaducs, \u00e9cluses, ports, voies ferr\u00e9es, g\u00e9otechnique." },
+          infra: { title: "Infrastructure", desc: "R\u00e9seaux d'\u00e9nergie et utilit\u00e9s, t\u00e9l\u00e9com, transport, espace public, monuments." }
+        },
+        about: {
+          label: "\u00c0 propos d'OpenAEC",
+          title: "Pourquoi l'<span class=\"accent\">open source</span> pour le secteur de la construction ?",
+          description: "Le secteur AEC est l'une des derni\u00e8res grandes industries qui fonctionne encore enti\u00e8rement sur des logiciels propri\u00e9taires ferm\u00e9s. Cela engendre des co\u00fbts de licence \u00e9lev\u00e9s, un verrouillage propri\u00e9taire et une d\u00e9pendance envers une poign\u00e9e de fournisseurs. Nous changeons cela."
+        },
+        featured: {
+          label: "\u2b50 \u00c0 la une \u2014 visualiseur GEF open source pour la g\u00e9otechnique",
+          title: "Lecture de sondages dans un <span style=\"color: var(--amber);\">visualiseur GEF &amp; BRO ouvert</span>",
+          desc: "Glissez votre <strong style=\"color: white;\">.gef</strong> ou <strong style=\"color: white;\">.xml</strong> dans <strong style=\"color: white;\">Open Geotechniek Studio</strong> et voyez instantan\u00e9ment la r\u00e9sistance au c\u00f4ne, le rapport de friction et la pression interstitielle \u2014 avec classification automatique <strong style=\"color: white;\">Robertson SBT</strong>. Recherchez gratuitement les sondages CPT publics dans la base nationale BRO sur la carte, demandez des devis directement aux soci\u00e9t\u00e9s de sondage, et exportez un rapport PDF professionnel. Enti\u00e8rement open source, local, sans abonnement.",
+          bullet1: "<strong style=\"color: white;\">GEF, XML &amp; BRO-CPT</strong> \u2014 tous les formats de sondage n\u00e9erlandais dans un seul visualiseur",
+          bullet2: "<strong style=\"color: white;\">Classification Robertson SBT</strong> \u2014 interpr\u00e9tation des sols calcul\u00e9e automatiquement",
+          bullet3: "<strong style=\"color: white;\">Vue cartographique avec BRO</strong> \u2014 tous les CPT publics sur la photo a\u00e9rienne du cadastre",
+          bullet4: "<strong style=\"color: white;\">Demandes de devis</strong> \u2014 contact direct avec les soci\u00e9t\u00e9s de sondage depuis l'outil",
+          bullet5: "<strong style=\"color: white;\">Export PDF</strong> \u2014 rapport de sondage professionnel en un clic",
+          bullet6: "<strong style=\"color: white;\">Enti\u00e8rement open source</strong> \u2014 pas d'abonnement, 100%-local, vos donn\u00e9es vous appartiennent",
+          cta_live: "\ud83d\ude80 Ouvrir la d\u00e9mo en ligne",
+          cta_download: "\ud83e\udea8 Page produit",
+          cta_github: "\u2b50 GitHub"
+        },
+        tools: {
+          label: "\u00c9cosyst\u00e8me",
+          title: "L'\u00e9cosyst\u00e8me OpenAEC",
+          description: "L'objectif de notre fondation est de rendre tout le secteur AEC open source cette ann\u00e9e. Voici les outils et projets qui le rendent possible.",
+          devNotice: "Tous les outils sont actuellement en d\u00e9veloppement actif",
+          overviewBtn: "Voir l'aper\u00e7u complet du d\u00e9p\u00f4t",
+          productPage: "Page produit",
+          productPageLink: "Page produit \u2192",
+          liveDemo: "D\u00e9mo en ligne \u2192",
+          lastModified: "Derni\u00e8re mise \u00e0 jour sur GitHub",
+          quoteBtn: "Demander un devis",
+          roadmapBtn: "Feuille de route 2026",
+          archBtn: "Architecture logicielle",
+          filter: {
+            all: "Tous",
+            architecture: "Architecture",
+            engineering: "Ing\u00e9nierie",
+            construction: "Construction",
+            infra: "Infra &amp; Civil"
+          },
+          tags: {
+            available: "Disponible",
+            beta: "Beta",
+            alpha: "Alpha",
+            dev: "En d\u00e9veloppement",
+            gww: "Civil / G\u00e9otechnique",
+            buCivil: "B\u00e2timent + Civil",
+            everythingApp: "Everything-app"
+          }
+        },
+        cta: {
+          title: "Devenez partenaire ?",
+          desc: "Soutenez l'OpenAEC Foundation et aidez \u00e0 rendre le secteur de la construction open source.",
+          becomeBtn: "Devenir partenaire",
+          contactBtn: "Nous contacter"
+        }
       }
     };
 
@@ -2026,9 +2132,14 @@
         this.currentLang = lang;
         localStorage.setItem('openaec-lang', lang);
         document.documentElement.lang = lang;
+        // FR falls back to EN, then to NL (HTML default). Other langs use only their own.
+        const fallback = lang === 'fr' ? 'en' : null;
         document.querySelectorAll('[data-i18n]').forEach(element => {
           const key = element.getAttribute('data-i18n');
-          const translation = this.getNestedValue(translations[lang], key);
+          let translation = this.getNestedValue(translations[lang], key);
+          if (translation == null && fallback) {
+            translation = this.getNestedValue(translations[fallback], key);
+          }
           if (translation) {
             const attr = element.getAttribute('data-i18n-attr');
             if (attr) {
@@ -2038,7 +2149,8 @@
             }
           }
         });
-        const titleTranslation = this.getNestedValue(translations[lang], 'meta.title');
+        let titleTranslation = this.getNestedValue(translations[lang], 'meta.title');
+        if (!titleTranslation && fallback) titleTranslation = this.getNestedValue(translations[fallback], 'meta.title');
         if (titleTranslation) document.title = titleTranslation;
         document.querySelectorAll('.lang-btn').forEach(btn => {
           btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
