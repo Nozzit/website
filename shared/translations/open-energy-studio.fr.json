@@ -1,0 +1,65 @@
+{
+  "header": {
+    "label": "Performance énergétique — NTA 8800",
+    "title": "Open <span class=\"accent\">Energy</span> Studio",
+    "desc": "Calculateur de performance énergétique des bâtiments open source suivant la norme néerlandaise NTA 8800. Calculs BENG, analyse U, dimensionnement de pompes à chaleur et évaluation des ponts thermiques.",
+    "downloadBtn": "Télécharger v2026.2.0",
+    "sourceBtn": "Voir le code source"
+  },
+  "download": {
+    "title": "Télécharger v2026.2.0"
+  },
+  "features": {
+    "heading": "Fonctionnalités",
+    "beng": {
+      "title": "Calculs BENG",
+      "desc": "Calculs de performance énergétique des bâtiments (BENG) suivant la norme néerlandaise NTA 8800 avec visualisation des indicateurs BENG."
+    },
+    "uvalue": {
+      "title": "Calculateur de valeur U",
+      "desc": "Calculez la transmittance thermique (valeur U) des constructions de murs, toitures et planchers."
+    },
+    "heatpump": {
+      "title": "Dimensionnement de pompe à chaleur",
+      "desc": "Calculez la puissance de pompe à chaleur requise selon les propriétés du bâtiment et les données climatiques."
+    },
+    "thermal": {
+      "title": "Calculateur de ponts thermiques",
+      "desc": "Évaluez les ponts thermiques et leur impact sur la performance énergétique."
+    },
+    "charts": {
+      "title": "Diagrammes de répartition énergétique",
+      "desc": "Répartition énergétique visuelle et graphiques de performance mensuelle."
+    },
+    "building3d": {
+      "title": "Vue 3D du bâtiment",
+      "desc": "Visualisation 3D de l'enveloppe du bâtiment et de ses propriétés thermiques."
+    },
+    "projects": {
+      "title": "Gestion de projets",
+      "desc": "Navigateur de projets pour gérer plusieurs bâtiments. Panneau de propriétés pour l'édition détaillée des paramètres."
+    },
+    "reporting": {
+      "title": "Rapports",
+      "desc": "Générez des rapports de performance énergétique avec aperçu avant impression. Interface ruban avec boîte de dialogue de paramètres."
+    }
+  },
+  "tech": {
+    "heading": "Stack technique",
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Application de bureau native avec backend Rust. Versionnement CalVer (ANNÉE.MOIS.BUILD)."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Interface basée sur composants avec build via Vite."
+    }
+  },
+  "cta": {
+    "demo": "Démo en ligne &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

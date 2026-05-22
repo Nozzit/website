@@ -1,0 +1,18 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "Hommage aux pionniers de l'open source. Avant que ce soit à la mode. Avant l'IA. Quand Microsoft qualifiait encore Linux de cancer. Ils ont bâti les fondations sur lesquelles nous continuons à construire."
+  },
+  "stats": {
+    "title": "L'open source <span class=\"accent\">gagne</span>",
+    "subtitle": "Les chiffres ne mentent pas. L'open source n'est plus une alternative — c'est la norme."
+  },
+  "pioneers": {
+    "title": "Pionniers — <span class=\"accent\">les personnes</span>",
+    "subtitle": "Les personnes qui ont eu le courage de penser différemment. Qui ont offert leur travail au monde pour qu'il devienne meilleur."
+  },
+  "projects": {
+    "title": "Projets <span class=\"accent\">open source</span>",
+    "subtitle": "Les outils et frameworks sur lesquels OpenAEC est construit. Chaque projet représente des années de travail non rémunéré par des développeurs passionnés."
+  }
+}

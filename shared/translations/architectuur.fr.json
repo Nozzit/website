@@ -1,0 +1,77 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "<span class=\"accent\">Architecture</span> logicielle",
+    "desc": "Une seule base de code, toutes les plateformes. Nos outils fonctionnent en application web, en application de bureau sur Windows, Linux et macOS, et en application mobile — depuis le même code source."
+  },
+  "intro": {
+    "title": "Une seule base de code, <span class=\"accent\">partout</span>",
+    "p1": "Chaque outil de l'écosystème OpenAEC est développé en tant qu'application unique fonctionnant sur toutes les plateformes. Pas de versions séparées web et bureau, pas de double maintenance. Le même code, les mêmes fonctionnalités, partout.",
+    "p2": "Nous y parvenons en construisant sur Tauri et Rust comme fondation, avec un frontend web moderne qui fonctionne à la fois dans le navigateur et dans un conteneur natif."
+  },
+  "diagram": {
+    "title": "Aperçu de l'<span class=\"accent\">architecture</span>",
+    "platforms": "Plateformes",
+    "runtime": "Runtime",
+    "validation": "Validation",
+    "calculations": "Calculs"
+  },
+  "tech": {
+    "title": "Stack <span class=\"accent\">technique</span>",
+    "tauri_desc": "Framework pour construire des applications de bureau et mobiles avec des technologies web. Utilise la webview native de l'OS au lieu de Chromium — fichiers d'installation réduits (&lt;10 Mo) et faible consommation mémoire.",
+    "rust_desc": "La logique métier de chaque outil est écrite en Rust : parsing IFC, validation, calculs et traitement de fichiers. Rust offre la sécurité mémoire, des performances élevées et compile pour toutes les plateformes.",
+    "wasm_desc": "Le même code Rust compile vers WebAssembly (WASM) pour la version web. La logique de calcul complète tourne ainsi aussi dans le navigateur, avec des performances proches du natif.",
+    "ui_desc": "L'interface utilisateur est construite avec des technologies web standard. Pas de frameworks lourds — léger, rapide et maintenable. La même interface fonctionne dans Tauri et dans le navigateur.",
+    "threejs_desc": "Visualisation 3D des modèles IFC via Three.js et That Open Engine. Basé sur WebGL, fonctionne partout où un navigateur fonctionne.",
+    "fastapi_desc": "APIs côté serveur construites avec Python FastAPI pour la validation asynchrone, la gestion documentaire et les intégrations. Déployées via Docker."
+  },
+  "highlight": {
+    "title": "Local et dans le cloud — un seul système",
+    "desc": "Chaque outil OpenAEC fonctionne de façon autonome sur votre propre machine, sans connexion internet. Mais lorsque vous êtes en ligne, tout se synchronise de façon transparente avec le cloud via la plateforme OpenAEC. Projets, documents et données du modèle circulent automatiquement entre les installations locales et le serveur. À vous de choisir : entièrement local, entièrement dans le cloud, ou en configuration hybride."
+  },
+  "comparison": {
+    "title": "Comparaison des <span class=\"accent\">plateformes</span>",
+    "feature": "Fonctionnalité",
+    "mobile": "Mobile (Tauri)",
+    "offline": "Travail hors ligne",
+    "limited_pwa": "Limité (PWA)",
+    "file_access": "Accès aux fichiers",
+    "full": "&#10003; Complet",
+    "limited_upload": "Limité (upload)",
+    "ifc_processing": "Traitement IFC",
+    "install_size": "Taille d'installation",
+    "auto_update": "Mise à jour automatique",
+    "always_current": "Toujours à jour",
+    "camera": "Accès caméra",
+    "system_integration": "Intégration système",
+    "full2": "&#10003; Complet",
+    "limited": "Limité"
+  },
+  "extensibility": {
+    "title": "Extensibilité &amp; <span class=\"accent\">intégration</span>",
+    "desc": "Chaque outil de l'écosystème est conçu pour être étendu et intégré. Quatre couches d'extensibilité :",
+    "feedback_desc": "Système de retour intégré à chaque outil. Les utilisateurs peuvent envoyer des retours, signaler des bugs et soumettre des demandes de fonctionnalités directement depuis l'application. Connecté à la plateforme centrale.",
+    "api_desc": "Chaque outil propose une API REST pour l'intégration avec des systèmes externes. Automatisez des workflows, connectez-vous à des systèmes ERP ou construisez vos propres tableaux de bord sur l'écosystème.",
+    "mcp_desc": "Serveurs Model Context Protocol (MCP) pour chaque outil. Les agents IA (comme Claude) peuvent ainsi communiquer directement avec les outils — valider des modèles, générer des documents ou effectuer des calculs en langage naturel.",
+    "extensions_desc": "Chaque outil prend en charge les extensions pour des fonctionnalités personnalisées. Construisez vos propres plugins en TypeScript ou Rust et partagez-les avec la communauté via le registre d'extensions."
+  },
+  "opensource": {
+    "title": "Construire sur des projets open source existants",
+    "desc": "Nous ne réinventons pas la roue. L'écosystème OpenAEC s'appuie autant que possible sur des projets open source éprouvés du monde du BIM et de la 3D :",
+    "thatopen_desc": "Le rendu 3D et le parsing IFC dans nos visualiseurs reposent sur That Open Engine (anciennement IFC.js). Une puissante bibliothèque TypeScript/Three.js pour le BIM dans le navigateur.",
+    "blender_desc": "Pour la modélisation 3D et l'authoring BIM nous intégrons Blender et l'add-on Bonsai (anciennement BlenderBIM). L'outil 3D open source le plus puissant au monde.",
+    "ifcopenshell_desc": "La bibliothèque Python/C++ standard de l'industrie pour lire, écrire et manipuler les fichiers IFC. L'épine dorsale de notre traitement IFC côté serveur.",
+    "pdfjs_desc": "PDF.js de Mozilla pour le rendu et pdf-lib pour créer et éditer programmatiquement des documents PDF. Technologie éprouvée, des millions d'utilisateurs."
+  },
+  "why": {
+    "title": "Pourquoi cette <span class=\"accent\">approche</span> ?",
+    "small_title": "Petit &amp; rapide",
+    "small_desc": "Pas d'Electron, pas de Chromium. Tauri utilise la webview native — fichiers d'installation inférieurs à 10 Mo et consommation mémoire minimale.",
+    "safe_title": "Sécurisé",
+    "safe_desc": "Rust prévient les erreurs mémoire, les buffer overflows et les race conditions. L'application est sécurisée par conception.",
+    "opensource_title": "Open source",
+    "opensource_desc": "Tauri, Rust et toutes les bibliothèques utilisées sont open source. Aucun verrouillage propriétaire au niveau du framework.",
+    "futureproof_title": "Pérenne",
+    "futureproof_desc": "Les standards web et Rust sont des technologies à longue durée de vie. Pas de churn de framework, pas de breaking changes."
+  }
+}

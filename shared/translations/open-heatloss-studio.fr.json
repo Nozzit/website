@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Open Heatloss <span class=\"accent\">Studio</span>",
+    "desc": "Calcul de déperditions thermiques open source pour bâtiments, conforme à la norme NEN 12831.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Pourquoi Open Heatloss <span class=\"accent\">Studio</span> ?",
+    "desc": "Les calculs de déperditions thermiques sont essentiels à la conception des systèmes de chauffage et à la performance énergétique des bâtiments. Open Heatloss Studio offre une alternative open source accessible aux logiciels commerciaux coûteux, entièrement conforme à la NEN 12831."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "nen12831": {
+      "title": "Calculs NEN 12831",
+      "desc": "Calculs de déperditions thermiques complets conformes à la NEN 12831. Résultats précis pour la conception des systèmes de chauffage."
+    },
+    "transmission": {
+      "title": "Déperditions par transmission par pièce",
+      "desc": "Calcul détaillé des déperditions par transmission par pièce, y compris les facteurs de correction pour les constructions en contact avec le sol."
+    },
+    "ventilation": {
+      "title": "Déperditions par ventilation",
+      "desc": "Calcul des déperditions par ventilation basé sur le système de ventilation, le débit d'air et l'infiltration."
+    },
+    "ifcx": {
+      "title": "Intégration IFCX",
+      "desc": "Importez la géométrie du bâtiment et les propriétés des constructions directement depuis les modèles IFCX pour une saisie plus rapide."
+    },
+    "reports": {
+      "title": "Génération de rapports",
+      "desc": "Générez des rapports clairs avec les déperditions par pièce, des récapitulatifs et des représentations graphiques."
+    },
+    "library": {
+      "title": "Bibliothèque de physique du bâtiment",
+      "desc": "Bibliothèque étendue de propriétés matériaux, compositions de paroi et valeurs U standard."
+    }
+  },
+  "cta": {
+    "demo": "Voir la démo en ligne",
+    "github": "Voir sur GitHub"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "header": {
+    "label": "Visualiseur de nuages de points",
+    "title": "Open <span class=\"accent\">Pointcloud</span> Studio",
+    "desc": "Visualiseur de nuages de points multiplateforme construit avec Tauri, React et Three.js. Importez des fichiers LAS/LAZ avec rendu LOD basé sur octree.",
+    "downloadBtn": "Télécharger v0.3.0",
+    "sourceBtn": "Voir le code source"
+  },
+  "download": {
+    "title": "Télécharger v0.3.0"
+  },
+  "features": {
+    "heading": "Fonctionnalités",
+    "laslaz": {
+      "title": "Import LAS/LAZ",
+      "desc": "Importez les fichiers de nuages de points LAS et LAZ compressés issus de scanners laser et de photogrammétrie."
+    },
+    "colors": {
+      "title": "Modes de couleur",
+      "desc": "Affichez les nuages de points colorés par RGB, altitude, classification ou intensité."
+    },
+    "classification": {
+      "title": "Filtrage par classification",
+      "desc": "Filtrez les points par code de classification ASPRS. Activez/désactivez la visibilité du sol, des bâtiments, de la végétation et autres classes."
+    },
+    "edl": {
+      "title": "Eye-Dome Lighting",
+      "desc": "Ombrage EDL pour une meilleure perception de la profondeur et clarté visuelle des surfaces de nuages de points."
+    },
+    "octree": {
+      "title": "LOD basé sur octree",
+      "desc": "Rendu par niveau de détail avec taille de point et budget de points ajustables pour une navigation fluide dans de grands jeux de données."
+    },
+    "themes": {
+      "title": "Thèmes",
+      "desc": "Thèmes Foncé, Clair, Bleu et Contraste élevé."
+    }
+  },
+  "cta": {
+    "demo": "Démo en ligne &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

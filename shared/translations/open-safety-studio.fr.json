@@ -1,0 +1,29 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "desc": "Outil open source pour l'analyse de la sécurité et l'évaluation des risques sur les chantiers de construction."
+  },
+  "why": {
+    "title": "Pourquoi Open Safety <span class=\"accent\">Studio</span> ?",
+    "desc": "La sécurité sur le chantier n'est pas un luxe mais une obligation. Open Safety Studio aide à créer des inventaires de risques, des plans HSE et des contrôles de sécurité, liés au modèle BIM pour que les risques soient visibles spatialement."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "risk_title": "Inventaire des risques",
+    "risk_desc": "Inventaire systématique des risques de sécurité par phase de chantier, lieu et type de travail, conformément à la législation en matière de santé et sécurité au travail.",
+    "vg_title": "Génération de plans HSE",
+    "vg_desc": "Génération automatique de plans Hygiène, Sécurité et Environnement basés sur l'inventaire des risques et les données du projet.",
+    "checks_title": "Inspections de sécurité",
+    "checks_desc": "Listes de contrôle numériques pour les inspections de sécurité sur le chantier. Enregistrez les écarts et suivez les actions correctives.",
+    "ifcx_title": "Connexion IFCX",
+    "ifcx_desc": "Liez les risques et les mesures de sécurité à des emplacements et éléments spécifiques du modèle BIM via IFCX.",
+    "incident_title": "Enregistrement des incidents",
+    "incident_desc": "Enregistrez les incidents, les quasi-accidents et les situations dangereuses. Analysez les schémas et prenez des mesures préventives.",
+    "reporting_title": "Rapports &amp; conformité",
+    "reporting_desc": "Générez des rapports pour les audits internes et les organismes de contrôle externes. Démontrez la conformité aux lois et réglementations."
+  },
+  "cta": {
+    "demo": "Voir la démo en ligne",
+    "github": "Voir sur GitHub"
+  }
+}

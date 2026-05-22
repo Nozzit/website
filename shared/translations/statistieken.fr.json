@@ -1,0 +1,45 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Chronologie &amp; <span class=\"accent\">statistiques</span>",
+    "desc": "L'histoire et les chiffres derrière l'écosystème OpenAEC. De la première idée à une plateforme open source complète."
+  },
+  "stats": {
+    "loc": "Lignes de code (est.)",
+    "languages": "Langages de programmation"
+  },
+  "growth": {
+    "title": "Croissance dans le <span class=\"accent\">temps</span>"
+  },
+  "charts": {
+    "cum_repos": "Dépôts cumulés",
+    "cum_commits": "Commits cumulés",
+    "open_issues": "Tickets ouverts par mois",
+    "loc": "Lignes de code (estimées)",
+    "cum_contributors": "Contributeurs cumulés",
+    "cum_stars": "Étoiles cumulées",
+    "repos_month": "Dépôts par <span class=\"accent\">mois</span>",
+    "lang_dist": "Répartition par <span class=\"accent\">langage</span>"
+  },
+  "news": {
+    "title": "Activité <span class=\"accent\">actualités</span>",
+    "subtitle": "Toutes les publications et nouveaux dépôts depuis le 1er janvier 2026.",
+    "items": "Éléments d'actualité",
+    "new_repos": "Nouveaux dépôts",
+    "chart_title": "Publications &amp; nouveaux dépôts par semaine",
+    "view_all": "Voir toutes les actualités &rarr;"
+  },
+  "timeline": {
+    "title": "Le <span class=\"accent\">parcours</span>"
+  },
+  "repos": {
+    "title": "Aperçu des dépôts",
+    "language": "Langage",
+    "created": "Créé"
+  },
+  "top": {
+    "stars": "Plus d'étoiles",
+    "commits": "Plus de commits",
+    "size": "Plus gros dépôts"
+  }
+}

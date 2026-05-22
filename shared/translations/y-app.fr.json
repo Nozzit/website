@@ -1,0 +1,25 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "desc": "Plateforme open source de communication et de collaboration pour les projets de construction. Chat, partage de fichiers et coordination de projet — tout dans une seule application."
+  },
+  "why": {
+    "title": "Pourquoi <span class=\"accent\">Y-app</span> ?",
+    "desc": "Les projets de construction nécessitent une communication constante entre des dizaines de parties. L'e-mail, WhatsApp et des outils séparés conduisent à des pertes d'information. Y-app rassemble toute la communication en un seul endroit, liée au projet et au modèle BIM via IFCX."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "chat_title": "Chat de projet",
+    "chat_desc": "Chat en temps réel par projet, par discipline ou par sujet. Les messages sont indexés et liés au projet.",
+    "files_title": "Partage de fichiers",
+    "files_desc": "Téléchargez et partagez des documents, dessins et modèles IFC. Contrôle de version automatique et connexion avec OpenAEC Docs.",
+    "notif_title": "Notifications",
+    "notif_desc": "Notifications intelligentes par canal. Choisissez ce que vous voulez suivre et comment être informé.",
+    "ifcx_title": "Intégration IFCX",
+    "ifcx_desc": "Liez les messages et fichiers aux éléments IFCX. Communiquez directement sur des parties spécifiques du modèle.",
+    "multi_title": "Multi-plateforme",
+    "multi_desc": "Disponible en tant qu'application web, application de bureau (Windows, macOS, Linux) et application mobile via Tauri.",
+    "oss_title": "Open source",
+    "oss_desc": "Code source complet disponible. Hébergez-le sur votre propre serveur pour un contrôle maximal de vos données et de votre vie privée."
+  }
+}

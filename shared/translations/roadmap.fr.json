@@ -1,0 +1,19 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "desc": "Notre objectif : tous les outils de l'écosystème prêts pour la production fin 2026. Ci-dessous le statut actuel par outil."
+  },
+  "legend": {
+    "planned_badge": "Planifié",
+    "planned": "Programmé",
+    "dev_badge": "En développement",
+    "dev": "Actif",
+    "alpha": "Première version",
+    "beta": "Version d'essai",
+    "live": "Production"
+  },
+  "goal": {
+    "title": "Objectif : tout en production fin 2026",
+    "desc": "Nous travaillons activement pour que l'écosystème complet soit prêt pour la production d'ici la fin de l'année. Tous les outils open source, toutes les données en IFCX."
+  }
+}

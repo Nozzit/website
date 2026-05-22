@@ -1,0 +1,53 @@
+{
+  "header": {
+    "label": "Visualiseur BIM / IFC",
+    "title": "Monty <span class=\"accent\">IFC</span> Viewer",
+    "desc": "Visualiseur IFC basé sur le web avec visualisation de la séquence de construction. Chargez des fichiers IFC, animez la séquence de construction étape par étape et inspectez les propriétés des éléments.",
+    "downloadBtn": "Télécharger v1.0.1",
+    "demoBtn": "Démo en ligne"
+  },
+  "download": {
+    "title": "Télécharger v1.0.1"
+  },
+  "features": {
+    "heading": "Fonctionnalités",
+    "loading": {
+      "title": "Chargement de fichiers IFC",
+      "desc": "Glissez-déposez les fichiers IFC dans le visualiseur ou utilisez le sélecteur de fichiers. Analysés avec la bibliothèque web-ifc."
+    },
+    "visualization": {
+      "title": "Visualisation 3D",
+      "desc": "Rendu 3D interactif des modèles BIM avec Three.js. Zoom, panoramique et rotation autour du modèle."
+    },
+    "sequence": {
+      "title": "Animation de la séquence de construction",
+      "desc": "Visualisez la séquence de construction étape par étape avec les contrôles play, pause, précédent et suivant. Choisissez le paramètre IFC qui pilote l'ordre de la séquence."
+    },
+    "properties": {
+      "title": "Propriétés des éléments",
+      "desc": "Cliquez sur n'importe quel élément pour le sélectionner et le mettre en évidence. Consultez toutes les propriétés IFC de l'élément sélectionné."
+    }
+  },
+  "tech": {
+    "heading": "Stack technique",
+    "threejs": {
+      "title": "Three.js",
+      "desc": "Moteur de rendu 3D pour la visualisation interactive de modèles."
+    },
+    "webifc": {
+      "title": "web-ifc",
+      "desc": "Bibliothèque de parsing IFC par IFCjs pour lire les fichiers Industry Foundation Classes."
+    },
+    "vanilla": {
+      "title": "JavaScript Vanilla",
+      "desc": "Aucune dépendance de framework. Léger et rapide."
+    },
+    "author": "Créé par Piet Mol"
+  },
+  "cta": {
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

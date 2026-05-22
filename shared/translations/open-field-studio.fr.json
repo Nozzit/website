@@ -1,0 +1,59 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Open Field <span class=\"accent\">Studio</span>",
+    "desc": "Outil gratuit et open source pour l'inspection, la livraison et l'assurance qualité dans les projets de construction.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Pourquoi Open Field <span class=\"accent\">Studio</span> ?",
+    "desc": "Les inspections et livraisons sur chantier nécessitent des outils fiables qui fonctionnent aussi hors ligne. Open Field Studio combine listes de contrôle, enregistrement de défauts et rapports dans une application qui fonctionne entièrement hors ligne et disponible en quatre langues."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "tickets": {
+      "title": "Tickets &amp; défauts sur plan",
+      "desc": "Enregistrez les défauts et remarques directement sur le plan. Aperçu visuel de tous les points ouverts par emplacement."
+    },
+    "checklists": {
+      "title": "15 modèles de listes de contrôle (NEN 2767)",
+      "desc": "Listes de contrôle prêtes à l'emploi conformes à la NEN 2767 et à d'autres normes. Personnalisables selon les exigences spécifiques du projet."
+    },
+    "energy": {
+      "title": "Relevé d'étiquette énergétique (NTA 8800)",
+      "desc": "Effectuez des relevés d'étiquette énergétique conformes à la NTA 8800 directement sur site avec des formulaires structurés."
+    },
+    "monument": {
+      "title": "Inspection de monuments",
+      "desc": "Modules d'inspection spécifiques aux bâtiments patrimoniaux, attentifs aux valeurs culturelles et historiques."
+    },
+    "handover": {
+      "title": "Livraison avec signatures",
+      "desc": "Rapports de livraison numériques avec fonctionnalité de signature. Toutes les parties signent directement à l'écran."
+    },
+    "dashboard": {
+      "title": "Tableau de bord avec statistiques en direct",
+      "desc": "Aperçu en temps réel de toutes les inspections, défauts ouverts et progression par projet."
+    },
+    "camera": {
+      "title": "Intégration caméra",
+      "desc": "Prenez des photos directement depuis l'application et liez-les aux défauts, listes de contrôle ou emplacements sur le plan."
+    },
+    "languages": {
+      "title": "4 langues (NL/EN/DE/FR)",
+      "desc": "Entièrement disponible en néerlandais, anglais, allemand et français. Idéal pour les projets internationaux."
+    },
+    "offline": {
+      "title": "Entièrement hors ligne",
+      "desc": "Fonctionne sans connexion internet sur le chantier. Synchronisez quand vous êtes à nouveau en ligne."
+    },
+    "reports": {
+      "title": "Export de rapports professionnels",
+      "desc": "Exportez inspections et livraisons sous forme de rapports PDF professionnels avec photos et plans."
+    }
+  },
+  "cta": {
+    "demo": "Voir la démo en ligne",
+    "github": "Voir sur GitHub"
+  }
+}

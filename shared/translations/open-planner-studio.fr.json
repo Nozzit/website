@@ -1,0 +1,73 @@
+{
+  "header": {
+    "label": "Planification de chantier",
+    "title": "Open <span class=\"accent\">Planner</span> Studio",
+    "desc": "Planification de chantier open source avec diagrammes de Gantt, méthode du chemin critique et format de fichier IFC 4.3 natif. Conçu pour le secteur AEC.",
+    "downloadBtn": "Télécharger v2026.2.0",
+    "sourceBtn": "Voir le code source"
+  },
+  "download": {
+    "title": "Télécharger v2026.2.0"
+  },
+  "features": {
+    "heading": "Fonctionnalités",
+    "gantt": {
+      "title": "Diagrammes de Gantt",
+      "desc": "Diagrammes de Gantt interactifs rendus sur Canvas avec glisser-déposer, zoom et navigation chronologique."
+    },
+    "cpm": {
+      "title": "Méthode du chemin critique",
+      "desc": "Calcul CPM automatique avec identification du chemin critique et analyse des marges."
+    },
+    "wbs": {
+      "title": "Structure de décomposition du travail (WBS)",
+      "desc": "Structure de tâches hiérarchique avec chapitres pliables. Éditeur de tableau type Excel avec édition en ligne."
+    },
+    "ifc": {
+      "title": "IFC 4.3 natif",
+      "desc": "Enregistrez et ouvrez les fichiers de planification au format IFC 4.3 (standard buildingSMART). Éditeur de code IFC intégré avec génération et application."
+    },
+    "resources": {
+      "title": "Gestion des ressources",
+      "desc": "Gérez main-d'œuvre, équipements et sous-traitants. Fonctionnalités spécifiques à la construction : congés, fermeture annuelle, points d'inspection et phasage."
+    },
+    "bim4d": {
+      "title": "Prêt pour le BIM 4D",
+      "desc": "Liez les tâches de planification aux éléments du modèle BIM IFC pour la visualisation de la séquence de construction 4D."
+    },
+    "reporting": {
+      "title": "Rapports",
+      "desc": "Aperçu d'impression en direct dans le ruban avec options de rapport configurables. Menu contextuel pour actions rapides sur les tâches."
+    },
+    "multilingual": {
+      "title": "Multilingue",
+      "desc": "Interface en 6 langues : Nederlands, English, Français, Deutsch, Español et 中文."
+    },
+    "ribbon": {
+      "title": "Barre d'outils Ribbon",
+      "desc": "Ruban de style Microsoft Office avec onglets : Démarrage, Planification, Affichage, Paramètres, Tableau, IFC et Rapport."
+    }
+  },
+  "tech": {
+    "heading": "Stack technique",
+    "tauri": {
+      "title": "Tauri 2.0",
+      "desc": "Application de bureau native avec backend Rust."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Interface basée sur composants avec gestion d'état Zustand + Immer."
+    },
+    "canvas": {
+      "title": "HTML5 Canvas 2D",
+      "desc": "Rendu des diagrammes de Gantt. Style TailwindCSS, build Vite 5."
+    }
+  },
+  "cta": {
+    "demo": "Démo en ligne &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

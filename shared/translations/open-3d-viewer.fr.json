@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Open 3D <span class=\"accent\">Viewer</span>",
+    "desc": "Visualiseur 3D open source pour consulter et inspecter des modèles BIM dans le navigateur.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Pourquoi Open 3D <span class=\"accent\">Viewer</span> ?",
+    "desc": "Consulter des modèles BIM nécessite souvent des logiciels de bureau coûteux. Open 3D Viewer offre un visualiseur 3D léger basé sur le navigateur permettant à chacun d'inspecter des modèles IFC et autres formats 3D sans installation."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "webgl": {
+      "title": "Rendu 3D WebGL",
+      "desc": "Rendu 3D rapide dans le navigateur via WebGL. Visualisez des modèles complexes sans plugin ni installation."
+    },
+    "import": {
+      "title": "Import IFC/STEP/OBJ",
+      "desc": "Prise en charge des formats 3D courants dont IFC, STEP et OBJ. Glissez-déposez les fichiers directement dans le visualiseur."
+    },
+    "selection": {
+      "title": "Sélection d'éléments &amp; propriétés",
+      "desc": "Cliquez sur les éléments pour voir leurs propriétés. Recherchez dans le modèle par type, matériau ou autres attributs."
+    },
+    "clipping": {
+      "title": "Coupes &amp; plans de coupe",
+      "desc": "Créez des sections à travers le modèle avec des plans de coupe. Visualisez les structures internes et les éléments cachés."
+    },
+    "measure": {
+      "title": "Outils de mesure",
+      "desc": "Mesurez distances, surfaces et angles directement dans le modèle 3D. Idéal pour des vérifications rapides sur site."
+    },
+    "multiformat": {
+      "title": "Support multi-format",
+      "desc": "Outre les formats BIM, prise en charge des nuages de points, dessins 2D et autres formats courants."
+    }
+  },
+  "cta": {
+    "demo": "Voir la démo en ligne",
+    "github": "Voir sur GitHub"
+  }
+}

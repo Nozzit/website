@@ -1,0 +1,44 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "OpenAEC <span class=\"accent\">Docs</span>",
+    "desc": "Plateforme open source de gestion documentaire BIM. Gérez, partagez et archivez tous les documents de projet en un seul endroit central.",
+    "badge": "Beta"
+  },
+  "what": {
+    "title": "Qu'est-ce qu'OpenAEC <span class=\"accent\">Docs</span> ?",
+    "desc": "OpenAEC Docs est un système de gestion de documents (DMS) spécifiquement conçu pour les projets BIM dans la construction. Il est basé sur <a href=\"https://nextcloud.com\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--amber);\">Nextcloud</a> — la plateforme open source la plus populaire pour la gestion de fichiers et la collaboration. Il offre un emplacement central pour gérer, partager et archiver tous les documents de projet — des dessins et rapports aux contrats et permis.",
+    "tech": "Construit sur Nextcloud avec des modules supplémentaires en Rust et TypeScript pour la fonctionnalité spécifique au BIM."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "documents": {
+      "title": "Gestion documentaire",
+      "desc": "Téléversez, organisez et recherchez des documents par projet, discipline ou phase. Extraction automatique de métadonnées."
+    },
+    "versioning": {
+      "title": "Contrôle de version",
+      "desc": "Historique complet des versions pour chaque document. Comparez les versions et restaurez les révisions précédentes."
+    },
+    "ifcx": {
+      "title": "Intégration IFCX",
+      "desc": "Liez les documents aux éléments du modèle IFCX. Consultez les documents associés directement depuis le modèle BIM."
+    },
+    "access": {
+      "title": "Contrôle d'accès",
+      "desc": "Autorisations basées sur les rôles par projet et dossier. Déterminez qui peut consulter, modifier ou supprimer des documents."
+    },
+    "search": {
+      "title": "Recherche &amp; filtres",
+      "desc": "Recherche en texte intégral dans les documents et métadonnées. Filtrez par type, date, auteur ou statut."
+    },
+    "api": {
+      "title": "API &amp; intégration",
+      "desc": "API REST pour l'intégration avec d'autres outils de l'écosystème OpenAEC. Webhooks pour l'automatisation."
+    }
+  },
+  "highlight": {
+    "title": "Auto-hébergé &amp; privacy-first",
+    "desc": "OpenAEC Docs fonctionne sur votre propre serveur via Docker. Contrôle total de vos données, sans dépendance cloud. Idéal pour les organisations ayant des exigences strictes en matière de confidentialité et de conformité."
+  }
+}

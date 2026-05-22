@@ -1,0 +1,36 @@
+{
+  "header": {
+    "label": "À propos",
+    "title": "Le conseil d'administration",
+    "desc": "Les personnes derrière la fondation OpenAEC. Ensemble, nous nous engageons pour les logiciels open source dans le secteur AEC."
+  },
+  "maarten": {
+    "role": "Président",
+    "desc": "Initiateur de la fondation OpenAEC et moteur derrière building.py et divers outils BIM open source pour le secteur AEC."
+  },
+  "jochem": {
+    "role": "Trésorier",
+    "desc": "Responsable de la gestion financière de la fondation et garant d'une politique financière durable."
+  },
+  "martjan": {
+    "role": "Secrétaire",
+    "desc": "Supervise les processus organisationnels et assure les fondations administratives de la fondation."
+  },
+  "silvia": {
+    "role": "Membre du conseil",
+    "desc": "Engagée dans la fondation OpenAEC en tant que membre du conseil."
+  },
+  "mission": {
+    "title": "Pourquoi <span class=\"accent\">OpenAEC</span> ?",
+    "p1": "Le secteur AEC est l'une des dernières grandes industries qui fonctionne encore largement sur des logiciels propriétaires fermés. Nous voulons changer cela.",
+    "p2": "La fondation OpenAEC développe, soutient et promeut des logiciels open source pour toute la chaîne AEC (bâtiment, infrastructure, génie civil) — de la conception à la livraison et à la gestion. Notre objectif : rendre tout le secteur AEC open source cette année."
+  },
+  "values": {
+    "transparency_title": "Transparence",
+    "transparency_desc": "Code ouvert, données ouvertes, processus ouverts. Tout le monde peut consulter, contribuer et construire ensemble.",
+    "collaboration_title": "Collaboration",
+    "collaboration_desc": "Nous croyons que les meilleurs logiciels naissent quand tout le secteur travaille ensemble, plutôt que de se concurrencer sur les outils.",
+    "accessibility_title": "Accessibilité",
+    "accessibility_desc": "Pas de coûts de licence, pas de verrouillage propriétaire. Des outils professionnels pour tous dans la construction."
+  }
+}

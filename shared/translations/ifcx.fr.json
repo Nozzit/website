@@ -1,0 +1,37 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "desc": "Tous les outils OpenAEC communiquent en IFCX. Nous ajoutons nous-mêmes tous les espaces de noms nécessaires pour stocker le modèle de bâtiment complet en IFCX."
+  },
+  "why": {
+    "title": "Pourquoi <span class=\"accent\">IFCX</span> ?",
+    "p1": "IFCX est la nouvelle génération du format de données IFC. Là où l'IFC classique (IFC2x3, IFC4) utilise un schéma fixe, IFCX propose un modèle flexible et extensible basé sur des espaces de noms. Cela permet d'ajouter des informations spécifiques au domaine sans modifier le schéma de base.",
+    "p2": "Pour la fondation OpenAEC, IFCX est le choix logique : ouvert, extensible et aligné avec notre vision selon laquelle tout l'écosystème AEC devrait fonctionner sur des standards ouverts."
+  },
+  "universal": {
+    "title": "IFCX comme langage universel",
+    "desc": "Au sein de l'écosystème OpenAEC, IFCX est le format de données central. Chaque outil — de l'estimation des coûts à la validation, des dessins 2D aux visualiseurs 3D — lit et écrit IFCX. Les données circulent ainsi sans accroc entre toutes les parties de la chaîne AEC, sans conversion ni perte d'information."
+  },
+  "civil": {
+    "title": "IFC 4.3 : du bâtiment à l'infrastructure",
+    "desc": "IFCX s'appuie sur IFC 4.3, qui prend en charge non seulement les bâtiments mais aussi toute l'infrastructure civile. OpenAEC couvre ainsi les bâtiments résidentiels et tertiaires, ainsi que les routes, ponts, tunnels, voies ferrées, infrastructures hydrauliques et installations maritimes."
+  },
+  "model": {
+    "title": "Tout dans <span class=\"accent\">un seul modèle</span>",
+    "desc": "Nous stockons tout en IFC. Pas seulement la géométrie, mais toutes les données ayant un rapport avec le modèle BIM sont stockées dans ce format :"
+  },
+  "tools": {
+    "title": "Outils qui parlent <span class=\"accent\">IFCX</span>",
+    "desc": "Tous les outils de l'écosystème OpenAEC sont construits autour d'IFCX comme format central :"
+  },
+  "standard": {
+    "title": "Standard <span class=\"accent\">ouvert</span>",
+    "p1": "Tous les espaces de noms OpenAEC sont publiés ouvertement et libres d'utilisation sous licence ouverte. Nous collaborons avec buildingSMART et la communauté BIM néerlandaise pour aligner nos espaces de noms sur les standards internationaux.",
+    "p2": "En développant et maintenant nous-mêmes tous les espaces de noms nécessaires, nous garantissons qu'IFCX peut réellement contenir un modèle de bâtiment complet — du premier croquis à la livraison et la gestion."
+  },
+  "cta": {
+    "title": "Participer ?",
+    "desc": "Vous voulez contribuer au développement des espaces de noms IFCX ou connecter votre outil à l'écosystème OpenAEC ? Contactez-nous.",
+    "button": "Nous contacter"
+  }
+}

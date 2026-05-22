@@ -1,0 +1,49 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Politique &amp; <span class=\"accent\">positions</span>",
+    "desc": "Nos principes sur les standards ouverts, l'interopérabilité, l'accès public et la vie privée dans le secteur AEC."
+  },
+  "cleanroom": {
+    "title": "Rétro-ingénierie en salle blanche",
+    "p1": "La fondation OpenAEC vise à rétro-ingénier tous les formats binaires fermés (<em>closed binary formats</em>) utilisés dans la construction selon le principe de la <strong>salle blanche</strong>.",
+    "p2": "Cette pratique est pleinement autorisée par le droit européen sur la base de la <strong>directive 2009/24/CE sur les logiciels, article 6</strong>, qui autorise expressément la rétro-ingénierie à des fins d'interopérabilité. L'objectif est de rendre ces formats compatibles avec l'écosystème ouvert.",
+    "method": "Notre approche :",
+    "li1": "Nous développons nos propres implémentations sans utiliser de code source propriétaire",
+    "li2": "Toute analyse repose sur des spécifications publiquement disponibles et des recherches indépendantes",
+    "li3": "Aucune documentation confidentielle ni information divulguée par des tiers n'est utilisée",
+    "li4": "Les implémentations résultantes sont entièrement open source",
+    "see_also": "Voir aussi la <a href=\"/disclaimer/\">déclaration de salle blanche sur notre page de mentions légales</a> pour le fondement juridique de cette approche.",
+    "legal": "<strong>Fondement juridique :</strong> Directive 2009/24/CE du Parlement européen et du Conseil concernant la protection juridique des programmes d'ordinateur, article 6 — Décompilation."
+  },
+  "permits": {
+    "title": "Accès gratuit aux demandes de permis",
+    "p1": "<strong>Position :</strong> tout ce qui est nécessaire pour déposer une demande de permis doit être <strong>100 % gratuitement accessible</strong> à tous les citoyens et entreprises.",
+    "p2": "Les logiciels nécessaires au dépôt, à la consultation ou à la validation des demandes de permis ne doivent créer aucune barrière financière ou technique. Cela s'applique aux formats de fichiers comme aux applications qui les traitent.",
+    "positions": "Nos positions :",
+    "li1": "Le gouvernement ne doit pas dépendre de logiciels propriétaires pour ses processus publics",
+    "li2": "Tout citoyen et toute entreprise doivent pouvoir respecter les obligations légales de dépôt sans frais de licence",
+    "li3": "Les standards ouverts et les logiciels open source sont essentiels à un processus de construction démocratique et accessible",
+    "li4": "Les autorités délivrant les permis devraient baser leurs systèmes sur des formats ouverts et documentés",
+    "closing": "La fondation OpenAEC développe des outils gratuits qui garantissent cet accès, quel que soit le logiciel commercial utilisé par les autres parties prenantes."
+  },
+  "standards": {
+    "title": "Standards ouverts",
+    "p1": "La fondation OpenAEC utilise <strong>IFC et IFCX</strong> comme base pour tout échange de données dans le secteur AEC. Ces standards ouverts gérés par buildingSMART International garantissent que les données de construction restent lisibles et échangeables, indépendamment des choix logiciels.",
+    "principles": "Nos principes fondamentaux :",
+    "li1": "<strong>Aucun verrouillage propriétaire</strong> — les formats propriétaires ne doivent jamais être l'unique moyen de stocker ou d'échanger des données",
+    "li2": "<strong>Lisibilité durable</strong> — toutes les données doivent rester lisibles, quel que soit le logiciel que vous utilisez ou quel fournisseur existe encore",
+    "li3": "<strong>L'interopérabilité comme droit</strong> — la capacité d'exporter des données vers des formats ouverts est une exigence utilisateur fondamentale, pas une fonctionnalité premium",
+    "li4": "<strong>Les standards plutôt que les formats</strong> — nous construisons sur et contribuons aux standards ouverts, pas aux écosystèmes fermés concurrents"
+  },
+  "privacy": {
+    "title": "Vie privée &amp; données",
+    "p1": "La fondation OpenAEC estime que les données de construction appartiennent à l'utilisateur — pas au fournisseur de logiciel, pas au cloud, et pas à nous.",
+    "principles": "Nos principes :",
+    "li1": "<strong>Local autant que possible</strong> — tous les outils fonctionnent par défaut localement sur votre appareil, sans connexion serveur",
+    "li2": "<strong>Aucun pistage</strong> — nous ne collectons ni données d'usage, ni analytique, ni télémétrie",
+    "li3": "<strong>Aucune collecte de données</strong> — vos données de projet, modèles et documents ne quittent jamais votre ordinateur, sauf si vous le démarrez explicitement et en toute conscience",
+    "li4": "<strong>Code transparent</strong> — parce que tous nos logiciels sont open source, vous pouvez vérifier vous-même que ces promesses sont tenues",
+    "closing": "Pour les services hébergés (comme OpenAEC Cloud), une politique de confidentialité distincte et également publiée s'applique. Le principe de collecte minimale y est également central."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "header": {
+    "label": "CAO 2D open source",
+    "title": "Open <span class=\"accent\">2D</span> Studio",
+    "desc": "Application CAO 2D gratuite et open source pour dessins techniques, plans et conceptions mécaniques. Alternative légère et rapide aux logiciels de CAO commerciaux.",
+    "downloadBtn": "Télécharger v0.35.0",
+    "sourceBtn": "Voir le code source"
+  },
+  "download": {
+    "title": "Télécharger v0.35.0"
+  },
+  "features": {
+    "heading": "Fonctionnalités",
+    "drawing": {
+      "title": "Outils de dessin",
+      "desc": "Ligne, rectangle, cercle, arc, polyligne, ellipse et texte. Saisie de commandes de style CAO pour un contrôle précis."
+    },
+    "snapping": {
+      "title": "Précision et accrochage",
+      "desc": "Accrochage à la grille et aux objets : extrémité, milieu, centre, intersection. Système de grille configurable."
+    },
+    "layers": {
+      "title": "Gestion des calques",
+      "desc": "Plusieurs calques avec contrôles de visibilité, verrouillage et couleur. Organisez les dessins en groupes logiques."
+    },
+    "dxf": {
+      "title": "Import/export DXF",
+      "desc": "Lecture et écriture de fichiers DXF via le backend Rust dxf-rs pour l'interopérabilité avec AutoCAD, BricsCAD et autres logiciels CAO."
+    },
+    "properties": {
+      "title": "Propriétés et sélection",
+      "desc": "Modifiez couleur de trait, épaisseur et style de ligne. Cliquez, sélectionnez par rectangle ou Shift+Clic pour construire des sélections. Alignement et distribution multi-sélection."
+    },
+    "extensions": {
+      "title": "Extensions",
+      "desc": "Architecture extensible pour add-ins. Voir <a href=\"/ext-drawing-statistics\">Drawing Statistics</a> pour un exemple d'extension."
+    }
+  },
+  "tech": {
+    "heading": "Stack technique",
+    "tauri": {
+      "title": "Tauri 2.0",
+      "desc": "Taille d'application ~10 Mo, utilisation RAM ~30 Mo, performances natives via backend Rust."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Interface utilisateur basée sur composants avec typage statique et gestion d'état Zustand."
+    },
+    "canvas": {
+      "title": "Rendu Canvas 2D",
+      "desc": "Rendu rapide gérant fluidement plus de 10 000 éléments."
+    }
+  },
+  "cta": {
+    "demo": "Démo en ligne &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

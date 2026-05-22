@@ -1,0 +1,31 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "<span class=\"accent\">Services</span>",
+    "desc": "La fondation OpenAEC propose des services professionnels autour de l'écosystème open source."
+  },
+  "ecosystem": {
+    "title": "L'écosystème OpenAEC en tant que service",
+    "desc": "Tous les outils disponibles dans un écosystème intégré. Configuration redondante, Single Sign-On (SSO) et IA locale comme orchestrateur pour piloter tous les outils. Une plateforme, une connexion, une productivité maximale."
+  },
+  "consultancy": {
+    "title": "Conseil",
+    "desc": "Conseil sur l'implémentation, l'intégration et l'optimisation des outils OpenAEC dans votre organisation. Du conseil stratégique à l'accompagnement pratique."
+  },
+  "hosting": {
+    "title": "Hébergement &amp; SLA",
+    "desc": "Hébergement managé de tous les outils de l'écosystème avec disponibilité garantie et support professionnel. Nous gérons l'infrastructure, vous utilisez les outils."
+  },
+  "extensions": {
+    "title": "Extensions &amp; développement sur mesure",
+    "desc": "Nous développons des extensions des logiciels pour des besoins clients spécifiques. La base reste open source — l'extension devient propriété du client ou est contribuée à l'écosystème."
+  },
+  "donations": {
+    "title": "Dons",
+    "desc": "Soutenez le développement de logiciels open source pour le secteur AEC. Chaque contribution nous aide à développer l'écosystème plus rapidement et à le rendre accessible."
+  },
+  "subsidies": {
+    "title": "Subventions",
+    "desc": "Nous travaillons activement à l'obtention de subventions publiques pour l'innovation et la numérisation dans la construction. Avec nos partenaires, nous nous concentrons sur un financement durable."
+  }
+}

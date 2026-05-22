@@ -1,0 +1,41 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "<span class=\"accent\">Agenda</span> 2026",
+    "desc": "Réunions techniques et événements de la fondation OpenAEC. La réunion technique a lieu le 3ᵉ mercredi de chaque mois (sauf en août)."
+  },
+  "info": {
+    "title": "Réunion technique",
+    "desc": "Réunion technique mensuelle sur l'avancement de l'écosystème OpenAEC. Sujets : nouvelles fonctionnalités, décisions d'architecture, mises à jour de la feuille de route et défis techniques.",
+    "frequency": "Fréquence : 3ᵉ mercredi du mois (sauf en août)",
+    "access": "Accès : sur invitation uniquement",
+    "format": "Format : en ligne (Microsoft Teams / Google Meet)",
+    "contact": "Intéressé ? Prenez contact via le formulaire de contact"
+  },
+  "meetings": {
+    "title": "Réunions <span style=\"color: var(--amber);\">2026</span>",
+    "past": "Terminée",
+    "past2": "Terminée",
+    "past3": "Terminée",
+    "past4": "Terminée",
+    "next": "Prochaine réunion",
+    "invite": "Sur invitation",
+    "invite2": "Sur invitation",
+    "invite3": "Sur invitation",
+    "invite4": "Sur invitation",
+    "invite5": "Sur invitation",
+    "invite6": "Sur invitation",
+    "jan": { "title": "Réunion technique #1", "desc": "Lancement : architecture de l'écosystème, premiers outils, stratégie IFCX" },
+    "feb": { "title": "Réunion technique #2", "desc": "Stack Tauri 2, stratégie multiplateforme, premières publications" },
+    "mar": { "title": "Réunion technique #3", "desc": "BIM Validator, Claude Skill Packages, lancement du site" },
+    "apr": { "title": "Réunion technique #4", "desc": "Fondation établie, BCF Manager, Open Frame Studio, pipeline statistiques" },
+    "may": { "title": "Réunion technique #5", "desc": "Prochaine réunion — ordre du jour à déterminer" },
+    "jun": { "title": "Réunion technique #6", "desc": "Démarrage du BIM Modeller, bilan de mi-année" },
+    "jul": { "title": "Réunion technique #7", "desc": "À déterminer" },
+    "aug": { "title": "Pas de réunion", "desc": "Pause estivale" },
+    "sep": { "title": "Réunion technique #8", "desc": "À déterminer" },
+    "oct": { "title": "Réunion technique #9", "desc": "À déterminer" },
+    "nov": { "title": "Réunion technique #10", "desc": "À déterminer" },
+    "dec": { "title": "Réunion technique #11", "desc": "Clôture de l'année, bilan de l'écosystème, projets 2027" }
+  }
+}

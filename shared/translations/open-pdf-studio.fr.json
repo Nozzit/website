@@ -1,0 +1,83 @@
+{
+  "releases": {
+    "title": "Notes de version",
+    "desc": "Historique des versions récupéré en direct depuis GitHub. Affichage des 15 dernières versions.",
+    "loading": "Chargement des versions...",
+    "viewAll": "Voir toutes les versions sur GitHub &rarr;"
+  },
+  "header": {
+    "label": "Éditeur PDF open source",
+    "title": "Open <span class=\"accent\">PDF</span> Studio",
+    "desc": "Annotation, balisage et édition PDF de qualité professionnelle, sans abonnement, télémétrie ni bloatware. Construit avec Tauri 2 et SolidJS.",
+    "downloadBtn": "Télécharger v1.47.13",
+    "sourceBtn": "Voir le code source"
+  },
+  "download": {
+    "title": "Télécharger v1.47.13"
+  },
+  "features": {
+    "heading": "Fonctionnalités",
+    "annotations": {
+      "title": "Plus de 20 outils d'annotation",
+      "desc": "Surlignage, soulignement, barré, formes (rectangle, ellipse, polygone, nuage, flèche), stylo libre, zones de texte, légendes, notes adhésives, tampons et insertion d'images."
+    },
+    "measurement": {
+      "title": "Outils de mesure",
+      "desc": "Mesure de distance, surface et périmètre avec étalonnage d'échelle (mm, cm, pouces, points). Accrochage aux extrémités, milieux, centres et bords des objets."
+    },
+    "signatures": {
+      "title": "Signatures et tampons",
+      "desc": "Dessinez des signatures multi-traits et enregistrez-en jusqu'à 5 pour réutilisation rapide. 10 tampons intégrés dont Approuvé, Rejeté, Brouillon, Confidentiel et Final."
+    },
+    "pages": {
+      "title": "Gestion des pages",
+      "desc": "Insérer, supprimer, extraire, remplacer et réordonner les pages par glisser-déposer de vignettes. Fusionnez plusieurs PDF. Rotation 90/180/270 degrés."
+    },
+    "redaction": {
+      "title": "Caviardage",
+      "desc": "Marquez les zones et appliquez pour supprimer définitivement le contenu sensible des documents."
+    },
+    "forms": {
+      "title": "Support des formulaires",
+      "desc": "Remplissage de formulaires PDF interactifs (AcroForms et XFA). Créez des champs texte, cases à cocher et boutons radio avec validation JavaScript."
+    },
+    "watermarks": {
+      "title": "Filigranes et en-têtes/pieds de page",
+      "desc": "Filigranes texte et image avec contrôle d'opacité, rotation et position. En-têtes et pieds de page avec variables numéro de page, date, heure et nom de fichier."
+    },
+    "export": {
+      "title": "Export et impression",
+      "desc": "Exportez les pages en PNG ou JPEG de 72 à 600 DPI. Boîte de dialogue d'impression complète avec aperçu en direct, plage de pages, échelle et option d'impression image. Export/import d'annotations XFDF."
+    },
+    "multitab": {
+      "title": "Multi-onglets et sessions",
+      "desc": "Travaillez avec plusieurs PDF dans des onglets. Enregistrez et restaurez des snapshots d'espace de travail nommés. Fichiers récents avec épingler/désépingler."
+    },
+    "languages": {
+      "title": "39 langues",
+      "desc": "Traduction complète de l'interface, support RTL pour l'arabe, l'hébreu, le farsi et l'ourdou. 5 thèmes : Foncé, Clair, Bleu, Contraste élevé et Système."
+    }
+  },
+  "tech": {
+    "heading": "Stack technique",
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Backend Rust pour des performances natives et une taille binaire réduite."
+    },
+    "solid": {
+      "title": "SolidJS",
+      "desc": "Framework UI réactif avec mises à jour granulaires."
+    },
+    "pdfjs": {
+      "title": "PDF.js + pdf-lib",
+      "desc": "Mozilla PDF.js pour le rendu, pdf-lib pour la manipulation de documents."
+    }
+  },
+  "cta": {
+    "demo": "Démo en ligne &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Actualités &amp; <span class=\"accent\">mises à jour</span>",
+    "desc": "Suivi automatique : toutes les versions, nouveaux dépôts et activités de l'écosystème OpenAEC sur GitHub."
+  },
+  "filter": {
+    "label": "Filtrer :",
+    "all": "Tous",
+    "new_repos": "Nouveaux dépôts"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Demander un <span class=\"accent\">devis</span>",
+    "desc": "Sélectionnez les outils dont vous avez besoin, indiquez le nombre d'utilisateurs et demandez un devis personnalisé."
+  },
+  "steps": {
+    "select": "Sélectionner les outils",
+    "details": "Détails",
+    "confirm": "Confirmer"
+  },
+  "step1": {
+    "title": "Sélectionnez vos outils"
+  },
+  "step2": {
+    "title": "Vos coordonnées"
+  },
+  "form": {
+    "name": "Nom *",
+    "company": "Entreprise",
+    "phone": "Téléphone",
+    "notes": "Remarques"
+  },
+  "step3": {
+    "title": "Récapitulatif de la demande de devis"
+  },
+  "summary": {
+    "tools": "Outils sélectionnés",
+    "contact": "Coordonnées"
+  },
+  "submit": {
+    "button": "Demander un devis"
+  },
+  "success": {
+    "title": "Demande envoyée",
+    "desc": "Merci pour votre demande de devis. Nous vous contacterons dans les plus brefs délais.",
+    "home": "Retour à l'accueil"
+  }
+}

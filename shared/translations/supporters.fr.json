@@ -1,0 +1,27 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "Entreprises et organisations qui soutiennent la fondation OpenAEC dans sa mission de rendre tous les logiciels de construction open source d'ici fin 2026."
+  },
+  "why": {
+    "title": "Pourquoi devenir <span style=\"color: var(--amber);\">partenaire</span> ?",
+    "desc": "En soutenant la fondation OpenAEC, vous investissez dans l'avenir des logiciels open source pour le secteur AEC. Vous contribuez au développement d'outils professionnels accessibles à tous."
+  },
+  "benefits": {
+    "influence_title": "Influence sur le développement",
+    "influence_desc": "Faites entendre votre voix sur les priorités et la feuille de route de l'écosystème.",
+    "early_title": "Accès anticipé",
+    "early_desc": "Soyez les premiers à accéder aux nouveaux outils et fonctionnalités avant leur publication.",
+    "support_title": "Support &amp; hébergement",
+    "support_desc": "Priorité dans le support et hébergement managé optionnel des outils.",
+    "visibility_title": "Visibilité",
+    "visibility_desc": "Logo et mention sur le site, dans les présentations et lors des événements."
+  },
+  "supporters": {
+    "label": "Nos partenaires"
+  },
+  "cta": {
+    "title": "Devenir partenaire ?",
+    "desc": "Contactez-nous pour discuter des possibilités. Ensemble, nous rendons le secteur AEC open source."
+  }
+}

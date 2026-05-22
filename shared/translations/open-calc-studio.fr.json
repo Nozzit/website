@@ -1,0 +1,70 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Open Calc <span class=\"accent\">Studio</span>",
+    "desc": "Outil open source d'estimation de coûts et de budgétisation pour la construction. Des devis aux décomptes finaux, avec connexions directes à STABU/RAW, IFCX et IA.",
+    "badge": "Beta"
+  },
+  "mcp": {
+    "title": "Estimation pilotée par IA via MCP",
+    "desc": "Open Calc Studio est entièrement accessible via le Model Context Protocol (MCP). Les assistants IA comme Claude peuvent créer des budgets, ajouter des postes, recalculer et exporter directement — sans saisie manuelle.",
+    "item1": "Créez et gérez des budgets depuis Claude Code ou autres outils IA",
+    "item2": "Extrayez automatiquement les quantités depuis les modèles IFC/IFCX",
+    "item3": "Recherchez des projets de référence pour des prix unitaires réalistes",
+    "item4": "Exportez vers PDF et IFCX directement depuis le flux IA",
+    "item5": "Extensible via le catalogue d'extensions"
+  },
+  "why": {
+    "title": "Pourquoi Open Calc <span class=\"accent\">Studio</span> ?",
+    "desc1": "Les devis et budgets sont essentiels à chaque projet de construction. Les logiciels d'estimation existants coûtent des milliers d'euros par licence et vous enferment dans des formats propriétaires. Open Calc Studio offre une alternative entièrement open source tout aussi puissante.",
+    "desc2": "Avec des connexions directes aux standards STABU/RAW, aux modèles IFCX pour les quantités automatiques et l'intégration IA via MCP, Open Calc Studio est conçu pour l'avenir de l'estimation de coûts AEC."
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "stabu": {
+      "title": "Intégration STABU/RAW",
+      "desc": "Prise en charge complète des standards STABU et RAW pour cahiers des charges et estimations selon les normes néerlandaises."
+    },
+    "ifcx": {
+      "title": "Quantités IFCX",
+      "desc": "Extrayez automatiquement les quantités depuis les modèles IFCX. Liez les postes de budget directement aux éléments du modèle pour des calculs précis."
+    },
+    "mcp": {
+      "title": "Serveur MCP",
+      "desc": "Entièrement accessible via Model Context Protocol. Les assistants IA peuvent créer, modifier et exporter des budgets."
+    },
+    "extensions": {
+      "title": "Système d'extensions",
+      "desc": "Extensible via un catalogue d'extensions. Ajoutez des méthodes de calcul, modèles et intégrations spécifiques au secteur."
+    },
+    "chapters": {
+      "title": "Chapitres &amp; sections",
+      "desc": "Organisez les budgets en chapitres, sections et postes. Hiérarchie flexible avec numérotation automatique."
+    },
+    "reference": {
+      "title": "Projets de référence",
+      "desc": "Recherchez des prix unitaires issus de projets de référence. Constituez une base de données réutilisable de prix et indicateurs."
+    },
+    "export": {
+      "title": "Export PDF &amp; IFCX",
+      "desc": "Exportez les budgets sous forme de rapports PDF professionnels ou de données IFCX pour échange avec d'autres outils de l'écosystème."
+    },
+    "staart": {
+      "title": "Frais généraux",
+      "desc": "Frais généraux configurables : frais de chantier, bénéfice et risque, assurance TRC et autres majorations calculés automatiquement."
+    },
+    "recalc": {
+      "title": "Recalcul",
+      "desc": "Recalcul du budget complet en un clic. Tous les sous-totaux, TVA et frais généraux sont automatiquement mis à jour."
+    }
+  },
+  "tech": {
+    "title": "Technologie",
+    "desc": "Construit avec TypeScript et Rust via Tauri 2. Fonctionne en tant qu'application de bureau sur Windows, macOS et Linux, et en tant qu'application web dans le navigateur. Comprend un serveur MCP pour l'intégration IA et un système d'extensions pour la personnalisation."
+  },
+  "cta": {
+    "demo": "Voir la démo en ligne",
+    "github": "Voir sur GitHub",
+    "extensions": "Catalogue d'extensions"
+  }
+}

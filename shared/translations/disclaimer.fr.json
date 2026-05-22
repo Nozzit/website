@@ -1,0 +1,30 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "Informations juridiques sur la fondation OpenAEC et l'utilisation de nos logiciels."
+  },
+  "foundation": {
+    "title": "Fondation",
+    "desc": "La fondation OpenAEC (Stichting OpenAEC Foundation) est établie aux Pays-Bas et soumise au droit néerlandais. La fondation est une organisation à but non lucratif."
+  },
+  "licenses": {
+    "title": "Licences open source",
+    "desc": "Tous les logiciels de la fondation OpenAEC sont publiés sous des licences open source reconnues (MIT, LGPL, CC BY-SA). Consultez les dépôts individuels sur <a href=\"https://github.com/OpenAEC-Foundation\" target=\"_blank\">GitHub</a> pour la licence spécifique par projet."
+  },
+  "cleanroom": {
+    "title": "Déclaration de salle blanche",
+    "p1": "Dans la mesure où la fondation OpenAEC développe des logiciels interopérables avec des formats de fichiers fermés (propriétaires), cela se fait exclusivement par rétro-ingénierie en salle blanche conformément à la directive européenne sur les logiciels (Directive 2009/24/CE)."
+  },
+  "privacy": {
+    "title": "Vie privée",
+    "desc": "La fondation OpenAEC ne collecte aucune donnée personnelle via ses outils. Les outils exécutés localement traitent toutes les données sur votre propre appareil. Notre politique de confidentialité s'applique aux services hébergés."
+  },
+  "liability": {
+    "title": "Responsabilité",
+    "desc": "Le logiciel est fourni « tel quel », sans aucune garantie. La fondation OpenAEC n'est pas responsable des dommages résultant de l'utilisation du logiciel. Consultez la licence open source spécifique par projet pour les dispositions complètes de la clause de non-responsabilité."
+  },
+  "statutes": {
+    "title": "Projet de statuts",
+    "desc": "Le projet de statuts de la fondation est disponible sur notre site web. <a href=\"/statuten/\">Consulter le projet de statuts</a>."
+  }
+}
