@@ -344,6 +344,11 @@
       margin-bottom: var(--sp-3);
       background: var(--concrete);
     }
+    /* Bilingual inline spans — toggled by <html lang="..."> */
+    .lang-nl { display: inline; }
+    .lang-en { display: none; }
+    html[lang="en"] .lang-nl { display: none; }
+    html[lang="en"] .lang-en { display: inline; }
     .tool-card h3 {
       font-family: var(--font-heading);
       font-weight: 700;
@@ -959,13 +964,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-pdf-studio.jpeg" alt="Open PDF Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPdf.title" style="margin-bottom:0;">Open PDF Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPdf.title" style="margin-bottom:0;">Open PDF Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openPdf.desc">Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 450 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v1.47</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 301</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 19 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">19 mei 2026</span><span class="lang-en">19 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -977,13 +982,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-calc-studio-new.png" alt="Open Calc Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openCalc.title" style="margin-bottom:0;">Open Calc Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openCalc.desc">Open source calculatietool voor kostenramingen en begrotingen — voor bouw, GWW en civiele projecten.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 6 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.7</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 3</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 18 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">18 mei 2026</span><span class="lang-en">18 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -995,13 +1000,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-heatloss-studio.png" alt="Open Heatloss Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openHeatloss.title" style="margin-bottom:0;">Open Heatloss Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openHeatloss.title" style="margin-bottom:0;">Open Heatloss Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openHeatloss.desc">Open source warmteverliesberekening voor gebouwen. Berekent transmissie- en ventilatieverliezen per ruimte conform NEN 12831.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 411 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.1</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 1</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 19 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">19 mei 2026</span><span class="lang-en">19 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1013,13 +1018,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-geotechniek-studio-3.jpg" alt="Open Geotechniek Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.cptViewer.title">Open Geotechniek Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-gww">GWW / Geotechniek</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.cptViewer.title">Open Geotechniek Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span><span class="tool-tag tool-tag-gww" data-i18n="tags.gww">GWW / Geotechniek</span></div>
             <p data-i18n="tools.items.cptViewer.desc">GWW-tool: viewer voor sonderingen (CPT, GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering en grondwerk.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 78 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.2</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 1</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 20 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">20 mei 2026</span><span class="lang-en">20 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1031,13 +1036,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-speech-studio.png" alt="Open Speech Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openSpeech.title" style="margin-bottom:0;">Open Speech Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openSpeech.title" style="margin-bottom:0;">Open Speech Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openSpeech.desc">Open source spraak-naar-tekst en notulen-tool voor bouwvergaderingen en projectoverleg.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 77 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.9</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 2</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 28 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">28 apr 2026</span><span class="lang-en">28 Apr 2026</span></span>
             </div>
             </div>
           <a href="/open-speech-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
@@ -1046,14 +1051,14 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-books.jpg" alt="Open Books Studio - pagina uit oud Nederlands architectuurboek met baksteen-patronen ('Werk in gebakken steen')">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openBooks.title">Open Books Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-dev">In ontwikkeling</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openBooks.title">Open Books Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-dev" data-i18n="tags.dev">In ontwikkeling</span></div>
             <p data-i18n="tools.items.openBooks.desc">Open project voor het <strong>inscannen en digitaliseren van oude bouwkundige boeken</strong>. Maakt historisch bouwkundig erfgoed toegankelijk voor onderzoek, restauratie en het OpenAEC-ecosysteem.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 110 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 7</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 25 mrt 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">25 mrt 2026</span><span class="lang-en">25 Mar 2026</span></span>
             </div>
-          </div>
+            </div>
           <div class="tool-links">
             <a href="https://github.com/OpenAEC-Foundation/open-books" target="_blank" rel="noopener" class="tool-link-secondary">GitHub</a>
             <a href="https://open-books.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
@@ -1063,13 +1068,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/y-app.jpeg" alt="Y-app">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.yapp.title" style="margin-bottom:0;">Y-app</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span><span class="tool-tag tool-tag-civil">Everything-app</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.yapp.title" style="margin-bottom:0;">Y-app</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span><span class="tool-tag tool-tag-civil" data-i18n="tags.everythingApp">Everything-app</span></div>
             <p data-i18n="tools.items.yapp.desc"><strong>De Everything-app:</strong> e-mail, ERP, facturen, uren, offertes, projecten, planning, communicatie, Nextcloud, wiki, agenda en AI — alles in één tool. Multi-tenant: één account, meerdere ERPNext-instances.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 439 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.15</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 2</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 18 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 18 mei 2026</span>
             </div>
           </div>
           <a href="/y-app/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
@@ -1078,13 +1083,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/monty-ifc-viewer.png" alt="Monty IFC Viewer">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-c">C</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.montyIfc.title" style="margin-bottom:0;">Monty IFC Viewer</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.montyIfc.title" style="margin-bottom:0;">Monty IFC Viewer</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.montyIfc.desc">IFC-viewer bedoeld voor montage op de bouw. Snelle inspectie van open BIM-modellen op tablet en mobiel.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 45 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v1.0</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 1</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 28 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">28 apr 2026</span><span class="lang-en">28 Apr 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1096,11 +1101,11 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-calculations-studio.png" alt="Open Calculations Studio - CalcPAD-syntax editor met live preview, wind-belasting berekening en SVG-tekening">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openCalculations.title">Open Calculations Studio</h3><span class="tool-tag tool-tag-dev">In ontwikkeling</span><span class="tool-tag tool-tag-civil">B&amp;U + Civiel</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openCalculations.title">Open Calculations Studio</h3><span class="tool-tag tool-tag-dev" data-i18n="tags.dev">In ontwikkeling</span><span class="tool-tag tool-tag-civil" data-i18n="tags.buCivil">B&amp;U + Civiel</span></div>
             <p data-i18n="tools.items.openCalculations.desc">Open source tool voor constructieve handberekeningen — <strong>geïnspireerd door CalcPAD</strong>. Met eenheden, KaTeX-formules, SVG-tekeningen en live IFCX + IFC4x3 STEP export. Bestaande .cpd bestanden werken zonder migratie.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 58 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 20 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">20 mei 2026</span><span class="lang-en">20 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1112,12 +1117,12 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-field-studio.jpeg" alt="Open Field Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-c">C</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openField.title" style="margin-bottom:0;">Open Field Studio</h3><span class="tool-tag tool-tag-available">Beschikbaar</span><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openField.title" style="margin-bottom:0;">Open Field Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openField.desc">Gratis &amp; open-source tool voor inspectie, oplevering en kwaliteitsborging bij bouwprojecten. Tickets &amp; gebreken op plattegrond pinnen, 10 checklist-templates (incl. NEN 2767), energielabel opname, oplevering met handtekeningen, dashboard met live statistieken. Werkt volledig offline op elk apparaat.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 17 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.1</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 31 mrt 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">31 mrt 2026</span><span class="lang-en">31 Mar 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1129,13 +1134,13 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-2d-studio.jpeg" alt="Open 2D Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.open2d.title" style="margin-bottom:0;">Open 2D Studio</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.open2d.title" style="margin-bottom:0;">Open 2D Studio</h3><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.open2d.desc">Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 90 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.35</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 17</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 2 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">2 mei 2026</span><span class="lang-en">2 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1147,11 +1152,11 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-energy-studio.jpeg" alt="Open Energy Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openEnergy.title" style="margin-bottom:0;">Open Energy Studio</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openEnergy.title" style="margin-bottom:0;">Open Energy Studio</h3><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openEnergy.desc">Projectpagina voor open energie-analyse en gebouwprestaties.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 30 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 1 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 1 apr 2026</span>
             </div>
           </div>
           <div class="tool-links">
@@ -1163,11 +1168,11 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-planner-studio.jpeg" alt="Open Planner Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-c">C</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPlanner.title" style="margin-bottom:0;">Open Planner Studio</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPlanner.title" style="margin-bottom:0;">Open Planner Studio</h3><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openPlanner.desc">Open plannings- en projectcoördinatietool voor bouw, GWW en civiele projecten.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 48 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 4 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 4 mei 2026</span>
             </div>
           </div>
           <div class="tool-links">
@@ -1179,12 +1184,12 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/open-pointcloud-studio.jpeg" alt="Open Pointcloud Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPointcloud.title" style="margin-bottom:0;">Open Pointcloud Studio</h3><span class="tool-tag tool-tag-alpha">Alpha</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openPointcloud.title" style="margin-bottom:0;">Open Pointcloud Studio</h3><span class="tool-tag tool-tag-alpha" data-i18n="tags.alpha">Alpha</span></div>
             <p data-i18n="tools.items.openPointcloud.desc">Viewer en workflowpagina voor pointcloud-data in renovatie- en analyseprojecten.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 15 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.3</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 1 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">1 apr 2026</span><span class="lang-en">1 Apr 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1201,7 +1206,7 @@
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 74 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 1</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 8 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">8 mei 2026</span><span class="lang-en">8 May 2026</span></span>
             </div>
             </div>
           <a href="/bim-validator/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
@@ -1210,11 +1215,11 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/openaec-docs.png" alt="OpenAEC Docs">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openaecDocs.title" style="margin-bottom:0;">OpenAEC Docs</h3><span class="tool-tag tool-tag-beta">Beta</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openaecDocs.title" style="margin-bottom:0;">OpenAEC Docs</h3><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
             <p data-i18n="tools.items.openaecDocs.desc">Open source document management systeem voor BIM-projecten. Beheer, deel en archiveer projectdocumenten.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 5 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 14 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">14 apr 2026</span><span class="lang-en">14 Apr 2026</span></span>
             </div>
             </div>
           <a href="/openaec-docs/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
@@ -1223,11 +1228,11 @@
           <img class="tool-thumb" src="/shared/assets/screenshots/openaec-cloud.jpeg" alt="OpenAEC Cloud Platform">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.cloudPlatform.title" style="margin-bottom:0;">OpenAEC Cloud Platform</h3><span class="tool-tag tool-tag-alpha">Alpha</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.cloudPlatform.title" style="margin-bottom:0;">OpenAEC Cloud Platform</h3><span class="tool-tag tool-tag-alpha" data-i18n="tags.alpha">Alpha</span></div>
             <p data-i18n="tools.items.cloudPlatform.desc">Centraal cloudplatform voor het OpenAEC-ecosysteem. Projectbeheer, gebruikersbeheer, SSO en synchronisatie tussen alle tools.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 2 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 14 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">14 apr 2026</span><span class="lang-en">14 Apr 2026</span></span>
             </div>
             </div>
           <a href="/openaec-cloud/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
@@ -1239,21 +1244,21 @@
             <p data-i18n="tools.items.bcfManager.desc">Open-source BCF 2.1 issue management platform voor BIM-projecten. Beheer issues, communiceer met teams en koppel aan IFC-modellen.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 40 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 21 apr 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">21 apr 2026</span><span class="lang-en">21 Apr 2026</span></span>
             </div>
             </div>
-          <a href="/bcf-manager-studio/" class="tool-link">Productpagina &rarr;</a>
+          <a href="/bcf-manager-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="open-frame-studio" data-categories="E,I">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openFrame.title">Open Frame Studio</h3><span class="tool-tag tool-tag-alpha">Alpha</span><span class="tool-tag tool-tag-civil">B&amp;U + Civiel</span></div>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openFrame.title">Open Frame Studio</h3><span class="tool-tag tool-tag-alpha" data-i18n="tags.alpha">Alpha</span><span class="tool-tag tool-tag-civil" data-i18n="tags.buCivil">B&amp;U + Civiel</span></div>
             <p data-i18n="tools.items.openFrame.desc">Open source constructieve analyse tool. 2D frame-berekeningen voor balken, kolommen, portaalconstructies en civieltechnische draagstructuren.</p>
             <div class="tool-stats">
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 29 commits</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.2</span>
               <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 2</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 8 mei 2026</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">8 mei 2026</span><span class="lang-en">8 May 2026</span></span>
             </div>
             </div>
           <div class="tool-links">
@@ -1712,12 +1717,25 @@
           description: "Onze stichting heeft als doelstelling om de hele AEC-sector dit jaar open source te maken. Dit zijn de tools en projecten waarmee we dat realiseren.",
           devNotice: "Alle tools zijn momenteel in actieve ontwikkeling",
           overviewBtn: "Bekijk volledig repository-overzicht",
+          productPage: "Productpagina",
+          productPageLink: "Productpagina →",
+          liveDemo: "Live demo →",
+          lastModified: "Laatst gewijzigd op GitHub",
           filter: {
             all: "Alle",
             architecture: "Architecture",
             engineering: "Engineering",
             construction: "Construction",
             infra: "Infra &amp; GWW"
+          },
+          tags: {
+            available: "Beschikbaar",
+            beta: "Beta",
+            alpha: "Alpha",
+            dev: "In ontwikkeling",
+            gww: "GWW / Geotechniek",
+            buCivil: "B&amp;U + Civiel",
+            everythingApp: "Everything-app"
           },
           items: {
             ifcx: { title: "IFCX", desc: "Het universele dataformaat van het OpenAEC-ecosysteem. Alle tools communiceren in IFCX met eigen namespaces voor het volledige gebouwmodel.", link: "Lees meer \u2192" },
@@ -1740,7 +1758,8 @@
             openSafety: { title: "Open Safety Studio", desc: "Open source tool voor veiligheidsanalyse en risicobeoordeling op bouwprojecten.", link: "Probeer het nu \u2192" },
             bcfManager: { title: "BCF Manager Studio", desc: "Open-source BCF 2.1 issue management platform voor BIM-projecten. Beheer issues, communiceer met teams en koppel aan IFC-modellen.", badge: "In ontwikkeling" },
             openFrame: { title: "Open Frame Studio", desc: "Open source constructieve analyse tool. 2D frame-berekeningen voor balken, kolommen, portaalconstructies en civieltechnische draagstructuren." },
-            cptViewer: { title: "Open Geotechniek Studio", desc: "GWW-tool: viewer voor sonderingen (CPT, GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering en grondwerk." }
+            cptViewer: { title: "Open Geotechniek Studio", desc: "GWW-tool: viewer voor sonderingen (CPT, GEF / BRO-xml). Bekijk en analyseer geotechnische grondonderzoeksdata voor fundering en grondwerk." },
+            openCalculations: { title: "Open Calculations Studio", desc: "Open source tool voor constructieve handberekeningen — <strong>geïnspireerd door CalcPAD</strong>. Met eenheden, KaTeX-formules, SVG-tekeningen en live IFCX + IFC4x3 STEP export. Bestaande .cpd bestanden werken zonder migratie." }
           },
           productPage: "Productpagina",
           productPageLink: "Productpagina &rarr;",
@@ -1887,12 +1906,22 @@
           description: "Our foundation's goal is to make the entire AEC industry (buildings, infrastructure, civil engineering) open source this year. These are the tools and projects we're building to make it happen.",
           devNotice: "All tools are currently in active development",
           overviewBtn: "View full repository overview",
+          lastModified: "Last updated on GitHub",
           filter: {
             all: "All",
             architecture: "Architecture",
             engineering: "Engineering",
             construction: "Construction",
             infra: "Infra &amp; GWW"
+          },
+          tags: {
+            available: "Available",
+            beta: "Beta",
+            alpha: "Alpha",
+            dev: "In development",
+            gww: "Civil / Geotechnical",
+            buCivil: "Buildings + Civil",
+            everythingApp: "Everything-app"
           },
           items: {
             ifcx: { title: "IFCX", desc: "The universal data format of the OpenAEC ecosystem. All tools communicate in IFCX with custom namespaces for the complete building model.", link: "Read more \u2192" },
@@ -1915,7 +1944,8 @@
             openSafety: { title: "Open Safety Studio", desc: "Open source tool for safety analysis and risk assessment on construction projects.", link: "Try it now \u2192" },
             bcfManager: { title: "BCF Manager Studio", desc: "Open-source BCF 2.1 issue management platform for BIM projects. Manage issues, communicate with teams and link to IFC models.", badge: "In development" },
             openFrame: { title: "Open Frame Studio", desc: "Open source structural analysis tool. 2D frame calculations for beams, columns, portal structures and civil load-bearing systems." },
-            cptViewer: { title: "Open Geotechniek Studio", desc: "Civil engineering tool: viewer for cone penetration tests (CPT, GEF / BRO-xml). Analyze geotechnical soil data for foundations and earthworks." }
+            cptViewer: { title: "Open Geotechniek Studio", desc: "Civil engineering tool: viewer for cone penetration tests (CPT, GEF / BRO-xml). Analyze geotechnical soil data for foundations and earthworks." },
+            openCalculations: { title: "Open Calculations Studio", desc: "Open source tool for structural hand calculations — <strong>inspired by CalcPAD</strong>. With units, KaTeX formulas, SVG drawings and live IFCX + IFC4x3 STEP export. Existing .cpd files work without migration." }
           },
           productPage: "Product page",
           productPageLink: "Product page &rarr;",
