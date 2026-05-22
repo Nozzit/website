@@ -1,29 +1,26 @@
 {
-  "generated": "2026-05-21T19:45:25.716Z",
+  "generated": "2026-05-22T07:09:40.090Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-05-21",
-  "snapshotCount": 3,
+  "lastSnapshot": "2026-05-22",
+  "snapshotCount": 4,
   "weekCount": 1,
   "weeklyDeltas": [],
   "totalDelta": {
-    "open-pdf-studio": 180,
-    "open-2d-studio": 18,
-    "open-calc-studio": 6,
-    "open-energy-studio": 0,
-    "open-planner-studio": 0,
+    "open-pdf-studio": 198,
+    "open-2d-studio": 19,
+    "open-calc-studio": 8,
     "open-pointcloud-studio": 0,
     "open-heatloss-studio": 0,
     "open-speech-studio": 2,
     "Open-Field-Studio": 0,
     "open-frame-studio": 0,
-    "open-geotechniek-studio": 7,
+    "open-geotechniek-studio": 8,
     "Open-Calculations-Studio": 1,
     "monty-ifc-viewer": 0,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
-    "openaec-cloud": 0,
-    "Y-app": 0
+    "openaec-cloud": 0
   },
-  "totalDownloadsAdded": 214
+  "totalDownloadsAdded": 236
 }
