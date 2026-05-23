@@ -51,6 +51,29 @@
       showMore: 'Show more',
       showLess: 'Show less',
     },
+    fr: {
+      title: 'Notes de version',
+      desc: (n) => `${n} modifications, regroupées par version mineure. Récupérées en direct depuis GitHub.`,
+      loading: 'Chargement des versions...',
+      latest: 'Dernière',
+      nightly: 'Nightly',
+      version: 'Version',
+      releases: 'versions',
+      changes: 'modifications',
+      change: 'modification',
+      release: 'version',
+      from: 'de',
+      until: 'à',
+      viewGitHub: 'Voir sur GitHub →',
+      viewAll: 'Voir toutes les versions sur GitHub →',
+      error: 'Impossible de charger les notes de version.',
+      noReleases: 'Aucune version disponible pour le moment.',
+      published: 'Publiée',
+      totalReleases: 'versions au total',
+      totalChanges: 'modifications au total',
+      showMore: 'Afficher plus',
+      showLess: 'Afficher moins',
+    },
   };
 
   function getLang() {
@@ -286,7 +309,7 @@
     return `
       ${changes.length > 0
         ? `<ol class="rn-changes-list">${changesList}</ol>`
-        : `<p class="rn-loading">${getLang() === 'en' ? 'No changelog parsed — see release on GitHub below.' : 'Geen changelog beschikbaar — bekijk de release op GitHub hieronder.'}</p>`}
+        : `<p class="rn-loading">${getLang() === 'en' ? 'No changelog parsed — see release on GitHub below.' : (getLang() === 'fr' ? 'Aucun changelog disponible — voir la version sur GitHub ci-dessous.' : 'Geen changelog beschikbaar — bekijk de release op GitHub hieronder.')}</p>`}
       <div class="rn-releases-detail">
         ${releaseRows}
       </div>

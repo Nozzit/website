@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Comparison",
+    "title": "OpenAEC <span class=\"accent\">vs AutoCAD LT</span>",
+    "desc": "Open 2D Studio is an open source 2D CAD tool built with Rust and Tauri. Compare to AutoCAD LT on features, pricing, platforms and license model."
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Comparison",
+    "title": "OpenAEC <span class=\"accent\">vs BIMcollab</span>",
+    "desc": "BCF Manager Studio offers self-hosted, open source issue management for BIM projects with BCF 2.1 and BCF API 3.0. Compare to BIMcollab on features, pricing and architecture."
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

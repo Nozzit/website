@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Comparison",
+    "title": "OpenAEC <span class=\"accent\">vs Solibri</span>",
+    "desc": "Open source BIM validation with BIM Validator, BCF Manager Studio and Monty IFC Viewer — built on open standards like IDS, NL-BIM Basis ILS and the RVB BIM Norm."
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

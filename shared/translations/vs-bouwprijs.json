@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Comparison",
+    "title": "OpenAEC <span class=\"accent\">vs Bouwprijs</span>",
+    "desc": "Open Calc Studio is an open source Dutch construction cost calculator with STABU/RAW support and AI integration via MCP. Compare to Bouwprijs and IBIS-Trad."
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Comparaison",
+    "title": "OpenAEC <span class=\"accent\">vs BIMcollab</span>",
+    "desc": "BCF Manager Studio offre une gestion d'incidents auto-hébergée et open source pour les projets BIM avec BCF 2.1 et BCF API 3.0. Comparaison avec BIMcollab sur les fonctionnalités, le prix et l'architecture."
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}

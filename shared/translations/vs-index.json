@@ -1,0 +1,15 @@
+{
+  "header": {
+    "label": "Comparisons",
+    "title": "Open source <span class=\"accent\">alternatives</span>",
+    "desc": "Honest, factual comparisons between OpenAEC tools and commercial software in the construction industry. No marketing — just facts so you can choose what fits best."
+  },
+  "why": {
+    "title": "Why <span class=\"accent\">comparisons</span>?",
+    "p1": "Open source software is often viewed as an inferior alternative to commercial tools. That's a misconception. For many applications in the AEC industry, open source alternatives are now mature, fast and complete — often with better support for open standards like IFC, BCF and IDS.",
+    "p2": "At the same time, commercial tools sometimes really are the right choice. They have years of polish, large ecosystems and proven integrations. We believe in fair comparisons so you can make an informed choice — whether you choose open source, commercial or both."
+  },
+  "footer": {
+    "slogan": "Build free. Build together."
+  }
+}

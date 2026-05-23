@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Get <span class=\"accent\">started</span>",
+    "desc": "Start with the OpenAEC ecosystem in 5 steps. No registration, no credit card, no vendor lock-in — just download and get going."
+  },
+  "step1": {
+    "title": "Pick the tool that fits your work",
+    "desc": "Explore the complete ecosystem and pick the tool for your task. For PDF annotation and CAD markup: <strong>Open PDF Studio</strong>. For 2D CAD drawing: <strong>Open 2D Studio</strong>. For heat-loss calculations per NEN 12831 and ISSO 51:2023: <strong>Open Heatloss Studio</strong>. For IFC model validation: <strong>BIM Validator</strong>. For BCF issue management: <strong>BCF Manager Studio</strong>. For cost estimation: <strong>Open Calc Studio</strong>.",
+    "link": "View all 18+ tools &rarr;"
+  },
+  "step2": {
+    "title": "Download the installer or try the live demo",
+    "desc": "Every product page offers downloads for <strong>Windows</strong> (.exe or MSI), <strong>macOS</strong> (.dmg), <strong>Linux</strong> (.deb, .AppImage, .snap, .rpm) and <strong>Android</strong> (.apk). Or click \"Live demo\" to start straight in your browser — no installation needed.",
+    "link": "Example: Open PDF Studio downloads &rarr;"
+  },
+  "step3": {
+    "title": "Install and launch the tool",
+    "desc": "OpenAEC tools are lightweight (8–20 MB) thanks to <strong>Tauri 2 + Rust</strong> — much smaller than Electron apps. On Windows you can choose between <em>System install</em> (all users, admin required) or <em>User install</em> (no admin needed). On macOS, drag the app into Applications. On Linux, double-click the .deb or .AppImage. No account required to start.",
+    "link": "Read more about the technical architecture &rarr;"
+  },
+  "step4": {
+    "title": "Work with IFC or import existing data",
+    "desc": "All OpenAEC tools communicate via <strong>IFCX</strong>, an open extension of IFC that also supports namespaces for calculations, reports and metadata. Import <strong>IFC 2x3, IFC 4 and IFC 4.3</strong> models — including civil schemas like <code>IfcRoad</code>, <code>IfcRail</code>, <code>IfcBridge</code>, <code>IfcTunnel</code> and <code>IfcMarineFacility</code>. Data flows seamlessly between all tools.",
+    "link": "More on IFCX and civil schemas &rarr;"
+  },
+  "step5": {
+    "title": "Send feedback or contribute",
+    "desc": "File bugs and feature requests via <strong>GitHub</strong> (github.com/OpenAEC-Foundation). Join the WhatsApp community or email info@open-aec.com. For companies: request a <strong>quote for consultancy, managed hosting or custom extensions</strong>. All tools are LGPL-3.0 — fork, modify, contribute.",
+    "link": "Go to the feedback page &rarr;"
+  },
+  "quick": {
+    "title": "Quick links…",
+    "tools": { "title": "All tools", "desc": "Overview of all 18+ tools in the ecosystem." },
+    "ifcx": { "title": "IFCX data format", "desc": "How IFCX works and which civil schemas are supported." },
+    "arch": { "title": "Architecture", "desc": "Tech stack: Rust, Tauri 2, TypeScript, cross-platform." },
+    "services": { "title": "Services", "desc": "Consultancy, hosting, custom extensions, donations." },
+    "quote": { "title": "Request a quote", "desc": "For companies that want professional support." },
+    "roadmap": { "title": "Roadmap", "desc": "What's coming up for 2026 and 2027." },
+    "faq": { "title": "FAQ", "desc": "Frequently asked questions about open source, hosting, contributing." },
+    "github": { "title": "GitHub", "desc": "Source code, issues, contributing guidelines." }
+  }
+}

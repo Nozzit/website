@@ -1,0 +1,15 @@
+{
+  "header": {
+    "label": "Comparaisons",
+    "title": "<span class=\"accent\">Alternatives</span> open source",
+    "desc": "Comparaisons honnêtes et factuelles entre les outils OpenAEC et les logiciels commerciaux du secteur de la construction. Pas de marketing — uniquement des faits pour que vous puissiez choisir ce qui convient le mieux."
+  },
+  "why": {
+    "title": "Pourquoi des <span class=\"accent\">comparaisons</span> ?",
+    "p1": "Les logiciels open source sont souvent considérés comme une alternative de moindre qualité aux outils commerciaux. C'est une idée fausse. Pour de nombreuses applications dans le secteur AEC, les alternatives open source sont désormais matures, rapides et complètes — avec souvent un meilleur support des standards ouverts comme IFC, BCF et IDS.",
+    "p2": "En même temps, les outils commerciaux sont parfois bel et bien le bon choix. Ils bénéficient d'années de raffinement, de grands écosystèmes et d'intégrations éprouvées. Nous croyons aux comparaisons honnêtes pour que vous puissiez faire un choix éclairé — que vous optiez pour l'open source, le commercial ou les deux."
+  },
+  "footer": {
+    "slogan": "Construisez librement. Construisons ensemble."
+  }
+}
