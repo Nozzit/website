@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-05-21T19:45:25.816Z",
+  "generated": "2026-05-23T06:52:42.083Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -16,12 +16,12 @@
   },
   "totalTools": 17,
   "totalStats": {
-    "publicRepos": 51,
-    "totalStars": 403,
-    "totalCommits": 4060,
+    "publicRepos": 52,
+    "totalStars": 411,
+    "totalCommits": 4143,
     "contributors": 32,
     "languages": 8,
-    "sourceDate": "2026-05-20T08:42:42.932Z"
+    "sourceDate": "2026-05-23T06:52:24.362Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -118,14 +118,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
         "commits": 450,
-        "stars": 301,
+        "stars": 303,
         "forks": 27,
         "openIssues": 58,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
-        "releases": 48,
+        "latestVersion": "nightly",
+        "latestReleaseDate": "2026-05-23",
+        "releases": 47,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-05-19"
+        "updatedAt": "2026-05-22"
       }
     },
     {
@@ -167,14 +167,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-2d-studio",
       "stats": {
         "commits": 90,
-        "stars": 17,
+        "stars": 18,
         "forks": 4,
         "openIssues": 17,
         "latestVersion": "v0.35.0",
         "latestReleaseDate": "2026-03-26",
         "releases": 25,
         "createdAt": "2025-12-24",
-        "updatedAt": "2026-05-02"
+        "updatedAt": "2026-05-22"
       }
     },
     {
@@ -268,15 +268,15 @@
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
-        "commits": 411,
+        "commits": 435,
         "stars": 1,
         "forks": 0,
-        "openIssues": 2,
+        "openIssues": 3,
         "latestVersion": "v0.1.1-pr13.alpha",
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
         "createdAt": "2026-03-02",
-        "updatedAt": "2026-05-19"
+        "updatedAt": "2026-05-22"
       }
     },
     {
@@ -569,9 +569,9 @@
         "stars": 2,
         "forks": 0,
         "openIssues": 15,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
-        "releases": 4,
+        "latestVersion": "v0.10.0",
+        "latestReleaseDate": "2026-04-24",
+        "releases": 3,
         "createdAt": "2026-03-09",
         "updatedAt": "2026-04-28"
       }

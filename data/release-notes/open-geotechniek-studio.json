@@ -1,19 +1,35 @@
 {
   "repo": "open-geotechniek-studio",
-  "generated": "2026-05-20T08:15:22.417Z",
-  "totalReleases": 2,
+  "generated": "2026-05-23T06:52:31.139Z",
+  "totalReleases": 4,
   "totalChanges": 55,
   "latestStable": {
-    "tag": "v0.2.1",
-    "name": "Open Geotechniek Studio v0.2.1",
-    "date": "2026-05-18",
-    "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.2.1"
+    "tag": "v0.2.9",
+    "name": "v0.2.9",
+    "date": "2026-05-20",
+    "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.2.9"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "0.2",
       "releases": [
+        {
+          "tag": "v0.2.9",
+          "name": "v0.2.9",
+          "date": "2026-05-20",
+          "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.2.9",
+          "changes": [],
+          "patchNum": 9
+        },
+        {
+          "tag": "v0.2.8",
+          "name": "v0.2.8",
+          "date": "2026-05-20",
+          "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.2.8",
+          "changes": [],
+          "patchNum": 8
+        },
         {
           "tag": "v0.2.1",
           "name": "Open Geotechniek Studio v0.2.1",
@@ -146,8 +162,8 @@
         "Volledige IFC4x3 mapping voor de geotechnische klasse."
       ],
       "firstDate": "2026-05-18",
-      "lastDate": "2026-05-18",
-      "releaseCount": 2,
+      "lastDate": "2026-05-20",
+      "releaseCount": 4,
       "changeCount": 55
     }
   ]
