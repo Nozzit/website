@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open CAD Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Open CAD Studio: experimenteel 2D CAD-framework als fundament voor de volgende generatie OpenAEC CAD-tools. Lichtgewicht rendering, command-systeem en plugin-architectuur.">
+  <meta name="i18n-page" content="open-cad-studio">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Open CAD Studio",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "url": "https://www.open-aec.com/open-cad-studio/",
+    "description": "Experimental 2D CAD framework — foundation for the next generation of OpenAEC CAD tools. Lightweight rendering, command system and plugin architecture.",
+    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" }
+  }
+  </script>
+
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.5rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p { font-size: 1.125rem; color: var(--scaffold-gray); max-width: 750px; margin: 0 auto; line-height: 1.6; }
+    .status-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.7rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 4px 14px; border-radius: var(--radius-full);
+      background: #DBEAFE; color: #1E40AF;
+      margin-top: var(--sp-4); margin-right: 6px;
+    }
+    .version-info {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.7rem;
+      color: var(--scaffold-gray); margin-top: var(--sp-2);
+    }
+
+    .content { max-width: 900px; margin: 0 auto; }
+    .content h2 { font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--deep-forge); margin-bottom: var(--sp-4); }
+    .content h2 .accent { color: var(--amber); }
+    .content p { font-size: 1rem; color: #57534E; line-height: 1.7; margin-bottom: var(--sp-4); }
+    .content-block + .content-block { margin-top: var(--sp-12); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--sp-6);
+      margin: var(--sp-8) 0;
+    }
+    .feature-card {
+      background: white; border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg); padding: var(--sp-6);
+      box-shadow: var(--shadow-sm);
+    }
+    .feature-card h3 { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; color: var(--deep-forge); margin-bottom: var(--sp-2); }
+    .feature-card p { font-size: 0.875rem; color: #57534E; line-height: 1.6; margin-bottom: 0; }
+
+    .explainer {
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-8);
+      margin: var(--sp-8) 0;
+    }
+    .explainer h3 { color: var(--amber); font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: var(--sp-4); }
+    .explainer p { color: var(--scaffold-gray); font-size: 0.9rem; line-height: 1.7; margin-bottom: var(--sp-3); }
+    .explainer ul { list-style: none; padding: 0; margin: 0; }
+    .explainer ul li {
+      position: relative;
+      padding: var(--sp-2) 0 var(--sp-2) var(--sp-5);
+      color: var(--scaffold-gray);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .explainer ul li::before {
+      content: ''; position: absolute; left: 0; top: 12px;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--amber);
+    }
+    .explainer code {
+      background: rgba(217, 119, 6, 0.15); color: var(--amber);
+      padding: 1px 6px; border-radius: 3px;
+      font-family: var(--font-code); font-size: 0.85em;
+    }
+
+    .tech-stack { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin: var(--sp-4) 0; }
+    .tech-tag {
+      font-family: var(--font-code); font-size: 0.75rem; font-weight: 500;
+      padding: 4px 12px; border-radius: var(--radius-full);
+      background: var(--concrete); color: var(--deep-forge);
+    }
+
+    .cta-links { display: flex; gap: var(--sp-4); flex-wrap: wrap; margin-top: var(--sp-6); }
+    .cta-links a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--radius-md);
+      font-family: var(--font-heading); font-weight: 600; font-size: 0.9rem;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .cta-links a:hover { opacity: 0.85; }
+    .cta-primary { background: var(--amber); color: var(--deep-forge); }
+    .cta-secondary { background: var(--deep-forge); color: white; }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 1.8rem; word-break: break-word; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+    <h1 data-i18n="header.title">Open <span class="accent">CAD</span> Studio</h1>
+    <p data-i18n="header.desc">Experimenteel 2D CAD-framework — fundament voor de volgende generatie OpenAEC CAD-tools. Lichtgewicht rendering, command-systeem en plugin-architectuur.</p>
+    <div>
+      <span class="status-badge" data-i18n="header.badge">In ontwikkeling</span>
+    </div>
+    <div class="version-info">TypeScript · Tauri 2 · Rust · canvas rendering</div>
+  </header>
+
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="content">
+
+      <div class="explainer">
+        <h3 data-i18n="what.title">Wat is Open CAD Studio?</h3>
+        <p data-i18n="what.desc">Open CAD Studio is een <strong style="color: white;">experimenteel 2D CAD-framework</strong> dat dient als technologische basis voor de volgende generatie open-source CAD-tools binnen het OpenAEC-ecosysteem. Waar Open 2D Studio een complete toolchain levert, fungeert Open CAD Studio als een leerframework en architectuur-platform: hoe ziet een open, modulaire en performante CAD-engine eruit?</p>
+        <ul>
+          <li data-i18n="what.list1"><strong style="color: white;">Lichtgewicht rendering</strong> — canvas-gebaseerde 2D-engine, snel zelfs bij grote tekeningen</li>
+          <li data-i18n="what.list2"><strong style="color: white;">Command-systeem</strong> — CAD-stijl commando-invoer met undo/redo en macro's</li>
+          <li data-i18n="what.list3"><strong style="color: white;">Plugin-architectuur</strong> — uitbreidbaar via add-ins voor specifieke domeinen</li>
+          <li data-i18n="what.list4"><strong style="color: white;">DXF / SVG interoperabiliteit</strong> — leesbaar tussen Open CAD Studio en de bredere CAD-wereld</li>
+          <li data-i18n="what.list5"><strong style="color: white;">Open source onderzoek</strong> — een speeltuin voor patronen die later in Open 2D Studio terechtkomen</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="why.title">Waarom een apart <span class="accent">framework</span>?</h2>
+        <p data-i18n="why.desc1">Open 2D Studio is een productie-CAD-applicatie. Daar willen we stabiliteit, niet experimenten. Open CAD Studio biedt de ruimte om radicaal andere architectuur-keuzes te onderzoeken — andere rendering-strategieën, andere data-modellen, andere interactiepatronen — zonder de productie-tool te destabiliseren.</p>
+        <p data-i18n="why.desc2">Wat hier blijkt te werken, migreert door naar Open 2D Studio. Wat niet werkt, leren we van zonder gebruikers te raken.</p>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="features.title">Onderzoeksgebieden</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-i18n="features.engine.title">Rendering-engine</h3>
+            <p data-i18n="features.engine.desc">Canvas 2D als baseline, met een viewport en transformatie-stack die schaalt naar honderdduizenden entiteiten. WebGPU-experiment voor de hot-loop in onderzoek.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.command.title">Commandostructuur</h3>
+            <p data-i18n="features.command.desc">CAD-style commands met argumenten, opties en preview-staat. Undo/redo via een journal van inverse commands.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.plugins.title">Plugin-API</h3>
+            <p data-i18n="features.plugins.desc">Add-ins kunnen commands registreren, ribbon-tabs toevoegen, en eigen entity-types definiëren. TypeScript-gedreven contract met run-time validatie.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.snap.title">Snapping &amp; constraints</h3>
+            <p data-i18n="features.snap.desc">Object-snap (endpoint, midpoint, intersection) plus parametrische constraints — distance, parallel, perpendicular — als research-area.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.data.title">Datamodel</h3>
+            <p data-i18n="features.data.desc">Immutable entity tree met structural sharing. Tijd-reizen voor sessies en collaborative editing als toekomstig doel.</p>
+          </div>
+          <div class="feature-card">
+            <h3 data-i18n="features.io.title">DXF / SVG I/O</h3>
+            <p data-i18n="features.io.desc">DXF lezen en schrijven via een Rust-backend. SVG-export voor presentatie en web-embedding.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2 data-i18n="tech.title">Technologie</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Tauri 2</span>
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">Canvas 2D</span>
+          <span class="tech-tag">WebGPU (experiment)</span>
+          <span class="tech-tag">Vite</span>
+        </div>
+        <p data-i18n="tech.desc">Dezelfde grond-stack als alle OpenAEC-tools: TypeScript voor de UI, Rust voor de prestatie-kritieke paden, Tauri 2 voor cross-platform desktop-distributie (Windows, macOS, Linux).</p>
+      </div>
+
+      <div class="content-block">
+        <div class="cta-links">
+          <a href="https://github.com/OpenAEC-Foundation/Open-CAD-Drafting-Studio" target="_blank" rel="noopener" class="cta-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            <span data-i18n="cta.github">GitHub repository</span>
+          </a>
+          <a href="/open-2d-studio/" class="cta-secondary" data-i18n="cta.relatedTool">Bekijk Open 2D Studio</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); font-size: 0.75rem; text-decoration: none;">GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); font-size: 0.75rem; text-decoration: none;">LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+  <script src="/shared/i18n.js"></script>
+</body>
+</html>

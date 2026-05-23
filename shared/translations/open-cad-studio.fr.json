@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "title": "Open <span class=\"accent\">CAD</span> Studio",
+    "desc": "Framework expérimental de CAO 2D — fondation pour la prochaine génération d'outils CAO OpenAEC. Rendu léger, système de commandes et architecture à plugins.",
+    "badge": "En développement"
+  },
+  "what": {
+    "title": "Qu'est-ce qu'Open CAD Studio ?",
+    "desc": "Open CAD Studio est un <strong style=\"color: white;\">framework expérimental de CAO 2D</strong> qui sert de fondation technologique pour la prochaine génération d'outils CAO open source au sein de l'écosystème OpenAEC. Là où Open 2D Studio fournit une chaîne d'outils complète, Open CAD Studio agit comme un framework de recherche et une plateforme d'architecture : à quoi ressemble un moteur CAO ouvert, modulaire et performant ?",
+    "list1": "<strong style=\"color: white;\">Rendu léger</strong> — moteur 2D basé sur canvas, rapide même avec de grands dessins",
+    "list2": "<strong style=\"color: white;\">Système de commandes</strong> — saisie de commandes de style CAO avec undo/redo et macros",
+    "list3": "<strong style=\"color: white;\">Architecture à plugins</strong> — extensible via add-ins pour des domaines spécifiques",
+    "list4": "<strong style=\"color: white;\">Interopérabilité DXF / SVG</strong> — lisible entre Open CAD Studio et le monde CAO au sens large",
+    "list5": "<strong style=\"color: white;\">Recherche open source</strong> — un terrain de jeu pour les patterns qui finissent ensuite dans Open 2D Studio"
+  },
+  "why": {
+    "title": "Pourquoi un <span class=\"accent\">framework</span> séparé ?",
+    "desc1": "Open 2D Studio est une application CAO en production. On y veut de la stabilité, pas des expérimentations. Open CAD Studio nous donne la marge d'explorer des choix d'architecture radicalement différents — stratégies de rendu alternatives, modèles de données, patterns d'interaction — sans déstabiliser l'outil de production.",
+    "desc2": "Ce qui fonctionne ici migre vers Open 2D Studio. Ce qui ne fonctionne pas, on en apprend sans affecter les utilisateurs."
+  },
+  "features": {
+    "title": "Domaines de recherche",
+    "engine": { "title": "Moteur de rendu", "desc": "Canvas 2D comme base avec une viewport et une pile de transformations qui passe à l'échelle de centaines de milliers d'entités. Expérimentation WebGPU pour la hot loop en recherche." },
+    "command": { "title": "Structure de commandes", "desc": "Commandes de style CAO avec arguments, options et état de prévisualisation. Undo/redo via un journal de commandes inverses." },
+    "plugins": { "title": "API de plugins", "desc": "Les add-ins peuvent enregistrer des commandes, ajouter des onglets ruban et définir leurs propres types d'entités. Contrat piloté par TypeScript avec validation à l'exécution." },
+    "snap": { "title": "Accrochage &amp; contraintes", "desc": "Accrochage aux objets (extrémité, milieu, intersection) plus contraintes paramétriques — distance, parallèle, perpendiculaire — comme axe de recherche." },
+    "data": { "title": "Modèle de données", "desc": "Arbre d'entités immutable avec partage structurel. Voyage dans le temps pour les sessions et édition collaborative comme objectifs futurs." },
+    "io": { "title": "I/O DXF / SVG", "desc": "Lecture et écriture DXF via un backend Rust. Export SVG pour présentation et intégration web." }
+  },
+  "tech": {
+    "title": "Technologie",
+    "desc": "La même stack de base que tous les outils OpenAEC : TypeScript pour l'interface, Rust pour les chemins critiques en performance, Tauri 2 pour la distribution multiplateforme (Windows, macOS, Linux)."
+  },
+  "cta": {
+    "github": "Dépôt GitHub",
+    "relatedTool": "Voir Open 2D Studio"
+  }
+}

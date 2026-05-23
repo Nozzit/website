@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "OpenAEC Ecosystem",
+    "title": "Open <span class=\"accent\">CAD</span> Studio",
+    "desc": "Experimental 2D CAD framework — foundation for the next generation of OpenAEC CAD tools. Lightweight rendering, command system and plugin architecture.",
+    "badge": "In development"
+  },
+  "what": {
+    "title": "What is Open CAD Studio?",
+    "desc": "Open CAD Studio is an <strong style=\"color: white;\">experimental 2D CAD framework</strong> that serves as the technological foundation for the next generation of open-source CAD tools within the OpenAEC ecosystem. Where Open 2D Studio delivers a complete toolchain, Open CAD Studio acts as a research framework and architecture platform: what does an open, modular and performant CAD engine look like?",
+    "list1": "<strong style=\"color: white;\">Lightweight rendering</strong> — canvas-based 2D engine, fast even with large drawings",
+    "list2": "<strong style=\"color: white;\">Command system</strong> — CAD-style command input with undo/redo and macros",
+    "list3": "<strong style=\"color: white;\">Plugin architecture</strong> — extensible via add-ins for specific domains",
+    "list4": "<strong style=\"color: white;\">DXF / SVG interoperability</strong> — readable between Open CAD Studio and the wider CAD world",
+    "list5": "<strong style=\"color: white;\">Open-source research</strong> — a playground for patterns that later land in Open 2D Studio"
+  },
+  "why": {
+    "title": "Why a separate <span class=\"accent\">framework</span>?",
+    "desc1": "Open 2D Studio is a production CAD application. We want stability there, not experiments. Open CAD Studio gives us room to explore radically different architectural choices — alternative rendering strategies, data models, interaction patterns — without destabilizing the production tool.",
+    "desc2": "What turns out to work here migrates to Open 2D Studio. What doesn't work, we learn from without affecting users."
+  },
+  "features": {
+    "title": "Research areas",
+    "engine": { "title": "Rendering engine", "desc": "Canvas 2D as baseline with a viewport and transform stack that scales to hundreds of thousands of entities. WebGPU experiment for the hot loop in research." },
+    "command": { "title": "Command structure", "desc": "CAD-style commands with arguments, options and preview state. Undo/redo via a journal of inverse commands." },
+    "plugins": { "title": "Plugin API", "desc": "Add-ins can register commands, add ribbon tabs and define their own entity types. TypeScript-driven contract with runtime validation." },
+    "snap": { "title": "Snapping &amp; constraints", "desc": "Object snap (endpoint, midpoint, intersection) plus parametric constraints — distance, parallel, perpendicular — as a research area." },
+    "data": { "title": "Data model", "desc": "Immutable entity tree with structural sharing. Time travel for sessions and collaborative editing as future goals." },
+    "io": { "title": "DXF / SVG I/O", "desc": "Read and write DXF via a Rust backend. SVG export for presentation and web embedding." }
+  },
+  "tech": {
+    "title": "Technology",
+    "desc": "The same baseline stack as all OpenAEC tools: TypeScript for the UI, Rust for the performance-critical paths, Tauri 2 for cross-platform desktop distribution (Windows, macOS, Linux)."
+  },
+  "cta": {
+    "github": "GitHub repository",
+    "relatedTool": "Check out Open 2D Studio"
+  }
+}
