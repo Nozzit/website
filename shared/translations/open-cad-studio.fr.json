@@ -1,39 +1,70 @@
 {
   "header": {
-    "label": "Écosystème OpenAEC",
+    "label": "Projet communautaire · Écosystème OpenAEC",
     "title": "Open <span class=\"accent\">CAD</span> Studio",
-    "desc": "Framework expérimental de CAO 2D — fondation pour la prochaine génération d'outils CAO OpenAEC. Rendu léger, système de commandes et architecture à plugins.",
-    "badge": "En développement"
+    "desc": "Une <strong style=\"color: white;\">application CAO 2D + 3D complète</strong> développée en Rust avec rendu accéléré par GPU. Lecture et écriture natives <strong style=\"color: white;\">DWG &amp; DXF</strong>, paper space, solides ACIS, cotations, mises en page. Un projet open source communautaire de Hakan Seven, reconnu et promu par la fondation OpenAEC.",
+    "community": "Projet communautaire",
+    "beta": "Beta · v0.4.0"
+  },
+  "author": {
+    "desc": "Développeur open source indépendant. Développe Open CAD Studio depuis mars 2026.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
   },
   "what": {
     "title": "Qu'est-ce qu'Open CAD Studio ?",
-    "desc": "Open CAD Studio est un <strong style=\"color: white;\">framework expérimental de CAO 2D</strong> qui sert de fondation technologique pour la prochaine génération d'outils CAO open source au sein de l'écosystème OpenAEC. Là où Open 2D Studio fournit une chaîne d'outils complète, Open CAD Studio agit comme un framework de recherche et une plateforme d'architecture : à quoi ressemble un moteur CAO ouvert, modulaire et performant ?",
-    "list1": "<strong style=\"color: white;\">Rendu léger</strong> — moteur 2D basé sur canvas, rapide même avec de grands dessins",
-    "list2": "<strong style=\"color: white;\">Système de commandes</strong> — saisie de commandes de style CAO avec undo/redo et macros",
-    "list3": "<strong style=\"color: white;\">Architecture à plugins</strong> — extensible via add-ins pour des domaines spécifiques",
-    "list4": "<strong style=\"color: white;\">Interopérabilité DXF / SVG</strong> — lisible entre Open CAD Studio et le monde CAO au sens large",
-    "list5": "<strong style=\"color: white;\">Recherche open source</strong> — un terrain de jeu pour les patterns qui finissent ensuite dans Open 2D Studio"
+    "desc": "Open CAD Studio est un projet CAO open source indépendant qui comble une lacune majeure de l'outillage AEC : une <strong style=\"color: white;\">application CAO moderne, performante, nativement compatible DWG/DXF</strong> qui ne dépend pas d'Autodesk, de Bricsys ou d'autres éditeurs commerciaux. Entièrement écrite en Rust, avec rendu accéléré par GPU via wgpu et une interface interactive en iced.",
+    "desc2": "La fondation OpenAEC considère Open CAD Studio comme une extension naturelle de l'écosystème. Le projet n'est pas développé par nous, mais s'inscrit dans notre mission : promouvoir les logiciels open source pour toute la chaîne AEC. Nous y faisons activement référence et encourageons la collaboration.",
+    "license": "<strong style=\"color: white;\">Licence</strong> : GPL-3.0 (à noter : différente de nos propres outils LGPL-3.0, qui est plus permissive pour l'usage en bibliothèque)."
   },
-  "why": {
-    "title": "Pourquoi un <span class=\"accent\">framework</span> séparé ?",
-    "desc1": "Open 2D Studio est une application CAO en production. On y veut de la stabilité, pas des expérimentations. Open CAD Studio nous donne la marge d'explorer des choix d'architecture radicalement différents — stratégies de rendu alternatives, modèles de données, patterns d'interaction — sans déstabiliser l'outil de production.",
-    "desc2": "Ce qui fonctionne ici migre vers Open 2D Studio. Ce qui ne fonctionne pas, on en apprend sans affecter les utilisateurs."
+  "formats": {
+    "title": "Formats de fichiers — <span class=\"accent\">DWG &amp; DXF natifs</span>",
+    "desc": "Peut-être la fonctionnalité la plus importante : Open CAD Studio lit et écrit DWG et DXF nativement, dans toutes les versions de R13 à R2018. Pas de convertisseurs, pas de contournements, pas de bibliothèques Autodesk.",
+    "dwg": { "title": "DWG (R13–R2018)", "desc": "Lecture et écriture natives de fichiers DWG — le format de facto standard de l'industrie. Sans licences de bibliothèques tierces." },
+    "dxf": { "title": "DXF (R13–R2018)", "desc": "Lecture/écriture DXF complète, versions modernes incluses. Compatible avec AutoCAD, BricsCAD, LibreCAD et toute application CAO supportant DXF." },
+    "stl": { "title": "STL / STEP / OBJ", "desc": "Export vers STL et STEP AP203 pour impression 3D et FAO. Import OBJ pour modèles 3D depuis d'autres sources." },
+    "pdf": { "title": "Plot PDF", "desc": "Plottez les layouts directement en PDF — avec les bons formats de papier lus depuis les PlotSettings embarqués." },
+    "wblock": { "title": "WBLOCK", "desc": "Écrivez des entités sélectionnées ou un bloc vers un fichier externe pour réutilisation." },
+    "xref": { "title": "XREF", "desc": "Références externes (xrefs) — attacher, recharger et résoudre automatiquement, comme dans AutoCAD." }
   },
-  "features": {
-    "title": "Domaines de recherche",
-    "engine": { "title": "Moteur de rendu", "desc": "Canvas 2D comme base avec une viewport et une pile de transformations qui passe à l'échelle de centaines de milliers d'entités. Expérimentation WebGPU pour la hot loop en recherche." },
-    "command": { "title": "Structure de commandes", "desc": "Commandes de style CAO avec arguments, options et état de prévisualisation. Undo/redo via un journal de commandes inverses." },
-    "plugins": { "title": "API de plugins", "desc": "Les add-ins peuvent enregistrer des commandes, ajouter des onglets ruban et définir leurs propres types d'entités. Contrat piloté par TypeScript avec validation à l'exécution." },
-    "snap": { "title": "Accrochage &amp; contraintes", "desc": "Accrochage aux objets (extrémité, milieu, intersection) plus contraintes paramétriques — distance, parallèle, perpendiculaire — comme axe de recherche." },
-    "data": { "title": "Modèle de données", "desc": "Arbre d'entités immutable avec partage structurel. Voyage dans le temps pour les sessions et édition collaborative comme objectifs futurs." },
-    "io": { "title": "I/O DXF / SVG", "desc": "Lecture et écriture DXF via un backend Rust. Export SVG pour présentation et intégration web." }
+  "drafting": {
+    "title": "Dessin <span class=\"accent\">2D</span>",
+    "desc": "Suite complète de dessin 2D avec toutes les commandes attendues d'une application CAO professionnelle :",
+    "geom": { "title": "Géométrie de base", "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>" },
+    "modify": { "title": "Modification", "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — fonctionne sur lignes, arcs, ellipses, polylignes et splines" },
+    "transform": { "title": "Transformations", "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>" },
+    "hatch": { "title": "Hachures", "desc": "<code>HATCH</code> et <code>HATCHEDIT</code> avec édition de motif, d'échelle et d'angle." },
+    "mass": { "title": "Propriétés", "desc": "<code>MASSPROP</code> — surface, périmètre et centre de gravité des entités sélectionnées." },
+    "text": { "title": "Édition de texte", "desc": "<code>DDEDIT</code> — double-cliquez pour éditer le texte. <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code> avec navigateur de polices." }
+  },
+  "modeling": {
+    "title": "Modélisation <span class=\"accent\">3D</span>",
+    "desc": "Capacités complètes de modélisation 3D avec tessellation des solides ACIS :",
+    "prim": { "title": "Primitives", "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — solides de base pour la modélisation paramétrique." },
+    "extrude": { "title": "Extrusion &amp; révolution", "desc": "Solides à partir de profils : <code>EXTRUDE</code> pour l'extrusion linéaire et <code>REVOLVE</code> pour la rotation autour d'un axe." },
+    "loft": { "title": "Loft &amp; sweep", "desc": "<code>LOFT</code> entre plusieurs profils, <code>SWEEP</code> le long d'un chemin quelconque." },
+    "array": { "title": "Array 3D", "desc": "<code>ARRAY3D</code> — réseaux rectangulaires ou polaires en 3D." },
+    "acis": { "title": "Tessellation ACIS", "desc": "Affiche les entités <code>3DSOLID</code>, <code>REGION</code> et <code>BODY</code> — les solides issus de DWG/DXF s'affichent correctement." },
+    "gpu": { "title": "Accéléré par GPU", "desc": "Rendu basé sur wgpu. Interaction fluide avec de grands modèles, même avec de nombreux solides à la fois." }
+  },
+  "annotations": {
+    "title": "<span class=\"accent\">Annotations</span> &amp; cotations",
+    "desc": "Cotation complète, GD&amp;T, leaders, tableaux et mlines — tout avec des gestionnaires de styles et un comportement DIMSTYLE correct (DIMASZ, DIMSCALE, DIMEXO, DIMEXE, …)."
+  },
+  "paperspace": {
+    "title": "Paper space &amp; <span class=\"accent\">mises en page</span>",
+    "layouts": { "title": "Multi-onglets", "desc": "Model space + nombre illimité d'onglets paper space. Position de la caméra et zoom enregistrés par layout." },
+    "viewports": { "title": "Projection viewport", "desc": "Le contenu du modèle est correctement projeté dans les rectangles viewport de paper space. Double-clic pour superposition MSPACE inline." },
+    "vports": { "title": "Préréglages viewport", "desc": "<code>VPORTS</code> — configurations single, 2H, 2V, 4-way." },
+    "styles": { "title": "Styles de tracé", "desc": "<code>PLOTSTYLEPANEL</code> et <code>STYLESMANAGER</code> — éditeur de tables de style de tracé CTB/STB." },
+    "print": { "title": "PRINT", "desc": "Envoyez directement les layouts vers l'imprimante système avec les bons formats de papier issus des PlotSettings embarqués." },
+    "manager": { "title": "Gestionnaire de layouts", "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — interface graphique pour la gestion des layouts." }
   },
   "tech": {
     "title": "Technologie",
-    "desc": "La même stack de base que tous les outils OpenAEC : TypeScript pour l'interface, Rust pour les chemins critiques en performance, Tauri 2 pour la distribution multiplateforme (Windows, macOS, Linux)."
+    "desc": "Entièrement écrit en Rust — sûreté mémoire, performances rapides, compile pour Windows, macOS et Linux. Interface via <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a>, rendu GPU via <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a>. DWG/DXF natifs sans verrouillage propriétaire."
   },
   "cta": {
-    "github": "Dépôt GitHub",
-    "relatedTool": "Voir Open 2D Studio"
+    "github": "GitHub : HakanSeven12/OpenCADStudio",
+    "releases": "Versions &amp; téléchargements",
+    "relatedTool": "Voir aussi Open 2D Studio"
   }
 }

@@ -24,7 +24,7 @@ const CATS = {
   'open-calculations-studio':   ['E','I'],
   'open-field-studio':          ['C'],
   'open-2d-studio':             ['A','E'],
-  'open-cad-drafting-studio':   ['A','E','C'],
+  'opencadstudio':              ['A','E','C'],
   'open-energy-studio':         ['E'],
   'open-planner-studio':        ['C'],
   'open-pointcloud-studio':     ['E','C','I'],

@@ -1,39 +1,70 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
+    "label": "Community project · OpenAEC ecosystem",
     "title": "Open <span class=\"accent\">CAD</span> Studio",
-    "desc": "Experimental 2D CAD framework — foundation for the next generation of OpenAEC CAD tools. Lightweight rendering, command system and plugin architecture.",
-    "badge": "In development"
+    "desc": "A full-featured <strong style=\"color: white;\">2D + 3D CAD application</strong> built in Rust with GPU-accelerated rendering. Native <strong style=\"color: white;\">DWG &amp; DXF</strong> read and write, paper space, ACIS solids, dimensions, layouts. An open source community project by Hakan Seven, recognized and promoted by the OpenAEC Foundation.",
+    "community": "Community project",
+    "beta": "Beta · v0.4.0"
+  },
+  "author": {
+    "desc": "Independent open-source developer. Building Open CAD Studio since March 2026.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
   },
   "what": {
     "title": "What is Open CAD Studio?",
-    "desc": "Open CAD Studio is an <strong style=\"color: white;\">experimental 2D CAD framework</strong> that serves as the technological foundation for the next generation of open-source CAD tools within the OpenAEC ecosystem. Where Open 2D Studio delivers a complete toolchain, Open CAD Studio acts as a research framework and architecture platform: what does an open, modular and performant CAD engine look like?",
-    "list1": "<strong style=\"color: white;\">Lightweight rendering</strong> — canvas-based 2D engine, fast even with large drawings",
-    "list2": "<strong style=\"color: white;\">Command system</strong> — CAD-style command input with undo/redo and macros",
-    "list3": "<strong style=\"color: white;\">Plugin architecture</strong> — extensible via add-ins for specific domains",
-    "list4": "<strong style=\"color: white;\">DXF / SVG interoperability</strong> — readable between Open CAD Studio and the wider CAD world",
-    "list5": "<strong style=\"color: white;\">Open-source research</strong> — a playground for patterns that later land in Open 2D Studio"
+    "desc": "Open CAD Studio is an independent open-source CAD project filling a major gap in AEC tooling: a <strong style=\"color: white;\">modern, performant, native DWG/DXF-compatible CAD application</strong> that doesn't depend on Autodesk, Bricsys or other commercial vendors. Entirely written in Rust, with GPU-accelerated rendering via wgpu and an interactive UI in iced.",
+    "desc2": "The OpenAEC Foundation views Open CAD Studio as a natural addition to the ecosystem. The project isn't developed by us, but it fits our mission: promoting open source software for the entire AEC chain. We link to it actively and encourage collaboration.",
+    "license": "<strong style=\"color: white;\">License</strong>: GPL-3.0 (note: different from our own LGPL-3.0 tools, which is more permissive for library use)."
   },
-  "why": {
-    "title": "Why a separate <span class=\"accent\">framework</span>?",
-    "desc1": "Open 2D Studio is a production CAD application. We want stability there, not experiments. Open CAD Studio gives us room to explore radically different architectural choices — alternative rendering strategies, data models, interaction patterns — without destabilizing the production tool.",
-    "desc2": "What turns out to work here migrates to Open 2D Studio. What doesn't work, we learn from without affecting users."
+  "formats": {
+    "title": "File formats — <span class=\"accent\">native DWG &amp; DXF</span>",
+    "desc": "Perhaps the most important feature: Open CAD Studio reads and writes DWG and DXF natively, across all versions from R13 through R2018. No converters, no workarounds, no Autodesk libraries.",
+    "dwg": { "title": "DWG (R13–R2018)", "desc": "Native reading and writing of DWG files — the de-facto industry-standard format. Without third-party library licenses." },
+    "dxf": { "title": "DXF (R13–R2018)", "desc": "Full DXF read/write including modern versions. Compatible with AutoCAD, BricsCAD, LibreCAD and any CAD application that supports DXF." },
+    "stl": { "title": "STL / STEP / OBJ", "desc": "Export to STL and STEP AP203 for 3D printing and CAM. OBJ import for 3D models from other sources." },
+    "pdf": { "title": "PDF plot", "desc": "Plot layouts directly to PDF — with correct paper sizes read from embedded PlotSettings." },
+    "wblock": { "title": "WBLOCK", "desc": "Write selected entities or a block to an external file for reuse." },
+    "xref": { "title": "XREF", "desc": "External references (xrefs) attach, reload and auto-resolve — just like AutoCAD." }
   },
-  "features": {
-    "title": "Research areas",
-    "engine": { "title": "Rendering engine", "desc": "Canvas 2D as baseline with a viewport and transform stack that scales to hundreds of thousands of entities. WebGPU experiment for the hot loop in research." },
-    "command": { "title": "Command structure", "desc": "CAD-style commands with arguments, options and preview state. Undo/redo via a journal of inverse commands." },
-    "plugins": { "title": "Plugin API", "desc": "Add-ins can register commands, add ribbon tabs and define their own entity types. TypeScript-driven contract with runtime validation." },
-    "snap": { "title": "Snapping &amp; constraints", "desc": "Object snap (endpoint, midpoint, intersection) plus parametric constraints — distance, parallel, perpendicular — as a research area." },
-    "data": { "title": "Data model", "desc": "Immutable entity tree with structural sharing. Time travel for sessions and collaborative editing as future goals." },
-    "io": { "title": "DXF / SVG I/O", "desc": "Read and write DXF via a Rust backend. SVG export for presentation and web embedding." }
+  "drafting": {
+    "title": "2D <span class=\"accent\">drafting</span>",
+    "desc": "Complete 2D drafting package with all the commands you'd expect from a professional CAD application:",
+    "geom": { "title": "Basic geometry", "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>" },
+    "modify": { "title": "Modify", "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — works on lines, arcs, ellipses, polylines and splines" },
+    "transform": { "title": "Transformations", "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>" },
+    "hatch": { "title": "Hatch", "desc": "<code>HATCH</code> and <code>HATCHEDIT</code> with pattern, scale and angle editing." },
+    "mass": { "title": "Properties", "desc": "<code>MASSPROP</code> — area, perimeter and centroid of selected entities." },
+    "text": { "title": "Text editing", "desc": "<code>DDEDIT</code> — double-click to edit text. <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code> with font browser." }
+  },
+  "modeling": {
+    "title": "3D <span class=\"accent\">modelling</span>",
+    "desc": "Full 3D modelling capabilities with ACIS solids tessellation:",
+    "prim": { "title": "Primitives", "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — basic solids for parametric modelling." },
+    "extrude": { "title": "Extrude &amp; revolve", "desc": "Profile-based solids: <code>EXTRUDE</code> for linear extrusion and <code>REVOLVE</code> for rotation about an axis." },
+    "loft": { "title": "Loft &amp; sweep", "desc": "<code>LOFT</code> between multiple profiles, <code>SWEEP</code> along any path." },
+    "array": { "title": "3D Array", "desc": "<code>ARRAY3D</code> — rectangular or polar arrays in 3D." },
+    "acis": { "title": "ACIS tessellation", "desc": "Renders <code>3DSOLID</code>, <code>REGION</code> and <code>BODY</code> entities — solids from DWG/DXF are displayed correctly." },
+    "gpu": { "title": "GPU-accelerated", "desc": "wgpu-based rendering. Smooth interaction with large models, even with many solids at once." }
+  },
+  "annotations": {
+    "title": "<span class=\"accent\">Annotations</span> &amp; dimensions",
+    "desc": "Full dimensioning, GD&amp;T, leaders, tables and mlines — all with style managers and correct DIMSTYLE behaviour (DIMASZ, DIMSCALE, DIMEXO, DIMEXE, …)."
+  },
+  "paperspace": {
+    "title": "Paper space &amp; <span class=\"accent\">layouts</span>",
+    "layouts": { "title": "Multi-tab layout", "desc": "Model space + unlimited paper space tabs. Camera position and zoom saved per layout." },
+    "viewports": { "title": "Viewport projection", "desc": "Model content correctly projected into paper-space viewport rectangles. Double-click for inline MSPACE overlay." },
+    "vports": { "title": "Viewport presets", "desc": "<code>VPORTS</code> — single, 2H, 2V, 4-way configurations." },
+    "styles": { "title": "Plot styles", "desc": "<code>PLOTSTYLEPANEL</code> and <code>STYLESMANAGER</code> — CTB/STB plot style table editor." },
+    "print": { "title": "PRINT", "desc": "Send layouts directly to the system printer with correct paper sizes from embedded PlotSettings." },
+    "manager": { "title": "Layout manager", "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — GUI for layout management." }
   },
   "tech": {
     "title": "Technology",
-    "desc": "The same baseline stack as all OpenAEC tools: TypeScript for the UI, Rust for the performance-critical paths, Tauri 2 for cross-platform desktop distribution (Windows, macOS, Linux)."
+    "desc": "Entirely written in Rust — memory-safe, fast, compiles to Windows, macOS and Linux. UI via <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a>, GPU rendering via <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a>. Native DWG/DXF without vendor lock-in."
   },
   "cta": {
-    "github": "GitHub repository",
-    "relatedTool": "Check out Open 2D Studio"
+    "github": "GitHub: HakanSeven12/OpenCADStudio",
+    "releases": "Releases &amp; downloads",
+    "relatedTool": "Also check Open 2D Studio"
   }
 }

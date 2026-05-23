@@ -62,7 +62,7 @@
     "itemListElement": [
       { "@type": "SoftwareApplication", "position": 1, "name": "Open PDF Studio", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux, Android", "url": "https://www.open-aec.com/open-pdf-studio/", "downloadUrl": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "1.47.x", "softwareRequirements": "Cross-platform", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Open-source PDF editor and annotator with custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms, vector-PDF rendering optimized for CAD." },
       { "@type": "SoftwareApplication", "position": 2, "name": "Open 2D Studio", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/open-2d-studio/", "downloadUrl": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.35.0", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Open-source 2D CAD application. Drawing tools, DXF import/export, layers, dimensions. Alternative to AutoCAD LT, LibreCAD." },
-      { "@type": "SoftwareApplication", "name": "Open CAD Studio", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/open-cad-studio/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Experimental 2D CAD framework — foundation for the next generation of OpenAEC CAD tools. Lightweight rendering, command system, plugin architecture." },
+      { "@type": "SoftwareApplication", "name": "Open CAD Studio", "applicationCategory": "DesignApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/open-cad-studio/", "downloadUrl": "https://github.com/HakanSeven12/OpenCADStudio/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.4.0", "license": "https://www.gnu.org/licenses/gpl-3.0.html", "author": { "@type": "Person", "name": "Hakan Seven", "url": "https://github.com/HakanSeven12" }, "description": "Full-featured 2D + 3D CAD application built in Rust with wgpu GPU rendering. Native DWG/DXF read and write (R13–R2018), paper space, ACIS solids, dimensions, layouts, plot to PDF. Community project recognized by the OpenAEC Foundation." },
       { "@type": "SoftwareApplication", "position": 3, "name": "Open Heatloss Studio", "applicationCategory": "EngineeringApplication", "operatingSystem": "Windows, macOS, Linux, Web", "url": "https://www.open-aec.com/open-heatloss-studio/", "downloadUrl": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.1.1-alpha", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Heat loss calculations per NEN 12831 and ISSO 51:2023. Rust calculation engine, IFCX integration." },
       { "@type": "SoftwareApplication", "position": 4, "name": "Open Calc Studio", "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux, Web", "url": "https://www.open-aec.com/open-calc-studio/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.7.8", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Cost estimation for buildings, civil infrastructure and GWW. STABU/RAW support, IFCX integration, MCP server." },
       { "@type": "SoftwareApplication", "position": 5, "name": "Open Speech Studio", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Windows, macOS, Linux", "url": "https://www.open-aec.com/open-speech-studio/", "downloadUrl": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }, "softwareVersion": "0.9.0", "license": "https://www.gnu.org/licenses/lgpl-3.0.html", "description": "Local speech-to-text using Whisper AI. CTRL+Win shortcut for OS-wide dictation. Privacy-first, no cloud." },
@@ -376,6 +376,7 @@
     .tool-tag-alpha { background: #FEF3C7; color: #92400E; }
     .tool-tag-civil { background: #DCFCE7; color: #166534; }
     .tool-tag-gww { background: #CFFAFE; color: #155E75; }
+    .tool-tag-community { background: #E0E7FF; color: #3730A3; }
     .tool-tag-available {
       background: #16A34A; color: white;
       font-weight: 700;
@@ -1150,19 +1151,21 @@
             <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
-        <article class="tool-card" data-repo="Open-CAD-Drafting-Studio" data-categories="A,E,C">
+        <article class="tool-card" data-repo="OpenCADStudio" data-categories="A,E,C">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openCad.title">Open CAD Studio</h3><span class="tool-tag tool-tag-dev" data-i18n="tags.dev">In ontwikkeling</span></div>
-            <p data-i18n="tools.items.openCad.desc">Experimenteel 2D CAD-framework — fundament voor de volgende generatie OpenAEC CAD-tools. Lichtgewicht rendering, command-systeem en plugin-architectuur.</p>
+            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 style="margin-bottom:0;" data-i18n="tools.items.openCad.title">Open CAD Studio</h3><span class="tool-tag tool-tag-community" data-i18n="tags.community">Community</span><span class="tool-tag tool-tag-beta" data-i18n="tags.beta">Beta</span></div>
+            <p data-i18n="tools.items.openCad.desc">Volwaardige <strong>2D + 3D CAD-applicatie</strong> gebouwd in Rust met GPU-versnelde rendering (wgpu/iced). Native <strong>DWG &amp; DXF</strong> lezen en schrijven (R13–R2018), paper space, ACIS solids, dimensies, layouts. Community-project van Hakan Seven, in de geest van het OpenAEC-ecosysteem.</p>
             <div class="tool-stats">
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 2 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">30 jan 2026</span><span class="lang-en">30 Jan 2026</span></span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 484 commits</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.4</span>
+              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 10</span>
+              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">23 mei 2026</span><span class="lang-en">23 May 2026</span></span>
             </div>
           </div>
           <div class="tool-links">
             <a href="/open-cad-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
-            <a href="https://github.com/OpenAEC-Foundation/Open-CAD-Drafting-Studio" target="_blank" rel="noopener" class="tool-link">GitHub &rarr;</a>
+            <a href="https://github.com/HakanSeven12/OpenCADStudio" target="_blank" rel="noopener" class="tool-link">GitHub &rarr;</a>
           </div>
         </article>
         <article class="tool-card" data-repo="open-energy-studio" data-categories="E">
@@ -1752,12 +1755,13 @@
             dev: "In ontwikkeling",
             gww: "GWW / Geotechniek",
             buCivil: "B&amp;U + Civiel",
-            everythingApp: "Everything-app"
+            everythingApp: "Everything-app",
+            community: "Community"
           },
           items: {
             ifcx: { title: "IFCX", desc: "Het universele dataformaat van het OpenAEC-ecosysteem. Alle tools communiceren in IFCX met eigen namespaces voor het volledige gebouwmodel.", link: "Lees meer \u2192" },
             open2d: { title: "Open 2D Studio", desc: "Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.", link: "Bekijk project \u2192" },
-            openCad: { title: "Open CAD Studio", desc: "Experimenteel 2D CAD-framework \u2014 fundament voor de volgende generatie OpenAEC CAD-tools. Lichtgewicht rendering, command-systeem en plugin-architectuur.", link: "Bekijk project \u2192" },
+            openCad: { title: "Open CAD Studio", desc: "Volwaardige <strong>2D + 3D CAD-applicatie</strong> gebouwd in Rust met GPU-versnelde rendering (wgpu/iced). Native <strong>DWG &amp; DXF</strong> lezen en schrijven (R13\u2013R2018), paper space, ACIS solids, dimensies, layouts. Community-project van Hakan Seven, in de geest van het OpenAEC-ecosysteem.", link: "Bekijk project \u2192" },
             openPdf: { title: "Open PDF Studio", desc: "Open tooling rond PDF-gebaseerde documentstromen en technische uitgifte.", link: "Bekijk project \u2192" },
             openEnergy: { title: "Open Energy Studio", desc: "Projectpagina voor open energie-analyse en gebouwprestaties.", link: "Bekijk project \u2192" },
             openPlanner: { title: "Open Planner Studio", desc: "Open plannings- en projectco\u00f6rdinatiepagina voor bouwteams.", link: "Bekijk project \u2192" },
@@ -1939,12 +1943,13 @@
             dev: "In development",
             gww: "Civil / Geotechnical",
             buCivil: "Buildings + Civil",
-            everythingApp: "Everything-app"
+            everythingApp: "Everything-app",
+            community: "Community"
           },
           items: {
             ifcx: { title: "IFCX", desc: "The universal data format of the OpenAEC ecosystem. All tools communicate in IFCX with custom namespaces for the complete building model.", link: "Read more \u2192" },
             open2d: { title: "Open 2D Studio", desc: "Viewer and product page for 2D documents and drawings in an open design workflow.", link: "View project \u2192" },
-            openCad: { title: "Open CAD Studio", desc: "Experimental 2D CAD framework \u2014 foundation for the next generation of OpenAEC CAD tools. Lightweight rendering, command system and plugin architecture.", link: "View project \u2192" },
+            openCad: { title: "Open CAD Studio", desc: "Full-featured <strong>2D + 3D CAD application</strong> built in Rust with GPU-accelerated rendering (wgpu/iced). Native <strong>DWG &amp; DXF</strong> read and write (R13\u2013R2018), paper space, ACIS solids, dimensions, layouts. Community project by Hakan Seven, aligned with the OpenAEC ecosystem.", link: "View project \u2192" },
             openPdf: { title: "Open PDF Studio", desc: "Open tooling around PDF-based document flows and technical publishing.", link: "View project \u2192" },
             openEnergy: { title: "Open Energy Studio", desc: "Project page for open energy analysis and building performance.", link: "View project \u2192" },
             openPlanner: { title: "Open Planner Studio", desc: "Open planning and project coordination tool for buildings, infrastructure and civil works.", link: "View project \u2192" },
@@ -2124,12 +2129,13 @@
             dev: "En d\u00e9veloppement",
             gww: "Civil / G\u00e9otechnique",
             buCivil: "B\u00e2timent + Civil",
-            everythingApp: "Everything-app"
+            everythingApp: "Everything-app",
+            community: "Communaut\u00e9"
           },
           items: {
             ifcx: { title: "IFCX", desc: "Le format de donn\u00e9es universel de l'\u00e9cosyst\u00e8me OpenAEC. Tous les outils communiquent en IFCX avec leurs propres espaces de noms pour le mod\u00e8le de b\u00e2timent complet.", link: "En savoir plus \u2192" },
             open2d: { title: "Open 2D Studio", desc: "Visualiseur et page produit pour documents et dessins 2D dans un workflow de conception ouvert.", link: "Voir le projet \u2192" },
-            openCad: { title: "Open CAD Studio", desc: "Framework exp\u00e9rimental de CAO 2D \u2014 fondation pour la prochaine g\u00e9n\u00e9ration d'outils CAO OpenAEC. Rendu l\u00e9ger, syst\u00e8me de commandes et architecture \u00e0 plugins.", link: "Voir le projet \u2192" },
+            openCad: { title: "Open CAD Studio", desc: "Application CAO 2D &amp; 3D compl\u00e8te d\u00e9velopp\u00e9e en Rust avec rendu acc\u00e9l\u00e9r\u00e9 par GPU (wgpu/iced). Lecture et \u00e9criture natives <strong>DWG &amp; DXF</strong> (R13\u2013R2018), paper space, solides ACIS, cotations, mises en page. Projet communautaire de Hakan Seven, dans l'esprit de l'\u00e9cosyst\u00e8me OpenAEC.", link: "Voir le projet \u2192" },
             openPdf: { title: "Open PDF Studio", desc: "Outils ouverts pour flux documentaires PDF et publication technique.", link: "Voir le projet \u2192" },
             openEnergy: { title: "Open Energy Studio", desc: "Page projet pour l'analyse \u00e9nerg\u00e9tique ouverte et la performance des b\u00e2timents.", link: "Voir le projet \u2192" },
             openPlanner: { title: "Open Planner Studio", desc: "Outil ouvert de planification et coordination de projet pour le b\u00e2timent, l'infrastructure et le g\u00e9nie civil.", link: "Voir le projet \u2192" },
