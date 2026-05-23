@@ -6,6 +6,9 @@
     "community": "Community project",
     "beta": "Beta · v0.4.0"
   },
+  "screenshot": {
+    "caption": "Open CAD Studio in action — DWG drawing of a road design with multiple XREFs, ribbon UI and model tabs"
+  },
   "author": {
     "desc": "Independent open-source developer. Building Open CAD Studio since March 2026.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
   },

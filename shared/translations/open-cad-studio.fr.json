@@ -6,6 +6,9 @@
     "community": "Projet communautaire",
     "beta": "Beta · v0.4.0"
   },
+  "screenshot": {
+    "caption": "Open CAD Studio en action — dessin DWG d'un projet routier avec plusieurs XREFs, interface ruban et onglets de modèle"
+  },
   "author": {
     "desc": "Développeur open source indépendant. Développe Open CAD Studio depuis mars 2026.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
   },
