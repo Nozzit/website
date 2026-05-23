@@ -1,6 +1,8 @@
 {
   "header": {
     "label": "Écosystème OpenAEC",
-    "desc": "L'Everything-app pour votre entreprise — e-mail, ERP, factures, feuilles de temps, projets, communication et plus encore dans un seul outil. <strong style=\"color: white;\">Multi-tenant : un compte, plusieurs instances ERPNext.</strong>"
+    "desc": "L'Everything-app pour votre entreprise — e-mail, ERP, factures, feuilles de temps, projets, communication et plus encore dans un seul outil. <strong style=\"color: white;\">Multi-tenant : un compte, plusieurs instances ERPNext.</strong>",
+    "badge": "Beta",
+    "category": "Everything-app"
   }
 }

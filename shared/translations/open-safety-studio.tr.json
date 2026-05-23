@@ -1,7 +1,8 @@
 {
   "header": {
     "label": "OpenAEC ekosistemi",
-    "desc": "İnşaat projelerinde güvenlik analizi ve risk değerlendirmesi için açık kaynak araç."
+    "desc": "İnşaat projelerinde güvenlik analizi ve risk değerlendirmesi için açık kaynak araç.",
+    "badge": "Beta"
   },
   "why": {
     "title": "Neden Open Safety <span class=\"accent\">Studio</span>?",

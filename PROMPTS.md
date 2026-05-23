@@ -1698,3 +1698,13 @@ go
 go
 go
 
+### 2026-05-23 23:23
+Er is nog een image voor op de website: C:\Users\rickd\Documents\GitHub\website\open-cad-studio
+
+### 2026-05-23 23:25
+Schrijf de post in het engels
+Verwijs naar https://www.open-aec.com/open-cad-studio/ in de post
+
+### 2026-05-23 23:27
+Vertaal ook alle labels aan de producten
+

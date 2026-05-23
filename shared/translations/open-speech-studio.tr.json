@@ -1,0 +1,171 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Open Speech <span class=\"accent\">Studio</span>",
+    "desc": "Whisper AI ile ücretsiz yerel ses tanıma. <strong style=\"color:white;\">CTRL+Win</strong>'e basın ve herhangi bir uygulamaya dikte edin — sohbet, e-posta, terminal, IDE. Bulut yok, abonelik yok, sınır yok. v0.9.0 stable, 1 yükleyici, 30 saniyede hazır.",
+    "badge": "v0.9.0 STABLE",
+    "meta": "v0.9.0 &middot; 77 commit &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
+    "cta": {
+      "download": "Yükleyiciyi indir (.exe)",
+      "github": "GitHub'da görüntüle"
+    }
+  },
+  "usecases": {
+    "heading": "<span class=\"accent\">AEC profesyonelleri</span> için kullanım senaryoları",
+    "intro": "İster şantiyede inceleme yapın, ister proje toplantısında not alın, ister görevler arasında bir e-posta dikte edin — Open Speech Studio her yerde çalışır, çevrimdışı bile.",
+    "inspection": {
+      "tag": "ŞANTİYE",
+      "title": "Şantiyede incelemeler",
+      "desc": "Fotoğraf çekerken bulgularınızı doğrudan Open Field Studio'ya dikte edin. Eldiven çıkarmak yok, küçük ekranda yazmak yok. Sadece konuşun — tamam."
+    },
+    "meetings": {
+      "tag": "TOPLANTILAR",
+      "title": "Toplantı tutanakları",
+      "desc": "Yerinde proje toplantılarının gerçek zamanlı transkripsiyonu. Tamamen yerel işlenir — müşteri isimleri, fiyatlar veya gizli proje verileri için gizlilik kaygısı yok."
+    },
+    "email": {
+      "tag": "İLETİŞİM",
+      "title": "Şantiyede hızlı e-postalar",
+      "desc": "Görevler arasında Outlook veya Gmail'e dikte edin. Elleriniz kirliyken, güvenlik eldivenleri taktığınızda veya merdiven tutarken eller serbest."
+    },
+    "ai": {
+      "tag": "AI WORKFLOW",
+      "title": "AI prompt'ları yazmak",
+      "desc": "Claude veya ChatGPT için bir prompt'u yazmaktan çok daha hızlı dikte edin. Konuşmak ~3x daha hızlıdır ve genellikle daha doğal ifade edersiniz — uzun, detaylı prompt'lar için idealdir."
+    },
+    "code": {
+      "tag": "GELİŞTİRİCİLER",
+      "title": "Kod yorumları ve commit'ler",
+      "desc": "Kod açıklamalarını, docstring'leri ve commit mesajlarını doğrudan IDE veya terminalinize dikte edin. VS Code, Cursor, Neovim'de sorunsuz çalışır — metin girebileceğiniz her yerde."
+    },
+    "accessibility": {
+      "tag": "ERİŞİLEBİLİRLİK",
+      "title": "Erişilebilirlik",
+      "desc": "RSI hastaları, motor bozukluğu olan kişiler veya geçici yaralanmalar için. Bilgisayarınızı tamamen klavyesiz kullanın — KVKK güvenli ve aboneliksiz."
+    }
+  },
+  "why": {
+    "heading": "Neden yerel?",
+    "intro": "Bulut ses tanıma sesinizi üçüncü taraf sunuculara gönderir. Open Speech Studio her şeyi kendi PC'nizde yapar — daha hızlı, daha güvenli ve aylık ücret olmadan.",
+    "privacy": {
+      "title": "Gizlilik",
+      "desc": "Sesiniz bilgisayarınızdan asla ayrılmaz. Otomatik olarak KVKK güvenli — harici sağlayıcılarla DPA gerekmiyor, veri ihlali riski yok."
+    },
+    "cost": {
+      "title": "Abonelik yok",
+      "desc": "Otter.ai aylık ~20 € ücret alır. Dragon NaturallySpeaking ~500 € bir kez. Open Speech Studio sonsuza dek ücretsiz — açık kaynak LGPL-3.0.",
+      "callout": "Sonsuza dek 0 €"
+    },
+    "limits": {
+      "title": "Hız sınırı yok",
+      "desc": "İsterseniz günde 10 saat dikte edin. API kotaları yok, 'Fair Use Policy' yok, sürpriz faturalar yok. Tek sınırınız donanımınız."
+    }
+  },
+  "compare": {
+    "feature": "Özellik",
+    "us": "Open Speech Studio",
+    "dragon": "Dragon NaturallySpeaking",
+    "otter": "Otter.ai",
+    "price": "Fiyat",
+    "price.us": "0 € (açık kaynak)",
+    "price.dragon": "~500 € bir kez",
+    "price.otter": "~20 €/ay",
+    "local": "%100 yerel",
+    "gdpr": "DPA olmadan KVKK güvenli",
+    "langs": "Diller",
+    "langs.us": "99 dil (Whisper)",
+    "langs.dragon": "~6 dil",
+    "langs.otter": "~10 dil",
+    "gpu": "GPU hızlandırma (CUDA)",
+    "opensource": "Açık kaynak",
+    "opensource.us": "Evet (LGPL-3.0)",
+    "yes": "Evet",
+    "yes2": "Evet",
+    "yes3": "Evet",
+    "yes4": "Evet",
+    "yes5": "Evet",
+    "no": "Hayır (bulut)",
+    "no2": "Hayır",
+    "no3": "Hayır",
+    "no4": "Hayır",
+    "no5": "Hayır",
+    "na": "Yok (bulut)"
+  },
+  "features": {
+    "heading": "Özellikler — <span class=\"accent\">bu</span> ne yapabilir?",
+    "intro": "Open Speech Studio bir dikte aracından daha fazlasıdır. Ses dosyası transkripsiyonu, toplantı kayıtları, birden fazla Whisper modeli ve standart altyazı formatlarına dışa aktarma içeren eksiksiz bir konuşma-metin paketidir.",
+    "dictate": {
+      "title": "Her yerde dikte edin",
+      "desc": "Sistem genelinde bir overlay aracılığıyla doğrudan herhangi bir uygulamaya metin dikte edin. Outlook, Word, Chrome, VS Code, Slack, Teams'te çalışır — OS'nizde tam anlamıyla her yerde."
+    },
+    "transcribe": {
+      "title": "Ses dosyası transkripsiyonu",
+      "desc": "Paralel işleme ile ses dosyalarını (.mp3, .wav, .m4a, .ogg) transkribe edin. Aynı anda birden fazla dosya, hızlı ve doğru."
+    },
+    "meetings": {
+      "title": "Gerçek zamanlı toplantı transkripsiyonu",
+      "desc": "Proje toplantılarını kaydedin ve transkripsiyonun gerçek zamanlı görünmesini izleyin. Şantiyede çevrimdışı bile otomatik tutanak."
+    },
+    "gpu": {
+      "title": "CUDA GPU hızlandırma",
+      "desc": "Daha hızlı sonuçlar için CUDA GPU hızlandırma. Modern bir GPU'da Whisper Large neredeyse gerçek zamanlı çalışır — donanımınızın optimal kullanımı."
+    },
+    "shortcuts": {
+      "title": "Klavye kısayolları",
+      "desc": "Overlay için CTRL+Win, alternatif olarak CTRL+SHIFT+Space. Fare tıklaması gerekmez, menü aramak yok — dikte &lt;100ms'de başlar."
+    },
+    "models": {
+      "title": "Whisper AI modelleri",
+      "desc": "5 model: tiny, base, small, medium, large. Hız (tiny) veya doğruluk (large) arasında seçim yapın. Modele bağlı olarak 1-10 GB bellek kullanımı."
+    },
+    "languages": {
+      "title": "99 dil",
+      "desc": "Whisper 99 dili destekler: Hollandaca, İngilizce, Almanca, Fransızca, İspanyolca, Lehçe, Arapça, Türkçe, Mandarin ve daha fazlası. Otomatik dil algılama."
+    },
+    "overlay": {
+      "title": "Spotify tarzı overlay",
+      "desc": "Canlı dalga formu görselleştirmesi olan zarif, minimalist overlay UI. Yoldan çekilir, eklendikten sonra otomatik kaybolur."
+    },
+    "history": {
+      "title": "Geçmiş",
+      "desc": "Transkripsiyonların tam geçmişi — aranabilir, yeniden kullanılabilir. Her şey yerel olarak saklanır, kontrol sizde."
+    },
+    "export": {
+      "title": "TXT, SRT, VTT dışa aktarma",
+      "desc": "Transkripsiyonları düz metin (.txt) veya zaman damgalarıyla video içeriği için altyazı (.srt, .vtt) olarak dışa aktarın."
+    },
+    "clipboard": {
+      "title": "Pano entegrasyonu",
+      "desc": "Otomatik pano entegrasyonu — dikte edin ve doğrudan yapıştırın veya metnin imleç konumuna otomatik olarak eklenmesine izin verin."
+    },
+    "local": {
+      "title": "%100 yerel",
+      "desc": "Her şey kendi bilgisayarınızda yerel olarak çalışır. Verileriniz PC'nizden asla ayrılmaz. Bulut yok, abonelik yok, sınır yok. KVKK güvenli, kutudan çıkar çıkmaz."
+    },
+    "tech": {
+      "title": "Whisper AI + Tauri + Rust",
+      "desc": "Ses tanıma için OpenAI Whisper AI, masaüstü uygulaması için Tauri ve backend için Rust ile inşa edilmiştir. Açık kaynak."
+    }
+  },
+  "shortcuts": {
+    "title": "Klavye kısayolları",
+    "desc": "İşletim sisteminizde her yerde konuşma tanımayı başlatın:",
+    "or": "veya",
+    "note": "Ayarlarda yapılandırılabilir — başka yazılımlarla çakışırsa kendi kısayolunuzu seçin."
+  },
+  "tech": {
+    "heading": "Teknoloji <span class=\"accent\">stack'i</span>",
+    "desc": "Open Speech Studio modern, performanslı bir stack üzerine inşa edilmiştir. <strong>OpenAI Whisper</strong> state-of-the-art ses tanıma için. <strong>Rust</strong> hafif, hızlı bir backend için (Python runtime gerekmez). <strong>Tauri 2</strong> masaüstü uygulaması için — Electron'dan çok daha hafif (~10 MB, 200 MB yerine). UI için <strong>TypeScript + Svelte</strong>. LGPL-3.0 altında tamamen açık kaynak."
+  },
+  "finalcta": {
+    "heading": "Şimdi indirin <span class=\"accent\">— 30 saniye kurulum</span>",
+    "desc": "1 yükleyici dosyası (.exe), kayıt yok, hesap yok, kredi kartı yok. &lt;1 dakikada dikteye hazır. Windows 10 ve Windows 11'de çalışır.",
+    "download": "Yükleyiciyi indir (.exe)",
+    "github": "GitHub'da kaynağı görüntüle",
+    "meta": "v0.9.0 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40 MB indirme"
+  },
+  "cta": {
+    "download": "Yükleyiciyi indir",
+    "github": "GitHub"
+  }
+}

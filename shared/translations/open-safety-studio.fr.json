@@ -1,7 +1,8 @@
 {
   "header": {
     "label": "Écosystème OpenAEC",
-    "desc": "Outil open source pour l'analyse de la sécurité et l'évaluation des risques sur les chantiers de construction."
+    "desc": "Outil open source pour l'analyse de la sécurité et l'évaluation des risques sur les chantiers de construction.",
+    "badge": "Beta"
   },
   "why": {
     "title": "Pourquoi Open Safety <span class=\"accent\">Studio</span> ?",

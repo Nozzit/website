@@ -1,6 +1,8 @@
 {
   "header": {
     "label": "OpenAEC ekosistemi",
-    "desc": "İşletmeniz için Everything-app — e-posta, ERP, faturalar, mesai, projeler, iletişim ve daha fazlası tek bir araçta. <strong style=\"color: white;\">Multi-tenant: bir hesap, birden fazla ERPNext örneği.</strong>"
+    "desc": "İşletmeniz için Everything-app — e-posta, ERP, faturalar, mesai, projeler, iletişim ve daha fazlası tek bir araçta. <strong style=\"color: white;\">Multi-tenant: bir hesap, birden fazla ERPNext örneği.</strong>",
+    "badge": "Beta",
+    "category": "Everything-app"
   }
 }
