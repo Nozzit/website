@@ -1,25 +1,6 @@
 {
   "header": {
     "label": "OpenAEC Ecosystem",
-    "desc": "Open source communication and collaboration platform for construction projects. Chat, file sharing and project coordination — all in one app."
-  },
-  "why": {
-    "title": "Why <span class=\"accent\">Y-app</span>?",
-    "desc": "Construction projects require constant communication between dozens of parties. Email, WhatsApp and separate tools lead to information loss. Y-app brings all communication together in one place, linked to the project and the BIM model via IFCX."
-  },
-  "features": {
-    "title": "Features",
-    "chat_title": "Project chat",
-    "chat_desc": "Real-time chat per project, per discipline or per topic. Messages are searchable and linked to the project.",
-    "files_title": "File sharing",
-    "files_desc": "Upload and share documents, drawings and IFC models. Automatic version control and connection with OpenAEC Docs.",
-    "notif_title": "Notifications",
-    "notif_desc": "Smart notifications per channel. Choose what you want to follow and how you want to be kept informed.",
-    "ifcx_title": "IFCX integration",
-    "ifcx_desc": "Link messages and files to IFCX elements. Communicate directly about specific parts of the model.",
-    "multi_title": "Multi-platform",
-    "multi_desc": "Available as web app, desktop app (Windows, macOS, Linux) and mobile app via Tauri.",
-    "oss_title": "Open source",
-    "oss_desc": "Full source code available. Host it on your own server for maximum control over data and privacy."
+    "desc": "The Everything-app for your business — email, ERP, invoices, time tracking, projects, communication and more in a single tool. <strong style=\"color: white;\">Multi-tenant: one account, multiple ERPNext instances.</strong>"
   }
 }

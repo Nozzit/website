@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenBooks — OpenAEC Foundation</title>
   <meta name="description" content="Digitized historical construction and architecture books, freely accessible for engineers, architects, and builders. Including works by Wattjes, Gugel, Potma, and more.">
+  <meta name="i18n-page" content="open-books">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
 </head>
@@ -13,57 +14,58 @@
   <script src="/shared/nav.js"></script>
 
   <section class="hero">
-    <span class="section-label">Historical construction literature</span>
+    <span class="section-label" data-i18n="header.label">Historische bouwliteratuur</span>
     <h1>Open<span class="accent">Books</span></h1>
-    <p class="tagline">Digitized historical construction and architecture books, freely accessible for engineers, architects, and builders.</p>
+    <p class="tagline" data-i18n="header.desc">Gedigitaliseerde historische bouw- en architectuurboeken, vrij toegankelijk voor ingenieurs, architecten en bouwers.</p>
     <div class="btn-group">
-      <a href="https://openbooks.open-aec.com" class="btn btn-primary btn-lg">Browse the collection</a>
-      <a href="https://github.com/OpenAEC-Foundation/open-books" class="btn btn-ghost btn-lg">View source</a>
+      <a href="https://openbooks.open-aec.com" class="btn btn-primary btn-lg" data-i18n="header.browseBtn">Doorblader de collectie</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-books" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">Broncode bekijken</a>
     </div>
   </section>
 
   <section class="section section-alt"><div class="container">
-    <h2>Collection</h2>
+    <h2 data-i18n="collection.title">Collectie</h2>
     <div class="features" style="margin-top:var(--sp-8)">
       <div class="feature">
-        <h4>Prof. J.G. Wattjes (10 volumes)</h4>
-        <p>Complete series on construction: walls, chimneys, foundations, windows/doors, floor systems, vaults, stairs, roof constructions, and more.</p>
+        <h4 data-i18n="collection.wattjes.title">Prof. J.G. Wattjes (10 delen)</h4>
+        <p data-i18n="collection.wattjes.desc">Complete reeks over bouwconstructies: muren, schoorstenen, funderingen, ramen/deuren, vloeren, gewelven, trappen, dakconstructies en meer.</p>
       </div>
       <div class="feature">
-        <h4>Prof. E.H. Gugel</h4>
-        <p>Architectonische Vormenleer (1880) — architectural design theory and form language.</p>
+        <h4 data-i18n="collection.gugel.title">Prof. E.H. Gugel</h4>
+        <p data-i18n="collection.gugel.desc">Architectonische Vormenleer (1880) — architectonische vormgevingsleer en vormtaal.</p>
       </div>
       <div class="feature">
-        <h4>Ir. A.P. Potma &amp; Ir. J.E. de Vries</h4>
-        <p>Staalconstructies — theory, calculation, and execution of steel structures.</p>
+        <h4 data-i18n="collection.potma.title">Ir. A.P. Potma &amp; Ir. J.E. de Vries</h4>
+        <p data-i18n="collection.potma.desc">Staalconstructies — theorie, berekening en uitvoering van stalen draagstructuren.</p>
       </div>
       <div class="feature">
-        <h4>Prof. D. Vandepitte (3 volumes)</h4>
-        <p>Berekening van Constructies — structural calculation theory across three comprehensive volumes.</p>
+        <h4 data-i18n="collection.vandepitte.title">Prof. D. Vandepitte (3 delen)</h4>
+        <p data-i18n="collection.vandepitte.desc">Berekening van Constructies — constructieve rekentheorie in drie uitgebreide delen.</p>
       </div>
       <div class="feature">
-        <h4>L. Zwiers</h4>
-        <p>Houtconstructies Handboek — handbook for timber construction design.</p>
+        <h4 data-i18n="collection.zwiers.title">L. Zwiers</h4>
+        <p data-i18n="collection.zwiers.desc">Houtconstructies Handboek — handboek voor houten constructies.</p>
       </div>
       <div class="feature">
-        <h4>Symon Bosboom</h4>
-        <p>Cort onderwys van de vyf colommen — historical treatise on the five classical orders by city stonemason of Dordrecht.</p>
+        <h4 data-i18n="collection.bosboom.title">Symon Bosboom</h4>
+        <p data-i18n="collection.bosboom.desc">Cort onderwys van de vyf colommen — historisch traktaat over de vijf klassieke ordes door stadssteenhouwer van Dordrecht.</p>
       </div>
       <div class="feature">
-        <h4>Bernoullis Vademecum</h4>
-        <p>Engineering reference handbook.</p>
+        <h4 data-i18n="collection.bernoulli.title">Bernoullis Vademecum</h4>
+        <p data-i18n="collection.bernoulli.desc">Naslagwerk voor de civiel ingenieur.</p>
       </div>
       <div class="feature">
-        <h4>Building codes</h4>
-        <p>Historical Dutch building regulations: G.B.V. Gewapend Beton Voorschriften (1950) and VB Voorschriften Beton (1974).</p>
+        <h4 data-i18n="collection.codes.title">Bouwvoorschriften</h4>
+        <p data-i18n="collection.codes.desc">Historische Nederlandse bouwvoorschriften: G.B.V. Gewapend Beton Voorschriften (1950) en VB Voorschriften Beton (1974).</p>
       </div>
     </div>
   </div></section>
 
   <footer class="footer"><div class="footer-container">
     <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
-    <span>Build free. Build together.</span>
+    <span data-i18n="footer.slogan">Build free. Build together.</span>
     <a href="https://github.com/OpenAEC-Foundation">GitHub</a>
   </div></footer>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

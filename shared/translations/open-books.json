@@ -1,0 +1,20 @@
+{
+  "header": {
+    "label": "Historical construction literature",
+    "desc": "Digitized historical construction and architecture books, freely accessible for engineers, architects and builders.",
+    "browseBtn": "Browse the collection",
+    "sourceBtn": "View source"
+  },
+  "collection": {
+    "title": "Collection",
+    "wattjes": { "title": "Prof. J.G. Wattjes (10 volumes)", "desc": "Complete series on construction: walls, chimneys, foundations, windows/doors, floor systems, vaults, stairs, roof constructions, and more." },
+    "gugel": { "title": "Prof. E.H. Gugel", "desc": "Architectonische Vormenleer (1880) — architectural design theory and form language." },
+    "potma": { "title": "Ir. A.P. Potma &amp; Ir. J.E. de Vries", "desc": "Staalconstructies — theory, calculation, and execution of steel structures." },
+    "vandepitte": { "title": "Prof. D. Vandepitte (3 volumes)", "desc": "Berekening van Constructies — structural calculation theory across three comprehensive volumes." },
+    "zwiers": { "title": "L. Zwiers", "desc": "Houtconstructies Handboek — handbook for timber construction design." },
+    "bosboom": { "title": "Symon Bosboom", "desc": "Cort onderwys van de vyf colommen — historical treatise on the five classical orders by city stonemason of Dordrecht." },
+    "bernoulli": { "title": "Bernoullis Vademecum", "desc": "Engineering reference handbook." },
+    "codes": { "title": "Building codes", "desc": "Historical Dutch building regulations: G.B.V. Gewapend Beton Voorschriften (1950) and VB Voorschriften Beton (1974)." }
+  },
+  "footer": { "slogan": "Build free. Build together." }
+}

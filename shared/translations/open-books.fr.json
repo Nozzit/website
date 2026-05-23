@@ -1,0 +1,20 @@
+{
+  "header": {
+    "label": "Littérature historique de la construction",
+    "desc": "Livres historiques numérisés de construction et d'architecture, librement accessibles aux ingénieurs, architectes et constructeurs.",
+    "browseBtn": "Parcourir la collection",
+    "sourceBtn": "Voir le code source"
+  },
+  "collection": {
+    "title": "Collection",
+    "wattjes": { "title": "Prof. J.G. Wattjes (10 volumes)", "desc": "Série complète sur les constructions : murs, cheminées, fondations, fenêtres/portes, planchers, voûtes, escaliers, charpentes et plus encore." },
+    "gugel": { "title": "Prof. E.H. Gugel", "desc": "Architectonische Vormenleer (1880) — théorie de la conception architecturale et langage des formes." },
+    "potma": { "title": "Ir. A.P. Potma &amp; Ir. J.E. de Vries", "desc": "Staalconstructies — théorie, calcul et exécution des structures en acier." },
+    "vandepitte": { "title": "Prof. D. Vandepitte (3 volumes)", "desc": "Berekening van Constructies — théorie du calcul des structures en trois volumes complets." },
+    "zwiers": { "title": "L. Zwiers", "desc": "Houtconstructies Handboek — manuel de conception des structures en bois." },
+    "bosboom": { "title": "Symon Bosboom", "desc": "Cort onderwys van de vyf colommen — traité historique sur les cinq ordres classiques par le tailleur de pierre de la ville de Dordrecht." },
+    "bernoulli": { "title": "Bernoullis Vademecum", "desc": "Manuel de référence pour l'ingénieur." },
+    "codes": { "title": "Codes de construction", "desc": "Réglementations néerlandaises historiques de la construction : G.B.V. Gewapend Beton Voorschriften (1950) et VB Voorschriften Beton (1974)." }
+  },
+  "footer": { "slogan": "Construisez librement. Construisons ensemble." }
+}

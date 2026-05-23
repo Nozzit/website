@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Concept statuten — OpenAEC Foundation</title>
   <meta name="description" content="Concept oprichtingsakte en statuten van de Stichting OpenAEC Foundation.">
+  <meta name="i18n-page" content="statuten">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
   <style>
@@ -41,15 +42,16 @@
 <script src="/shared/nav.js"></script>
 
   <header class="page-header">
-    <p class="section-label">OpenAEC Foundation</p>
-    <h1>Concept <span class="accent">statuten</span></h1>
-    <p>Oprichtingsakte van de Stichting OpenAEC Foundation — ter beoordeling door de notaris.</p>
-    <span class="concept-badge">Concept — 21 maart 2026</span>
+    <p class="section-label" data-i18n="header.label">OpenAEC Foundation</p>
+    <h1 data-i18n="header.title">Concept <span class="accent">statuten</span></h1>
+    <p data-i18n="header.desc">Oprichtingsakte van de Stichting OpenAEC Foundation — ter beoordeling door de notaris.</p>
+    <span class="concept-badge" data-i18n="header.badge">Concept — 21 maart 2026</span>
+    <p style="color: var(--scaffold-gray); font-size: 0.85rem; margin-top: var(--sp-4); max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="header.langNote"></p>
   </header>
 
   <section class="section" style="background: var(--blueprint-white);">
     <div class="doc-content" id="docContent">
-      <p class="doc-meta">Dit document wordt automatisch geladen uit het bronbestand.</p>
+      <p class="doc-meta" data-i18n="doc.loading">Dit document wordt automatisch geladen uit het bronbestand.</p>
       <noscript><p>JavaScript is vereist om dit document te laden. <a href="oprichtingsakte.md">Download het markdown bestand</a>.</p></noscript>
     </div>
   </section>
@@ -82,5 +84,6 @@
         document.getElementById('docContent').innerHTML = '<p>Het document kon niet geladen worden. <a href="oprichtingsakte.md">Download het markdown bestand</a>.</p>';
       });
   </script>
+  <script src="/shared/i18n.js"></script>
 </body>
 </html>

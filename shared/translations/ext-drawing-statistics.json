@@ -1,0 +1,17 @@
+{
+  "header": {
+    "label": "Extension for Open 2D Studio",
+    "title": "Drawing <span class=\"accent\">Statistics</span>",
+    "desc": "Extension that displays shape counts and drawing statistics. Adds an Add-Ins ribbon tab with a Shape Count button and a terminal command.",
+    "downloadBtn": "Download v1.0.1 (1.4 KB)",
+    "sourceBtn": "View source"
+  },
+  "features": {
+    "title": "Features",
+    "ribbon": { "title": "Add-Ins ribbon tab", "desc": "Adds a Shape Count button to the Add-Ins ribbon tab in Open 2D Studio." },
+    "terminal": { "title": "Terminal command", "desc": "Registers a <code>stats show</code> terminal command to display statistics from the command line." },
+    "count": { "title": "Entity counting", "desc": "Counts all entities by type in the current drawing." },
+    "requires": "Requires <a href=\"/open-2d-studio\">Open 2D Studio</a> v0.15.0 or later."
+  },
+  "footer": { "slogan": "Build free. Build together." }
+}

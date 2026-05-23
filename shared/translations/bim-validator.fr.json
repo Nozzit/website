@@ -1,0 +1,6 @@
+{
+  "header": {
+    "label": "Écosystème OpenAEC",
+    "desc": "Outil open source de validation IFC. Validez vos modèles contre les spécifications IDS, les standards néerlandais et les exigences projet — dans le navigateur, en CLI ou via API."
+  }
+}
