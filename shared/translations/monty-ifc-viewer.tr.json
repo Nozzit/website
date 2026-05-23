@@ -1,0 +1,53 @@
+{
+  "header": {
+    "label": "BIM / IFC görüntüleyici",
+    "title": "Monty <span class=\"accent\">IFC</span> Viewer",
+    "desc": "İnşaat sırası görselleştirmesi ile web tabanlı IFC görüntüleyici. IFC dosyalarını yükleyin, inşaat sırasını adım adım canlandırın ve eleman özelliklerini inceleyin.",
+    "downloadBtn": "v1.0.1 indir",
+    "demoBtn": "Canlı demo"
+  },
+  "download": {
+    "title": "v1.0.1 indir"
+  },
+  "features": {
+    "heading": "Özellikler",
+    "loading": {
+      "title": "IFC dosya yükleme",
+      "desc": "IFC dosyalarını görüntüleyiciye sürükleyip bırakın veya dosya seçiciyi kullanın. web-ifc kütüphanesi ile ayrıştırılır."
+    },
+    "visualization": {
+      "title": "3D görselleştirme",
+      "desc": "Three.js ile BIM modellerinin etkileşimli 3D render'ı. Modelin etrafında yakınlaştırın, kaydırın ve döndürün."
+    },
+    "sequence": {
+      "title": "İnşaat sırası animasyonu",
+      "desc": "Oynat, duraklat, önceki ve sonraki kontrolleri ile inşaat sırasını adım adım görselleştirin. Sırayı hangi IFC parametresinin yönlendireceğini seçin."
+    },
+    "properties": {
+      "title": "Eleman özellikleri",
+      "desc": "Seçmek ve vurgulamak için herhangi bir elemana tıklayın. Seçilen elemanın tüm IFC özelliklerini görüntüleyin."
+    }
+  },
+  "tech": {
+    "heading": "Teknoloji stack'i",
+    "threejs": {
+      "title": "Three.js",
+      "desc": "Etkileşimli model görselleştirme için 3D render motoru."
+    },
+    "webifc": {
+      "title": "web-ifc",
+      "desc": "Industry Foundation Classes dosyalarını okumak için IFCjs tarafından sunulan IFC ayrıştırma kütüphanesi."
+    },
+    "vanilla": {
+      "title": "Vanilla JavaScript",
+      "desc": "Framework bağımlılığı yok. Hafif ve hızlı."
+    },
+    "author": "Piet Mol tarafından oluşturuldu"
+  },
+  "cta": {
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

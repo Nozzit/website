@@ -1,0 +1,46 @@
+{
+  "header": {
+    "label": "Nokta bulutu görüntüleyici",
+    "title": "Open <span class=\"accent\">Pointcloud</span> Studio",
+    "desc": "Tauri, React ve Three.js ile geliştirilmiş çapraz platform nokta bulutu görüntüleyici. Octree tabanlı LOD render ile LAS/LAZ dosyalarını içe aktarın.",
+    "downloadBtn": "v0.3.0 indir",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "download": {
+    "title": "v0.3.0 indir"
+  },
+  "features": {
+    "heading": "Özellikler",
+    "laslaz": {
+      "title": "LAS/LAZ içe aktarma",
+      "desc": "Lazer tarayıcılardan ve fotogrametriden endüstri standardı LAS ve sıkıştırılmış LAZ nokta bulutu dosyalarını içe aktarın."
+    },
+    "colors": {
+      "title": "Renk modları",
+      "desc": "Nokta bulutlarını RGB, yükseklik, sınıflandırma veya yoğunluğa göre renklendirerek görüntüleyin."
+    },
+    "classification": {
+      "title": "Sınıflandırma filtresi",
+      "desc": "Noktaları ASPRS sınıflandırma kodlarına göre filtreleyin. Zeminin, binaların, bitki örtüsünün ve diğer sınıfların görünürlüğünü değiştirin."
+    },
+    "edl": {
+      "title": "Eye-Dome Lighting",
+      "desc": "Nokta bulutu yüzeylerinin derinlik algısı ve görsel netliği için EDL gölgelendirme."
+    },
+    "octree": {
+      "title": "Octree tabanlı LOD",
+      "desc": "Büyük veri kümelerinin akıcı navigasyonu için ayarlanabilir nokta boyutu ve nokta bütçesi ile detay düzeyi render."
+    },
+    "themes": {
+      "title": "Temalar",
+      "desc": "Koyu, Açık, Mavi ve Yüksek Kontrast temaları."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

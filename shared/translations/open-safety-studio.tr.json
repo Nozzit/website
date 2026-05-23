@@ -1,0 +1,29 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "desc": "İnşaat projelerinde güvenlik analizi ve risk değerlendirmesi için açık kaynak araç."
+  },
+  "why": {
+    "title": "Neden Open Safety <span class=\"accent\">Studio</span>?",
+    "desc": "Şantiyede güvenlik bir lüks değil, bir zorunluluktur. Open Safety Studio risk envanteri, İSG planları ve güvenlik kontrolleri oluşturmaya yardımcı olur — riskler mekansal olarak görünür hale gelsin diye BIM modeline bağlanır."
+  },
+  "features": {
+    "title": "Özellikler",
+    "risk_title": "Risk envanteri",
+    "risk_desc": "İş sağlığı ve güvenliği mevzuatına uygun olarak inşaat aşamasına, konuma ve iş türüne göre sistematik güvenlik riski envanteri.",
+    "vg_title": "İSG planı oluşturma",
+    "vg_desc": "Risk envanteri ve proje verilerine dayanarak otomatik olarak Sağlık ve Güvenlik planları oluşturun.",
+    "checks_title": "Güvenlik denetimleri",
+    "checks_desc": "Şantiyedeki güvenlik denetimleri için dijital kontrol listeleri. Sapmaları kaydedin ve düzeltici eylemleri takip edin.",
+    "ifcx_title": "IFCX bağlantısı",
+    "ifcx_desc": "Riskleri ve güvenlik önlemlerini IFCX aracılığıyla BIM modelindeki belirli konumlara ve elemanlara bağlayın.",
+    "incident_title": "Olay kaydı",
+    "incident_desc": "Olayları, ramak kalaları ve güvensiz durumları kaydedin. Kalıpları analiz edin ve önleyici tedbirler alın.",
+    "reporting_title": "Raporlama ve uyumluluk",
+    "reporting_desc": "İç denetimler ve dış denetçiler için raporlar oluşturun. Yasal ve düzenleyici uyumluluğu kanıtlayın."
+  },
+  "cta": {
+    "demo": "Canlı demoyu görüntüle",
+    "github": "GitHub'da görüntüle"
+  }
+}

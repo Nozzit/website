@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Karşılaştırma",
+    "title": "OpenAEC <span class=\"accent\">vs Bouwprijs</span>",
+    "desc": "Open Calc Studio, STABU/RAW desteği ve MCP aracılığıyla AI entegrasyonu olan açık kaynak bir Hollanda inşaat maliyet hesaplayıcısıdır. Bouwprijs ve IBIS-Trad ile karşılaştırın."
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

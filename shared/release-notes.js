@@ -74,6 +74,29 @@
       showMore: 'Afficher plus',
       showLess: 'Afficher moins',
     },
+    tr: {
+      title: 'Sürüm notları',
+      desc: (n) => `${n} değişiklik, küçük sürümlere göre gruplandırılmış. GitHub'dan canlı olarak alınır.`,
+      loading: 'Sürümler yükleniyor...',
+      latest: 'En son',
+      nightly: 'Nightly',
+      version: 'Sürüm',
+      releases: 'sürüm',
+      changes: 'değişiklik',
+      change: 'değişiklik',
+      release: 'sürüm',
+      from: 'başlangıç',
+      until: 'bitiş',
+      viewGitHub: "GitHub'da görüntüle →",
+      viewAll: "Tüm sürümleri GitHub'da görüntüle →",
+      error: 'Sürüm notları yüklenemedi.',
+      noReleases: 'Henüz sürüm mevcut değil.',
+      published: 'Yayımlandı',
+      totalReleases: 'toplam sürüm',
+      totalChanges: 'toplam değişiklik',
+      showMore: 'Daha fazla göster',
+      showLess: 'Daha az göster',
+    },
   };
 
   function getLang() {
@@ -309,7 +332,7 @@
     return `
       ${changes.length > 0
         ? `<ol class="rn-changes-list">${changesList}</ol>`
-        : `<p class="rn-loading">${getLang() === 'en' ? 'No changelog parsed — see release on GitHub below.' : (getLang() === 'fr' ? 'Aucun changelog disponible — voir la version sur GitHub ci-dessous.' : 'Geen changelog beschikbaar — bekijk de release op GitHub hieronder.')}</p>`}
+        : `<p class="rn-loading">${({en: 'No changelog parsed — see release on GitHub below.', fr: 'Aucun changelog disponible — voir la version sur GitHub ci-dessous.', tr: "Değişiklik günlüğü mevcut değil — sürümü aşağıdaki GitHub bağlantısından inceleyin.", nl: 'Geen changelog beschikbaar — bekijk de release op GitHub hieronder.'})[getLang()] || 'Geen changelog beschikbaar — bekijk de release op GitHub hieronder.'}</p>`}
       <div class="rn-releases-detail">
         ${releaseRows}
       </div>

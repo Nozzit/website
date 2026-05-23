@@ -1,0 +1,17 @@
+{
+  "header": {
+    "label": "Open 2D Studio için uzantı",
+    "title": "Drawing <span class=\"accent\">Statistics</span>",
+    "desc": "Şekil sayılarını ve çizim istatistiklerini gösteren uzantı. Shape Count düğmesi ve terminal komutu içeren bir Add-Ins ribbon sekmesi ekler.",
+    "downloadBtn": "v1.0.1 indir (1.4 KB)",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "features": {
+    "title": "Özellikler",
+    "ribbon": { "title": "Add-Ins ribbon sekmesi", "desc": "Open 2D Studio'daki Add-Ins ribbon sekmesine bir Shape Count düğmesi ekler." },
+    "terminal": { "title": "Terminal komutu", "desc": "İstatistikleri komut satırından görüntülemek için <code>stats show</code> terminal komutunu kaydeder." },
+    "count": { "title": "Eleman sayımı", "desc": "Mevcut çizimdeki tüm elemanları türüne göre sayar." },
+    "requires": "<a href=\"/open-2d-studio\">Open 2D Studio</a> v0.15.0 veya üstünü gerektirir."
+  },
+  "footer": { "slogan": "Özgürce inşa edin. Birlikte inşa edelim." }
+}

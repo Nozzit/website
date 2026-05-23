@@ -1,0 +1,12 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Haberler ve <span class=\"accent\">güncellemeler</span>",
+    "desc": "Otomatik takip: OpenAEC ekosisteminin GitHub'daki tüm sürümleri, yeni depoları ve etkinlikleri."
+  },
+  "filter": {
+    "label": "Filtrele:",
+    "all": "Tümü",
+    "new_repos": "Yeni depolar"
+  }
+}

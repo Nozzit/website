@@ -1,0 +1,19 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "desc": "Hedefimiz: ekosistemdeki tüm araçların 2026 sonuna kadar üretime hazır olması. Araç başına mevcut durum aşağıdadır."
+  },
+  "legend": {
+    "planned_badge": "Planlanmış",
+    "planned": "Programlanmış",
+    "dev_badge": "Geliştirme aşamasında",
+    "dev": "Aktif",
+    "alpha": "İlk sürüm",
+    "beta": "Test sürümü",
+    "live": "Üretim"
+  },
+  "goal": {
+    "title": "Hedef: 2026 sonuna kadar her şey canlı",
+    "desc": "Ekosistemin tamamen üretime hazır olması için yılın sonuna kadar yoğun çalışıyoruz. Tüm araçlar açık kaynak, tüm veriler IFCX'te."
+  }
+}

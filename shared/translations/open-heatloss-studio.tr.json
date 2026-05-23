@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Open Heatloss <span class=\"accent\">Studio</span>",
+    "desc": "Binalar için açık kaynak ısı kaybı hesaplaması, NEN 12831 standardına uygundur.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Neden Open Heatloss <span class=\"accent\">Studio</span>?",
+    "desc": "Isı kaybı hesaplamaları, ısıtma sistemlerinin tasarımı ve bina enerji performansı için esastır. Open Heatloss Studio, pahalı ticari yazılımlara erişilebilir, açık kaynak bir alternatif sunar — NEN 12831 ile tam uyumludur."
+  },
+  "features": {
+    "title": "Özellikler",
+    "nen12831": {
+      "title": "NEN 12831 hesaplamaları",
+      "desc": "NEN 12831'e uygun tam ısı kaybı hesaplamaları. Isıtma sistemi tasarımı için doğru sonuçlar."
+    },
+    "transmission": {
+      "title": "Oda başına iletim kayıpları",
+      "desc": "Zemine bağlı yapılar için düzeltme faktörleri dahil olmak üzere oda başına iletim kayıplarının ayrıntılı hesaplanması."
+    },
+    "ventilation": {
+      "title": "Havalandırma kayıpları",
+      "desc": "Havalandırma sistemine, hava debisine ve infiltrasyona dayalı havalandırma kayıplarının hesaplanması."
+    },
+    "ifcx": {
+      "title": "IFCX entegrasyonu",
+      "desc": "Daha hızlı giriş için bina geometrisini ve yapı özelliklerini doğrudan IFCX modellerinden içe aktarın."
+    },
+    "reports": {
+      "title": "Rapor oluşturma",
+      "desc": "Oda başına ısı kaybı, genel özetler ve grafik gösterimlerle net raporlar oluşturun."
+    },
+    "library": {
+      "title": "Yapı fiziği kütüphanesi",
+      "desc": "Malzeme özellikleri, yapı kompozisyonları ve standart U değerleri içeren kapsamlı kütüphane."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demoyu görüntüle",
+    "github": "GitHub'da görüntüle"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Zaman çizelgesi ve <span class=\"accent\">istatistikler</span>",
+    "desc": "OpenAEC ekosisteminin arkasındaki tarih ve sayılar. İlk fikirden tam bir açık kaynak platforma."
+  },
+  "stats": {
+    "loc": "Kod satırı (tahmini)",
+    "languages": "Programlama dilleri"
+  },
+  "growth": {
+    "title": "<span class=\"accent\">Zaman</span> içindeki büyüme"
+  },
+  "charts": {
+    "cum_repos": "Kümülatif depo sayısı",
+    "cum_commits": "Kümülatif commit sayısı",
+    "open_issues": "Ay başına açık sorunlar",
+    "loc": "Kod satırı (tahmini)",
+    "cum_contributors": "Kümülatif katkıda bulunanlar",
+    "cum_stars": "Kümülatif yıldız sayısı",
+    "repos_month": "<span class=\"accent\">Ay</span> başına depolar",
+    "lang_dist": "<span class=\"accent\">Programlama dili</span> başına dağılım"
+  },
+  "news": {
+    "title": "Haber <span class=\"accent\">etkinliği</span>",
+    "subtitle": "1 Ocak 2026'dan beri tüm sürümler ve yeni depolar.",
+    "items": "Haber öğeleri",
+    "new_repos": "Yeni depolar",
+    "chart_title": "Hafta başına sürümler ve yeni depolar",
+    "view_all": "Tüm haberleri görüntüle &rarr;"
+  },
+  "timeline": {
+    "title": "<span class=\"accent\">Yolculuk</span>"
+  },
+  "repos": {
+    "title": "Depo özeti",
+    "language": "Dil",
+    "created": "Oluşturuldu"
+  },
+  "top": {
+    "stars": "En çok yıldız",
+    "commits": "En çok commit",
+    "size": "En büyük depolar"
+  }
+}

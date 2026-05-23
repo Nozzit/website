@@ -1,0 +1,59 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Open Field <span class=\"accent\">Studio</span>",
+    "desc": "İnşaat projelerinde denetim, teslim ve kalite güvencesi için ücretsiz ve açık kaynak araç.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Neden Open Field <span class=\"accent\">Studio</span>?",
+    "desc": "Şantiyedeki denetimler ve teslimler çevrimdışı çalışan güvenilir araçlar gerektirir. Open Field Studio, kontrol listelerini, kusur kaydını ve raporlamayı tamamen çevrimdışı çalışan ve dört dilde sunulan bir uygulamada birleştirir."
+  },
+  "features": {
+    "title": "Özellikler",
+    "tickets": {
+      "title": "Plan üzerinde biletler ve kusurlar",
+      "desc": "Kusurları ve notları doğrudan plan üzerine kaydedin. Konum başına tüm açık öğelerin görsel özeti."
+    },
+    "checklists": {
+      "title": "15 kontrol listesi şablonu (NEN 2767)",
+      "desc": "NEN 2767 ve diğer standartlara uygun hazır kontrol listeleri. Projeye özel gereksinimlere göre özelleştirilebilir."
+    },
+    "energy": {
+      "title": "Enerji etiketi anketi (NTA 8800)",
+      "desc": "NTA 8800'e uygun enerji etiketi anketlerini yapılandırılmış giriş formlarıyla doğrudan sahada gerçekleştirin."
+    },
+    "monument": {
+      "title": "Anıt denetimi",
+      "desc": "Kültürel-tarihi değerlere dikkat eden tarihi binalar için özel denetim modülleri."
+    },
+    "handover": {
+      "title": "İmzalı teslim",
+      "desc": "İmza işlevselliğine sahip dijital teslim raporları. Tüm taraflar doğrudan ekranda imzalar."
+    },
+    "dashboard": {
+      "title": "Canlı istatistiklerle gösterge paneli",
+      "desc": "Tüm denetimlerin, açık kusurların ve proje başına ilerlemenin gerçek zamanlı özeti."
+    },
+    "camera": {
+      "title": "Kamera entegrasyonu",
+      "desc": "Uygulamadan doğrudan fotoğraf çekin ve bunları kusurlara, kontrol listelerine veya plan üzerindeki konumlara bağlayın."
+    },
+    "languages": {
+      "title": "4 dil (NL/EN/DE/FR)",
+      "desc": "Hollandaca, İngilizce, Almanca ve Fransızca olarak tamamen mevcuttur. Uluslararası projeler için idealdir."
+    },
+    "offline": {
+      "title": "Tamamen çevrimdışı",
+      "desc": "Şantiyede internet bağlantısı olmadan çalışır. Çevrimiçi olduğunuzda senkronize edin."
+    },
+    "reports": {
+      "title": "Profesyonel rapor dışa aktarma",
+      "desc": "Denetimleri ve teslimleri fotoğraf ve planlar içeren profesyonel PDF raporları olarak dışa aktarın."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demoyu görüntüle",
+    "github": "GitHub'da görüntüle"
+  }
+}

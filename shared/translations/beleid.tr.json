@@ -1,0 +1,49 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "Politika ve <span class=\"accent\">pozisyonlar</span>",
+    "desc": "AEC sektöründe açık standartlar, birlikte çalışabilirlik, kamuya açık erişim ve gizlilik konusundaki ilkelerimiz."
+  },
+  "cleanroom": {
+    "title": "Temiz oda tersine mühendislik",
+    "p1": "OpenAEC Foundation, inşaatta kullanılan tüm kapalı ikili formatları (<em>closed binary formats</em>) <strong>temiz oda</strong> prensibine göre tersine mühendislik ile çözmeyi amaçlar.",
+    "p2": "Bu uygulama, birlikte çalışabilirlik amaçlı tersine mühendisliğe açıkça izin veren <strong>AB Yazılım Direktifi 2009/24/EC, Madde 6</strong> uyarınca Avrupa hukuku altında tamamen izinlidir. Amaç, bu formatları açık ekosistemle uyumlu hale getirmektir.",
+    "method": "Yaklaşımımız:",
+    "li1": "Tescilli kaynak kodunu kullanmadan kendi uygulamalarımızı geliştiriyoruz",
+    "li2": "Tüm analizler kamuya açık spesifikasyonlara ve bağımsız araştırmaya dayanmaktadır",
+    "li3": "Üçüncü taraflardan gelen gizli belgeler veya sızdırılmış bilgiler kullanılmaz",
+    "li4": "Ortaya çıkan uygulamalar tamamen açık kaynaktır",
+    "see_also": "Bu yaklaşımın hukuki temeli için <a href=\"/disclaimer/\">sorumluluk reddi sayfamızdaki Temiz Oda Beyanına</a> da bakın.",
+    "legal": "<strong>Hukuki dayanak:</strong> Bilgisayar programlarının hukuki korunmasına ilişkin Avrupa Parlamentosu ve Konseyi Direktifi 2009/24/EC, Madde 6 — Derleme."
+  },
+  "permits": {
+    "title": "İzin başvurularına ücretsiz erişim",
+    "p1": "<strong>Pozisyonumuz:</strong> bir izin başvurusu yapmak için gereken her şey tüm vatandaşlar ve şirketler için <strong>%100 ücretsiz erişilebilir</strong> olmalıdır.",
+    "p2": "İzin başvurularının gönderilmesi, görüntülenmesi veya doğrulanması için gereken yazılımlar mali veya teknik bir engel oluşturmamalıdır. Bu hem dosya formatları hem de bunları işleyen uygulamalar için geçerlidir.",
+    "positions": "Pozisyonlarımız:",
+    "li1": "Hükümet kamu süreçleri için tescilli yazılıma bağımlı olmamalıdır",
+    "li2": "Her vatandaş ve şirket lisans maliyetleri olmadan yasal başvuru yükümlülüklerini yerine getirebilmelidir",
+    "li3": "Açık standartlar ve açık kaynak yazılım, demokratik ve erişilebilir bir inşaat süreci için esastır",
+    "li4": "İzin makamları sistemlerini açık, belgelenmiş formatlara dayandırmalıdır",
+    "closing": "OpenAEC Foundation, bu erişimi garanti eden ücretsiz araçlar geliştirir — süreçteki diğer tarafların kullandığı ticari yazılımdan bağımsız olarak."
+  },
+  "standards": {
+    "title": "Açık standartlar",
+    "p1": "OpenAEC Foundation, AEC sektöründeki tüm veri alışverişinin temeli olarak <strong>IFC ve IFCX</strong>'i kullanır. buildingSMART International tarafından yönetilen bu açık standartlar, yazılım seçimlerinden bağımsız olarak inşaat verilerinin okunabilir ve değiştirilebilir kalmasını garanti eder.",
+    "principles": "Temel ilkelerimiz:",
+    "li1": "<strong>Tedarikçi bağımlılığı yok</strong> — tescilli formatlar veri saklamanın veya değiştirmenin tek yolu olmamalıdır",
+    "li2": "<strong>Sürdürülebilir okunabilirlik</strong> — hangi yazılımı kullanırsanız kullanın veya hangi tedarikçi hala mevcut olursa olsun tüm veriler okunabilir kalmalıdır",
+    "li3": "<strong>Bir hak olarak birlikte çalışabilirlik</strong> — verileri açık formatlara aktarma yeteneği temel bir kullanıcı gereksinimidir, premium bir özellik değildir",
+    "li4": "<strong>Formatlardan ziyade standartlar</strong> — açık standartlar üzerine inşa eder ve katkıda bulunuruz, rakip kapalı ekosistemler değil"
+  },
+  "privacy": {
+    "title": "Gizlilik ve veriler",
+    "p1": "OpenAEC Foundation, inşaat verilerinin kullanıcıya ait olduğuna inanır — yazılım sağlayıcısına değil, buluta değil ve bize değil.",
+    "principles": "İlkelerimiz:",
+    "li1": "<strong>Mümkün olduğunda yerel</strong> — tüm araçlar varsayılan olarak sunucu bağlantısı olmadan cihazınızda yerel olarak çalışır",
+    "li2": "<strong>İzleme yok</strong> — kullanım verisi, analitik veya telemetri toplamıyoruz",
+    "li3": "<strong>Veri toplama yok</strong> — proje verileriniz, modelleriniz ve belgeleriniz açıkça ve bilinçli olarak başlatmadıkça asla bilgisayarınızdan ayrılmaz",
+    "li4": "<strong>Şeffaf kod</strong> — tüm yazılımlarımız açık kaynak olduğu için bu vaatlerin tutulduğunu kendiniz doğrulayabilirsiniz",
+    "closing": "Barındırılan hizmetler için (OpenAEC Cloud gibi) ayrı, aynı zamanda yayınlanmış bir gizlilik politikası geçerlidir. Minimum veri toplama bu politikanın da merkezindedir."
+  }
+}

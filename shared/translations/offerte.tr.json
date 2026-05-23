@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "<span class=\"accent\">Teklif</span> iste",
+    "desc": "İhtiyacınız olan araçları seçin, kullanıcı sayısını belirtin ve özel bir teklif isteyin."
+  },
+  "steps": {
+    "select": "Araçları seç",
+    "details": "Detaylar",
+    "confirm": "Onayla"
+  },
+  "step1": {
+    "title": "Araçlarınızı seçin"
+  },
+  "step2": {
+    "title": "Bilgileriniz"
+  },
+  "form": {
+    "name": "İsim *",
+    "company": "Şirket",
+    "phone": "Telefon",
+    "notes": "Notlar"
+  },
+  "step3": {
+    "title": "Teklif talebi özeti"
+  },
+  "summary": {
+    "tools": "Seçilen araçlar",
+    "contact": "İletişim bilgileri"
+  },
+  "submit": {
+    "button": "Teklif iste"
+  },
+  "success": {
+    "title": "Talep gönderildi",
+    "desc": "Teklif talebiniz için teşekkür ederiz. Mümkün olan en kısa sürede sizinle iletişime geçeceğiz.",
+    "home": "Ana sayfaya dön"
+  }
+}

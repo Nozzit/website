@@ -1,0 +1,70 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Open Calc <span class=\"accent\">Studio</span>",
+    "desc": "İnşaat için açık kaynak bütçeleme ve maliyet tahmini aracı. Maliyet tahminlerinden son hesaplara, STABU/RAW, IFCX ve AI ile doğrudan bağlantılarla.",
+    "badge": "Beta"
+  },
+  "mcp": {
+    "title": "MCP üzerinden AI destekli tahmin",
+    "desc": "Open Calc Studio, Model Context Protocol (MCP) aracılığıyla tamamen erişilebilir. Bu, Claude gibi AI asistanlarının manuel giriş olmadan doğrudan bütçeler oluşturabileceği, öğeler ekleyebileceği, yeniden hesaplayabileceği ve dışa aktarabileceği anlamına gelir.",
+    "item1": "Claude Code veya diğer AI araçlarından bütçeler oluşturun ve yönetin",
+    "item2": "IFC/IFCX modellerinden miktarları otomatik olarak çıkarın",
+    "item3": "Gerçekçi birim fiyatlar için referans projelere bakın",
+    "item4": "AI iş akışından doğrudan PDF ve IFCX'e dışa aktarın",
+    "item5": "Uzantı kataloğu ile genişletilebilir"
+  },
+  "why": {
+    "title": "Neden Open Calc <span class=\"accent\">Studio</span>?",
+    "desc1": "Maliyet tahminleri ve bütçeler her inşaat projesi için esastır. Mevcut tahmin yazılımı lisans başına binlerce avroya mal olur ve sizi tescilli formatlara hapseder. Open Calc Studio, aynı derecede güçlü tamamen açık kaynak bir alternatif sunar.",
+    "desc2": "STABU/RAW standartlarıyla doğrudan bağlantılar, otomatik miktarlar için IFCX modelleri ve MCP aracılığıyla AI entegrasyonu ile Open Calc Studio AEC maliyet tahmininin geleceği için inşa edilmiştir."
+  },
+  "features": {
+    "title": "Özellikler",
+    "stabu": {
+      "title": "STABU/RAW entegrasyonu",
+      "desc": "Hollanda standartlarına göre standartlaştırılmış şartnameler ve maliyet tahminleri için STABU ve RAW standartları için tam destek."
+    },
+    "ifcx": {
+      "title": "IFCX miktarları",
+      "desc": "IFCX modellerinden miktarları otomatik olarak çıkarın. Doğru hesaplamalar için bütçe öğelerini doğrudan model öğelerine bağlayın."
+    },
+    "mcp": {
+      "title": "MCP Sunucusu",
+      "desc": "Model Context Protocol aracılığıyla tamamen erişilebilir. AI asistanları bütçeler oluşturabilir, düzenleyebilir ve dışa aktarabilir."
+    },
+    "extensions": {
+      "title": "Uzantı sistemi",
+      "desc": "Uzantı kataloğu aracılığıyla genişletilebilir. Sektöre özgü hesaplama yöntemleri, şablonlar ve entegrasyonlar ekleyin."
+    },
+    "chapters": {
+      "title": "Bölümler ve kısımlar",
+      "desc": "Bütçeleri bölümler, kısımlar ve bütçe öğelerine organize edin. Otomatik numaralandırma ile esnek hiyerarşi."
+    },
+    "reference": {
+      "title": "Referans projeler",
+      "desc": "Referans projelerden birim fiyatlara bakın. Yeniden kullanılabilir bir fiyat ve gösterge veri tabanı oluşturun."
+    },
+    "export": {
+      "title": "PDF ve IFCX dışa aktarma",
+      "desc": "Bütçeleri profesyonel PDF raporları olarak veya ekosistemdeki diğer araçlarla değişim için IFCX verileri olarak dışa aktarın."
+    },
+    "staart": {
+      "title": "Genel giderler",
+      "desc": "Yapılandırılabilir genel giderler: genel şantiye maliyetleri, kâr ve risk, CAR sigortası ve diğer ek ücretler otomatik hesaplanır."
+    },
+    "recalc": {
+      "title": "Yeniden hesaplama",
+      "desc": "Tüm bütçenin tek tıkla yeniden hesaplanması. Tüm alt toplamlar, KDV ve genel giderler otomatik olarak güncellenir."
+    }
+  },
+  "tech": {
+    "title": "Teknoloji",
+    "desc": "Tauri 2 aracılığıyla TypeScript ve Rust ile inşa edilmiştir. Windows, macOS ve Linux'ta masaüstü uygulaması olarak ve tarayıcıda web uygulaması olarak çalışır. AI entegrasyonu için MCP Sunucusu ve özelleştirme için uzantı sistemi içerir."
+  },
+  "cta": {
+    "demo": "Canlı demoyu görüntüle",
+    "github": "GitHub'da görüntüle",
+    "extensions": "Uzantı kataloğu"
+  }
+}

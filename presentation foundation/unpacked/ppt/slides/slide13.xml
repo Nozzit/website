@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <p:cSld>
+    <p:bg>
+      <p:bgPr>
+        <a:solidFill>
+          <a:srgbClr val="2A2A32"/>
+        </a:solidFill>
+        <a:effectLst/>
+      </p:bgPr>
+    </p:bg>
+    <p:spTree>
+      <p:nvGrpSpPr>
+        <p:cNvPr id="1" name=""/>
+        <p:cNvGrpSpPr/>
+        <p:nvPr/>
+      </p:nvGrpSpPr>
+      <p:grpSpPr/>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="2" name="Rectangle 1"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="0" y="0"/>
+            <a:ext cx="12191695" cy="54864"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="D97706"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:style>
+          <a:lnRef idx="1">
+            <a:schemeClr val="accent1"/>
+          </a:lnRef>
+          <a:fillRef idx="3">
+            <a:schemeClr val="accent1"/>
+          </a:fillRef>
+          <a:effectRef idx="2">
+            <a:schemeClr val="accent1"/>
+          </a:effectRef>
+          <a:fontRef idx="minor">
+            <a:schemeClr val="lt1"/>
+          </a:fontRef>
+        </p:style>
+        <p:txBody>
+          <a:bodyPr rtlCol="0" anchor="ctr"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="ctr"/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="3" name="TextBox 2"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="731520" y="548640"/>
+            <a:ext cx="3657600" cy="365760"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="1000" b="0">
+                <a:solidFill>
+                  <a:srgbClr val="F59E0B"/>
+                </a:solidFill>
+                <a:latin typeface="JetBrains Mono"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>08 — NUMBERS</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="4" name="TextBox 3"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="731520" y="914400"/>
+            <a:ext cx="9144000" cy="640080"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="4000" b="1">
+                <a:solidFill>
+                  <a:srgbClr val="FAFAF9"/>
+                </a:solidFill>
+                <a:latin typeface="Space Grotesk"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>By the numbers</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="5" name="TextBox 4"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="731520" y="1828800"/>
+            <a:ext cx="1828800" cy="548640"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="4000" b="1">
+                <a:solidFill>
+                  <a:srgbClr val="D97706"/>
+                </a:solidFill>
+                <a:latin typeface="Space Grotesk"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>76</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="6" name="TextBox 5"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="731520" y="2377440"/>
+            <a:ext cx="1828800" cy="274320"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="1100" b="0">
+                <a:solidFill>
+                  <a:srgbClr val="A1A1AA"/>
+                </a:solidFill>
+                <a:latin typeface="Inter"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>Repositories</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="7" name="TextBox 6"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2560320" y="1828800"/>
+            <a:ext cx="1828800" cy="548640"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="4000" b="1">
+                <a:solidFill>
+                  <a:srgbClr val="D97706"/>
+                </a:solidFill>
+                <a:latin typeface="Space Grotesk"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>33</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="8" name="TextBox 7"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2560320" y="2377440"/>
+            <a:ext cx="1828800" cy="274320"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="1100" b="0">
+                <a:solidFill>
+                  <a:srgbClr val="A1A1AA"/>
+                </a:solidFill>
+                <a:latin typeface="Inter"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>Public</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="9" name="TextBox 8"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4389120" y="1828800"/>
+            <a:ext cx="1828800" cy="548640"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="4000" b="1">
+                <a:solidFill>
+                  <a:srgbClr val="D97706"/>
+                </a:solidFill>
+                <a:latin typeface="Space Grotesk"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>57</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="10" name="TextBox 9"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4389120" y="2377440"/>
+            <a:ext cx="1828800" cy="274320"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="1100" b="0">
+                <a:solidFill>
+                  <a:srgbClr val="A1A1AA"/>
+                </a:solidFill>
+                <a:latin typeface="Inter"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>Releases</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="11" name="TextBox 10"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="6217920" y="1828800"/>
+            <a:ext cx="1828800" cy="548640"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="4000" b="1">
+                <a:solidFill>
+                  <a:srgbClr val="D97706"/>
+                </a:solidFill>
+                <a:latin typeface="Space Grotesk"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>764</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="12" name="TextBox 11"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="6217920" y="2377440"/>
+            <a:ext cx="1828800" cy="274320"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="1100" b="0">
+                <a:solidFill>
+                  <a:srgbClr val="A1A1AA"/>
+                </a:solidFill>
+                <a:latin typeface="Inter"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>Commits (building.py)</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="13" name="TextBox 12"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="8046720" y="1828800"/>
+            <a:ext cx="1828800" cy="548640"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="4000" b="1">
+                <a:solidFill>
+                  <a:srgbClr val="D97706"/>
+                </a:solidFill>
+                <a:latin typeface="Space Grotesk"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>73</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="14" name="TextBox 13"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="8046720" y="2377440"/>
+            <a:ext cx="1828800" cy="274320"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr wrap="square"/>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr algn="l">
+              <a:defRPr sz="1100" b="0">
+                <a:solidFill>
+                  <a:srgbClr val="A1A1AA"/>
+                </a:solidFill>
+                <a:latin typeface="Inter"/>
+              </a:defRPr>
+            </a:pPr>
+            <a:r>
+              <a:t>Repos in 3 months</a:t>
+            </a:r>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:graphicFrame>
+        <p:nvGraphicFramePr>
+          <p:cNvPr id="15" name="Table 14"/>
+          <p:cNvGraphicFramePr>
+            <a:graphicFrameLocks noGrp="1"/>
+          </p:cNvGraphicFramePr>
+          <p:nvPr/>
+        </p:nvGraphicFramePr>
+        <p:xfrm>
+          <a:off x="731520" y="3108960"/>
+          <a:ext cx="5029200" cy="2926080"/>
+        </p:xfrm>
+        <a:graphic>
+          <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/table">
+            <a:tbl>
+              <a:tblPr firstRow="1" bandRow="1">
+                <a:tableStyleId>{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}</a:tableStyleId>
+              </a:tblPr>
+              <a:tblGrid>
+                <a:gridCol w="1676400"/>
+                <a:gridCol w="1676400"/>
+                <a:gridCol w="1676400"/>
+              </a:tblGrid>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000" b="1">
+                          <a:solidFill>
+                            <a:srgbClr val="F59E0B"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>Top releases</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000" b="1">
+                          <a:solidFill>
+                            <a:srgbClr val="F59E0B"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>Rel.</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000" b="1">
+                          <a:solidFill>
+                            <a:srgbClr val="F59E0B"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>Version</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>open-pdf-studio</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>24</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>v1.23.0</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>open-2d-studio</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>22</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>v0.32.0</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>monty-ifc-viewer</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>2</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>v1.0.1</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>open-pointcloud-studio</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>2</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>v0.3.0</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>open-energy-studio</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>1</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>v2026.2.0</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+            </a:tbl>
+          </a:graphicData>
+        </a:graphic>
+      </p:graphicFrame>
+      <p:graphicFrame>
+        <p:nvGraphicFramePr>
+          <p:cNvPr id="16" name="Table 15"/>
+          <p:cNvGraphicFramePr>
+            <a:graphicFrameLocks noGrp="1"/>
+          </p:cNvGraphicFramePr>
+          <p:nvPr/>
+        </p:nvGraphicFramePr>
+        <p:xfrm>
+          <a:off x="6217920" y="3108960"/>
+          <a:ext cx="5029200" cy="2926080"/>
+        </p:xfrm>
+        <a:graphic>
+          <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/table">
+            <a:tbl>
+              <a:tblPr firstRow="1" bandRow="1">
+                <a:tableStyleId>{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}</a:tableStyleId>
+              </a:tblPr>
+              <a:tblGrid>
+                <a:gridCol w="2514600"/>
+                <a:gridCol w="2514600"/>
+              </a:tblGrid>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000" b="1">
+                          <a:solidFill>
+                            <a:srgbClr val="F59E0B"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>Top commits</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000" b="1">
+                          <a:solidFill>
+                            <a:srgbClr val="F59E0B"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>Commits</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>building-py</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>764</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>project-ocondat</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>152</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>openaec-reports</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>131</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>open-books</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>109</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+              <a:tr h="487680">
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="D4D4D8"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>dynlex</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+                <a:tc>
+                  <a:txBody>
+                    <a:bodyPr/>
+                    <a:lstStyle/>
+                    <a:p>
+                      <a:pPr>
+                        <a:defRPr sz="1000">
+                          <a:solidFill>
+                            <a:srgbClr val="A1A1AA"/>
+                          </a:solidFill>
+                          <a:latin typeface="Inter"/>
+                        </a:defRPr>
+                      </a:pPr>
+                      <a:r>
+                        <a:t>98</a:t>
+                      </a:r>
+                    </a:p>
+                  </a:txBody>
+                  <a:tcPr>
+                    <a:solidFill>
+                      <a:srgbClr val="2A2A32"/>
+                    </a:solidFill>
+                  </a:tcPr>
+                </a:tc>
+              </a:tr>
+            </a:tbl>
+          </a:graphicData>
+        </a:graphic>
+      </p:graphicFrame>
+    </p:spTree>
+  </p:cSld>
+  <p:clrMapOvr>
+    <a:masterClrMapping/>
+  </p:clrMapOvr>
+</p:sld>

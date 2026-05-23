@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenAEC Foundation — Computational Design Day Delft 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --amber: #D97706;
+  --deep-forge: #36363E;
+  --signal-orange: #EA580C;
+  --warm-gold: #F59E0B;
+  --scaffold-gray: #A1A1AA;
+  --blueprint-white: #FAFAF9;
+  --concrete: #F5F5F4;
+  --night-build: #2A2A32;
+  --night-light: #32323a;
+  --gradient-accent: linear-gradient(90deg, #D97706 0%, #F59E0B 40%, #EA580C 100%);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; background: var(--night-build); font-family: 'Inter', system-ui, sans-serif; }
+
+.slide {
+  position: absolute; inset: 0;
+  opacity: 0; pointer-events: none; transition: opacity 0.35s ease;
+  background: var(--night-build); color: var(--blueprint-white);
+  overflow: hidden;
+}
+.slide.active { opacity: 1; pointer-events: auto; }
+.slide::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--gradient-accent); z-index: 10; }
+
+h1 { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+h2 { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+h3 { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 500; color: var(--warm-gold); }
+p { line-height: 1.5; color: #d4d4d8; }
+.a { color: var(--amber); }
+.label { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--warm-gold); }
+.sub { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 500; color: var(--amber); }
+.meta { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--scaffold-gray); display: flex; gap: 10px; flex-wrap: wrap; }
+.meta span { background: rgba(217,119,6,0.1); border: 1px solid rgba(217,119,6,0.25); padding: 4px 14px; border-radius: 9999px; }
+
+/* === FULL-BLEED LAYOUTS === */
+
+/* Title slide */
+.s-title {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+  padding: 48px;
+}
+.s-title h1 { font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 12px; }
+.s-title .tagline { font-size: clamp(1.2rem, 2vw, 1.8rem); color: var(--scaffold-gray); font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 500; }
+.s-title .event { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #52525b; margin-top: 32px; }
+
+/* Content slide: full padding, big text */
+.s-content {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 64px 80px;
+}
+.s-content h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 24px; }
+.s-content p { font-size: 1.2rem; max-width: 65ch; }
+.s-content ul { font-size: 1.15rem; line-height: 1.7; margin: 8px 0 0 28px; color: #d4d4d8; }
+.s-content li { margin-bottom: 6px; }
+.s-content li strong { color: var(--blueprint-white); }
+
+/* Tool slide: image dominant */
+.s-tool {
+  display: grid; grid-template-columns: 380px 1fr;
+}
+.s-tool .info {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 48px 40px;
+  background: var(--night-build);
+  border-right: 1px solid #3f3f46;
+  z-index: 2;
+}
+.s-tool .info .label { margin-bottom: 8px; }
+.s-tool .info h2 { font-size: 1.8rem; margin-bottom: 6px; }
+.s-tool .info .sub { font-size: 1.05rem; margin-bottom: 16px; }
+.s-tool .info p { font-size: 0.95rem; color: #a1a1aa; }
+.s-tool .info .meta { margin-top: 20px; }
+
+.s-tool .visual {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  background: #1a1a20;
+  overflow: hidden;
+}
+.s-tool .visual img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  padding: 24px;
+}
+.s-tool .visual.cover img { object-fit: cover; padding: 0; }
+
+/* Multi-image visual */
+.s-tool .visual.multi {
+  display: grid; gap: 4px; padding: 12px;
+}
+.s-tool .visual.multi.g2 { grid-template-columns: 1fr 1fr; }
+.s-tool .visual.multi.g3 { grid-template-columns: 1fr 1fr 1fr; }
+.s-tool .visual.multi img {
+  width: 100%; height: 100%; object-fit: cover; border-radius: 6px; padding: 0;
+}
+
+/* Schema blocks on content slides */
+.schema { display: flex; align-items: stretch; gap: 16px; margin: 24px 0; flex-wrap: wrap; }
+.schema .box {
+  flex: 1; min-width: 140px;
+  background: rgba(217,119,6,0.06); border: 2px solid var(--amber); border-radius: 12px;
+  padding: 20px; text-align: center;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.schema .box.red { border-color: #7f1d1d; background: rgba(127,29,29,0.1); }
+.schema .box .bl { font-size: 0.7rem; color: var(--scaffold-gray); text-transform: uppercase; letter-spacing: 0.1em; font-family: 'JetBrains Mono', monospace; margin-bottom: 4px; }
+.schema .box .bn { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: 1.1rem; }
+.schema .box .bd { font-size: 0.8rem; color: var(--scaffold-gray); margin-top: 4px; }
+.schema .arr { display: flex; align-items: center; color: var(--amber); font-size: 1.5rem; padding: 0 4px; }
+
+/* Pillar grid */
+.pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.pillar { background: var(--night-light); border-left: 4px solid var(--amber); padding: 18px 22px; border-radius: 0 10px 10px 0; }
+.pillar strong { color: var(--amber); font-size: 1.1rem; display: block; margin-bottom: 4px; }
+.pillar span { color: #a1a1aa; font-size: 0.95rem; }
+
+/* Benefits */
+.benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 48px; margin-top: 20px; }
+.benefit { display: flex; gap: 14px; align-items: flex-start; }
+.benefit .n { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: 2rem; color: var(--amber); min-width: 36px; line-height: 1; }
+.benefit strong { color: var(--blueprint-white); font-size: 1.1rem; display: block; }
+.benefit span { color: var(--scaffold-gray); font-size: 0.95rem; }
+
+/* Eco grid */
+.eco { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; margin-top: 24px; }
+.eco-card { background: var(--night-light); border: 1px solid #3f3f46; border-radius: 12px; padding: 24px; }
+.eco-card h3 { margin: 0 0 10px; font-size: 1.1rem; }
+.eco-card ul { list-style: none; margin: 0; padding: 0; font-size: 1rem; line-height: 1.6; color: #d4d4d8; }
+
+/* Stats */
+.stats { display: flex; gap: 40px; margin: 28px 0; flex-wrap: wrap; }
+.stat .v { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: 3rem; color: var(--amber); line-height: 1; }
+.stat .l { font-size: 0.85rem; color: var(--scaffold-gray); margin-top: 4px; }
+
+/* Tables */
+table { border-collapse: collapse; font-size: 0.95rem; width: 100%; }
+th { text-align: left; padding: 8px 14px; border-bottom: 2px solid var(--amber); color: var(--warm-gold); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+td { padding: 7px 14px; border-bottom: 1px solid #3f3f46; color: #d4d4d8; }
+td:first-child { color: var(--blueprint-white); font-weight: 500; }
+
+/* Tech schema */
+.tech-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+.tech-card { background: var(--night-light); border: 1px solid #3f3f46; border-radius: 12px; padding: 24px; }
+.tech-card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.tech-card ul { list-style: none; padding: 0; margin: 0; font-size: 1rem; line-height: 1.6; color: #d4d4d8; }
+.tech-card li strong { color: var(--blueprint-white); }
+
+/* Placeholder for missing images */
+.ph {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'JetBrains Mono', monospace; font-size: 2rem; color: var(--amber);
+}
+
+/* Image slider */
+.slider {
+  position: relative; width: 100%; height: 100%; overflow: hidden;
+}
+.slider .slider-track {
+  display: flex; height: 100%; transition: transform 0.4s ease;
+}
+.slider .slider-track img {
+  min-width: 100%; height: 100%; object-fit: contain; padding: 24px; flex-shrink: 0;
+}
+.slider-nav {
+  position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 8px; z-index: 5;
+}
+.slider-nav .dot {
+  width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.5); cursor: pointer; transition: all 0.2s; padding: 0;
+}
+.slider-nav .dot.active { background: var(--amber); border-color: var(--amber); transform: scale(1.3); }
+.slider-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  background: rgba(42,42,50,0.85); border: 1px solid #3f3f46; color: var(--blueprint-white);
+  width: 36px; height: 36px; border-radius: 8px; cursor: pointer; font-size: 1rem;
+  display: flex; align-items: center; justify-content: center; z-index: 5;
+  backdrop-filter: blur(8px); transition: all 0.15s;
+}
+.slider-btn:hover { background: var(--amber); border-color: var(--amber); }
+.slider-btn.prev { left: 8px; }
+.slider-btn.next { right: 8px; }
+
+/* Lightbox zoom */
+.s-tool .visual img, .s-tool .visual .slider-track img { cursor: zoom-in; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.92);
+  display: none; align-items: center; justify-content: center;
+  cursor: zoom-out; backdrop-filter: blur(4px);
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 95vw; max-height: 95vh; object-fit: contain;
+  transform-origin: center center; transition: transform 0.25s ease;
+  cursor: grab; user-select: none; -webkit-user-drag: none;
+}
+.lightbox img.zoomed { cursor: grabbing; }
+.lightbox-close {
+  position: absolute; top: 16px; right: 20px;
+  background: rgba(42,42,50,0.9); border: 1px solid #3f3f46; color: var(--blueprint-white);
+  width: 40px; height: 40px; border-radius: 8px; cursor: pointer; font-size: 1.4rem;
+  display: flex; align-items: center; justify-content: center; z-index: 1001;
+}
+.lightbox-close:hover { background: var(--amber); border-color: var(--amber); }
+.lightbox-hint {
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--scaffold-gray);
+  pointer-events: none;
+}
+
+/* Nav */
+.nav { position: fixed; bottom: 24px; right: 32px; display: flex; align-items: center; gap: 14px; z-index: 100; }
+.nav button { background: rgba(42,42,50,0.9); border: 1px solid #3f3f46; color: var(--blueprint-white); width: 44px; height: 44px; border-radius: 8px; cursor: pointer; font-size: 1.2rem; transition: all 0.15s; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(8px); }
+.nav button:hover { background: var(--amber); border-color: var(--amber); }
+.ctr { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--scaffold-gray); }
+.progress { position: fixed; bottom: 0; left: 0; height: 3px; background: var(--gradient-accent); transition: width 0.3s; z-index: 100; }
+
+@media (max-width: 1024px) {
+  .s-content { padding: 40px 48px; }
+  .s-tool { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  .s-tool .info { padding: 24px 32px; border-right: none; border-bottom: 1px solid #3f3f46; }
+  .eco { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- S1: Titel -->
+<section class="slide s-title active" data-s="0">
+  <svg width="300" viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:40px">
+    <g transform="translate(240,60) scale(0.55)">
+      <polygon points="-65,-23 0,15 0,82 -65,45" fill="#D97706" fill-opacity="0.30" stroke="#D97706" stroke-width="3.2" stroke-linejoin="round"/>
+      <polygon points="0,-58 65,-23 0,15 -65,-23" fill="#D97706" fill-opacity="0.18" stroke="#D97706" stroke-width="3.2" stroke-linejoin="round"/>
+      <line x1="65" y1="-23" x2="65" y2="45" stroke="#D97706" stroke-width="3.2" stroke-linecap="round"/>
+      <line x1="0" y1="82" x2="65" y2="45" stroke="#D97706" stroke-width="3.2" stroke-linecap="round"/>
+      <line x1="-65" y1="45" x2="0" y2="82" stroke="#D97706" stroke-width="3.2" stroke-linecap="round"/>
+      <polygon points="65,-23 0,15 0,35 65,0" fill="#D97706" fill-opacity="0.12"/>
+      <line x1="0" y1="15" x2="0" y2="35" stroke="#D97706" stroke-width="3.2" stroke-linecap="round"/>
+      <line x1="0" y1="35" x2="65" y2="0" stroke="#F59E0B" stroke-width="2.8" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <h1 style="font-size:clamp(3.5rem,7vw,6rem)">Open<span class="a">AEC</span></h1>
+  <p class="tagline" style="font-size:clamp(1.3rem,2.5vw,2rem);color:var(--scaffold-gray);font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;margin-top:12px">Build free. Build together.</p>
+  <p class="event" style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:#52525b;margin-top:40px">Computational Design Day — Delft, 2026</p>
+</section>
+
+
+<!-- S3: Foundation -->
+<section class="slide s-content" data-s="2">
+  <div class="label" style="margin-bottom:12px">02 — Mission</div>
+  <h2>The OpenAEC</h2>
+  <p style="font-size:2rem;color:var(--amber);font-weight:700;margin-bottom:16px;font-family:'Space Grotesk',system-ui,sans-serif">All construction software open source by the end of 2026</p>
+  <p style="font-size:1rem;margin-bottom:4px">Founded March 1, 2026 — Dordrecht, NL — Inspired by the Blender Foundation</p>
+  <div class="pillars">
+    <div class="pillar"><strong>Development</strong><span>Coordinate and fund open source software</span></div>
+    <div class="pillar"><strong>Support</strong><span>Licenses, API connections and integrations</span></div>
+    <div class="pillar"><strong>Education</strong><span>Internship and training opportunities worldwide</span></div>
+    <div class="pillar"><strong>Advocacy</strong><span>Promote open source and open standards</span></div>
+  </div>
+
+</section>
+
+<!-- S: 3BM -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">Member</div><h2>3BM</h2><div class="sub">Engineering &amp; consultancy</div><p>Ingenieursbureau voor bouwkunde, constructies en installatietechniek. Founding member van de OpenAEC Foundation.</p><div class="meta"><span>Zwijndrecht</span><span>Engineering</span></div></div>
+  <div class="visual" style="padding:0;overflow:hidden"><iframe src="https://3bm.co.nl/" style="width:100%;height:100%;border:none;transform:scale(1);transform-origin:top left" loading="lazy"></iframe></div>
+</section>
+
+<!-- S: Foundation Members -->
+<section class="slide s-content">
+  <div class="label" style="margin-bottom:12px">02b — Members</div>
+  <h2>Foundation Members</h2>
+  <p style="margin-bottom:28px;font-size:1.1rem">The companies backing open source construction software</p>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch">
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://www.gaf.eu/wp-content/themes/gaf/build/images/gaf-logo.svg" alt="GAF Architecten" style="max-height:44px;max-width:140px;object-fit:contain">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">GAF Architecten</span>
+    </div>
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://cdn.brandfetch.io/idS-zMiu7l/w/180/h/180/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1767813390612" alt="3BM" style="max-height:44px;max-width:140px;object-fit:contain">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">3BM</span>
+    </div>
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://vorm.nl/logo_wit_svg__aLogoWhitVorm.svg" alt="VORM Bouw" style="max-height:44px;max-width:140px;object-fit:contain;filter:invert(1)">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">VORM Bouw</span>
+    </div>
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://www.damsteegt.nl/assets/files/bouwbedrijf-damsteegt.svg" alt="Damsteegt" style="max-height:44px;max-width:140px;object-fit:contain">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">Damsteegt</span>
+    </div>
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://media-01.imu.nl/storage/bengcert.nl/7163/bengcert-afmeldservice-certificatie.png" alt="BENG Cert" style="max-height:44px;max-width:140px;object-fit:contain">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">BENG Cert</span>
+    </div>
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://www.orangeclimate.com/wp-content/uploads/2026/01/Orange-Climate-kleur-SVG.svg" alt="Orange Climate" style="max-height:44px;max-width:140px;object-fit:contain">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">Orange Climate</span>
+    </div>
+    <div style="background:#fff;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <img src="https://vandorp.eu/wp-content/uploads/2024/12/van-dorp-logo.svg" alt="van Dorp" style="max-height:44px;max-width:140px;object-fit:contain">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:#52525b">van Dorp Installatietechniek</span>
+    </div>
+    <div style="background:var(--night-light);border:2px dashed var(--amber);border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100px">
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:2.5rem;color:var(--amber)">?</span>
+      <span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:600;font-size:0.75rem;color:var(--scaffold-gray)">Toekomstig lid</span>
+    </div>
+  </div>
+</section>
+
+<!-- S: IP is verleden tijd -->
+<section class="slide s-content">
+  <div class="label" style="margin-bottom:12px">02c — Stelling</div>
+  <h2 style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Intellectual Property<br><span style="color:var(--amber)">is verleden tijd</span></h2>
+  <p style="font-size:1.3rem;margin-top:24px;max-width:55ch">Alle bouwsoftware wordt open source en gratis beschikbaar. Kennis delen versnelt innovatie voor de hele sector.</p>
+  <div style="display:flex;gap:32px;margin-top:36px">
+    <div style="flex:1;background:rgba(127,29,29,0.12);border:2px solid #7f1d1d;border-radius:14px;padding:28px;text-align:center">
+      <div style="font-size:2.5rem;margin-bottom:8px">&#128274;</div>
+      <div style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:1.2rem;color:#fca5a5;margin-bottom:6px">Gesloten / IP</div>
+      <p style="font-size:0.95rem;color:#a1a1aa">Licentiekosten, vendor lock-in, trage innovatie, kennis opgesloten</p>
+    </div>
+    <div style="flex:0 0 60px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:var(--amber)">&#8594;</div>
+    <div style="flex:1;background:rgba(217,119,6,0.1);border:2px solid var(--amber);border-radius:14px;padding:28px;text-align:center">
+      <div style="font-size:2.5rem;margin-bottom:8px">&#128275;</div>
+      <div style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:1.2rem;color:var(--warm-gold);margin-bottom:6px">Open Source</div>
+      <p style="font-size:0.95rem;color:#a1a1aa">Gratis, transparant, community-driven, snelle innovatie, kennis voor iedereen</p>
+    </div>
+  </div>
+</section>
+
+<!-- S: Digitale soevereiniteit -->
+<section class="slide s-content">
+  <div class="label" style="margin-bottom:12px">02d — Soevereiniteit</div>
+  <h2 style="font-size:clamp(2rem,4vw,3.2rem)">Weg van Amerikaanse<br><span style="color:var(--amber)">servers &amp; diensten</span></h2>
+  <p style="font-size:1.2rem;margin-top:20px;max-width:55ch">Onze data en processen horen op Europese infrastructuur. We migreren zo snel mogelijk naar open, zelf-gehoste alternatieven.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px">
+    <div style="background:rgba(127,29,29,0.12);border:2px solid #7f1d1d;border-radius:14px;padding:24px">
+      <div style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:1.1rem;color:#fca5a5;margin-bottom:12px">&#10005; Afscheid van</div>
+      <ul style="list-style:none;padding:0;margin:0;font-size:1rem;line-height:1.8;color:#d4d4d8">
+        <li>Microsoft 365 / Azure</li>
+        <li>Google Workspace</li>
+        <li>Autodesk Cloud</li>
+        <li>Amazon AWS</li>
+        <li>Slack, Teams, Zoom</li>
+      </ul>
+    </div>
+    <div style="background:rgba(217,119,6,0.1);border:2px solid var(--amber);border-radius:14px;padding:24px">
+      <div style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:1.1rem;color:var(--warm-gold);margin-bottom:12px">&#10003; Europees &amp; open source</div>
+      <ul style="list-style:none;padding:0;margin:0;font-size:1rem;line-height:1.8;color:#d4d4d8">
+        <li>Nextcloud — bestanden &amp; samenwerking</li>
+        <li>ERPNext — bedrijfsvoering</li>
+        <li>Europese hosting (NL/DE)</li>
+        <li>Self-hosted infrastructure</li>
+        <li>Eigen AI agents</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Ecosystem Graph -->
+<section class="slide" style="padding:0;overflow:hidden">
+  <iframe src="openaec-ecosystem.html" style="width:100%;height:100%;border:none" loading="lazy"></iframe>
+</section>
+
+<!-- S4: Ecosystem - visual schema -->
+<section class="slide s-tool" data-s="3">
+  <div class="info" style="width:100%;padding:40px 36px">
+    <div class="label" style="margin-bottom:12px">03 — Ecosystem</div>
+    <h2 style="font-size:1.6rem;margin-bottom:16px">The open source stack</h2>
+    <div style="display:grid;grid-template-columns:1fr;gap:10px">
+      <div style="display:grid;grid-template-columns:100px 1fr;gap:0;align-items:stretch">
+        <div style="background:var(--amber);border-radius:8px 0 0 8px;padding:10px 14px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:0.8rem;color:var(--night-build)">Design</span></div>
+        <div style="background:var(--night-light);border-radius:0 8px 8px 0;padding:10px 16px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:0.9rem"><strong>Blender + Bonsai</strong><strong>FreeCAD</strong><strong>Open 2D Studio</strong><strong>building.py</strong></div>
+      </div>
+      <div style="display:grid;grid-template-columns:100px 1fr;gap:0;align-items:stretch">
+        <div style="background:var(--amber);border-radius:8px 0 0 8px;padding:10px 14px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:0.8rem;color:var(--night-build)">Collab</span></div>
+        <div style="background:var(--night-light);border-radius:0 8px 8px 0;padding:10px 16px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:0.9rem"><strong>Nextcloud</strong><strong>IfcGit</strong><strong>Speckle</strong></div>
+      </div>
+      <div style="display:grid;grid-template-columns:100px 1fr;gap:0;align-items:stretch">
+        <div style="background:var(--amber);border-radius:8px 0 0 8px;padding:10px 14px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:0.8rem;color:var(--night-build)">Engineering</span></div>
+        <div style="background:var(--night-light);border-radius:0 8px 8px 0;padding:10px 16px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:0.9rem"><strong>FEM2D</strong><strong>Energy</strong><strong>MPG</strong><strong>Warmteverlies</strong><strong>Dynlex</strong></div>
+      </div>
+      <div style="display:grid;grid-template-columns:100px 1fr;gap:0;align-items:stretch">
+        <div style="background:var(--amber);border-radius:8px 0 0 8px;padding:10px 14px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:0.8rem;color:var(--night-build)">Business</span></div>
+        <div style="background:var(--night-light);border-radius:0 8px 8px 0;padding:10px 16px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:0.9rem"><strong>ERPNext</strong><strong>Invoicing</strong><strong>HRM</strong><strong>Planning</strong></div>
+      </div>
+      <div style="display:grid;grid-template-columns:100px 1fr;gap:0;align-items:stretch">
+        <div style="background:var(--warm-gold);border-radius:8px 0 0 8px;padding:10px 14px;display:flex;align-items:center;justify-content:center"><span style="font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;font-size:0.8rem;color:var(--night-build)">AI</span></div>
+        <div style="background:var(--night-light);border-radius:0 8px 8px 0;padding:10px 16px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:0.9rem"><strong>Claude / LLM's</strong><strong>MCP Servers</strong><strong>Open Agents</strong></div>
+      </div>
+    </div>
+  </div>
+  <div class="visual"><img src="wfc5/WhatsApp Image 2026-03-03 at 23.08.12.jpeg" alt="WFC5"></div>
+</section>
+
+
+<!-- S6: ERPNext -->
+<section class="slide s-tool" data-s="5">
+  <div class="info">
+    <div class="label">05 — ERP</div>
+    <h2 style="margin-top:8px">ERPNext</h2>
+    <div class="sub" style="font-size:1rem;margin-bottom:16px">Open source ERP for construction</div>
+    <ul style="font-size:0.95rem;line-height:1.7;color:#d4d4d8;margin-left:20px">
+      <li><strong>Project management</strong></li>
+      <li><strong>Invoicing &amp; accounting</strong></li>
+      <li><strong>HRM</strong> — NL payroll</li>
+      <li><strong>Dashboard App</strong></li>
+      <li><strong>Level Dashboard</strong></li>
+    </ul>
+  </div>
+  <div class="visual"><img src="erpnext-dashboard-app/WhatsApp Image 2026-03-03 at 20.00.17.jpeg" alt="ERPNext"></div>
+</section>
+
+
+<!-- Bonsai -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">BIM</div><h2>Bonsai</h2><div class="sub">Open source IFC authoring for Blender</div><p>Full BIM authoring inside Blender. Native IFC, clash detection, quantity takeoff, structural analysis.</p><div class="meta" style="margin-top:16px"><span>IFC 4X3</span><span>Blender</span><span>OpenBIM</span></div></div>
+  <div class="visual"><img src="bonsai/file.png" alt="Bonsai"></div>
+</section>
+
+<!-- Nextcloud -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">Collaboration</div><h2>Nextcloud</h2><div class="sub">Self-hosted collaboration platform</div><p>File management, version control, IfcGit, check-in/out, Claude Bot in Talk.</p><div class="meta" style="margin-top:16px"><span>Files</span><span>Talk</span><span>Office</span><span>IfcGit</span></div></div>
+  <div class="visual" style="padding:0"><img src="nextcloud-screenshot.png" alt="Nextcloud" style="width:100%;height:100%;object-fit:cover"></div>
+</section>
+
+<!-- Cloud Platform -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">Platform</div><h2>OpenAEC Cloud Platform</h2><div class="sub">The open-source BIM platform</div><p>Version control, collaboration and lifecycle management for the built environment. Built on open standards.</p><div class="meta" style="margin-top:16px"><span>IFC 4X3</span><span>OpenBIM</span><span>BCF 3.0</span><span>GIT</span></div></div>
+  <div class="visual"><img src="open aec cloud platform/WhatsApp Image 2026-02-18 at 08.19.05.jpeg" alt="OpenAEC Cloud Platform"></div>
+</section>
+
+<!-- S9: Numbers -->
+<section class="slide s-content" data-s="8">
+  <div class="label" style="margin-bottom:12px">08 — Numbers</div>
+  <h2>By the numbers</h2>
+  <div class="stats">
+    <div class="stat"><div class="v">76</div><div class="l">Repositories</div></div>
+    <div class="stat"><div class="v">33</div><div class="l">Public</div></div>
+    <div class="stat"><div class="v">57</div><div class="l">Releases</div></div>
+    <div class="stat"><div class="v">764</div><div class="l">Commits (building.py)</div></div>
+    <div class="stat"><div class="v">73</div><div class="l">Repos in 3 months</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:8px">
+    <table><tr><th>Top releases</th><th>Rel.</th><th>Version</th></tr>
+      <tr><td>open-pdf-studio</td><td>24</td><td>v1.23.0</td></tr>
+      <tr><td>open-2d-studio</td><td>22</td><td>v0.32.0</td></tr>
+      <tr><td>monty-ifc-viewer</td><td>2</td><td>v1.0.1</td></tr>
+      <tr><td>open-pointcloud-studio</td><td>2</td><td>v0.3.0</td></tr>
+      <tr><td>open-energy-studio</td><td>1</td><td>v2026.2.0</td></tr>
+    </table>
+    <table><tr><th>Top commits</th><th>Commits</th></tr>
+      <tr><td>building-py</td><td>764</td></tr>
+      <tr><td>project-ocondat</td><td>152</td></tr>
+      <tr><td>openaec-reports</td><td>131</td></tr>
+      <tr><td>open-books</td><td>109</td></tr>
+      <tr><td>dynlex</td><td>98</td></tr>
+    </table>
+  </div>
+</section>
+
+
+<!-- === TOOL SLIDES === -->
+
+<section class="slide s-tool" data-s="11">
+  <div class="info"><div class="label">22 releases</div><h2>Open 2D Studio</h2><div class="sub">2D viewer and drawing environment</div><p>View, annotate and edit 2D drawings. Extension system.</p><div class="meta"><span>66 commits</span><span>v0.32.0</span><span>TypeScript</span></div></div>
+  <div class="visual"><img src="open-2d-studio/WhatsApp Image 2026-02-19 at 20.03.47.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="12">
+  <div class="info"><div class="label">Extension</div><h2>2D Studio AEC Extension</h2><div class="sub">AEC functionality</div><p>Construction symbols, layers and annotations.</p><div class="meta"><span>7 commits</span><span>v0.1.0</span></div></div>
+  <div class="visual">
+    <div class="slider" data-slider>
+      <div class="slider-track">
+        <img src="open-2D-studio-AEC-extension/WhatsApp Image 2026-02-14 at 22.50.30.jpeg" alt="AEC Extension">
+        <img src="open-2D-studio-AEC-extension/WhatsApp Image 2026-02-14 at 22.51.26.jpeg" alt="AEC Extension">
+        <img src="open-2D-studio-AEC-extension/WhatsApp Image 2026-02-20 at 10.19.47.jpeg" alt="AEC Extension">
+      </div>
+      <button class="slider-btn prev" onclick="slideMove(this,-1)">&#8592;</button>
+      <button class="slider-btn next" onclick="slideMove(this,1)">&#8594;</button>
+      <div class="slider-nav"></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="13">
+  <div class="info"><div class="label">24 releases</div><h2>Open PDF Studio</h2><div class="sub">PDF document workflows</div><p>View, combine and edit PDFs for construction.</p><div class="meta"><span>90 commits</span><span>v1.23.0</span></div></div>
+  <div class="visual multi g2">
+    <img src="open-pdf-studio/WhatsApp Image 2026-02-25 at 19.04.21.jpeg" alt="">
+    <img src="open-pdf-studio/WhatsApp Image 2026-02-28 at 13.59.56.jpeg" alt="">
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="14">
+  <div class="info"><div class="label">2 releases</div><h2>Monty IFC Viewer</h2><div class="sub">Lightweight IFC viewer</div><p>Web-based BIM viewer with Three.js.</p><div class="meta"><span>11 commits</span><span>v1.0.1</span></div></div>
+  <div class="visual"><img src="monty-ifc-viewer/1768594037811.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="15">
+  <div class="info"><div class="label">2 releases</div><h2>Open Pointcloud Studio</h2><div class="sub">Point clouds</div><p>View and edit point clouds.</p><div class="meta"><span>12 commits</span><span>v0.3.0</span></div></div>
+  <div class="visual"><img src="open-pointcloud-studio/WhatsApp Image 2026-02-26 at 16.10.10.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="16">
+  <div class="info"><div class="label">Alpha</div><h2>Open 3D Viewer</h2><div class="sub">3D viewer</div><p>Universal 3D viewer in the browser.</p><div class="meta"><span>7 commits</span><span>v0.1.0-alpha</span></div></div>
+  <div class="visual multi g2">
+    <img src="open-3d-viewer/6.png" alt="">
+    <img src="open-3d-viewer/WhatsApp Image 2026-03-03 at 23.03.03.jpeg" alt="">
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="17">
+  <div class="info"><div class="label">1 release</div><h2>Open Energy Studio</h2><div class="sub">Energy performance NTA 8800</div><p>Desktop app with Tauri 2.</p><div class="meta"><span>11 commits</span><span>v2026.2.0</span></div></div>
+  <div class="visual multi g2">
+    <img src="open-energy-studio/WhatsApp Image 2026-02-17 at 23.07.19.jpeg" alt="">
+    <img src="open-energy-studio/WhatsApp Image 2026-02-17 at 23.07.29.jpeg" alt="">
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="18">
+  <div class="info"><div class="label">1 release</div><h2>Open Planner Studio</h2><div class="sub">Project planning</div><p>Gantt charts with Tauri 2.</p><div class="meta"><span>10 commits</span><span>v2026.2.0</span></div></div>
+  <div class="visual"><img src="open-planner-studio/WhatsApp Image 2026-02-12 at 20.56.14.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="19">
+  <div class="info"><div class="label">Tool</div><h2>Open FEM2D Studio</h2><div class="sub">Finite Element Analysis</div><p>2D structural analysis.</p><div class="meta"><span>13 commits</span><span>TypeScript</span></div></div>
+  <div class="visual"><img src="open-fem2d-studio/WhatsApp Image 2026-02-07 at 15.43.02.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="20">
+  <div class="info"><div class="label">New</div><h2>Structural Engineer Studio</h2><div class="sub">Structural design</div><p>Tool for the structural engineer.</p><div class="meta"><span>1 commit</span></div></div>
+  <div class="visual"><img src="open-structural-engineer-studio/WhatsApp Image 2026-03-03 at 23.26.34.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="21">
+  <div class="info"><div class="label">New</div><h2>Open MPG Studio</h2><div class="sub">Environmental performance</div><p>MPG calculation for building permits.</p><div class="meta"><span>2 commits</span></div></div>
+  <div class="visual multi g2">
+    <img src="open-mpg-studio/WhatsApp Image 2026-03-02 at 22.04.21.jpeg" alt="">
+    <img src="open-mpg-studio/WhatsApp Image 2026-03-02 at 22.04.27.jpeg" alt="">
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="22">
+  <div class="info"><div class="label">New</div><h2>Open Calc Studio</h2><div class="sub">Calculation tool</div><p>Calculation tool for construction.</p><div class="meta"><span>New project</span></div></div>
+  <div class="visual">
+    <div class="slider" data-slider>
+      <div class="slider-track">
+        <img src="open calc studio/screenshot.png" alt="Open Calc Studio">
+        <img src="open-calc/1769865478206.jpeg" alt="Open Calc">
+        <img src="open-calc/1769865478482.jpeg" alt="Open Calc">
+      </div>
+      <button class="slider-btn prev" onclick="slideMove(this,-1)">&#8592;</button>
+      <button class="slider-btn next" onclick="slideMove(this,1)">&#8594;</button>
+      <div class="slider-nav"></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="23">
+  <div class="info"><div class="label">Library</div><h2>Heat loss calculation</h2><div class="sub">ISSO 51:2023</div><p>Rust calculation library with web interface for modeller, constructions, rooms and RC values.</p><div class="meta"><span>21 commits</span><span>Rust</span></div></div>
+  <div class="visual">
+    <div class="slider" data-slider>
+      <div class="slider-track">
+        <img src="warmteverliesberekening/screencapture-warmteverlies-open-aec-modeller-2026-03-12-09_22_40.png" alt="Modeller">
+        <img src="warmteverliesberekening/screencapture-warmteverlies-open-aec-constructies-2026-03-12-09_23_12.png" alt="Constructies">
+        <img src="warmteverliesberekening/screencapture-warmteverlies-open-aec-rooms-2026-03-12-09_24_20.png" alt="Rooms">
+        <img src="warmteverliesberekening/screencapture-warmteverlies-open-aec-rc-2026-03-12-09_24_54.png" alt="RC">
+      </div>
+      <button class="slider-btn prev" onclick="slideMove(this,-1)">&#8592;</button>
+      <button class="slider-btn next" onclick="slideMove(this,1)">&#8594;</button>
+      <div class="slider-nav"></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="24">
+  <div class="info"><div class="label">New</div><h2>Open U-value Studio</h2><div class="sub">U-value calculation</div><p>Wall, roof and floor constructions.</p></div>
+  <div class="visual"><img src="Open-U-value-Studio/1768594037257.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="25">
+  <div class="info"><div class="label">98 commits</div><h2>Dynlex</h2><div class="sub">C++ calculation engine</div><p>High-performance calculation tool.</p><div class="meta"><span>98 commits</span><span>C++</span></div></div>
+  <div class="visual"><img src="dynlex/WhatsApp Image 2026-02-17 at 19.54.52.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="26">
+  <div class="info"><div class="label">Tool</div><h2>Ifc-Calc</h2><div class="sub">Graphical calculator</div><p>Calculations linked to IFC models.</p><div class="meta"><span>3 commits</span></div></div>
+  <div class="visual"><img src="Ifc-Calc/WhatsApp Image 2026-02-17 at 19.58.04.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="27">
+  <div class="info"><div class="label">Tool</div><h2>CPT Viewer</h2><div class="sub">Geotechnical soundings</div><p>GEF and BRO-xml viewer.</p><div class="meta"><span>JavaScript</span></div></div>
+  <div class="visual"><img src="cpt-viewer/WhatsApp Image 2026-02-12 at 21.34.46.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="28">
+  <div class="info"><div class="label">Tool</div><h2>Cutlist Optimizer</h2><div class="sub">Cut plan optimization</div><p>1D and 2D materials.</p><div class="meta"><span>JavaScript</span></div></div>
+  <div class="visual"><img src="cutlist-optimizer/1768594037761.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="29">
+  <div class="info"><div class="label">New</div><h2>Bestekstool</h2><div class="sub">Specifications writing</div><p>Specifications for construction projects.</p></div>
+  <div class="visual"><img src="bestekstool/WhatsApp Image 2026-02-13 at 09.31.09.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="30">
+  <div class="info"><div class="label">764 commits</div><h2>building.py</h2><div class="sub">Python building modeling</div><p>Export to Blender, Revit, IFC, DXF, Speckle.</p><div class="meta"><span>v0.1-beta</span><span>Python</span></div></div>
+  <div class="visual"><img src="building-py/1768594039106.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="31">
+  <div class="info"><div class="label">131 commits</div><h2>OpenAEC Reports</h2><div class="sub">Reporting</div><p>Generate reports for construction projects.</p><div class="meta"><span>Python</span></div></div>
+  <div class="visual"><img src="openaec-reports/screencapture-report-3bm-co-nl-2026-03-12-09_51_44.png" alt="OpenAEC Reports"></div>
+</section>
+
+<section class="slide s-tool" data-s="32">
+  <div class="info"><div class="label">109 commits</div><h2>Open Books</h2><div class="sub">Historical construction books</div><p>Digital collection. Knowledge preservation.</p></div>
+  <div class="visual"><img src="open-books/1768594037596.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="33">
+  <div class="info"><div class="label">Experiment</div><h2>WFC5</h2><div class="sub">IFC5 extension</div><p>Complete BIM model in one format.</p><div class="meta"><span>TypeSpec</span></div></div>
+  <div class="visual" style="padding:0;overflow:hidden"><iframe src="wfc5/index.html" style="width:100%;height:100%;border:none" loading="lazy"></iframe></div>
+</section>
+
+<section class="slide s-tool" data-s="34">
+  <div class="info"><div class="label">152 commits</div><h2>Project Ocondat</h2><div class="sub">Open building data</div><p>WikiData linked to building information.</p></div>
+  <div class="visual"><img src="project-ocondat/WhatsApp Image 2026-02-13 at 09.20.57.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="35">
+  <div class="info"><div class="label">AI — 84 commits</div><h2>Open Agents</h2><div class="sub">Multi-agent orchestrator</div><p>AI agents in parallel via CLI.</p><div class="meta"><span>TypeScript</span></div></div>
+  <div class="visual"><img src="Open-Agents/WhatsApp Image 2026-03-03 at 13.33.09.jpeg" alt=""></div>
+</section>
+
+<section class="slide s-tool" data-s="36">
+  <div class="info"><div class="label">ERP</div><h2>ERPNext Dashboard</h2><div class="sub">Electron desktop app</div><p>Banking, invoicing, expense management.</p><div class="meta"><span>16 commits</span></div></div>
+  <div class="visual">
+    <div class="slider" data-slider>
+      <div class="slider-track">
+        <img src="erpnext-dashboard-app/WhatsApp Image 2026-03-03 at 20.00.17.jpeg" alt="ERPNext Dashboard">
+        <img src="erpnext-dashboard-app/WhatsApp Image 2026-03-11 at 08.43.04.jpeg" alt="ERPNext Dashboard Chat">
+      </div>
+      <button class="slider-btn prev" onclick="slideMove(this,-1)">&#8592;</button>
+      <button class="slider-btn next" onclick="slideMove(this,1)">&#8594;</button>
+      <div class="slider-nav"></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide s-tool" data-s="37">
+  <div class="info"><div class="label">ERP</div><h2>ERPNext Level Dashboard</h2><div class="sub">Alternative GUI</div><p>Departments, employees, AI bots, email integration.</p></div>
+  <div class="visual">
+    <div class="slider" data-slider>
+      <div class="slider-track">
+        <img src="erpnext-level-dashboard/1769865478153.jpeg" alt="Level Dashboard">
+        <img src="erpnext-level-dashboard/1769865478378.jpeg" alt="Level Dashboard">
+        <img src="erpnext-level-dashboard/1769865478664.jpeg" alt="Level Dashboard">
+        <img src="erpnext-level-dashboard/Email.png" alt="Email Integration">
+        <img src="erpnext-level-dashboard/Email-2.png" alt="Email Integration 2">
+      </div>
+      <button class="slider-btn prev" onclick="slideMove(this,-1)">&#8592;</button>
+      <button class="slider-btn next" onclick="slideMove(this,1)">&#8594;</button>
+      <div class="slider-nav"></div>
+    </div>
+  </div>
+</section>
+
+<!-- IDS Validator -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">Validation</div><h2>IDS Validator</h2><div class="sub">Information Delivery Specification</div><p>Validate IFC models against IDS requirements. Web-based interface.</p><div class="meta"><span>IDS</span><span>IFC</span><span>Validation</span></div></div>
+  <div class="visual">
+    <div class="slider" data-slider>
+      <div class="slider-track">
+        <img src="ids_validator/screencapture-localhost-8080-2026-03-12-09_26_43.png" alt="IDS Validator">
+        <img src="ids_validator/screencapture-localhost-8080-2026-03-12-09_35_51.png" alt="IDS Validator">
+        <img src="ids_validator/screencapture-localhost-8080-2026-03-12-09_37_44.png" alt="IDS Validator">
+        <img src="ids_validator/screencapture-localhost-8083-2026-03-12-11_13_52.png" alt="IDS Validator">
+      </div>
+      <button class="slider-btn prev" onclick="slideMove(this,-1)">&#8592;</button>
+      <button class="slider-btn next" onclick="slideMove(this,1)">&#8594;</button>
+      <div class="slider-nav"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Open Speech Studio -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">AI</div><h2>Open Speech Studio</h2><div class="sub">Speech recognition</div><p>Speech-to-text for construction documentation and reporting.</p><div class="meta"><span>AI</span><span>Speech</span></div></div>
+  <div class="visual"><img src="open speech studio/Open speech studio.png" alt="Open Speech Studio"></div>
+</section>
+
+<!-- Impertio Studio -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">IT</div><h2>Impertio Studio</h2><div class="sub">IT Consultancy</div><p>Totale IT-ontzorging met open source. Professioneel beheer, open source kracht, eerlijke prijzen.</p><div class="meta"><span>Open Source</span><span>IT</span></div></div>
+  <div class="visual cover"><img src="impertio-screenshot.png" alt="Impertio Studio"></div>
+</section>
+
+<!-- OpenCompany246 -->
+<section class="slide s-tool">
+  <div class="info"><div class="label">Platform</div><h2>OpenCompany246</h2><div class="sub">Start direct met open-source</div><p>Complete open-source suite. ERPNext en Nextcloud in minuten uitgerold.</p><div class="meta"><span>ERPNext</span><span>Nextcloud</span></div></div>
+  <div class="visual"><img src="opencompany246-screenshot.png" alt="OpenCompany246"></div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&#10005;</button>
+  <img id="lb-img" src="" alt="">
+  <div class="lightbox-hint">Scroll to zoom &middot; Drag to pan &middot; Click or Esc to close</div>
+</div>
+
+<!-- Nav -->
+<div class="nav">
+  <button onclick="prev()">&#8592;</button>
+  <span class="ctr" id="ctr">1 / 40</span>
+  <button onclick="next()">&#8594;</button>
+</div>
+<div class="progress" id="prog"></div>
+
+<script>
+let c=0;const s=document.querySelectorAll('.slide'),t=s.length,ct=document.getElementById('ctr'),pr=document.getElementById('prog');
+s.forEach((sl,i)=>sl.setAttribute('data-s',i));
+function go(n){s[c].classList.remove('active');c=Math.max(0,Math.min(n,t-1));s[c].classList.add('active');ct.textContent=(c+1)+' / '+t;pr.style.width=((c+1)/t*100)+'%';}
+function next(){go(c+1)}function prev(){go(c-1)}
+document.addEventListener('keydown',e=>{if(document.getElementById('lightbox').classList.contains('open'))return;if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();next()}if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev()}if(e.key==='Home'){e.preventDefault();go(0)}if(e.key==='End'){e.preventDefault();go(t-1)}});
+let tx=0;document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX});document.addEventListener('touchend',e=>{const d=tx-e.changedTouches[0].clientX;if(Math.abs(d)>50){d>0?next():prev()}});
+go(0);
+
+// Slider logic
+function initSliders(){
+  document.querySelectorAll('[data-slider]').forEach(sl=>{
+    const track=sl.querySelector('.slider-track');
+    const imgs=track.querySelectorAll('img');
+    const nav=sl.querySelector('.slider-nav');
+    sl._idx=0; sl._count=imgs.length;
+    nav.innerHTML='';
+    for(let i=0;i<imgs.length;i++){
+      const d=document.createElement('button');
+      d.className='dot'+(i===0?' active':'');
+      d.onclick=(e)=>{e.stopPropagation();slideTo(sl,i)};
+      nav.appendChild(d);
+    }
+  });
+}
+function slideTo(sl,i){
+  sl._idx=Math.max(0,Math.min(i,sl._count-1));
+  sl.querySelector('.slider-track').style.transform='translateX(-'+sl._idx*100+'%)';
+  sl.querySelectorAll('.dot').forEach((d,j)=>d.classList.toggle('active',j===sl._idx));
+}
+function slideMove(btn,dir){
+  const sl=btn.closest('[data-slider]');
+  slideTo(sl,sl._idx+dir);
+}
+initSliders();
+
+// Lightbox zoom
+const lb=document.getElementById('lightbox'), lbImg=document.getElementById('lb-img');
+let lbScale=1, lbX=0, lbY=0, dragging=false, dragStartX, dragStartY, dragOffX, dragOffY;
+
+document.querySelectorAll('.s-tool .visual img').forEach(img=>{
+  img.addEventListener('click',e=>{
+    e.stopPropagation();
+    lbImg.src=img.src;
+    lbScale=1; lbX=0; lbY=0; updateLbTransform();
+    lb.classList.add('open');
+    lbImg.classList.remove('zoomed');
+  });
+});
+
+function closeLightbox(){ lb.classList.remove('open'); lbImg.src=''; }
+
+lb.addEventListener('click',e=>{ if(e.target===lb) closeLightbox(); });
+
+document.addEventListener('keydown',e=>{
+  if(lb.classList.contains('open') && e.key==='Escape'){ e.preventDefault(); e.stopPropagation(); closeLightbox(); }
+});
+
+function updateLbTransform(){
+  lbImg.style.transform='translate('+lbX+'px,'+lbY+'px) scale('+lbScale+')';
+}
+
+lb.addEventListener('wheel',e=>{
+  if(!lb.classList.contains('open')) return;
+  e.preventDefault();
+  const delta=e.deltaY>0?0.85:1.18;
+  lbScale=Math.max(0.5,Math.min(lbScale*delta,8));
+  if(lbScale<=1.05){ lbX=0; lbY=0; lbScale=1; lbImg.classList.remove('zoomed'); }
+  else { lbImg.classList.add('zoomed'); }
+  updateLbTransform();
+},{passive:false});
+
+lbImg.addEventListener('mousedown',e=>{
+  if(lbScale<=1) return;
+  e.preventDefault(); dragging=true;
+  dragStartX=e.clientX; dragStartY=e.clientY;
+  dragOffX=lbX; dragOffY=lbY;
+});
+document.addEventListener('mousemove',e=>{
+  if(!dragging) return;
+  lbX=dragOffX+(e.clientX-dragStartX);
+  lbY=dragOffY+(e.clientY-dragStartY);
+  updateLbTransform();
+});
+document.addEventListener('mouseup',()=>{ dragging=false; });
+</script>
+</body>
+</html>

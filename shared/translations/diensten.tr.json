@@ -1,0 +1,31 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "title": "<span class=\"accent\">Hizmetler</span>",
+    "desc": "OpenAEC Foundation, açık kaynak ekosistem etrafında profesyonel hizmetler sunar."
+  },
+  "ecosystem": {
+    "title": "Hizmet olarak OpenAEC ekosistemi",
+    "desc": "Entegre bir ekosistemde mevcut tüm araçlar. Yedekli yapı, Single Sign-On (SSO) ve tüm araçları kontrol etmek için orkestratör olarak yerel AI. Tek platform, tek giriş, maksimum verimlilik."
+  },
+  "consultancy": {
+    "title": "Danışmanlık",
+    "desc": "Kuruluşunuzda OpenAEC araçlarının uygulanması, entegrasyonu ve optimizasyonu konusunda danışmanlık. Stratejik tavsiyeden uygulamalı uygulama rehberliğine kadar."
+  },
+  "hosting": {
+    "title": "Barındırma ve SLA",
+    "desc": "Garantili çalışma süresi ve profesyonel destekle ekosistemdeki tüm araçların yönetilen barındırılması. Altyapıyı biz yönetiriz, siz araçları kullanırsınız."
+  },
+  "extensions": {
+    "title": "Eklentiler ve özel geliştirme",
+    "desc": "Belirli müşteri ihtiyaçları için yazılım uzantıları geliştiriyoruz. Temel açık kaynak olarak kalır — uzantı müşterinin mülkiyetine geçer veya ekosisteme katkıda bulunulur."
+  },
+  "donations": {
+    "title": "Bağışlar",
+    "desc": "AEC sektörü için açık kaynak yazılım geliştirmeyi destekleyin. Her katkı, ekosistemi daha hızlı geliştirmemize ve erişilebilir kılmamıza yardımcı olur."
+  },
+  "subsidies": {
+    "title": "Hibe ve teşvikler",
+    "desc": "İnşaatta yenilik ve dijitalleşme için devlet hibelerinin elde edilmesi konusunda aktif olarak çalışıyoruz. Ortaklarımızla birlikte sürdürülebilir finansman üzerine odaklanıyoruz."
+  }
+}

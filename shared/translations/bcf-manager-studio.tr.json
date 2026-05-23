@@ -1,0 +1,67 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "BCF Manager <span class=\"accent\">Studio</span>",
+    "desc": "BIM projeleri için açık kaynak BCF 2.1 sorun yönetim platformu. Sorunları yönetin, ekiplerle iletişim kurun ve IFC modellerine bağlayın.",
+    "badge": "Geliştirme aşamasında"
+  },
+  "bcf": {
+    "title": "BCF nedir?",
+    "desc": "BIM Collaboration Format (BCF), BIM yazılımları arasında sorun ve yorumların değişimi için açık bir standarttır (buildingSMART). İlgili tarafların hangi yazılımı kullandığından bağımsız olarak bir bina modelindeki sorunları raporlamak, tartışmak ve çözmek için kullanılır.",
+    "list1": "Açık standart: BCF 2.1 (XML) ve BCF API 3.0 (REST)",
+    "list2": "Yazılımdan bağımsız: BCF'yi destekleyen herhangi bir BIM yazılımıyla çalışır",
+    "list3": "Görüş noktaları: her sorun için 3D modelin görsel anlık görüntüleri",
+    "list4": "Meta veri: öncelik, durum, atama, son tarihler, etiketler"
+  },
+  "why": {
+    "title": "Neden BCF Manager <span class=\"accent\">Studio</span>?",
+    "desc1": "Mevcut BCF araçları genellikle pahalı, tescilli BIM platformlarının parçasıdır. BCF Manager Studio, herkesin kullanabileceği bağımsız, açık kaynak bir alternatif sunar — ücretsiz, lisans ücreti yok, tedarikçi bağımlılığı yok.",
+    "desc2": "Platform yerel olarak veya kendi sunucunuzda çalışır. Verileriniz sizindir. Onu kendi IFC görüntüleyicinize bağlayın, sorunları ekibinizle paylaşın ve BCF uyumlu herhangi bir pakete dışa aktarın."
+  },
+  "features": {
+    "title": "Özellikler",
+    "issues": {
+      "title": "BCF 2.1 sorun yönetimi",
+      "desc": "BCF 2.1 standardına uygun sorunları oluşturun, düzenleyin ve yönetin. Konular, yorumlar, görüş noktaları ve anlık görüntüler için tam destek."
+    },
+    "viewpoints": {
+      "title": "3D anlık görüntülerle görüş noktaları",
+      "desc": "Kamera konumu, seçimi ve görünürlük ile sorunlara görsel görüş noktaları bağlayın. IFC görüntüleyicinizde doğrudan görünür."
+    },
+    "collaboration": {
+      "title": "Ekip işbirliği",
+      "desc": "Ekip üyelerine sorunlar atayın, son tarihler belirleyin, yorumlar ekleyin ve durumu takip edin. Tüm katılımcılar arasında gerçek zamanlı senkronizasyon."
+    },
+    "xml": {
+      "title": "BCF XML içe/dışa aktarma",
+      "desc": "Solibri, Navisworks, BIMcollab ve diğer BCF uyumlu yazılımlarla değişim için BCF dosyalarını (XML formatı) içe ve dışa aktarın."
+    },
+    "api": {
+      "title": "REST API (BCF API 3.0)",
+      "desc": "Harici araçlar, gösterge panoları ve otomasyonla entegrasyon için tam BCF API 3.0 uygulaması."
+    },
+    "projects": {
+      "title": "Proje yönetimi",
+      "desc": "Sorunları etiketler, öncelikler, kilometre taşları ve filtrelerle proje başına organize edin. İstatistiklerle net gösterge paneli."
+    },
+    "ifc": {
+      "title": "IFC entegrasyonu",
+      "desc": "Sorunları GlobalId aracılığıyla doğrudan IFC öğelerine bağlayın. Bir sorundan doğrudan modeldeki ilgili öğeye gidin."
+    },
+    "selfhosted": {
+      "title": "Kendi sunucunuzda barındırılan",
+      "desc": "Platformu kendi sunucunuzda veya yerel olarak çalıştırın. Verileriniz üzerinde tam kontrol, bulut bağımlılığı yok."
+    },
+    "notifications": {
+      "title": "Bildirimler",
+      "desc": "Yeni sorunlar, durum değişiklikleri ve yanıtlar için bildirimler alın. Proje başına ve kullanıcı başına yapılandırılabilir."
+    }
+  },
+  "tech": {
+    "title": "Teknoloji",
+    "desc": "Tüm OpenAEC ekosistemi ile aynı teknoloji stack'i ile inşa edilmiştir: performans ve güvenlik için Rust backend, kullanılabilirlik için TypeScript frontend ve çapraz platform dağıtım için Tauri 2."
+  },
+  "cta": {
+    "github": "GitHub &rarr;"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "header": {
+    "label": "Enerji performansı — NTA 8800",
+    "title": "Open <span class=\"accent\">Energy</span> Studio",
+    "desc": "Hollanda NTA 8800 standardını izleyen açık kaynak bina enerji performansı hesaplayıcısı. BENG hesaplamaları, U-değeri analizi, ısı pompası boyutlandırma ve termal köprü değerlendirmesi.",
+    "downloadBtn": "v2026.2.0 indir",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "download": {
+    "title": "v2026.2.0 indir"
+  },
+  "features": {
+    "heading": "Özellikler",
+    "beng": {
+      "title": "BENG hesaplamaları",
+      "desc": "BENG göstergesi görselleştirmesi ile Hollanda NTA 8800 standardını izleyen Bina Enerji Performansı (BENG) hesaplamaları."
+    },
+    "uvalue": {
+      "title": "U-değeri hesaplayıcısı",
+      "desc": "Duvar, çatı ve döşeme yapılarının termal geçirgenliğini (U-değeri) hesaplayın."
+    },
+    "heatpump": {
+      "title": "Isı pompası boyutlandırma",
+      "desc": "Bina özelliklerine ve iklim verilerine dayanarak gerekli ısı pompası kapasitesini hesaplayın."
+    },
+    "thermal": {
+      "title": "Termal köprü hesaplayıcısı",
+      "desc": "Termal köprüleri ve enerji performansı üzerindeki etkilerini değerlendirin."
+    },
+    "charts": {
+      "title": "Enerji dağılım grafikleri",
+      "desc": "Görsel enerji dağılımı ve aylık performans analiz grafikleri."
+    },
+    "building3d": {
+      "title": "3D bina görünümü",
+      "desc": "Bina dış kabuğunun ve termal özelliklerinin 3D görselleştirmesi."
+    },
+    "projects": {
+      "title": "Proje yönetimi",
+      "desc": "Birden fazla bina yönetmek için proje tarayıcısı. Ayrıntılı parametre düzenleme için özellikler paneli."
+    },
+    "reporting": {
+      "title": "Raporlama",
+      "desc": "Yazdırma önizlemesi ile enerji performansı raporları oluşturun. Ayarlar iletişim kutusu ile ribbon araç çubuğu arayüzü."
+    }
+  },
+  "tech": {
+    "heading": "Teknoloji stack'i",
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Rust backend ile yerel masaüstü uygulaması. CalVer sürümleme (YIL.AY.BUILD)."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Vite build tool ile bileşen tabanlı UI."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

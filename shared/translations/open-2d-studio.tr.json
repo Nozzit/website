@@ -1,0 +1,61 @@
+{
+  "header": {
+    "label": "Açık kaynak 2D CAD",
+    "title": "Open <span class=\"accent\">2D</span> Studio",
+    "desc": "Teknik çizimler, kat planları ve mekanik tasarımlar için ücretsiz, açık kaynak 2D CAD uygulaması. Ticari CAD yazılımlarına hafif, hızlı alternatif.",
+    "downloadBtn": "v0.35.0 indir",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "download": {
+    "title": "v0.35.0 indir"
+  },
+  "features": {
+    "heading": "Özellikler",
+    "drawing": {
+      "title": "Çizim araçları",
+      "desc": "Çizgi, dikdörtgen, daire, yay, polyline, elips ve metin. Hassas kontrol için CAD tarzı komut girişi."
+    },
+    "snapping": {
+      "title": "Hassasiyet ve yapışma",
+      "desc": "Izgaraya ve nesnelere yapışma: uç nokta, orta nokta, merkez, kesişim. Yapılandırılabilir ızgara sistemi."
+    },
+    "layers": {
+      "title": "Katman yönetimi",
+      "desc": "Görünürlük, kilit ve renk kontrolleri ile birden fazla katman. Çizimleri mantıksal gruplara organize edin."
+    },
+    "dxf": {
+      "title": "DXF içe/dışa aktarma",
+      "desc": "AutoCAD, BricsCAD ve diğer CAD yazılımlarıyla birlikte çalışabilirlik için Rust dxf-rs backend'i aracılığıyla DXF dosyalarını okuyun ve yazın."
+    },
+    "properties": {
+      "title": "Özellikler ve seçim",
+      "desc": "Çizgi rengi, kalınlığı ve stilini düzenleyin. Seçim oluşturmak için tıklayın, kutu seçimi yapın veya Shift+Tıklayın. Çoklu seçim hizalama ve dağıtma."
+    },
+    "extensions": {
+      "title": "Eklentiler",
+      "desc": "Eklentiler için genişletilebilir mimari. Örnek eklenti için <a href=\"/ext-drawing-statistics\">Drawing Statistics</a>'a bakın."
+    }
+  },
+  "tech": {
+    "heading": "Teknoloji stack'i",
+    "tauri": {
+      "title": "Tauri 2.0",
+      "desc": "~10 MB uygulama boyutu, ~30 MB RAM kullanımı, Rust backend aracılığıyla yerel performans."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Tip güvenliği ve Zustand durum yönetimi ile bileşen tabanlı UI."
+    },
+    "canvas": {
+      "title": "Canvas 2D render",
+      "desc": "10K+ elemanı akıcı şekilde işleyen hızlı render."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

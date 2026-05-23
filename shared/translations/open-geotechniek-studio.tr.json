@@ -1,0 +1,68 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Open <span class=\"accent\">Geotechniek</span> Studio",
+    "desc": "Koni penetrasyon testleri (CPT/GEF), sondajlar (BHR/BRO-xml) ve saha çizimleri için açık kaynak masaüstü aracı.",
+    "badge": "Beta",
+    "gww": "Sivil / Geoteknik"
+  },
+  "what": {
+    "title": "Open Geotechniek Studio nedir?",
+    "desc": "Open Geotechniek Studio, Hollanda ulusal yer altı kayıtlarından (BRO) geoteknik verileri görselleştirmek ve analiz etmek için bir masaüstü uygulamasıdır. Herhangi bir GEF veya BRO-xml dosyasını açın ve otomatik Robertson SBT sınıflandırması, zemin katman algılama ve stratigrafi ile sondaj veya sondalama verilerini inceleyin.",
+    "list1": "CPT sondajları (GEF formatı) — koni direnci, sürtünme, gözeneksuyu basıncı",
+    "list2": "Sondalamalar (BRO-xml) — NEN5104 uyarınca zemin tipleri, BIMRO/IMBRO/A kalite rejimleri",
+    "list3": "Robertson SBT sınıflandırması — derinliğe göre otomatik zemin tipi tespiti",
+    "list4": "Multi-tab — birden fazla sondaj/sondalamayı yan yana karşılaştırın",
+    "list5": "Harita görünümü — konumdaki tüm ölçümler (RD koordinatları)",
+    "list6": "Raporlama — proje dosyaları için PDF'e dışa aktarma"
+  },
+  "why": {
+    "title": "Neden Open <span class=\"accent\">Geotechniek</span> Studio?",
+    "desc1": "Hollanda pazarındaki geoteknik yazılımları genellikle pahalı ve parçalıdır: sondajlar, sondalamalar, kazık hesaplamaları ve raporlama için farklı araçlar. Open Geotechniek Studio bunları bir araya getirir — ücretsiz, açık kaynak ve Hollanda standartlarıyla (BRO, NEN5104, IMBRO/A) tam uyumlu.",
+    "desc2": "Tüm inşaat mühendisliği ve altyapı sektörü için: temel mühendislerinden altyapı yüklenicilerine, yapı mühendislerinden su yönetimi projelerine. BRO verilerini doğrudan okuyun, BIM entegrasyonu için IFCX'e dışa aktarın ve lisans maliyeti olmadan profesyonel raporlar paylaşın."
+  },
+  "standards": {
+    "title": "Desteklenen standartlar",
+    "desc": "Open Geotechniek Studio resmi Hollanda geoteknik formatlarını okur ve yorumlar:"
+  },
+  "features": {
+    "title": "Özellikler",
+    "cpt": { "title": "CPT görselleştirme", "desc": "Koni direnci (qc), yerel sürtünme (fs), sürtünme oranı (Rf) ve isteğe bağlı gözeneksuyu basıncı (u2), derinliğe göre crosshair ve değer overlay ile." },
+    "bhr": { "title": "BHR sondalamaları", "desc": "Zemin katmanları, katkılar, yapı, humus içeriği ve renk ile sondalamaların görselleştirilmesi — doğrudan BRO-xml'den." },
+    "sbt": { "title": "Robertson SBT", "desc": "Robertson (1990) uyarınca otomatik Soil Behavior Type sınıflandırması — Sensitive fine-grained'den Very stiff sand/clay'e." },
+    "layers": { "title": "Zemin stratigrafisi", "desc": "Derinliğe göre zemin katmanlarının otomatik tespiti (üst, alt, bölge). Ölçümlere dayanarak stratigrafiyi kendiniz ayarlayın." },
+    "map": { "title": "BRO entegrasyonlu harita görünümü", "desc": "Doğrudan BRO entegrasyonu ile etkileşimli harita: adrese göre arayın ve konumun etrafındaki tüm mevcut sondajlar ve sondalamalar otomatik olarak yüklenir. Detayları görüntülemek, görüntüleyicide açmak veya projeye eklemek için tıklayın." },
+    "mapLayers": { "title": "Kadaster harita katmanları", "desc": "Topografya (BRT), güncel ve tarihi hava fotoğrafları (2016-2025), adresler ve sokaklar, AHN yükseklik haritası, kadastro sınırları, BAG binalar ve BGT topografya — tümü doğrudan Kadaster PDOK'tan." },
+    "multitab": { "title": "Multi-tab", "desc": "Birden fazla CPT ve sondalamayı sekmelerde açın. Derinlik, katmanlar ve özellikleri yan yana karşılaştırın." },
+    "report": { "title": "PDF raporlama", "desc": "Seçilebilir bölümlerle profesyonel sondaj raporları oluşturun: kapak, koordinat tablosu, genel harita, sondaj başına sayfalar, Robertson SBT lejantı ve meta veri özeti. Proje dosyaları, izin başvuruları veya müşteriler için uygundur." },
+    "situatie": { "title": "Saha çizimi", "desc": "Saha planları için tam çizim işlevselliği: sondaj ve sondalamaları yerleştirin, sondaj ızgaraları oluşturun, RD koordinatları, ölçü çizgileri, trim/extend/mirror/offset işlemleri. Referans olarak görüntü/PDF veya SVG çerçeveleri içe aktarın. OpenAEC başlık bloğu ile profesyonel A3 PDF'e dışa aktarın." },
+    "ifc": { "title": "IFC / IFCX dışa aktarma", "desc": "Geoteknik verileri IFC elemanları olarak veya BIM modelleri ve Open Frame Studio ile sorunsuz entegrasyon için IFCX ad alanında dışa aktarın." },
+    "metadata": { "title": "Meta veri", "desc": "Tam sondalama ve sondaj verileri: kayıt, kalite rejimi, sondaj yöntemi, teslim, açıklama tarihi, NEN5104plus kodlaması." },
+    "rawxml": { "title": "Ham veriler (XML)", "desc": "Doğrulama ve hata ayıklama için doğrudan uygulamadan temel BRO-xml veya GEF kaynağını inceleyin." },
+    "local": { "title": "%100 yerel", "desc": "Tüm veriler kendi makinenizde kalır. Bulut yok, üçüncü taraflara yükleme yok — varsayılan olarak gizlilik ve KVKK uyumu." }
+  },
+  "quotes": {
+    "title": "⚡ Eşsiz: sondaj firmalarından otomatik teklif istekleri",
+    "desc": "Saha planınızda bir sondaj ızgarası çizin ve <strong>Teklif iste</strong> düğmesine tıklayın. Open Geotechniek Studio kamuya açık kataloğumuzdaki tüm Hollanda sondaj firmalarını arar ve en yakın üç firmaya proje detayları ve sondaj spesifikasyonları dahil bir teklif isteği gönderir.",
+    "list2": "<strong>Projeye olan mesafeye</strong> göre sıralanır",
+    "list3": "En yakın 3'ünün ön seçimi — göndermeden önce ayarlanabilir",
+    "list4": "Önceden doldurulmuş proje bilgileri, konum ve spesifikasyonlarla Outlook entegrasyonu",
+    "list6": "Açık kaynak katalog: şirketler kendilerini bir GitHub pull request aracılığıyla ekleyebilir"
+  },
+  "useCases": {
+    "title": "Kullanıcı profilleri",
+    "geotech": { "title": "Geoteknik danışmanlar", "desc": "Kazık, temel ve oturma danışmanlığı için BRO verilerini hızlı bir şekilde inceleyin. Proje yorumlaması için birden fazla sondajı karşılaştırın." },
+    "civil": { "title": "İnşaat mühendisleri", "desc": "Köprüler, viyadükler, tüneller ve yapılar için CPT grafiklerine dayalı temel seçimlerini destekleyin." },
+    "gww": { "title": "Sivil altyapı yüklenicileri", "desc": "Sivil bir proje başlamadan önce kazı derinliği, zemin iyileştirme ve su tahliyesini değerlendirin." },
+    "bim": { "title": "BIM koordinatörleri", "desc": "Geoteknik verileri IFCX aracılığıyla BIM modellerine entegre edin. Yer üstü ve yer altı için tek bir gerçek kaynağı." }
+  },
+  "tech": {
+    "title": "Teknoloji",
+    "desc": "GEF ve BRO-xml'in hızlı ayrıştırılması için Rust hesaplama çekirdeği, UI için TypeScript frontend ve çapraz platform dağıtımı (Windows, macOS, Linux) için Tauri 2. Sorunsuz entegrasyon için tüm OpenAEC ekosistemi ile aynı stack."
+  },
+  "cta": {
+    "liveDemo": "🪨 Canlı demoyu aç",
+    "download": "Yükleyiciyi indir",
+    "github": "GitHub"
+  }
+}

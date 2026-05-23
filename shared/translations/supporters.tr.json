@@ -1,0 +1,27 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "OpenAEC Foundation'ı, tüm inşaat yazılımlarını 2026 sonuna kadar açık kaynak hale getirme misyonunda destekleyen şirketler ve kuruluşlar."
+  },
+  "why": {
+    "title": "Neden <span style=\"color: var(--amber);\">destekçi</span> olmalı?",
+    "desc": "OpenAEC Foundation'ın destekçisi olarak, AEC sektörü için açık kaynak yazılımın geleceğine yatırım yaparsınız. Herkes için erişilebilir profesyonel araçların geliştirilmesine katkıda bulunursunuz."
+  },
+  "benefits": {
+    "influence_title": "Geliştirmede söz hakkı",
+    "influence_desc": "Ekosistemin öncelikleri ve yol haritası üzerinde söz sahibi olun.",
+    "early_title": "Erken erişim",
+    "early_desc": "Yeni araçlara ve özelliklere kamuya açılmadan önce ilk siz erişin.",
+    "support_title": "Destek ve barındırma",
+    "support_desc": "Destekte öncelik ve isteğe bağlı yönetilen barındırma.",
+    "visibility_title": "Görünürlük",
+    "visibility_desc": "Web sitesinde, sunumlarda ve etkinliklerde logo ve isim."
+  },
+  "supporters": {
+    "label": "Destekçilerimiz"
+  },
+  "cta": {
+    "title": "Destekçi olmak ister misiniz?",
+    "desc": "Olanakları görüşmek için bizimle iletişime geçin. Birlikte AEC sektörünü açık kaynak hale getirelim."
+  }
+}

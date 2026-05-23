@@ -1,0 +1,30 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "OpenAEC Foundation ve yazılımlarımızın kullanımı hakkında yasal bilgiler."
+  },
+  "foundation": {
+    "title": "Vakıf",
+    "desc": "OpenAEC Foundation (Stichting OpenAEC Foundation), Hollanda'da kurulmuş olup Hollanda hukukuna tabidir. Vakıf, kâr amacı gütmeyen bir kuruluştur."
+  },
+  "licenses": {
+    "title": "Açık kaynak lisansları",
+    "desc": "OpenAEC Foundation'ın tüm yazılımları tanınmış açık kaynak lisansları (MIT, LGPL, CC BY-SA) altında yayınlanmıştır. Proje başına özel lisans için <a href=\"https://github.com/OpenAEC-Foundation\" target=\"_blank\">GitHub</a>'daki bireysel depolara bakın."
+  },
+  "cleanroom": {
+    "title": "Temiz oda beyanı",
+    "p1": "OpenAEC Foundation'ın kapalı (tescilli) dosya formatlarıyla birlikte çalışan yazılımlar geliştirmesi durumunda, bu yalnızca Avrupa Yazılım Direktifi (Direktif 2009/24/EC) uyarınca temiz oda tersine mühendisliği yoluyla yapılır."
+  },
+  "privacy": {
+    "title": "Gizlilik",
+    "desc": "OpenAEC Foundation, araçları aracılığıyla kişisel veri toplamaz. Yerel çalışan araçlar tüm verileri kendi cihazınızda işler. Gizlilik politikamız barındırılan hizmetler için geçerlidir."
+  },
+  "liability": {
+    "title": "Sorumluluk",
+    "desc": "Yazılım herhangi bir garanti olmaksızın \"olduğu gibi\" sağlanır. OpenAEC Foundation, yazılımın kullanımından kaynaklanan zararlardan sorumlu değildir. Tam sorumluluk reddi hükümleri için proje başına özel açık kaynak lisansına bakın."
+  },
+  "statutes": {
+    "title": "Tüzük taslağı",
+    "desc": "Vakfın tüzük taslağı web sitemizde mevcuttur. <a href=\"/statuten/\">Tüzük taslağını görüntüleyin</a>."
+  }
+}

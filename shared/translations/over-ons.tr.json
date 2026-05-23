@@ -1,0 +1,36 @@
+{
+  "header": {
+    "label": "Hakkımızda",
+    "title": "Yönetim kurulu",
+    "desc": "OpenAEC Foundation'ın arkasındaki insanlar. Birlikte AEC sektöründe açık kaynak yazılım için kendimizi adıyoruz."
+  },
+  "maarten": {
+    "role": "Başkan",
+    "desc": "OpenAEC Foundation'ın kurucusu ve building.py ile AEC sektörü için çeşitli açık kaynak BIM araçlarının arkasındaki itici güç."
+  },
+  "jochem": {
+    "role": "Sayman",
+    "desc": "Vakfın mali yönetiminden ve sürdürülebilir mali politikanın sağlanmasından sorumludur."
+  },
+  "martjan": {
+    "role": "Sekreter",
+    "desc": "Organizasyonel süreçleri denetler ve vakfın idari temellerini sağlar."
+  },
+  "silvia": {
+    "role": "Yönetim kurulu üyesi",
+    "desc": "OpenAEC Foundation'a yönetim kurulu üyesi olarak katkıda bulunur."
+  },
+  "mission": {
+    "title": "Neden <span class=\"accent\">OpenAEC</span>?",
+    "p1": "AEC sektörü, hala büyük ölçüde kapalı, tescilli yazılımlarla çalışan son büyük sektörlerden biridir. Bunu değiştirmek istiyoruz.",
+    "p2": "OpenAEC Foundation, tüm AEC zinciri (bina, altyapı, inşaat mühendisliği) için açık kaynak yazılım geliştirir, destekler ve tanıtır — tasarımdan teslime ve yönetime kadar. Hedefimiz: bu yıl tüm AEC sektörünü açık kaynak hale getirmek."
+  },
+  "values": {
+    "transparency_title": "Şeffaflık",
+    "transparency_desc": "Açık kod, açık veri, açık süreçler. Herkes bakabilir, katkıda bulunabilir ve birlikte inşa edebilir.",
+    "collaboration_title": "İşbirliği",
+    "collaboration_desc": "En iyi yazılımların, tüm sektör araçlar üzerinde rekabet etmek yerine birlikte çalıştığında ortaya çıktığına inanıyoruz.",
+    "accessibility_title": "Erişilebilirlik",
+    "accessibility_desc": "Lisans maliyeti yok, tedarikçi bağımlılığı yok. İnşaattaki herkes için profesyonel araçlar."
+  }
+}

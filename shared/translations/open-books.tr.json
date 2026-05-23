@@ -1,0 +1,20 @@
+{
+  "header": {
+    "label": "Tarihi inşaat literatürü",
+    "desc": "Dijitalleştirilmiş tarihi inşaat ve mimari kitapları, mühendisler, mimarlar ve inşaatçılar için ücretsiz erişilebilir.",
+    "browseBtn": "Koleksiyonu inceleyin",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "collection": {
+    "title": "Koleksiyon",
+    "wattjes": { "title": "Prof. J.G. Wattjes (10 cilt)", "desc": "İnşaat üzerine tam seri: duvarlar, bacalar, temeller, pencereler/kapılar, döşeme sistemleri, kemerler, merdivenler, çatı yapıları ve daha fazlası." },
+    "gugel": { "title": "Prof. E.H. Gugel", "desc": "Architectonische Vormenleer (1880) — mimari tasarım teorisi ve form dili." },
+    "potma": { "title": "Ir. A.P. Potma ve Ir. J.E. de Vries", "desc": "Staalconstructies — çelik yapıların teorisi, hesabı ve uygulaması." },
+    "vandepitte": { "title": "Prof. D. Vandepitte (3 cilt)", "desc": "Berekening van Constructies — üç kapsamlı ciltte yapısal hesaplama teorisi." },
+    "zwiers": { "title": "L. Zwiers", "desc": "Houtconstructies Handboek — ahşap yapı tasarımı el kitabı." },
+    "bosboom": { "title": "Symon Bosboom", "desc": "Cort onderwys van de vyf colommen — Dordrecht şehir taş ustası tarafından beş klasik sütun düzeni üzerine tarihi inceleme." },
+    "bernoulli": { "title": "Bernoullis Vademecum", "desc": "Mühendislik referans el kitabı." },
+    "codes": { "title": "Yapı yönetmelikleri", "desc": "Tarihi Hollanda yapı yönetmelikleri: G.B.V. Gewapend Beton Voorschriften (1950) ve VB Voorschriften Beton (1974)." }
+  },
+  "footer": { "slogan": "Özgürce inşa edin. Birlikte inşa edelim." }
+}

@@ -1,0 +1,44 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "OpenAEC <span class=\"accent\">Docs</span>",
+    "desc": "Açık kaynak BIM belge yönetim platformu. Tüm proje belgelerini tek bir merkezi yerde yönetin, paylaşın ve arşivleyin.",
+    "badge": "Beta"
+  },
+  "what": {
+    "title": "OpenAEC <span class=\"accent\">Docs</span> nedir?",
+    "desc": "OpenAEC Docs, inşaat sektöründeki BIM projeleri için özel olarak tasarlanmış bir belge yönetim sistemidir (DMS). <a href=\"https://nextcloud.com\" target=\"_blank\" rel=\"noopener\" style=\"color: var(--amber);\">Nextcloud</a> üzerine inşa edilmiştir — dosya yönetimi ve işbirliği için en popüler açık kaynak platformdur. Çizimler ve raporlardan sözleşmeler ve izinlere kadar tüm proje belgelerini yönetmek, paylaşmak ve arşivlemek için merkezi bir yer sağlar.",
+    "tech": "BIM'e özgü işlevsellik için Rust ve TypeScript ek modülleri ile Nextcloud üzerine inşa edilmiştir."
+  },
+  "features": {
+    "title": "Özellikler",
+    "documents": {
+      "title": "Belge yönetimi",
+      "desc": "Belgeleri projeye, disipline veya aşamaya göre yükleyin, düzenleyin ve arayın. Otomatik meta veri çıkarma."
+    },
+    "versioning": {
+      "title": "Sürüm kontrolü",
+      "desc": "Her belgenin tam sürüm geçmişi. Sürümleri karşılaştırın ve önceki revizyonları geri yükleyin."
+    },
+    "ifcx": {
+      "title": "IFCX entegrasyonu",
+      "desc": "Belgeleri IFCX model elemanlarına bağlayın. İlgili belgeleri doğrudan BIM modelinden görüntüleyin."
+    },
+    "access": {
+      "title": "Erişim kontrolü",
+      "desc": "Proje ve klasör başına role dayalı izinler. Belgeleri kimin görüntüleyebileceğini, düzenleyebileceğini veya silebileceğini belirleyin."
+    },
+    "search": {
+      "title": "Arama ve filtreler",
+      "desc": "Belgeler ve meta veriler üzerinde tam metin arama. Türe, tarihe, yazara veya duruma göre filtreleyin."
+    },
+    "api": {
+      "title": "API ve entegrasyon",
+      "desc": "OpenAEC ekosistemindeki diğer araçlarla entegrasyon için REST API. Otomasyon için web kancaları."
+    }
+  },
+  "highlight": {
+    "title": "Kendi sunucunuzda barındırılır ve gizlilik öncelikli",
+    "desc": "OpenAEC Docs, Docker aracılığıyla kendi sunucunuzda çalışır. Verileriniz üzerinde tam kontrol, bulut bağımlılığı yok. Sıkı gizlilik ve uyumluluk gereksinimleri olan kuruluşlar için idealdir."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "header": {
+    "label": "OpenAEC Foundation",
+    "desc": "Açık kaynak öncülerine bir saygı duruşu. Moda olmadan önce. Yapay zeka var olmadan önce. Microsoft hala Linux'a kanser derken. Üzerine inşaa etmeye devam ettiğimiz temelleri attılar."
+  },
+  "stats": {
+    "title": "Açık kaynak <span class=\"accent\">kazanıyor</span>",
+    "subtitle": "Rakamlar yalan söylemez. Açık kaynak artık alternatif değil — standart."
+  },
+  "pioneers": {
+    "title": "Öncüler — <span class=\"accent\">İnsanlar</span>",
+    "subtitle": "Farklı düşünme cesaretine sahip insanlar. Dünya daha iyi olsun diye çalışmalarını bağışlayanlar."
+  },
+  "projects": {
+    "title": "Açık kaynak <span class=\"accent\">projeler</span>",
+    "subtitle": "OpenAEC'nin üzerine inşa edildiği araçlar ve framework'ler. Her proje, tutkulu geliştiricilerin ücretsiz yıllarca süren çalışmalarını temsil eder."
+  }
+}

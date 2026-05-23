@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Karşılaştırma",
+    "title": "OpenAEC <span class=\"accent\">vs Solibri</span>",
+    "desc": "BIM Validator, BCF Manager Studio ve Monty IFC Viewer ile açık kaynak BIM doğrulaması — IDS, NL-BIM Basis ILS ve RVB BIM Norm gibi açık standartlar üzerine inşa edilmiştir."
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

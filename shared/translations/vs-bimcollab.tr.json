@@ -1,0 +1,10 @@
+{
+  "header": {
+    "label": "Karşılaştırma",
+    "title": "OpenAEC <span class=\"accent\">vs BIMcollab</span>",
+    "desc": "BCF Manager Studio, BIM projeleri için BCF 2.1 ve BCF API 3.0 ile kendi sunucunuzda barındırılan, açık kaynak sorun yönetimi sunar. Özellikler, fiyatlandırma ve mimari açısından BIMcollab ile karşılaştırın."
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

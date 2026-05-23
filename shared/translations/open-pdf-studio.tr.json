@@ -1,0 +1,83 @@
+{
+  "releases": {
+    "title": "Sürüm notları",
+    "desc": "GitHub'dan canlı olarak alınan sürüm geçmişi. Son 15 sürüm gösteriliyor.",
+    "loading": "Sürümler yükleniyor...",
+    "viewAll": "Tüm sürümleri GitHub'da görüntüle &rarr;"
+  },
+  "header": {
+    "label": "Açık kaynak PDF editörü",
+    "title": "Open <span class=\"accent\">PDF</span> Studio",
+    "desc": "Abonelik, telemetri veya bloatware olmadan profesyonel kalitede PDF açıklama, işaretleme ve düzenleme. Tauri 2 ve SolidJS ile inşa edildi.",
+    "downloadBtn": "v1.47.13 indir",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "download": {
+    "title": "v1.47.13 indir"
+  },
+  "features": {
+    "heading": "Özellikler",
+    "annotations": {
+      "title": "20+ açıklama aracı",
+      "desc": "Vurgulama, altı çizili, üstü çizili, şekiller (dikdörtgen, elips, çokgen, bulut, ok), serbest kalem, metin kutuları, açıklamalar, yapışkan notlar, damgalar ve görüntü ekleme."
+    },
+    "measurement": {
+      "title": "Ölçüm araçları",
+      "desc": "Ölçek kalibrasyonu (mm, cm, inç, nokta) ile mesafe, alan ve çevre ölçümü. Uç noktalara, orta noktalara, merkezlere ve kenarlara nesne yapışması."
+    },
+    "signatures": {
+      "title": "İmzalar ve damgalar",
+      "desc": "Çok darbeli imzalar çizin ve hızlı yeniden kullanım için 5'e kadar kaydedin. Onaylandı, Reddedildi, Taslak, Gizli ve Final dahil 10 yerleşik damga."
+    },
+    "pages": {
+      "title": "Sayfa yönetimi",
+      "desc": "Sürükle bırak küçük resimler aracılığıyla sayfaları ekleyin, silin, çıkarın, değiştirin ve yeniden sıralayın. Birden fazla PDF'i birleştirin. Sayfaları 90/180/270 derece döndürün."
+    },
+    "redaction": {
+      "title": "Karartma",
+      "desc": "Belgelerden hassas içeriği kalıcı olarak kaldırmak için alanları işaretleyin ve uygulayın."
+    },
+    "forms": {
+      "title": "Form desteği",
+      "desc": "Etkileşimli PDF formlarını (AcroForms ve XFA) doldurun. JavaScript doğrulaması ile metin alanları, onay kutuları ve radyo düğmeleri oluşturun."
+    },
+    "watermarks": {
+      "title": "Filigranlar ve üstbilgi/altbilgi",
+      "desc": "Opaklık, rotasyon ve konum kontrolü ile metin ve görüntü filigranları. Sayfa numarası, tarih, saat ve dosya adı değişkenleri ile üstbilgi ve altbilgiler."
+    },
+    "export": {
+      "title": "Dışa aktarma ve yazdırma",
+      "desc": "Sayfaları 72-600 DPI'da PNG veya JPEG olarak dışa aktarın. Canlı önizleme, sayfa aralığı, ölçeklendirme ve görüntü olarak yazdırma seçeneği ile tam yazdırma iletişim kutusu. XFDF açıklama dışa/içe aktarma."
+    },
+    "multitab": {
+      "title": "Çoklu sekme ve oturumlar",
+      "desc": "Sekmelerde birden fazla PDF ile çalışın. Adlandırılmış çalışma alanı anlık görüntülerini kaydedin ve geri yükleyin. Sabitle/kaldır ile son dosyalar."
+    },
+    "languages": {
+      "title": "39 dil",
+      "desc": "Arapça, İbranice, Farsça ve Urduca için RTL desteği dahil tam arayüz çevirisi. 5 tema: Koyu, Açık, Mavi, Yüksek Kontrast ve Sistem."
+    }
+  },
+  "tech": {
+    "heading": "Teknoloji stack'i",
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Yerel performans ve küçük ikili boyut için Rust backend."
+    },
+    "solid": {
+      "title": "SolidJS",
+      "desc": "İnce ayarlı güncellemelerle reaktif UI framework'ü."
+    },
+    "pdfjs": {
+      "title": "PDF.js + pdf-lib",
+      "desc": "Render için Mozilla PDF.js, belge manipülasyonu için pdf-lib."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

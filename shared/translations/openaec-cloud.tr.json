@@ -1,0 +1,42 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "OpenAEC <span class=\"accent\">Cloud</span> Platform",
+    "desc": "OpenAEC ekosistemi için merkezi bulut platformu. Proje yönetimi, kullanıcı yönetimi, SSO ve senkronizasyon.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Neden OpenAEC <span class=\"accent\">Cloud</span>?",
+    "desc": "OpenAEC ekosistemi birlikte çalışan birçok araçtan oluşur. Cloud Platform merkezi merkez olarak hizmet verir: proje yönetimi, kullanıcı kimlik doğrulama, dosya senkronizasyonu ve tüm bağlı uygulamalar için API ağ geçidi."
+  },
+  "features": {
+    "title": "Özellikler",
+    "projects": {
+      "title": "Proje yönetimi",
+      "desc": "Tüm OpenAEC araçları için merkezi proje yönetimi. Projeyi bir kez oluşturun, her yerde kullanılabilir."
+    },
+    "sso": {
+      "title": "Kullanıcı yönetimi ve SSO",
+      "desc": "Tüm ekosistem için Single Sign-On. Bir kez oturum açın, role dayalı yetkilendirme ile tüm araçlara erişin."
+    },
+    "sync": {
+      "title": "Dosya senkronizasyonu",
+      "desc": "Tüm araçlar arasında otomatik dosya senkronizasyonu. Her zaman en son sürüm, her yerde kullanılabilir."
+    },
+    "nextcloud": {
+      "title": "NextCloud entegrasyonu",
+      "desc": "Veriler üzerinde tam kontrol ile güvenli dosya depolama ve paylaşımı için NextCloud ile kesintisiz entegrasyon."
+    },
+    "multitenant": {
+      "title": "Multi-tenant",
+      "desc": "Aynı platformda birden fazla kuruluş için destek, tam veri ayrımı ve özel yapılandırma ile."
+    },
+    "api": {
+      "title": "API Gateway",
+      "desc": "Tüm OpenAEC hizmetleri için merkezi API ağ geçidi. Hız sınırlaması ve izleme ile araçlar arasında güvenli iletişim."
+    }
+  },
+  "cta": {
+    "github": "GitHub'da görüntüle"
+  }
+}

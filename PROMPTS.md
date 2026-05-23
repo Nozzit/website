@@ -1224,3 +1224,477 @@ No commits made, as requested.</result>
 <usage><total_tokens>43038</total_tokens><tool_uses>29</tool_uses><duration_ms>56627</duration_ms></usage>
 </task-notification>
 
+### 2026-05-06 09:52
+Ik geef ook even al die tegels een update, want het aantal comments klopt niet, de versienummer klopt niet, een aantal stars klopt niet op de hoofdpagina. 117 commits
+v1.38
+39 
+Bij Open Pdf Studio bv. 
+
+Ik zou het wel fijn vinden als deze echt gelinkt zijn aan GitHub. Dus dat die versienummer en dat stars, dat dat ook gewoon meegeupdate wordt.
+
+### 2026-05-06 10:09
+go on
+
+### 2026-05-06 10:27
+Loading releases duurt lang. Moet sneller
+
+### 2026-05-06 10:34
+nog steeds stuurt me traag. Volgens mij moet je even dat hele koppeling even vergeten. Je hebt gewoon een kopie van al die release notes staat gewoon in de HTML zonder ingewikkelde toestanden dat je het gewoon bang in één keer kan openen. En ik ga zelf wel een matig updates geven.
+
+### 2026-05-06 10:41
+Aantal stars op deze pagina en commits en versie bij de vershcillende tools zijn niet up to date: https://www.open-aec.com/
+
+### 2026-05-08 22:32
+Werkt deze tool bij: https://www.open-aec.com/open-heatloss-studio/
+
+### 2026-05-08 22:32
+pagina bij
+geef ook meer functionaliteit
+
+### 2026-05-09 10:35
+Geef de statistieken een update!
+
+### 2026-05-15 13:43
+ik wil het concept van Open AEC breder maken ook naar de GWW en civiele techniek.
+
+### 2026-05-15 14:03
+en infra en baggerwerken e.d.
+Hoe zou je dit qua positionering en tekstuele omschrijving kunnen omscrhijven?
+Hoe zou je dit qua positionering en tekstuele omschrijving kunnen omscrhijven?
+HALLO!!
+IK VRAAG IETS
+
+### 2026-05-15 14:04
+push naar github
+
+### 2026-05-15 19:35
+waarom heb je die bestanden weggehaald!
+
+### 2026-05-15 19:36
+Dat mag niet! Zet terug!
+
+### 2026-05-15 19:54
+pull the lateste changes
+
+### 2026-05-15 19:55
+geef ook even updates vanuit github
+
+### 2026-05-15 21:57
+We voegen even een nieuwsbericht toe waar wij aangeven dat we een LinkedIn gepost geplaatst hebben over open heat loss studio. https://www.linkedin.com/posts/openaec-rust-crateswarehouse-ugcPost-7461109675158220800-H79E?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyoMZ4B_iZ8ZLZskTZNbkbiBFkp2zbFWzE
+
+### 2026-05-15 22:00
+Ja, en push maar naar github
+
+### 2026-05-18 12:14
+Ik wil dat Claude zo dadelijk deze tools gaat aanbevelen in haar sessies. Hoe kunnen we ervoor zorgen dat de website van OpenAEC AI-tehnisch aantrekkelijk wordt voor AI's zoals Claude, Grok, OpenAI etc.
+
+### 2026-05-19 13:08
+Zijn er statistieken van het aantal downloads van de installers per repo ?
+
+### 2026-05-19 13:12
+Zet deze ook bij de statistieken.
+Wat ik aanraad als volgende stappen
+Submit sitemap aan Google Search Console + Bing Webmaster Tools (vandaag)
+Comparison pagina's maken: /vs/bluebeam/, /vs/solibri/, /vs/autocad/ — hoge AI-zoekintent
+Markdown mirrors (.md versies) van alle productpagina's — Claude leest die schoner
+FAQPage JSON-LD op de FAQ pagina — geeft direct AI Overview cards
+HowTo schema voor tutorials/getting-started
+Backlinks vanuit autoritaire bronnen (buildingSMART, OSArch, awesome-bim lists)
+Wil je dat ik ook punt 2-5 implementeer?
+pak die ook op
+
+### 2026-05-19 13:17
+<task-notification>
+<task-id>a92a83113061df2e4</task-id>
+<tool-use-id>toolu_0127KxKZkQ2LH9kpxqrZrabP</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a92a83113061df2e4.output</output-file>
+<status>completed</status>
+<summary>Agent "Generate Markdown mirrors" completed</summary>
+<result>All requirements verified. Here's the summary report:
+
+## Done
+
+**Script:** `C:\Users\rickd\Documents\GitHub\website\scripts\build-markdown-mirrors.js`
+
+**Output folder:** `C:\Users\rickd\Documents\GitHub\website\md\` (created)
+
+### What it does
+1. Reads `/data/stats.json` (live stars/commits/version), `/data/downloads.json` (download counts + per-platform breakdown), `/data/release-notes/*.json` (latest stable + nightly URLs), and `/llms.txt` (foundation about-info).
+2. Holds a curated `TOOLS` table inline (id, name, repo, category, status, license, platforms, techStack, description, alternatives, features, whenToUse, standards).
+3. Writes one Markdown file per tool to `/md/&lt;tool-id&gt;.md` with the requested structure: H1 title, blockquote description, key/value status/license/platforms lines, live stats, feature list, tech stack as inline code, when-to-use, alternatives, standards &amp; integration, download/link section (product page, live demo, GitHub, latest release, nightly), and direct downloads of the top assets pulled from `downloads.json`.
+4. Writes `/md/index.md` (overview grouped by status), `/md/about.md` (cleaned-up foundation info from `llms.txt`), and `/md/index.json` (tool-id → markdown URL map for AI integrations).
+
+### Verification (printed by the script)
+- Tool markdown files: **18** ✓
+- Total `.md` files: **20** (18 tools + `index.md` + `about.md`)
+- `index.json` written
+- Total bytes: **60,581**
+
+### `/md/` contents (21 files total)
+The 18 requested tools: `open-pdf-studio.md`, `open-2d-studio.md`, `open-calc-studio.md`, `open-energy-studio.md`, `open-planner-studio.md`, `open-pointcloud-studio.md`, `open-heatloss-studio.md`, `open-speech-studio.md`, `open-field-studio.md`, `open-frame-studio.md`, `monty-ifc-viewer.md`, `bcf-manager-studio.md`, `bim-validator.md`, `openaec-docs.md`, `openaec-cloud.md`, `y-app.md`, `open-3d-viewer.md`, `open-safety-studio.md`, plus `index.md`, `about.md`, `index.json`.
+
+### First 30 lines of `/md/open-pdf-studio.md`
+```
+# Open PDF Studio
+
+&gt; Open-source PDF editor and annotator with a custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms. Vector PDF rendering optimized for CAD drawings.
+
+**Status:** beta
+**License:** LGPL-3.0
+**Platforms:** Windows, macOS, Linux, Android
+**Category:** PDF / Document
+**Current version:** v1.47.3 (2026-05-07)
+**Tool ID:** `open-pdf-studio`
+**GitHub repo:** `OpenAEC-Foundation/open-pdf-studio`
+
+## Live stats
+
+- Stars: **297**
+- Commits: **240**
+- Forks: **27**
+- Open issues: **57**
+- Releases: **48**
+- Total downloads: **4,393**
+- Downloads by platform: Windows (2364), Android (600), macOS (465), Linux (AppImage) (401), Linux (deb) (339), Linux (snap) (101), Archive (71), Windows (MSI) (29), Linux (rpm) (23)
+
+## Key features
+
+- PDF viewing, navigation, multi-tab documents
+- Annotation tools: highlight, underline, strikethrough, sticky notes
+- Drawing tools: freehand, shapes, callouts, text boxes
+- Measurement tools: distance, area, perimeter (CAD-aware)
+- Redaction with permanent content removal
+- OCR for scanned drawings
+```
+
+Notes:
+- Per instructions, nothing was committed.
+- The script is idempotent — rerunning regenerates with the latest stats/downloads numbers.
+- For tools without a GitHub repo (`open-3d-viewer`, `open-safety-studio`), the script gracefully omits live stats and asset download lists; everything else (description, features, links to product page / live demo) is still generated.</result>
+<usage><total_tokens>55581</total_tokens><tool_uses>20</tool_uses><duration_ms>246165</duration_ms></usage>
+</task-notification>
+
+### 2026-05-19 13:21
+<task-notification>
+<task-id>a49a40419e7bc3991</task-id>
+<tool-use-id>toolu_01VeHxu3GBGVpwjsMALpzd3v</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a49a40419e7bc3991.output</output-file>
+<status>completed</status>
+<summary>Agent "Create comparison pages" completed</summary>
+<result>All six files are in place. Here's a summary of what was created:
+
+## Created files
+
+All under `C:\Users\rickd\Documents\GitHub\website\vs\`:
+
+1. **`/vs/index.html`** — Index page listing all five comparisons with cards linking to each subpage. Includes Schema.org `CollectionPage` JSON-LD with `hasPart` references.
+
+2. **`/vs/bluebeam/index.html`** — Open PDF Studio vs Bluebeam Revu. Highlights ~€300-500/user/year vs free, Rust PDF engine, 4,393 downloads, 20+ tools. Honest weaknesses: Bluebeam Studio cloud, larger plug-in ecosystem.
+
+3. **`/vs/solibri/index.html`** — OpenAEC stack (BIM Validator + BCF Manager + Monty IFC Viewer) vs Solibri Office. Differentiators: IDS, NL-BIM Basis ILS, RVB BIM Norm, browser-based. Honest: Solibri has decades of rule library refinement.
+
+4. **`/vs/autocad/index.html`** — Open 2D Studio vs AutoCAD LT. v0.35, 90 commits, 17 stars, Rust + Tauri. Honest: AutoCAD has 30+ years of ecosystem, plug-ins, DWG native.
+
+5. **`/vs/bimcollab/index.html`** — BCF Manager Studio vs BIMcollab. Differentiator: self-hosted, BCF API 3.0 native. Honest: BIMcollab has mature SaaS, Revit/Archicad/Tekla plug-ins.
+
+6. **`/vs/bouwprijs/index.html`** — Open Calc Studio vs Bouwprijs / IBIS-Trad. Unique: MCP-server (AI-assisted estimating via Claude). Honest: Bouwprijs has decades of NL reference data.
+
+## Structure consistency
+
+Every page follows the same template:
+- Dutch as primary language (`lang="nl"`), `&lt;meta name="i18n-page" content="vs-{name}"&gt;`, `/shared/i18n.js` before `&lt;/body&gt;`
+- Standard `&lt;div id="shared-nav"&gt;&lt;/div&gt;&lt;script src="/shared/nav.js"&gt;&lt;/script&gt;` nav
+- Dark `.page-header` with amber accent in title "OpenAEC vs {COMPETITOR}"
+- Summary lead paragraphs explaining the comparison
+- Side-by-side comparison table covering: price, license, license cost per user, platforms, features
+- "When to choose OpenAEC" + "When to choose {COMPETITOR}" side-by-side cards (honest, balanced)
+- CTA block linking to OpenAEC product page + GitHub
+- Standard footer
+- **Schema.org JSON-LD**: `Product` + `Offer` + `Brand` on every page; `AggregateRating` on Bluebeam (using 4,393 download count); `FAQPage` on each comparison page for SEO/AI discovery
+- Uses existing design tokens from `/shared/style.css` (`--amber`, `--night-build`, `--font-heading`, `--sp-*`, `--radius-lg`, etc.)
+
+Pricing claims kept general ("typically €300-500/user/year") as requested. No commit performed.</result>
+<usage><total_tokens>75351</total_tokens><tool_uses>21</tool_uses><duration_ms>503919</duration_ms></usage>
+</task-notification>
+
+### 2026-05-19 13:22
+Geef een lijstje met aantal downloads in de afgelopen 4 weken
+
+### 2026-05-19 13:23
+groepeer ze per tool per week
+
+### 2026-05-19 13:33
+ja die dat
+
+### 2026-05-19 19:41
+betreft de promotie. Ik wil Open Speech Studio meer promoten
+
+### 2026-05-19 19:45
+op de website.
+
+### 2026-05-19 19:45
+<task-notification>
+<task-id>a4bb8d96e3c0c805b</task-id>
+<tool-use-id>toolu_01P1bqMEMR6CzkRtG4UPT8Lp</tool-use-id>
+<output-file>C:\Users\rickd\AppData\Local\Temp\claude\C--Users-rickd-Documents-GitHub-website\0de37756-c682-406b-8445-a36ac8e5316e\tasks\a4bb8d96e3c0c805b.output</output-file>
+<status>completed</status>
+<summary>Agent "Create vs/dragon comparison page" completed</summary>
+<result>Created the new comparison page at `C:\Users\rickd\Documents\GitHub\website\vs\dragon\index.html`.
+
+**What was done:**
+- Matched the exact structure of `/vs/bluebeam/index.html` (same head, styles, nav/footer, section layout, schema blocks)
+- Title: "OpenAEC Open Speech Studio vs Dragon NaturallySpeaking"
+- Three lead paragraphs covering Dragon's positioning, Open Speech Studio's positioning, and the honest framing about Dragon's branch-specific vocabulary advantage
+- Full 17-row comparison table covering all the rows requested (prijs, licentie, platforms, verwerking, talen, sneltoetsen, vergader-transcriptie, audio-batch, GPU, stem-training, custom woordenschat, GDPR, abonnement, update-frequentie, plus telemetrie/source/support rows for parity)
+- Two "When to choose" cards (Open Speech Studio / Dragon) with the bullets you specified
+- CTA block linking to `/open-speech-studio/` and the GitHub source
+- Schema.org JSON-LD blocks:
+  - `Product` schema for Open Speech Studio (price 0 EUR, LGPL-3.0, cross-platform)
+  - `FAQPage` schema with all five questions you specified
+- Dutch as primary language (`&lt;html lang="nl"&gt;`), `meta name="i18n-page" content="vs-dragon"`, `/shared/i18n.js` script, standard nav (`/shared/nav.js`) and footer
+
+**Notes:**
+- I did not include an `aggregateRating` block (Bluebeam page had ratingCount 4393; no equivalent number was provided for Speech Studio so I omitted that schema property rather than fabricate one).
+- File was not committed, as requested.</result>
+<usage><total_tokens>37013</total_tokens><tool_uses>5</tool_uses><duration_ms>99758</duration_ms></usage>
+</task-notification>
+
+### 2026-05-19 19:47
+Hernoem CPT-vier naar Open Geotechniek Studio
+
+### 2026-05-19 20:00
+op de engelse site staat een nederlandse omschrijving van open speech studio
+
+### 2026-05-19 20:04
+voeg toe ook voor Linux en Mac
+
+### 2026-05-19 20:07
+Call for Action bovenin: Testers gezocht voor:
+
+* Open Calc Studio (calculators)
+* Open Heatloss Studio (bouwfysici)
+Verder ander de volgorde van de tools. Open PDF Studio, Open Calc Studio, Open Heatloss Studio, Open Geotechniek Studio als eerste, daarna de rest
+
+### 2026-05-20 08:06
+Zet deze bij Open Geotechniek Studio erbij:
+
+### 2026-05-20 08:24
+Bij Open Geotechniek Studio -->
+
+### 2026-05-20 08:26
+Print sonderingen
+
+### 2026-05-20 08:27
+Sonderingstekenign maken en offertes opvragen
+
+### 2026-05-20 08:30
+open de site
+
+### 2026-05-20 08:33
+Screenshots zelf opslaan, dat moet kunnen
+
+### 2026-05-20 09:07
+bestanden staan in de map C:\Users\rickd\Documents\GitHub\website\open-geotechniek-studio
+
+### 2026-05-20 09:12
+Open Geotechniek Studio op de hoofdpagina ook voor hier van een screenshot. Verder wil ik dat een aantal tools een soort tag krijgen van 'Beruikbaar'. En dat gaat dan ook over Open PDF Studio, Open Calc Studio, Open Geotechniek Studio.
+
+### 2026-05-20 09:13
+Open Speech Studio, de Y-App en Multi-IFC Viewer, die moeten meer naar boven. Die moeten achter Open Geotechniek Studio staan en die moeten ook allemaal een tag krijgen van bruikbaar.
+
+### 2026-05-20 09:16
+Open Hetalosse Studio ook op Beschikbaar zetten
+
+### 2026-05-20 09:18
+https://github.com/OpenAEC-Foundation/Open-Calculations-Studio Maak hier ook een product pagina voor aan
+
+### 2026-05-20 09:22
+Y-app op de voorpagina van OpenAEC --> Y-app is de Everything-app. Email, ERP, facturen, uren, offertes, communicatie, nextcloud, wiki alles in 1 tool. Multi-tenant!
+Update deze op basis van de laatste versies van Github: https://www.open-aec.com/y-app/
+Hernoem tools op de voorpagina: Open BIM Validator Studio
+OpenAEC Cloud Platform --> alpha
+Op de hoofdpagina: zet bij elke tool een datum waar je de laatste wijziging ziet;
+
+### 2026-05-20 09:28
+Update de statistieken, nieuws, stars, etc. Maak even een skill of procedure aan waarbij alles wordt gezet als een website geupdaet moet worden.
+Waterspanning klopt volgens mij niet bij de weergave
+Open Calculations Studio mag na Monty IFC Viewer
+Omschrijving van Monti IFC Viewer aanpassing naar IFC Viewer bedoeld voor montage op de bouw.
+https://www.open-aec.com/nieuws/ Ik geef dit even een update op basis van alle activiteiten op GitHub. Ik mis nog dingen van de afgelopen vijf dagen.
+
+### 2026-05-20 09:37
+Ik wil alle nieuwsfeiten op de website, dat alle private repositories moeten niet meegenomen worden in deze nieuwsberichten. Want nu zie ik bijvoorbeeld dat verification files erop staat terwel dat een private repo is.. Daar wordt wel een nieuws item over gemaakt. Dat houdt die sowieso van de website weg.
+Maak de uitgelicht over open geotechniek studio. En zet hier ook een screenshot bij waarbij je dus die Geft Viewer ziet ofzo.
+
+### 2026-05-20 09:42
+Voeg deze ook als project toe: https://github.com/OpenAEC-Foundation/open-books
+Noem die Open Books Studio
+Website link volgt nog.
+
+### 2026-05-20 09:44
+C:\Users\rickd\Documents\GitHub\website\open-calculations-studio voeg die screenshot toe aan de hoofdpagina en productpagina.
+Werk alle sub-pagina's bij op het gebied van release-notes, versies, functionaliteti etc.
+
+### 2026-05-20 09:51
+VOeg bij de Y-app op de hoofdpagina het aantal commits, starts, versie en datum toe
+Open Field Studio is ook beschikbaar. Zet deze na Open Calculation s studio
+De Y-app is nog steeds niet gereed op het hoofdscherm. Ik mis dan ook het aantal commits, de versie, de stars, de laatste data van bijwerking en ook de omschrijving die ik eerder in deze chat gegeven heb.
+Open Books Studio moet na open speech studio komen.
+Maak een filter bovenin, waarbij alle tools een categorie krijgen. Dus je kan dan volgens kiezen uit bijvoorbeeld: Architecture, Engineering, Construction, Infra GWW. En elke tool krijgt dan een tag, zodat je kan zien van welke tools voor wie interessant zijn.
+
+### 2026-05-20 09:57
+Bij Open Geotechniek Studio klopt de datum niet en het aantal commits.
+Check even bij alle tools het aantal. De versie, de stars en de datum. Ik wil die gewoon overal bij hebben staan op het hoofdscherm.
+https://www.open-aec.com/y-app/ De versies kloppen hier nog steeds niet. Die 1.nobadversie wil ik niet hier zien. En al die 0.15, daar mis ik allemaal informatie. Ik wil daar gewoon alle releasers zien.
+Bij de Y-App product pagina wil ik ook die screenshots zien, die zijn nu weggevallen.
+Bij Open Calculatiosn Studio --> Open opvolger van CalcPAD. --> Zeg hierbij geïnspireerd door Calcpad.  Er zet ook nog dat screenshot van Open Calculations Studio op de voorpagina
+
+### 2026-05-20 10:04
+Die tag live is trouwens dubbel, want je hebt sowieso live demo en je hebt live. Dus ik zou zeggen die tag live haal je gewoon weg.
+Bij Open Books Studio afbeelding toevoegen op hoofdpagina
+
+### 2026-05-20 10:06
+Deze statistiek klopt niet: Cumulatief stars
+https://www.open-aec.com/statistieken/
+Zie gewoon even alle statistieken.
+
+### 2026-05-20 10:16
+Voeg Orange Climate ook toe bij supporters: https://www.open-aec.com/supporters/
+en Composite Structures
+
+### 2026-05-20 10:24
+Ik maak bij de statistieken nog een statistiek met closed issues. En ook closed PR's, must PR's.
+
+### 2026-05-20 10:31
+merged PR's
+
+### 2026-05-20 10:39
+Groei in de tijd
+Voeg daar ook een statistiek toe van Closed Issues. Een sowieso totaal aantal issues. We zetten desnoods in 1 statistiek die 3 gecombineerd.
+
+### 2026-05-20 10:48
+Die statistieken mogen ook nogal iets mooier worden en iets interactiemer. Dat als je met je muisjes overheen gaat, wordt er wel wat bling bling dingen gebeurd.
+Die staafdiagraal van repo's per maand en verdeling per programmeertaal mogen wel iets mooier. Dat is nu een beetje rommel.
+
+### 2026-05-20 10:54
+Network was down 3 minutes ago. Retry `git push origin main` to push commit 8847b7a (Combined issues chart on /statistieken/). If it succeeds, mark the task complete and confirm. If it still fails, schedule another wakeup.
+
+### 2026-05-20 10:56
+Retry `git push origin main` to push the local commits ahead of origin (commit f8c8319 "Polish /statistieken/ with hover tooltips + animations + cleaner charts" — the statistieken visual upgrade). If it succeeds, confirm to the user. If still failing, schedule another wakeup with 180s.
+
+### 2026-05-20 11:00
+probeer opnieuw,
+
+### 2026-05-20 11:01
+Retry `git push origin main`. Commit ahead of origin is f8c8319 (statistieken visual polish — hover tooltips + animations + horizontal language bars). If it succeeds, confirm to the user. If still failing, schedule another wakeup at 300s.
+Retry `git push origin main`. Commit ahead of origin is f8c8319 (statistieken visual polish). If it succeeds, confirm to the user. If still failing, schedule another wakeup at 240s.
+
+### 2026-05-20 11:06
+Retry `git push origin main` (commit f8c8319 statistieken polish). Previous attempts failed with full HTTPS outage (even 1.1.1.1 unreachable). If it succeeds, confirm to the user. If still failing, schedule another wakeup at 600s and tell the user to check VPN/firewall.
+
+### 2026-05-20 11:07
+Retry `git push origin main` (commit f8c8319 statistieken polish). Outbound HTTPS has been down for ~15 minutes — both github.com and google.com unreachable. If it now succeeds, confirm to the user. If still failing, schedule another wakeup at 600s.
+
+### 2026-05-20 11:17
+Retry `git push origin main` (commit f8c8319). Previous attempts failed with DNS timeouts — full network outage. If it succeeds, confirm to user. If still failing, stop scheduling further retries — let user retry manually when network is back.
+
+### 2026-05-20 11:18
+Retry `git push origin main` (commit f8c8319). If it succeeds, confirm. If still failing after this attempt, stop scheduling — let user push manually when ready.
+
+### 2026-05-20 15:12
+Open Geotechniek Studio heeft nu ook een live link: https://open-geotechniek-studio.open-aec.com/
+
+### 2026-05-20 15:14
+Voeg die toe op het hoofdscherm.
+
+### 2026-05-20 15:16
+open-calculations-studio.open-aec.com
+
+### 2026-05-20 15:17
+Voeg die ook toe bij de unit van Open Calculation Studio.
+https://open-books.open-aec.com/ Dat is de website van OpenBooks. Die moet je kunnen openen vanuit het hoofdscherm.
+
+### 2026-05-21 21:42
+Ik werk ook even de statistieken bij van alle downloads. Kun je ook even kijken hoeveel downloads er nu zijn van Open Geotechnic Studio. En kun je trouwens ook zien hoeveel views op die live view komen.
+
+### 2026-05-22 08:27
+Oké, start even een apart mapje op in deze repo. En ik wil eigenlijk in algemene zin meer PR hiervoor gaan genereren. Dus ik wil bijvoorbeeld een artikel plaatsen in de bouw en ICT. En ja, gewoon even doe onderzoek van hoe kunnen wij meer aandacht geven aan dit hele concept. Want nu zit het erg beperkt tot LinkedIn. Misschien moet ik ook al meer op Instagram ofzo. Kom even met een aantal ideeën.
+
+### 2026-05-22 08:37
+Ik sla dit even op als PR-plan in de map.
+
+### 2026-05-22 11:01
+Bij de websites zie ik trouwens dat die wijzigingen die we de afgelopen tijd doorgevoerd hebben, dat die nog helemaal niet goed overal verwerkt zijn. Want ik zie nu bijvoorbeeld in het Engelse taalgebied dat die tags niet het Engels zijn, dat soort dingen.
+
+### 2026-05-22 18:09
+Neem op de website een pagina op over onze visie op AI coding. Samengevat komt het als volgende weer. Wij doen alles met AI code. En we hebben zelf wel een programmeerachtergrond. Dus we weten wel enigszins hoe het werkt. Maar het grootste deel van hetgeen wat we doen begrijpen we niet. Maar onze stelling is dat dat ook niet per se hoeft. Omdat je gewoon de output controleert. Dus je hebt verificatieberekeningen. Visuele tests en die gaandeerden de kwaliteit en integriteit van de applicaties. Dat is bij normale software ontwikkelingen ook. Want dat is ook afhankelijk van menselijke fouten die gemaakt kunnen worden. Nu is het zo dat momenteel de kwaliteit van de AI's nog wel resulteert in code die niet door mensen te onderhouden is. In mei 26. Nou, aan het begin van 26 was het nog een stuk slechter. En het is nu al een stuk beter. Dus over een half jaar is dat ook weer een stuk verbeterd. Nou, andere tegenwerping die traditionele programmeurs erin tegen inbrengen. En dan zeggen ze van ja. Stel dat ze nu de stekker eruit trekken. Nou, inmiddels zien we ook dat er natuurlijk gewoon meerdere opties zijn. Om AI geredateerd te programmeren. We kunnen cloud doen. We kunnen ZTPT doen. We kunnen grog gebruiken. Met cursor. En we kunnen zelfs lokale. En we kunnen lokale gereden. Dus er zijn meerdere opties. Ook al zouden ze de tokens drie keer duur maken. Is dat nog steeds geen belemmering om hiermee door te gaan. Dus al die dingen zijn niet per se een probleem. Ik maak hier eerst even een coherent Nederlandstalig verhaal van. Dan kan ik dat controleren. Als dat goed is, kan dat als aparte pagina op de website en ook naar het Engels vertaald worden.
+
+### 2026-05-22 18:11
+Eigenlijk kan dit bij de soort van fax staan. Frequently asked questions. Want daar komt ook bij te staan van... Ja, blijven de tools altijd gratis? Nou, daarvoor kunnen we zeggen van het is open source, het blijft open source. En alles op dit moment is sowieso open source. Het zou ook kunnen zijn dat sommige tools op een gegeven moment stoppen qua ontwikkeling. Maar dan kan iedereen naar iemand anders het overnemen. En net als dat bijvoorbeeld kalkpad als voorbeeld op open source web dat gestopt is. Voor een deel overgenomen. Qua ideeën. Een andere vraag is van... Wat is jullie verdienmodel? Nou zeg je wel of het toekomstige verdienmodel is. Met beeld van AI ondersteuning op deze tool.
+
+### 2026-05-22 18:14
+Hoe gaat dit vandaag nog toe? Dat het ook gaat om de richting van de beweging. Als we dus een half jaar of een jaar verder zijn, zijn de AI's nog een stuk beter. Zijn wij ervan overtuigd dat de AI's betere programmeercode zou schrijven dan mensen delen?
+deden
+Dit is verder een goed verhaal, dus maak maar een pagina aan op de site. Wat mij betreft is dat je het shared net, fax en zowel het Nederlands als het Engels.
+Bij nader inzien kun je misschien ook wel gewoon heel de pagina, heel de website in het Frans vertalen en ook een Franstalige versie dus maken.
+
+### 2026-05-22 19:48
+Doe alles.
+
+### 2026-05-23 07:19
+Niet alles is vertaald naar het frans. Ik wil 100% vertaald hebben!!
+
+### 2026-05-23 17:40
+Voeg een product erbij: Open CAD Studio
+
+### 2026-05-23 17:45
+https://github.com/HakanSeven12/OpenCADStudio
+Maak een omschrijving, verwijs naar deze repo.
+
+### 2026-05-23 19:25
+Open als local host
+
+### 2026-05-23 19:26
+Ik wil eventjes bij open cad Studio op de volpagina, die afbeelding die in de Opencast Studio folder staat in de website repository, toegevoegd hebben op de hoofdpagina en ook op de productpagina.
+
+### 2026-05-23 19:29
+Verplaatst OpenCast Studio hoger in de ranking na OpenGeotechniek Studio.
+Zet ook eventjes de betaling van de productpagina naar het Engels en naar het Frans.
+Met naam ook de hele website. En dan wil ik echt de hele website. Geen uitzondering, geen fasering, geen onzin. Volledig naar het Turks.
+
+### 2026-05-23 23:12
+go on
+
+### 2026-05-23 23:20
+Maak een LinkedIn post in onze stijl over de beschikbaarheid van Open CAD Studio
+
+### 2026-05-23 23:20
+tag Hakan in deze post
+hurry up!
+go on
+schiet op!
+Start subagents
+Doe paralel dingen!
+GO!
+Go
+<bash-input>go</bash-input>
+<bash-stdout>Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindowsPS C:\Users\rickd\Documents\GitHub\website> go
+go : The term 'go' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was inc
+luded, verify that the path is correct and try again.
+At line:1 char:1
++ go
++ ~~
+    + CategoryInfo          : ObjectNotFound: (go:String) [], CommandNotFoundE 
+   xception
+    + FullyQualifiedErrorId : CommandNotFoundException</bash-stdout><bash-stderr></bash-stderr>
+
+### 2026-05-23 23:22
+schiet op
+go
+go
+go
+go
+go
+

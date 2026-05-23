@@ -1,0 +1,15 @@
+{
+  "header": {
+    "label": "Karşılaştırmalar",
+    "title": "Açık kaynak <span class=\"accent\">alternatifleri</span>",
+    "desc": "OpenAEC araçları ile inşaat sektöründeki ticari yazılımlar arasında dürüst, gerçeklere dayalı karşılaştırmalar. Pazarlama yok — sadece en uygun olanı seçebilmeniz için gerçekler."
+  },
+  "why": {
+    "title": "Neden <span class=\"accent\">karşılaştırmalar</span>?",
+    "p1": "Açık kaynak yazılımı genellikle ticari araçlara göre düşük kaliteli bir alternatif olarak görülür. Bu yanlış bir kanı. AEC sektöründeki birçok uygulama için açık kaynak alternatifler artık olgun, hızlı ve eksiksizdir — genellikle IFC, BCF ve IDS gibi açık standartlar için daha iyi desteğe sahiptir.",
+    "p2": "Aynı zamanda, ticari araçlar bazen gerçekten doğru tercihtir. Yıllarca cilalanmış, büyük ekosistemlere ve kanıtlanmış entegrasyonlara sahipler. Bilinçli bir seçim yapabilmeniz için adil karşılaştırmalara inanıyoruz — açık kaynağı, ticariyi veya her ikisini de seçin."
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

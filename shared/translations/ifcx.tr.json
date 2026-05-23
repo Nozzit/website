@@ -1,0 +1,37 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "desc": "Tüm OpenAEC araçları IFCX'te iletişim kurar. Tam bina modelini IFCX'te saklamak için gereken tüm ad alanlarını kendimiz ekliyoruz."
+  },
+  "why": {
+    "title": "Neden <span class=\"accent\">IFCX</span>?",
+    "p1": "IFCX, IFC veri formatının yeni neslidir. Klasik IFC (IFC2x3, IFC4) sabit bir şema kullanırken, IFCX ad alanlarına dayalı esnek, genişletilebilir bir model sunar. Bu, çekirdek şemayı değiştirmeden alana özgü bilgiler eklemeyi mümkün kılar.",
+    "p2": "OpenAEC Foundation için IFCX mantıklı bir seçimdir: açık, genişletilebilir ve tüm AEC ekosisteminin açık standartlarda çalışması gerektiği vizyonumuzla uyumludur."
+  },
+  "universal": {
+    "title": "Evrensel dil olarak IFCX",
+    "desc": "OpenAEC ekosistemi içinde IFCX merkezi veri formatıdır. Her araç — maliyet tahmininden doğrulamaya, 2D çizimlerden 3D görüntüleyicilere kadar — IFCX okur ve yazar. Bu sayede veriler, dönüştürme veya veri kaybı olmadan AEC zincirinin tüm bölümleri arasında sorunsuz akar."
+  },
+  "civil": {
+    "title": "IFC 4.3: binalardan altyapıya",
+    "desc": "IFCX, yalnızca binaları değil, tam sivil altyapıyı da destekleyen IFC 4.3'ün üzerine inşa edilmiştir. Bu, OpenAEC'nin konut ve ticari binaların yanı sıra yolları, köprüleri, tünelleri, demiryollarını, su altyapısını ve deniz tesislerini de kapsadığı anlamına gelir."
+  },
+  "model": {
+    "title": "Her şey <span class=\"accent\">tek bir modelde</span>",
+    "desc": "Her şeyi IFC'de saklıyoruz. Yalnızca geometri değil, BIM modeliyle herhangi bir ilişkisi olan tüm veriler bu formatta saklanır:"
+  },
+  "tools": {
+    "title": "<span class=\"accent\">IFCX</span> konuşan araçlar",
+    "desc": "OpenAEC ekosistemindeki tüm araçlar IFCX'i merkezi format olarak alarak inşa edilmiştir:"
+  },
+  "standard": {
+    "title": "Açık <span class=\"accent\">standart</span>",
+    "p1": "Tüm OpenAEC ad alanları açık olarak yayınlanır ve açık lisans altında ücretsiz kullanılabilir. Ad alanlarımızı uluslararası standartlarla uyumlu hale getirmek için buildingSMART ve Hollanda BIM topluluğuyla birlikte çalışıyoruz.",
+    "p2": "Gerekli tüm ad alanlarını kendimiz geliştirip sürdürerek, IFCX'in gerçekten tam bir bina modelini içerebileceğini garanti ediyoruz — ilk eskizden teslime ve yönetime kadar."
+  },
+  "cta": {
+    "title": "Katılmak ister misiniz?",
+    "desc": "IFCX ad alanlarının geliştirilmesine katkıda bulunmak veya aracınızı OpenAEC ekosistemine bağlamak ister misiniz? Bize ulaşın.",
+    "button": "Bize ulaşın"
+  }
+}

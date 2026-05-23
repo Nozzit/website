@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "title": "Open 3D <span class=\"accent\">Viewer</span>",
+    "desc": "Tarayıcıda BIM modellerini görüntülemek ve incelemek için açık kaynak 3D görüntüleyici.",
+    "badge": "Beta"
+  },
+  "why": {
+    "title": "Neden Open 3D <span class=\"accent\">Viewer</span>?",
+    "desc": "BIM modellerini görüntülemek genellikle pahalı masaüstü yazılımı gerektirir. Open 3D Viewer, herkesin kurulum olmadan IFC ve diğer 3D modelleri incelemesine olanak tanıyan hafif, tarayıcı tabanlı bir 3D görüntüleyici sunar."
+  },
+  "features": {
+    "title": "Özellikler",
+    "webgl": {
+      "title": "WebGL 3D render",
+      "desc": "WebGL aracılığıyla tarayıcıda hızlı 3D render. Eklenti veya kurulum olmadan karmaşık modelleri görüntüleyin."
+    },
+    "import": {
+      "title": "IFC/STEP/OBJ içe aktarma",
+      "desc": "IFC, STEP ve OBJ dahil yaygın olarak kullanılan 3D formatlar için destek. Dosyaları doğrudan görüntüleyiciye sürükleyip bırakın."
+    },
+    "selection": {
+      "title": "Eleman seçimi ve özellikler",
+      "desc": "Özelliklerini görüntülemek için elemanlara tıklayın. Modeli tür, malzeme veya diğer özniteliklere göre arayın."
+    },
+    "clipping": {
+      "title": "Kesitler ve kırpma düzlemleri",
+      "desc": "Kırpma düzlemleri ile model boyunca kesitler oluşturun. Dahili yapıları ve gizli elemanları görüntüleyin."
+    },
+    "measure": {
+      "title": "Ölçüm araçları",
+      "desc": "3D modelde doğrudan mesafeleri, alanları ve açıları ölçün. Sahada hızlı kontroller için idealdir."
+    },
+    "multiformat": {
+      "title": "Çoklu format desteği",
+      "desc": "BIM formatlarının yanı sıra nokta bulutları, 2D çizimler ve diğer yaygın formatlar için destek."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demoyu görüntüle",
+    "github": "GitHub'da görüntüle"
+  }
+}

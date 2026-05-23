@@ -1,0 +1,73 @@
+{
+  "header": {
+    "label": "İnşaat planlaması",
+    "title": "Open <span class=\"accent\">Planner</span> Studio",
+    "desc": "Gantt çizelgeleri, Kritik Yol Yöntemi ve yerel IFC 4.3 dosya formatı ile açık kaynak inşaat planlaması. AEC sektörü için tasarlanmıştır.",
+    "downloadBtn": "v2026.2.0 indir",
+    "sourceBtn": "Kaynak kodu görüntüle"
+  },
+  "download": {
+    "title": "v2026.2.0 indir"
+  },
+  "features": {
+    "heading": "Özellikler",
+    "gantt": {
+      "title": "Gantt çizelgeleri",
+      "desc": "Sürükle bırak, yakınlaştırma ve zaman çizelgesi navigasyonu ile Canvas render edilen etkileşimli Gantt diyagramları."
+    },
+    "cpm": {
+      "title": "Kritik Yol Yöntemi",
+      "desc": "Kritik yol tanımlama ve serbest süre analizi ile otomatik CPM hesaplaması."
+    },
+    "wbs": {
+      "title": "İş Kırılım Yapısı",
+      "desc": "Daraltılabilir bölümlerle hiyerarşik görev yapısı. Satır içi düzenleme ile Excel tarzı tablo editörü."
+    },
+    "ifc": {
+      "title": "IFC 4.3 yerel",
+      "desc": "Planlama dosyalarını IFC 4.3 formatında (buildingSMART standardı) kaydedin ve açın. Oluştur ve uygula ile yerleşik IFC kod editörü."
+    },
+    "resources": {
+      "title": "Kaynak yönetimi",
+      "desc": "İşgücü, ekipman ve taşeronları yönetin. İnşaata özgü özellikler: tatiller, yıllık kapatma, denetim anları ve faz planlaması."
+    },
+    "bim4d": {
+      "title": "4D BIM'e hazır",
+      "desc": "4D inşaat sırası görselleştirmesi için planlama görevlerini IFC bina modeli öğelerine bağlayın."
+    },
+    "reporting": {
+      "title": "Raporlama",
+      "desc": "Yapılandırılabilir rapor seçenekleri ile ribbon'da canlı yazdırma önizlemesi. Hızlı görev eylemleri için bağlam menüsü."
+    },
+    "multilingual": {
+      "title": "Çok dilli",
+      "desc": "6 dilde arayüz: Nederlands, English, Français, Deutsch, Español ve 中文."
+    },
+    "ribbon": {
+      "title": "Ribbon araç çubuğu",
+      "desc": "Sekmelerle Microsoft Office tarzı ribbon: Başlangıç, Planlama, Görünüm, Ayarlar, Tablo, IFC ve Rapor."
+    }
+  },
+  "tech": {
+    "heading": "Teknoloji stack'i",
+    "tauri": {
+      "title": "Tauri 2.0",
+      "desc": "Rust backend ile yerel masaüstü uygulaması."
+    },
+    "react": {
+      "title": "React 18 + TypeScript",
+      "desc": "Zustand + Immer durum yönetimi ile bileşen tabanlı UI."
+    },
+    "canvas": {
+      "title": "HTML5 Canvas 2D",
+      "desc": "Gantt çizelgesi render'ı. TailwindCSS stili, Vite 5 build."
+    }
+  },
+  "cta": {
+    "demo": "Canlı demo &rarr;",
+    "github": "GitHub &rarr;"
+  },
+  "footer": {
+    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  }
+}

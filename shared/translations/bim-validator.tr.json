@@ -1,0 +1,6 @@
+{
+  "header": {
+    "label": "OpenAEC ekosistemi",
+    "desc": "Açık kaynak IFC doğrulama aracı. Modelleri IDS spesifikasyonlarına, Hollanda standartlarına ve proje gereksinimlerine karşı doğrulayın — tarayıcıda, CLI veya API aracılığıyla."
+  }
+}

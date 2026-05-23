@@ -40,9 +40,11 @@
       return;
     }
 
-    const urls = lang === 'fr'
-      ? [`/shared/translations/${pageId}.fr.json`, `/shared/translations/${pageId}.json`]
-      : [`/shared/translations/${pageId}.json`];
+    // Per-language URL chain. Non-EN languages fall back to the EN file
+    // (the default .json) if their own translation file is missing.
+    const urls = (lang === 'en')
+      ? [`/shared/translations/${pageId}.json`]
+      : [`/shared/translations/${pageId}.${lang}.json`, `/shared/translations/${pageId}.json`];
 
     function loadFirstAvailable(list) {
       if (!list.length) return Promise.resolve(null);
@@ -72,20 +74,17 @@
   }
 
   function applyInlineTranslations(lang) {
-    // Apply translations from data-i18n-en / data-i18n-fr attributes (used by nav links).
-    // FR falls back to EN if no FR attribute is present.
-    document.querySelectorAll('[data-i18n-en], [data-i18n-fr]').forEach(el => {
+    // Apply translations from data-i18n-<lang> attributes (used by nav links).
+    // Non-EN, non-NL languages fall back to EN if their attribute is missing.
+    document.querySelectorAll('[data-i18n-en], [data-i18n-fr], [data-i18n-tr]').forEach(el => {
       if (!el.getAttribute('data-i18n-nl')) {
         el.setAttribute('data-i18n-nl', el.innerHTML);
       }
-      if (lang === 'en' && el.getAttribute('data-i18n-en')) {
-        el.innerHTML = el.getAttribute('data-i18n-en');
-      } else if (lang === 'fr') {
-        const fr = el.getAttribute('data-i18n-fr');
-        const en = el.getAttribute('data-i18n-en');
-        if (fr) el.innerHTML = fr;
-        else if (en) el.innerHTML = en;
-      }
+      if (lang === 'nl') return;
+      const own = el.getAttribute('data-i18n-' + lang);
+      const en  = el.getAttribute('data-i18n-en');
+      if (own) el.innerHTML = own;
+      else if (en) el.innerHTML = en;
     });
   }
 
