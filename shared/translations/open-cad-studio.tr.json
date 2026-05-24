@@ -65,9 +65,14 @@
     "title": "Teknoloji",
     "desc": "Tamamen Rust'ta yazılmıştır — bellek güvenli, hızlı, Windows, macOS ve Linux için derlenir. UI <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a> aracılığıyla, GPU render <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a> aracılığıyla. Tedarikçi bağımlılığı olmadan yerel DWG/DXF."
   },
+  "download": {
+    "title": "<span class=\"accent\">v0.4.0</span> indir",
+    "desc": "23 Mayıs 2026'da yayımlandı. Üç yerel binary — Windows, macOS (Apple Silicon) ve Linux (AppImage). Platformunuza uygun olanı seçin ve saniyeler içinde çalışmaya başlayın.",
+    "note": "Kaynaktan derlemeniz veya eski bir sürüm almanız mı gerekiyor? <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">GitHub'daki tüm sürümlere</a> bakın (şimdiye kadar 30 sürüm)."
+  },
   "cta": {
     "github": "GitHub: HakanSeven12/OpenCADStudio",
-    "releases": "Sürümler ve indirmeler",
+    "issues": "Sorunlar ve geri bildirim",
     "relatedTool": "Ayrıca Open 2D Studio'ya bakın"
   }
 }

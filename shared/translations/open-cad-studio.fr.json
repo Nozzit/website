@@ -65,9 +65,14 @@
     "title": "Technologie",
     "desc": "Entièrement écrit en Rust — sûreté mémoire, performances rapides, compile pour Windows, macOS et Linux. Interface via <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a>, rendu GPU via <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a>. DWG/DXF natifs sans verrouillage propriétaire."
   },
+  "download": {
+    "title": "Télécharger <span class=\"accent\">v0.4.0</span>",
+    "desc": "Publiée le 23 mai 2026. Trois binaires natifs — Windows, macOS (Apple Silicon) et Linux (AppImage). Choisissez celui adapté à votre plateforme et soyez opérationnel en quelques secondes.",
+    "note": "Besoin de compiler depuis les sources ou d'une version antérieure ? Voir <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">toutes les versions sur GitHub</a> (30 versions à ce jour)."
+  },
   "cta": {
     "github": "GitHub : HakanSeven12/OpenCADStudio",
-    "releases": "Versions &amp; téléchargements",
+    "issues": "Tickets &amp; retours",
     "relatedTool": "Voir aussi Open 2D Studio"
   }
 }
