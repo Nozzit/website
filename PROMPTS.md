@@ -1708,3 +1708,31 @@ Verwijs naar https://www.open-aec.com/open-cad-studio/ in de post
 ### 2026-05-23 23:27
 Vertaal ook alle labels aan de producten
 
+### 2026-05-23 23:38
+Deze pagina opent niet: https://www.open-aec.com/open-cad-studio/
+
+### 2026-05-23 23:41
+Ik wil die screenshots in de slider
+
+### 2026-05-24 13:38
+The landing page (https://open-aec.com/open-cad-studio/) seems to never end loading and uses 100% of one core all the time.
+
+I can reproduce on
+
+Firefox 140.11 ESR
+Chromium Version 148.0.7778.178 (Official Build) built on Debian GNU/Linux 13 (trixie) (64-bit)
+This happen also with other pages on https://open-aec.com/ web page.
+
+See behavior in video:
+
+### 2026-05-24 13:43
+Haal observer eruit. volgens mij is dat gewoon iets overbodigs
+
+### 2026-05-24 13:45
+Er zitten nog placeholders waar je de software zou moeten kunnen downloaden:
+https://www.open-aec.com/open-cad-studio/
+ https://github.com/HakanSeven12/OpenCADStudio/releases
+
+### 2026-05-24 13:48
+https://www.open-aec.com/open-cad-studio/ en ik druk op turks loopt de website vast
+
