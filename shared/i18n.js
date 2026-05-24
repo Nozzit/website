@@ -19,29 +19,36 @@
     });
   }
 
+  // Set innerHTML only when it actually differs — avoids no-op DOM mutations
+  // that would otherwise re-trigger any MutationObserver watching the subtree.
+  function setHtmlIfChanged(el, html) {
+    if (el.innerHTML !== html) el.innerHTML = html;
+  }
+  function setAttrIfChanged(el, attr, value) {
+    if (el.getAttribute(attr) !== value) el.setAttribute(attr, value);
+  }
+
   function applyTranslations(lang) {
     if (lang === 'nl') {
       // Dutch is the default - restore original content from data-i18n-nl attribute
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const original = el.getAttribute('data-i18n-nl');
-        if (original) {
-          el.innerHTML = original;
-        }
+        if (original != null) setHtmlIfChanged(el, original);
       });
+      applyInlineTranslations(lang);
       return;
     }
 
     // For non-NL languages, find the page's translation data.
     // EN  → /shared/translations/<page>.json  (legacy default, always exists)
-    // FR  → /shared/translations/<page>.fr.json  (with EN fallback if absent)
+    // FR  → /shared/translations/<page>.fr.json (with EN fallback if absent)
+    // TR  → /shared/translations/<page>.tr.json (with EN fallback if absent)
     const pageId = document.querySelector('meta[name="i18n-page"]')?.content;
     if (!pageId) {
       applyInlineTranslations(lang);
       return;
     }
 
-    // Per-language URL chain. Non-EN languages fall back to the EN file
-    // (the default .json) if their own translation file is missing.
     const urls = (lang === 'en')
       ? [`/shared/translations/${pageId}.json`]
       : [`/shared/translations/${pageId}.${lang}.json`, `/shared/translations/${pageId}.json`];
@@ -64,8 +71,8 @@
           const translation = key.split('.').reduce((obj, k) => obj?.[k], translations);
           if (translation) {
             const attr = el.getAttribute('data-i18n-attr');
-            if (attr) el.setAttribute(attr, translation);
-            else el.innerHTML = translation;
+            if (attr) setAttrIfChanged(el, attr, translation);
+            else setHtmlIfChanged(el, translation);
           }
         });
         applyInlineTranslations(lang);
@@ -75,16 +82,29 @@
 
   function applyInlineTranslations(lang) {
     // Apply translations from data-i18n-<lang> attributes (used by nav links).
-    // Non-EN, non-NL languages fall back to EN if their attribute is missing.
+    // Non-EN, non-NL languages fall back to EN if their own attribute is missing.
     document.querySelectorAll('[data-i18n-en], [data-i18n-fr], [data-i18n-tr]').forEach(el => {
       if (!el.getAttribute('data-i18n-nl')) {
         el.setAttribute('data-i18n-nl', el.innerHTML);
       }
-      if (lang === 'nl') return;
+      if (lang === 'nl') {
+        const original = el.getAttribute('data-i18n-nl');
+        if (original != null) setHtmlIfChanged(el, original);
+        return;
+      }
       const own = el.getAttribute('data-i18n-' + lang);
       const en  = el.getAttribute('data-i18n-en');
-      if (own) el.innerHTML = own;
-      else if (en) el.innerHTML = en;
+      const newHtml = own || en;
+      if (newHtml) setHtmlIfChanged(el, newHtml);
+    });
+  }
+
+  function bindLangButtons() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (!btn._i18nBound) {
+        btn._i18nBound = true;
+        btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+      }
     });
   }
 
@@ -97,30 +117,28 @@
       applyTranslations(lang);
     }
 
-    // Bind language buttons (after nav loads via nav.js)
-    const observer = new MutationObserver(() => {
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        if (!btn._i18nBound) {
-          btn._i18nBound = true;
-          btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+    bindLangButtons();
+
+    // Wait for nav.js to inject shared/nav.html into #shared-nav, then bind
+    // its language buttons + apply translations ONCE and disconnect.
+    // Previously this observer watched the whole <body> subtree with
+    // childList+subtree, and the callback mutated innerHTML — which re-fired
+    // the observer infinitely (100% CPU). Scope it tightly + one-shot.
+    const navContainer = document.getElementById('shared-nav');
+    if (navContainer && !navContainer.querySelector('.lang-btn')) {
+      const observer = new MutationObserver(() => {
+        if (navContainer.querySelector('.lang-btn')) {
+          observer.disconnect();
+          bindLangButtons();
+          const currentLang = getCurrentLang();
+          if (currentLang !== 'nl') applyInlineTranslations(currentLang);
+          updateButtons(currentLang);
         }
       });
-      // Also apply inline translations to newly added nav elements
-      const lang = getCurrentLang();
-      if (lang !== 'nl') {
-        applyInlineTranslations(lang);
-      }
-      updateButtons(lang);
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    // Also bind any existing buttons
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      if (!btn._i18nBound) {
-        btn._i18nBound = true;
-        btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
-      }
-    });
+      observer.observe(navContainer, { childList: true, subtree: true });
+      // Safety net: stop watching after 5s no matter what.
+      setTimeout(() => observer.disconnect(), 5000);
+    }
   }
 
   // Expose globally
