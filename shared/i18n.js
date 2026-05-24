@@ -19,8 +19,8 @@
     });
   }
 
-  // Set innerHTML only when it actually differs — avoids no-op DOM mutations
-  // that would otherwise re-trigger any MutationObserver watching the subtree.
+  // Set innerHTML / attribute only when it actually differs — keeps the DOM
+  // quiet so we don't poke anything that's watching mutations.
   function setHtmlIfChanged(el, html) {
     if (el.innerHTML !== html) el.innerHTML = html;
   }
@@ -30,7 +30,7 @@
 
   function applyTranslations(lang) {
     if (lang === 'nl') {
-      // Dutch is the default - restore original content from data-i18n-nl attribute
+      // Dutch is the default — restore original content from data-i18n-nl
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const original = el.getAttribute('data-i18n-nl');
         if (original != null) setHtmlIfChanged(el, original);
@@ -40,9 +40,9 @@
     }
 
     // For non-NL languages, find the page's translation data.
-    // EN  → /shared/translations/<page>.json  (legacy default, always exists)
-    // FR  → /shared/translations/<page>.fr.json (with EN fallback if absent)
-    // TR  → /shared/translations/<page>.tr.json (with EN fallback if absent)
+    // EN  → /shared/translations/<page>.json   (legacy default, always exists)
+    // FR  → /shared/translations/<page>.fr.json (with EN fallback)
+    // TR  → /shared/translations/<page>.tr.json (with EN fallback)
     const pageId = document.querySelector('meta[name="i18n-page"]')?.content;
     if (!pageId) {
       applyInlineTranslations(lang);
@@ -99,46 +99,29 @@
     });
   }
 
-  function bindLangButtons() {
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      if (!btn._i18nBound) {
-        btn._i18nBound = true;
-        btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
-      }
-    });
-  }
+  // ───────────────────────────────────────────────────────────────────────
+  // Wire-up — no MutationObserver. Language buttons are bound via event
+  // delegation on `document`, so any .lang-btn (also those injected later
+  // by nav.js) works without polling or watching DOM mutations. nav.js
+  // dispatches a 'nav:loaded' CustomEvent after it injects the navbar; we
+  // listen for that to apply translations + activate the right button.
+  // ───────────────────────────────────────────────────────────────────────
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest && e.target.closest('.lang-btn');
+    if (btn) setLanguage(btn.getAttribute('data-lang'));
+  });
 
-  // Initialize
+  document.addEventListener('nav:loaded', () => {
+    const lang = getCurrentLang();
+    if (lang !== 'nl') applyInlineTranslations(lang);
+    updateButtons(lang);
+  });
+
   function init() {
     const lang = getCurrentLang();
     document.documentElement.lang = lang;
+    if (lang !== 'nl') applyTranslations(lang);
     updateButtons(lang);
-    if (lang !== 'nl') {
-      applyTranslations(lang);
-    }
-
-    bindLangButtons();
-
-    // Wait for nav.js to inject shared/nav.html into #shared-nav, then bind
-    // its language buttons + apply translations ONCE and disconnect.
-    // Previously this observer watched the whole <body> subtree with
-    // childList+subtree, and the callback mutated innerHTML — which re-fired
-    // the observer infinitely (100% CPU). Scope it tightly + one-shot.
-    const navContainer = document.getElementById('shared-nav');
-    if (navContainer && !navContainer.querySelector('.lang-btn')) {
-      const observer = new MutationObserver(() => {
-        if (navContainer.querySelector('.lang-btn')) {
-          observer.disconnect();
-          bindLangButtons();
-          const currentLang = getCurrentLang();
-          if (currentLang !== 'nl') applyInlineTranslations(currentLang);
-          updateButtons(currentLang);
-        }
-      });
-      observer.observe(navContainer, { childList: true, subtree: true });
-      // Safety net: stop watching after 5s no matter what.
-      setTimeout(() => observer.disconnect(), 5000);
-    }
   }
 
   // Expose globally

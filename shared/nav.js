@@ -19,6 +19,9 @@
           var nav = placeholder.querySelector('.navbar');
           if (nav) nav.classList.add('homepage-nav');
         }
+
+        // Let listeners (i18n.js) know the navbar DOM is available.
+        document.dispatchEvent(new CustomEvent('nav:loaded'));
       });
   }
 
