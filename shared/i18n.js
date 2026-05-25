@@ -3,7 +3,7 @@
   const STORAGE_KEY = 'openaec-lang';
 
   function getCurrentLang() {
-    return localStorage.getItem(STORAGE_KEY) || 'nl';
+    return localStorage.getItem(STORAGE_KEY) || 'en';
   }
 
   function setLanguage(lang) {
