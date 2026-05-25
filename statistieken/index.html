@@ -495,18 +495,18 @@
   <!-- Section 1: Highlight stats -->
   <section class="section" style="background: var(--blueprint-white);">
     <div class="highlight-cards" style="grid-template-columns: repeat(4, 1fr);">
-      <div class="highlight-card"><div class="number" id="s-repos">—</div><div class="label">Repositories</div></div>
-      <div class="highlight-card"><div class="number" id="s-commits">—</div><div class="label">Commits</div></div>
-      <div class="highlight-card"><div class="number" id="s-stars">—</div><div class="label">Stars</div></div>
-      <div class="highlight-card"><div class="number" id="s-releases">—</div><div class="label">Releases</div></div>
-      <div class="highlight-card"><div class="number" id="s-contributors">—</div><div class="label">Contributors</div></div>
+      <div class="highlight-card"><div class="number" id="s-repos">—</div><div class="label" data-i18n="stats.repos">Repositories</div></div>
+      <div class="highlight-card"><div class="number" id="s-commits">—</div><div class="label" data-i18n="stats.commits">Commits</div></div>
+      <div class="highlight-card"><div class="number" id="s-stars">—</div><div class="label" data-i18n="stats.stars">Stars</div></div>
+      <div class="highlight-card"><div class="number" id="s-releases">—</div><div class="label" data-i18n="stats.releases">Releases</div></div>
+      <div class="highlight-card"><div class="number" id="s-contributors">—</div><div class="label" data-i18n="stats.contributors">Contributors</div></div>
       <div class="highlight-card"><div class="number" id="s-loc">—</div><div class="label" data-i18n="stats.loc">Regels code (est.)</div></div>
       <div class="highlight-card"><div class="number" id="s-languages">—</div><div class="label" data-i18n="stats.languages">Programmeertalen</div></div>
-      <div class="highlight-card"><div class="number" id="s-issues">—</div><div class="label">Open issues</div></div>
-      <div class="highlight-card"><div class="number" id="s-closed-issues">—</div><div class="label">Closed issues</div></div>
-      <div class="highlight-card"><div class="number" id="s-merged-prs">—</div><div class="label">Merged PRs</div></div>
-      <div class="highlight-card"><div class="number" id="s-closed-prs">—</div><div class="label">Closed PRs</div></div>
-      <div class="highlight-card"><div class="number" id="s-downloads">—</div><div class="label">Downloads</div></div>
+      <div class="highlight-card"><div class="number" id="s-issues">—</div><div class="label" data-i18n="stats.open_issues">Open issues</div></div>
+      <div class="highlight-card"><div class="number" id="s-closed-issues">—</div><div class="label" data-i18n="stats.closed_issues">Closed issues</div></div>
+      <div class="highlight-card"><div class="number" id="s-merged-prs">—</div><div class="label" data-i18n="stats.merged_prs">Merged PRs</div></div>
+      <div class="highlight-card"><div class="number" id="s-closed-prs">—</div><div class="label" data-i18n="stats.closed_prs">Closed PRs</div></div>
+      <div class="highlight-card"><div class="number" id="s-downloads">—</div><div class="label" data-i18n="stats.downloads">Downloads</div></div>
     </div>
     <p id="stats-updated" style="text-align:center;font-size:0.75rem;color:var(--scaffold-gray);margin-top:var(--sp-2);"></p>
   </section>
@@ -806,8 +806,12 @@ function countUp(id, value, opts) {
   if (!isFinite(target)) { el.textContent = value; return; }
   const dur = (opts && opts.dur) || 1200;
   const fmt = (opts && opts.fmt) || ((n) => Math.round(n).toLocaleString('nl-NL'));
+  // Write the final value immediately so the number is correct even when
+  // requestAnimationFrame is throttled (e.g. hidden tab) or never fires.
+  // The animation below will smoothly count up to this value when raf runs.
+  el.textContent = fmt(target);
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) { el.textContent = fmt(target); return; }
+  if (reduce) return;
   const start = performance.now();
   function tick(now) {
     const t = Math.min(1, (now - start) / dur);

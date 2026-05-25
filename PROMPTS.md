@@ -1736,3 +1736,9 @@ https://www.open-aec.com/open-cad-studio/
 ### 2026-05-24 13:48
 https://www.open-aec.com/open-cad-studio/ en ik druk op turks loopt de website vast
 
+### 2026-05-24 13:51
+Check de hele website even op de werking, volledigheid, gekke JS code en of er technisch gezien gekke dingen inzitten of dead code. Test het via de UI in chrome bv
+
+### 2026-05-25 09:21
+jo
+

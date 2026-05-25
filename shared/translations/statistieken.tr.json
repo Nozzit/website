@@ -5,8 +5,18 @@
     "desc": "OpenAEC ekosisteminin arkasındaki tarih ve sayılar. İlk fikirden tam bir açık kaynak platforma."
   },
   "stats": {
+    "repos": "Depolar",
+    "commits": "Commit'ler",
+    "stars": "Yıldızlar",
+    "releases": "Sürümler",
+    "contributors": "Katkıda bulunanlar",
     "loc": "Kod satırı (tahmini)",
-    "languages": "Programlama dilleri"
+    "languages": "Programlama dilleri",
+    "open_issues": "Açık sorunlar",
+    "closed_issues": "Kapalı sorunlar",
+    "merged_prs": "Birleştirilen PR'ler",
+    "closed_prs": "Kapalı PR'ler",
+    "downloads": "İndirmeler"
   },
   "growth": {
     "title": "<span class=\"accent\">Zaman</span> içindeki büyüme"

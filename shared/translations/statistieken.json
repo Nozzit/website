@@ -5,8 +5,18 @@
     "desc": "The history and numbers behind the OpenAEC ecosystem. From the first idea to a complete open source platform."
   },
   "stats": {
+    "repos": "Repositories",
+    "commits": "Commits",
+    "stars": "Stars",
+    "releases": "Releases",
+    "contributors": "Contributors",
     "loc": "Lines of code (est.)",
-    "languages": "Programming languages"
+    "languages": "Programming languages",
+    "open_issues": "Open issues",
+    "closed_issues": "Closed issues",
+    "merged_prs": "Merged PRs",
+    "closed_prs": "Closed PRs",
+    "downloads": "Downloads"
   },
   "growth": {
     "title": "Growth over <span class=\"accent\">time</span>"
