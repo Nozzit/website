@@ -95,6 +95,31 @@ html = html.replace(articleRegex, (match, before, repoName, after, inner) => {
   return `<article class="tool-card"${before}data-repo="${repoName}"${after}>${newInner}</article>`;
 });
 
+// ─── Foundation-wide totals (e.g. CTA "⭐ 416 stars across 52 repos") ────
+// Update any <... data-gh-stars>NNN</...> and <... data-gh-repos>NNN</...>
+// elements with the current totals from stats.summary.
+const totalStars = stats.summary?.totalStars;
+const publicRepos = stats.summary?.publicRepos;
+let totalsUpdates = 0;
+if (totalStars != null) {
+  // Replace the inner text of any tag that carries `data-gh-stars` (single line, no nested tags expected)
+  html = html.replace(/(<([a-z]+)([^>]*\sdata-gh-stars\b[^>]*)>)([^<]*)(<\/\2>)/gi, (m, open, tag, attrs, inner, close) => {
+    if (inner.trim() === String(totalStars)) return m;
+    totalsUpdates++;
+    return `${open}${totalStars}${close}`;
+  });
+}
+if (publicRepos != null) {
+  html = html.replace(/(<([a-z]+)([^>]*\sdata-gh-repos\b[^>]*)>)([^<]*)(<\/\2>)/gi, (m, open, tag, attrs, inner, close) => {
+    if (inner.trim() === String(publicRepos)) return m;
+    totalsUpdates++;
+    return `${open}${publicRepos}${close}`;
+  });
+}
+
 fs.writeFileSync(indexPath, html);
 console.log(`Updated ${updates} tool cards with current GitHub stats`);
+if (totalsUpdates > 0) {
+  console.log(`Updated ${totalsUpdates} foundation-wide totals (stars=${totalStars}, repos=${publicRepos})`);
+}
 console.log(`Stats source: ${stats.generated}`);
