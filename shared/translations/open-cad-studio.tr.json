@@ -73,6 +73,7 @@
   "cta": {
     "github": "GitHub: HakanSeven12/OpenCADStudio",
     "issues": "Sorunlar ve geri bildirim",
-    "relatedTool": "Ayrıca Open 2D Studio'ya bakın"
+    "relatedTool": "Ayrıca Open 2D Studio'ya bakın",
+    "starsLine": "GitHub yıldızı · bağımsız bir geliştirici tarafından geliştirilen açık kaynaklı CAD uygulaması"
   }
 }

@@ -73,6 +73,7 @@
   "cta": {
     "github": "GitHub : HakanSeven12/OpenCADStudio",
     "issues": "Tickets &amp; retours",
-    "relatedTool": "Voir aussi Open 2D Studio"
+    "relatedTool": "Voir aussi Open 2D Studio",
+    "starsLine": "étoiles GitHub · application CAO open source construite par un développeur indépendant"
   }
 }

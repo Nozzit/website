@@ -73,6 +73,7 @@
   "cta": {
     "github": "GitHub: HakanSeven12/OpenCADStudio",
     "issues": "Issues &amp; feedback",
-    "relatedTool": "Also check Open 2D Studio"
+    "relatedTool": "Also check Open 2D Studio",
+    "starsLine": "GitHub stars · open-source CAD app built by one independent developer"
   }
 }
