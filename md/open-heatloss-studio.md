@@ -12,10 +12,10 @@
 
 ## Live stats
 
-- Stars: **0**
-- Commits: **293**
+- Stars: **1**
+- Commits: **485**
 - Forks: **0**
-- Open issues: **7**
+- Open issues: **3**
 - Releases: **2**
 - Total downloads: **7**
 - Downloads by platform: Windows (7)

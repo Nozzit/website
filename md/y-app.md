@@ -6,7 +6,7 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux, Android, iOS
 **Category:** Communication
-**Current version:** v0.15.0 (2026-04-21)
+**Current version:** v0.23.0 (2026-05-22)
 **Tool ID:** `y-app`
 **GitHub repo:** `OpenAEC-Foundation/Y-app`
 
@@ -16,7 +16,7 @@
 - Commits: **0**
 - Forks: **0**
 - Open issues: **0**
-- Releases: **19**
+- Releases: **20**
 - Total downloads: **15**
 - Downloads by platform: Android (9), Windows (6)
 
@@ -52,7 +52,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://www.open-aec.com/y-app/
 - Live demo: https://y-app.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/Y-app
-- Latest stable release: https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.15.0
+- Latest stable release: https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.23.0
 - Nightly builds: https://github.com/OpenAEC-Foundation/Y-app/releases/tag/nightly
 
 ## Direct downloads (most popular)
