@@ -1,5 +1,19 @@
 [
   {
+    "type": "linkedin",
+    "title": "LinkedIn-post: Open CAD Studio gepresenteerd aan de community",
+    "description": "Wij delen Open CAD Studio: een moderne open-source 2D + 3D CAD-applicatie die DWG en DXF native leest en schrijft, gebouwd in Rust met GPU-versnelde rendering (wgpu). Onafhankelijk community-project van Hakan Seven — Maarten kent Hakan al van een GIS-FreeCAD project 5 jaar terug. We zoeken early adopters in de industrie. Tags naar Dion Moult, FreeCAD Project Association, OSArch, Rust Foundation, buildingSMART, AEC Magazine, Foster + Partners, Zaha Hadid, Arup, AECOM, Jacobs.",
+    "date": "2026-05-24",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7464067147774828544/"
+  },
+  {
+    "type": "linkedin",
+    "title": "LinkedIn-post: Open Geotechniek Studio v0.2.9 live — testers gezocht",
+    "description": "Gratis open-source tool voor geotechnische data in browser én desktop (Windows/Linux). Viewer voor sonderingen en boringen (GEF + BRO-XML), directe BRO-import, Robertson SBT-classificatie, sonderingen naast elkaar vergelijken, .ifcgis opslag. Onderlagen: BRT, luchtfoto, AHN, kadaster, bestemmingsplan. Extensions: sonderingstekening (A2/A3 met snap, kader, schaalbalk, PDF-export) + offertes opvragen bij sondeerbedrijven. Alles MIT-licensed. Feedback van Deltares, TNO, Geonovum, Kadaster, NLingenieurs, KIVI, TU Delft Geo-Engineering en COB welkom.",
+    "date": "2026-05-22",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7463169633500467200/"
+  },
+  {
     "type": "announcement",
     "title": "Uitgelicht: Open Speech Studio v0.9.0 — gratis lokale spraakherkenning",
     "description": "Druk CTRL+Win en dicteer in elke Windows-applicatie via Whisper AI. 100% lokaal — je stem verlaat nooit je computer. Geen abonnement, geen cloud, geen limiet. Gratis alternatief voor Dragon NaturallySpeaking (~€500) en Otter.ai (~€20/mnd).",
