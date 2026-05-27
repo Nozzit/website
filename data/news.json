@@ -1,10 +1,19 @@
 [
   {
     "type": "release",
+    "repo": "open-geotechniek-studio",
+    "title": "open-geotechniek-studio v0.3.0 uitgebracht",
+    "description": "v0.3.0",
+    "date": "2026-05-27",
+    "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.3.0",
+    "count": 1
+  },
+  {
+    "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.59.0-nightly.20260526.531dadb",
-    "date": "2026-05-26",
+    "description": "Nightly build 1.59.0-nightly.20260527.531dadb",
+    "date": "2026-05-27",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -12,8 +21,8 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260526.9f5c914",
-    "date": "2026-05-26",
+    "description": "Nightly build 0.1.4-nightly.20260527.9f5c914",
+    "date": "2026-05-27",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
     "count": 1
   },

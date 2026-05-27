@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-05-27T07:22:21.737Z",
+  "generated": "2026-05-27T09:29:58.168Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -18,10 +18,10 @@
   "totalStats": {
     "publicRepos": 52,
     "totalStars": 416,
-    "totalCommits": 4228,
+    "totalCommits": 4261,
     "contributors": 32,
     "languages": 8,
-    "sourceDate": "2026-05-27T07:21:53.466Z"
+    "sourceDate": "2026-05-27T09:29:39.699Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -121,9 +121,9 @@
         "stars": 305,
         "forks": 27,
         "openIssues": 60,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
-        "releases": 48,
+        "latestVersion": "nightly",
+        "latestReleaseDate": "2026-05-27",
+        "releases": 47,
         "createdAt": "2026-01-22",
         "updatedAt": "2026-05-25"
       }
@@ -268,7 +268,7 @@
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
-        "commits": 485,
+        "commits": 489,
         "stars": 1,
         "forks": 0,
         "openIssues": 3,
@@ -276,7 +276,7 @@
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
         "createdAt": "2026-03-02",
-        "updatedAt": "2026-05-26"
+        "updatedAt": "2026-05-27"
       }
     },
     {
@@ -568,10 +568,10 @@
         "commits": 77,
         "stars": 2,
         "forks": 0,
-        "openIssues": 15,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
-        "releases": 4,
+        "openIssues": 16,
+        "latestVersion": "v0.10.0",
+        "latestReleaseDate": "2026-04-24",
+        "releases": 3,
         "createdAt": "2026-03-09",
         "updatedAt": "2026-04-28"
       }
