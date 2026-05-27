@@ -32,7 +32,7 @@ Later kan een merk-account @OpenAECfdn parallel naast je personal als de stichti
 ### Week 2 — Tech deep-dive
 | Dag | Type | Onderwerp |
 |-----|------|-----------|
-| Di | single | "Stats van onze stichting: 51 repos, 5380 downloads, 32 contributors" — link statistieken |
+| Di | single | "Stats van onze stichting: 52 repos, 5807 downloads, 32 contributors" — link statistieken |
 | Wo | thread (4 tweets) | **IFCX uitleg** — waarom JSON-LD > IFC STEP |
 | Vr | single | screenshot Open Geotechniek Studio BRO-kaart — tag @KadasterNL |
 
@@ -104,7 +104,7 @@ Je bent **voorzitter van een stichting**, niet een marketing-bot:
 - "Onze stelling is dat…"
 - Eerste persoon ("ik vind", "wij geloven")
 - Korte zinnen, één idee per tweet
-- Cijfers waar mogelijk ("484 commits", "5380 downloads")
+- Cijfers waar mogelijk ("514 commits", "5807 downloads")
 - Erkennen wat we niet weten ("we ontdekken nog steeds…")
 - Bedanken wanneer relevant
 

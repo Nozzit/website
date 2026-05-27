@@ -23,7 +23,7 @@ Onder de motorkap: **Rust** voor geheugen-veiligheid en performance, **iced** vo
 
 Belangrijk om te zeggen: dit is **niet** een tool van de OpenAEC Foundation zelf. Open CAD Studio is een onafhankelijk community-project van **Hakan Seven** — en wij zien het als een natuurlijke aanvulling op het open AEC-ecosysteem. Onze missie is open source software voor de hele AEC-keten promoten, en projecten als deze verdienen alle aandacht.
 
-Hat tip aan @Hakan Seven voor het volharden in dit project — 484 commits, 30 releases, v0.4.0 net uit. Dit is precies het soort werk dat we meer nodig hebben in de bouwsector.
+Hat tip aan @Hakan Seven voor het volharden in dit project — 514 commits, 31 releases, v0.4.1 net uit. Dit is precies het soort werk dat we meer nodig hebben in de bouwsector.
 
 → Productpagina: open-aec.com/open-cad-studio/
 → Repo: github.com/HakanSeven12/OpenCADStudio
@@ -101,7 +101,7 @@ Hat tip aan @Hakan Seven voor het volharden in dit project — 484 commits, 30 r
 
 ## ✍️ Korte variant (300 tekens — voor X/Bluesky/Mastodon)
 
-> Native DWG/DXF read/write in een open-source CAD-app, gebouwd in Rust met GPU rendering. Geen Autodesk. Geen Bricsys. Geen abonnement. v0.4.0 net uit.
+> Native DWG/DXF read/write in een open-source CAD-app, gebouwd in Rust met GPU rendering. Geen Autodesk. Geen Bricsys. Geen abonnement. v0.4.1 net uit.
 >
 > @Hakan Seven — chapeau 🎩
 >
@@ -142,7 +142,7 @@ Under the hood: **Rust** for memory safety and performance, **iced** for the UI,
 
 Important to mention: this is **not** a tool built by the OpenAEC Foundation itself. Open CAD Studio is an independent community project by **Hakan Seven** — and we see it as a natural addition to the open AEC ecosystem. Our mission is to promote open source software for the entire AEC chain, and projects like this deserve all the attention they can get.
 
-Hat tip to @Hakan Seven for sticking with this — 484 commits, 30 releases, v0.4.0 just out. This is exactly the kind of work the construction sector needs more of.
+Hat tip to @Hakan Seven for sticking with this — 514 commits, 31 releases, v0.4.1 just out. This is exactly the kind of work the construction sector needs more of.
 
 → Product page: https://www.open-aec.com/open-cad-studio/
 → Repo: github.com/HakanSeven12/OpenCADStudio
@@ -202,7 +202,7 @@ Hat tip to @Hakan Seven for sticking with this — 484 commits, 30 releases, v0.
 
 ### ✍️ Short variant (300 chars — X / Bluesky / Mastodon)
 
-> Native DWG/DXF read/write in an open-source CAD app, built in Rust with GPU rendering. No Autodesk. No Bricsys. No subscription. v0.4.0 just out.
+> Native DWG/DXF read/write in an open-source CAD app, built in Rust with GPU rendering. No Autodesk. No Bricsys. No subscription. v0.4.1 just out.
 >
 > @Hakan Seven — chapeau 🎩
 >

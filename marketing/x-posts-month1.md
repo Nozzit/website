@@ -30,7 +30,7 @@ Voorzitter @ OpenAEC Foundation — wij maken de Nederlandse bouw open-source in
 ```
 Een onafhankelijke ontwikkelaar bouwt een complete CAD-applicatie in Rust.
 Native DWG/DXF read/write. GPU-versnelde rendering. Paper space. ACIS solids.
-v0.4.0 net uit.
+v0.4.1 net uit.
 
 Dit is precies waar de bouwsector op zit te wachten. Een thread 👇
 
@@ -39,7 +39,7 @@ Dit is precies waar de bouwsector op zit te wachten. Een thread 👇
 
 **Tweet 2/5** (de stack):
 ```
-2/ Open CAD Studio is geheel in Rust geschreven door @HakanSeven12 — 484 commits, 30 releases.
+2/ Open CAD Studio is geheel in Rust geschreven door @HakanSeven12 — 514 commits, 31 releases.
 
 → iced voor de UI
 → wgpu voor GPU rendering
