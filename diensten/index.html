@@ -310,23 +310,109 @@
       color: var(--warm-gold);
       font-size: 1.75rem;
     }
-    .vat-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--sp-2);
+    .totals-row.subtotal-row {
+      border-top: 1px solid rgba(255,255,255,0.15);
       margin-top: var(--sp-2);
-      font-size: 0.85rem;
-      color: var(--scaffold-gray);
-      cursor: pointer;
-      user-select: none;
+      padding-top: var(--sp-3);
     }
-    .vat-toggle input { width: 16px; height: 16px; accent-color: var(--amber); cursor: pointer; }
     .totals-hint { font-size: 0.8rem; color: #78716C; margin-top: var(--sp-3); line-height: 1.5; }
+
+    /* ─── Partnership (Blender-style) ────────────────────────── */
+    .partner-section {
+      background: var(--night-build);
+      padding: var(--sp-16) var(--sp-6);
+      border-top: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .partner-wrapper { max-width: 1100px; margin: 0 auto; }
+    .partner-label {
+      font-family: var(--font-code);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--warm-gold);
+      display: block;
+      margin-bottom: var(--sp-3);
+    }
+    .partner-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2rem;
+      color: white;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-3);
+      line-height: 1.2;
+    }
+    .partner-title .accent { color: var(--amber); }
+    .partner-intro {
+      color: var(--scaffold-gray);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 760px;
+      margin-bottom: var(--sp-8);
+    }
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+      gap: var(--sp-4);
+    }
+    .partner-card {
+      background: var(--night-light, #32323a);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6) var(--sp-5);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .partner-card:hover { transform: translateY(-4px); border-color: var(--amber); }
+    .partner-card.featured {
+      border-color: var(--amber);
+      box-shadow: 0 8px 30px rgba(217,119,6,0.18);
+    }
+    .partner-tier {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-bottom: var(--sp-1);
+    }
+    .partner-tier .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+    .tier-bronze   { color: #CD7F32; } .dot-bronze   { background: #CD7F32; }
+    .tier-silver   { color: #C0C0C0; } .dot-silver   { background: #C0C0C0; }
+    .tier-gold     { color: #F0B429; } .dot-gold     { background: #F0B429; }
+    .tier-platinum { color: #D7E3EA; } .dot-platinum { background: #D7E3EA; }
+    .tier-patron   { color: var(--amber); } .dot-patron { background: var(--amber); }
+    .partner-price {
+      font-family: var(--font-code);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+      margin: var(--sp-3) 0 var(--sp-1);
+      line-height: 1;
+    }
+    .partner-price-suffix { color: #78716C; font-size: 0.8rem; margin-bottom: var(--sp-4); }
+    .partner-benefits { list-style: none; padding: 0; margin: 0; }
+    .partner-benefits li {
+      color: var(--scaffold-gray);
+      font-size: 0.85rem;
+      line-height: 1.5;
+      padding: 5px 0 5px 18px;
+      position: relative;
+    }
+    .partner-benefits li::before {
+      content: '';
+      position: absolute; left: 0; top: 11px;
+      width: 6px; height: 6px; border-radius: 2px;
+      background: var(--amber);
+    }
+    .partner-cta { margin-top: var(--sp-8); text-align: center; }
 
     @media (max-width: 600px) {
       .addon-row { grid-template-columns: 1fr 90px; row-gap: var(--sp-1); }
       .addon-row .addon-unit { display: none; }
       .totals-row.grand .totals-val { font-size: 1.4rem; }
+      .partner-title { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -402,61 +488,61 @@
           <tr data-price="4.95">
             <td>Open PDF Studio</td>
             <td class="price">&euro; <span class="price-amber">4,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open PDF Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties Open PDF Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="29.95">
             <td>Open Calc Studio</td>
             <td class="price">&euro; <span class="price-amber">29,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Calc Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties Open Calc Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="9.95">
             <td>Open Energy Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Energy Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties Open Energy Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="17.94">
             <td>Open CAD Studio</td>
             <td class="price">&euro; <span class="price-amber">17,94</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open CAD Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties Open CAD Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="9.95">
             <td>Open Speech Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Speech Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties Open Speech Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="9.95">
             <td>OpenAEC Docs</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties OpenAEC Docs"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties OpenAEC Docs"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="9.95">
             <td>OpenAEC Cloud Platform</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties OpenAEC Cloud Platform"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties OpenAEC Cloud Platform"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="4.95">
             <td>ERP-Next + Y-App</td>
             <td class="price">&euro; <span class="price-amber">4,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties ERP-Next + Y-App"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties ERP-Next + Y-App"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="9.95">
             <td>Open Pointcloud Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Pointcloud Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties Open Pointcloud Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
           <tr data-price="9.95">
             <td>BCF Manager Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
-            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties BCF Manager Studio"></td>
+            <td class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Licenties BCF Manager Studio"></td>
             <td class="subtotal">&euro; 0,00</td>
           </tr>
         </tbody>
@@ -471,7 +557,7 @@
             <span class="addon-desc" data-i18n="pricing.addons.ai.suffix">LLM-credits voor alle copilots</span>
           </div>
           <div class="addon-unit">&euro; 17,95 <span data-i18n="pricing.per.userMonth">p/gebr/mnd</span></div>
-          <div class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Aantal Claude-abonnementen"></div>
+          <div class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Aantal Claude-abonnementen"></div>
           <div class="addon-sub">&euro; 0,00</div>
         </div>
         <div class="addon-row" data-price="16.00" data-kind="monthly">
@@ -480,7 +566,7 @@
             <span class="addon-desc" data-i18n="pricing.addons.hosting.suffix">EU-datacenter, daily backup, 99,5% uptime</span>
           </div>
           <div class="addon-unit">&euro; 16,00 <span data-i18n="pricing.per.userMonth">p/gebr/mnd</span></div>
-          <div class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Aantal hosting-licenties"></div>
+          <div class="qty"><input type="number" min="0" step="1" value="1" class="lic-input" aria-label="Aantal hosting-licenties"></div>
           <div class="addon-sub">&euro; 0,00</div>
         </div>
         <div class="addon-row" data-price="1400" data-kind="onetime">
@@ -501,22 +587,26 @@
           <span class="totals-val" id="t-users">0</span>
         </div>
         <div class="totals-row">
-          <span class="totals-label" data-i18n="pricing.totals.monthly">Maandelijks terugkerend</span>
+          <span class="totals-label" data-i18n="pricing.totals.monthly">Maandelijks terugkerend (excl. BTW)</span>
           <span class="totals-val" id="t-monthly">&euro; 0,00</span>
         </div>
         <div class="totals-row">
-          <span class="totals-label" data-i18n="pricing.totals.onetime">Eenmalig (implementatie)</span>
+          <span class="totals-label" data-i18n="pricing.totals.onetime">Eenmalig implementatie (excl. BTW)</span>
           <span class="totals-val" id="t-onetime">&euro; 0,00</span>
         </div>
+        <div class="totals-row subtotal-row">
+          <span class="totals-label" data-i18n="pricing.totals.subtotal">Subtotaal eerste maand (excl. BTW)</span>
+          <span class="totals-val" id="t-subtotal">&euro; 0,00</span>
+        </div>
+        <div class="totals-row">
+          <span class="totals-label" data-i18n="pricing.totals.vatline">BTW 21%</span>
+          <span class="totals-val" id="t-vat">&euro; 0,00</span>
+        </div>
         <div class="totals-row grand">
-          <span class="totals-label" data-i18n="pricing.totals.first">Totaal eerste maand</span>
+          <span class="totals-label" data-i18n="pricing.totals.incl">Totaal eerste maand (incl. BTW)</span>
           <span class="totals-val" id="t-grand">&euro; 0,00</span>
         </div>
-        <label class="vat-toggle">
-          <input type="checkbox" id="vat-toggle">
-          <span data-i18n="pricing.totals.vat">Toon bedragen inclusief 21% BTW</span>
-        </label>
-        <p class="totals-hint" data-i18n="pricing.totals.hint">Alle bedragen zijn richtprijzen, standaard exclusief BTW. Maandbedragen worden per gebruiker per maand gefactureerd; implementatie is eenmalig per consultant per dag.</p>
+        <p class="totals-hint" data-i18n="pricing.totals.hint">Alle bedragen zijn richtprijzen. Maandbedragen worden per gebruiker per maand gefactureerd; implementatie is eenmalig per consultant per dag.</p>
       </div>
 
       <p class="price-footnote" style="margin-top: var(--sp-6);" data-i18n="pricing.cta">Wilt u een exact aanbod voor uw organisatie?</p>
@@ -534,7 +624,6 @@
 
       var table = document.getElementById('calc-table');
       var addons = document.getElementById('addons');
-      var vatToggle = document.getElementById('vat-toggle');
       if (!table) return;
 
       function num(input) {
@@ -544,49 +633,123 @@
       }
 
       function recalc() {
-        var withVat = vatToggle && vatToggle.checked;
-        var factor = withVat ? (1 + VAT) : 1;
         var monthly = 0, onetime = 0, users = 0;
 
-        // Tool rows
+        // Tool rows (all monthly + count as licences)
         table.querySelectorAll('tbody tr').forEach(function (row) {
           var price = parseFloat(row.getAttribute('data-price')) || 0;
-          var input = row.querySelector('.lic-input');
-          var qty = num(input);
+          var qty = num(row.querySelector('.lic-input'));
           var sub = price * qty;
           monthly += sub;
           users += qty;
           row.classList.toggle('has-qty', qty > 0);
-          row.querySelector('.subtotal').textContent = euro(sub * factor);
+          row.querySelector('.subtotal').textContent = euro(sub);
         });
 
         // Add-on rows
         addons.querySelectorAll('.addon-row').forEach(function (row) {
           var price = parseFloat(row.getAttribute('data-price')) || 0;
           var kind = row.getAttribute('data-kind');
-          var input = row.querySelector('.lic-input');
-          var qty = num(input);
+          var qty = num(row.querySelector('.lic-input'));
           var sub = price * qty;
           if (kind === 'onetime') { onetime += sub; } else { monthly += sub; }
           row.classList.toggle('has-qty', qty > 0);
-          row.querySelector('.addon-sub').textContent = euro(sub * factor);
+          row.querySelector('.addon-sub').textContent = euro(sub);
         });
 
+        var subtotal = monthly + onetime;   // excl. BTW
+        var vat = subtotal * VAT;            // 21% BTW
+        var grand = subtotal + vat;          // incl. BTW
+
         document.getElementById('t-users').textContent = users;
-        document.getElementById('t-monthly').textContent = euro(monthly * factor) + (withVat ? '' : '');
-        document.getElementById('t-onetime').textContent = euro(onetime * factor);
-        document.getElementById('t-grand').textContent = euro((monthly + onetime) * factor);
+        document.getElementById('t-monthly').textContent = euro(monthly);
+        document.getElementById('t-onetime').textContent = euro(onetime);
+        document.getElementById('t-subtotal').textContent = euro(subtotal);
+        document.getElementById('t-vat').textContent = euro(vat);
+        document.getElementById('t-grand').textContent = euro(grand);
       }
 
-      // Listen on any input change within the pricing section
       document.getElementById('prijzen').addEventListener('input', function (e) {
-        if (e.target.classList.contains('lic-input') || e.target.id === 'vat-toggle') recalc();
+        if (e.target.classList.contains('lic-input')) recalc();
       });
-      if (vatToggle) vatToggle.addEventListener('change', recalc);
 
       recalc();
     })();
   </script>
+
+  <!-- ─── Partnership / sponsorship (Blender-style) ───────────── -->
+  <section class="partner-section" id="partner">
+    <div class="partner-wrapper">
+      <span class="partner-label" data-i18n="partner.label">Partnerschap</span>
+      <h2 class="partner-title" data-i18n="partner.title">Word <span class="accent">partner</span> van de OpenAEC Foundation</h2>
+      <p class="partner-intro" data-i18n="partner.intro">Net als de Blender Foundation draait OpenAEC op structurele steun van bedrijven die geloven in open source voor de bouw. Partners financieren de ontwikkeling, krijgen invloed op de roadmap en worden zichtbaar als drijvende kracht achter een open AEC-keten. Jaarlijkse bijdragen van &euro; 5.000 tot &euro; 100.000.</p>
+
+      <div class="partner-grid">
+        <div class="partner-card">
+          <div class="partner-tier tier-bronze"><span class="dot dot-bronze"></span>Bronze</div>
+          <div class="partner-price">&euro; 5.000</div>
+          <div class="partner-price-suffix" data-i18n="partner.peryear">per jaar</div>
+          <ul class="partner-benefits">
+            <li data-i18n="partner.bronze.1">Logo op de supporters-pagina</li>
+            <li data-i18n="partner.bronze.2">Vermelding in jaarverslag</li>
+            <li data-i18n="partner.bronze.3">Partner-nieuwsbrief</li>
+          </ul>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-tier tier-silver"><span class="dot dot-silver"></span>Silver</div>
+          <div class="partner-price">&euro; 15.000</div>
+          <div class="partner-price-suffix" data-i18n="partner.peryear">per jaar</div>
+          <ul class="partner-benefits">
+            <li data-i18n="partner.silver.1">Alles uit Bronze</li>
+            <li data-i18n="partner.silver.2">Logo op de homepage</li>
+            <li data-i18n="partner.silver.3">Stem in de roadmap-poll</li>
+            <li data-i18n="partner.silver.4">Prioriteit op feature-requests</li>
+          </ul>
+        </div>
+
+        <div class="partner-card featured">
+          <div class="partner-tier tier-gold"><span class="dot dot-gold"></span>Gold</div>
+          <div class="partner-price">&euro; 30.000</div>
+          <div class="partner-price-suffix" data-i18n="partner.peryear">per jaar</div>
+          <ul class="partner-benefits">
+            <li data-i18n="partner.gold.1">Alles uit Silver</li>
+            <li data-i18n="partner.gold.2">Prioriteit-support (SLA inbegrepen)</li>
+            <li data-i18n="partner.gold.3">Kwartaal-call met het bestuur</li>
+            <li data-i18n="partner.gold.4">Naam in de tool-credits</li>
+          </ul>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-tier tier-platinum"><span class="dot dot-platinum"></span>Platinum</div>
+          <div class="partner-price">&euro; 60.000</div>
+          <div class="partner-price-suffix" data-i18n="partner.peryear">per jaar</div>
+          <ul class="partner-benefits">
+            <li data-i18n="partner.platinum.1">Alles uit Gold</li>
+            <li data-i18n="partner.platinum.2">5 consultancy-dagen per jaar</li>
+            <li data-i18n="partner.platinum.3">Co-branding op events</li>
+            <li data-i18n="partner.platinum.4">Vroege toegang tot nieuwe tools</li>
+          </ul>
+        </div>
+
+        <div class="partner-card">
+          <div class="partner-tier tier-patron"><span class="dot dot-patron"></span>Patron</div>
+          <div class="partner-price">&euro; 100.000</div>
+          <div class="partner-price-suffix" data-i18n="partner.peryear">per jaar</div>
+          <ul class="partner-benefits">
+            <li data-i18n="partner.patron.1">Alles uit Platinum</li>
+            <li data-i18n="partner.patron.2">Zetel in de adviesraad</li>
+            <li data-i18n="partner.patron.3">Dedicated engineer-dagen</li>
+            <li data-i18n="partner.patron.4">Strategische roadmap-invloed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="partner-cta">
+        <a href="/offerte/" style="display: inline-block; background: var(--amber); color: white; padding: var(--sp-3) var(--sp-8); border-radius: var(--radius-full); font-weight: 600; text-decoration: none; font-size: 1rem;" data-i18n="partner.cta">Word partner</a>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer page-footer" style="padding: var(--sp-6);">
     <div class="footer-inner">

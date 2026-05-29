@@ -43,13 +43,26 @@
     },
     "totals": {
       "users": "Total licences (SLA + AI)",
-      "monthly": "Monthly recurring",
-      "onetime": "One-off (implementation)",
-      "first": "Total first month",
-      "vat": "Show amounts including 21% VAT",
-      "hint": "All amounts are indicative, by default excluding VAT. Monthly amounts are billed per user per month; implementation is a one-off charge per consultant per day."
+      "monthly": "Monthly recurring (excl. VAT)",
+      "onetime": "One-off implementation (excl. VAT)",
+      "subtotal": "Subtotal first month (excl. VAT)",
+      "vatline": "VAT 21%",
+      "incl": "Total first month (incl. VAT)",
+      "hint": "All amounts are indicative. Monthly amounts are billed per user per month; implementation is a one-off charge per consultant per day."
     },
     "cta": "Would you like a tailored offer for your organisation?",
     "ctaBtn": "Request a quote"
+  },
+  "partner": {
+    "label": "Partnership",
+    "title": "Become a <span class=\"accent\">partner</span> of the OpenAEC Foundation",
+    "intro": "Like the Blender Foundation, OpenAEC runs on structural support from companies that believe in open source for construction. Partners fund development, gain influence over the roadmap and become visible as a driving force behind an open AEC chain. Annual contributions from &euro; 5,000 to &euro; 100,000.",
+    "peryear": "per year",
+    "cta": "Become a partner",
+    "bronze":   { "1": "Logo on the supporters page", "2": "Mention in the annual report", "3": "Partner newsletter" },
+    "silver":   { "1": "Everything in Bronze", "2": "Logo on the homepage", "3": "Vote in the roadmap poll", "4": "Priority on feature requests" },
+    "gold":     { "1": "Everything in Silver", "2": "Priority support (SLA included)", "3": "Quarterly call with the board", "4": "Name in the tool credits" },
+    "platinum": { "1": "Everything in Gold", "2": "5 consultancy days per year", "3": "Co-branding at events", "4": "Early access to new tools" },
+    "patron":   { "1": "Everything in Platinum", "2": "Seat on the advisory board", "3": "Dedicated engineer days", "4": "Strategic roadmap influence" }
   }
 }
