@@ -217,6 +217,117 @@
       .pricing-section-title { font-size: 1.5rem; }
       .price-table th, .price-table td { padding: var(--sp-3); font-size: 0.875rem; }
     }
+
+    /* ─── License calculator ─────────────────────────────────── */
+    .price-table th.qty-col, .price-table td.qty { text-align: center; width: 110px; }
+    .price-table th.sub-col, .price-table td.subtotal { text-align: right; width: 130px; white-space: nowrap; }
+    .lic-input {
+      width: 72px;
+      padding: 6px 8px;
+      border: 1px solid #D6D3D1;
+      border-radius: var(--radius-sm, 6px);
+      font-family: var(--font-code);
+      font-size: 0.95rem;
+      text-align: center;
+      color: var(--deep-forge);
+      background: #FAFAF9;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      -moz-appearance: textfield;
+    }
+    .lic-input:focus {
+      outline: none;
+      border-color: var(--amber);
+      box-shadow: 0 0 0 3px rgba(217,119,6,0.15);
+      background: white;
+    }
+    .lic-input::-webkit-outer-spin-button,
+    .lic-input::-webkit-inner-spin-button { opacity: 1; height: 24px; }
+    .price-table td.subtotal {
+      font-family: var(--font-code);
+      font-weight: 600;
+      color: #A8A29E;
+    }
+    .price-table tr.has-qty td.subtotal { color: var(--amber); }
+    .price-table tr.has-qty td { background: #FFFBF5; }
+
+    /* Add-on rows as a small table too */
+    .addon-row {
+      display: grid;
+      grid-template-columns: 1fr auto 110px 130px;
+      align-items: center;
+      gap: var(--sp-3);
+      padding: var(--sp-4) var(--sp-5);
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-bottom: none;
+      font-size: 0.95rem;
+      color: #44403C;
+    }
+    .addon-row:first-of-type { border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+    .addon-row:last-of-type { border-radius: 0 0 var(--radius-lg) var(--radius-lg); border-bottom: 1px solid #E7E5E4; }
+    .addon-row .addon-name { font-weight: 600; color: var(--deep-forge); }
+    .addon-row .addon-desc { font-size: 0.8rem; color: #78716C; font-weight: 400; display: block; margin-top: 2px; }
+    .addon-row .addon-unit { font-family: var(--font-code); color: #57534E; text-align: right; white-space: nowrap; }
+    .addon-row .addon-sub { font-family: var(--font-code); font-weight: 600; text-align: right; color: #A8A29E; white-space: nowrap; }
+    .addon-row.has-qty .addon-sub { color: var(--amber); }
+    .addon-row.has-qty { background: #FFFBF5; }
+
+    /* Totals box */
+    .totals-box {
+      margin-top: var(--sp-8);
+      background: var(--night-build);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6) var(--sp-8);
+      color: white;
+      border: 1px solid rgba(217,119,6,0.35);
+    }
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: var(--sp-2) 0;
+      font-size: 1rem;
+      color: var(--scaffold-gray);
+    }
+    .totals-row .totals-val {
+      font-family: var(--font-code);
+      font-weight: 600;
+      color: white;
+      font-size: 1.05rem;
+    }
+    .totals-row.grand {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      margin-top: var(--sp-3);
+      padding-top: var(--sp-4);
+    }
+    .totals-row.grand .totals-label {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: white;
+      font-size: 1.15rem;
+    }
+    .totals-row.grand .totals-val {
+      color: var(--warm-gold);
+      font-size: 1.75rem;
+    }
+    .vat-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-2);
+      margin-top: var(--sp-2);
+      font-size: 0.85rem;
+      color: var(--scaffold-gray);
+      cursor: pointer;
+      user-select: none;
+    }
+    .vat-toggle input { width: 16px; height: 16px; accent-color: var(--amber); cursor: pointer; }
+    .totals-hint { font-size: 0.8rem; color: #78716C; margin-top: var(--sp-3); line-height: 1.5; }
+
+    @media (max-width: 600px) {
+      .addon-row { grid-template-columns: 1fr 90px; row-gap: var(--sp-1); }
+      .addon-row .addon-unit { display: none; }
+      .totals-row.grand .totals-val { font-size: 1.4rem; }
+    }
   </style>
 </head>
 <body>
@@ -271,96 +382,211 @@
     </div>
   </section>
 
-  <!-- ─── Pricing section ─────────────────────────────────────── -->
+  <!-- ─── Pricing calculator ──────────────────────────────────── -->
   <section class="section" id="prijzen" style="background: white; padding-top: var(--sp-12);">
     <div class="pricing-wrapper">
       <span class="pricing-section-label" data-i18n="pricing.label">Tarieven</span>
-      <h2 class="pricing-section-title" data-i18n="pricing.title">SLA + AI-integratie <span class="accent">per tool</span></h2>
-      <p class="pricing-intro" data-i18n="pricing.intro">Per gebruiker per maand. Inclusief professionele ondersteuning binnen NL-business-hours en een directe AI-integratie (MCP-servers, copilots) op de tool. Software blijft 100% open source — u betaalt alleen voor de dienst.</p>
+      <h2 class="pricing-section-title" data-i18n="pricing.title">Stel uw <span class="accent">pakket</span> samen</h2>
+      <p class="pricing-intro" data-i18n="pricing.intro">Vul het aantal licenties per tool in en zie direct uw maandprijs. Inclusief professionele ondersteuning (SLA) binnen NL-business-hours en een directe AI-integratie (MCP-servers, copilots) op de tool. Software blijft 100% open source — u betaalt alleen voor de dienst.</p>
 
-      <table class="price-table">
+      <table class="price-table" id="calc-table">
         <thead>
           <tr>
             <th data-i18n="pricing.col.tool">Tool</th>
-            <th class="price-col" data-i18n="pricing.col.price">SLA + AI per gebruiker / maand</th>
+            <th class="price-col" data-i18n="pricing.col.price">SLA + AI p/gebr/mnd</th>
+            <th class="qty-col" data-i18n="pricing.col.qty">Licenties</th>
+            <th class="sub-col" data-i18n="pricing.col.subtotal">Subtotaal/mnd</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr data-price="4.95">
             <td>Open PDF Studio</td>
             <td class="price">&euro; <span class="price-amber">4,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open PDF Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="29.95">
             <td>Open Calc Studio</td>
             <td class="price">&euro; <span class="price-amber">29,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Calc Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="9.95">
             <td>Open Energy Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Energy Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="17.94">
             <td>Open CAD Studio</td>
             <td class="price">&euro; <span class="price-amber">17,94</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open CAD Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="9.95">
             <td>Open Speech Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Speech Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="9.95">
             <td>OpenAEC Docs</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties OpenAEC Docs"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="9.95">
             <td>OpenAEC Cloud Platform</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties OpenAEC Cloud Platform"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="4.95">
             <td>ERP-Next + Y-App</td>
             <td class="price">&euro; <span class="price-amber">4,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties ERP-Next + Y-App"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="9.95">
             <td>Open Pointcloud Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties Open Pointcloud Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
-          <tr>
+          <tr data-price="9.95">
             <td>BCF Manager Studio</td>
             <td class="price">&euro; <span class="price-amber">9,95</span></td>
+            <td class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Licenties BCF Manager Studio"></td>
+            <td class="subtotal">&euro; 0,00</td>
           </tr>
         </tbody>
       </table>
 
-      <p class="price-footnote" data-i18n="pricing.footnote">Alle prijzen zijn <strong>per gebruiker per maand</strong>, exclusief BTW. Cherry-pick alleen de tools die u nodig heeft, of combineer voor één geïntegreerde werkomgeving.</p>
+      <h2 class="pricing-section-title" style="margin-top: var(--sp-10); font-size: 1.5rem;" data-i18n="pricing.addons.title">Aanvullende <span class="accent">diensten</span></h2>
 
-      <h2 class="pricing-section-title" style="margin-top: var(--sp-12);" data-i18n="pricing.addons.title">Aanvullende <span class="accent">diensten</span></h2>
-
-      <div class="addons-grid">
-        <div class="addon-card">
-          <span class="addon-card-label" data-i18n="pricing.addons.ai.label">AI-toegang</span>
-          <div class="addon-card-title" data-i18n="pricing.addons.ai.title">Claude-abonnement</div>
-          <div class="addon-card-price">&euro; 17,95</div>
-          <div class="addon-card-suffix" data-i18n="pricing.addons.ai.suffix">per gebruiker / maand &mdash; LLM-credits voor alle copilots</div>
+      <div id="addons">
+        <div class="addon-row" data-price="17.95" data-kind="monthly">
+          <div>
+            <span class="addon-name" data-i18n="pricing.addons.ai.title">Claude-abonnement</span>
+            <span class="addon-desc" data-i18n="pricing.addons.ai.suffix">LLM-credits voor alle copilots</span>
+          </div>
+          <div class="addon-unit">&euro; 17,95 <span data-i18n="pricing.per.userMonth">p/gebr/mnd</span></div>
+          <div class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Aantal Claude-abonnementen"></div>
+          <div class="addon-sub">&euro; 0,00</div>
         </div>
-        <div class="addon-card">
-          <span class="addon-card-label" data-i18n="pricing.addons.hosting.label">Cloud-opslag</span>
-          <div class="addon-card-title" data-i18n="pricing.addons.hosting.title">Hosting 100 GB / gebruiker</div>
-          <div class="addon-card-price">&euro; 16,00</div>
-          <div class="addon-card-suffix" data-i18n="pricing.addons.hosting.suffix">per gebruiker / maand &mdash; EU-datacenter, daily backup, 99,5% uptime</div>
+        <div class="addon-row" data-price="16.00" data-kind="monthly">
+          <div>
+            <span class="addon-name" data-i18n="pricing.addons.hosting.title">Hosting 100 GB / gebruiker</span>
+            <span class="addon-desc" data-i18n="pricing.addons.hosting.suffix">EU-datacenter, daily backup, 99,5% uptime</span>
+          </div>
+          <div class="addon-unit">&euro; 16,00 <span data-i18n="pricing.per.userMonth">p/gebr/mnd</span></div>
+          <div class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Aantal hosting-licenties"></div>
+          <div class="addon-sub">&euro; 0,00</div>
         </div>
-        <div class="addon-card">
-          <span class="addon-card-label" data-i18n="pricing.addons.impl.label">Implementatie</span>
-          <div class="addon-card-title" data-i18n="pricing.addons.impl.title">Consultant on-site</div>
-          <div class="addon-card-price">&euro; 1.400</div>
-          <div class="addon-card-suffix" data-i18n="pricing.addons.impl.suffix">per dag per consultant &mdash; excl. BTW, advies + implementatie</div>
+        <div class="addon-row" data-price="1400" data-kind="onetime">
+          <div>
+            <span class="addon-name" data-i18n="pricing.addons.impl.title">Implementatie (consultant on-site)</span>
+            <span class="addon-desc" data-i18n="pricing.addons.impl.suffix">excl. BTW, advies + implementatie &mdash; eenmalig</span>
+          </div>
+          <div class="addon-unit">&euro; 1.400 <span data-i18n="pricing.per.day">per dag</span></div>
+          <div class="qty"><input type="number" min="0" step="1" value="0" class="lic-input" aria-label="Aantal implementatiedagen"></div>
+          <div class="addon-sub">&euro; 0,00</div>
         </div>
       </div>
 
-      <p class="price-footnote" data-i18n="pricing.cta">Wilt u een exact aanbod voor uw organisatie?</p>
+      <!-- Totals -->
+      <div class="totals-box">
+        <div class="totals-row">
+          <span class="totals-label" data-i18n="pricing.totals.users">Totaal aantal licenties (SLA + AI)</span>
+          <span class="totals-val" id="t-users">0</span>
+        </div>
+        <div class="totals-row">
+          <span class="totals-label" data-i18n="pricing.totals.monthly">Maandelijks terugkerend</span>
+          <span class="totals-val" id="t-monthly">&euro; 0,00</span>
+        </div>
+        <div class="totals-row">
+          <span class="totals-label" data-i18n="pricing.totals.onetime">Eenmalig (implementatie)</span>
+          <span class="totals-val" id="t-onetime">&euro; 0,00</span>
+        </div>
+        <div class="totals-row grand">
+          <span class="totals-label" data-i18n="pricing.totals.first">Totaal eerste maand</span>
+          <span class="totals-val" id="t-grand">&euro; 0,00</span>
+        </div>
+        <label class="vat-toggle">
+          <input type="checkbox" id="vat-toggle">
+          <span data-i18n="pricing.totals.vat">Toon bedragen inclusief 21% BTW</span>
+        </label>
+        <p class="totals-hint" data-i18n="pricing.totals.hint">Alle bedragen zijn richtprijzen, standaard exclusief BTW. Maandbedragen worden per gebruiker per maand gefactureerd; implementatie is eenmalig per consultant per dag.</p>
+      </div>
 
+      <p class="price-footnote" style="margin-top: var(--sp-6);" data-i18n="pricing.cta">Wilt u een exact aanbod voor uw organisatie?</p>
       <p style="margin-top: var(--sp-4); text-align: center;">
-        <a href="/offerte/" style="display: inline-block; background: var(--amber); color: white; padding: var(--sp-3) var(--sp-8); border-radius: var(--radius-full); font-weight: 600; text-decoration: none; font-size: 1rem; transition: background 0.2s ease;" data-i18n="pricing.cta.btn">Offerte aanvragen</a>
+        <a href="/offerte/" style="display: inline-block; background: var(--amber); color: white; padding: var(--sp-3) var(--sp-8); border-radius: var(--radius-full); font-weight: 600; text-decoration: none; font-size: 1rem; transition: background 0.2s ease;" data-i18n="pricing.ctaBtn">Offerte aanvragen</a>
       </p>
     </div>
   </section>
+
+  <script>
+    (function () {
+      var VAT = 0.21;
+      var nf = new Intl.NumberFormat('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      function euro(v) { return '€ ' + nf.format(v); }
+
+      var table = document.getElementById('calc-table');
+      var addons = document.getElementById('addons');
+      var vatToggle = document.getElementById('vat-toggle');
+      if (!table) return;
+
+      function num(input) {
+        var v = parseInt(input.value, 10);
+        if (isNaN(v) || v < 0) v = 0;
+        return v;
+      }
+
+      function recalc() {
+        var withVat = vatToggle && vatToggle.checked;
+        var factor = withVat ? (1 + VAT) : 1;
+        var monthly = 0, onetime = 0, users = 0;
+
+        // Tool rows
+        table.querySelectorAll('tbody tr').forEach(function (row) {
+          var price = parseFloat(row.getAttribute('data-price')) || 0;
+          var input = row.querySelector('.lic-input');
+          var qty = num(input);
+          var sub = price * qty;
+          monthly += sub;
+          users += qty;
+          row.classList.toggle('has-qty', qty > 0);
+          row.querySelector('.subtotal').textContent = euro(sub * factor);
+        });
+
+        // Add-on rows
+        addons.querySelectorAll('.addon-row').forEach(function (row) {
+          var price = parseFloat(row.getAttribute('data-price')) || 0;
+          var kind = row.getAttribute('data-kind');
+          var input = row.querySelector('.lic-input');
+          var qty = num(input);
+          var sub = price * qty;
+          if (kind === 'onetime') { onetime += sub; } else { monthly += sub; }
+          row.classList.toggle('has-qty', qty > 0);
+          row.querySelector('.addon-sub').textContent = euro(sub * factor);
+        });
+
+        document.getElementById('t-users').textContent = users;
+        document.getElementById('t-monthly').textContent = euro(monthly * factor) + (withVat ? '' : '');
+        document.getElementById('t-onetime').textContent = euro(onetime * factor);
+        document.getElementById('t-grand').textContent = euro((monthly + onetime) * factor);
+      }
+
+      // Listen on any input change within the pricing section
+      document.getElementById('prijzen').addEventListener('input', function (e) {
+        if (e.target.classList.contains('lic-input') || e.target.id === 'vat-toggle') recalc();
+      });
+      if (vatToggle) vatToggle.addEventListener('change', recalc);
+
+      recalc();
+    })();
+  </script>
 
   <footer class="footer page-footer" style="padding: var(--sp-6);">
     <div class="footer-inner">

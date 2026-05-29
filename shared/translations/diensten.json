@@ -30,17 +30,26 @@
   },
   "pricing": {
     "label": "Pricing",
-    "title": "SLA + AI integration <span class=\"accent\">per tool</span>",
-    "intro": "Per user per month. Includes professional support during NL business hours plus a direct AI integration (MCP servers, copilots) on the tool. Software stays 100% open source — you only pay for the service.",
-    "col": { "tool": "Tool", "price": "SLA + AI per user / month" },
+    "title": "Build your <span class=\"accent\">package</span>",
+    "intro": "Enter the number of licences per tool and see your monthly price instantly. Includes professional support (SLA) during NL business hours plus a direct AI integration (MCP servers, copilots) on the tool. Software stays 100% open source — you only pay for the service.",
+    "col": { "tool": "Tool", "price": "SLA + AI per user/mo", "qty": "Licences", "subtotal": "Subtotal/mo" },
+    "per": { "userMonth": "per user/mo", "day": "per day" },
     "footnote": "All prices are <strong>per user per month</strong>, excluding VAT. Cherry-pick only the tools you need, or combine them into one integrated workspace.",
     "addons": {
       "title": "Additional <span class=\"accent\">services</span>",
-      "ai":      { "label": "AI access",     "title": "Claude subscription",           "suffix": "per user / month &mdash; LLM credits for all copilots" },
-      "hosting": { "label": "Cloud storage", "title": "Hosting 100 GB / user",         "suffix": "per user / month &mdash; EU datacenter, daily backup, 99.5% uptime" },
-      "impl":    { "label": "Implementation","title": "On-site consultant",            "suffix": "per day per consultant &mdash; excl. VAT, advice + implementation" }
+      "ai":      { "label": "AI access",     "title": "Claude subscription",           "suffix": "LLM credits for all copilots" },
+      "hosting": { "label": "Cloud storage", "title": "Hosting 100 GB / user",         "suffix": "EU datacenter, daily backup, 99.5% uptime" },
+      "impl":    { "label": "Implementation","title": "Implementation (on-site consultant)", "suffix": "excl. VAT, advice + implementation &mdash; one-off" }
+    },
+    "totals": {
+      "users": "Total licences (SLA + AI)",
+      "monthly": "Monthly recurring",
+      "onetime": "One-off (implementation)",
+      "first": "Total first month",
+      "vat": "Show amounts including 21% VAT",
+      "hint": "All amounts are indicative, by default excluding VAT. Monthly amounts are billed per user per month; implementation is a one-off charge per consultant per day."
     },
     "cta": "Would you like a tailored offer for your organisation?",
-    "cta.btn": "Request a quote"
+    "ctaBtn": "Request a quote"
   }
 }
