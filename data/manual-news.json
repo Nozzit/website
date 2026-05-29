@@ -1,17 +1,17 @@
 [
   {
-    "type": "linkedin",
-    "title": "LinkedIn-post: Open CAD Studio gepresenteerd aan de community",
-    "description": "Wij delen Open CAD Studio: een moderne open-source 2D + 3D CAD-applicatie die DWG en DXF native leest en schrijft, gebouwd in Rust met GPU-versnelde rendering (wgpu). Onafhankelijk community-project van Hakan Seven — Maarten kent Hakan al van een GIS-FreeCAD project 5 jaar terug. We zoeken early adopters in de industrie. Tags naar Dion Moult, FreeCAD Project Association, OSArch, Rust Foundation, buildingSMART, AEC Magazine, Foster + Partners, Zaha Hadid, Arup, AECOM, Jacobs.",
+    "type": "announcement",
+    "title": "Open CAD Studio gepresenteerd aan de AEC-community",
+    "description": "Onafhankelijk open-source CAD-project van Hakan Seven: native DWG/DXF read en write, gebouwd in Rust met GPU-rendering via wgpu. 30 MB installer, start in <1 seconde. Geen Autodesk, geen Bricsys, geen abonnement. OpenAEC Foundation promoot dit project actief — wij zoeken early adopters in de industrie en feedback via GitHub issues.",
     "date": "2026-05-24",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7464067147774828544/"
+    "url": "/nieuws/open-cad-studio-launch/"
   },
   {
-    "type": "linkedin",
-    "title": "LinkedIn-post: Open Geotechniek Studio v0.2.9 live — testers gezocht",
-    "description": "Gratis open-source tool voor geotechnische data in browser én desktop (Windows/Linux). Viewer voor sonderingen en boringen (GEF + BRO-XML), directe BRO-import, Robertson SBT-classificatie, sonderingen naast elkaar vergelijken, .ifcgis opslag. Onderlagen: BRT, luchtfoto, AHN, kadaster, bestemmingsplan. Extensions: sonderingstekening (A2/A3 met snap, kader, schaalbalk, PDF-export) + offertes opvragen bij sondeerbedrijven. Alles MIT-licensed. Feedback van Deltares, TNO, Geonovum, Kadaster, NLingenieurs, KIVI, TU Delft Geo-Engineering en COB welkom.",
+    "type": "announcement",
+    "title": "Open Geotechniek Studio v0.2.9 live — testers gezocht",
+    "description": "Gratis open-source tool voor sonderingen en boringen in browser én desktop (Windows/Linux). GEF + BRO-XML viewer, directe BRO-import, Robertson SBT-classificatie, sonderingen vergelijken, .ifcgis-opslag. Onderlagen op de kaart: BRT, luchtfoto, AHN, kadaster. Extensions: sonderingstekening (A2/A3 met PDF-export) + offertes opvragen. Alles MIT-licensed.",
     "date": "2026-05-22",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7463169633500467200/"
+    "url": "/nieuws/open-geotechniek-studio-v0-2-9/"
   },
   {
     "type": "announcement",

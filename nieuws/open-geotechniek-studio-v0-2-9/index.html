@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Geotechniek Studio v0.2.9 live — testers gezocht | OpenAEC Foundation</title>
+  <meta name="description" content="Open Geotechniek Studio v0.2.9 is uitgebracht: gratis open-source tool voor sonderingen en boringen. GEF + BRO-XML viewer, directe BRO-import, Robertson SBT-classificatie, .ifcgis opslag, sonderingstekening-extension. Browser + desktop, MIT-licensed.">
+  <meta name="i18n-page" content="news-open-geotechniek-studio-v029">
+  <link rel="canonical" href="https://www.open-aec.com/nieuws/open-geotechniek-studio-v0-2-9/">
+  <meta property="og:title" content="Open Geotechniek Studio v0.2.9 live — testers gezocht">
+  <meta property="og:description" content="Sonderingen en boringen in browser + desktop. GEF + BRO-XML, Robertson SBT, .ifcgis. Gratis, open source, MIT.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.open-aec.com/nieuws/open-geotechniek-studio-v0-2-9/">
+  <meta property="article:published_time" content="2026-05-22T09:00:00+02:00">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Open Geotechniek Studio v0.2.9 live — testers gezocht",
+    "datePublished": "2026-05-22T09:00:00+02:00",
+    "dateModified": "2026-05-29T09:00:00+02:00",
+    "author": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" },
+    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" },
+    "image": "https://www.open-aec.com/shared/assets/screenshots/open-geotechniek-studio.png",
+    "url": "https://www.open-aec.com/nieuws/open-geotechniek-studio-v0-2-9/",
+    "description": "Gratis open-source tool voor sonderingen en boringen. GEF + BRO-XML viewer, Robertson SBT, .ifcgis opslag."
+  }
+  </script>
+  <style>
+    .article-header {
+      background: var(--night-build);
+      padding: var(--sp-16) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .article-meta-top {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      color: var(--scaffold-gray);
+      font-family: var(--font-code);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-4);
+    }
+    .article-meta-top .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(217,119,6,0.15);
+      color: var(--warm-gold);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+    }
+    .article-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 auto var(--sp-4);
+      max-width: 820px;
+    }
+    .article-header h1 .accent { color: var(--amber); }
+    .article-lead {
+      font-size: 1.15rem;
+      color: var(--scaffold-gray);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .article-body {
+      background: var(--blueprint-white);
+      padding: var(--sp-12) var(--sp-6);
+    }
+    .article-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #44403C;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+    .article-inner h2 {
+      font-family: var(--font-heading);
+      color: var(--deep-forge);
+      font-size: 1.5rem;
+      margin: var(--sp-10) 0 var(--sp-4);
+    }
+    .article-inner p { margin-bottom: var(--sp-4); }
+    .article-inner a { color: var(--amber); text-decoration: none; font-weight: 600; }
+    .article-inner a:hover { color: var(--signal-orange); text-decoration: underline; }
+    .article-inner strong { color: var(--deep-forge); }
+    .article-inner ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--sp-4) 0;
+    }
+    .article-inner li {
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+    .article-inner li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: var(--amber);
+    }
+    .article-thumb {
+      width: 100%;
+      max-width: 760px;
+      margin: var(--sp-6) auto;
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      display: block;
+    }
+    .article-quote {
+      border-left: 4px solid var(--amber);
+      padding: var(--sp-4) var(--sp-6);
+      background: white;
+      margin: var(--sp-6) 0;
+      font-style: italic;
+      color: var(--deep-forge);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    .article-cta-row {
+      display: flex;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+      margin-top: var(--sp-8);
+      padding-top: var(--sp-6);
+      border-top: 1px solid #E7E5E4;
+    }
+    .article-cta-row .btn { font-size: 0.95rem; }
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--scaffold-gray);
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: var(--sp-6);
+    }
+    .article-back:hover { color: var(--amber); }
+    .tag-row {
+      display: flex;
+      gap: var(--sp-2);
+      flex-wrap: wrap;
+      margin: var(--sp-2) 0 var(--sp-6);
+    }
+    .tag-chip {
+      background: #F5F5F4;
+      color: #57534E;
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.75rem; }
+      .article-lead { font-size: 1rem; }
+      .article-inner { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js?v=20260525"></script>
+
+  <header class="article-header">
+    <div class="article-meta-top">
+      <span class="badge">Release</span>
+      <time datetime="2026-05-22">22 mei 2026</time>
+    </div>
+    <h1>Open Geotechniek Studio <span class="accent">v0.2.9</span> live &mdash; testers gezocht</h1>
+    <p class="article-lead">Gratis open-source tool voor sonderingen en boringen, in de browser én op de desktop. GEF + BRO-XML viewer, directe import vanuit de BRO, Robertson SBT-classificatie en open <code>.ifcgis</code>-opslag.</p>
+  </header>
+
+  <section class="article-body">
+    <article class="article-inner">
+      <a href="/nieuws/" class="article-back">&larr; Terug naar nieuws</a>
+
+      <p>Op 22 mei 2026 hebben we <strong>Open Geotechniek Studio v0.2.9</strong> uitgebracht. Het is een gratis open-source tool voor geotechnische data &mdash; sonderingen en boringen &mdash; die in elke moderne browser draait én als <strong>desktop-app op Windows en Linux</strong>. Alles MIT-licensed. We zoeken testers.</p>
+
+      <img src="/shared/assets/screenshots/open-geotechniek-studio.png" alt="Open Geotechniek Studio screenshot &mdash; sondering naast onderlaag met Robertson SBT classificatie." class="article-thumb" loading="lazy">
+
+      <h2>Wat de tool nu kan</h2>
+      <ul>
+        <li><strong>Viewer voor sonderingen en boringen</strong> &mdash; alle Nederlandse formaten: GEF en BRO-XML.</li>
+        <li><strong>Directe BRO-import</strong> &mdash; haal sonderingen en boringen rechtstreeks op uit de landelijke Basisregistratie Ondergrond.</li>
+        <li><strong>Robertson SBT-classificatie</strong> &mdash; grondsoort-interpretatie automatisch berekend per laag.</li>
+        <li><strong>Sonderingen vergelijken</strong> &mdash; zet meerdere sonderingen naast elkaar in één view.</li>
+        <li><strong>Opslaan als <code>.ifcgis</code></strong> &mdash; ons eigen open IFC-compatibele project-formaat.</li>
+        <li><strong>Onderlagen op de kaart</strong> &mdash; BRT, luchtfoto, AHN, kadaster, bestemmingsplan, geomorfologische kaart, bodemkaart en meer.</li>
+        <li><strong>Rapport printen</strong> (desktop-only) &mdash; volledig PDF-rapport van een sondering met grafiek, classificatie en metadata.</li>
+      </ul>
+
+      <h2>Extensions (optioneel)</h2>
+      <ul>
+        <li><strong>Sonderingstekening maken</strong> &mdash; CAD-papier in A2 of A3 met snap, kader, schaalbalk en PDF-export.</li>
+        <li><strong>Offertes opvragen</strong> &mdash; direct contact met de dichtstbijzijnde sondeerbedrijven op de kaart.</li>
+      </ul>
+
+      <h2>Op de roadmap</h2>
+      <ul>
+        <li>Fundering op staal (NEN 9997-1)</li>
+      </ul>
+
+      <div class="article-quote">
+        "Voor wie zelf wil bouwen: alles MIT-licensed. De Rust cpt-core parser plus alle TS-parsers zijn losse herbruikbare modules &mdash; gebruik ze in je eigen project."
+      </div>
+
+      <h2>Feedback gezocht</h2>
+      <p>Bugs en feature-verzoeken graag via <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/issues" target="_blank" rel="noopener">GitHub issues</a>. We zijn benieuwd wat Deltares, TNO, Geonovum, Kadaster, NLingenieurs, KIVI Geotechniek &mdash; NSSMGE, TU Delft Geo-Engineering, Centrum Ondergronds Bouwen (COB), buildingSMART Benelux en alle constructeurs hier van vinden.</p>
+
+      <div class="tag-row">
+        <span class="tag-chip">#Geotechniek</span>
+        <span class="tag-chip">#BRO</span>
+        <span class="tag-chip">#GEF</span>
+        <span class="tag-chip">#Kadaster</span>
+        <span class="tag-chip">#OpenSource</span>
+        <span class="tag-chip">#MIT</span>
+        <span class="tag-chip">#IFC</span>
+      </div>
+
+      <p>Onze doelstelling is om alle software in de AEC-keten open source te maken vóór het eind van 2026. Steun ons.</p>
+
+      <div class="article-cta-row">
+        <a href="/open-geotechniek-studio/" class="btn btn-primary">Bekijk de productpagina &rarr;</a>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-ghost">GitHub repository</a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7463169633500467200/" target="_blank" rel="noopener" class="btn btn-ghost">Originele post op LinkedIn</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+  <script src="/shared/i18n.js?v=20260525"></script>
+</body>
+</html>

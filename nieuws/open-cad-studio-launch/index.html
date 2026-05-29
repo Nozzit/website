@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open CAD Studio gepresenteerd — open-source DWG/DXF in Rust | OpenAEC Foundation</title>
+  <meta name="description" content="OpenAEC Foundation deelt Open CAD Studio: een onafhankelijk community-project van Hakan Seven dat DWG en DXF native leest en schrijft, geschreven in Rust met GPU-rendering. Geen Autodesk, geen Bricsys, geen abonnement.">
+  <meta name="i18n-page" content="news-open-cad-studio-launch">
+  <link rel="canonical" href="https://www.open-aec.com/nieuws/open-cad-studio-launch/">
+  <meta property="og:title" content="Open CAD Studio gepresenteerd aan de AEC-community">
+  <meta property="og:description" content="Onafhankelijk open-source CAD-project van Hakan Seven, native DWG/DXF in Rust met GPU-rendering. Recognised door OpenAEC Foundation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.open-aec.com/nieuws/open-cad-studio-launch/">
+  <meta property="article:published_time" content="2026-05-24T09:00:00+02:00">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Open CAD Studio gepresenteerd aan de AEC-community",
+    "datePublished": "2026-05-24T09:00:00+02:00",
+    "dateModified": "2026-05-29T09:00:00+02:00",
+    "author": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" },
+    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" },
+    "image": "https://www.open-aec.com/shared/assets/screenshots/open-cad-studio.jpeg",
+    "url": "https://www.open-aec.com/nieuws/open-cad-studio-launch/",
+    "description": "Onafhankelijk open-source CAD-project van Hakan Seven, native DWG/DXF in Rust met GPU-rendering."
+  }
+  </script>
+  <style>
+    .article-header {
+      background: var(--night-build);
+      padding: var(--sp-16) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .article-meta-top {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      color: var(--scaffold-gray);
+      font-family: var(--font-code);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-4);
+    }
+    .article-meta-top .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(217,119,6,0.15);
+      color: var(--warm-gold);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+    }
+    .article-header h1 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 auto var(--sp-4);
+      max-width: 820px;
+    }
+    .article-header h1 .accent { color: var(--amber); }
+    .article-lead {
+      font-size: 1.15rem;
+      color: var(--scaffold-gray);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .article-body {
+      background: var(--blueprint-white);
+      padding: var(--sp-12) var(--sp-6);
+    }
+    .article-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #44403C;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+    .article-inner h2 {
+      font-family: var(--font-heading);
+      color: var(--deep-forge);
+      font-size: 1.5rem;
+      margin: var(--sp-10) 0 var(--sp-4);
+    }
+    .article-inner p { margin-bottom: var(--sp-4); }
+    .article-inner a { color: var(--amber); text-decoration: none; font-weight: 600; }
+    .article-inner a:hover { color: var(--signal-orange); text-decoration: underline; }
+    .article-inner strong { color: var(--deep-forge); }
+    .article-inner ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--sp-4) 0;
+    }
+    .article-inner li {
+      padding: 6px 0 6px 24px;
+      position: relative;
+    }
+    .article-inner li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: var(--amber);
+    }
+    .article-thumb {
+      width: 100%;
+      max-width: 760px;
+      margin: var(--sp-6) auto;
+      border-radius: var(--radius-md);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      display: block;
+    }
+    .article-quote {
+      border-left: 4px solid var(--amber);
+      padding: var(--sp-4) var(--sp-6);
+      background: white;
+      margin: var(--sp-6) 0;
+      font-style: italic;
+      color: var(--deep-forge);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    .article-cta-row {
+      display: flex;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+      margin-top: var(--sp-8);
+      padding-top: var(--sp-6);
+      border-top: 1px solid #E7E5E4;
+    }
+    .article-cta-row .btn { font-size: 0.95rem; }
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--scaffold-gray);
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: var(--sp-6);
+    }
+    .article-back:hover { color: var(--amber); }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.75rem; }
+      .article-lead { font-size: 1rem; }
+      .article-inner { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js?v=20260525"></script>
+
+  <header class="article-header">
+    <div class="article-meta-top">
+      <span class="badge">Aankondiging</span>
+      <time datetime="2026-05-24">24 mei 2026</time>
+    </div>
+    <h1>Open CAD Studio gepresenteerd aan de <span class="accent">AEC-community</span></h1>
+    <p class="article-lead">Onafhankelijk open-source CAD-project van Hakan Seven, native DWG/DXF in Rust met GPU-rendering. Geen Autodesk, geen Bricsys, geen abonnement.</p>
+  </header>
+
+  <section class="article-body">
+    <article class="article-inner">
+      <a href="/nieuws/" class="article-back">&larr; Terug naar nieuws</a>
+
+      <p>Op 24 mei 2026 deelden wij <strong>Open CAD Studio</strong> met onze achterban: een moderne, open-source 2D &amp; 3D CAD-applicatie die DWG en DXF <strong>native</strong> leest en schrijft. Het is gebouwd in <strong>Rust</strong>, met GPU-versnelde rendering via wgpu, en de installer is <strong>30 MB</strong>. Hij start binnen één seconde.</p>
+
+      <p>Het is belangrijk dat we direct duidelijk maken: <strong>Open CAD Studio is geen tool van de OpenAEC Foundation zelf</strong>. Het is een onafhankelijk community-project van <a href="https://github.com/HakanSeven12" target="_blank" rel="noopener">Hakan Seven</a>. Wij zien het als een natuurlijke aanvulling op het open AEC-ecosysteem en willen het de aandacht geven die het verdient.</p>
+
+      <img src="/shared/assets/screenshots/open-cad-studio.jpeg" alt="Open CAD Studio in actie — DWG-tekening van een complex stedelijk weg- en infrastructuur-ontwerp in donker thema." class="article-thumb" loading="lazy">
+
+      <h2>Wat zit erin?</h2>
+      <ul>
+        <li><strong>Volledig 2D-tekenwerk</strong> — LINE, PLINE, CIRCLE, ARC, ELLIPSE, SPLINE, HATCH, OFFSET, TRIM, EXTEND, FILLET, MIRROR, ARRAY, ROTATE, SCALE, EXPLODE: het complete AutoCAD-stijl commando-pakket.</li>
+        <li><strong>Native DWG &amp; DXF (R13&ndash;R2018)</strong> read/write — het de-facto industriestandaard-formaat, zonder licenties van derden.</li>
+        <li><strong>3D-modelling met ACIS solids tessellation</strong> — BOX, SPHERE, CYLINDER, EXTRUDE, REVOLVE, LOFT, SWEEP, ARRAY3D. 3DSOLID/REGION/BODY entiteiten uit DWG worden correct gerenderd.</li>
+        <li><strong>Paper space + layouts</strong> — multi-tab model space, viewport-projectie met inline MSPACE-overlay, VPORTS-presets, plot styles (CTB/STB), PRINT direct naar systeem-printer.</li>
+        <li><strong>Volledig dimensioneren</strong> — linear, aligned, angular, radial, diameter, ordinate. MLEADER, MTEXT, tables, GD&amp;T-toleranties, MLINE — met aparte style-managers.</li>
+        <li><strong>STL, STEP AP203, OBJ</strong> import/export, PDF-plot, WBLOCK, XREF — alles wat je nodig hebt om in een bestaande CAD-keten te passen.</li>
+      </ul>
+
+      <h2>De technische stack</h2>
+      <p>Onder de motorkap: <strong>Rust</strong> voor memory safety en performance, <strong>iced</strong> voor de UI, <strong>wgpu</strong> voor de GPU-rendering. Cross-platform: Windows, macOS, Linux. <strong>GPL-3.0</strong> licentie.</p>
+
+      <h2>Waarom delen wij dit?</h2>
+      <p>Onze missie is om open-source software te promoten voor de hele AEC-keten — van architectuur en utiliteit tot GWW en civiele techniek. Projecten zoals Open CAD Studio verdienen alle aandacht die ze kunnen krijgen.</p>
+
+      <div class="article-quote">
+        "Ik, Maarten Vroegindeweij, ken Hakan Seven al van een GIS-FreeCAD project 5 jaar geleden. Hij is een sterke open-source ontwikkelaar en met de kracht van AI-coding zal hij van grote waarde zijn voor open-source civiele techniek."
+      </div>
+
+      <h2>We zoeken early adopters</h2>
+      <p>Het project is in beta (<strong>v0.4.1</strong> uitgebracht op 26 mei) en we zoeken constructeurs, architecten en engineers die het willen testen en feedback geven via GitHub issues. Honderden bug-reports en feature-requests zijn welkom om de tool zo snel mogelijk te verbeteren.</p>
+
+      <div class="article-cta-row">
+        <a href="/open-cad-studio/" class="btn btn-primary">Bekijk de productpagina &rarr;</a>
+        <a href="https://github.com/HakanSeven12/OpenCADStudio" target="_blank" rel="noopener" class="btn btn-ghost">GitHub: HakanSeven12/OpenCADStudio</a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7464067147774828544/" target="_blank" rel="noopener" class="btn btn-ghost">Originele post op LinkedIn</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700;">Open<span class="accent" style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+  <script src="/shared/i18n.js?v=20260525"></script>
+</body>
+</html>
