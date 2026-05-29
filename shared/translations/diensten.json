@@ -27,5 +27,20 @@
   "subsidies": {
     "title": "Grants",
     "desc": "We actively work on obtaining government grants for innovation and digitalization in construction. Together with our partners we focus on sustainable funding."
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "SLA + AI integration <span class=\"accent\">per tool</span>",
+    "intro": "Per user per month. Includes professional support during NL business hours plus a direct AI integration (MCP servers, copilots) on the tool. Software stays 100% open source — you only pay for the service.",
+    "col": { "tool": "Tool", "price": "SLA + AI per user / month" },
+    "footnote": "All prices are <strong>per user per month</strong>, excluding VAT. Cherry-pick only the tools you need, or combine them into one integrated workspace.",
+    "addons": {
+      "title": "Additional <span class=\"accent\">services</span>",
+      "ai":      { "label": "AI access",     "title": "Claude subscription",           "suffix": "per user / month &mdash; LLM credits for all copilots" },
+      "hosting": { "label": "Cloud storage", "title": "Hosting 100 GB / user",         "suffix": "per user / month &mdash; EU datacenter, daily backup, 99.5% uptime" },
+      "impl":    { "label": "Implementation","title": "On-site consultant",            "suffix": "per day per consultant &mdash; excl. VAT, advice + implementation" }
+    },
+    "cta": "Would you like a tailored offer for your organisation?",
+    "cta.btn": "Request a quote"
   }
 }

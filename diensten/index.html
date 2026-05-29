@@ -88,6 +88,135 @@
     .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
 
     @media (max-width: 768px) { .page-header h1 { font-size: 2rem; } .cards-grid { grid-template-columns: 1fr; } }
+
+    /* ─── Pricing section ────────────────────────────────────── */
+    .pricing-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .pricing-section-label {
+      font-family: var(--font-code);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--warm-gold);
+      display: block;
+      margin-bottom: var(--sp-3);
+    }
+    .pricing-section-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--deep-forge);
+      letter-spacing: -0.02em;
+      margin-bottom: var(--sp-2);
+      line-height: 1.2;
+    }
+    .pricing-section-title .accent { color: var(--amber); }
+    .pricing-intro {
+      color: #57534E;
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      margin-bottom: var(--sp-8);
+      max-width: 720px;
+    }
+
+    .price-table {
+      width: 100%;
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid #E7E5E4;
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+    .price-table th {
+      background: var(--night-build);
+      color: white;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-align: left;
+      padding: var(--sp-4) var(--sp-5);
+    }
+    .price-table th.price-col { text-align: right; }
+    .price-table td {
+      padding: var(--sp-3) var(--sp-5);
+      border-bottom: 1px solid #F5F5F4;
+      color: #44403C;
+      font-size: 0.95rem;
+    }
+    .price-table tr:last-child td { border-bottom: none; }
+    .price-table tr:hover td { background: #FAF8F5; }
+    .price-table td.price {
+      text-align: right;
+      font-family: var(--font-code);
+      font-weight: 600;
+      color: var(--deep-forge);
+      white-space: nowrap;
+    }
+    .price-table td.price .price-amber {
+      color: var(--amber);
+    }
+
+    .addons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--sp-4);
+      margin-top: var(--sp-6);
+    }
+    .addon-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      border: 1px solid #E7E5E4;
+      padding: var(--sp-5);
+      box-shadow: var(--shadow-sm);
+    }
+    .addon-card-label {
+      font-family: var(--font-code);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--warm-gold);
+      margin-bottom: var(--sp-2);
+      display: block;
+    }
+    .addon-card-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--deep-forge);
+      margin-bottom: var(--sp-2);
+    }
+    .addon-card-price {
+      font-family: var(--font-code);
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: var(--amber);
+      margin-bottom: var(--sp-1);
+      line-height: 1;
+    }
+    .addon-card-suffix {
+      color: #78716C;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .price-footnote {
+      margin-top: var(--sp-4);
+      color: #78716C;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .price-footnote strong { color: var(--deep-forge); }
+
+    @media (max-width: 600px) {
+      .pricing-section-title { font-size: 1.5rem; }
+      .price-table th, .price-table td { padding: var(--sp-3); font-size: 0.875rem; }
+    }
   </style>
 </head>
 <body>
@@ -139,8 +268,96 @@
       <div class="highlight-box">
         Doorgaans liggen onze prijzen <strong>ca. 20% lager dan de markt</strong> doordat er geen kosten voor intellectueel eigendom (IP) in rekening worden gebracht. U betaalt alleen voor de dienst, niet voor de software.
       </div>
-      <p style="margin-top: var(--sp-6); text-align: center;">
-        <a href="/offerte/" style="display: inline-block; background: var(--amber); color: white; padding: var(--sp-3) var(--sp-8); border-radius: var(--radius-full); font-weight: 600; text-decoration: none; font-size: 1rem; transition: background 0.2s ease;">Offerte aanvragen</a>
+    </div>
+  </section>
+
+  <!-- ─── Pricing section ─────────────────────────────────────── -->
+  <section class="section" id="prijzen" style="background: white; padding-top: var(--sp-12);">
+    <div class="pricing-wrapper">
+      <span class="pricing-section-label" data-i18n="pricing.label">Tarieven</span>
+      <h2 class="pricing-section-title" data-i18n="pricing.title">SLA + AI-integratie <span class="accent">per tool</span></h2>
+      <p class="pricing-intro" data-i18n="pricing.intro">Per gebruiker per maand. Inclusief professionele ondersteuning binnen NL-business-hours en een directe AI-integratie (MCP-servers, copilots) op de tool. Software blijft 100% open source — u betaalt alleen voor de dienst.</p>
+
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th data-i18n="pricing.col.tool">Tool</th>
+            <th class="price-col" data-i18n="pricing.col.price">SLA + AI per gebruiker / maand</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Open PDF Studio</td>
+            <td class="price">&euro; <span class="price-amber">4,95</span></td>
+          </tr>
+          <tr>
+            <td>Open Calc Studio</td>
+            <td class="price">&euro; <span class="price-amber">29,95</span></td>
+          </tr>
+          <tr>
+            <td>Open Energy Studio</td>
+            <td class="price">&euro; <span class="price-amber">9,95</span></td>
+          </tr>
+          <tr>
+            <td>Open CAD Studio</td>
+            <td class="price">&euro; <span class="price-amber">17,94</span></td>
+          </tr>
+          <tr>
+            <td>Open Speech Studio</td>
+            <td class="price">&euro; <span class="price-amber">9,95</span></td>
+          </tr>
+          <tr>
+            <td>OpenAEC Docs</td>
+            <td class="price">&euro; <span class="price-amber">9,95</span></td>
+          </tr>
+          <tr>
+            <td>OpenAEC Cloud Platform</td>
+            <td class="price">&euro; <span class="price-amber">9,95</span></td>
+          </tr>
+          <tr>
+            <td>ERP-Next + Y-App</td>
+            <td class="price">&euro; <span class="price-amber">4,95</span></td>
+          </tr>
+          <tr>
+            <td>Open Pointcloud Studio</td>
+            <td class="price">&euro; <span class="price-amber">9,95</span></td>
+          </tr>
+          <tr>
+            <td>BCF Manager Studio</td>
+            <td class="price">&euro; <span class="price-amber">9,95</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="price-footnote" data-i18n="pricing.footnote">Alle prijzen zijn <strong>per gebruiker per maand</strong>, exclusief BTW. Cherry-pick alleen de tools die u nodig heeft, of combineer voor één geïntegreerde werkomgeving.</p>
+
+      <h2 class="pricing-section-title" style="margin-top: var(--sp-12);" data-i18n="pricing.addons.title">Aanvullende <span class="accent">diensten</span></h2>
+
+      <div class="addons-grid">
+        <div class="addon-card">
+          <span class="addon-card-label" data-i18n="pricing.addons.ai.label">AI-toegang</span>
+          <div class="addon-card-title" data-i18n="pricing.addons.ai.title">Claude-abonnement</div>
+          <div class="addon-card-price">&euro; 17,95</div>
+          <div class="addon-card-suffix" data-i18n="pricing.addons.ai.suffix">per gebruiker / maand &mdash; LLM-credits voor alle copilots</div>
+        </div>
+        <div class="addon-card">
+          <span class="addon-card-label" data-i18n="pricing.addons.hosting.label">Cloud-opslag</span>
+          <div class="addon-card-title" data-i18n="pricing.addons.hosting.title">Hosting 100 GB / gebruiker</div>
+          <div class="addon-card-price">&euro; 16,00</div>
+          <div class="addon-card-suffix" data-i18n="pricing.addons.hosting.suffix">per gebruiker / maand &mdash; EU-datacenter, daily backup, 99,5% uptime</div>
+        </div>
+        <div class="addon-card">
+          <span class="addon-card-label" data-i18n="pricing.addons.impl.label">Implementatie</span>
+          <div class="addon-card-title" data-i18n="pricing.addons.impl.title">Consultant on-site</div>
+          <div class="addon-card-price">&euro; 1.400</div>
+          <div class="addon-card-suffix" data-i18n="pricing.addons.impl.suffix">per dag per consultant &mdash; excl. BTW, advies + implementatie</div>
+        </div>
+      </div>
+
+      <p class="price-footnote" data-i18n="pricing.cta">Wilt u een exact aanbod voor uw organisatie?</p>
+
+      <p style="margin-top: var(--sp-4); text-align: center;">
+        <a href="/offerte/" style="display: inline-block; background: var(--amber); color: white; padding: var(--sp-3) var(--sp-8); border-radius: var(--radius-full); font-weight: 600; text-decoration: none; font-size: 1rem; transition: background 0.2s ease;" data-i18n="pricing.cta.btn">Offerte aanvragen</a>
       </p>
     </div>
   </section>
