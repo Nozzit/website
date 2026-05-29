@@ -1,46 +1,45 @@
 {
-  "generated": "2026-05-27T07:22:21.580Z",
+  "generated": "2026-05-29T09:36:23.943Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-05-27",
-  "snapshotCount": 4,
+  "lastSnapshot": "2026-05-29",
+  "snapshotCount": 5,
   "weekCount": 2,
   "weeklyDeltas": [
     {
       "weekEnd": "2026-05-25",
       "weekStart": "2026-05-18",
       "perRepo": {
-        "open-pdf-studio": 324,
-        "open-2d-studio": 40,
-        "open-calc-studio": 11,
-        "open-pointcloud-studio": 3,
+        "open-pdf-studio": 490,
+        "open-2d-studio": 49,
+        "open-calc-studio": 12,
+        "open-pointcloud-studio": 5,
+        "open-heatloss-studio": 8,
+        "open-speech-studio": 1,
         "Open-Field-Studio": 4,
-        "open-frame-studio": 5,
-        "open-geotechniek-studio": 15,
-        "Open-Calculations-Studio": 16,
-        "monty-ifc-viewer": 9
+        "open-frame-studio": 7,
+        "open-geotechniek-studio": 18,
+        "Open-Calculations-Studio": 23,
+        "monty-ifc-viewer": 12
       },
-      "total": 427
+      "total": 629
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 504,
-    "open-2d-studio": 58,
-    "open-calc-studio": 17,
-    "open-energy-studio": 0,
-    "open-planner-studio": 0,
-    "open-pointcloud-studio": 3,
-    "open-heatloss-studio": 0,
-    "open-speech-studio": 2,
+    "open-pdf-studio": 670,
+    "open-2d-studio": 67,
+    "open-calc-studio": 18,
+    "open-pointcloud-studio": 5,
+    "open-heatloss-studio": 8,
+    "open-speech-studio": 3,
     "Open-Field-Studio": 4,
-    "open-frame-studio": 5,
-    "open-geotechniek-studio": 22,
-    "Open-Calculations-Studio": 17,
-    "monty-ifc-viewer": 9,
+    "open-frame-studio": 7,
+    "open-geotechniek-studio": 25,
+    "Open-Calculations-Studio": 24,
+    "monty-ifc-viewer": 12,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
-    "openaec-cloud": 0,
-    "Y-app": 0
+    "openaec-cloud": 0
   },
-  "totalDownloadsAdded": 641
+  "totalDownloadsAdded": 843
 }
