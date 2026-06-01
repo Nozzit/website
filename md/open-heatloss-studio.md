@@ -12,13 +12,13 @@
 
 ## Live stats
 
-- Stars: **1**
-- Commits: **485**
-- Forks: **0**
+- Stars: **2**
+- Commits: **538**
+- Forks: **1**
 - Open issues: **3**
 - Releases: **2**
-- Total downloads: **7**
-- Downloads by platform: Windows (7)
+- Total downloads: **15**
+- Downloads by platform: Windows (15)
 
 ## Key features
 

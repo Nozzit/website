@@ -12,13 +12,13 @@
 
 ## Live stats
 
-- Stars: **18**
+- Stars: **19**
 - Commits: **90**
 - Forks: **4**
 - Open issues: **17**
 - Releases: **25**
-- Total downloads: **624**
-- Downloads by platform: Windows (257), Linux (AppImage) (80), Linux (deb) (80), Windows (MSI) (76), Linux (rpm) (50), Archive (34), Android (23), macOS (20), Linux (snap) (4)
+- Total downloads: **659**
+- Downloads by platform: Windows (271), Linux (AppImage) (87), Linux (deb) (83), Windows (MSI) (77), Linux (rpm) (51), Archive (34), Android (32), macOS (20), Linux (snap) (4)
 
 ## Key features
 
@@ -63,11 +63,11 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - [Windows · Open.2D.Studio_0.31.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64-setup.exe) (v0.31.0 — 4.4 MB)
 - [Windows · Open.2D.Studio_0.35.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_x64-setup.exe) (v0.35.0 — 4 MB)
 - [Windows (MSI) · Open.2D.Studio_0.31.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64_en-US.msi) (v0.31.0 — 5.6 MB)
-- [Linux (deb) · Open.2D.Studio_0.31.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.deb) (v0.31.0 — 5.7 MB)
-- [Linux (AppImage) · Open.2D.Studio_0.31.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.AppImage) (v0.31.0 — 79.5 MB)
 - [Linux (AppImage) · Open.2D.Studio_0.35.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_amd64.AppImage) (v0.35.0 — 79.2 MB)
+- [Linux (deb) · Open.2D.Studio_0.31.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.deb) (v0.31.0 — 5.7 MB)
+- [Android · open-2d-studio-android.apk](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/open-2d-studio-android.apk) (v0.35.0 — 54.3 MB)
 - [Linux (deb) · Open.2D.Studio_0.35.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_amd64.deb) (v0.35.0 — 5.3 MB)
-- [macOS · Open.2D.Studio_0.31.0_aarch64.dmg](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_aarch64.dmg) (v0.31.0 — 5.3 MB)
+- [Linux (AppImage) · Open.2D.Studio_0.31.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.AppImage) (v0.31.0 — 79.5 MB)
 
 ---
 

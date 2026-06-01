@@ -17,8 +17,8 @@
 - Forks: **0**
 - Open issues: **0**
 - Releases: **2**
-- Total downloads: **11**
-- Downloads by platform: Windows (9), Linux (AppImage) (1), Windows (MSI) (1)
+- Total downloads: **14**
+- Downloads by platform: Windows (10), Linux (AppImage) (2), Windows (MSI) (2)
 
 ## Key features
 
@@ -58,11 +58,11 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ## Direct downloads (most popular)
 
-- [Windows · Open.Frame.Studio_0.1.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.1.0/Open.Frame.Studio_0.1.0_x64-setup.exe) (v0.1.0 — 4.3 MB)
 - [Windows · Open.Frame.Studio_0.2.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64-setup.exe) (v0.2.0 — 4.4 MB)
-- [Windows · Open.Frame.Studio_0.2.0_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64_user-setup.exe) (v0.2.0 — 4.4 MB)
+- [Windows · Open.Frame.Studio_0.1.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.1.0/Open.Frame.Studio_0.1.0_x64-setup.exe) (v0.1.0 — 4.3 MB)
 - [Linux (AppImage) · Open.Frame.Studio_0.2.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_amd64.AppImage) (v0.2.0 — 80.4 MB)
 - [Windows (MSI) · Open.Frame.Studio_0.2.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64_en-US.msi) (v0.2.0 — 6.2 MB)
+- [Windows · Open.Frame.Studio_0.2.0_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64_user-setup.exe) (v0.2.0 — 4.4 MB)
 
 ---
 
