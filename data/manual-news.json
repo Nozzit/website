@@ -1,6 +1,13 @@
 [
   {
     "type": "announcement",
+    "title": "OpenAEC besproken op het OSArch-forum — \"This is ... amazing\"",
+    "description": "De internationale open-source AEC-community OSArch heeft OpenAEC ontdekt. Dion Moult, maker van IfcOpenShell en Bonsai, opende de thread met \"https://open-aec.com — This is ... amazing.\" Levendige discussie volgde over het ecosysteem en vooral Open CAD Studio, door de community omschreven als de eerste volwaardige open-source AutoCAD-alternatief met native DWG-ondersteuning. We verwelkomen de vragen, de gezonde scepsis en de testers — precies waar open source om draait.",
+    "date": "2026-06-03",
+    "url": "https://community.osarch.org/discussion/3471/openaec-everything-open-source-by-end-of-2026"
+  },
+  {
+    "type": "announcement",
     "title": "Open CAD Studio gepresenteerd aan de AEC-community",
     "description": "Onafhankelijk open-source CAD-project van Hakan Seven: native DWG/DXF read en write, gebouwd in Rust met GPU-rendering via wgpu. 30 MB installer, start in <1 seconde. Geen Autodesk, geen Bricsys, geen abonnement. OpenAEC Foundation promoot dit project actief — wij zoeken early adopters in de industrie en feedback via GitHub issues.",
     "date": "2026-05-24",
