@@ -30,7 +30,7 @@ None of this would exist without the foundations this community built. **IfcOpen
 - 🛠️ **Contributors** — PRs welcome everywhere, especially on IFCX
 - 💬 **Honest feedback** — is any of this useful to you? What would make it useful?
 
-Everything is LGPL / GPL / MIT, free forever, no strings. We fund development the Blender way (org partnerships), so the code stays open no matter what.
+Everything is LGPL / GPL / MIT, free forever, no strings. We fund development the Blender way — org partnerships, plus optional consultancy and AI-integration services through our commercial partner **Impertio Studio BV** (think hosting, SLAs, on-site implementation). The software itself stays 100% open no matter what; the paid bits are just for orgs that want a managed setup.
 
 GitHub: https://github.com/OpenAEC-Foundation
 

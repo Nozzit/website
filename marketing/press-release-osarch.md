@@ -41,6 +41,8 @@ Every OpenAEC tool is designed around open formats. The foundation is an early a
 
 Like the Blender Foundation, OpenAEC runs on structural support from companies that depend on the software. A partnership programme ranges from **€5,000 (Bronze)** to **€100,000 (Patron)** per year, funding full-time development while keeping every line of code open source. Eleven supporters already back the foundation financially.
 
+On top of the foundation, **consultancy and AI-integration services** are delivered commercially through **Impertio Studio BV** — hosting, SLAs, AI copilots and on-site implementation for organisations that want a fully managed setup. The software always stays free and open; the paid services exist only to fund development and to support teams that prefer a turnkey deployment.
+
 ### An invitation to OSArch
 
 The OpenAEC Foundation is explicitly seeking collaboration with the OSArch community:
@@ -96,6 +98,8 @@ Elke OpenAEC-tool is ontworpen rond open formaten. De stichting is early adopter
 ### Het Blender Foundation-model
 
 Net als de Blender Foundation draait OpenAEC op structurele steun van bedrijven. Een partnerprogramma loopt van **€5.000 (Bronze)** tot **€100.000 (Patron)** per jaar en financiert fulltime ontwikkeling, terwijl elke regel code open source blijft. Elf supporters steunen de stichting al financieel.
+
+Boven op de stichting worden **consultancy- en AI-diensten** commercieel geleverd via **Impertio Studio BV** — hosting, SLA's, AI-copilots en on-site implementatie voor organisaties die een volledig beheerde omgeving willen. De software blijft altijd gratis en open; de betaalde diensten bestaan alleen om de ontwikkeling te financieren en teams te ondersteunen die liever een kant-en-klare uitrol hebben.
 
 ### Een uitnodiging aan OSArch
 
