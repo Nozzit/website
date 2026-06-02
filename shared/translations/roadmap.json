@@ -15,5 +15,39 @@
   "goal": {
     "title": "Goal: everything live by end of 2026",
     "desc": "We are working hard to have the complete ecosystem production-ready by the end of this year. All tools open source, all data in IFCX."
+  },
+  "status": {
+    "dev": "In development",
+    "planned": "Planned"
+  },
+  "tools": {
+    "ifcx": "Universal data format for the complete building model",
+    "openpdf": "PDF editor and annotator with a custom Rust engine",
+    "open2d": "Open source 2D CAD application",
+    "opencad": "2D + 3D CAD in Rust with native DWG/DXF (community project by Hakan Seven)",
+    "monty": "Lightweight IFC viewer for the construction site",
+    "validator": "IFC validation against IDS, NL BIM Basis ILS, RVB BIM Norm",
+    "opencalc": "Cost estimation and budgeting (STABU/RAW, IBIS-TRAD import)",
+    "opencalculations": "Structural calculations with IFCX integration",
+    "openframe": "2D frame and structural analysis for buildings and civil load-bearing structures",
+    "heatloss": "Heat loss calculation per NEN 12831 &amp; ISSO 53",
+    "energy": "Energy analysis and building performance (NTA 8800)",
+    "geotechniek": "CPTs &amp; borings: GEF + BRO-XML viewer, Robertson SBT, map overlays",
+    "field": "Inspection, delivery and quality assurance",
+    "speech": "Speech recognition and meeting notes with local AI",
+    "pointcloud": "Point cloud viewer and as-built comparison",
+    "planner": "Project planning and coordination",
+    "yapp": "Communication and collaboration platform (mail, chat, invoicing)",
+    "bcf": "BCF 2.1/3.0 issue management for BIM projects",
+    "docs": "BIM document management platform",
+    "cloud": "Central platform with SSO and synchronization",
+    "bimmodeller": "Open source BIM modelling tool",
+    "ifcroad": "Visualization and editing of IfcRoad models (roads, intersections, cycle paths) per IFC 4.3 — for civil infrastructure projects",
+    "bridge": "Structural analysis and parametric modelling of bridges and viaducts (IfcBridge) — extension of Open Frame Studio",
+    "hydro": "Hydrological calculations for water works: dikes, flood barriers, sewerage and drainage (IfcMarineFacility)"
+  },
+  "civil": {
+    "title": "Civil engineering &amp; infrastructure",
+    "desc": "In 2026/2027 OpenAEC is actively broadening the ecosystem towards ground, road and water works and civil engineering. Alongside the planned tools above, we are building IFCX namespaces for IfcRoad, IfcRail, IfcBridge, IfcTunnel and IfcMarineFacility — so one open format covers both buildings and infrastructure projects."
   }
 }

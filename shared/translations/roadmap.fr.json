@@ -15,5 +15,39 @@
   "goal": {
     "title": "Objectif : tout en production fin 2026",
     "desc": "Nous travaillons activement pour que l'écosystème complet soit prêt pour la production d'ici la fin de l'année. Tous les outils open source, toutes les données en IFCX."
+  },
+  "status": {
+    "dev": "En développement",
+    "planned": "Planifié"
+  },
+  "tools": {
+    "ifcx": "Format de données universel pour le modèle de bâtiment complet",
+    "openpdf": "Éditeur et annotateur PDF avec moteur Rust dédié",
+    "open2d": "Application CAO 2D open source",
+    "opencad": "CAO 2D + 3D en Rust avec DWG/DXF natif (projet communautaire de Hakan Seven)",
+    "monty": "Visionneuse IFC légère pour le chantier",
+    "validator": "Validation IFC selon IDS, NL BIM Basis ILS, RVB BIM Norm",
+    "opencalc": "Estimation des coûts et métrés (STABU/RAW, import IBIS-TRAD)",
+    "opencalculations": "Calculs de structure avec intégration IFCX",
+    "openframe": "Analyse de portiques et de structures 2D pour bâtiments et ouvrages porteurs de génie civil",
+    "heatloss": "Calcul de déperditions thermiques selon NEN 12831 &amp; ISSO 53",
+    "energy": "Analyse énergétique et performance des bâtiments (NTA 8800)",
+    "geotechniek": "Essais CPT &amp; forages : visionneuse GEF + BRO-XML, Robertson SBT, fonds de carte",
+    "field": "Inspection, réception et assurance qualité",
+    "speech": "Reconnaissance vocale et comptes-rendus avec IA locale",
+    "pointcloud": "Visionneuse de nuages de points et comparaison as-built",
+    "planner": "Planification et coordination de projet",
+    "yapp": "Plateforme de communication et de collaboration (mail, chat, facturation)",
+    "bcf": "Gestion des problèmes BCF 2.1/3.0 pour projets BIM",
+    "docs": "Plateforme de gestion documentaire BIM",
+    "cloud": "Plateforme centrale avec SSO et synchronisation",
+    "bimmodeller": "Outil de modélisation BIM open source",
+    "ifcroad": "Visualisation et édition de modèles IfcRoad (routes, carrefours, pistes cyclables) selon IFC 4.3 — pour les projets d'infrastructure",
+    "bridge": "Analyse structurelle et modélisation paramétrique de ponts et viaducs (IfcBridge) — extension d'Open Frame Studio",
+    "hydro": "Calculs hydrologiques pour les ouvrages hydrauliques : digues, ouvrages de protection, assainissement et drainage (IfcMarineFacility)"
+  },
+  "civil": {
+    "title": "Génie civil &amp; infrastructure",
+    "desc": "En 2026/2027, OpenAEC élargit activement l'écosystème vers les travaux de terrassement, routiers et hydrauliques et le génie civil. Outre les outils planifiés ci-dessus, nous développons des espaces de noms IFCX pour IfcRoad, IfcRail, IfcBridge, IfcTunnel et IfcMarineFacility — afin qu'un seul format ouvert couvre à la fois les bâtiments et les projets d'infrastructure."
   }
 }
