@@ -5,7 +5,7 @@
 
 ---
 
-🚀 De afgelopen weken bij de OpenAEC Foundation (i.o.) — **ruim 800 verbeteringen** door ons hele ecosysteem. Vier highlights:
+🚀 De afgelopen weken bij de OpenAEC Foundation (i.o.) — **ruim 800 verbeteringen** door ons hele ecosysteem. Een greep uit de highlights:
 
 🧮 **Open Calc Studio — v0.7.4**
 ➡️ **IBIS-TRAD import** — neem bestaande begrotingen rechtstreeks over
@@ -29,6 +29,11 @@
 ➡️ ISSO 51 & 53 norm-conformiteit (twee audit-rondes)
 ➡️ Norm + instellingen opgeslagen in het bestandsformaat
 
+📧 **Y-app — v0.21 → v0.23 (drie releases)**
+➡️ Mail-performance overhaul: directe mail-open (250 ms vertraging eruit), body-preload, real-time push (IMAP IDLE + WebSocket)
+➡️ Webmail: inline project aanmaken, gedeelde mailboxen in vault-modus
+➡️ Facturatie: ERPNext-integratie, vaste-prijs-items per project, handtekening per account
+
 …en daarnaast tientallen kleinere verbeteringen door het hele ecosysteem.
 
 Alles open source. Alles gratis. Voor altijd.
@@ -40,7 +45,7 @@ Alles open source. Alles gratis. Voor altijd.
 
 ## English version
 
-🚀 The past few weeks at the OpenAEC Foundation (in formation) — **over 800 improvements** across our whole ecosystem. Four highlights:
+🚀 The past few weeks at the OpenAEC Foundation (in formation) — **over 800 improvements** across our whole ecosystem. A pick of the highlights:
 
 🧮 **Open Calc Studio — v0.7.4**
 ➡️ **IBIS-TRAD import** — bring existing cost estimates straight in
@@ -63,6 +68,11 @@ Alles open source. Alles gratis. Voor altijd.
 ➡️ Ventilation per Dutch building-decree occupancy minimums, per-room supply q_v
 ➡️ ISSO 51 & 53 conformance (two audit rounds), persisted in the file format
 
+📧 **Y-app — v0.21 → v0.23 (three releases)**
+➡️ Mail performance overhaul: instant mail open, body preload, real-time push (IMAP IDLE + WebSocket)
+➡️ Webmail: inline project creation, shared mailboxes in vault mode
+➡️ Invoicing: ERPNext integration, fixed-price items per project, per-account signatures
+
 …plus dozens of smaller improvements right across the ecosystem.
 
 All open source. All free. Forever.
@@ -78,10 +88,9 @@ All open source. All free. Forever.
   3 weeks (GitHub search API), + 260 on HakanSeven12/OpenCADStudio = ~1,050
   public commits. "Over 800 across the whole ecosystem" verifies on GitHub.
 - **Deliberately left out:** Open Geotechniek Studio (the pile bearing-capacity
-  calculation — not for publication yet) and Y-app, to keep the focus on the
-  four tools you asked for.
+  calculation — not for publication yet).
 - **Verified per-tool (3 weeks):** Open CAD Studio 260 commits, Open PDF Studio
-  124, Open Heatloss Studio ~70+, Open Calc Studio v0.7.4 (IBIS-TRAD import,
-  pro-rata hours, full API).
+  124, Y-app 91 (v0.21→v0.23), Open Heatloss Studio ~70+, Open Calc Studio
+  v0.7.4 (IBIS-TRAD import, pro-rata hours, full API).
 - Every bullet maps to a real commit/release — nothing invented. (The "import"
   you remembered was IBIS-TRAD in Open Calc Studio, not Open CAD Studio.)
