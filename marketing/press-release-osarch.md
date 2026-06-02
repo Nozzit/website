@@ -52,6 +52,8 @@ The OpenAEC Foundation is explicitly seeking collaboration with the OSArch commu
 
 "Open source in AEC wins when nobody builds everything alone," adds Vroegindeweij. "We'd rather plug into what OSArch has built than reinvent it."
 
+Among those who support the OpenAEC vision is **Dion Moult** — creator of IfcOpenShell and Bonsai (formerly BlenderBIM) and a driving force behind OSArch — whose work on open BIM is foundational to everything the foundation builds on.
+
 ### Links
 
 - Website & live statistics: **https://www.open-aec.com**
@@ -98,6 +100,8 @@ Net als de Blender Foundation draait OpenAEC op structurele steun van bedrijven.
 ### Een uitnodiging aan OSArch
 
 De OpenAEC Foundation zoekt nadrukkelijk samenwerking: mee-ontwikkelen aan IFCX, interoperabiliteit met IfcOpenShell/Bonsai/FreeCAD, het delen van contributors en stageplekken, en gezamenlijke belangenbehartiging voor open standaarden in aanbestedingen.
+
+Onder de mensen die de visie van OpenAEC steunen is **Dion Moult** — maker van IfcOpenShell en Bonsai (voorheen BlenderBIM) en een drijvende kracht achter OSArch — wiens werk aan open BIM de basis vormt waarop de stichting voortbouwt.
 
 ### Over de OpenAEC Foundation
 
