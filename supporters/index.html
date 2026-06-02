@@ -116,6 +116,54 @@
       line-height: 1.5;
     }
 
+    /* Ambassadors (people who back the vision) */
+    .ambassador-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--sp-4);
+    }
+    .ambassador-card {
+      background: white;
+      border: 2px solid #D6D3D1;
+      border-radius: var(--radius-lg);
+      padding: var(--sp-6);
+      display: flex;
+      align-items: center;
+      gap: var(--sp-4);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    .ambassador-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .ambassador-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--amber), var(--signal-orange));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 0.02em;
+    }
+    .ambassador-card h3 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--deep-forge);
+      margin-bottom: 2px;
+    }
+    .ambassador-card p {
+      font-size: 0.8125rem;
+      color: var(--scaffold-gray);
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+    .ambassador-card a { color: var(--amber); font-size: 0.8rem; text-decoration: none; }
+
     /* CTA */
     .cta-block {
       background: var(--night-build);
@@ -295,6 +343,25 @@
             <h3>Orange Climate</h3>
             <p>Innovatieve en duurzame klimaatbeheersing</p>
             <a href="https://www.orangeclimate.com" target="_blank" rel="noopener" style="color: var(--amber); font-size: 0.8rem; text-decoration: none;">Bezoek website &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ambassadors of the vision (people, not financial supporters) -->
+      <div class="tier-section">
+        <div class="tier-header">
+          <span class="tier-label" data-i18n="ambassadors.label">Ambassadeurs van de visie</span>
+          <span class="tier-line"></span>
+        </div>
+        <p style="color: #57534E; line-height: 1.7; margin-bottom: var(--sp-6); font-size: 0.95rem;" data-i18n="ambassadors.desc">Mensen uit de open source AEC-wereld die de missie van OpenAEC steunen en uitdragen.</p>
+        <div class="ambassador-grid">
+          <div class="ambassador-card">
+            <div class="ambassador-avatar">DM</div>
+            <div>
+              <h3>Dion Moult</h3>
+              <p data-i18n="ambassadors.moult">Maker van IfcOpenShell &amp; Bonsai · drijvende kracht achter OSArch</p>
+              <a href="https://thinkmoult.com" target="_blank" rel="noopener">thinkmoult.com &rarr;</a>
+            </div>
           </div>
         </div>
       </div>
