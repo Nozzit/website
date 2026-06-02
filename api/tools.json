@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-06-01T21:36:05.251Z",
+  "generated": "2026-06-02T10:04:38.458Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -17,11 +17,11 @@
   "totalTools": 17,
   "totalStats": {
     "publicRepos": 51,
-    "totalStars": 427,
-    "totalCommits": 4333,
+    "totalStars": 430,
+    "totalCommits": 4343,
     "contributors": 32,
     "languages": 8,
-    "sourceDate": "2026-06-01T21:35:36.001Z"
+    "sourceDate": "2026-06-02T10:04:19.192Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -118,14 +118,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
         "commits": 450,
-        "stars": 309,
-        "forks": 28,
+        "stars": 312,
+        "forks": 27,
         "openIssues": 60,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
-        "releases": 48,
+        "latestVersion": "nightly",
+        "latestReleaseDate": "2026-06-02",
+        "releases": 47,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-05-30"
+        "updatedAt": "2026-06-02"
       }
     },
     {
@@ -268,7 +268,7 @@
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
-        "commits": 538,
+        "commits": 541,
         "stars": 2,
         "forks": 1,
         "openIssues": 3,
@@ -276,7 +276,7 @@
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
         "createdAt": "2026-03-02",
-        "updatedAt": "2026-06-01"
+        "updatedAt": "2026-06-02"
       }
     },
     {
@@ -569,9 +569,9 @@
         "stars": 2,
         "forks": 0,
         "openIssues": 16,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
-        "releases": 4,
+        "latestVersion": "v0.10.0",
+        "latestReleaseDate": "2026-04-24",
+        "releases": 3,
         "createdAt": "2026-03-09",
         "updatedAt": "2026-04-28"
       }
