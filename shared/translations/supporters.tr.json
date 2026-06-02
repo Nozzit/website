@@ -20,6 +20,11 @@
   "supporters": {
     "label": "Destekçilerimiz"
   },
+  "ambassadors": {
+    "label": "Vizyonun elçileri",
+    "desc": "OpenAEC misyonunu destekleyen ve savunan açık kaynak AEC dünyasından kişiler.",
+    "moult": "Blender'daki Bonsai ve IfcOpenShell'in baş geliştiricisi. Erken BIM öncüsü, vizyoner ve OSArch'ın arkasındaki itici güç."
+  },
   "cta": {
     "title": "Destekçi olmak ister misiniz?",
     "desc": "Olanakları görüşmek için bizimle iletişime geçin. Birlikte AEC sektörünü açık kaynak hale getirelim."

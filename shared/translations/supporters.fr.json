@@ -20,6 +20,11 @@
   "supporters": {
     "label": "Nos partenaires"
   },
+  "ambassadors": {
+    "label": "Ambassadeurs de la vision",
+    "desc": "Des personnes du monde de l'AEC open source qui soutiennent et défendent la mission d'OpenAEC.",
+    "moult": "Développeur principal de Bonsai dans Blender et d'IfcOpenShell. Pionnier du BIM, visionnaire et force motrice derrière OSArch."
+  },
   "cta": {
     "title": "Devenir partenaire ?",
     "desc": "Contactez-nous pour discuter des possibilités. Ensemble, nous rendons le secteur AEC open source."
