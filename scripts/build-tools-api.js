@@ -303,7 +303,7 @@ const output = {
     legalName: 'Stichting OpenAEC Foundation i.o.',
     description: 'Non-profit foundation developing open-source software for the entire Architecture, Engineering & Construction (AEC) industry — buildings, civil infrastructure (GWW), and civil engineering.',
     country: 'Netherlands',
-    foundingDate: '2026-04-14',
+    status: 'in formation (stichting i.o.)',
     website: 'https://www.open-aec.com',
     github: 'https://github.com/OpenAEC-Foundation',
     linkedin: 'https://www.linkedin.com/company/23749451',

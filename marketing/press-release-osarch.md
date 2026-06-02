@@ -12,7 +12,7 @@
 
 **A new non-profit, inspired by the Blender Foundation, is open-sourcing the Dutch building and civil-engineering industry — and it wants to build with the OSArch community, not beside it.**
 
-**Dordrecht, the Netherlands — 1 June 2026** — The **OpenAEC Foundation** today introduces itself to the OSArch community. Founded on 1 March 2026 and modelled on the Blender Foundation, OpenAEC develops, funds and promotes open source software for the entire Architecture, Engineering & Construction chain — from buildings and utilities to roads, bridges, tunnels and geotechnics.
+**Dordrecht, the Netherlands — 1 June 2026** — The **OpenAEC Foundation** today introduces itself to the OSArch community. Currently being established as a non-profit foundation (a Dutch *stichting in formation*) and modelled on the Blender Foundation, OpenAEC develops, funds and promotes open source software for the entire Architecture, Engineering & Construction chain — from buildings and utilities to roads, bridges, tunnels and geotechnics.
 
 In its first quarter the foundation has shipped a remarkable amount of working software:
 
@@ -66,7 +66,7 @@ Among those who support the OpenAEC vision is **Dion Moult** — lead developer 
 
 ### About the OpenAEC Foundation
 
-The OpenAEC Foundation is a Dutch non-profit (stichting i.o.) founded on 1 March 2026 in Dordrecht, inspired by the Blender Foundation. Its mission is to make all software in the building and infrastructure sector open source by the end of 2026. The foundation develops, supports and promotes open source tools for the entire AEC chain — buildings, utilities, civil engineering and ground/road/water works — and funds development through partnerships, services and grants.
+The OpenAEC Foundation is a Dutch non-profit foundation in formation (stichting i.o.), based in Dordrecht and inspired by the Blender Foundation. Its mission is to make all software in the building and infrastructure sector open source by the end of 2026. The foundation develops, supports and promotes open source tools for the entire AEC chain — buildings, utilities, civil engineering and ground/road/water works — and funds development through partnerships, services and grants.
 
 **Media contact:** Maarten Vroegindeweij, chairman — via https://www.open-aec.com/contact
 
@@ -80,7 +80,7 @@ The OpenAEC Foundation is a Dutch non-profit (stichting i.o.) founded on 1 March
 
 **Een nieuwe stichting naar het model van de Blender Foundation maakt de Nederlandse bouw- en civiele sector open source — en wil bouwen mét de OSArch-community, niet ernaast.**
 
-**Dordrecht — 1 juni 2026** — De **OpenAEC Foundation** stelt zich vandaag voor aan de OSArch-community. Opgericht op 1 maart 2026 en geïnspireerd door de Blender Foundation, ontwikkelt, financiert en promoot OpenAEC open source software voor de volledige AEC-keten — van gebouwen en utiliteit tot wegen, bruggen, tunnels en geotechniek.
+**Dordrecht — 1 juni 2026** — De **OpenAEC Foundation** stelt zich vandaag voor aan de OSArch-community. Momenteel in oprichting (een Nederlandse *stichting i.o.*) en geïnspireerd door de Blender Foundation, ontwikkelt, financiert en promoot OpenAEC open source software voor de volledige AEC-keten — van gebouwen en utiliteit tot wegen, bruggen, tunnels en geotechniek.
 
 In het eerste kwartaal leverde de stichting een opvallende hoeveelheid werkende software:
 
@@ -112,7 +112,7 @@ Onder de mensen die de visie van OpenAEC steunen is **Dion Moult** — hoofdontw
 
 ### Over de OpenAEC Foundation
 
-De OpenAEC Foundation is een Nederlandse stichting (i.o.), opgericht op 1 maart 2026 in Dordrecht, naar het model van de Blender Foundation. Haar missie: alle software in de bouw- en infrasector open source maken vóór eind 2026.
+De OpenAEC Foundation is een Nederlandse stichting in oprichting (i.o.) in Dordrecht, naar het model van de Blender Foundation. Haar missie: alle software in de bouw- en infrasector open source maken vóór eind 2026.
 
 **Perscontact:** Maarten Vroegindeweij, voorzitter — via https://www.open-aec.com/contact
 

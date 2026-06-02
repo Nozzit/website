@@ -28,7 +28,7 @@
     "jan": { "title": "Réunion technique #1", "desc": "Lancement : architecture de l'écosystème, premiers outils, stratégie IFCX" },
     "feb": { "title": "Réunion technique #2", "desc": "Stack Tauri 2, stratégie multiplateforme, premières publications" },
     "mar": { "title": "Réunion technique #3", "desc": "BIM Validator, Claude Skill Packages, lancement du site" },
-    "apr": { "title": "Réunion technique #4", "desc": "Fondation établie, BCF Manager, Open Frame Studio, pipeline statistiques" },
+    "apr": { "title": "Réunion technique #4", "desc": "Fondation en cours de création opérationnelle, BCF Manager, Open Frame Studio, pipeline statistiques" },
     "may": { "title": "Réunion technique #5", "desc": "Prochaine réunion — ordre du jour à déterminer" },
     "jun": { "title": "Réunion technique #6", "desc": "Démarrage du BIM Modeller, bilan de mi-année" },
     "jul": { "title": "Réunion technique #7", "desc": "À déterminer" },

@@ -117,4 +117,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Initiator**: Maarten Vroegindeweij
 - **Location**: Dordrecht, The Netherlands
-- **Planned founding**: March 1, 2026
+- **Status**: in formation (stichting i.o.)

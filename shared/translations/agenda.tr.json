@@ -28,7 +28,7 @@
     "jan": { "title": "Teknik toplantı #1", "desc": "Açılış: ekosistem mimarisi, ilk araçlar, IFCX stratejisi" },
     "feb": { "title": "Teknik toplantı #2", "desc": "Tauri 2 stack'i, çapraz platform stratejisi, ilk sürümler" },
     "mar": { "title": "Teknik toplantı #3", "desc": "BIM Validator, Claude Skill Packages, web sitesi lansmanı" },
-    "apr": { "title": "Teknik toplantı #4", "desc": "Vakıf kuruldu, BCF Manager, Open Frame Studio, istatistik pipeline" },
+    "apr": { "title": "Teknik toplantı #4", "desc": "Vakıf kuruluş aşamasında faaliyette, BCF Manager, Open Frame Studio, istatistik pipeline" },
     "may": { "title": "Teknik toplantı #5", "desc": "Sonraki toplantı — gündem belirlenecek" },
     "jun": { "title": "Teknik toplantı #6", "desc": "BIM Modeller başlangıç, yıl ortası değerlendirmesi" },
     "jul": { "title": "Teknik toplantı #7", "desc": "Belirlenecek" },
