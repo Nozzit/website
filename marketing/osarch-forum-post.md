@@ -21,7 +21,9 @@ A few things that might interest this crowd specifically:
 - **IFCX in production** — we're implementing buildingSMART's JSON-LD format in real tools, not slides. Would genuinely love to compare notes with people here on namespace design. → https://www.open-aec.com/ifcx/
 - **Open Geotechniek Studio** — GEF + BRO-XML viewer, Robertson SBT classification, exports an open `.ifcgis` format. MIT.
 - **OpenAEC BIM Validator** — IFC validation against IDS, with BCF export.
-- …and ~13 more (PDF, point clouds, heat-loss per NEN, ERP, speech-to-text, etc.). Full list + live stats: https://www.open-aec.com
+- **Open PDF Studio** — our own PDF engine in Rust (20+ annotation tools, measurement, redaction, OCR). It's our most-downloaded tool by a mile.
+- **Open Calc Studio** — cost estimation for buildings + civil/infra (STABU/RAW), with IFCX integration and an MCP server so you can drive it from an LLM.
+- …and ~11 more (point clouds, heat-loss per NEN, ERP, speech-to-text, etc.). Full list + live stats: https://www.open-aec.com
 
 None of this would exist without the foundations this community built. **IfcOpenShell** and **Bonsai** (and @Moult's work in general) are the bedrock — we're trying to fill gaps *around* that stack, not reinvent it. 🙏
 
@@ -30,7 +32,7 @@ None of this would exist without the foundations this community built. **IfcOpen
 - 🛠️ **Contributors** — PRs welcome everywhere, especially on IFCX
 - 💬 **Honest feedback** — is any of this useful to you? What would make it useful?
 
-Everything is LGPL / GPL / MIT, free forever, no strings. We fund development the Blender way — org partnerships, plus optional consultancy and AI-integration services through our commercial partner **Impertio Studio BV** (think hosting, SLAs, on-site implementation). The software itself stays 100% open no matter what; the paid bits are just for orgs that want a managed setup.
+Everything is LGPL / GPL / MIT, free forever, no strings. We fund development the Blender way — org partnerships, plus optional consultancy and AI-integration services through our commercial partner **Impertio Studio BV** (think hosting, SLAs, on-site implementation). And — fun timing — **as of this week we've got a major investor on board** too. Before anyone winces: the money funds *open* development, the licences don't change, and the software stays 100% open no matter what. The paid bits are just for orgs that want a managed setup.
 
 GitHub: https://github.com/OpenAEC-Foundation
 
@@ -43,6 +45,7 @@ Maarten (OpenAEC Foundation)
 
 ### Notes for posting
 - Replace `@Moult` with Dion's actual forum handle if different (check before posting — don't mis-tag).
+- The investor line is deliberately vague. If you're cleared to name the investor / amount, swap in the specifics — concrete numbers land better. If the deal isn't public yet, consider dropping the line until it is.
 - OSArch Discourse supports markdown + emoji natively; the above should paste cleanly.
 - Best category: **Showcase** (project announcements) — or **General** if Showcase feels too grand for an intro.
 - Reply quickly to the first few comments; engagement in the first 24h drives visibility.
