@@ -22,8 +22,6 @@ In its first quarter the foundation has shipped a remarkable amount of working s
 - **32 contributors**
 - Licensed under **LGPL-3.0, GPL-3.0, MIT and CC-BY-SA** — free forever
 
-And the momentum is building: **as of this week, the foundation has secured backing from a major investor**, accelerating full-time development across the ecosystem. Crucially, the investment funds *open* development — every line of code stays under its open source licence, no exceptions.
-
 > "OSArch proved that an open community can stand toe-to-toe with the proprietary AEC giants. IfcOpenShell, Bonsai and FreeCAD are the backbone of open BIM. We're not here to replace any of that — we're here to fill the gaps around it and fund the boring parts that keep open source alive," says **Maarten Vroegindeweij**, chairman of the OpenAEC Foundation and a long-time FreeCAD/CityJSON contributor.
 
 ### Built on open standards
@@ -92,7 +90,7 @@ In het eerste kwartaal leverde de stichting een opvallende hoeveelheid werkende 
 - **32 contributors**
 - Gelicenseerd onder **LGPL-3.0, GPL-3.0, MIT en CC-BY-SA** — voor altijd gratis
 
-En het momentum groeit: **sinds deze week heeft de stichting een grote investeerder aan boord**, wat de fulltime ontwikkeling in het hele ecosysteem versnelt. Belangrijk: de investering financiert *open* ontwikkeling — elke regel code blijft onder zijn open source-licentie, zonder uitzondering. Tot de meest gebruikte tools horen **Open PDF Studio** (Rust PDF-engine, meest gedownload) en **Open Calc Studio** (calculatie voor bouw, GWW en infra met IFCX en MCP-server).
+Tot de meest gebruikte tools horen **Open PDF Studio** (Rust PDF-engine, meest gedownload) en **Open Calc Studio** (calculatie voor bouw, GWW en infra met IFCX en MCP-server).
 
 > "OSArch heeft bewezen dat een open community kan opboksen tegen de propriëtaire AEC-reuzen. IfcOpenShell, Bonsai en FreeCAD vormen de ruggengraat van open BIM. Wij komen dat niet vervangen — wij vullen de gaten eromheen en financieren het saaie werk dat open source draaiend houdt," zegt **Maarten Vroegindeweij**, voorzitter van de OpenAEC Foundation.
 
