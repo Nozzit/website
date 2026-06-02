@@ -1,13 +1,11 @@
-# LinkedIn — wekelijkse recap (week van 27 mei – 3 juni 2026)
+# LinkedIn — recap afgelopen weken (≈ 13 mei – 3 juni 2026)
 
-> Plak-klaar. Highlights gebaseerd op de échte commits van deze week.
-> Let op het getal — zie de noot onderaan.
+> Plak-klaar. Alle highlights gebaseerd op de échte commits.
+> Het getal klopt nu: 794 publieke org-commits in 3 weken (+260 Open CAD Studio).
 
 ---
 
-🚀 Weer een knotsgekke week bij de OpenAEC Foundation (i.o.)
-
-Ruim **800 verbeteringen** door ons hele ecosysteem deze week — publiek én privé. Een greep uit wat er landde:
+🚀 De afgelopen weken bij de OpenAEC Foundation (i.o.) — **ruim 800 verbeteringen** door ons hele ecosysteem. Een greep uit wat er landde:
 
 🏗️ **Open Geotechniek Studio — v0.3.0**
 Gloednieuwe funderingsberekening:
@@ -23,13 +21,22 @@ Gloednieuwe funderingsberekening:
 ➡️ ISSO 51 & 53 norm-conformiteit (twee audit-rondes)
 ➡️ Norm + instellingen opgeslagen in het bestandsformaat
 
+📄 **Open PDF Studio** — nieuwe render-engine onder de motorkap
+➡️ Multi-process render-engine (pdfium-workers, gedeeld geheugen) — sneller en crash-bestendig
+➡️ Continue scroll-weergave, ook bij documenten met gemengde paginaformaten
+➡️ Cursor-verankerde Ctrl+scroll zoom + spring-naar-pagina
+
+📧 **Y-app — v0.21 → v0.23 (drie releases)**
+➡️ Mail-performance overhaul: directe mail-open (250 ms vertraging eruit), body-preload, real-time push (IMAP IDLE + WebSocket)
+➡️ Webmail: inline project aanmaken, gedeelde mailboxen in vault-modus
+➡️ Facturatie: ERPNext-integratie, vaste-prijs-items per project, handtekening per account
+
 ✏️ **Open CAD Studio** (community-project van Hakan Seven)
 ➡️ Nieuwe 3D-solid-modelleer-tab: primitives + boolean-operaties
 ➡️ Native GPU paper-space viewports
 ➡️ In-place tekst- & MTEXT-bewerking met live caret
-➡️ 3D-solids selecteren door op de body te klikken
 
-…en verder gestage verbeteringen in Open PDF Studio, Open Calc Studio, Open Calculations Studio en de Y-app.
+…en daarnaast tientallen kleinere verbeteringen in Open Calc Studio, Open Calculations Studio en de rest van het ecosysteem.
 
 Alles open source. Alles gratis. Voor altijd.
 👉 open-aec.com
@@ -38,33 +45,37 @@ Alles open source. Alles gratis. Voor altijd.
 
 ---
 
-## Engelse versie
+## English version
 
-🚀 Another wild week at the OpenAEC Foundation (in formation)
+🚀 The past few weeks at the OpenAEC Foundation (in formation) — **over 800 improvements** across our whole ecosystem. A taste of what landed:
 
-Over **800 improvements** across our whole ecosystem this week — public and private. A taste of what landed:
-
-🏗️ **Open Geotechniek Studio — v0.3.0**
-Brand-new foundation design:
+🏗️ **Open Geotechniek Studio — v0.3.0** — brand-new foundation design
 ➡️ Prefab concrete piles — bearing capacity Rc;d, ξ-factors, unity check
 ➡️ Settlement calculation (SLS/ULS) with spring stiffness
 ➡️ Interactive CPT chart: drag pile levels, 4D/8D zones, zoom & pan
-➡️ Save to open **.ifcgeo** (IFCX schema 0.4)
-➡️ Validated against a 3BM CGEO1 reference calculation
+➡️ Save to open **.ifcgeo** (IFCX schema 0.4), validated vs a 3BM CGEO1 reference
 
 🔥 **Open Heatloss Studio** — full ISSO 53 implementation
 ➡️ Per-room "unheated" toggle + adjustable f_k
 ➡️ Ventilation per Dutch building-decree occupancy minimums, per-room supply q_v
-➡️ ISSO 51 & 53 conformance (two audit rounds)
-➡️ Standard + settings persisted in the file format
+➡️ ISSO 51 & 53 conformance (two audit rounds), persisted in the file format
+
+📄 **Open PDF Studio** — a brand-new rendering engine under the hood
+➡️ Multi-process render engine (pdfium workers, shared memory) — faster and crash-resilient
+➡️ Continuous scroll view, even for mixed-page-size documents
+➡️ Cursor-anchored Ctrl+wheel zoom + jump-to-page
+
+📧 **Y-app — v0.21 → v0.23 (three releases)**
+➡️ Mail performance overhaul: instant mail open, body preload, real-time push (IMAP IDLE + WebSocket)
+➡️ Webmail: inline project creation, shared mailboxes in vault mode
+➡️ Invoicing: ERPNext integration, fixed-price items per project, per-account signatures
 
 ✏️ **Open CAD Studio** (community project by Hakan Seven)
 ➡️ New 3D solid-modelling tab: primitives + boolean ops
 ➡️ Native GPU paper-space viewports
 ➡️ In-place text & MTEXT editing with a live caret
-➡️ Pick 3D solids by clicking their body
 
-…plus steady improvements across Open PDF Studio, Open Calc Studio, Open Calculations Studio and the Y-app.
+…plus dozens of smaller improvements across Open Calc Studio, Open Calculations Studio and the rest of the ecosystem.
 
 All open source. All free. Forever.
 👉 open-aec.com
@@ -75,19 +86,15 @@ All open source. All free. Forever.
 
 ## Notes before posting
 
-- **The number.** Publicly verifiable commits this week ≈ 265 (166 across the
-  org's public repos + 99 on HakanSeven12/OpenCADStudio), all on default
-  branches. "Over 800" only holds if you also count the 49 private repos,
-  feature/nightly branches and the website repo. Anyone on LinkedIn can check
-  your public GitHub, so either (a) keep "over 800 (public + private)" as
-  written, (b) swap in the exact figure from your own dashboard, or (c) drop to
-  a safe "250+ improvements across our public repos."
-- **Open CAD Studio "import".** You mentioned an import feature, but this week's
-  CAD commits were 3D solids + paper space + text editing — no import work that
-  I could find. Left it out rather than invent it. Add it back if it shipped on
-  a branch I didn't see.
-- **PDF Studio / Y-app / Open Calculations Studio.** No public main-branch
-  commits this week, so they're grouped under a generic "steady improvements"
-  line rather than given fake specifics. Add concrete items if you have them.
-- Per-tool commit counts you can quote safely: Open CAD Studio ~99, Open
-  Heatloss Studio ~70, Open Geotechniek Studio ~37.
+- **The number is now solid.** 794 public commits across the OpenAEC org in the
+  past 3 weeks (GitHub search API), + 260 on HakanSeven12/OpenCADStudio = ~1,050
+  public commits. "Over 800 improvements in the past few weeks" is fully
+  defensible — anyone can verify it on GitHub. (If you want strictly *this week*,
+  it's ~265; that's why the framing is "the past few weeks".)
+- **Verified per-tool commit counts (3 weeks):** Open PDF Studio 124, Open CAD
+  Studio 260, Y-app 91, Open Heatloss Studio ~70+, Open Geotechniek Studio ~37+.
+- **No invented features.** Every bullet maps to a real commit. The "import"
+  feature you mentioned for Open CAD Studio still wasn't in the commit log, so
+  it's left out.
+- Open PDF Studio + Y-app did their heavy lifting 1–3 weeks ago (not the last 7
+  days), which is exactly why the recap spans three weeks rather than one.
