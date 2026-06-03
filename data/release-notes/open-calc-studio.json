@@ -1,13 +1,13 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-06-01T21:35:39.666Z",
-  "totalReleases": 11,
-  "totalChanges": 114,
+  "generated": "2026-06-03T00:07:39.447Z",
+  "totalReleases": 12,
+  "totalChanges": 127,
   "latestStable": {
-    "tag": "v0.7.8",
-    "name": "Open Calc Studio v0.7.8",
-    "date": "2026-05-05",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.8"
+    "tag": "v0.7.4",
+    "name": "v0.7.4 - Uren naar rato, IBIS-TRAD import, volledige API",
+    "date": "2026-06-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.4"
   },
   "nightly": null,
   "groups": [
@@ -21,6 +21,28 @@
           "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.8",
           "changes": [],
           "patchNum": 8
+        },
+        {
+          "tag": "v0.7.4",
+          "name": "v0.7.4 - Uren naar rato, IBIS-TRAD import, volledige API",
+          "date": "2026-06-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.4",
+          "changes": [
+            "**Per hoofdstuk** — klik op de Uren-cel van een hoofdstukrij in de WPCalc-weergave; alle regel-normen in dat hoofdstuk (ook geneste posten/sub-hoofdstukken) schalen naar rato",
+            "**Per tariefgroep** (A/B/C) — in het Uren-overzicht paneel",
+            "**Grand-totaal** — de totaalrij in het Uren-overzicht (verdeelt over alle groepen)",
+            "Dubbelklik op `.ifcCalc` of `.calc` in Verkenner opent OCS",
+            "Sleep een bestand op het OCS-venster → opent direct",
+            "Spreadsheet-bladen (toevoegen/hernoemen/verwijderen, cellen lezen/schrijven, batch)",
+            "Begrotingsvarianten (branches: aanmaken, schakelen, verwijderen)",
+            "Bedrijfs- en projectgegevens (lezen/bijwerken)",
+            "Middelenbibliotheek (CRUD)",
+            "Boom-operaties (move, indent/outdent, collapse)",
+            "Import: CUF-XML, TRADXML, RSX, ZSX, NSX, .xtb, .calc",
+            "Documenten (tabs: lijst, schakelen, toevoegen/sluiten)",
+            "22 unit tests voor uren-rato (per-groep, grand-totaal, per-hoofdstuk, edge cases)"
+          ],
+          "patchNum": 4
         },
         {
           "tag": "v0.7.3",
@@ -79,6 +101,19 @@
         }
       ],
       "allChanges": [
+        "**Per hoofdstuk** — klik op de Uren-cel van een hoofdstukrij in de WPCalc-weergave; alle regel-normen in dat hoofdstuk (ook geneste posten/sub-hoofdstukken) schalen naar rato",
+        "**Per tariefgroep** (A/B/C) — in het Uren-overzicht paneel",
+        "**Grand-totaal** — de totaalrij in het Uren-overzicht (verdeelt over alle groepen)",
+        "Dubbelklik op `.ifcCalc` of `.calc` in Verkenner opent OCS",
+        "Sleep een bestand op het OCS-venster → opent direct",
+        "Spreadsheet-bladen (toevoegen/hernoemen/verwijderen, cellen lezen/schrijven, batch)",
+        "Begrotingsvarianten (branches: aanmaken, schakelen, verwijderen)",
+        "Bedrijfs- en projectgegevens (lezen/bijwerken)",
+        "Middelenbibliotheek (CRUD)",
+        "Boom-operaties (move, indent/outdent, collapse)",
+        "Import: CUF-XML, TRADXML, RSX, ZSX, NSX, .xtb, .calc",
+        "Documenten (tabs: lijst, schakelen, toevoegen/sluiten)",
+        "22 unit tests voor uren-rato (per-groep, grand-totaal, per-hoofdstuk, edge cases)",
         "**Taal:** Nederlands (was: auto-detect)",
         "**Thema:** Light (was: 'default')",
         "Persistent left start sidebar (release notes + OpenAEC link + voorbeeldbegroting)",
@@ -101,9 +136,9 @@
         "Experimentele tabs (PDF / 3D / Offerte) verborgen in zowel dev als release builds"
       ],
       "firstDate": "2026-05-02",
-      "lastDate": "2026-05-05",
-      "releaseCount": 5,
-      "changeCount": 20
+      "lastDate": "2026-06-02",
+      "releaseCount": 6,
+      "changeCount": 33
     },
     {
       "minorVersion": "0.6",

@@ -6,17 +6,17 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux, Web
 **Category:** Cost Estimation
-**Current version:** v0.7.8 (2026-05-05)
+**Current version:** v0.7.4 (2026-06-02)
 **Tool ID:** `open-calc-studio`
 **GitHub repo:** `OpenAEC-Foundation/open-calc-studio`
 
 ## Live stats
 
 - Stars: **3**
-- Commits: **6**
+- Commits: **1**
 - Forks: **0**
 - Open issues: **0**
-- Releases: **11**
+- Releases: **12**
 - Total downloads: **97**
 - Downloads by platform: Windows (89), macOS (3), Linux (deb) (2), Windows (MSI) (2), Linux (rpm) (1)
 
@@ -57,7 +57,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://www.open-aec.com/open-calc-studio/
 - Live demo: https://open-calc-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-calc-studio
-- Latest stable release: https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.8
+- Latest stable release: https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.4
 - Nightly builds: https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/nightly
 
 ## Direct downloads (most popular)

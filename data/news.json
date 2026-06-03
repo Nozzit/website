@@ -3,8 +3,8 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.59.0-nightly.20260601.531dadb",
-    "date": "2026-06-01",
+    "description": "Nightly build 1.59.0-nightly.20260602.531dadb",
+    "date": "2026-06-02",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -12,9 +12,18 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260601.9f5c914",
-    "date": "2026-06-01",
+    "description": "Nightly build 0.1.4-nightly.20260602.9f5c914",
+    "date": "2026-06-02",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.7.4 uitgebracht",
+    "description": "v0.7.4 - Uren naar rato, IBIS-TRAD import, volledige API",
+    "date": "2026-06-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.4",
     "count": 1
   },
   {
