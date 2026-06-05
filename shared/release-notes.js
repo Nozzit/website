@@ -100,7 +100,17 @@
   };
 
   function getLang() {
-    return localStorage.getItem(STORAGE_KEY) || 'en';
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) return stored;
+    const supported = ['nl', 'en', 'fr', 'tr'];
+    const list = (navigator.languages && navigator.languages.length)
+      ? navigator.languages
+      : [navigator.language || 'en'];
+    for (let i = 0; i < list.length; i++) {
+      const code = String(list[i] || '').toLowerCase().split('-')[0];
+      if (supported.indexOf(code) !== -1) return code;
+    }
+    return 'en';
   }
 
   function t(key) {

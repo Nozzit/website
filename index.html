@@ -2313,19 +2313,36 @@
       }
     };
 
+    // Detect the best language: stored preference > browser language > English.
+    function detectLang() {
+      const stored = localStorage.getItem('openaec-lang');
+      if (stored) return stored;
+      const supported = ['nl', 'en', 'fr', 'tr'];
+      const list = (navigator.languages && navigator.languages.length)
+        ? navigator.languages
+        : [navigator.language || 'en'];
+      for (let i = 0; i < list.length; i++) {
+        const code = String(list[i] || '').toLowerCase().split('-')[0];
+        if (supported.indexOf(code) !== -1) return code;
+      }
+      return 'en';
+    }
+
     // i18n System
     const i18n = {
-      currentLang: localStorage.getItem('openaec-lang') || 'en',
+      currentLang: detectLang(),
       init() {
-        this.setLanguage(this.currentLang);
+        // Apply detected language WITHOUT persisting, so auto-detection keeps
+        // working until the visitor explicitly picks a language.
+        this.setLanguage(this.currentLang, false);
         this.bindEvents();
       },
       getNestedValue(obj, path) {
         return path.split('.').reduce((current, key) => current && current[key], obj);
       },
-      setLanguage(lang) {
+      setLanguage(lang, persist = true) {
         this.currentLang = lang;
-        localStorage.setItem('openaec-lang', lang);
+        if (persist) localStorage.setItem('openaec-lang', lang);
         document.documentElement.lang = lang;
         // Non-EN, non-NL languages fall back to EN, then to NL (HTML default).
         const fallback = (lang !== 'nl' && lang !== 'en') ? 'en' : null;
