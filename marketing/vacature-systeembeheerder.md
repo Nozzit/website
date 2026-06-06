@@ -40,7 +40,7 @@ Je bouwt, beheert en beveiligt de infrastructuur waar het hele ecosysteem en onz
 - Volledige vrijheid en eigenaarschap over de infrastructuur — geen dichtgetimmerde processen
 - Werken met een moderne, 100% open-source stack (Linux, Rust, Tauri, NextCloud, Stalwart)
 - **Hybride werken** — werkplek in Dordrecht, en thuiswerken kan prima
-- Marktconform salaris, in overleg
+- Salaris marktconform
 
 ### Praktisch
 
