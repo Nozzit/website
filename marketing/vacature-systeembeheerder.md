@@ -32,6 +32,7 @@ Je bouwt, beheert en beveiligt de infrastructuur waar het hele ecosysteem en onz
 - **Zelfstandig** — je werkt graag autonoom, neemt initiatief en hakt zelf knopen door
 - **Security-mindset** — je denkt standaard in dreigingsmodellen, least-privilege en backups-die-écht-werken
 - **Open source in het bloed** — je voelt je thuis in een Linux/CLI/Git-wereld en deelt onze overtuiging dat open source de toekomst is
+- **Container-ervaring** — je bent comfortabel met **Docker** (en bij voorkeur orchestratie)
 - **Pré's**: ervaring met Hetzner, Cloudflare, Proxmox, Ansible/Terraform, PostgreSQL/Redis, Prometheus/Grafana, of zelf-gehoste mail
 
 ### Wat we bieden

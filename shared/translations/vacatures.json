@@ -30,6 +30,7 @@
       "2": "<strong>Independent</strong> — you like working autonomously, take initiative and make the call yourself",
       "3": "<strong>Security mindset</strong> — you think in threat models, least privilege and backups-that-work by default",
       "4": "<strong>Open source in your blood</strong> — you feel at home in a Linux/CLI/Git world",
+      "docker": "<strong>Container experience</strong> — you are comfortable with <strong>Docker</strong> (and ideally orchestration)",
       "5": "<strong>Bonus:</strong> experience with Hetzner, Cloudflare, Proxmox, Ansible/Terraform, PostgreSQL/Redis, Prometheus/Grafana or self-hosted mail"
     },
     "offer": {
