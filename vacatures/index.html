@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacatures — OpenAEC Foundation</title>
+  <meta name="description" content="Werken bij de OpenAEC Foundation. We zoeken een ervaren systeembeheerder / DevOps in Dordrecht (hybride) voor onze open-source infrastructuur: Linux, NextCloud, Stalwart mail, security.">
+  <meta name="i18n-page" content="vacatures">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <style>
+    .page-header {
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-12);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .page-header .section-label { color: var(--warm-gold); margin-bottom: var(--sp-4); display: block; font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .page-header h1 { font-family: var(--font-heading); font-weight: 700; font-size: 2.5rem; color: white; letter-spacing: -0.02em; margin-bottom: var(--sp-4); }
+    .page-header h1 .accent { color: var(--amber); }
+    .page-header p { font-size: 1.125rem; color: var(--scaffold-gray); max-width: 650px; margin: 0 auto; line-height: 1.6; }
+
+    .job { max-width: 820px; margin: 0 auto; }
+
+    .job-card {
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+    .job-head {
+      background: var(--night-build);
+      padding: var(--sp-8);
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .job-head h2 { font-family: var(--font-heading); font-weight: 700; font-size: 1.6rem; color: white; margin-bottom: var(--sp-4); line-height: 1.2; }
+    .job-meta { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+    .job-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-code); font-size: 0.75rem; font-weight: 500;
+      padding: 5px 14px; border-radius: var(--radius-full);
+      background: rgba(217,119,6,0.15); color: var(--warm-gold);
+    }
+
+    .job-body { padding: var(--sp-8); }
+    .job-body h3 {
+      font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem;
+      color: var(--deep-forge); margin: var(--sp-8) 0 var(--sp-3);
+    }
+    .job-body h3:first-child { margin-top: 0; }
+    .job-body p { color: #57534E; font-size: 1rem; line-height: 1.7; margin-bottom: var(--sp-3); }
+    .job-body ul { list-style: none; padding: 0; margin: 0 0 var(--sp-3); }
+    .job-body ul li {
+      color: #44403C; font-size: 0.95rem; line-height: 1.6;
+      padding: 7px 0 7px 26px; position: relative;
+    }
+    .job-body ul li::before {
+      content: ''; position: absolute; left: 0; top: 14px;
+      width: 7px; height: 7px; border-radius: 2px; background: var(--amber);
+    }
+    .job-body ul li strong { color: var(--deep-forge); }
+
+    .job-apply {
+      background: var(--blueprint-white);
+      border-top: 1px solid #E7E5E4;
+      padding: var(--sp-8);
+      text-align: center;
+    }
+    .job-apply h3 { font-family: var(--font-heading); font-weight: 700; font-size: 1.2rem; color: var(--deep-forge); margin-bottom: var(--sp-3); }
+    .job-apply p { color: #57534E; font-size: 0.95rem; line-height: 1.7; max-width: 540px; margin: 0 auto var(--sp-5); }
+    .job-apply .btn-apply {
+      display: inline-block; background: var(--amber); color: white;
+      padding: var(--sp-3) var(--sp-8); border-radius: var(--radius-full);
+      font-weight: 600; text-decoration: none; font-size: 1rem; transition: background 0.2s ease;
+    }
+    .job-apply .btn-apply:hover { background: var(--signal-orange); }
+    .job-status { margin-top: var(--sp-5); font-size: 0.8rem; color: #78716C; font-style: italic; }
+
+    .page-footer.footer { background: var(--deep-forge); border-top: 3px solid transparent; border-image: var(--gradient-accent) 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    .footer-inner p { font-size: 0.75rem; color: var(--scaffold-gray); }
+
+    @media (max-width: 768px) {
+      .page-header h1 { font-size: 2rem; }
+      .job-head, .job-body, .job-apply { padding: var(--sp-6); }
+      .job-head h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js?v=20260603"></script>
+
+  <header class="page-header">
+    <p class="section-label" data-i18n="header.label">Werken bij OpenAEC</p>
+    <h1><span class="accent" data-i18n="header.title">Vacatures</span></h1>
+    <p data-i18n="header.desc">Help mee om de bouw- en infrasector open source te maken. Op dit moment hebben we één openstaande vacature.</p>
+  </header>
+
+  <section class="section" style="background: var(--blueprint-white);">
+    <div class="job">
+      <article class="job-card">
+
+        <div class="job-head">
+          <h2 data-i18n="job.title">Ervaren Systeembeheerder / DevOps (open source)</h2>
+          <div class="job-meta">
+            <span class="job-chip" data-i18n="job.chip.location">📍 Dordrecht — hybride</span>
+            <span class="job-chip" data-i18n="job.chip.hours">🕒 32-40 uur</span>
+            <span class="job-chip" data-i18n="job.chip.salary">💶 Salaris marktconform</span>
+          </div>
+        </div>
+
+        <div class="job-body">
+          <h3 data-i18n="job.about.title">Over ons</h3>
+          <p data-i18n="job.about.desc">De OpenAEC Foundation maakt de bouw- en infrasector open source. We ontwikkelen, ondersteunen en promoten een compleet ecosysteem van open-source software voor de hele AEC-keten — inmiddels 17 productie-tools, 50+ repositories en duizenden downloads. Naar het model van de Blender Foundation: alles open, alles gratis, voor altijd. Achter die tools draait een groeiende, volledig self-hosted infrastructuur — en die heeft een ervaren beheerder nodig die er eigenaarschap over neemt.</p>
+
+          <h3 data-i18n="job.do.title">Wat ga je doen</h3>
+          <ul>
+            <li data-i18n="job.do.1"><strong>Servers opzetten en beheren</strong> — Linux-servers (Debian/Ubuntu) van bare-metal tot productie, inclusief reverse proxy, TLS, DNS en containerisatie (Docker)</li>
+            <li data-i18n="job.do.2"><strong>NextCloud</strong> — opzetten, schalen en onderhouden als documentplatform (o.a. OpenAEC Docs en IfcGit-integratie)</li>
+            <li data-i18n="job.do.3"><strong>Stalwart Mail Server</strong> — beheer van onze zelf-gehoste e-mailstack (IMAP/JMAP/SMTP) die de Y-app aandrijft: deliverability, DKIM/SPF/DMARC, anti-spam</li>
+            <li data-i18n="job.do.4"><strong>Safety &amp; security</strong> — hardening, firewalls, fail2ban, secrets-management, patching, AVG/GDPR, audit logging en een backup- &amp; disaster-recovery-beleid dat écht werkt</li>
+            <li data-i18n="job.do.5"><strong>Monitoring &amp; uptime</strong> — proactieve monitoring zodat problemen zichtbaar zijn vóór de klant ze merkt</li>
+            <li data-i18n="job.do.6"><strong>Managed hosting</strong> — je ondersteunt onze betaalde hosting-/SLA-dienstverlening voor bouwbedrijven die een beheerde omgeving willen</li>
+          </ul>
+
+          <h3 data-i18n="job.who.title">Wie zoeken we</h3>
+          <ul>
+            <li data-i18n="job.who.1"><strong>Ervaren</strong> — je hebt aantoonbaar Linux-servers in productie beheerd en weet wat er misgaat om 3 uur 's nachts</li>
+            <li data-i18n="job.who.2"><strong>Zelfstandig</strong> — je werkt graag autonoom, neemt initiatief en hakt zelf knopen door</li>
+            <li data-i18n="job.who.3"><strong>Security-mindset</strong> — je denkt standaard in dreigingsmodellen, least-privilege en backups-die-werken</li>
+            <li data-i18n="job.who.4"><strong>Open source in het bloed</strong> — je voelt je thuis in een Linux/CLI/Git-wereld</li>
+            <li data-i18n="job.who.5"><strong>Pré:</strong> ervaring met Hetzner, Cloudflare, Proxmox, Ansible/Terraform, PostgreSQL/Redis, Prometheus/Grafana of zelf-gehoste mail</li>
+          </ul>
+
+          <h3 data-i18n="job.offer.title">Wat we bieden</h3>
+          <ul>
+            <li data-i18n="job.offer.1">Een sleutelrol in een missie-gedreven open-source stichting in opbouw</li>
+            <li data-i18n="job.offer.2">Volledige vrijheid en eigenaarschap over de infrastructuur — geen dichtgetimmerde processen</li>
+            <li data-i18n="job.offer.3">Werken met een moderne, 100% open-source stack (Linux, Rust, Tauri, NextCloud, Stalwart)</li>
+            <li data-i18n="job.offer.4"><strong>Hybride werken</strong> — werkplek in Dordrecht, en thuiswerken kan prima</li>
+            <li data-i18n="job.offer.5"><strong>Salaris marktconform</strong></li>
+          </ul>
+        </div>
+
+        <div class="job-apply">
+          <h3 data-i18n="job.apply.title">Interesse?</h3>
+          <p data-i18n="job.apply.desc">Stuur een korte mail met je ervaring — een CV of GitHub-profiel zegt ons meer dan een motivatiebrief.</p>
+          <a href="mailto:info@open-aec.com?subject=Sollicitatie%20Systeembeheerder" class="btn-apply" data-i18n="job.apply.btn">Solliciteer via e-mail</a>
+          <p class="job-status" data-i18n="job.status">OpenAEC Foundation is een stichting in oprichting (i.o.).</p>
+        </div>
+
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer page-footer" style="padding: var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" style="color: white; text-decoration: none; font-family: var(--font-heading); font-weight: 700; font-size: 1.125rem;">Open<span style="color: var(--amber);">AEC</span></a>
+      <div style="display: flex; gap: var(--sp-4); align-items: center;">
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/company/23749451" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn</a>
+      </div>
+      <p>&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+  <script src="/shared/i18n.js?v=20260603"></script>
+</body>
+</html>

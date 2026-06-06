@@ -1,0 +1,50 @@
+{
+  "header": {
+    "label": "Work at OpenAEC",
+    "title": "Vacancies",
+    "desc": "Help us make the building and infrastructure sector open source. We currently have one open position."
+  },
+  "job": {
+    "title": "Experienced System Administrator / DevOps (open source)",
+    "chip": {
+      "location": "📍 Dordrecht — hybrid",
+      "hours": "🕒 32-40 hours",
+      "salary": "💶 Market-rate salary"
+    },
+    "about": {
+      "title": "About us",
+      "desc": "The OpenAEC Foundation is making the building and infrastructure sector open source. We develop, support and promote a complete ecosystem of open-source software for the entire AEC chain — already 17 production tools, 50+ repositories and thousands of downloads. Modelled on the Blender Foundation: everything open, everything free, forever. Behind those tools runs a growing, fully self-hosted infrastructure — and it needs an experienced administrator to take ownership of it."
+    },
+    "do": {
+      "title": "What you will do",
+      "1": "<strong>Set up and manage servers</strong> — Linux servers (Debian/Ubuntu) from bare metal to production, including reverse proxy, TLS, DNS and containerisation (Docker)",
+      "2": "<strong>NextCloud</strong> — set up, scale and maintain it as a document platform (incl. OpenAEC Docs and IfcGit integration)",
+      "3": "<strong>Stalwart Mail Server</strong> — manage our self-hosted email stack (IMAP/JMAP/SMTP) that powers the Y-app: deliverability, DKIM/SPF/DMARC, anti-spam",
+      "4": "<strong>Safety &amp; security</strong> — hardening, firewalls, fail2ban, secrets management, patching, GDPR, audit logging and a backup &amp; disaster-recovery policy that actually works",
+      "5": "<strong>Monitoring &amp; uptime</strong> — proactive monitoring so problems surface before the customer notices them",
+      "6": "<strong>Managed hosting</strong> — you support our paid hosting/SLA services for construction firms that want a managed environment"
+    },
+    "who": {
+      "title": "Who we are looking for",
+      "1": "<strong>Experienced</strong> — you have demonstrably run Linux servers in production and know what breaks at 3 a.m.",
+      "2": "<strong>Independent</strong> — you like working autonomously, take initiative and make the call yourself",
+      "3": "<strong>Security mindset</strong> — you think in threat models, least privilege and backups-that-work by default",
+      "4": "<strong>Open source in your blood</strong> — you feel at home in a Linux/CLI/Git world",
+      "5": "<strong>Bonus:</strong> experience with Hetzner, Cloudflare, Proxmox, Ansible/Terraform, PostgreSQL/Redis, Prometheus/Grafana or self-hosted mail"
+    },
+    "offer": {
+      "title": "What we offer",
+      "1": "A key role in a mission-driven open-source foundation in the making",
+      "2": "Full freedom and ownership over the infrastructure — no locked-down processes",
+      "3": "Work with a modern, 100% open-source stack (Linux, Rust, Tauri, NextCloud, Stalwart)",
+      "4": "<strong>Hybrid working</strong> — workplace in Dordrecht, and working from home is perfectly fine",
+      "5": "<strong>Market-rate salary</strong>"
+    },
+    "apply": {
+      "title": "Interested?",
+      "desc": "Send a short email with your experience — a CV or GitHub profile tells us more than a cover letter.",
+      "btn": "Apply by email"
+    },
+    "status": "OpenAEC Foundation is a foundation in formation (stichting i.o.)."
+  }
+}
