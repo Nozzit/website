@@ -39,12 +39,12 @@ Je bouwt, beheert en beveiligt de infrastructuur waar het hele ecosysteem en onz
 - Een sleutelrol in een missie-gedreven open-source stichting in opbouw
 - Volledige vrijheid en eigenaarschap over de infrastructuur — geen dichtgetimmerde processen
 - Werken met een moderne, 100% open-source stack (Linux, Rust, Tauri, NextCloud, Stalwart)
-- Werkplek in **Dordrecht**, met ruimte voor hybride werken
+- **Hybride werken** — werkplek in Dordrecht, en thuiswerken kan prima
 - Marktconform salaris, in overleg
 
 ### Praktisch
 
-- **Werkplek:** Dordrecht
+- **Werkplek:** Dordrecht — **hybride**, thuiswerken kan
 - **Uren:** 32-40 uur (bespreekbaar)
 - **Start:** in overleg
 
@@ -70,7 +70,7 @@ Je gaat:
 
 Wij zoeken iemand die **zelfstandig** werkt, een **security-mindset** heeft en **open source** in het bloed heeft. Ervaring met Hetzner, Cloudflare of zelf-gehoste mail is een dikke pré.
 
-📍 Dordrecht · 32-40 uur · open source, voor altijd
+📍 Dordrecht (hybride — thuiswerken kan) · 32-40 uur · open source, voor altijd
 
 Interesse? Mail je CV of GitHub naar info@open-aec.com 👇
 
