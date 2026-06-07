@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-03T00:08:04.656Z",
+  "generated": "2026-06-07T07:20:29.020Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-06-03",
-  "snapshotCount": 6,
+  "lastSnapshot": "2026-06-07",
+  "snapshotCount": 7,
   "weekCount": 3,
   "weeklyDeltas": [
     {
@@ -25,39 +25,36 @@
       "weekEnd": "2026-06-01",
       "weekStart": "2026-05-25",
       "perRepo": {
-        "open-pdf-studio": 457,
-        "open-2d-studio": 42,
-        "open-calc-studio": 7,
-        "open-pointcloud-studio": 2,
-        "open-heatloss-studio": 8,
-        "open-speech-studio": 2,
-        "open-frame-studio": 3,
-        "open-geotechniek-studio": 5,
-        "Open-Calculations-Studio": 9,
-        "monty-ifc-viewer": 7
+        "open-pdf-studio": 752,
+        "open-2d-studio": 87,
+        "open-calc-studio": 13,
+        "open-pointcloud-studio": 6,
+        "open-heatloss-studio": 9,
+        "open-speech-studio": 3,
+        "open-frame-studio": 4,
+        "open-geotechniek-studio": 9,
+        "Open-Calculations-Studio": 13,
+        "monty-ifc-viewer": 13
       },
-      "total": 542
+      "total": 909
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 961,
-    "open-2d-studio": 100,
-    "open-calc-studio": 24,
-    "open-energy-studio": 0,
-    "open-planner-studio": 0,
-    "open-pointcloud-studio": 5,
-    "open-heatloss-studio": 8,
-    "open-speech-studio": 4,
+    "open-pdf-studio": 1256,
+    "open-2d-studio": 145,
+    "open-calc-studio": 30,
+    "open-pointcloud-studio": 9,
+    "open-heatloss-studio": 9,
+    "open-speech-studio": 5,
     "Open-Field-Studio": 4,
-    "open-frame-studio": 8,
-    "open-geotechniek-studio": 27,
-    "Open-Calculations-Studio": 26,
-    "monty-ifc-viewer": 16,
+    "open-frame-studio": 9,
+    "open-geotechniek-studio": 31,
+    "Open-Calculations-Studio": 30,
+    "monty-ifc-viewer": 22,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
-    "openaec-cloud": 0,
-    "Y-app": 0
+    "openaec-cloud": 0
   },
-  "totalDownloadsAdded": 1183
+  "totalDownloadsAdded": 1550
 }
