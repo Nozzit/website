@@ -2,7 +2,7 @@
   "header": {
     "label": "Work at OpenAEC",
     "title": "Vacancies",
-    "desc": "Help us make the building and infrastructure sector open source. We currently have one open position."
+    "desc": "Help us make the building and infrastructure sector open source. We currently have two open positions."
   },
   "job": {
     "title": "Experienced System Administrator / DevOps (open source)",
@@ -47,5 +47,47 @@
       "btn": "Apply by email"
     },
     "status": "OpenAEC Foundation is a foundation in formation (stichting i.o.)."
+  },
+  "job2": {
+    "title": "Prompt Engineer with a building or structural engineering background",
+    "chip": {
+      "location": "📍 Dordrecht — hybrid",
+      "hours": "🕒 32-40 hours",
+      "salary": "💶 Market-rate salary"
+    },
+    "about": {
+      "title": "About this role",
+      "desc": "Our tools calculate real construction: heat loss, structures, geotechnics and cost estimation. We build them with AI — but AI output is only as good as the domain knowledge steering and checking it. So we are looking for a prompt engineer who not only handles language models well, but truly masters the field: someone who knows the standard and instantly spots when a calculation is wrong."
+    },
+    "do": {
+      "title": "What you will do",
+      "1": "<strong>Write and optimise prompts</strong> for our AI-coding workflow — so models produce technically correct output",
+      "2": "<strong>Translate standards into specs</strong> — turn building and structural standards (NEN 12831, NTA 8800, ISSO 51/53, Eurocode) into clear, verifiable specifications",
+      "3": "<strong>Design verification</strong> — build verification calculations and test cases that check AI-generated calculations against the standard",
+      "4": "<strong>Safeguard conformance</strong> in tools like Open Heatloss Studio, Open Calc Studio, Open Frame Studio and Open Geotechniek Studio",
+      "5": "<strong>Transfer domain knowledge</strong> to the development team and help shape product direction"
+    },
+    "who": {
+      "title": "Who we are looking for",
+      "1": "<strong>At least 5 years' experience</strong> as a building engineer (bouwkundige) or structural engineer (constructeur)",
+      "2": "<strong>Hard, deep expertise</strong> — you really know the standards. Not an 'I think so' level, but well-founded, verifiable knowledge",
+      "3": "<strong>University level (WO) preferred</strong>",
+      "4": "<strong>Analytical and precise</strong> — you check your own work, and an AI's, just as critically",
+      "5": "<strong>Affinity with AI / language models</strong> — or the hunger to master prompt engineering quickly",
+      "6": "<strong>Bonus:</strong> experience with Eurocode calculations, BIM/IFC or prior AI tooling"
+    },
+    "offer": {
+      "title": "What we offer",
+      "1": "A unique role at the intersection of construction and AI — you turn your expertise directly into software the whole sector uses",
+      "2": "Help build a mission-driven open-source foundation in the making",
+      "3": "Work with the latest AI models and a modern, 100% open-source stack",
+      "4": "<strong>Hybrid working</strong> — workplace in Dordrecht, and working from home is perfectly fine",
+      "5": "<strong>Market-rate salary</strong>"
+    },
+    "apply": {
+      "title": "Interested?",
+      "desc": "Send a short email with your experience and — if you have them — examples of calculations or projects that demonstrate your expertise.",
+      "btn": "Apply by email"
+    }
   }
 }
