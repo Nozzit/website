@@ -30,7 +30,8 @@ Daarom zoeken we een prompt engineer die niet alleen met taalmodellen overweg ka
 - **Bij voorkeur WO-niveau**
 - **Analytisch en precies** — je controleert je eigen werk én dat van een AI net zo kritisch
 - **Affiniteit met AI / taalmodellen** — of de honger om prompt-engineering snel onder de knie te krijgen
-- **Pré:** ervaring met Eurocode-berekeningen, BIM/IFC of eerdere AI-tooling
+- **Idealisme** — je gelooft in open source en een open bouwsector, en wilt aan iets bijdragen dat groter is dan jezelf
+- **Pré:** enige ervaring met programmeren, Eurocode-berekeningen, BIM/IFC of eerdere AI-tooling
 
 ### Wat we bieden
 
@@ -48,7 +49,7 @@ Daarom zoeken we een prompt engineer die niet alleen met taalmodellen overweg ka
 
 ### Interesse?
 
-Stuur een korte mail met je ervaring en — als je die hebt — voorbeelden van berekeningen of projecten waar je vakkennis uit blijkt, naar **info@open-aec.com**.
+Geen motivatiebrief. Je sollicitatie bestaat uit een **gevibecode applicatie** — een klein appje dat je (met behulp van AI) zelf hebt gebouwd, het liefst iets met een bouwkundige of constructieve twist. Laat zien dat je vakkennis én AI kunt combineren. Stuur de link of code mee met je ervaring naar **info@open-aec.com**.
 
 *OpenAEC Foundation is een stichting in oprichting (i.o.).*
 

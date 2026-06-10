@@ -31,6 +31,7 @@
       "3": "<strong>Security mindset</strong> — you think in threat models, least privilege and backups-that-work by default",
       "4": "<strong>Open source in your blood</strong> — you feel at home in a Linux/CLI/Git world",
       "docker": "<strong>Container experience</strong> — you are comfortable with <strong>Docker</strong> (and ideally orchestration)",
+      "idealism": "<strong>Idealism</strong> — you believe in open source and an open construction sector, and want to contribute to something bigger than yourself",
       "5": "<strong>Bonus:</strong> experience with Hetzner, Cloudflare, Proxmox, Ansible/Terraform, PostgreSQL/Redis, Prometheus/Grafana or self-hosted mail"
     },
     "offer": {
@@ -43,7 +44,7 @@
     },
     "apply": {
       "title": "Interested?",
-      "desc": "Send a short email with your experience — a CV or GitHub profile tells us more than a cover letter.",
+      "desc": "No cover letter. Your application is a <strong>vibe-coded app</strong> — a small app you built yourself (with the help of AI). Show us what you make. Send the link or code along with your CV or GitHub profile.",
       "btn": "Apply by email"
     },
     "status": "OpenAEC Foundation is a foundation in formation (stichting i.o.)."
@@ -74,7 +75,8 @@
       "3": "<strong>University level (WO) preferred</strong>",
       "4": "<strong>Analytical and precise</strong> — you check your own work, and an AI's, just as critically",
       "5": "<strong>Affinity with AI / language models</strong> — or the hunger to master prompt engineering quickly",
-      "6": "<strong>Bonus:</strong> experience with Eurocode calculations, BIM/IFC or prior AI tooling"
+      "idealism": "<strong>Idealism</strong> — you believe in open source and an open construction sector, and want to contribute to something bigger than yourself",
+      "6": "<strong>Bonus:</strong> some programming experience, Eurocode calculations, BIM/IFC or prior AI tooling"
     },
     "offer": {
       "title": "What we offer",
@@ -86,7 +88,7 @@
     },
     "apply": {
       "title": "Interested?",
-      "desc": "Send a short email with your experience and — if you have them — examples of calculations or projects that demonstrate your expertise.",
+      "desc": "No cover letter. Your application is a <strong>vibe-coded app</strong> — a small app you built yourself (with the help of AI), ideally something with a building or structural twist. Show us you can combine domain knowledge with AI. Send the link or code along with your experience.",
       "btn": "Apply by email"
     }
   }

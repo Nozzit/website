@@ -33,6 +33,7 @@ Je bouwt, beheert en beveiligt de infrastructuur waar het hele ecosysteem en onz
 - **Security-mindset** — je denkt standaard in dreigingsmodellen, least-privilege en backups-die-écht-werken
 - **Open source in het bloed** — je voelt je thuis in een Linux/CLI/Git-wereld en deelt onze overtuiging dat open source de toekomst is
 - **Container-ervaring** — je bent comfortabel met **Docker** (en bij voorkeur orchestratie)
+- **Idealisme** — je gelooft in open source en een open bouwsector, en wilt aan iets bijdragen dat groter is dan jezelf
 - **Pré's**: ervaring met Hetzner, Cloudflare, Proxmox, Ansible/Terraform, PostgreSQL/Redis, Prometheus/Grafana, of zelf-gehoste mail
 
 ### Wat we bieden
@@ -51,7 +52,7 @@ Je bouwt, beheert en beveiligt de infrastructuur waar het hele ecosysteem en onz
 
 ### Interesse?
 
-Stuur een korte mail met je ervaring (CV of GitHub-profiel zegt ons meer dan een motivatiebrief) naar **info@open-aec.com** — of neem contact op via https://www.open-aec.com/contact.
+Geen motivatiebrief. Je sollicitatie bestaat uit een **gevibecode applicatie** — een klein appje dat je (met behulp van AI) zelf hebt gebouwd. Laat ons zien wat je maakt. Stuur de link of code, samen met je CV of GitHub-profiel, naar **info@open-aec.com** — of neem contact op via https://www.open-aec.com/contact.
 
 *OpenAEC Foundation is een stichting in oprichting (i.o.).*
 
