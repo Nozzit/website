@@ -1,6 +1,13 @@
 [
   {
     "type": "announcement",
+    "title": "OpenAEC te gast in de BIMvoice-podcast (openBIMvoice #16)",
+    "description": "Maarten Vroegindeweij is te gast bij Petru Conduraru in de internationale openBIM-podcast BIMvoice. In de aflevering \"he wants every construction tool to be open source\" vertelt hij over OpenAEC, het Blender Foundation-model voor bouwsoftware, en waarom AI de doorbraak van open source in de bouw mogelijk maakt. Te beluisteren en te bekijken op alle podcastplatforms en YouTube.",
+    "date": "2026-06-12",
+    "url": "https://bimvoice.podbean.com/e/he-wants-every-construction-tool-to-be-open-source-maarten-vroegindeweij-openbimvoice-16/"
+  },
+  {
+    "type": "announcement",
     "title": "OpenAEC besproken op het OSArch-forum — \"This is ... amazing\"",
     "description": "De internationale open-source AEC-community OSArch heeft OpenAEC ontdekt. Dion Moult, maker van IfcOpenShell en Bonsai, opende de thread met \"https://open-aec.com — This is ... amazing.\" Levendige discussie volgde over het ecosysteem en vooral Open CAD Studio, door de community omschreven als de eerste volwaardige open-source AutoCAD-alternatief met native DWG-ondersteuning. We verwelkomen de vragen, de gezonde scepsis en de testers — precies waar open source om draait.",
     "date": "2026-06-03",
