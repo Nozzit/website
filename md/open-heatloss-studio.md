@@ -13,12 +13,12 @@
 ## Live stats
 
 - Stars: **2**
-- Commits: **555**
+- Commits: **622**
 - Forks: **1**
 - Open issues: **3**
 - Releases: **2**
-- Total downloads: **15**
-- Downloads by platform: Windows (15)
+- Total downloads: **16**
+- Downloads by platform: Windows (16)
 
 ## Key features
 
@@ -64,6 +64,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 - [Windows · Open.Heatloss.Studio_0.1.1_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/download/v0.1.1-pr13.alpha/Open.Heatloss.Studio_0.1.1_x64-setup.exe) (v0.1.1-pr13.alpha — 10.1 MB)
 - [Windows · gen_pdf.exe](https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/download/v0.1.1-pr13.alpha/gen_pdf.exe) (v0.1.1-pr13.alpha — 7.9 MB)
+- [Windows · Open.Heatloss.Studio_0.1.1_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/download/v0.1.0-alpha.1/Open.Heatloss.Studio_0.1.1_x64-setup.exe) (v0.1.0-alpha.1 — 8.3 MB)
 
 ---
 
