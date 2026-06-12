@@ -4,6 +4,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ORG = 'OpenAEC-Foundation';
+// External community repos counted in the ecosystem totals (stars, commits,
+// issues, contributors). These live outside the org but are part of the
+// OpenAEC ecosystem. Full "owner/name" form.
+const EXTERNAL_REPOS = ['HakanSeven12/OpenCADStudio'];
 const TOKEN = process.env.GITHUB_TOKEN;
 const headers = {
   'Accept': 'application/vnd.github.v3+json',
@@ -220,9 +224,24 @@ async function searchCount(query) {
 async function main() {
   console.log('Fetching all repos...');
   const repos = await fetchAllPages(`https://api.github.com/orgs/${ORG}/repos?type=all`);
+
+  // Append external community repos (e.g. Open CAD Studio) so they count in the totals.
+  for (const fullName of EXTERNAL_REPOS) {
+    try {
+      const ext = await ghFetch(`https://api.github.com/repos/${fullName}`);
+      if (ext && ext.id) {
+        ext._external = true;
+        repos.push(ext);
+        console.log(`  + external repo: ${fullName} (${ext.stargazers_count} stars)`);
+      }
+    } catch (e) {
+      console.warn(`  Warning: external repo ${fullName}: ${e.message}`);
+    }
+  }
+
   const publicRepos = repos.filter(r => !r.private);
 
-  console.log(`Found ${repos.length} repos (${publicRepos.length} public)`);
+  console.log(`Found ${repos.length} repos (${publicRepos.length} public, incl. ${EXTERNAL_REPOS.length} external)`);
 
   // Org-wide issue/PR counts via search API (one request each)
   console.log('Fetching org-wide issue & PR counts...');
@@ -236,6 +255,20 @@ async function main() {
   console.log(`  Issues: ${openIssues} open, ${closedIssues} closed`);
   console.log(`  PRs:    ${openPRs} open, ${closedPRs} closed (${mergedPRs} merged)`);
 
+  // External repos aren't covered by the org-wide search — count them separately.
+  let extOpenIssues = 0, extClosedIssues = 0, extOpenPRs = 0, extClosedPRs = 0, extMergedPRs = 0;
+  for (const fullName of EXTERNAL_REPOS) {
+    const [oi, ci, op, cp, mp] = await Promise.all([
+      searchCount(`repo:${fullName} is:issue is:open`),
+      searchCount(`repo:${fullName} is:issue is:closed`),
+      searchCount(`repo:${fullName} is:pr is:open`),
+      searchCount(`repo:${fullName} is:pr is:closed`),
+      searchCount(`repo:${fullName} is:pr is:merged`),
+    ]);
+    extOpenIssues += oi; extClosedIssues += ci; extOpenPRs += op; extClosedPRs += cp; extMergedPRs += mp;
+    console.log(`  ${fullName}: ${oi} open issues, ${ci} closed`);
+  }
+
   const contributorSet = new Set();
   let totalCommits = 0;
 
@@ -243,7 +276,7 @@ async function main() {
     console.log(`  Processing ${repo.name}...`);
     try {
       const contributors = await fetchAllPages(
-        `https://api.github.com/repos/${ORG}/${repo.name}/contributors?anon=false`
+        `https://api.github.com/repos/${repo.owner.login}/${repo.name}/contributors?anon=false`
       );
       contributors.forEach(c => contributorSet.add(c.login));
       const repoCommits = contributors.reduce((s, c) => s + (c.contributions || 0), 0);
@@ -267,7 +300,7 @@ async function main() {
     try {
       // Fetch ALL releases (paginated) to get full history
       const releases = await fetchAllPages(
-        `https://api.github.com/repos/${ORG}/${repo.name}/releases`
+        `https://api.github.com/repos/${repo.owner.login}/${repo.name}/releases`
       );
       repo._releases = releases.length;
       repo._latestRelease = releases[0]?.tag_name || null;
@@ -276,6 +309,13 @@ async function main() {
       // SECURITY: never publish private-repo activity in the public news feed.
       if (repo.private) {
         console.log(`    ${repo.name}: PRIVATE — releases hidden from news feed`);
+        continue;
+      }
+
+      // External repos count in the stats, but their releases are not flooded
+      // into our news feed (Open CAD Studio releases very frequently).
+      if (repo._external) {
+        console.log(`    ${repo.name}: EXTERNAL — counted in stats, releases not in news feed`);
         continue;
       }
 
@@ -326,6 +366,7 @@ async function main() {
 
   // PUBLIC repos created since cutoff date (private repos are never announced)
   publicRepos.forEach(repo => {
+    if (repo._external) return; // external repos are not announced as "new"
     if (repo.created_at.substring(0, 10) >= newsCutoff) {
       newsItems.push({
         type: 'new_repo',
@@ -361,11 +402,11 @@ async function main() {
     // GitHub's `open_issues_count` counts BOTH issues AND PRs — keep the legacy
     // field for back-compat but expose the clean split via the search-API fields.
     totalOpenIssues: publicRepos.reduce((s, r) => s + r.open_issues_count, 0),
-    openIssues: openIssues,
-    closedIssues: closedIssues,
-    openPRs: openPRs,
-    closedPRs: closedPRs,
-    mergedPRs: mergedPRs,
+    openIssues: openIssues + extOpenIssues,
+    closedIssues: closedIssues + extClosedIssues,
+    openPRs: openPRs + extOpenPRs,
+    closedPRs: closedPRs + extClosedPRs,
+    mergedPRs: mergedPRs + extMergedPRs,
     totalSizeKB: publicRepos.reduce((s, r) => s + r.size, 0),
     estimatedLinesOfCode: Math.round(publicRepos.filter(r => r.created_at >= '2025-12-01').reduce((s, r) => s + r.size, 0) * 25),
     totalCommits: totalCommits,
