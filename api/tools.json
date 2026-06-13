@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-06-12T11:27:09.993Z",
+  "generated": "2026-06-13T07:15:36.797Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -17,11 +17,11 @@
   "totalTools": 17,
   "totalStats": {
     "publicRepos": 53,
-    "totalStars": 522,
-    "totalCommits": 5213,
+    "totalStars": 526,
+    "totalCommits": 5227,
     "contributors": 36,
     "languages": 9,
-    "sourceDate": "2026-06-12T11:26:37.802Z"
+    "sourceDate": "2026-06-13T07:15:22.764Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -118,14 +118,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
         "commits": 450,
-        "stars": 324,
+        "stars": 325,
         "forks": 28,
         "openIssues": 62,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
-        "releases": 48,
+        "latestVersion": "nightly",
+        "latestReleaseDate": "2026-06-13",
+        "releases": 47,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-06-12"
+        "updatedAt": "2026-06-13"
       }
     },
     {
@@ -222,9 +222,9 @@
         "stars": 3,
         "forks": 0,
         "openIssues": 1,
-        "latestVersion": "v0.8.0",
-        "latestReleaseDate": null,
-        "releases": 13,
+        "latestVersion": "v0.8.2",
+        "latestReleaseDate": "2026-06-12",
+        "releases": 14,
         "createdAt": "2026-05-02",
         "updatedAt": "2026-06-02"
       }
@@ -268,7 +268,7 @@
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
-        "commits": 622,
+        "commits": 623,
         "stars": 2,
         "forks": 1,
         "openIssues": 3,
@@ -276,7 +276,7 @@
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
         "createdAt": "2026-03-02",
-        "updatedAt": "2026-06-11"
+        "updatedAt": "2026-06-12"
       }
     },
     {
@@ -569,9 +569,9 @@
         "stars": 2,
         "forks": 0,
         "openIssues": 16,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
-        "releases": 4,
+        "latestVersion": "v0.10.0",
+        "latestReleaseDate": "2026-04-24",
+        "releases": 3,
         "createdAt": "2026-03-09",
         "updatedAt": "2026-04-28"
       }
