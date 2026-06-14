@@ -1,16 +1,42 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-06-12T10:51:32.737Z",
-  "totalReleases": 12,
+  "generated": "2026-06-14T07:31:52.548Z",
+  "totalReleases": 14,
   "totalChanges": 127,
   "latestStable": {
-    "tag": "v0.7.4",
-    "name": "v0.7.4 - Uren naar rato, IBIS-TRAD import, volledige API",
-    "date": "2026-06-02",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.7.4"
+    "tag": "v0.8.2",
+    "name": "Open Calc Studio v0.8.2",
+    "date": "2026-06-12",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.2"
   },
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "0.8",
+      "releases": [
+        {
+          "tag": "v0.8.2",
+          "name": "Open Calc Studio v0.8.2",
+          "date": "2026-06-12",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.2",
+          "changes": [],
+          "patchNum": 2
+        },
+        {
+          "tag": "v0.8.1",
+          "name": "Open Calc Studio v0.8.1",
+          "date": "2026-06-12",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.1",
+          "changes": [],
+          "patchNum": 1
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-06-12",
+      "lastDate": "2026-06-12",
+      "releaseCount": 2,
+      "changeCount": 0
+    },
     {
       "minorVersion": "0.7",
       "releases": [
