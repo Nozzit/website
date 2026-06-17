@@ -3,19 +3,28 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.59.0-nightly.20260612.531dadb",
-    "date": "2026-06-12",
+    "description": "Nightly build 1.59.0-nightly.20260617.531dadb",
+    "date": "2026-06-17",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
   {
     "type": "release",
-    "repo": "Open-Calculations-Studio",
-    "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260612.9f5c914",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio: 2 releases (v1.61.0 → v1.62.0)",
+    "description": "Versies: v1.61.0, v1.62.0",
+    "date": "2026-06-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.62.0",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio: 2 releases (v0.8.1 → v0.8.2)",
+    "description": "Versies: v0.8.1, v0.8.2",
     "date": "2026-06-12",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
-    "count": 1
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.2",
+    "count": 2
   },
   {
     "type": "release",
