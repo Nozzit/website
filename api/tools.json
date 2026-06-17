@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-06-12T11:27:09.993Z",
+  "generated": "2026-06-17T14:53:10.670Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -17,11 +17,11 @@
   "totalTools": 17,
   "totalStats": {
     "publicRepos": 53,
-    "totalStars": 522,
-    "totalCommits": 5213,
-    "contributors": 36,
-    "languages": 9,
-    "sourceDate": "2026-06-12T11:26:37.802Z"
+    "totalStars": 550,
+    "totalCommits": 5346,
+    "contributors": 37,
+    "languages": 10,
+    "sourceDate": "2026-06-17T14:52:41.844Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -118,14 +118,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
         "commits": 450,
-        "stars": 324,
+        "stars": 328,
         "forks": 28,
-        "openIssues": 62,
+        "openIssues": 60,
         "latestVersion": "v1.47.3",
         "latestReleaseDate": null,
-        "releases": 48,
+        "releases": 50,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-06-12"
+        "updatedAt": "2026-06-17"
       }
     },
     {
@@ -224,7 +224,7 @@
         "openIssues": 1,
         "latestVersion": "v0.8.0",
         "latestReleaseDate": null,
-        "releases": 13,
+        "releases": 15,
         "createdAt": "2026-05-02",
         "updatedAt": "2026-06-02"
       }
@@ -268,7 +268,7 @@
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
-        "commits": 622,
+        "commits": 626,
         "stars": 2,
         "forks": 1,
         "openIssues": 3,
@@ -276,7 +276,7 @@
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
         "createdAt": "2026-03-02",
-        "updatedAt": "2026-06-11"
+        "updatedAt": "2026-06-15"
       }
     },
     {
@@ -434,11 +434,11 @@
         "stars": 3,
         "forks": 0,
         "openIssues": 0,
-        "latestVersion": "v0.2.0",
-        "latestReleaseDate": "2026-04-08",
-        "releases": 2,
+        "latestVersion": "v0.1.0",
+        "latestReleaseDate": null,
+        "releases": 3,
         "createdAt": "2026-04-01",
-        "updatedAt": "2026-05-23"
+        "updatedAt": "2026-06-16"
       }
     },
     {
@@ -661,7 +661,7 @@
       "stats": {
         "commits": 40,
         "stars": 0,
-        "forks": 0,
+        "forks": 1,
         "openIssues": 0,
         "latestVersion": null,
         "latestReleaseDate": null,

@@ -2,11 +2,11 @@
 
 > Machine-readable Markdown mirrors of the OpenAEC product pages. Use these when feeding the OpenAEC catalog to AI assistants (Claude, Continue, Cursor, etc).
 
-Generated: 2026-06-12T11:27:10.122Z
+Generated: 2026-06-17T14:53:10.836Z
 
-**Foundation totals:** 53 public repos · 522 stars · 5213 commits · 36 contributors.
+**Foundation totals:** 53 public repos · 550 stars · 5346 commits · 37 contributors.
 
-**Total downloads across tools:** 7,200 (18 repos).
+**Total downloads across tools:** 7,636 (18 repos).
 
 ## Beta
 
@@ -23,7 +23,7 @@ Generated: 2026-06-12T11:27:10.122Z
 - [Open Planner Studio](./open-planner-studio.md) — Project planning and Gantt for building, infrastructure and civil works. (`n/a`)
 - [Open Heatloss Studio](./open-heatloss-studio.md) — Heat loss calculations for buildings per NEN 12831 and ISSO 51:2023. Rust calculation engine, IFCX integration, PDF reports. (`v0.1.1-pr13.alpha`)
 - [Open Field Studio](./open-field-studio.md) — Site inspection and quality control. Defect pinning on floorplans, NEN 2767 checklists, offline-first. (`v0.1.3`)
-- [Open Frame Studio](./open-frame-studio.md) — 2D structural frame analysis for beams, columns, portal frames and civil load-bearing systems. (`v0.2.0`)
+- [Open Frame Studio](./open-frame-studio.md) — 2D structural frame analysis for beams, columns, portal frames and civil load-bearing systems. (`v0.1.0`)
 - [Y-app](./y-app.md) — Communication and collaboration for construction projects. (`n/a`)
 
 ## Preview

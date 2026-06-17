@@ -6,7 +6,7 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux
 **Category:** Structural Engineering
-**Current version:** v0.2.0 (2026-04-08)
+**Current version:** v0.1.0 (2026-04-08)
 **Tool ID:** `open-frame-studio`
 **GitHub repo:** `OpenAEC-Foundation/open-frame-studio`
 
@@ -16,9 +16,9 @@
 - Commits: **29**
 - Forks: **0**
 - Open issues: **0**
-- Releases: **2**
-- Total downloads: **15**
-- Downloads by platform: Windows (10), Linux (AppImage) (3), Windows (MSI) (2)
+- Releases: **3**
+- Total downloads: **17**
+- Downloads by platform: Windows (11), Linux (AppImage) (4), Windows (MSI) (2)
 
 ## Key features
 
@@ -58,11 +58,12 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ## Direct downloads (most popular)
 
+- [Linux (AppImage) · Open.Frame.Studio_0.2.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_amd64.AppImage) (v0.2.0 — 80.4 MB)
 - [Windows · Open.Frame.Studio_0.2.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64-setup.exe) (v0.2.0 — 4.4 MB)
 - [Windows · Open.Frame.Studio_0.1.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.1.0/Open.Frame.Studio_0.1.0_x64-setup.exe) (v0.1.0 — 4.3 MB)
-- [Linux (AppImage) · Open.Frame.Studio_0.2.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_amd64.AppImage) (v0.2.0 — 80.4 MB)
 - [Windows (MSI) · Open.Frame.Studio_0.2.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64_en-US.msi) (v0.2.0 — 6.2 MB)
 - [Windows · Open.Frame.Studio_0.2.0_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.2.0/Open.Frame.Studio_0.2.0_x64_user-setup.exe) (v0.2.0 — 4.4 MB)
+- [Windows · Open.Frame.Studio_0.4.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/untagged-020f5ff3021f28fe5b35/Open.Frame.Studio_0.4.0_x64-setup.exe) (v0.1.0 — 4.5 MB)
 
 ---
 
