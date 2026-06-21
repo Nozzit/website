@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-17T14:53:10.159Z",
+  "generated": "2026-06-21T07:34:39.742Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-06-17",
-  "snapshotCount": 8,
+  "lastSnapshot": "2026-06-21",
+  "snapshotCount": 9,
   "weekCount": 5,
   "weeklyDeltas": [
     {
@@ -59,37 +59,36 @@
       "weekEnd": "2026-06-15",
       "weekStart": "2026-06-08",
       "perRepo": {
-        "open-pdf-studio": 372,
-        "open-2d-studio": 31,
-        "open-calc-studio": 14,
-        "open-pointcloud-studio": 1,
-        "open-frame-studio": 2,
+        "open-pdf-studio": 648,
+        "open-2d-studio": 55,
+        "open-calc-studio": 20,
+        "open-pointcloud-studio": 4,
+        "open-speech-studio": 3,
+        "Open-Field-Studio": 5,
+        "open-frame-studio": 3,
         "open-geotechniek-studio": 4,
-        "Open-Calculations-Studio": 4,
-        "monty-ifc-viewer": 8
+        "Open-Calculations-Studio": 9,
+        "monty-ifc-viewer": 11
       },
-      "total": 436
+      "total": 762
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 2017,
-    "open-2d-studio": 228,
-    "open-calc-studio": 55,
-    "open-energy-studio": 0,
-    "open-planner-studio": 0,
-    "open-pointcloud-studio": 19,
+    "open-pdf-studio": 2293,
+    "open-2d-studio": 252,
+    "open-calc-studio": 61,
+    "open-pointcloud-studio": 22,
     "open-heatloss-studio": 9,
-    "open-speech-studio": 8,
-    "Open-Field-Studio": 4,
-    "open-frame-studio": 11,
+    "open-speech-studio": 11,
+    "Open-Field-Studio": 9,
+    "open-frame-studio": 12,
     "open-geotechniek-studio": 46,
-    "Open-Calculations-Studio": 41,
-    "monty-ifc-viewer": 32,
+    "Open-Calculations-Studio": 46,
+    "monty-ifc-viewer": 35,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
-    "openaec-cloud": 0,
-    "Y-app": 0
+    "openaec-cloud": 0
   },
-  "totalDownloadsAdded": 2470
+  "totalDownloadsAdded": 2796
 }
