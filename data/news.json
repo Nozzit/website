@@ -3,8 +3,8 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.59.0-nightly.20260617.531dadb",
-    "date": "2026-06-17",
+    "description": "Nightly build 1.59.0-nightly.20260622.531dadb",
+    "date": "2026-06-22",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -12,9 +12,35 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260617.9f5c914",
+    "description": "Nightly build 0.1.4-nightly.20260622.9f5c914",
+    "date": "2026-06-22",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-planner-studio-extensions",
+    "title": "Nieuwe repository: open-planner-studio-extensions",
+    "description": "Extension catalog for Open Planner Studio",
+    "date": "2026-06-19",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio-extensions"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.67.0 uitgebracht",
+    "description": "Open PDF Studio v1.67.0",
+    "date": "2026-06-18",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.67.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.10.1 uitgebracht",
+    "description": "Open Speech Studio v0.10.1",
     "date": "2026-06-17",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/untagged-fdc8c1df1ff7ebcc96ef",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.1",
     "count": 1
   },
   {
