@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-06-17T14:53:10.670Z",
+  "generated": "2026-06-24T07:08:07.913Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -16,12 +16,12 @@
   },
   "totalTools": 17,
   "totalStats": {
-    "publicRepos": 53,
-    "totalStars": 550,
-    "totalCommits": 5346,
-    "contributors": 37,
+    "publicRepos": 54,
+    "totalStars": 580,
+    "totalCommits": 5516,
+    "contributors": 39,
     "languages": 10,
-    "sourceDate": "2026-06-17T14:52:41.844Z"
+    "sourceDate": "2026-06-24T07:07:48.399Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -117,15 +117,15 @@
       "liveDemo": "https://open-pdf-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
-        "commits": 450,
-        "stars": 328,
-        "forks": 28,
-        "openIssues": 60,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
+        "commits": 468,
+        "stars": 337,
+        "forks": 30,
+        "openIssues": 67,
+        "latestVersion": "nightly",
+        "latestReleaseDate": "2026-06-24",
         "releases": 50,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-06-17"
+        "updatedAt": "2026-06-24"
       }
     },
     {
@@ -167,14 +167,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-2d-studio",
       "stats": {
         "commits": 90,
-        "stars": 20,
+        "stars": 21,
         "forks": 4,
-        "openIssues": 17,
+        "openIssues": 19,
         "latestVersion": "v0.35.0",
         "latestReleaseDate": "2026-03-26",
         "releases": 25,
         "createdAt": "2025-12-24",
-        "updatedAt": "2026-06-03"
+        "updatedAt": "2026-06-20"
       }
     },
     {
@@ -222,9 +222,9 @@
         "stars": 3,
         "forks": 0,
         "openIssues": 1,
-        "latestVersion": "v0.8.0",
-        "latestReleaseDate": null,
-        "releases": 15,
+        "latestVersion": "v0.8.2",
+        "latestReleaseDate": "2026-06-12",
+        "releases": 14,
         "createdAt": "2026-05-02",
         "updatedAt": "2026-06-02"
       }
@@ -434,9 +434,9 @@
         "stars": 3,
         "forks": 0,
         "openIssues": 0,
-        "latestVersion": "v0.1.0",
-        "latestReleaseDate": null,
-        "releases": 3,
+        "latestVersion": "v0.2.0",
+        "latestReleaseDate": "2026-04-08",
+        "releases": 2,
         "createdAt": "2026-04-01",
         "updatedAt": "2026-06-16"
       }
@@ -565,15 +565,15 @@
       "languages": 99,
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-speech-studio",
       "stats": {
-        "commits": 77,
+        "commits": 80,
         "stars": 2,
         "forks": 0,
-        "openIssues": 16,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
+        "openIssues": 11,
+        "latestVersion": "v0.10.1",
+        "latestReleaseDate": "2026-06-17",
         "releases": 4,
         "createdAt": "2026-03-09",
-        "updatedAt": "2026-04-28"
+        "updatedAt": "2026-06-17"
       }
     },
     {
