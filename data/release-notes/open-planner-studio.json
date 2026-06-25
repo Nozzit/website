@@ -1,16 +1,50 @@
 {
   "repo": "open-planner-studio",
-  "generated": "2026-06-17T14:52:47.259Z",
-  "totalReleases": 1,
-  "totalChanges": 0,
+  "generated": "2026-06-24T22:37:46.372Z",
+  "totalReleases": 2,
+  "totalChanges": 7,
   "latestStable": {
-    "tag": "v2026.2.0",
-    "name": "Open Planner Studio v2026.2.0",
-    "date": "2026-02-23",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.2.0"
+    "tag": "v2026.6.0",
+    "name": "Open Planner Studio v2026.6.0",
+    "date": "2026-06-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0"
   },
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "2026.6",
+      "releases": [
+        {
+          "tag": "v2026.6.0",
+          "name": "Open Planner Studio v2026.6.0",
+          "date": "2026-06-24",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0",
+          "changes": [
+            "**Cross-platform auto-update** (Windows/macOS/Linux): de app werkt zichzelf voortaan bij. Op Snap via de Snap Store; op een `.deb`-installatie met een handmatige update-melding.",
+            "**Multi-document**: meerdere projecten tegelijk open, drie wisselstijlen + projectoverzicht, per-document recovery en een 3-weg sluit-bevestiging (Opslaan / Niet opslaan / Annuleren).",
+            "**Nieuw-project-wizard** met kalender-presets (NL-bouwkalender) en fasering-templates (Woningbouw / Utiliteitsbouw).",
+            "**Taken kopiëren/plakken** inclusief subtaken, relaties en resource-toewijzingen.",
+            "**Extensiesysteem** + host-SDK + publieke extensie-catalogus.",
+            "Moderne **\"Soft-Depth\"-interface**; instellingen verenigd over tandwiel, ribbon en backstage.",
+            "Store opgesplitst in slices, diverse performance-verbeteringen, en een scheduler-fix (kritiek pad klopt nu, geen spook-float meer)."
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Cross-platform auto-update** (Windows/macOS/Linux): de app werkt zichzelf voortaan bij. Op Snap via de Snap Store; op een `.deb`-installatie met een handmatige update-melding.",
+        "**Multi-document**: meerdere projecten tegelijk open, drie wisselstijlen + projectoverzicht, per-document recovery en een 3-weg sluit-bevestiging (Opslaan / Niet opslaan / Annuleren).",
+        "**Nieuw-project-wizard** met kalender-presets (NL-bouwkalender) en fasering-templates (Woningbouw / Utiliteitsbouw).",
+        "**Taken kopiëren/plakken** inclusief subtaken, relaties en resource-toewijzingen.",
+        "**Extensiesysteem** + host-SDK + publieke extensie-catalogus.",
+        "Moderne **\"Soft-Depth\"-interface**; instellingen verenigd over tandwiel, ribbon en backstage.",
+        "Store opgesplitst in slices, diverse performance-verbeteringen, en een scheduler-fix (kritiek pad klopt nu, geen spook-float meer)."
+      ],
+      "firstDate": "2026-06-24",
+      "lastDate": "2026-06-24",
+      "releaseCount": 1,
+      "changeCount": 7
+    },
     {
       "minorVersion": "2026.2",
       "releases": [

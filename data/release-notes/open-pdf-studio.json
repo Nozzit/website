@@ -1,20 +1,88 @@
 {
   "repo": "open-pdf-studio",
-  "generated": "2026-06-17T14:52:43.415Z",
-  "totalReleases": 46,
-  "totalChanges": 305,
+  "generated": "2026-06-24T22:37:42.977Z",
+  "totalReleases": 48,
+  "totalChanges": 319,
   "latestStable": {
-    "tag": "v1.47.13",
-    "name": "Open PDF Studio v1.47.13",
-    "date": "2026-05-07",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.47.13"
+    "tag": "v1.67.0",
+    "name": "Open PDF Studio v1.67.0",
+    "date": "2026-06-18",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.67.0"
   },
   "nightly": {
     "tag": "nightly",
-    "date": "2026-06-17",
+    "date": "2026-06-24",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly"
   },
   "groups": [
+    {
+      "minorVersion": "1.67",
+      "releases": [
+        {
+          "tag": "v1.67.0",
+          "name": "Open PDF Studio v1.67.0",
+          "date": "2026-06-18",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.67.0",
+          "changes": [
+            "PDF viewing and navigation",
+            "Text selection and search",
+            "Annotations: highlight, underline, strikethrough",
+            "Drawing tools: freehand, shapes, text",
+            "Multi-tab document support",
+            "Thumbnail navigation",
+            "Session restore"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "PDF viewing and navigation",
+        "Text selection and search",
+        "Annotations: highlight, underline, strikethrough",
+        "Drawing tools: freehand, shapes, text",
+        "Multi-tab document support",
+        "Thumbnail navigation",
+        "Session restore"
+      ],
+      "firstDate": "2026-06-18",
+      "lastDate": "2026-06-18",
+      "releaseCount": 1,
+      "changeCount": 7
+    },
+    {
+      "minorVersion": "1.62",
+      "releases": [
+        {
+          "tag": "v1.62.0",
+          "name": "Open PDF Studio v1.62.0",
+          "date": "2026-06-13",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.62.0",
+          "changes": [
+            "PDF viewing and navigation",
+            "Text selection and search",
+            "Annotations: highlight, underline, strikethrough",
+            "Drawing tools: freehand, shapes, text",
+            "Multi-tab document support",
+            "Thumbnail navigation",
+            "Session restore"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "PDF viewing and navigation",
+        "Text selection and search",
+        "Annotations: highlight, underline, strikethrough",
+        "Drawing tools: freehand, shapes, text",
+        "Multi-tab document support",
+        "Thumbnail navigation",
+        "Session restore"
+      ],
+      "firstDate": "2026-06-13",
+      "lastDate": "2026-06-13",
+      "releaseCount": 1,
+      "changeCount": 7
+    },
     {
       "minorVersion": "1.47",
       "releases": [

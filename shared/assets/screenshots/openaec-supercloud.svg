@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="OpenAEC SuperCloud — in ontwikkeling">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#23232b"/>
+      <stop offset="1" stop-color="#16161b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#D97706" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <!-- cloud silhouette -->
+  <g fill="#D97706" fill-opacity="0.10">
+    <path d="M560 540c-58 0-105-47-105-105 0-55 42-100 96-105 16-66 75-115 146-115 70 0 130 49 146 116 6-1 12-2 18-2 50 0 90 40 90 90s-40 90-90 90H560z"/>
+  </g>
+  <!-- OpenAEC cube -->
+  <g transform="translate(800 360) scale(1.7)" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="-60,-20 0,15 0,80 -60,45" fill="#D97706" fill-opacity="0.22" stroke="#D97706" stroke-width="3"/>
+    <polygon points="0,-55 60,-20 0,15 -60,-20" fill="#D97706" fill-opacity="0.12" stroke="#D97706" stroke-width="3"/>
+    <line x1="60" y1="-20" x2="60" y2="45" stroke="#D97706" stroke-width="3"/>
+    <line x1="0" y1="80" x2="60" y2="45" stroke="#D97706" stroke-width="3"/>
+    <polygon points="60,-20 0,15 0,32 60,0" fill="#D97706" fill-opacity="0.18"/>
+    <line x1="0" y1="32" x2="60" y2="0" stroke="#F59E0B" stroke-width="2.4"/>
+  </g>
+  <text x="800" y="600" text-anchor="middle" font-family="'Space Grotesk',system-ui,sans-serif" font-weight="700" font-size="92" letter-spacing="-2" fill="#FAFAF9">Open<tspan fill="#D97706">AEC</tspan> SuperCloud</text>
+  <text x="800" y="660" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34" fill="#A1A1AA">Soeverein cloud-, account- &amp; SSO-platform</text>
+  <g transform="translate(800 730)">
+    <rect x="-110" y="-26" width="220" height="52" rx="26" fill="#D97706" fill-opacity="0.16" stroke="#D97706" stroke-opacity="0.5" stroke-width="2"/>
+    <text x="0" y="7" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="24" letter-spacing="3" fill="#F59E0B">IN ONTWIKKELING</text>
+  </g>
+</svg>

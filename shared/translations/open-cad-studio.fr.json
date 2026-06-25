@@ -4,7 +4,8 @@
     "title": "Open <span class=\"accent\">CAD</span> Studio",
     "desc": "Une <strong style=\"color: white;\">application CAO 2D + 3D complète</strong> développée en Rust avec rendu accéléré par GPU. Lecture et écriture natives <strong style=\"color: white;\">DWG &amp; DXF</strong>, paper space, solides ACIS, cotations, mises en page. Un projet open source communautaire de Hakan Seven, reconnu et promu par la fondation OpenAEC.",
     "community": "Projet communautaire",
-    "beta": "Beta · v0.4.1"
+    "beta": "Beta · v0.6.1",
+    "demoBtn": "▶ Démo en direct dans le navigateur"
   },
   "screenshot": {
     "caption": "Open CAD Studio en action — dessins DWG d'un projet routier et d'un plan structural de reprise en sous-œuvre (PUNTNIVEAU -14,5 m NAP)"
@@ -66,9 +67,9 @@
     "desc": "Entièrement écrit en Rust — sûreté mémoire, performances rapides, compile pour Windows, macOS et Linux. Interface via <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a>, rendu GPU via <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a>. DWG/DXF natifs sans verrouillage propriétaire."
   },
   "download": {
-    "title": "Télécharger <span class=\"accent\">v0.4.1</span>",
-    "desc": "Publiée le 23 mai 2026. Trois binaires natifs — Windows, macOS (Apple Silicon) et Linux (AppImage). Choisissez celui adapté à votre plateforme et soyez opérationnel en quelques secondes.",
-    "note": "Besoin de compiler depuis les sources ou d'une version antérieure ? Voir <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">toutes les versions sur GitHub</a> (30 versions à ce jour)."
+    "title": "Télécharger <span class=\"accent\">v0.6.1</span>",
+    "desc": "Publiée en juin 2026. Trois binaires natifs — Windows, macOS (Apple Silicon) et Linux (AppImage). Choisissez celui adapté à votre plateforme et soyez opérationnel en quelques secondes.",
+    "note": "Besoin de compiler depuis les sources ou d'une version antérieure ? Voir <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">toutes les versions sur GitHub</a> (51 versions à ce jour)."
   },
   "cta": {
     "github": "GitHub : HakanSeven12/OpenCADStudio",

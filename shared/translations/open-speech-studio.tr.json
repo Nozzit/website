@@ -2,9 +2,9 @@
   "header": {
     "label": "OpenAEC ekosistemi",
     "title": "Open Speech <span class=\"accent\">Studio</span>",
-    "desc": "Whisper AI ile ücretsiz yerel ses tanıma. <strong style=\"color:white;\">CTRL+Win</strong>'e basın ve herhangi bir uygulamaya dikte edin — sohbet, e-posta, terminal, IDE. Bulut yok, abonelik yok, sınır yok. v0.9.0 stable, 1 yükleyici, 30 saniyede hazır.",
-    "badge": "v0.9.0 STABLE",
-    "meta": "v0.9.0 &middot; 77 commit &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
+    "desc": "Whisper AI ile ücretsiz yerel ses tanıma. <strong style=\"color:white;\">CTRL+Win</strong>'e basın ve herhangi bir uygulamaya dikte edin — sohbet, e-posta, terminal, IDE. Bulut yok, abonelik yok, sınır yok. v0.10.1 stable, 1 yükleyici, 30 saniyede hazır.",
+    "badge": "v0.10.1 STABLE",
+    "meta": "v0.10.1 &middot; 80 commit &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
     "cta": {
       "download": "Yükleyiciyi indir (.exe)",
       "github": "GitHub'da görüntüle"
@@ -162,7 +162,7 @@
     "desc": "1 yükleyici dosyası (.exe), kayıt yok, hesap yok, kredi kartı yok. &lt;1 dakikada dikteye hazır. Windows 10 ve Windows 11'de çalışır.",
     "download": "Yükleyiciyi indir (.exe)",
     "github": "GitHub'da kaynağı görüntüle",
-    "meta": "v0.9.0 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40 MB indirme"
+    "meta": "v0.10.1 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40 MB indirme"
   },
   "cta": {
     "download": "Yükleyiciyi indir",

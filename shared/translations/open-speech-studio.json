@@ -2,9 +2,9 @@
   "header": {
     "label": "OpenAEC Ecosystem",
     "title": "Open Speech <span class=\"accent\">Studio</span>",
-    "desc": "Free local speech recognition with Whisper AI. Press <strong style=\"color:white;\">CTRL+Win</strong> and dictate into any application - chat, email, terminal, IDE. No cloud, no subscription, no limits. v0.9.0 stable, 1 installer, ready in 30 seconds.",
-    "badge": "v0.9.0 STABLE",
-    "meta": "v0.9.0 &middot; 77 commits &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
+    "desc": "Free local speech recognition with Whisper AI. Press <strong style=\"color:white;\">CTRL+Win</strong> and dictate into any application - chat, email, terminal, IDE. No cloud, no subscription, no limits. v0.10.1 stable, 1 installer, ready in 30 seconds.",
+    "badge": "v0.10.1 STABLE",
+    "meta": "v0.10.1 &middot; 80 commits &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
     "cta": {
       "download": "Download installer (.exe)",
       "github": "View on GitHub"
@@ -162,7 +162,7 @@
     "desc": "1 installer file (.exe), no registration, no account, no credit card. Ready to dictate in &lt;1 minute. Works on Windows 10 and Windows 11.",
     "download": "Download installer (.exe)",
     "github": "View source on GitHub",
-    "meta": "v0.9.0 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40MB download"
+    "meta": "v0.10.1 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40MB download"
   },
   "cta": {
     "download": "Download installer",

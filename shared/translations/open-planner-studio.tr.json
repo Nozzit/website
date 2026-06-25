@@ -3,11 +3,11 @@
     "label": "İnşaat planlaması",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
     "desc": "Gantt çizelgeleri, Kritik Yol Yöntemi ve yerel IFC 4.3 dosya formatı ile açık kaynak inşaat planlaması. AEC sektörü için tasarlanmıştır.",
-    "downloadBtn": "v2026.2.0 indir",
+    "downloadBtn": "v2026.6.0 indir",
     "sourceBtn": "Kaynak kodu görüntüle"
   },
   "download": {
-    "title": "v2026.2.0 indir"
+    "title": "v2026.6.0 indir"
   },
   "features": {
     "heading": "Özellikler",

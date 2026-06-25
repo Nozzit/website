@@ -1,6 +1,20 @@
 [
   {
     "type": "announcement",
+    "title": "OpenAEC SuperCloud aangekondigd — soeverein cloud- & accountplatform",
+    "description": "OpenAEC kondigt OpenAEC SuperCloud aan: het soevereine, alles-in-één cloud-, account- en SSO-platform van het ecosysteem. Eén identiteit en login voor alle OpenAEC-tools, met opslag, samenwerking en synchronisatie tussen tools — volledig zelf-gehost en open. Momenteel in ontwikkeling.",
+    "date": "2026-06-18",
+    "url": "https://www.open-aec.com/"
+  },
+  {
+    "type": "announcement",
+    "title": "Open Planner Studio v2026.6.0 — met IFC-koppeling en Rapportage",
+    "description": "Open Planner Studio v2026.6.0 is uit: een volwaardige projectplanner met Gantt-weergave, kritieke-pad-analyse (CPM), WBS en mijlpalen. Nieuw in deze versie zijn de IFC-koppeling en een uitgebreide Rapportage-tab. Gratis, open source en direct in de browser te proberen.",
+    "date": "2026-06-18",
+    "url": "https://open-planner-studio.open-aec.com/"
+  },
+  {
+    "type": "announcement",
     "title": "OpenAEC te gast in de BIMvoice-podcast (openBIMvoice #16)",
     "description": "Maarten Vroegindeweij is te gast bij Petru Conduraru in de internationale openBIM-podcast BIMvoice. In de aflevering \"he wants every construction tool to be open source\" vertelt hij over OpenAEC, het Blender Foundation-model voor bouwsoftware, en waarom AI de doorbraak van open source in de bouw mogelijk maakt. Te beluisteren en te bekijken op alle podcastplatforms en YouTube.",
     "date": "2026-06-12",

@@ -3,11 +3,11 @@
     "label": "Planification de chantier",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
     "desc": "Planification de chantier open source avec diagrammes de Gantt, méthode du chemin critique et format de fichier IFC 4.3 natif. Conçu pour le secteur AEC.",
-    "downloadBtn": "Télécharger v2026.2.0",
+    "downloadBtn": "Télécharger v2026.6.0",
     "sourceBtn": "Voir le code source"
   },
   "download": {
-    "title": "Télécharger v2026.2.0"
+    "title": "Télécharger v2026.6.0"
   },
   "features": {
     "heading": "Fonctionnalités",
