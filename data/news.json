@@ -1,19 +1,10 @@
 [
   {
     "type": "release",
-    "repo": "open-planner-studio",
-    "title": "open-planner-studio v2026.6.0 uitgebracht",
-    "description": "Open Planner Studio v2026.6.0",
-    "date": "2026-06-24",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0",
-    "count": 1
-  },
-  {
-    "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.68.0-nightly.20260624.f4cc850",
-    "date": "2026-06-24",
+    "description": "Nightly build 1.68.0-nightly.20260625.f4cc850",
+    "date": "2026-06-25",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -21,9 +12,18 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260624.9f5c914",
-    "date": "2026-06-24",
+    "description": "Nightly build 0.1.4-nightly.20260625.9f5c914",
+    "date": "2026-06-25",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.6.0 uitgebracht",
+    "description": "Open Planner Studio v2026.6.0",
+    "date": "2026-06-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0",
     "count": 1
   },
   {
