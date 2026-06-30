@@ -1,16 +1,105 @@
 {
   "repo": "Y-app",
-  "generated": "2026-06-24T22:37:53.124Z",
-  "totalReleases": 21,
-  "totalChanges": 53,
+  "generated": "2026-06-30T07:48:34.331Z",
+  "totalReleases": 29,
+  "totalChanges": 59,
   "latestStable": {
-    "tag": "v0.27.0",
-    "name": "Y-app v0.27.0",
-    "date": "2026-06-19",
-    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.27.0"
+    "tag": "v0.28.7",
+    "name": "Y-app v0.28.7",
+    "date": "2026-06-30",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.7"
   },
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "0.28",
+      "releases": [
+        {
+          "tag": "v0.28.7",
+          "name": "Y-app v0.28.7",
+          "date": "2026-06-30",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.7",
+          "changes": [],
+          "patchNum": 7
+        },
+        {
+          "tag": "v0.28.6",
+          "name": "Y-app v0.28.6",
+          "date": "2026-06-29",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.6",
+          "changes": [],
+          "patchNum": 6
+        },
+        {
+          "tag": "v0.28.5",
+          "name": "Y-app v0.28.5",
+          "date": "2026-06-29",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.5",
+          "changes": [
+            "**Desktop: e-mailaccounts beheren zoals op web** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts), [adapter/vault.ts](packages/desktop/src/adapter/vault.ts)): Settings → Email accounts werkt nu op de desktop — toevoegen / lijst / bewerken / verwijderen (`GET/POST/PUT/DELETE /api/instances/:id/mail-accounts`), opgeslagen in de **Stronghold-kluis** i.p.v. de server-`mail_accounts`-tabel (die een Y-app-account vereist die de desktop niet heeft). De mail-routes zijn account-aware (`?account=<id>`); zónder vault-account valt mail terug op de bestaande ERPNext-auto-resolve. Lost de \"Opslaan mislukt\"-fout op. Wachtwoorden staan versleuteld in de kluis en worden nooit door de GET-lijst teruggegeven.",
+            "**Factuur-verzendinstellingen syncen niet naar de desktop** ([index.ts](packages/server/src/index.ts), [commands.rs](packages/desktop/src-tauri/src/commands.rs)): de key `invoice-email-defaults` (sjabloon / To-CC-BCC-defaults, in `instance_settings`) zat niet in `DESKTOP_CONFIG_KEYS`, dus de centrale config-sync sloeg 'm over. Toegevoegd aan beide lijsten (server + Rust) → wordt nu meegesynct."
+          ],
+          "patchNum": 5
+        },
+        {
+          "tag": "v0.28.4",
+          "name": "Y-app v0.28.4",
+          "date": "2026-06-29",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.4",
+          "changes": [],
+          "patchNum": 4
+        },
+        {
+          "tag": "v0.28.3",
+          "name": "Y-app v0.28.3",
+          "date": "2026-06-29",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.3",
+          "changes": [
+            "**Desktop: mailconfig uit ERPNext + lokale kluis** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de desktop had geen pad om IMAP/SMTP-creds bij de mail-routes te krijgen — de Stronghold-kluis had de velden, maar niets vulde ze, en de mail-routes lazen een in-memory map die nergens werd gevuld → elke `/api/mail/*` gaf 400. Nieuw: vóór elke mail-route resolvet `ensureMailCredsPopulated` de creds in volgorde lokale kluis → ERPNext \"Email Account\" (alleen password-accounts; OAuth overgeslagen) en **persist** het resultaat in de kluis. Mail werkt nu automatisch — kluis ontgrendelen → Webmail open → creds uit ERPNext, daarna offline + na herstart uit de kluis, zonder handmatige IMAP-setup. Creds verlaten het apparaat nooit (geen Y-app-server betrokken).",
+            "**Desktop: offline body-cache pre-fill + mailbadge** ([mail.rs](packages/desktop/src-tauri/src/mail.rs), [lib.rs](packages/desktop/src-tauri/src/lib.rs), [adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): nieuwe `mail_get_bodies`-command + `GET /api/mail/bodies` (één gebatchte `BODY.PEEK[]` over read-only EXAMINE → markeert niets gelezen) zodat de \"30 dagen cachen\"-pre-fill nu óók op de desktop draait. Plus `GET /api/mail/unseen-summary` voor de sidebar-mailbadge. De body-, lijst- en bijlage-caches (IndexedDB) zijn daarmee op de desktop functioneel gelijk aan het web: recente mail opent direct en offline.",
+            "**Desktop: auto-config koos verkeerde auth voor password-accounts** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): `/api/mail/auto-config` ging de OAuth-tak in zodra de tenant één Microsoft Connected App had, óók voor een account met leeg `connected_app` (bv. `piet@3bm.co.nl` op plain IMAP) → `authMode:\"password\"` zónder bruikbaar wachtwoord → IMAP-login faalde. Nu gelijk aan de webserver (`mailAutoConfigInternal`): leeg `connected_app` = password-account; `smtpSecure` afgeleid uit `use_ssl_for_outgoing`/poort 465 i.p.v. hardcoded `false`.",
+            "**Web: NextCloud Talk werkt niet in een geïnstalleerde app (Edge \"app\"/PWA)** ([messenger.ts](packages/server/src/messenger.ts), [BackgroundSyncProvider.tsx](packages/frontend/src/lib/BackgroundSyncProvider.tsx), server [index.ts](packages/server/src/index.ts)): post-Wave-0a bereikten de NC-creds de server-cache uitsluitend via de `subscribe-messenger`-push over de `/ws/events`-WebSocket. Die WS komt in een geïnstalleerde PWA niet betrouwbaar op → de cache bleef leeg → elke `/api/messenger/*` gaf \"Missende NextCloud Talk credentials\", terwijl de creds wél geconfigureerd waren (in een gewone tab werkte het wél). Nieuw `POST /api/messenger/subscribe` (`messengerSubscribe` → `setNcSession`) waarmee de frontend de creds óók via geauthenticeerde HTTP in de cache zet — zelfde sessiecookie + instance-header als de datacalls, dus de cache landt onder de juiste sleutel, ongeacht of de WS opkomt. Creds in de POST-body (niet de URL) → access-logs blijven schoon (Wave 0a-intentie intact)."
+          ],
+          "patchNum": 3
+        },
+        {
+          "tag": "v0.28.2",
+          "name": "Y-app v0.28.2",
+          "date": "2026-06-28",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.2",
+          "changes": [],
+          "patchNum": 2
+        },
+        {
+          "tag": "v0.28.1",
+          "name": "Y-app v0.28.1",
+          "date": "2026-06-27",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.1",
+          "changes": [],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.28.0",
+          "name": "Y-app v0.28.0",
+          "date": "2026-06-27",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Desktop: e-mailaccounts beheren zoals op web** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts), [adapter/vault.ts](packages/desktop/src/adapter/vault.ts)): Settings → Email accounts werkt nu op de desktop — toevoegen / lijst / bewerken / verwijderen (`GET/POST/PUT/DELETE /api/instances/:id/mail-accounts`), opgeslagen in de **Stronghold-kluis** i.p.v. de server-`mail_accounts`-tabel (die een Y-app-account vereist die de desktop niet heeft). De mail-routes zijn account-aware (`?account=<id>`); zónder vault-account valt mail terug op de bestaande ERPNext-auto-resolve. Lost de \"Opslaan mislukt\"-fout op. Wachtwoorden staan versleuteld in de kluis en worden nooit door de GET-lijst teruggegeven.",
+        "**Factuur-verzendinstellingen syncen niet naar de desktop** ([index.ts](packages/server/src/index.ts), [commands.rs](packages/desktop/src-tauri/src/commands.rs)): de key `invoice-email-defaults` (sjabloon / To-CC-BCC-defaults, in `instance_settings`) zat niet in `DESKTOP_CONFIG_KEYS`, dus de centrale config-sync sloeg 'm over. Toegevoegd aan beide lijsten (server + Rust) → wordt nu meegesynct.",
+        "**Desktop: mailconfig uit ERPNext + lokale kluis** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de desktop had geen pad om IMAP/SMTP-creds bij de mail-routes te krijgen — de Stronghold-kluis had de velden, maar niets vulde ze, en de mail-routes lazen een in-memory map die nergens werd gevuld → elke `/api/mail/*` gaf 400. Nieuw: vóór elke mail-route resolvet `ensureMailCredsPopulated` de creds in volgorde lokale kluis → ERPNext \"Email Account\" (alleen password-accounts; OAuth overgeslagen) en **persist** het resultaat in de kluis. Mail werkt nu automatisch — kluis ontgrendelen → Webmail open → creds uit ERPNext, daarna offline + na herstart uit de kluis, zonder handmatige IMAP-setup. Creds verlaten het apparaat nooit (geen Y-app-server betrokken).",
+        "**Desktop: offline body-cache pre-fill + mailbadge** ([mail.rs](packages/desktop/src-tauri/src/mail.rs), [lib.rs](packages/desktop/src-tauri/src/lib.rs), [adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): nieuwe `mail_get_bodies`-command + `GET /api/mail/bodies` (één gebatchte `BODY.PEEK[]` over read-only EXAMINE → markeert niets gelezen) zodat de \"30 dagen cachen\"-pre-fill nu óók op de desktop draait. Plus `GET /api/mail/unseen-summary` voor de sidebar-mailbadge. De body-, lijst- en bijlage-caches (IndexedDB) zijn daarmee op de desktop functioneel gelijk aan het web: recente mail opent direct en offline.",
+        "**Desktop: auto-config koos verkeerde auth voor password-accounts** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): `/api/mail/auto-config` ging de OAuth-tak in zodra de tenant één Microsoft Connected App had, óók voor een account met leeg `connected_app` (bv. `piet@3bm.co.nl` op plain IMAP) → `authMode:\"password\"` zónder bruikbaar wachtwoord → IMAP-login faalde. Nu gelijk aan de webserver (`mailAutoConfigInternal`): leeg `connected_app` = password-account; `smtpSecure` afgeleid uit `use_ssl_for_outgoing`/poort 465 i.p.v. hardcoded `false`.",
+        "**Web: NextCloud Talk werkt niet in een geïnstalleerde app (Edge \"app\"/PWA)** ([messenger.ts](packages/server/src/messenger.ts), [BackgroundSyncProvider.tsx](packages/frontend/src/lib/BackgroundSyncProvider.tsx), server [index.ts](packages/server/src/index.ts)): post-Wave-0a bereikten de NC-creds de server-cache uitsluitend via de `subscribe-messenger`-push over de `/ws/events`-WebSocket. Die WS komt in een geïnstalleerde PWA niet betrouwbaar op → de cache bleef leeg → elke `/api/messenger/*` gaf \"Missende NextCloud Talk credentials\", terwijl de creds wél geconfigureerd waren (in een gewone tab werkte het wél). Nieuw `POST /api/messenger/subscribe` (`messengerSubscribe` → `setNcSession`) waarmee de frontend de creds óók via geauthenticeerde HTTP in de cache zet — zelfde sessiecookie + instance-header als de datacalls, dus de cache landt onder de juiste sleutel, ongeacht of de WS opkomt. Creds in de POST-body (niet de URL) → access-logs blijven schoon (Wave 0a-intentie intact)."
+      ],
+      "firstDate": "2026-06-27",
+      "lastDate": "2026-06-30",
+      "releaseCount": 8,
+      "changeCount": 6
+    },
     {
       "minorVersion": "0.27",
       "releases": [

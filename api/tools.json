@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-06-24T22:38:06.764Z",
+  "generated": "2026-06-30T07:48:48.579Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -16,12 +16,12 @@
   },
   "totalTools": 17,
   "totalStats": {
-    "publicRepos": 55,
-    "totalStars": 583,
-    "totalCommits": 5711,
+    "publicRepos": 54,
+    "totalStars": 617,
+    "totalCommits": 5532,
     "contributors": 40,
     "languages": 10,
-    "sourceDate": "2026-06-24T22:37:41.518Z"
+    "sourceDate": "2026-06-30T07:48:21.403Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -118,14 +118,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
         "commits": 469,
-        "stars": 338,
-        "forks": 31,
-        "openIssues": 67,
+        "stars": 343,
+        "forks": 32,
+        "openIssues": 68,
         "latestVersion": "v1.47.3",
         "latestReleaseDate": null,
         "releases": 51,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-06-24"
+        "updatedAt": "2026-06-29"
       }
     },
     {
@@ -347,15 +347,15 @@
       "liveDemo": "https://open-planner-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-planner-studio",
       "stats": {
-        "commits": 156,
-        "stars": 0,
+        "commits": 174,
+        "stars": 1,
         "forks": 0,
         "openIssues": 0,
-        "latestVersion": "v2026.6.0",
-        "latestReleaseDate": "2026-06-24",
-        "releases": 2,
+        "latestVersion": "v2026.6.1",
+        "latestReleaseDate": "2026-06-29",
+        "releases": 3,
         "createdAt": "2026-01-17",
-        "updatedAt": "2026-06-24"
+        "updatedAt": "2026-06-29"
       }
     },
     {
@@ -396,14 +396,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio",
       "stats": {
         "commits": 15,
-        "stars": 1,
+        "stars": 2,
         "forks": 0,
         "openIssues": 6,
         "latestVersion": "v0.3.0",
         "latestReleaseDate": "2026-03-03",
         "releases": 2,
         "createdAt": "2026-02-24",
-        "updatedAt": "2026-05-28"
+        "updatedAt": "2026-06-27"
       }
     },
     {
@@ -625,7 +625,7 @@
         "commits": 45,
         "stars": 1,
         "forks": 0,
-        "openIssues": 2,
+        "openIssues": 3,
         "latestVersion": "v1.0.1",
         "latestReleaseDate": "2026-02-23",
         "releases": 2,

@@ -1,6 +1,20 @@
 [
   {
     "type": "announcement",
+    "title": "Open CAD Studio v0.7.0 — 147 GitHub stars en 1.185 commits",
+    "description": "Het open-source CAD-community-project van Hakan Seven blijft hard groeien. Open CAD Studio staat nu op v0.7.0 met 147 GitHub stars, 1.185 commits over 60 releases en 8 contributors — daarmee de meest actieve repository in het ecosysteem. Native DWG/DXF, gebouwd in Rust met GPU-rendering, én direct in de browser te proberen. De OpenAEC Foundation promoot dit project actief.",
+    "date": "2026-06-30",
+    "url": "https://www.open-aec.com/open-cad-studio/"
+  },
+  {
+    "type": "announcement",
+    "title": "OpenAEC-ecosysteem voorbij 600 stars — 5.532 commits over 54 repo's",
+    "description": "Het open-source AEC-ecosysteem van de OpenAEC Foundation telt nu 617 GitHub stars, 5.532 commits en 199 releases verdeeld over 54 publieke repositories. Met productie-tools voor CAD, PDF, calculatie, planning, geotechniek, BIM en cloud groeit het soevereine, open alternatief voor gesloten bouwsoftware gestaag door — gedreven door open source én AI.",
+    "date": "2026-06-30",
+    "url": "https://www.open-aec.com/"
+  },
+  {
+    "type": "announcement",
     "title": "OpenAEC SuperCloud aangekondigd — soeverein cloud- & accountplatform",
     "description": "OpenAEC kondigt OpenAEC SuperCloud aan: het soevereine, alles-in-één cloud-, account- en SSO-platform van het ecosysteem. Eén identiteit en login voor alle OpenAEC-tools, met opslag, samenwerking en synchronisatie tussen tools — volledig zelf-gehost en open. Momenteel in ontwikkeling.",
     "date": "2026-06-18",

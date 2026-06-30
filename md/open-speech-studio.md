@@ -17,8 +17,8 @@
 - Forks: **0**
 - Open issues: **10**
 - Releases: **5**
-- Total downloads: **49**
-- Downloads by platform: Windows (32), Linux (deb) (9), Windows (MSI) (6), macOS (2)
+- Total downloads: **51**
+- Downloads by platform: Windows (33), Linux (deb) (10), Windows (MSI) (6), macOS (2)
 
 ## Key features
 
@@ -55,11 +55,11 @@ Hands-free site notes, dictation for inspection reports, confidential dictation 
 - [Windows · Open.Speech.Studio_0.10.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.0/Open.Speech.Studio_0.10.0_x64-setup.exe) (v0.10.0 — 679.2 MB)
 - [Linux (deb) · Open.Speech.Studio_0.10.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.0/Open.Speech.Studio_0.10.0_amd64.deb) (v0.10.0 — 850.2 MB)
 - [Windows (MSI) · Open.Speech.Studio_0.10.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.0/Open.Speech.Studio_0.10.0_x64_en-US.msi) (v0.10.0 — 844.6 MB)
-- [Windows · Open.Speech.Studio_0.8.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.8.0/Open.Speech.Studio_0.8.0_x64-setup.exe) (v0.8.0 — 678.4 MB)
 - [Windows · Open.Speech.Studio_0.5.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.5.0/Open.Speech.Studio_0.5.0_x64-setup.exe) (v0.5.0 — 417 MB)
+- [Windows · Open.Speech.Studio_0.8.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.8.0/Open.Speech.Studio_0.8.0_x64-setup.exe) (v0.8.0 — 678.4 MB)
 - [Windows · Open.Speech.Studio_0.10.1_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.1/Open.Speech.Studio_0.10.1_x64-setup.exe) (v0.10.1 — 680.8 MB)
 - [Linux (deb) · Open.Speech.Studio_0.8.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.8.0/Open.Speech.Studio_0.8.0_amd64.deb) (v0.8.0 — 850 MB)
-- [macOS · Open.Speech.Studio_0.10.0_aarch64.dmg](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.0/Open.Speech.Studio_0.10.0_aarch64.dmg) (v0.10.0 — 845.7 MB)
+- [Linux (deb) · Open.Speech.Studio_0.10.1_amd64.deb](https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.1/Open.Speech.Studio_0.10.1_amd64.deb) (v0.10.1 — 851.1 MB)
 
 ---
 

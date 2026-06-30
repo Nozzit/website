@@ -1,19 +1,10 @@
 [
   {
     "type": "release",
-    "repo": "open-planner-studio",
-    "title": "open-planner-studio v2026.6.0 uitgebracht",
-    "description": "Open Planner Studio v2026.6.0",
-    "date": "2026-06-24",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0",
-    "count": 1
-  },
-  {
-    "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.68.0-nightly.20260624.f4cc850",
-    "date": "2026-06-24",
+    "description": "Nightly build 1.68.0-nightly.20260630.f4cc850",
+    "date": "2026-06-30",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -21,9 +12,27 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260624.9f5c914",
-    "date": "2026-06-24",
+    "description": "Nightly build 0.1.4-nightly.20260630.9f5c914",
+    "date": "2026-06-30",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.6.1 uitgebracht",
+    "description": "Open Planner Studio v2026.6.1",
+    "date": "2026-06-29",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.1",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.6.0 uitgebracht",
+    "description": "Open Planner Studio v2026.6.0",
+    "date": "2026-06-24",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0",
     "count": 1
   },
   {
@@ -514,15 +523,6 @@
   },
   {
     "type": "release",
-    "repo": "Open-Agents",
-    "title": "Open-Agents v0.3.0 uitgebracht",
-    "description": "v0.3.0 — Sprint 17/21/22 + Agent Library 514",
-    "date": "2026-03-11",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Agents/releases/tag/v0.3.0",
-    "count": 1
-  },
-  {
-    "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio: 2 releases (v1.24.0 → v1.25.0)",
     "description": "Versies: v1.24.0, v1.25.0",
@@ -658,14 +658,6 @@
     "date": "2026-02-26",
     "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.2.0",
     "count": 1
-  },
-  {
-    "type": "new_repo",
-    "repo": "Open-Agents",
-    "title": "Nieuwe repository: Open-Agents",
-    "description": "Multi-agent orchestrator for Claude Code. Spawn, coordinate and monitor AI agents in parallel — no API key required.",
-    "date": "2026-02-26",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Agents"
   },
   {
     "type": "release",

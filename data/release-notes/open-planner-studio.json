@@ -1,19 +1,27 @@
 {
   "repo": "open-planner-studio",
-  "generated": "2026-06-24T22:37:46.372Z",
-  "totalReleases": 2,
+  "generated": "2026-06-30T07:48:26.741Z",
+  "totalReleases": 3,
   "totalChanges": 7,
   "latestStable": {
-    "tag": "v2026.6.0",
-    "name": "Open Planner Studio v2026.6.0",
-    "date": "2026-06-24",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.0"
+    "tag": "v2026.6.1",
+    "name": "Open Planner Studio v2026.6.1",
+    "date": "2026-06-29",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.1"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "2026.6",
       "releases": [
+        {
+          "tag": "v2026.6.1",
+          "name": "Open Planner Studio v2026.6.1",
+          "date": "2026-06-29",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.6.1",
+          "changes": [],
+          "patchNum": 1
+        },
         {
           "tag": "v2026.6.0",
           "name": "Open Planner Studio v2026.6.0",
@@ -41,8 +49,8 @@
         "Store opgesplitst in slices, diverse performance-verbeteringen, en een scheduler-fix (kritiek pad klopt nu, geen spook-float meer)."
       ],
       "firstDate": "2026-06-24",
-      "lastDate": "2026-06-24",
-      "releaseCount": 1,
+      "lastDate": "2026-06-29",
+      "releaseCount": 2,
       "changeCount": 7
     },
     {
