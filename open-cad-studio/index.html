@@ -162,7 +162,7 @@
     <p data-i18n="header.desc">Een volwaardige <strong style="color: white;">2D + 3D CAD-applicatie</strong> gebouwd in Rust met GPU-versnelde rendering. Native <strong style="color: white;">DWG &amp; DXF</strong> lezen en schrijven, paper space, ACIS solids, dimensies, layouts. Een open source community-project van Hakan Seven dat de OpenAEC Foundation erkent en promoot.</p>
     <div>
       <span class="status-badge" data-i18n="header.community">Community-project</span>
-      <span class="status-badge beta" data-i18n="header.beta">Beta · v0.7.0</span>
+      <span class="status-badge beta" data-i18n="header.beta" data-ocs-ver>Beta · v0.7.0</span>
     </div>
     <div class="version-info">Rust · iced · wgpu · GPL-3.0 · 1185 commits · 60 releases · 147 stars</div>
     <div style="margin-top: var(--sp-4);">
@@ -356,28 +356,28 @@
       </div>
 
       <div class="content-block">
-        <h2 data-i18n="download.title">Download <span class="accent">v0.7.0</span></h2>
+        <h2 data-i18n="download.title" data-ocs-ver>Download <span class="accent">v0.7.0</span></h2>
         <p data-i18n="download.desc">Vrijgegeven in juni 2026. Drie native binaries — Windows, macOS (Apple Silicon) en Linux (AppImage). Kies de juiste voor je platform en je bent in seconden aan de slag.</p>
         <div class="download-section">
           <div class="download-grid">
             <div class="download-item">
               <div class="os">Windows (x64)</div>
-              <div class="size">29 MB</div>
-              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/download/v0.7.0/OpenCADStudio-v0.7.0-windows-x86_64-portable.exe" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download .exe</a>
+              <div class="size">~30 MB</div>
+              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/latest" data-ocs-dl="windows" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download .exe</a>
             </div>
             <div class="download-item">
               <div class="os">macOS (Apple Silicon)</div>
-              <div class="size">13 MB</div>
-              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/download/v0.7.0/OpenCADStudio-v0.7.0-macos-arm64.dmg" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download .dmg</a>
+              <div class="size">~13 MB</div>
+              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/latest" data-ocs-dl="macos" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download .dmg</a>
             </div>
             <div class="download-item">
               <div class="os">Linux (AppImage)</div>
-              <div class="size">15 MB</div>
-              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/download/v0.7.0/OpenCADStudio-v0.7.0-linux-x86_64.AppImage" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download AppImage</a>
+              <div class="size">~15 MB</div>
+              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/latest" data-ocs-dl="linux" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download AppImage</a>
             </div>
           </div>
         </div>
-        <p style="font-size:0.85rem;color:var(--scaffold-gray);margin-top:var(--sp-3);" data-i18n="download.note">Build van bron of een eerdere versie nodig? Zie <a href="https://github.com/HakanSeven12/OpenCADStudio/releases" target="_blank" rel="noopener" style="color:var(--amber);">alle releases op GitHub</a> (60 releases tot nu toe).</p>
+        <p style="font-size:0.85rem;color:var(--scaffold-gray);margin-top:var(--sp-3);" data-i18n="download.note" data-ocs-rel>Build van bron of een eerdere versie nodig? Zie <a href="https://github.com/HakanSeven12/OpenCADStudio/releases" target="_blank" rel="noopener" style="color:var(--amber);">alle releases op GitHub</a> (60 releases tot nu toe).</p>
       </div>
 
       <div class="content-block">
@@ -435,5 +435,84 @@
     })();
   </script>
   <script src="/shared/i18n.js?v=20260603"></script>
+  <!-- Always-latest downloads + live version / releases / stars for Open CAD Studio
+       (external community repo HakanSeven12/OpenCADStudio). Progressive enhancement:
+       without JS the buttons already point at the /releases/latest page. -->
+  <script>
+    (function () {
+      var REPO = 'HakanSeven12/OpenCADStudio';
+      var LATEST = 'https://github.com/' + REPO + '/releases/latest';
+      var state = { tag: null, releases: null };
+
+      // Re-apply version + release-count into the i18n-managed labels. Runs on
+      // load and again whenever i18n rewrites them (language switch) via the
+      // observer below. Guarded so it never loops on its own mutation.
+      function patch() {
+        if (state.tag) {
+          document.querySelectorAll('[data-ocs-ver]').forEach(function (el) {
+            var want = el.innerHTML.replace(/v\d+\.\d+\.\d+/g, state.tag);
+            if (el.innerHTML !== want) el.innerHTML = want;
+          });
+        }
+        if (state.releases) {
+          document.querySelectorAll('[data-ocs-rel]').forEach(function (el) {
+            var want = el.innerHTML.replace(/(\d+)(\s+(?:releases|versions|versies|sürüm))/i, state.releases + '$2');
+            if (el.innerHTML !== want) el.innerHTML = want;
+          });
+        }
+      }
+
+      function setDownloads(assets) {
+        var match = {
+          windows: /windows.*portable.*\.exe$/i,
+          macos: /macos.*\.dmg$/i,
+          linux: /linux.*\.AppImage$/i
+        };
+        document.querySelectorAll('[data-ocs-dl]').forEach(function (a) {
+          var re = match[a.getAttribute('data-ocs-dl')];
+          var hit = re && assets.filter(function (x) { return re.test(x.name); })[0];
+          a.href = hit ? hit.browser_download_url : LATEST;
+        });
+      }
+
+      function start() {
+        try {
+          var obs = new MutationObserver(patch);
+          document.querySelectorAll('[data-ocs-ver],[data-ocs-rel]').forEach(function (el) {
+            obs.observe(el, { childList: true, subtree: true, characterData: true });
+          });
+        } catch (e) {}
+
+        fetch('https://api.github.com/repos/' + REPO + '/releases/latest')
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (rel) {
+            if (!rel) return;
+            state.tag = rel.tag_name;
+            if (rel.assets && rel.assets.length) setDownloads(rel.assets);
+            patch();
+          }).catch(function () {});
+
+        fetch('https://api.github.com/repos/' + REPO)
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (repo) {
+            if (repo && typeof repo.stargazers_count === 'number') {
+              document.querySelectorAll('[data-ocs-stars]').forEach(function (el) {
+                el.textContent = repo.stargazers_count;
+              });
+            }
+          }).catch(function () {});
+
+        fetch('https://api.github.com/repos/' + REPO + '/releases?per_page=1')
+          .then(function (r) {
+            var link = r.headers.get('Link') || '';
+            var m = link.match(/[?&]page=(\d+)>;\s*rel="last"/);
+            if (m) { state.releases = m[1]; patch(); }
+          }).catch(function () {});
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+      else start();
+    })();
+  </script>
 </body>
 </html>
