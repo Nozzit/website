@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-06-30T07:48:48.579Z",
+  "generated": "2026-07-01T07:26:07.015Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -17,11 +17,11 @@
   "totalTools": 17,
   "totalStats": {
     "publicRepos": 54,
-    "totalStars": 617,
-    "totalCommits": 5532,
+    "totalStars": 621,
+    "totalCommits": 5552,
     "contributors": 40,
     "languages": 10,
-    "sourceDate": "2026-06-30T07:48:21.403Z"
+    "sourceDate": "2026-07-01T07:25:47.002Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -117,15 +117,15 @@
       "liveDemo": "https://open-pdf-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
-        "commits": 469,
+        "commits": 471,
         "stars": 343,
         "forks": 32,
-        "openIssues": 68,
-        "latestVersion": "v1.47.3",
-        "latestReleaseDate": null,
-        "releases": 51,
+        "openIssues": 61,
+        "latestVersion": "nightly",
+        "latestReleaseDate": "2026-07-01",
+        "releases": 50,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-06-29"
+        "updatedAt": "2026-06-30"
       }
     },
     {
@@ -222,9 +222,9 @@
         "stars": 3,
         "forks": 0,
         "openIssues": 1,
-        "latestVersion": "v0.8.0",
-        "latestReleaseDate": null,
-        "releases": 15,
+        "latestVersion": "v0.8.2",
+        "latestReleaseDate": "2026-06-12",
+        "releases": 14,
         "createdAt": "2026-05-02",
         "updatedAt": "2026-06-02"
       }
@@ -350,7 +350,7 @@
         "commits": 174,
         "stars": 1,
         "forks": 0,
-        "openIssues": 0,
+        "openIssues": 1,
         "latestVersion": "v2026.6.1",
         "latestReleaseDate": "2026-06-29",
         "releases": 3,
@@ -444,9 +444,9 @@
         "stars": 3,
         "forks": 0,
         "openIssues": 0,
-        "latestVersion": "v0.1.0",
-        "latestReleaseDate": null,
-        "releases": 3,
+        "latestVersion": "v0.2.0",
+        "latestReleaseDate": "2026-04-08",
+        "releases": 2,
         "createdAt": "2026-04-01",
         "updatedAt": "2026-06-16"
       }
@@ -579,9 +579,9 @@
         "stars": 2,
         "forks": 0,
         "openIssues": 10,
-        "latestVersion": "v0.9.0",
-        "latestReleaseDate": null,
-        "releases": 5,
+        "latestVersion": "v0.10.1",
+        "latestReleaseDate": "2026-06-17",
+        "releases": 4,
         "createdAt": "2026-03-09",
         "updatedAt": "2026-06-24"
       }
