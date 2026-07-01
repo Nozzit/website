@@ -361,9 +361,14 @@
         <div class="download-section">
           <div class="download-grid">
             <div class="download-item">
-              <div class="os">Windows (x64)</div>
+              <div class="os">Windows (portable)</div>
               <div class="size">~30 MB</div>
               <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/latest" data-ocs-dl="windows" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download .exe</a>
+            </div>
+            <div class="download-item">
+              <div class="os">Windows (installer)</div>
+              <div class="size">~30 MB</div>
+              <a href="https://github.com/HakanSeven12/OpenCADStudio/releases/latest" data-ocs-dl="windows-msi" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Download .msi</a>
             </div>
             <div class="download-item">
               <div class="os">macOS (Apple Silicon)</div>
@@ -465,6 +470,7 @@
       function setDownloads(assets) {
         var match = {
           windows: /windows.*portable.*\.exe$/i,
+          'windows-msi': /windows.*installer.*\.msi$/i,
           macos: /macos.*\.dmg$/i,
           linux: /linux.*\.AppImage$/i
         };
