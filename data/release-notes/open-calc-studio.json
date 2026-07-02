@@ -1,19 +1,31 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-06-30T07:48:25.349Z",
-  "totalReleases": 14,
-  "totalChanges": 127,
+  "generated": "2026-07-02T07:04:36.469Z",
+  "totalReleases": 15,
+  "totalChanges": 130,
   "latestStable": {
-    "tag": "v0.8.2",
-    "name": "Open Calc Studio v0.8.2",
-    "date": "2026-06-12",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.2"
+    "tag": "v0.8.5",
+    "name": "Open Calc Studio v0.8.5",
+    "date": "2026-07-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.5"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "0.8",
       "releases": [
+        {
+          "tag": "v0.8.5",
+          "name": "Open Calc Studio v0.8.5",
+          "date": "2026-07-01",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.5",
+          "changes": [
+            "**Veel meer importformaten** — `.cuf`, `.dnc`, `.xtb` (met detailregels), `.rsx`, `.s01` (STABU-bestek) en `.ifcx`",
+            "**Wit scherm op Windows opgelost** — WebView valt terug op software-rendering, zodat het venster niet leeg blijft",
+            "**Importmotor schoon herbouwd** — één gedeelde kern; ingelezen totalen komen exact overeen met het bronbestand"
+          ],
+          "patchNum": 5
+        },
         {
           "tag": "v0.8.2",
           "name": "Open Calc Studio v0.8.2",
@@ -31,11 +43,15 @@
           "patchNum": 1
         }
       ],
-      "allChanges": [],
+      "allChanges": [
+        "**Veel meer importformaten** — `.cuf`, `.dnc`, `.xtb` (met detailregels), `.rsx`, `.s01` (STABU-bestek) en `.ifcx`",
+        "**Wit scherm op Windows opgelost** — WebView valt terug op software-rendering, zodat het venster niet leeg blijft",
+        "**Importmotor schoon herbouwd** — één gedeelde kern; ingelezen totalen komen exact overeen met het bronbestand"
+      ],
       "firstDate": "2026-06-12",
-      "lastDate": "2026-06-12",
-      "releaseCount": 2,
-      "changeCount": 0
+      "lastDate": "2026-07-01",
+      "releaseCount": 3,
+      "changeCount": 3
     },
     {
       "minorVersion": "0.7",

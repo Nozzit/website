@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-30T07:48:48.270Z",
+  "generated": "2026-07-02T07:04:52.519Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-06-30",
-  "snapshotCount": 11,
+  "lastSnapshot": "2026-07-02",
+  "snapshotCount": 12,
   "weekCount": 7,
   "weeklyDeltas": [
     {
@@ -92,40 +92,37 @@
       "weekEnd": "2026-06-29",
       "weekStart": "2026-06-22",
       "perRepo": {
-        "open-pdf-studio": 389,
-        "open-2d-studio": 46,
-        "open-calc-studio": 1,
-        "open-planner-studio": 31,
-        "open-pointcloud-studio": 5,
-        "open-speech-studio": 2,
+        "open-pdf-studio": 578,
+        "open-2d-studio": 62,
+        "open-calc-studio": 3,
+        "open-planner-studio": 40,
+        "open-pointcloud-studio": 6,
+        "open-speech-studio": 4,
         "open-frame-studio": 4,
-        "open-geotechniek-studio": 2,
-        "Open-Calculations-Studio": 2,
-        "monty-ifc-viewer": 7,
-        "Y-app": 7
+        "open-geotechniek-studio": 4,
+        "Open-Calculations-Studio": 4,
+        "monty-ifc-viewer": 7
       },
-      "total": 496
+      "total": 712
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 3117,
-    "open-2d-studio": 324,
-    "open-calc-studio": 63,
-    "open-energy-studio": 0,
-    "open-planner-studio": 34,
-    "open-pointcloud-studio": 37,
+    "open-pdf-studio": 3306,
+    "open-2d-studio": 340,
+    "open-calc-studio": 65,
+    "open-planner-studio": 43,
+    "open-pointcloud-studio": 38,
     "open-heatloss-studio": 9,
-    "open-speech-studio": 15,
+    "open-speech-studio": 17,
     "Open-Field-Studio": 9,
     "open-frame-studio": 17,
-    "open-geotechniek-studio": 49,
-    "Open-Calculations-Studio": 48,
+    "open-geotechniek-studio": 51,
+    "Open-Calculations-Studio": 50,
     "monty-ifc-viewer": 48,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
-    "openaec-cloud": 0,
-    "Y-app": 7
+    "openaec-cloud": 0
   },
-  "totalDownloadsAdded": 3777
+  "totalDownloadsAdded": 3993
 }
