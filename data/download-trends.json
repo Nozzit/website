@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-30T07:48:48.270Z",
+  "generated": "2026-07-03T07:02:44.247Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-06-30",
-  "snapshotCount": 11,
+  "lastSnapshot": "2026-07-03",
+  "snapshotCount": 12,
   "weekCount": 7,
   "weeklyDeltas": [
     {
@@ -92,40 +92,38 @@
       "weekEnd": "2026-06-29",
       "weekStart": "2026-06-22",
       "perRepo": {
-        "open-pdf-studio": 389,
-        "open-2d-studio": 46,
-        "open-calc-studio": 1,
-        "open-planner-studio": 31,
-        "open-pointcloud-studio": 5,
-        "open-speech-studio": 2,
-        "open-frame-studio": 4,
-        "open-geotechniek-studio": 2,
-        "Open-Calculations-Studio": 2,
-        "monty-ifc-viewer": 7,
-        "Y-app": 7
+        "open-pdf-studio": 670,
+        "open-2d-studio": 78,
+        "open-calc-studio": 9,
+        "open-planner-studio": 67,
+        "open-pointcloud-studio": 12,
+        "open-speech-studio": 5,
+        "Open-Field-Studio": 1,
+        "open-frame-studio": 5,
+        "open-geotechniek-studio": 4,
+        "Open-Calculations-Studio": 6,
+        "monty-ifc-viewer": 7
       },
-      "total": 496
+      "total": 864
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 3117,
-    "open-2d-studio": 324,
-    "open-calc-studio": 63,
-    "open-energy-studio": 0,
-    "open-planner-studio": 34,
-    "open-pointcloud-studio": 37,
+    "open-pdf-studio": 3398,
+    "open-2d-studio": 356,
+    "open-calc-studio": 71,
+    "open-planner-studio": 70,
+    "open-pointcloud-studio": 44,
     "open-heatloss-studio": 9,
-    "open-speech-studio": 15,
-    "Open-Field-Studio": 9,
-    "open-frame-studio": 17,
-    "open-geotechniek-studio": 49,
-    "Open-Calculations-Studio": 48,
+    "open-speech-studio": 18,
+    "Open-Field-Studio": 10,
+    "open-frame-studio": 18,
+    "open-geotechniek-studio": 51,
+    "Open-Calculations-Studio": 52,
     "monty-ifc-viewer": 48,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
-    "openaec-cloud": 0,
-    "Y-app": 7
+    "openaec-cloud": 0
   },
-  "totalDownloadsAdded": 3777
+  "totalDownloadsAdded": 4145
 }

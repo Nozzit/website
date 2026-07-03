@@ -1,19 +1,42 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-06-30T07:48:25.349Z",
-  "totalReleases": 14,
-  "totalChanges": 127,
+  "generated": "2026-07-03T07:02:31.488Z",
+  "totalReleases": 16,
+  "totalChanges": 132,
   "latestStable": {
-    "tag": "v0.8.2",
-    "name": "Open Calc Studio v0.8.2",
-    "date": "2026-06-12",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.2"
+    "tag": "v0.8.6",
+    "name": "Open Calc Studio v0.8.6",
+    "date": "2026-07-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.6"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "0.8",
       "releases": [
+        {
+          "tag": "v0.8.6",
+          "name": "Open Calc Studio v0.8.6",
+          "date": "2026-07-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.6",
+          "changes": [
+            "**Rapport-samenvatting: juiste staartkosten** — \"Algemene bedrijfskosten\" kon op 0% / € 0 staan en door de gebruiker aangepaste opslag-percentages werden genegeerd. De samenvatting leest de percentages en bedragen nu rechtstreeks uit de staart-regels, dus ze komen altijd overeen met de begroting.",
+            "**Interne opschoning** van het staartkosten-model; alle rapporten rekenen met dezelfde bron van waarheid."
+          ],
+          "patchNum": 6
+        },
+        {
+          "tag": "v0.8.5",
+          "name": "Open Calc Studio v0.8.5",
+          "date": "2026-07-01",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.5",
+          "changes": [
+            "**Veel meer importformaten** — `.cuf`, `.dnc`, `.xtb` (met detailregels), `.rsx`, `.s01` (STABU-bestek) en `.ifcx`",
+            "**Wit scherm op Windows opgelost** — WebView valt terug op software-rendering, zodat het venster niet leeg blijft",
+            "**Importmotor schoon herbouwd** — één gedeelde kern; ingelezen totalen komen exact overeen met het bronbestand"
+          ],
+          "patchNum": 5
+        },
         {
           "tag": "v0.8.2",
           "name": "Open Calc Studio v0.8.2",
@@ -31,11 +54,17 @@
           "patchNum": 1
         }
       ],
-      "allChanges": [],
+      "allChanges": [
+        "**Rapport-samenvatting: juiste staartkosten** — \"Algemene bedrijfskosten\" kon op 0% / € 0 staan en door de gebruiker aangepaste opslag-percentages werden genegeerd. De samenvatting leest de percentages en bedragen nu rechtstreeks uit de staart-regels, dus ze komen altijd overeen met de begroting.",
+        "**Interne opschoning** van het staartkosten-model; alle rapporten rekenen met dezelfde bron van waarheid.",
+        "**Veel meer importformaten** — `.cuf`, `.dnc`, `.xtb` (met detailregels), `.rsx`, `.s01` (STABU-bestek) en `.ifcx`",
+        "**Wit scherm op Windows opgelost** — WebView valt terug op software-rendering, zodat het venster niet leeg blijft",
+        "**Importmotor schoon herbouwd** — één gedeelde kern; ingelezen totalen komen exact overeen met het bronbestand"
+      ],
       "firstDate": "2026-06-12",
-      "lastDate": "2026-06-12",
-      "releaseCount": 2,
-      "changeCount": 0
+      "lastDate": "2026-07-02",
+      "releaseCount": 4,
+      "changeCount": 5
     },
     {
       "minorVersion": "0.7",
