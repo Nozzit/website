@@ -1,0 +1,5329 @@
+{
+  "date": "2026-07-05",
+  "generated": "2026-07-05T07:04:02.452Z",
+  "grandTotal": 9597,
+  "perRepo": {
+    "open-pdf-studio": 8004,
+    "open-2d-studio": 954,
+    "open-calc-studio": 150,
+    "open-planner-studio": 114,
+    "open-pointcloud-studio": 70,
+    "open-heatloss-studio": 17,
+    "open-speech-studio": 55,
+    "Open-Field-Studio": 28,
+    "open-frame-studio": 29,
+    "open-geotechniek-studio": 53,
+    "Open-Calculations-Studio": 54,
+    "monty-ifc-viewer": 69,
+    "OpenAEC-BIM-validator": 0,
+    "openaec-bcf-platform": 0,
+    "openaec-docs": 0,
+    "openaec-cloud": 0
+  },
+  "perAsset": {
+    "344297816": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "344297820": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "344297938": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "344298744": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "344298748": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "344303147": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "344303150": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "344334118": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.2",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "344334121": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.2",
+      "platform": "Windows",
+      "downloads": 5
+    },
+    "344340069": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.1",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "344340070": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.1",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "344340073": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.1",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "344341244": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.1",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "344341251": {
+      "repo": "open-2d-studio",
+      "tag": "v0.1.1",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "346150440": {
+      "repo": "open-2d-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "346150452": {
+      "repo": "open-2d-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (rpm)",
+      "downloads": 7
+    },
+    "346150454": {
+      "repo": "open-2d-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "346151036": {
+      "repo": "open-2d-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows (MSI)",
+      "downloads": 5
+    },
+    "346151039": {
+      "repo": "open-2d-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "346151177": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "346151178": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "347181238": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3-tauri",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "347181247": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3-tauri",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "347181253": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3-tauri",
+      "platform": "Linux (AppImage)",
+      "downloads": 4
+    },
+    "347181823": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3-tauri",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "347181829": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.0.3-tauri",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "347207119": {
+      "repo": "open-2d-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "347207129": {
+      "repo": "open-2d-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "347207136": {
+      "repo": "open-2d-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "347207819": {
+      "repo": "open-2d-studio",
+      "tag": "v0.3.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "347207828": {
+      "repo": "open-2d-studio",
+      "tag": "v0.3.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "348244241": {
+      "repo": "open-2d-studio",
+      "tag": "v0.4.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "348244246": {
+      "repo": "open-2d-studio",
+      "tag": "v0.4.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "348244254": {
+      "repo": "open-2d-studio",
+      "tag": "v0.4.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "348245561": {
+      "repo": "open-2d-studio",
+      "tag": "v0.4.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "348245565": {
+      "repo": "open-2d-studio",
+      "tag": "v0.4.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "348297260": {
+      "repo": "open-2d-studio",
+      "tag": "v0.5.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "348297267": {
+      "repo": "open-2d-studio",
+      "tag": "v0.5.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "348297273": {
+      "repo": "open-2d-studio",
+      "tag": "v0.5.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 4
+    },
+    "348298046": {
+      "repo": "open-2d-studio",
+      "tag": "v0.5.0",
+      "platform": "Windows (MSI)",
+      "downloads": 4
+    },
+    "348298051": {
+      "repo": "open-2d-studio",
+      "tag": "v0.5.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "348353472": {
+      "repo": "open-2d-studio",
+      "tag": "v0.6.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "348353480": {
+      "repo": "open-2d-studio",
+      "tag": "v0.6.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "348353489": {
+      "repo": "open-2d-studio",
+      "tag": "v0.6.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "348354840": {
+      "repo": "open-2d-studio",
+      "tag": "v0.6.0",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "348354843": {
+      "repo": "open-2d-studio",
+      "tag": "v0.6.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "349094344": {
+      "repo": "open-2d-studio",
+      "tag": "v0.7.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "349094348": {
+      "repo": "open-2d-studio",
+      "tag": "v0.7.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "349094350": {
+      "repo": "open-2d-studio",
+      "tag": "v0.7.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "349094677": {
+      "repo": "open-2d-studio",
+      "tag": "v0.7.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "349094685": {
+      "repo": "open-2d-studio",
+      "tag": "v0.7.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "349641454": {
+      "repo": "open-2d-studio",
+      "tag": "v0.8.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "349641458": {
+      "repo": "open-2d-studio",
+      "tag": "v0.8.0",
+      "platform": "Linux (rpm)",
+      "downloads": 3
+    },
+    "349641465": {
+      "repo": "open-2d-studio",
+      "tag": "v0.8.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "349642098": {
+      "repo": "open-2d-studio",
+      "tag": "v0.8.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "349642100": {
+      "repo": "open-2d-studio",
+      "tag": "v0.8.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "350105536": {
+      "repo": "open-2d-studio",
+      "tag": "v0.9.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "350105539": {
+      "repo": "open-2d-studio",
+      "tag": "v0.9.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "350105541": {
+      "repo": "open-2d-studio",
+      "tag": "v0.9.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "350106138": {
+      "repo": "open-2d-studio",
+      "tag": "v0.9.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "350106145": {
+      "repo": "open-2d-studio",
+      "tag": "v0.9.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "351209873": {
+      "repo": "open-2d-studio",
+      "tag": "v0.11.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "351209886": {
+      "repo": "open-2d-studio",
+      "tag": "v0.11.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "351209903": {
+      "repo": "open-2d-studio",
+      "tag": "v0.11.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "351210661": {
+      "repo": "open-2d-studio",
+      "tag": "v0.11.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "351210664": {
+      "repo": "open-2d-studio",
+      "tag": "v0.11.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "351740109": {
+      "repo": "open-2d-studio",
+      "tag": "v0.13.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "351740123": {
+      "repo": "open-2d-studio",
+      "tag": "v0.13.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "351740133": {
+      "repo": "open-2d-studio",
+      "tag": "v0.13.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "351741439": {
+      "repo": "open-2d-studio",
+      "tag": "v0.13.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "351741445": {
+      "repo": "open-2d-studio",
+      "tag": "v0.13.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "351837164": {
+      "repo": "open-2d-studio",
+      "tag": "v0.15.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "351837170": {
+      "repo": "open-2d-studio",
+      "tag": "v0.15.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "351837173": {
+      "repo": "open-2d-studio",
+      "tag": "v0.15.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "351838182": {
+      "repo": "open-2d-studio",
+      "tag": "v0.15.0",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "351838189": {
+      "repo": "open-2d-studio",
+      "tag": "v0.15.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "353115500": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.2.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "353115506": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.2.0",
+      "platform": "Linux (rpm)",
+      "downloads": 6
+    },
+    "353115512": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.2.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "353115668": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.2.0",
+      "platform": "Windows (MSI)",
+      "downloads": 4
+    },
+    "353115673": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.2.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "353187224": {
+      "repo": "open-2d-studio",
+      "tag": "v0.17.0",
+      "platform": "Linux (rpm)",
+      "downloads": 6
+    },
+    "353187225": {
+      "repo": "open-2d-studio",
+      "tag": "v0.17.0",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "353187226": {
+      "repo": "open-2d-studio",
+      "tag": "v0.17.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "353187227": {
+      "repo": "open-2d-studio",
+      "tag": "v0.17.0",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "353187228": {
+      "repo": "open-2d-studio",
+      "tag": "v0.17.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "353578058": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.3.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "353578070": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.3.0",
+      "platform": "Linux (rpm)",
+      "downloads": 7
+    },
+    "353578079": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.3.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "353578998": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.3.0",
+      "platform": "Windows (MSI)",
+      "downloads": 5
+    },
+    "353579003": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.3.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "353622346": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.4.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "353622352": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.4.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "353622364": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.4.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "353622613": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.4.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "353622618": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.4.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "354281844": {
+      "repo": "open-2d-studio",
+      "tag": "v0.19.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "354281845": {
+      "repo": "open-2d-studio",
+      "tag": "v0.19.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "354281846": {
+      "repo": "open-2d-studio",
+      "tag": "v0.19.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "354281847": {
+      "repo": "open-2d-studio",
+      "tag": "v0.19.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "354281848": {
+      "repo": "open-2d-studio",
+      "tag": "v0.19.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "354287802": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.5.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "354287818": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.5.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "354287826": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.5.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "354289291": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.5.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "354289295": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.5.0",
+      "platform": "Windows",
+      "downloads": 9
+    },
+    "354922148": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "354922159": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Linux (rpm)",
+      "downloads": 4
+    },
+    "354922174": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "354922204": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "354923661": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Windows (MSI)",
+      "downloads": 4
+    },
+    "354923677": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "354923714": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "354923724": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354923734": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354923749": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.6.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354929545": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "354929572": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "354929588": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "354929609": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "354930166": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "354930172": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "354930180": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354930182": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354930184": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354930185": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354938732": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "354938738": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "354938745": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "354938767": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "354939554": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "354939562": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "354939566": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "354939569": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354939574": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354939583": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.8.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "354946402": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "354946415": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Linux (rpm)",
+      "downloads": 7
+    },
+    "354946427": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "354946442": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "354946975": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Windows (MSI)",
+      "downloads": 4
+    },
+    "354946985": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Archive",
+      "downloads": 4
+    },
+    "354946993": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "354946997": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "354947000": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Windows",
+      "downloads": 8
+    },
+    "354947005": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.9.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "354985445": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "354985454": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "354985460": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "354985471": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "354986204": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "354986216": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "354986222": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "354986227": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "354986231": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "354986235": {
+      "repo": "open-2d-studio",
+      "tag": "v0.20.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "355594225": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "355594238": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "355594303": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "355594344": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "355595399": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Windows (MSI)",
+      "downloads": 5
+    },
+    "355595443": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "355595451": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "355595456": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "355595458": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "355595460": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.10.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "355860900": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Linux (deb)",
+      "downloads": 5
+    },
+    "355860902": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Linux (rpm)",
+      "downloads": 5
+    },
+    "355860905": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "355860915": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Archive",
+      "downloads": 3
+    },
+    "355861676": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Windows (MSI)",
+      "downloads": 6
+    },
+    "355861680": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Archive",
+      "downloads": 5
+    },
+    "355861684": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Windows",
+      "downloads": 10
+    },
+    "355861686": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "355861697": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "355861702": {
+      "repo": "open-2d-studio",
+      "tag": "v0.22.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "357200746": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Linux (deb)",
+      "downloads": 5
+    },
+    "357200757": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "357200783": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "357200811": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "macOS",
+      "downloads": 5
+    },
+    "357201293": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "357201299": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "357201305": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "357201310": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "357220871": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.12.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "357446266": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "357446517": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "357446527": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "357446531": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "357446545": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "357446612": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "357446623": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "357446648": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.13.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "358683128": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "358683140": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "358683153": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "358684790": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "358684793": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "358684806": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "358684911": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "358685031": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Windows",
+      "downloads": 9
+    },
+    "358691545": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.15.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "358712661": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "358712665": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "358712671": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "358712764": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "358714260": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "358714268": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "358714286": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "358714293": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "358714299": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "358714469": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "360787336": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "360787341": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "360788691": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "360788699": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "360789680": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "360789691": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "360789695": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "360802340": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "macOS",
+      "downloads": 5
+    },
+    "360802343": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "360803241": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "Linux (deb)",
+      "downloads": 6
+    },
+    "360803250": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "360803254": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "Linux (AppImage)",
+      "downloads": 8
+    },
+    "360804561": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "Windows",
+      "downloads": 44
+    },
+    "360804602": {
+      "repo": "monty-ifc-viewer",
+      "tag": "v1.0.1",
+      "platform": "Windows (MSI)",
+      "downloads": 6
+    },
+    "360821778": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.2.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "360821780": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.2.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "360821784": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.2.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "360822232": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.2.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "360823866": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.2.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "361362862": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "361363475": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "361363496": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361363515": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361363527": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "macOS",
+      "downloads": 4
+    },
+    "361363530": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361369016": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "361369044": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "361369083": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.16.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "361428415": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "361428434": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "361428443": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "361428510": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "361429560": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "361429571": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "361429593": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "361429594": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "361429599": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "361429626": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "361429645": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "361429990": {
+      "repo": "open-2d-studio",
+      "tag": "v0.27.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "361476154": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "361476174": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "361476219": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "361476287": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "361476651": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "361477716": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "361477732": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361477742": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361477762": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361486203": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.17.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "361560501": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "361560518": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "361560529": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "361561433": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "361561437": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "361561446": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361561450": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361561457": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "361562671": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "macOS",
+      "downloads": 7
+    },
+    "361571406": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.18.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "362300126": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "362300142": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "362301715": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "362301719": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "362301730": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "362301738": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "362301763": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "362301784": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "362302368": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "362302403": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "362302409": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "362302424": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "362312789": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Windows",
+      "downloads": 44
+    },
+    "362312800": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "362312817": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "362312825": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "362313253": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Linux (deb)",
+      "downloads": 10
+    },
+    "362313266": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 9
+    },
+    "362313274": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "362313279": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Android",
+      "downloads": 4
+    },
+    "362313519": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "macOS",
+      "downloads": 11
+    },
+    "362314499": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.20.0",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "362322988": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Android",
+      "downloads": 1
+    },
+    "362869729": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "362869733": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "362870172": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "362870184": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "362870190": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "362870830": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "362870854": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "364718406": {
+      "repo": "open-2d-studio",
+      "tag": "v0.24.0",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "365136014": {
+      "repo": "open-2d-studio",
+      "tag": "v0.29.0",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "365311787": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "365311800": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365313516": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "365313550": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "365313573": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "365313622": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365315741": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "365315747": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "365315756": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "365315765": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "365315773": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "365315798": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365316351": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "365317657": {
+      "repo": "open-2d-studio",
+      "tag": "v0.30.0",
+      "platform": "Android",
+      "downloads": 1
+    },
+    "365396193": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "macOS",
+      "downloads": 12
+    },
+    "365396207": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365396444": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Linux (deb)",
+      "downloads": 20
+    },
+    "365396453": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "365396466": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 17
+    },
+    "365396492": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365398606": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Windows",
+      "downloads": 113
+    },
+    "365398632": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "365398641": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "365398650": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "365398662": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Windows (MSI)",
+      "downloads": 24
+    },
+    "365398686": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "365401808": {
+      "repo": "open-2d-studio",
+      "tag": "v0.31.0",
+      "platform": "Android",
+      "downloads": 12
+    },
+    "365422590": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "365422627": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "365422743": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365426021": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "macOS",
+      "downloads": 7
+    },
+    "365429845": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "365431408": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Windows",
+      "downloads": 13
+    },
+    "365431419": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "365431432": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "365431450": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "365447142": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.21.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "365880266": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "macOS",
+      "downloads": 10
+    },
+    "365880270": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "365880743": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "365880744": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "365880756": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 6
+    },
+    "365881543": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "Windows",
+      "downloads": 37
+    },
+    "365881551": {
+      "repo": "open-pointcloud-studio",
+      "tag": "v0.3.0",
+      "platform": "Windows (MSI)",
+      "downloads": 7
+    },
+    "366161792": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "366161795": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "366161817": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "366162726": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "366163112": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Windows",
+      "downloads": 20
+    },
+    "366163136": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "366163150": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "366163173": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "366163926": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "macOS",
+      "downloads": 5
+    },
+    "366165262": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.22.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "366837015": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Linux (deb)",
+      "downloads": 25
+    },
+    "366837029": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 40
+    },
+    "366837062": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "366837633": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "macOS",
+      "downloads": 27
+    },
+    "366838283": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Android",
+      "downloads": 11
+    },
+    "366838881": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Windows",
+      "downloads": 124
+    },
+    "366838902": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "366838931": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "366838946": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Windows",
+      "downloads": 5
+    },
+    "366838948": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "366840190": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.23.0",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "367770022": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "367770027": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "367770281": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "367770296": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "367770305": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "367770317": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "367772042": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Windows",
+      "downloads": 5
+    },
+    "367772051": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "367772070": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "367772093": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "367772098": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "367772122": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Archive",
+      "downloads": 4
+    },
+    "367774261": {
+      "repo": "open-2d-studio",
+      "tag": "v0.32.0",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "370216437": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "370216453": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "370216473": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "370217539": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "370217747": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "370217757": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "370217765": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "370217780": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "370217811": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "370218665": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "370219786": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.24.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "370368622": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "370368627": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "370368640": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "370370106": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "370370123": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Android",
+      "downloads": 4
+    },
+    "370370305": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Windows",
+      "downloads": 23
+    },
+    "370370325": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "370370334": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "370370339": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "macOS",
+      "downloads": 7
+    },
+    "370370346": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "370371776": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.25.0",
+      "platform": "Linux (snap)",
+      "downloads": 2
+    },
+    "371717410": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Linux (deb)",
+      "downloads": 7
+    },
+    "371717422": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "371717443": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "371718077": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "macOS",
+      "downloads": 7
+    },
+    "371718203": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Windows",
+      "downloads": 23
+    },
+    "371718219": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "371718235": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "371718250": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "371718310": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Android",
+      "downloads": 6
+    },
+    "371718985": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "371721152": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.29.0",
+      "platform": "Linux (snap)",
+      "downloads": 6
+    },
+    "375866787": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "375866804": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "375866818": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "375867395": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "macOS",
+      "downloads": 4
+    },
+    "375867498": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "375867773": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "375867786": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "375867805": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "375867824": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "375867842": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "375870607": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.30.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "376310262": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "macOS",
+      "downloads": 3
+    },
+    "376310564": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "376310568": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "376310590": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "376311176": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "376311181": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376311184": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376311190": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376311217": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "376311377": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376312493": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.31.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "376371924": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Linux (deb)",
+      "downloads": 7
+    },
+    "376371937": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 5
+    },
+    "376371987": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "376372480": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Android",
+      "downloads": 1
+    },
+    "376373004": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "376373111": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Windows",
+      "downloads": 20
+    },
+    "376373127": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376373147": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376373160": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "376373357": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "macOS",
+      "downloads": 3
+    },
+    "376374179": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.32.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "379559788": {
+      "repo": "open-speech-studio",
+      "tag": "v0.5.0",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "379559789": {
+      "repo": "open-speech-studio",
+      "tag": "v0.5.0",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "379834553": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "379834562": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "379834592": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "379835456": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "379835967": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "379836402": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "379836999": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Windows",
+      "downloads": 8
+    },
+    "379837015": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "379837023": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "379837041": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "379837400": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.34.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "381257001": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Linux (deb)",
+      "downloads": 12
+    },
+    "381257039": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 12
+    },
+    "381257065": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Archive",
+      "downloads": 3
+    },
+    "381258387": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Windows",
+      "downloads": 16
+    },
+    "381258453": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Android",
+      "downloads": 27
+    },
+    "381258544": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Windows",
+      "downloads": 75
+    },
+    "381258558": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "381258573": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "381258589": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "381261755": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "Linux (snap)",
+      "downloads": 4
+    },
+    "381273177": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.35.0",
+      "platform": "macOS",
+      "downloads": 14
+    },
+    "381458353": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "381458358": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "381459248": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "381459258": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "381459267": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "381459299": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "381461399": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "381461411": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "381461422": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "381461432": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "381461442": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "381461479": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "381462326": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "381463058": {
+      "repo": "open-2d-studio",
+      "tag": "v0.33.0",
+      "platform": "Android",
+      "downloads": 3
+    },
+    "381897473": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "macOS",
+      "downloads": 16
+    },
+    "381897484": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "381897788": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Linux (deb)",
+      "downloads": 54
+    },
+    "381897801": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Linux (rpm)",
+      "downloads": 3
+    },
+    "381897812": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 65
+    },
+    "381897841": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Archive",
+      "downloads": 4
+    },
+    "381900842": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Windows",
+      "downloads": 128
+    },
+    "381900865": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "381900877": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "381900899": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "381900907": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Windows (MSI)",
+      "downloads": 23
+    },
+    "381900933": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Archive",
+      "downloads": 2
+    },
+    "381902400": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Android",
+      "downloads": 54
+    },
+    "381907591": {
+      "repo": "open-2d-studio",
+      "tag": "v0.35.0",
+      "platform": "Linux (snap)",
+      "downloads": 3
+    },
+    "382851676": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "382851684": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "382851688": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "382852181": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.0",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "382852186": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "382858029": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.0",
+      "platform": "Android",
+      "downloads": 6
+    },
+    "383410889": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "383410894": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "383410896": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "383412442": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Windows (MSI)",
+      "downloads": 1
+    },
+    "383412449": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "383412705": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Android",
+      "downloads": 3
+    },
+    "383412911": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.1",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "383425845": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "383425846": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "383425848": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "383426311": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "383426317": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "383430722": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "383430863": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.2",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384784922": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "384784938": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "384784962": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "384785540": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Android",
+      "downloads": 0
+    },
+    "384786324": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "384786343": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384786357": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384786371": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384786943": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "384787536": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384788681": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.36.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "384829282": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "macOS",
+      "downloads": 16
+    },
+    "384829481": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Linux (deb)",
+      "downloads": 8
+    },
+    "384829497": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 8
+    },
+    "384829531": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "384830242": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "384830739": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "384832285": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Windows",
+      "downloads": 54
+    },
+    "384832313": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384832334": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "384832371": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.37.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "385587957": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "385587965": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "385587984": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "385588633": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "385588877": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "385589121": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "385589140": {
+      "repo": "Open-Field-Studio",
+      "tag": "v0.1.3",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "386420976": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Linux (deb)",
+      "downloads": 24
+    },
+    "386420985": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 27
+    },
+    "386421012": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Archive",
+      "downloads": 4
+    },
+    "386421565": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Android",
+      "downloads": 15
+    },
+    "386421809": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Windows",
+      "downloads": 23
+    },
+    "386421943": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Windows",
+      "downloads": 98
+    },
+    "386421968": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "386421979": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "386421991": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "386422287": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.40.0",
+      "platform": "macOS",
+      "downloads": 29
+    },
+    "387113507": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "387113523": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 7
+    },
+    "387113557": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "387114281": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "387114555": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "macOS",
+      "downloads": 6
+    },
+    "387114598": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Windows",
+      "downloads": 24
+    },
+    "387114617": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "387114624": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "387114649": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.41.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "387278810": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "387278842": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "387278845": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "387279874": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "387279881": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "387279983": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "387280468": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "387280755": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "390875942": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Linux (deb)",
+      "downloads": 46
+    },
+    "390875955": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 55
+    },
+    "390875982": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Archive",
+      "downloads": 7
+    },
+    "390876748": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Android",
+      "downloads": 59
+    },
+    "390877669": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "macOS",
+      "downloads": 98
+    },
+    "390877750": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Windows",
+      "downloads": 297
+    },
+    "390878433": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Windows",
+      "downloads": 5
+    },
+    "390878454": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "390878496": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "390878552": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Windows",
+      "downloads": 86
+    },
+    "390921439": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.43.0",
+      "platform": "Linux (snap)",
+      "downloads": 21
+    },
+    "391621518": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "391621525": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "391621531": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 9
+    },
+    "391622788": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "391622804": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "391625166": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "391625265": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows (MSI)",
+      "downloads": 2
+    },
+    "391625899": {
+      "repo": "open-frame-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows",
+      "downloads": 10
+    },
+    "397937072": {
+      "repo": "open-speech-studio",
+      "tag": "v0.8.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "397937073": {
+      "repo": "open-speech-studio",
+      "tag": "v0.8.0",
+      "platform": "Windows",
+      "downloads": 5
+    },
+    "397937074": {
+      "repo": "open-speech-studio",
+      "tag": "v0.8.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "397937075": {
+      "repo": "open-speech-studio",
+      "tag": "v0.8.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "397937076": {
+      "repo": "open-speech-studio",
+      "tag": "v0.8.0",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "403577364": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Linux (snap)",
+      "downloads": 45
+    },
+    "403577435": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Linux (deb)",
+      "downloads": 73
+    },
+    "403577499": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 111
+    },
+    "403577684": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Archive",
+      "downloads": 11
+    },
+    "403579875": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Android",
+      "downloads": 254
+    },
+    "403582870": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Windows",
+      "downloads": 124
+    },
+    "403587212": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Windows",
+      "downloads": 549
+    },
+    "403587238": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Windows",
+      "downloads": 8
+    },
+    "403587246": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Windows",
+      "downloads": 18
+    },
+    "403587273": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "403603727": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.45.0",
+      "platform": "macOS",
+      "downloads": 138
+    },
+    "404139389": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "404139390": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.0",
+      "platform": "Windows",
+      "downloads": 18
+    },
+    "404139391": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.0",
+      "platform": "Linux (deb)",
+      "downloads": 7
+    },
+    "404139392": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "404139393": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.0",
+      "platform": "Windows (MSI)",
+      "downloads": 6
+    },
+    "410356306": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.2",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "410356884": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.1",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "410356937": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "410356968": {
+      "repo": "open-calc-studio",
+      "tag": "v0.6.2",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "410357062": {
+      "repo": "open-calc-studio",
+      "tag": "v0.6.1",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "410357097": {
+      "repo": "open-calc-studio",
+      "tag": "v0.6.0",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "410357150": {
+      "repo": "open-calc-studio",
+      "tag": "v0.5.2",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "410357207": {
+      "repo": "open-calc-studio",
+      "tag": "v0.5.1",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "410357244": {
+      "repo": "open-calc-studio",
+      "tag": "v0.5.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "410375998": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.3",
+      "platform": "Windows",
+      "downloads": 64
+    },
+    "411904318": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.8",
+      "platform": "Windows",
+      "downloads": 18
+    },
+    "411904320": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.8",
+      "platform": "macOS",
+      "downloads": 6
+    },
+    "411904321": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.8",
+      "platform": "Windows (MSI)",
+      "downloads": 3
+    },
+    "411904322": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.8",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "411904325": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.8",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "413306843": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "413306858": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "413306907": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "413307387": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Android",
+      "downloads": 1
+    },
+    "413308425": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "413308901": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Windows",
+      "downloads": 45
+    },
+    "413310058": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "413310100": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413310105": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "413310122": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413310942": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.4",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "413316205": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "macOS",
+      "downloads": 15
+    },
+    "413316260": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Linux (deb)",
+      "downloads": 13
+    },
+    "413316267": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "413316324": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Archive",
+      "downloads": 13
+    },
+    "413316385": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Android",
+      "downloads": 13
+    },
+    "413317079": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "413318941": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Windows",
+      "downloads": 17
+    },
+    "413319587": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Windows",
+      "downloads": 18
+    },
+    "413319603": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413319616": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Windows",
+      "downloads": 15
+    },
+    "413319633": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.5",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413619595": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "413619624": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "413619679": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "413620063": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "413621510": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "macOS",
+      "downloads": 4
+    },
+    "413622053": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "413622093": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413622115": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413622158": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413622642": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "413623911": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.8",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413647394": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "413647442": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "413647510": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "413647766": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Android",
+      "downloads": 9
+    },
+    "413649045": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "413651009": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "macOS",
+      "downloads": 3
+    },
+    "413651034": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Windows",
+      "downloads": 16
+    },
+    "413651046": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413651053": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413651065": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413652244": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.9",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413867386": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "413867406": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Linux (AppImage)",
+      "downloads": 4
+    },
+    "413867427": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "413867743": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Android",
+      "downloads": 1
+    },
+    "413868701": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "macOS",
+      "downloads": 3
+    },
+    "413869063": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "413869369": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "413870482": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "413870519": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413870540": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413870558": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.10",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413875666": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "413875701": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "413875730": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "413876211": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Android",
+      "downloads": 2
+    },
+    "413877480": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Linux (snap)",
+      "downloads": 2
+    },
+    "413877902": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "macOS",
+      "downloads": 2
+    },
+    "413879400": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413879509": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "413879533": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Linux (AppImage)",
+      "downloads": 4
+    },
+    "413879583": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "413879827": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Android",
+      "downloads": 11
+    },
+    "413879859": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Windows",
+      "downloads": 6
+    },
+    "413879872": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413879876": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413879894": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.11",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413880600": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Linux (snap)",
+      "downloads": 2
+    },
+    "413881679": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "macOS",
+      "downloads": 7
+    },
+    "413882137": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Windows",
+      "downloads": 40
+    },
+    "413882152": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "413882159": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "413882170": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "413882273": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.12",
+      "platform": "Windows",
+      "downloads": 12
+    },
+    "414116168": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Linux (deb)",
+      "downloads": 215
+    },
+    "414116176": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Linux (AppImage)",
+      "downloads": 189
+    },
+    "414116204": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Archive",
+      "downloads": 31
+    },
+    "414116510": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "macOS",
+      "downloads": 238
+    },
+    "414116673": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Android",
+      "downloads": 611
+    },
+    "414117495": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Linux (snap)",
+      "downloads": 35
+    },
+    "414118792": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Windows",
+      "downloads": 223
+    },
+    "414119162": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Windows",
+      "downloads": 1246
+    },
+    "414119195": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Windows",
+      "downloads": 25
+    },
+    "414119206": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Windows",
+      "downloads": 34
+    },
+    "414119209": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.47.13",
+      "platform": "Windows",
+      "downloads": 4
+    },
+    "417713475": {
+      "repo": "open-heatloss-studio",
+      "tag": "v0.1.0-alpha.1",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "421164479": {
+      "repo": "open-heatloss-studio",
+      "tag": "v0.1.1-pr13.alpha",
+      "platform": "Windows",
+      "downloads": 13
+    },
+    "421164588": {
+      "repo": "open-heatloss-studio",
+      "tag": "v0.1.1-pr13.alpha",
+      "platform": "Other",
+      "downloads": 0
+    },
+    "421164775": {
+      "repo": "open-heatloss-studio",
+      "tag": "v0.1.1-pr13.alpha",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "423097909": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "423109238": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.1",
+      "platform": "Windows",
+      "downloads": 15
+    },
+    "425248563": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.8",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "425248564": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.8",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "425250821": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.8",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "425254086": {
+      "repo": "Open-Calculations-Studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "425271687": {
+      "repo": "Open-Calculations-Studio",
+      "tag": "v0.1.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "425283852": {
+      "repo": "Open-Calculations-Studio",
+      "tag": "v0.1.2",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "425288699": {
+      "repo": "Open-Calculations-Studio",
+      "tag": "v0.1.3",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "425592129": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.9",
+      "platform": "Linux (AppImage)",
+      "downloads": 3
+    },
+    "425592134": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.9",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "425592138": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.2.9",
+      "platform": "Windows",
+      "downloads": 11
+    },
+    "426860485": {
+      "repo": "Open-Calculations-Studio",
+      "tag": "v0.1.4",
+      "platform": "Windows",
+      "downloads": 51
+    },
+    "430906250": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "430906251": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.3.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 2
+    },
+    "430906620": {
+      "repo": "open-geotechniek-studio",
+      "tag": "v0.3.0",
+      "platform": "Windows",
+      "downloads": 17
+    },
+    "436690176": {
+      "repo": "open-calc-studio",
+      "tag": "v0.7.4",
+      "platform": "Windows",
+      "downloads": 9
+    },
+    "445645560": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.1",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "445645561": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.1",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "445645562": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.1",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "445645563": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.1",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "445645565": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.1",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "446003975": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.2",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "446003976": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.2",
+      "platform": "Windows",
+      "downloads": 9
+    },
+    "446003977": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.2",
+      "platform": "Linux (rpm)",
+      "downloads": 2
+    },
+    "446003978": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.2",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "446003979": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.2",
+      "platform": "Windows (MSI)",
+      "downloads": 6
+    },
+    "446409131": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Linux (deb)",
+      "downloads": 5
+    },
+    "446409137": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 11
+    },
+    "446409178": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "446411014": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "446411535": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Windows",
+      "downloads": 16
+    },
+    "446411570": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "446411579": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "446411583": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "446412180": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.61.0",
+      "platform": "macOS",
+      "downloads": 5
+    },
+    "446724609": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "446724614": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 19
+    },
+    "446724645": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "446725311": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "macOS",
+      "downloads": 12
+    },
+    "446727562": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Windows",
+      "downloads": 23
+    },
+    "446727571": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "446727585": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "446727593": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "446727923": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.62.0",
+      "platform": "Windows",
+      "downloads": 11
+    },
+    "449031623": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "449033177": {
+      "repo": "open-frame-studio",
+      "tag": "v0.1.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "450818036": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.1",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "450818037": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.1",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "450818041": {
+      "repo": "open-speech-studio",
+      "tag": "v0.10.1",
+      "platform": "Windows",
+      "downloads": 5
+    },
+    "451036614": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Linux (deb)",
+      "downloads": 100
+    },
+    "451036637": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 143
+    },
+    "451036697": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Archive",
+      "downloads": 14
+    },
+    "451040637": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Windows",
+      "downloads": 14
+    },
+    "451040647": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Windows",
+      "downloads": 10
+    },
+    "451040668": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "451040921": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Windows",
+      "downloads": 149
+    },
+    "451042207": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "macOS",
+      "downloads": 100
+    },
+    "451042594": {
+      "repo": "open-pdf-studio",
+      "tag": "v1.67.0",
+      "platform": "Windows",
+      "downloads": 789
+    },
+    "456818226": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Linux (deb)",
+      "downloads": 12
+    },
+    "456818296": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "456818317": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 6
+    },
+    "456819966": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "macOS",
+      "downloads": 1
+    },
+    "456820008": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "456826057": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "456826229": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "456826233": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "456826236": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.0",
+      "platform": "Windows",
+      "downloads": 25
+    },
+    "461193555": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "461193580": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "461193591": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "461196525": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "461196566": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "461196983": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Linux (snap)",
+      "downloads": 1
+    },
+    "461204274": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "461204910": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "461204911": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "461204915": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.6.1",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "463344319": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.5",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "463344320": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.5",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "463344321": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.5",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "463344322": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.5",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "463344323": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.5",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "464096534": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.6",
+      "platform": "Windows (MSI)",
+      "downloads": 0
+    },
+    "464096535": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.6",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "464096536": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.6",
+      "platform": "Windows",
+      "downloads": 7
+    },
+    "464096537": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.6",
+      "platform": "Linux (deb)",
+      "downloads": 1
+    },
+    "464096538": {
+      "repo": "open-calc-studio",
+      "tag": "v0.8.6",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "464418682": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Linux (deb)",
+      "downloads": 3
+    },
+    "464418712": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "464418745": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "464422746": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "464422768": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "464422777": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "464430878": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "464431766": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "464431767": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "464431773": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.0",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "464665693": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Linux (deb)",
+      "downloads": 5
+    },
+    "464665707": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "464665717": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "464667868": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "464667892": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "464668039": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "464674748": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "464675625": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Windows",
+      "downloads": 3
+    },
+    "464675626": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "464675627": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.1",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "465118811": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "465118836": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "465118851": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "465120705": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "465120821": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "465121986": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "465127238": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "465127996": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "465127997": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "465128000": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.2",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "465612494": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Linux (deb)",
+      "downloads": 5
+    },
+    "465612507": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Linux (rpm)",
+      "downloads": 0
+    },
+    "465612528": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "465612792": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "465612808": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "465614520": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "465619046": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "465619563": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "465619564": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "465619568": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.3",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "466275379": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "466275392": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "466275398": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "466275623": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "466275638": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "466277159": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "466279317": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466279751": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "466279752": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466279753": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.4",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466401306": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Linux (deb)",
+      "downloads": 2
+    },
+    "466401323": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "466401345": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "466403572": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "466404217": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "466404237": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "466408060": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466408515": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466408516": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Windows",
+      "downloads": 2
+    },
+    "466408518": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.5",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "466528400": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Linux (deb)",
+      "downloads": 4
+    },
+    "466528407": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Linux (rpm)",
+      "downloads": 1
+    },
+    "466528413": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Linux (AppImage)",
+      "downloads": 1
+    },
+    "466528510": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "macOS",
+      "downloads": 0
+    },
+    "466528518": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Archive",
+      "downloads": 1
+    },
+    "466530139": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Linux (snap)",
+      "downloads": 0
+    },
+    "466531789": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466532535": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466532536": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Windows",
+      "downloads": 1
+    },
+    "466532539": {
+      "repo": "open-planner-studio",
+      "tag": "v2026.7.6",
+      "platform": "Windows",
+      "downloads": 0
+    },
+    "466915896": {
+      "repo": "open-pdf-studio",
+      "tag": "nightly",
+      "platform": "Linux (deb)",
+      "downloads": 0
+    },
+    "466915918": {
+      "repo": "open-pdf-studio",
+      "tag": "nightly",
+      "platform": "Linux (AppImage)",
+      "downloads": 0
+    },
+    "466915946": {
+      "repo": "open-pdf-studio",
+      "tag": "nightly",
+      "platform": "Archive",
+      "downloads": 0
+    },
+    "466916471": {
+      "repo": "open-pdf-studio",
+      "tag": "nightly",
+      "platform": "macOS",
+      "downloads": 0
+    }
+  }
+}
