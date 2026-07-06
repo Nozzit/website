@@ -24,5 +24,35 @@
       "desc2": "La Foundation est en outre soutenue par des partenaires et des supporters qui contribuent à rendre le développement possible."
     }
   },
-  "note": "Cette structure est <strong>en plein développement</strong> — beaucoup de choses restent à préciser. Envie de participer ou de contribuer ? N'hésitez pas à nous contacter."
+  "note": "Cette structure est <strong>en plein développement</strong> — beaucoup de choses restent à préciser. Envie de participer ou de contribuer ? N'hésitez pas à nous contacter.",
+  "team": {
+    "label": "Équipe",
+    "title": "Les personnes derrière OpenAEC",
+    "intro": "Une équipe grandissante d'administrateurs, de développeurs et de contributeurs qui construisent ensemble l'écosystème AEC open source.",
+    "foundation": {
+      "heading": "Foundation — Conseil d'administration"
+    },
+    "studio": {
+      "heading": "OpenAEC Studio"
+    },
+    "community": {
+      "heading": "Communauté",
+      "desc": "La communauté est un large groupe de contributeurs du secteur de la construction qui maintiennent leurs propres dépôts et participent à la construction de l'écosystème. Toute personne qui croit en l'open source pour la construction est la bienvenue.",
+      "cta": "Voir les dépôts sur GitHub &rarr;"
+    }
+  },
+  "role": {
+    "chair": "Président",
+    "secretary": "Secrétaire",
+    "treasurer": "Trésorier",
+    "seniorFullstack": "Développeur Full Stack senior",
+    "fullstackProg": "Programmeur Full Stack",
+    "genz": "Gen Z",
+    "juniorConstructeur": "Ingénieur structure junior",
+    "developer": "Développeur"
+  },
+  "bio": {
+    "mojtaba": "Développeur back-end et front-end. Conçoit des solutions sur mesure et des intégrations.",
+    "jan": "Développeur spécialisé dans les outils open source et les intégrations de plateformes."
+  }
 }

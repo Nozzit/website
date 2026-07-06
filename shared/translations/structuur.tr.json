@@ -24,5 +24,35 @@
       "desc2": "Foundation ayrıca gelişimi mümkün kılmaya yardımcı olan ortaklar ve destekçiler tarafından desteklenir."
     }
   },
-  "note": "Bu yapı <strong>tam anlamıyla geliştirme aşamasında</strong> — hâlâ üzerinde çok çalışılıyor. Fikir vermek veya katkıda bulunmak ister misiniz? Sizden haber almaktan memnuniyet duyarız."
+  "note": "Bu yapı <strong>tam anlamıyla geliştirme aşamasında</strong> — hâlâ üzerinde çok çalışılıyor. Fikir vermek veya katkıda bulunmak ister misiniz? Sizden haber almaktan memnuniyet duyarız.",
+  "team": {
+    "label": "Ekip",
+    "title": "OpenAEC'in arkasındaki insanlar",
+    "intro": "Açık kaynak AEC ekosistemini birlikte inşa eden, büyüyen bir yönetim, geliştirici ve katkıda bulunanlar ekibi.",
+    "foundation": {
+      "heading": "Foundation — Yönetim Kurulu"
+    },
+    "studio": {
+      "heading": "OpenAEC Studio"
+    },
+    "community": {
+      "heading": "Topluluk",
+      "desc": "Topluluk, kendi depolarını sürdüren ve ekosistemi birlikte geliştiren, inşaat sektöründen geniş bir katkıda bulunanlar grubudur. İnşaat için açık kaynağa inanan herkes katılabilir.",
+      "cta": "Depoları GitHub'da görüntüle &rarr;"
+    }
+  },
+  "role": {
+    "chair": "Başkan",
+    "secretary": "Sekreter",
+    "treasurer": "Sayman",
+    "seniorFullstack": "Kıdemli Full Stack Geliştirici",
+    "fullstackProg": "Full Stack Programcı",
+    "genz": "Gen Z",
+    "juniorConstructeur": "Junior Yapı Mühendisi",
+    "developer": "Geliştirici"
+  },
+  "bio": {
+    "mojtaba": "Back-end ve front-end geliştirici. Özel çözümler ve entegrasyonlar geliştirir.",
+    "jan": "Açık kaynak araçlara ve platform entegrasyonlarına odaklanan geliştirici."
+  }
 }

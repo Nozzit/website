@@ -24,5 +24,35 @@
       "desc2": "The Foundation is also supported by partners and supporters who help make the development possible."
     }
   },
-  "note": "This structure is <strong>very much a work in progress</strong> — a lot is still being worked out. Want to think along or contribute? We'd love to hear from you."
+  "note": "This structure is <strong>very much a work in progress</strong> — a lot is still being worked out. Want to think along or contribute? We'd love to hear from you.",
+  "team": {
+    "label": "Team",
+    "title": "The people behind OpenAEC",
+    "intro": "A growing team of board members, developers and contributors building the open source AEC ecosystem together.",
+    "foundation": {
+      "heading": "Foundation — Board"
+    },
+    "studio": {
+      "heading": "OpenAEC Studio"
+    },
+    "community": {
+      "heading": "Community",
+      "desc": "The community is a broad group of contributors from the construction sector who maintain their own repositories and help build the ecosystem. Everyone who believes in open source for construction is welcome to join.",
+      "cta": "Browse the repositories on GitHub &rarr;"
+    }
+  },
+  "role": {
+    "chair": "Chair",
+    "secretary": "Secretary",
+    "treasurer": "Treasurer",
+    "seniorFullstack": "Senior Full Stack Developer",
+    "fullstackProg": "Full Stack Programmer",
+    "genz": "Gen Z",
+    "juniorConstructeur": "Junior Structural Engineer",
+    "developer": "Developer"
+  },
+  "bio": {
+    "mojtaba": "Back-end and front-end developer. Builds custom solutions and integrations.",
+    "jan": "Developer focused on open source tools and platform integrations."
+  }
 }
