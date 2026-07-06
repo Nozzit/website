@@ -32,7 +32,7 @@
     <h1 data-i18n="header.title">Open <span class="accent">Planner</span> Studio</h1>
     <p class="tagline" data-i18n="header.desc">Open-source construction planning with Gantt charts, Critical Path Method, and native IFC 4.3 file format. Built for the construction sector.</p>
     <div class="btn-group">
-      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn">Download v2026.6.0</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.7.6</a>
       <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">View source</a>
     </div>
   </section>
@@ -68,16 +68,16 @@
 
   <section class="section" id="download"><div class="container">
     <div class="download-section">
-      <h3 data-i18n="download.title">Download v2026.6.0</h3>
+      <h3 data-i18n="download.title" data-opl-ver>Download v2026.7.6</h3>
       <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size">2.4 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_x64-setup.exe" class="btn btn-primary btn-sm">Download .exe</a></div>
-        <div class="download-item"><div class="os">macOS (universal)</div><div class="size">5.8 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_universal.dmg" class="btn btn-primary btn-sm">Download .dmg</a></div>
-        <div class="download-item"><div class="os">Linux (deb)</div><div class="size">2.9 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_amd64.deb" class="btn btn-primary btn-sm">Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size">76.9 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_amd64.AppImage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+        <div class="download-item"><div class="os">Windows</div><div class="size" data-opl-size="windows">5.1 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
+        <div class="download-item"><div class="os">macOS (universal)</div><div class="size" data-opl-size="macos">11.0 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size" data-opl-size="linux-deb">5.7 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size" data-opl-size="linux-appimage">79.6 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
       </div>
     </div>
   </div></section>
@@ -170,6 +170,71 @@
       };
     })();
   </script>
-  <script src="/shared/i18n.js?v=20260603"></script>
+  <script>
+  // Always-latest downloads + live version label for Open Planner Studio.
+  // Progressive enhancement: without JS the buttons already point at the
+  // newest release assets baked into the HTML above.
+  (function () {
+    var REPO = 'OpenAEC-Foundation/open-planner-studio';
+    var LATEST = 'https://github.com/' + REPO + '/releases/latest';
+    var state = { tag: null };
+    var match = {
+      windows: /_x64-setup\.exe$/i,
+      macos: /_universal\.dmg$/i,
+      'linux-deb': /_amd64\.deb$/i,
+      'linux-appimage': /_amd64\.AppImage$/i
+    };
+
+    // Re-apply the version into the i18n-managed labels. Runs on load and again
+    // whenever i18n rewrites them (language switch) via the observer below.
+    function patch() {
+      if (!state.tag) return;
+      document.querySelectorAll('[data-opl-ver]').forEach(function (el) {
+        var want = el.innerHTML.replace(/v\d+\.\d+\.\d+/g, state.tag);
+        if (el.innerHTML !== want) el.innerHTML = want;
+      });
+    }
+
+    function fmtSize(bytes) {
+      return (bytes / 1048576).toFixed(1) + ' MB';
+    }
+
+    function apply(rel) {
+      state.tag = rel.tag_name;
+      var assets = rel.assets || [];
+      Object.keys(match).forEach(function (key) {
+        var re = match[key];
+        var hit = assets.filter(function (x) { return re.test(x.name); })[0];
+        document.querySelectorAll('[data-opl-dl="' + key + '"]').forEach(function (a) {
+          a.href = hit ? hit.browser_download_url : LATEST;
+        });
+        if (hit) {
+          document.querySelectorAll('[data-opl-size="' + key + '"]').forEach(function (el) {
+            el.textContent = fmtSize(hit.size);
+          });
+        }
+      });
+      patch();
+    }
+
+    function start() {
+      try {
+        var obs = new MutationObserver(patch);
+        document.querySelectorAll('[data-opl-ver]').forEach(function (el) {
+          obs.observe(el, { childList: true, subtree: true, characterData: true });
+        });
+      } catch (e) {}
+
+      fetch('https://api.github.com/repos/' + REPO + '/releases/latest')
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (rel) { if (rel && rel.tag_name) apply(rel); })
+        .catch(function () {});
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+    else start();
+  })();
+</script>
+<script src="/shared/i18n.js?v=20260603"></script>
 </body>
 </html>
