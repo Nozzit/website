@@ -38,7 +38,8 @@
     "community": {
       "heading": "Topluluk",
       "desc": "Topluluk, kendi depolarını sürdüren ve ekosistemi birlikte geliştiren, inşaat sektöründen geniş bir katkıda bulunanlar grubudur. İnşaat için açık kaynağa inanan herkes katılabilir.",
-      "cta": "Depoları GitHub'da görüntüle &rarr;"
+      "cta": "Depoları GitHub'da görüntüle &rarr;",
+      "disclaimer": "Yukarıda belirtilen depolar ve topluluk, OpenAEC Foundation ve OpenAEC Studio'nun sorumluluğunda değildir. Her bakımcı kendi projesinden ve katkılarından sorumludur."
     }
   },
   "role": {
@@ -58,7 +59,7 @@
     "silvia": "LRCZ'nin kurucusu — sanal inşaat, prototipleme ve BIM eğitimi.",
     "martjan": "GAF architects'te Bilgi & İnovasyon Direktörü; mimaride BIM, dijitalleşme ve yapay zeka.",
     "ethan": "En genç ekip üyesi; araçlara taze bir Z kuşağı bakışı getiriyor.",
-    "mattias": "Junior yapı mühendisi; projeleri iyi hesaplamak için yaratıcılığı ve içgörüyü birleştiriyor.",
+    "mattias": "3BM'de junior yapı mühendisi; projeleri iyi hesaplamak için yaratıcılığı ve içgörüyü birleştiriyor.",
     "bjorn": "Matematik ve bilgisayar bilimi öğrencisi; ekosistem içinde geliştirici.",
     "piet": "İnşaat mühendisi ve 3BM yönetim kurulu üyesi; Y-app ve Monty Viewer'a katkıda bulunuyor.",
     "hakan": "Bağımsız açık kaynak geliştiricisi ve Open CAD Studio'nun (Rust, DWG/DXF) yaratıcısı.",

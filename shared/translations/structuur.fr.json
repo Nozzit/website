@@ -38,7 +38,8 @@
     "community": {
       "heading": "Communauté",
       "desc": "La communauté est un large groupe de contributeurs du secteur de la construction qui maintiennent leurs propres dépôts et participent à la construction de l'écosystème. Toute personne qui croit en l'open source pour la construction est la bienvenue.",
-      "cta": "Voir les dépôts sur GitHub &rarr;"
+      "cta": "Voir les dépôts sur GitHub &rarr;",
+      "disclaimer": "Les dépôts et la communauté mentionnés ci-dessus ne relèvent pas de la responsabilité de la OpenAEC Foundation ni d'OpenAEC Studio. Chaque mainteneur est responsable de son propre projet et de ses contributions."
     }
   },
   "role": {
@@ -58,7 +59,7 @@
     "silvia": "Fondatrice de LRCZ — construction virtuelle, prototypage et formation BIM.",
     "martjan": "Directeur Information & Innovation chez GAF architects ; BIM, numérisation et IA dans l'architecture.",
     "ethan": "Le plus jeune membre de l'équipe ; apporte un regard neuf de la génération Z sur les outils.",
-    "mattias": "Ingénieur structure junior ; allie créativité et rigueur pour bien calculer les projets.",
+    "mattias": "Ingénieur structure junior chez 3BM ; allie créativité et rigueur pour bien calculer les projets.",
     "bjorn": "Étudiant en mathématiques et informatique ; développeur au sein de l'écosystème.",
     "piet": "Ingénieur en construction et administrateur de 3BM ; contribue à Y-app et Monty Viewer.",
     "hakan": "Développeur open source indépendant et créateur d'Open CAD Studio (Rust, DWG/DXF).",
