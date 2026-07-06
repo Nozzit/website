@@ -31,13 +31,33 @@
   },
   "quick": {
     "title": "Liens rapides…",
-    "tools": { "title": "Tous les outils", "desc": "Aperçu des 18+ outils de l'écosystème." },
-    "ifcx": { "title": "Format de données IFCX", "desc": "Comment IFCX fonctionne et quels schémas civils sont pris en charge." },
-    "arch": { "title": "Architecture", "desc": "Stack technique : Rust, Tauri 2, TypeScript, multiplateforme." },
-    "services": { "title": "Services", "desc": "Conseil, hébergement, extensions sur mesure, dons." },
-    "quote": { "title": "Demander un devis", "desc": "Pour les entreprises qui souhaitent un accompagnement professionnel." },
-    "roadmap": { "title": "Feuille de route", "desc": "Ce qui arrive en 2026 et 2027." },
-    "faq": { "title": "FAQ", "desc": "Questions fréquentes sur l'open source, l'hébergement, la contribution." },
-    "github": { "title": "GitHub", "desc": "Code source, tickets, guidelines de contribution." }
+    "tools": {
+      "title": "Tous les outils",
+      "desc": "Aperçu des 18+ outils de l'écosystème."
+    },
+    "ifcx": {
+      "title": "Format de données IFCX",
+      "desc": "Comment IFCX fonctionne et quels schémas civils sont pris en charge."
+    },
+    "arch": {
+      "title": "Architecture",
+      "desc": "Stack technique : Rust, Tauri 2, TypeScript, multiplateforme."
+    },
+    "quote": {
+      "title": "Demander un devis",
+      "desc": "Pour les entreprises qui souhaitent un accompagnement professionnel."
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "desc": "Ce qui arrive en 2026 et 2027."
+    },
+    "faq": {
+      "title": "FAQ",
+      "desc": "Questions fréquentes sur l'open source, l'hébergement, la contribution."
+    },
+    "github": {
+      "title": "GitHub",
+      "desc": "Code source, tickets, guidelines de contribution."
+    }
   }
 }

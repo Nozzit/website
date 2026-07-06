@@ -1,0 +1,28 @@
+{
+  "header": {
+    "label": "Organizasyon",
+    "title": "<span class=\"accent\">Yapı</span>",
+    "desc": "OpenAEC, açık kaynak AEC ekosistemini birlikte taşıyan üç bölümden oluşur: Foundation, OpenAEC Studio ve topluluk."
+  },
+  "parts": {
+    "foundation": {
+      "num": "Bölüm 01",
+      "title": "OpenAEC Foundation <span class=\"tag\">kuruluş aşamasında</span>",
+      "desc": "Foundation'ın amacı, geliştirilen araçları uzun vadede sürdürmek ve güvence altına almaktır. Ayrıca inşaat sektörü için teknik, yazılım-teknik ve mimari düzeyde geniş bir bilgi ağı kurar.",
+      "desc2": "Hedef, mümkün olan en geniş kapsamdır; böylece sektörün tamamı açık bilgi ve açık yazılımdan yararlanır."
+    },
+    "studio": {
+      "num": "Bölüm 02",
+      "title": "OpenAEC Studio",
+      "desc": "OpenAEC ekosistemi çevresinde hizmet sunan bir BT danışmanlık şirketi: uygulama, barındırma, özel geliştirme ve profesyonel destek.",
+      "desc2": "Yazılım açık kaynak olarak kalır; Studio, kuruluşların bunu pratikte kullanabilmesini sağlar."
+    },
+    "community": {
+      "num": "Bölüm 03",
+      "title": "Topluluk",
+      "desc": "İnşaat sektöründen büyük bir insan grubu. OpenAEC Foundation ile bağlantılı kendi depolarını sürdürürler veya OpenAEC kapsamındaki depolara katkıda bulunurlar.",
+      "desc2": "Foundation ayrıca gelişimi mümkün kılmaya yardımcı olan ortaklar ve destekçiler tarafından desteklenir."
+    }
+  },
+  "note": "Bu yapı <strong>tam anlamıyla geliştirme aşamasında</strong> — hâlâ üzerinde çok çalışılıyor. Fikir vermek veya katkıda bulunmak ister misiniz? Sizden haber almaktan memnuniyet duyarız."
+}

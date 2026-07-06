@@ -1,0 +1,28 @@
+{
+  "header": {
+    "label": "Organisation",
+    "title": "<span class=\"accent\">Structure</span>",
+    "desc": "OpenAEC se compose de trois volets qui portent ensemble l'écosystème AEC open source : la Foundation, OpenAEC Studio et la communauté."
+  },
+  "parts": {
+    "foundation": {
+      "num": "Volet 01",
+      "title": "OpenAEC Foundation <span class=\"tag\">en création</span>",
+      "desc": "La Foundation a pour objectif de maintenir et de pérenniser les outils développés sur le long terme. Elle construit également un vaste réseau de connaissances pour le secteur de la construction — sur les plans technique, logiciel et architectural.",
+      "desc2": "L'ambition est une couverture aussi large que possible, afin que l'ensemble du secteur bénéficie de connaissances et de logiciels ouverts."
+    },
+    "studio": {
+      "num": "Volet 02",
+      "title": "OpenAEC Studio",
+      "desc": "Une société de conseil informatique qui fournit des services autour de l'écosystème OpenAEC : implémentation, hébergement, développement sur mesure et support professionnel.",
+      "desc2": "Le logiciel reste open source ; Studio veille à ce que les organisations puissent l'utiliser en pratique."
+    },
+    "community": {
+      "num": "Volet 03",
+      "title": "Communauté",
+      "desc": "Un large groupe de personnes du secteur de la construction. Elles maintiennent leurs propres dépôts affiliés à la OpenAEC Foundation, ou contribuent à des dépôts qui relèvent d'OpenAEC.",
+      "desc2": "La Foundation est en outre soutenue par des partenaires et des supporters qui contribuent à rendre le développement possible."
+    }
+  },
+  "note": "Cette structure est <strong>en plein développement</strong> — beaucoup de choses restent à préciser. Envie de participer ou de contribuer ? N'hésitez pas à nous contacter."
+}

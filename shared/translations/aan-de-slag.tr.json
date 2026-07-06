@@ -31,13 +31,33 @@
   },
   "quick": {
     "title": "Hızlı bağlantılar...",
-    "tools": { "title": "Tüm araçlar", "desc": "Ekosistemdeki 18+ aracın tümünün özeti." },
-    "ifcx": { "title": "IFCX veri formatı", "desc": "IFCX'in nasıl çalıştığı ve hangi sivil şemaların desteklendiği." },
-    "arch": { "title": "Mimari", "desc": "Tech stack: Rust, Tauri 2, TypeScript, çapraz platform." },
-    "services": { "title": "Hizmetler", "desc": "Danışmanlık, barındırma, özel uzantılar, bağışlar." },
-    "quote": { "title": "Teklif iste", "desc": "Profesyonel destek isteyen şirketler için." },
-    "roadmap": { "title": "Yol haritası", "desc": "2026 ve 2027 için neler geliyor." },
-    "faq": { "title": "SSS", "desc": "Açık kaynak, barındırma, katkıda bulunma hakkında sık sorulan sorular." },
-    "github": { "title": "GitHub", "desc": "Kaynak kodu, sorunlar, katkı yönergeleri." }
+    "tools": {
+      "title": "Tüm araçlar",
+      "desc": "Ekosistemdeki 18+ aracın tümünün özeti."
+    },
+    "ifcx": {
+      "title": "IFCX veri formatı",
+      "desc": "IFCX'in nasıl çalıştığı ve hangi sivil şemaların desteklendiği."
+    },
+    "arch": {
+      "title": "Mimari",
+      "desc": "Tech stack: Rust, Tauri 2, TypeScript, çapraz platform."
+    },
+    "quote": {
+      "title": "Teklif iste",
+      "desc": "Profesyonel destek isteyen şirketler için."
+    },
+    "roadmap": {
+      "title": "Yol haritası",
+      "desc": "2026 ve 2027 için neler geliyor."
+    },
+    "faq": {
+      "title": "SSS",
+      "desc": "Açık kaynak, barındırma, katkıda bulunma hakkında sık sorulan sorular."
+    },
+    "github": {
+      "title": "GitHub",
+      "desc": "Kaynak kodu, sorunlar, katkı yönergeleri."
+    }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "header": {
+    "label": "Organisation",
+    "title": "<span class=\"accent\">Structure</span>",
+    "desc": "OpenAEC consists of three parts that together carry the open source AEC ecosystem: the Foundation, OpenAEC Studio and the community."
+  },
+  "parts": {
+    "foundation": {
+      "num": "Part 01",
+      "title": "OpenAEC Foundation <span class=\"tag\">being established</span>",
+      "desc": "The Foundation's goal is to maintain and safeguard the developed tools over the long term. It also builds a broad knowledge network for the construction sector — on a technical, software-technical and architectural level.",
+      "desc2": "The aim is the widest possible coverage, so the sector as a whole benefits from open knowledge and open software."
+    },
+    "studio": {
+      "num": "Part 02",
+      "title": "OpenAEC Studio",
+      "desc": "An IT consultancy that delivers services around the OpenAEC ecosystem: implementation, hosting, custom development and professional support.",
+      "desc2": "The software stays open source; Studio makes sure organisations can put it to work in practice."
+    },
+    "community": {
+      "num": "Part 03",
+      "title": "Community",
+      "desc": "A large group of people from the construction sector. They maintain their own repositories affiliated with the OpenAEC Foundation, or contribute to repositories that fall under OpenAEC.",
+      "desc2": "The Foundation is also supported by partners and supporters who help make the development possible."
+    }
+  },
+  "note": "This structure is <strong>very much a work in progress</strong> — a lot is still being worked out. Want to think along or contribute? We'd love to hear from you."
+}

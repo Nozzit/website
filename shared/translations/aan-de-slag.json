@@ -31,13 +31,33 @@
   },
   "quick": {
     "title": "Quick links…",
-    "tools": { "title": "All tools", "desc": "Overview of all 18+ tools in the ecosystem." },
-    "ifcx": { "title": "IFCX data format", "desc": "How IFCX works and which civil schemas are supported." },
-    "arch": { "title": "Architecture", "desc": "Tech stack: Rust, Tauri 2, TypeScript, cross-platform." },
-    "services": { "title": "Services", "desc": "Consultancy, hosting, custom extensions, donations." },
-    "quote": { "title": "Request a quote", "desc": "For companies that want professional support." },
-    "roadmap": { "title": "Roadmap", "desc": "What's coming up for 2026 and 2027." },
-    "faq": { "title": "FAQ", "desc": "Frequently asked questions about open source, hosting, contributing." },
-    "github": { "title": "GitHub", "desc": "Source code, issues, contributing guidelines." }
+    "tools": {
+      "title": "All tools",
+      "desc": "Overview of all 18+ tools in the ecosystem."
+    },
+    "ifcx": {
+      "title": "IFCX data format",
+      "desc": "How IFCX works and which civil schemas are supported."
+    },
+    "arch": {
+      "title": "Architecture",
+      "desc": "Tech stack: Rust, Tauri 2, TypeScript, cross-platform."
+    },
+    "quote": {
+      "title": "Request a quote",
+      "desc": "For companies that want professional support."
+    },
+    "roadmap": {
+      "title": "Roadmap",
+      "desc": "What's coming up for 2026 and 2027."
+    },
+    "faq": {
+      "title": "FAQ",
+      "desc": "Frequently asked questions about open source, hosting, contributing."
+    },
+    "github": {
+      "title": "GitHub",
+      "desc": "Source code, issues, contributing guidelines."
+    }
   }
 }
