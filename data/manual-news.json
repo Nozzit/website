@@ -1,6 +1,19 @@
 [
   {
     "type": "announcement",
+    "title": "Open Heatloss Studio — warmteverlies conform NEN 12831 & ISSO 51:2023, volop in ontwikkeling",
+    "description": "Open Heatloss Studio is de open-source tool voor warmteverliesberekeningen conform NEN 12831 en ISSO 51:2023. De reken-engine is gebouwd in Rust (ruim 620 commits, 4 bijdragers) en zit in een actieve alpha-fase. Recent wordt gewerkt aan een indicatieve MPG-tab voor de milieuprestatie van gebouwen — zodat je naast het warmteverlies ook een eerste beeld van de duurzaamheid krijgt. Gratis, open source en volop in ontwikkeling.",
+    "date": "2026-07-05",
+    "url": "/open-heatloss-studio/",
+    "title_en": "Open Heatloss Studio — heat loss to NEN 12831 & ISSO 51:2023, in active development",
+    "description_en": "Open Heatloss Studio is the open-source tool for heat-loss calculations compliant with NEN 12831 and ISSO 51:2023. Its calculation engine is built in Rust (over 620 commits, 4 contributors) and is in an active alpha phase. Recent work adds an indicative environmental-performance (MPG) tab, so alongside heat loss you also get a first read on sustainability. Free, open source and in active development.",
+    "title_fr": "Open Heatloss Studio — déperditions selon NEN 12831 & ISSO 51:2023, en développement actif",
+    "description_fr": "Open Heatloss Studio est l'outil open source de calcul des déperditions de chaleur conforme aux normes NEN 12831 et ISSO 51:2023. Son moteur de calcul est développé en Rust (plus de 620 commits, 4 contributeurs) et se trouve en phase alpha active. Les travaux récents ajoutent un onglet indicatif de performance environnementale (MPG), pour obtenir, au-delà des déperditions, un premier aperçu de la durabilité. Gratuit, open source et en plein développement.",
+    "title_tr": "Open Heatloss Studio — NEN 12831 & ISSO 51:2023'e uygun ısı kaybı, aktif geliştirmede",
+    "description_tr": "Open Heatloss Studio, NEN 12831 ve ISSO 51:2023 ile uyumlu ısı kaybı hesaplamaları için açık kaynaklı araçtır. Hesaplama motoru Rust ile geliştirilmiştir (620'den fazla commit, 4 katkıda bulunan) ve aktif alfa aşamasındadır. Son çalışmalar, ısı kaybının yanı sıra sürdürülebilirlik hakkında da ilk bir fikir veren gösterge niteliğinde bir çevresel performans (MPG) sekmesi ekliyor. Ücretsiz, açık kaynak ve tam anlamıyla geliştirme aşamasında."
+  },
+  {
+    "type": "announcement",
     "title": "Wat is er nieuw: twee weken doorontwikkeling in het OpenAEC-ecosysteem",
     "description": "In twee weken flink doorontwikkeld. Open PDF Studio kreeg een compleet nieuwe render-engine (zware bouwtekeningen openen razendsnel). Open Geotechniek Studio maakte een enorme sprong: sonderingen/boringen direct openen, live BRO-kaart en zelf-bijwerkende rapporten. Open Calc Studio calculeert slimmer (uren naar rato, AI- en spraak-koppeling). Open Planner Studio v2026.6.0 brengt bouwplanning met kritieke pad en native IFC 4.3. En OpenAEC SuperCloud is aangekondigd: één account en login voor het hele ecosysteem. Plus tientallen kleinere verbeteringen — allemaal open source en gratis.",
     "date": "2026-06-30",
