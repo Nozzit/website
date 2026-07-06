@@ -391,20 +391,50 @@
       announcement: 'Nieuws'
     };
     const TYPE_LABEL_EN = { release: 'Release', new_repo: 'New repo', linkedin: 'LinkedIn', announcement: 'News' };
+    const TYPE_LABEL_FR = { release: 'Version', new_repo: 'Nouveau dépôt', linkedin: 'LinkedIn', announcement: 'Actualité' };
+    const TYPE_LABEL_TR = { release: 'Sürüm', new_repo: 'Yeni depo', linkedin: 'LinkedIn', announcement: 'Haber' };
+    const TYPE_LABELS = { nl: TYPE_LABEL, en: TYPE_LABEL_EN, fr: TYPE_LABEL_FR, tr: TYPE_LABEL_TR };
 
-    // Current language (nl default; en/fr/tr fall back to English content).
+    // Current language (nl/en/fr/tr).
     function newsLang() { try { if (window.getCurrentLang) return getCurrentLang(); } catch (e) {} return localStorage.getItem('openaec-lang') || 'nl'; }
     function localeTag(l) { return l === 'nl' ? 'nl-NL' : l === 'fr' ? 'fr-FR' : l === 'tr' ? 'tr-TR' : 'en-GB'; }
-    // Translate the formulaic Dutch generated-news titles to English.
-    function toEnTitle(t) { return String(t).replace(/\buitgebracht\b/g, 'released').replace(/^Nieuwe repository:/, 'New repository:').replace(/\bVersies:/g, 'Versions:'); }
+
+    // UI strings (labels not tied to individual news items).
+    const UI = {
+      empty:      { nl: 'Geen items gevonden.', en: 'No items found.', fr: 'Aucun élément trouvé.', tr: 'Öğe bulunamadı.' },
+      error:      { nl: 'Kon nieuws niet laden. Probeer het later opnieuw.', en: 'Could not load news. Please try again later.', fr: 'Impossible de charger les actualités. Réessayez plus tard.', tr: 'Haberler yüklenemedi. Lütfen daha sonra tekrar deneyin.' },
+      itemsTotal: { nl: 'items totaal', en: 'items total', fr: 'éléments au total', tr: 'toplam öğe' },
+      releases:   { nl: 'releases', en: 'releases', fr: 'versions', tr: 'sürüm' },
+      newRepos:   { nl: 'nieuwe repositories', en: 'new repositories', fr: 'nouveaux dépôts', tr: 'yeni depo' }
+    };
+    function ui(key) { const l = newsLang(); const s = UI[key] || {}; return s[l] || s.en || ''; }
+
+    // Pattern-translate the formulaic Dutch generated-news titles/descriptions.
+    function tGenTitle(t, l) {
+      t = String(t);
+      if (l === 'fr') return t.replace(/\buitgebracht\b/g, 'publié').replace(/^Nieuwe repository:/, 'Nouveau dépôt :').replace(/(\d+) releases\b/g, '$1 versions');
+      if (l === 'tr') return t.replace(/\buitgebracht\b/g, 'yayınlandı').replace(/^Nieuwe repository:/, 'Yeni depo:').replace(/(\d+) releases\b/g, '$1 sürüm');
+      if (l === 'en') return t.replace(/\buitgebracht\b/g, 'released').replace(/^Nieuwe repository:/, 'New repository:');
+      return t;
+    }
+    function tGenDesc(d, l) {
+      d = String(d);
+      if (l === 'fr') return d.replace(/^Versies:/, 'Versions :').replace(/^Nieuw project gestart$/, 'Nouveau projet lancé');
+      if (l === 'tr') return d.replace(/^Versies:/, 'Sürümler:').replace(/^Nieuw project gestart$/, 'Yeni proje başlatıldı');
+      if (l === 'en') return d.replace(/^Versies:/, 'Versions:').replace(/^Nieuw project gestart$/, 'New project started');
+      return d;
+    }
     // Pick the right title/description/badge for the current language.
     function localize(item) {
       const l = newsLang();
+      const labels = TYPE_LABELS[l] || TYPE_LABEL_EN;
       if (l === 'nl') return { title: item.title, description: item.description, badge: (TYPE_LABEL[item.type] || item.type) };
+      // Manual items carry explicit per-language fields; fall back to EN, then to
+      // pattern-translated generated content.
       return {
-        title: item.title_en || toEnTitle(item.title),
-        description: item.description_en || String(item.description || '').replace(/^Versies:/, 'Versions:'),
-        badge: (TYPE_LABEL_EN[item.type] || item.type)
+        title: item['title_' + l] || item.title_en || tGenTitle(item.title, l),
+        description: item['description_' + l] || item.description_en || tGenDesc(item.description, l),
+        badge: (labels[item.type] || item.type)
       };
     }
 
@@ -468,7 +498,7 @@
 
     function renderFeed(items) {
       if (!items.length) {
-        return `<div class="news-empty"><p>${newsLang() === 'nl' ? 'Geen items gevonden.' : 'No items found.'}</p></div>`;
+        return `<div class="news-empty"><p>${ui('empty')}</p></div>`;
       }
       const groups = groupByWeek(items);
       let html = '';
@@ -503,9 +533,22 @@
       });
     });
 
-    // Re-render the feed in the new language when the user switches language.
+    // Render the stats bar in the current language.
+    function renderStats() {
+      const statsBar = document.getElementById('stats-bar');
+      if (!statsBar) return;
+      const releases = allNews.filter(i => i.type === 'release').length;
+      const newRepos = allNews.filter(i => i.type === 'new_repo').length;
+      statsBar.innerHTML = `
+        <div class="stat-pill"><strong>${allNews.length}</strong> ${ui('itemsTotal')}</div>
+        <div class="stat-pill"><strong>${releases}</strong> ${ui('releases')}</div>
+        <div class="stat-pill"><strong>${newRepos}</strong> ${ui('newRepos')}</div>
+      `;
+    }
+
+    // Re-render the feed + stats in the new language when the user switches language.
     document.addEventListener('click', (e) => {
-      if (e.target.closest && e.target.closest('.lang-btn')) setTimeout(applyFilter, 60);
+      if (e.target.closest && e.target.closest('.lang-btn')) setTimeout(() => { applyFilter(); renderStats(); }, 60);
     });
 
     // Fetch and render
@@ -520,24 +563,12 @@
           .sort((a, b) => b.date.localeCompare(a.date));
         allNews = news;
 
-        // Stats
-        const nl = newsLang() === 'nl';
-        const releases = news.filter(i => i.type === 'release').length;
-        const newRepos = news.filter(i => i.type === 'new_repo').length;
-        const statsBar = document.getElementById('stats-bar');
-        if (statsBar) {
-          statsBar.innerHTML = `
-            <div class="stat-pill"><strong>${news.length}</strong> ${nl ? 'items totaal' : 'items total'}</div>
-            <div class="stat-pill"><strong>${releases}</strong> releases</div>
-            <div class="stat-pill"><strong>${newRepos}</strong> ${nl ? 'nieuwe repositories' : 'new repositories'}</div>
-          `;
-        }
-
+        renderStats();
         applyFilter();
       })
       .catch(() => {
         document.getElementById('news-feed').innerHTML =
-          `<div class="news-empty"><p>${newsLang() === 'nl' ? 'Kon nieuws niet laden. Probeer het later opnieuw.' : 'Could not load news. Please try again later.'}</p></div>`;
+          `<div class="news-empty"><p>${ui('error')}</p></div>`;
       });
   </script>
   <script src="/shared/i18n.js?v=20260603"></script>

@@ -6,7 +6,11 @@
     "date": "2026-06-30",
     "url": "https://www.open-aec.com/",
     "title_en": "What's new: two weeks of development across the OpenAEC ecosystem",
-    "description_en": "Two weeks of solid development. Open PDF Studio got a brand-new rendering engine (heavy construction drawings open lightning-fast). Open Geotechniek Studio made a huge leap: open CPTs/borings instantly, a live BRO map and self-updating reports. Open Calc Studio estimates smarter (pro-rata hours, AI & voice link). Open Planner Studio v2026.6.0 brings construction scheduling with critical path and native IFC 4.3. And OpenAEC SuperCloud was announced: one account and login for the whole ecosystem. Plus dozens of smaller improvements — all open source and free."
+    "description_en": "Two weeks of solid development. Open PDF Studio got a brand-new rendering engine (heavy construction drawings open lightning-fast). Open Geotechniek Studio made a huge leap: open CPTs/borings instantly, a live BRO map and self-updating reports. Open Calc Studio estimates smarter (pro-rata hours, AI & voice link). Open Planner Studio v2026.6.0 brings construction scheduling with critical path and native IFC 4.3. And OpenAEC SuperCloud was announced: one account and login for the whole ecosystem. Plus dozens of smaller improvements — all open source and free.",
+    "title_fr": "Quoi de neuf : deux semaines de développement dans l'écosystème OpenAEC",
+    "description_fr": "Deux semaines de développement intense. Open PDF Studio a reçu un tout nouveau moteur de rendu (les plans de construction lourds s'ouvrent en un éclair). Open Geotechniek Studio a fait un bond énorme : ouvrez instantanément les CPT/sondages, une carte BRO en direct et des rapports qui se mettent à jour automatiquement. Open Calc Studio estime plus intelligemment (heures au prorata, liaison IA et vocale). Open Planner Studio v2026.6.0 apporte la planification de chantier avec chemin critique et IFC 4.3 natif. Et OpenAEC SuperCloud a été annoncé : un compte et une connexion pour tout l'écosystème. Plus des dizaines d'améliorations mineures — le tout open source et gratuit.",
+    "title_tr": "Yenilikler: OpenAEC ekosisteminde iki haftalık geliştirme",
+    "description_tr": "İki hafta yoğun geliştirme. Open PDF Studio yepyeni bir görüntüleme motoru aldı (ağır yapı çizimleri ışık hızında açılıyor). Open Geotechniek Studio büyük bir sıçrama yaptı: CPT/sondajları anında açın, canlı BRO haritası ve kendini güncelleyen raporlar. Open Calc Studio daha akıllı hesaplıyor (orantılı saatler, yapay zeka ve ses bağlantısı). Open Planner Studio v2026.6.0 kritik yol ve yerel IFC 4.3 ile inşaat planlaması getiriyor. Ve OpenAEC SuperCloud duyuruldu: tüm ekosistem için tek hesap ve giriş. Ayrıca onlarca küçük iyileştirme — hepsi açık kaynak ve ücretsiz."
   },
   {
     "type": "announcement",
@@ -15,7 +19,11 @@
     "date": "2026-06-30",
     "url": "https://www.open-aec.com/open-cad-studio/",
     "title_en": "Open CAD Studio v0.7.0 — 147 GitHub stars and 1,185 commits",
-    "description_en": "Hakan Seven's open-source CAD community project keeps growing fast. Open CAD Studio is now at v0.7.0 with 147 GitHub stars, 1,185 commits across 60 releases and 8 contributors — the most active repository in the ecosystem. Native DWG/DXF, built in Rust with GPU rendering, and available right in your browser. The OpenAEC Foundation actively promotes this project."
+    "description_en": "Hakan Seven's open-source CAD community project keeps growing fast. Open CAD Studio is now at v0.7.0 with 147 GitHub stars, 1,185 commits across 60 releases and 8 contributors — the most active repository in the ecosystem. Native DWG/DXF, built in Rust with GPU rendering, and available right in your browser. The OpenAEC Foundation actively promotes this project.",
+    "title_fr": "Open CAD Studio v0.7.0 — 147 étoiles GitHub et 1 185 commits",
+    "description_fr": "Le projet CAO communautaire open source de Hakan Seven continue de croître rapidement. Open CAD Studio en est à la v0.7.0 avec 147 étoiles GitHub, 1 185 commits répartis sur 60 versions et 8 contributeurs — le dépôt le plus actif de l'écosystème. DWG/DXF natif, développé en Rust avec rendu GPU, et utilisable directement dans le navigateur. La OpenAEC Foundation promeut activement ce projet.",
+    "title_tr": "Open CAD Studio v0.7.0 — 147 GitHub yıldızı ve 1.185 commit",
+    "description_tr": "Hakan Seven'in açık kaynaklı topluluk CAD projesi hızla büyümeye devam ediyor. Open CAD Studio, 147 GitHub yıldızı, 60 sürümde 1.185 commit ve 8 katkıda bulunan ile v0.7.0'da — ekosistemdeki en aktif depo. Yerel DWG/DXF, GPU görüntüleme ile Rust'ta geliştirildi ve doğrudan tarayıcıda denenebilir. OpenAEC Foundation bu projeyi aktif olarak destekliyor."
   },
   {
     "type": "announcement",
@@ -24,7 +32,11 @@
     "date": "2026-06-30",
     "url": "https://www.open-aec.com/",
     "title_en": "OpenAEC ecosystem passes 600 stars — 5,532 commits across 54 repos",
-    "description_en": "The OpenAEC Foundation's open-source AEC ecosystem now counts 617 GitHub stars, 5,532 commits and 199 releases across 54 public repositories. With production tools for CAD, PDF, cost estimation, planning, geotechnics, BIM and cloud, the sovereign, open alternative to closed construction software keeps growing steadily — driven by open source and AI."
+    "description_en": "The OpenAEC Foundation's open-source AEC ecosystem now counts 617 GitHub stars, 5,532 commits and 199 releases across 54 public repositories. With production tools for CAD, PDF, cost estimation, planning, geotechnics, BIM and cloud, the sovereign, open alternative to closed construction software keeps growing steadily — driven by open source and AI.",
+    "title_fr": "L'écosystème OpenAEC dépasse 600 étoiles — 5 532 commits sur 54 dépôts",
+    "description_fr": "L'écosystème AEC open source de la OpenAEC Foundation compte désormais 617 étoiles GitHub, 5 532 commits et 199 versions répartis sur 54 dépôts publics. Avec des outils de production pour la CAO, le PDF, l'estimation des coûts, la planification, la géotechnique, le BIM et le cloud, l'alternative souveraine et ouverte aux logiciels de construction fermés continue de croître régulièrement — portée par l'open source et l'IA.",
+    "title_tr": "OpenAEC ekosistemi 600 yıldızı geçti — 54 depoda 5.532 commit",
+    "description_tr": "OpenAEC Foundation'ın açık kaynaklı AEC ekosistemi artık 54 genel depoda 617 GitHub yıldızı, 5.532 commit ve 199 sürüm içeriyor. CAD, PDF, maliyet tahmini, planlama, geoteknik, BIM ve bulut için üretim araçlarıyla, kapalı inşaat yazılımlarına karşı egemen ve açık alternatif istikrarlı bir şekilde büyümeye devam ediyor — açık kaynak ve yapay zeka tarafından yönlendiriliyor."
   },
   {
     "type": "announcement",
@@ -33,7 +45,11 @@
     "date": "2026-06-18",
     "url": "https://www.open-aec.com/",
     "title_en": "OpenAEC SuperCloud announced — a sovereign cloud & account platform",
-    "description_en": "OpenAEC announces OpenAEC SuperCloud: the sovereign, all-in-one cloud, account and SSO platform for the ecosystem. One identity and login for all OpenAEC tools, with storage, collaboration and synchronisation between tools — fully self-hosted and open. Currently in development."
+    "description_en": "OpenAEC announces OpenAEC SuperCloud: the sovereign, all-in-one cloud, account and SSO platform for the ecosystem. One identity and login for all OpenAEC tools, with storage, collaboration and synchronisation between tools — fully self-hosted and open. Currently in development.",
+    "title_fr": "OpenAEC SuperCloud annoncé — une plateforme cloud et de comptes souveraine",
+    "description_fr": "OpenAEC annonce OpenAEC SuperCloud : la plateforme cloud, de comptes et de SSO souveraine et tout-en-un de l'écosystème. Une seule identité et connexion pour tous les outils OpenAEC, avec stockage, collaboration et synchronisation entre les outils — entièrement auto-hébergée et ouverte. Actuellement en développement.",
+    "title_tr": "OpenAEC SuperCloud duyuruldu — egemen bir bulut ve hesap platformu",
+    "description_tr": "OpenAEC, OpenAEC SuperCloud'u duyurdu: ekosistemin egemen, hepsi bir arada bulut, hesap ve SSO platformu. Tüm OpenAEC araçları için tek kimlik ve giriş; depolama, işbirliği ve araçlar arası senkronizasyon ile — tamamen kendi sunucunuzda barındırılabilir ve açık. Şu anda geliştirme aşamasında."
   },
   {
     "type": "announcement",
@@ -42,7 +58,11 @@
     "date": "2026-06-18",
     "url": "https://open-planner-studio.open-aec.com/",
     "title_en": "Open Planner Studio v2026.6.0 — with IFC link and reporting",
-    "description_en": "Open Planner Studio v2026.6.0 is out: a full-featured project scheduler with Gantt view, Critical Path Method (CPM), WBS and milestones. New in this version are the IFC link and an extended reporting tab. Free, open source and available right in your browser."
+    "description_en": "Open Planner Studio v2026.6.0 is out: a full-featured project scheduler with Gantt view, Critical Path Method (CPM), WBS and milestones. New in this version are the IFC link and an extended reporting tab. Free, open source and available right in your browser.",
+    "title_fr": "Open Planner Studio v2026.6.0 — avec liaison IFC et rapports",
+    "description_fr": "Open Planner Studio v2026.6.0 est disponible : un planificateur de projet complet avec vue de Gantt, méthode du chemin critique (CPM), WBS et jalons. Nouveautés de cette version : la liaison IFC et un onglet de rapports étendu. Gratuit, open source et utilisable directement dans le navigateur.",
+    "title_tr": "Open Planner Studio v2026.6.0 — IFC bağlantısı ve raporlama ile",
+    "description_tr": "Open Planner Studio v2026.6.0 çıktı: Gantt görünümü, Kritik Yol Yöntemi (CPM), WBS ve kilometre taşları olan tam kapsamlı bir proje planlayıcı. Bu sürümde yeni olan IFC bağlantısı ve genişletilmiş bir raporlama sekmesi. Ücretsiz, açık kaynak ve doğrudan tarayıcıda denenebilir."
   },
   {
     "type": "announcement",
@@ -51,7 +71,11 @@
     "date": "2026-06-12",
     "url": "https://bimvoice.podbean.com/e/he-wants-every-construction-tool-to-be-open-source-maarten-vroegindeweij-openbimvoice-16/",
     "title_en": "OpenAEC guest on the BIMvoice podcast (openBIMvoice #16)",
-    "description_en": "Maarten Vroegindeweij is a guest of Petru Conduraru on the international openBIM podcast BIMvoice. In the episode \"he wants every construction tool to be open source\" he talks about OpenAEC, the Blender Foundation model for construction software, and why AI makes the open-source breakthrough in construction possible. Available on all podcast platforms and YouTube."
+    "description_en": "Maarten Vroegindeweij is a guest of Petru Conduraru on the international openBIM podcast BIMvoice. In the episode \"he wants every construction tool to be open source\" he talks about OpenAEC, the Blender Foundation model for construction software, and why AI makes the open-source breakthrough in construction possible. Available on all podcast platforms and YouTube.",
+    "title_fr": "OpenAEC invité du podcast BIMvoice (openBIMvoice #16)",
+    "description_fr": "Maarten Vroegindeweij est l'invité de Petru Conduraru dans le podcast openBIM international BIMvoice. Dans l'épisode « he wants every construction tool to be open source », il parle d'OpenAEC, du modèle Blender Foundation pour les logiciels de construction, et de la raison pour laquelle l'IA rend possible la percée de l'open source dans la construction. Disponible sur toutes les plateformes de podcast et YouTube.",
+    "title_tr": "OpenAEC, BIMvoice podcast'ine konuk oldu (openBIMvoice #16)",
+    "description_tr": "Maarten Vroegindeweij, uluslararası openBIM podcast'i BIMvoice'te Petru Conduraru'nun konuğu. « he wants every construction tool to be open source » bölümünde OpenAEC'den, inşaat yazılımı için Blender Foundation modelinden ve yapay zekanın inşaatta açık kaynak atılımını neden mümkün kıldığından bahsediyor. Tüm podcast platformlarında ve YouTube'da mevcut."
   },
   {
     "type": "announcement",
@@ -60,7 +84,11 @@
     "date": "2026-06-03",
     "url": "https://community.osarch.org/discussion/3471/openaec-everything-open-source-by-end-of-2026",
     "title_en": "OpenAEC discussed on the OSArch forum — \"This is ... amazing\"",
-    "description_en": "The international open-source AEC community OSArch discovered OpenAEC. Dion Moult, creator of IfcOpenShell and Bonsai, opened the thread with \"https://open-aec.com — This is ... amazing.\" A lively discussion followed about the ecosystem and especially Open CAD Studio, described by the community as the first full-featured open-source CAD alternative with native DWG support. We welcome the questions, the healthy scepticism and the testers — exactly what open source is about."
+    "description_en": "The international open-source AEC community OSArch discovered OpenAEC. Dion Moult, creator of IfcOpenShell and Bonsai, opened the thread with \"https://open-aec.com — This is ... amazing.\" A lively discussion followed about the ecosystem and especially Open CAD Studio, described by the community as the first full-featured open-source CAD alternative with native DWG support. We welcome the questions, the healthy scepticism and the testers — exactly what open source is about.",
+    "title_fr": "OpenAEC discuté sur le forum OSArch — « This is ... amazing »",
+    "description_fr": "La communauté AEC open source internationale OSArch a découvert OpenAEC. Dion Moult, créateur d'IfcOpenShell et Bonsai, a ouvert le fil avec « https://open-aec.com — This is ... amazing. » Une discussion animée a suivi sur l'écosystème et surtout sur Open CAD Studio, décrit par la communauté comme la première alternative CAO open source complète avec prise en charge native du DWG. Nous accueillons les questions, le scepticisme sain et les testeurs — exactement l'esprit de l'open source.",
+    "title_tr": "OpenAEC, OSArch forumunda konuşuldu — \"This is ... amazing\"",
+    "description_tr": "Uluslararası açık kaynak AEC topluluğu OSArch, OpenAEC'i keşfetti. IfcOpenShell ve Bonsai'nin yaratıcısı Dion Moult, konuyu « https://open-aec.com — This is ... amazing. » ile açtı. Ekosistem ve özellikle topluluk tarafından yerel DWG desteğine sahip ilk tam kapsamlı açık kaynaklı CAD alternatifi olarak tanımlanan Open CAD Studio hakkında canlı bir tartışma başladı. Soruları, sağlıklı şüpheciliği ve test edenleri memnuniyetle karşılıyoruz — açık kaynağın özü tam da bu."
   },
   {
     "type": "announcement",
@@ -69,7 +97,11 @@
     "date": "2026-05-24",
     "url": "/nieuws/open-cad-studio-launch/",
     "title_en": "Open CAD Studio presented to the AEC community",
-    "description_en": "Independent open-source CAD project by Hakan Seven: native DWG/DXF read and write, built in Rust with GPU rendering via wgpu. 30 MB installer, starts in under a second. No proprietary vendors, no subscription. The OpenAEC Foundation actively promotes this project — we're looking for early adopters in the industry and feedback via GitHub issues."
+    "description_en": "Independent open-source CAD project by Hakan Seven: native DWG/DXF read and write, built in Rust with GPU rendering via wgpu. 30 MB installer, starts in under a second. No proprietary vendors, no subscription. The OpenAEC Foundation actively promotes this project — we're looking for early adopters in the industry and feedback via GitHub issues.",
+    "title_fr": "Open CAD Studio présenté à la communauté AEC",
+    "description_fr": "Projet CAO open source indépendant de Hakan Seven : lecture et écriture DWG/DXF natives, développé en Rust avec rendu GPU via wgpu. Installateur de 30 Mo, démarre en moins d'une seconde. Pas de fournisseurs propriétaires, pas d'abonnement. La OpenAEC Foundation promeut activement ce projet — nous recherchons des adopteurs précoces dans le secteur et des retours via les issues GitHub.",
+    "title_tr": "Open CAD Studio, AEC topluluğuna sunuldu",
+    "description_tr": "Hakan Seven'in bağımsız açık kaynaklı CAD projesi: yerel DWG/DXF okuma ve yazma, wgpu ile GPU görüntüleme kullanarak Rust'ta geliştirildi. 30 MB'lık kurulum, bir saniyeden kısa sürede başlar. Tescilli tedarikçi yok, abonelik yok. OpenAEC Foundation bu projeyi aktif olarak destekliyor — sektörde erken benimseyenler ve GitHub issue'lar aracılığıyla geri bildirim arıyoruz."
   },
   {
     "type": "announcement",
@@ -78,7 +110,11 @@
     "date": "2026-05-22",
     "url": "/nieuws/open-geotechniek-studio-v0-2-9/",
     "title_en": "Open Geotechniek Studio v0.2.9 live — testers wanted",
-    "description_en": "Free open-source tool for CPTs and borings, in browser and on desktop (Windows/Linux). GEF + BRO-XML viewer, direct BRO import, Robertson SBT classification, comparing CPTs, .ifcgis storage. Map base layers: topography, aerial imagery, elevation, cadastre. Extensions: CPT drawing (A2/A3 with PDF export) + request quotations. All MIT-licensed."
+    "description_en": "Free open-source tool for CPTs and borings, in browser and on desktop (Windows/Linux). GEF + BRO-XML viewer, direct BRO import, Robertson SBT classification, comparing CPTs, .ifcgis storage. Map base layers: topography, aerial imagery, elevation, cadastre. Extensions: CPT drawing (A2/A3 with PDF export) + request quotations. All MIT-licensed.",
+    "title_fr": "Open Geotechniek Studio v0.2.9 en ligne — testeurs recherchés",
+    "description_fr": "Outil open source gratuit pour les CPT et sondages, dans le navigateur et sur ordinateur (Windows/Linux). Visionneuse GEF + BRO-XML, import BRO direct, classification SBT de Robertson, comparaison de CPT, stockage .ifcgis. Couches de fond de carte : topographie, imagerie aérienne, altimétrie, cadastre. Extensions : dessin de CPT (A2/A3 avec export PDF) + demande de devis. Le tout sous licence MIT.",
+    "title_tr": "Open Geotechniek Studio v0.2.9 yayında — test edenler aranıyor",
+    "description_tr": "CPT'ler ve sondajlar için ücretsiz açık kaynaklı araç, tarayıcıda ve masaüstünde (Windows/Linux). GEF + BRO-XML görüntüleyici, doğrudan BRO içe aktarma, Robertson SBT sınıflandırması, CPT karşılaştırma, .ifcgis depolama. Harita taban katmanları: topografya, hava görüntüleri, yükseklik, kadastro. Uzantılar: CPT çizimi (PDF dışa aktarma ile A2/A3) + teklif isteme. Tümü MIT lisanslı."
   },
   {
     "type": "announcement",
@@ -87,7 +123,11 @@
     "date": "2026-05-19",
     "url": "/open-speech-studio/",
     "title_en": "Featured: Open Speech Studio v0.9.0 — free local speech recognition",
-    "description_en": "Press CTRL+Win and dictate in any Windows application via Whisper AI. 100% local — your voice never leaves your computer. No subscription, no cloud, no limit. A free alternative to expensive proprietary dictation and transcription software."
+    "description_en": "Press CTRL+Win and dictate in any Windows application via Whisper AI. 100% local — your voice never leaves your computer. No subscription, no cloud, no limit. A free alternative to expensive proprietary dictation and transcription software.",
+    "title_fr": "À la une : Open Speech Studio v0.9.0 — reconnaissance vocale locale et gratuite",
+    "description_fr": "Appuyez sur CTRL+Win et dictez dans n'importe quelle application Windows via l'IA Whisper. 100 % local — votre voix ne quitte jamais votre ordinateur. Pas d'abonnement, pas de cloud, pas de limite. Une alternative gratuite aux logiciels de dictée et de transcription propriétaires coûteux.",
+    "title_tr": "Öne çıkan: Open Speech Studio v0.9.0 — ücretsiz yerel konuşma tanıma",
+    "description_tr": "CTRL+Win tuşlarına basın ve Whisper AI ile herhangi bir Windows uygulamasında dikte edin. %100 yerel — sesiniz asla bilgisayarınızdan çıkmaz. Abonelik yok, bulut yok, sınır yok. Pahalı tescilli dikte ve transkripsiyon yazılımlarına ücretsiz bir alternatif."
   },
   {
     "type": "linkedin",
@@ -96,6 +136,10 @@
     "date": "2026-05-15",
     "url": "https://www.linkedin.com/posts/openaec-rust-crateswarehouse-ugcPost-7461109675158220800-H79E",
     "title_en": "LinkedIn post: Open Heatloss Studio alpha launched",
-    "description_en": "We announced on LinkedIn that Open Heatloss Studio is in alpha. Open-source heat-loss calculation compliant with NEN 12831 and ISSO 51:2023, built in Rust + Tauri."
+    "description_en": "We announced on LinkedIn that Open Heatloss Studio is in alpha. Open-source heat-loss calculation compliant with NEN 12831 and ISSO 51:2023, built in Rust + Tauri.",
+    "title_fr": "Publication LinkedIn : lancement de la version alpha d'Open Heatloss Studio",
+    "description_fr": "Nous avons annoncé sur LinkedIn qu'Open Heatloss Studio est en version alpha. Calcul de déperdition de chaleur open source conforme aux normes NEN 12831 et ISSO 51:2023, développé en Rust + Tauri.",
+    "title_tr": "LinkedIn gönderisi: Open Heatloss Studio alfa sürümü yayınlandı",
+    "description_tr": "Open Heatloss Studio'nun alfa aşamasında olduğunu LinkedIn'de duyurduk. NEN 12831 ve ISSO 51:2023 ile uyumlu açık kaynaklı ısı kaybı hesaplaması, Rust + Tauri ile geliştirildi."
   }
 ]
