@@ -390,24 +390,42 @@
       linkedin: 'LinkedIn',
       announcement: 'Nieuws'
     };
+    const TYPE_LABEL_EN = { release: 'Release', new_repo: 'New repo', linkedin: 'LinkedIn', announcement: 'News' };
 
-    // Format date nicely in Dutch
+    // Current language (nl default; en/fr/tr fall back to English content).
+    function newsLang() { try { if (window.getCurrentLang) return getCurrentLang(); } catch (e) {} return localStorage.getItem('openaec-lang') || 'nl'; }
+    function localeTag(l) { return l === 'nl' ? 'nl-NL' : l === 'fr' ? 'fr-FR' : l === 'tr' ? 'tr-TR' : 'en-GB'; }
+    // Translate the formulaic Dutch generated-news titles to English.
+    function toEnTitle(t) { return String(t).replace(/\buitgebracht\b/g, 'released').replace(/^Nieuwe repository:/, 'New repository:').replace(/\bVersies:/g, 'Versions:'); }
+    // Pick the right title/description/badge for the current language.
+    function localize(item) {
+      const l = newsLang();
+      if (l === 'nl') return { title: item.title, description: item.description, badge: (TYPE_LABEL[item.type] || item.type) };
+      return {
+        title: item.title_en || toEnTitle(item.title),
+        description: item.description_en || String(item.description || '').replace(/^Versies:/, 'Versions:'),
+        badge: (TYPE_LABEL_EN[item.type] || item.type)
+      };
+    }
+
+    // Format date in the current language
     function formatDate(dateStr) {
       const d = new Date(dateStr + 'T00:00:00');
-      return d.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
+      return d.toLocaleDateString(localeTag(newsLang()), { day: 'numeric', month: 'long', year: 'numeric' });
     }
 
     // Get ISO week label
     function getWeekLabel(dateStr) {
       const d = new Date(dateStr + 'T00:00:00');
-      // Get Monday of the week
       const day = d.getDay(); // 0=Sun, 1=Mon
       const diff = d.getDate() - day + (day === 0 ? -6 : 1);
       const mon = new Date(d.setDate(diff));
       const sun = new Date(mon);
       sun.setDate(mon.getDate() + 6);
+      const l = newsLang();
       const opts = { day: 'numeric', month: 'long' };
-      return `Week van ${mon.toLocaleDateString('nl-NL', opts)} – ${sun.toLocaleDateString('nl-NL', opts)}`;
+      const prefix = l === 'nl' ? 'Week van' : l === 'fr' ? 'Semaine du' : l === 'tr' ? 'Hafta' : 'Week of';
+      return `${prefix} ${mon.toLocaleDateString(localeTag(l), opts)} – ${sun.toLocaleDateString(localeTag(l), opts)}`;
     }
 
     // Group items by week
@@ -431,17 +449,17 @@
 
     function renderCard(item) {
       const icon = TYPE_ICON[item.type] || TYPE_ICON.release;
-      const badge = TYPE_LABEL[item.type] || item.type;
+      const loc = localize(item);
       return `
         <a class="news-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener">
           <div class="news-icon ${escapeHtml(item.type)}">${icon}</div>
           <div class="news-body">
             <div class="news-meta">
               <span class="news-date">${escapeHtml(formatDate(item.date))}</span>
-              <span class="news-type-badge ${escapeHtml(item.type)}">${escapeHtml(badge)}</span>
+              <span class="news-type-badge ${escapeHtml(item.type)}">${escapeHtml(loc.badge)}</span>
             </div>
-            <div class="news-title">${escapeHtml(item.title)}</div>
-            <p class="news-desc">${escapeHtml(item.description)}</p>
+            <div class="news-title">${escapeHtml(loc.title)}</div>
+            <p class="news-desc">${escapeHtml(loc.description)}</p>
           </div>
           <span class="news-arrow">&rarr;</span>
         </a>
@@ -450,7 +468,7 @@
 
     function renderFeed(items) {
       if (!items.length) {
-        return '<div class="news-empty"><p>Geen items gevonden.</p></div>';
+        return `<div class="news-empty"><p>${newsLang() === 'nl' ? 'Geen items gevonden.' : 'No items found.'}</p></div>`;
       }
       const groups = groupByWeek(items);
       let html = '';
@@ -485,25 +503,33 @@
       });
     });
 
+    // Re-render the feed in the new language when the user switches language.
+    document.addEventListener('click', (e) => {
+      if (e.target.closest && e.target.closest('.lang-btn')) setTimeout(applyFilter, 60);
+    });
+
     // Fetch and render
     Promise.all([
       fetch('/data/news.json').then(r => r.ok ? r.json() : []),
       fetch('/data/manual-news.json').then(r => r.ok ? r.json() : []).catch(() => [])
     ])
       .then(([autoNews, manualNews]) => {
-        // Merge and sort by date (newest first)
-        const news = [...manualNews, ...autoNews].sort((a, b) => b.date.localeCompare(a.date));
+        // Merge, drop nightly builds (not newsworthy), sort by date (newest first)
+        const news = [...manualNews, ...autoNews]
+          .filter(i => !/nightly/i.test((i.title || '') + ' ' + (i.description || '')))
+          .sort((a, b) => b.date.localeCompare(a.date));
         allNews = news;
 
         // Stats
+        const nl = newsLang() === 'nl';
         const releases = news.filter(i => i.type === 'release').length;
         const newRepos = news.filter(i => i.type === 'new_repo').length;
         const statsBar = document.getElementById('stats-bar');
         if (statsBar) {
           statsBar.innerHTML = `
-            <div class="stat-pill"><strong>${news.length}</strong> items totaal</div>
+            <div class="stat-pill"><strong>${news.length}</strong> ${nl ? 'items totaal' : 'items total'}</div>
             <div class="stat-pill"><strong>${releases}</strong> releases</div>
-            <div class="stat-pill"><strong>${newRepos}</strong> nieuwe repositories</div>
+            <div class="stat-pill"><strong>${newRepos}</strong> ${nl ? 'nieuwe repositories' : 'new repositories'}</div>
           `;
         }
 
@@ -511,7 +537,7 @@
       })
       .catch(() => {
         document.getElementById('news-feed').innerHTML =
-          '<div class="news-empty"><p>Kon nieuws niet laden. Probeer het later opnieuw.</p></div>';
+          `<div class="news-empty"><p>${newsLang() === 'nl' ? 'Kon nieuws niet laden. Probeer het later opnieuw.' : 'Could not load news. Please try again later.'}</p></div>`;
       });
   </script>
   <script src="/shared/i18n.js?v=20260603"></script>

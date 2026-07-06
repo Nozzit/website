@@ -4,76 +4,98 @@
     "title": "Wat is er nieuw: twee weken doorontwikkeling in het OpenAEC-ecosysteem",
     "description": "In twee weken flink doorontwikkeld. Open PDF Studio kreeg een compleet nieuwe render-engine (zware bouwtekeningen openen razendsnel). Open Geotechniek Studio maakte een enorme sprong: sonderingen/boringen direct openen, live BRO-kaart en zelf-bijwerkende rapporten. Open Calc Studio calculeert slimmer (uren naar rato, AI- en spraak-koppeling). Open Planner Studio v2026.6.0 brengt bouwplanning met kritieke pad en native IFC 4.3. En OpenAEC SuperCloud is aangekondigd: één account en login voor het hele ecosysteem. Plus tientallen kleinere verbeteringen — allemaal open source en gratis.",
     "date": "2026-06-30",
-    "url": "https://www.open-aec.com/"
+    "url": "https://www.open-aec.com/",
+    "title_en": "What's new: two weeks of development across the OpenAEC ecosystem",
+    "description_en": "Two weeks of solid development. Open PDF Studio got a brand-new rendering engine (heavy construction drawings open lightning-fast). Open Geotechniek Studio made a huge leap: open CPTs/borings instantly, a live BRO map and self-updating reports. Open Calc Studio estimates smarter (pro-rata hours, AI & voice link). Open Planner Studio v2026.6.0 brings construction scheduling with critical path and native IFC 4.3. And OpenAEC SuperCloud was announced: one account and login for the whole ecosystem. Plus dozens of smaller improvements — all open source and free."
   },
   {
     "type": "announcement",
     "title": "Open CAD Studio v0.7.0 — 147 GitHub stars en 1.185 commits",
     "description": "Het open-source CAD-community-project van Hakan Seven blijft hard groeien. Open CAD Studio staat nu op v0.7.0 met 147 GitHub stars, 1.185 commits over 60 releases en 8 contributors — daarmee de meest actieve repository in het ecosysteem. Native DWG/DXF, gebouwd in Rust met GPU-rendering, én direct in de browser te proberen. De OpenAEC Foundation promoot dit project actief.",
     "date": "2026-06-30",
-    "url": "https://www.open-aec.com/open-cad-studio/"
+    "url": "https://www.open-aec.com/open-cad-studio/",
+    "title_en": "Open CAD Studio v0.7.0 — 147 GitHub stars and 1,185 commits",
+    "description_en": "Hakan Seven's open-source CAD community project keeps growing fast. Open CAD Studio is now at v0.7.0 with 147 GitHub stars, 1,185 commits across 60 releases and 8 contributors — the most active repository in the ecosystem. Native DWG/DXF, built in Rust with GPU rendering, and available right in your browser. The OpenAEC Foundation actively promotes this project."
   },
   {
     "type": "announcement",
     "title": "OpenAEC-ecosysteem voorbij 600 stars — 5.532 commits over 54 repo's",
     "description": "Het open-source AEC-ecosysteem van de OpenAEC Foundation telt nu 617 GitHub stars, 5.532 commits en 199 releases verdeeld over 54 publieke repositories. Met productie-tools voor CAD, PDF, calculatie, planning, geotechniek, BIM en cloud groeit het soevereine, open alternatief voor gesloten bouwsoftware gestaag door — gedreven door open source én AI.",
     "date": "2026-06-30",
-    "url": "https://www.open-aec.com/"
+    "url": "https://www.open-aec.com/",
+    "title_en": "OpenAEC ecosystem passes 600 stars — 5,532 commits across 54 repos",
+    "description_en": "The OpenAEC Foundation's open-source AEC ecosystem now counts 617 GitHub stars, 5,532 commits and 199 releases across 54 public repositories. With production tools for CAD, PDF, cost estimation, planning, geotechnics, BIM and cloud, the sovereign, open alternative to closed construction software keeps growing steadily — driven by open source and AI."
   },
   {
     "type": "announcement",
     "title": "OpenAEC SuperCloud aangekondigd — soeverein cloud- & accountplatform",
     "description": "OpenAEC kondigt OpenAEC SuperCloud aan: het soevereine, alles-in-één cloud-, account- en SSO-platform van het ecosysteem. Eén identiteit en login voor alle OpenAEC-tools, met opslag, samenwerking en synchronisatie tussen tools — volledig zelf-gehost en open. Momenteel in ontwikkeling.",
     "date": "2026-06-18",
-    "url": "https://www.open-aec.com/"
+    "url": "https://www.open-aec.com/",
+    "title_en": "OpenAEC SuperCloud announced — a sovereign cloud & account platform",
+    "description_en": "OpenAEC announces OpenAEC SuperCloud: the sovereign, all-in-one cloud, account and SSO platform for the ecosystem. One identity and login for all OpenAEC tools, with storage, collaboration and synchronisation between tools — fully self-hosted and open. Currently in development."
   },
   {
     "type": "announcement",
     "title": "Open Planner Studio v2026.6.0 — met IFC-koppeling en Rapportage",
     "description": "Open Planner Studio v2026.6.0 is uit: een volwaardige projectplanner met Gantt-weergave, kritieke-pad-analyse (CPM), WBS en mijlpalen. Nieuw in deze versie zijn de IFC-koppeling en een uitgebreide Rapportage-tab. Gratis, open source en direct in de browser te proberen.",
     "date": "2026-06-18",
-    "url": "https://open-planner-studio.open-aec.com/"
+    "url": "https://open-planner-studio.open-aec.com/",
+    "title_en": "Open Planner Studio v2026.6.0 — with IFC link and reporting",
+    "description_en": "Open Planner Studio v2026.6.0 is out: a full-featured project scheduler with Gantt view, Critical Path Method (CPM), WBS and milestones. New in this version are the IFC link and an extended reporting tab. Free, open source and available right in your browser."
   },
   {
     "type": "announcement",
     "title": "OpenAEC te gast in de BIMvoice-podcast (openBIMvoice #16)",
     "description": "Maarten Vroegindeweij is te gast bij Petru Conduraru in de internationale openBIM-podcast BIMvoice. In de aflevering \"he wants every construction tool to be open source\" vertelt hij over OpenAEC, het Blender Foundation-model voor bouwsoftware, en waarom AI de doorbraak van open source in de bouw mogelijk maakt. Te beluisteren en te bekijken op alle podcastplatforms en YouTube.",
     "date": "2026-06-12",
-    "url": "https://bimvoice.podbean.com/e/he-wants-every-construction-tool-to-be-open-source-maarten-vroegindeweij-openbimvoice-16/"
+    "url": "https://bimvoice.podbean.com/e/he-wants-every-construction-tool-to-be-open-source-maarten-vroegindeweij-openbimvoice-16/",
+    "title_en": "OpenAEC guest on the BIMvoice podcast (openBIMvoice #16)",
+    "description_en": "Maarten Vroegindeweij is a guest of Petru Conduraru on the international openBIM podcast BIMvoice. In the episode \"he wants every construction tool to be open source\" he talks about OpenAEC, the Blender Foundation model for construction software, and why AI makes the open-source breakthrough in construction possible. Available on all podcast platforms and YouTube."
   },
   {
     "type": "announcement",
     "title": "OpenAEC besproken op het OSArch-forum — \"This is ... amazing\"",
     "description": "De internationale open-source AEC-community OSArch heeft OpenAEC ontdekt. Dion Moult, maker van IfcOpenShell en Bonsai, opende de thread met \"https://open-aec.com — This is ... amazing.\" Levendige discussie volgde over het ecosysteem en vooral Open CAD Studio, door de community omschreven als de eerste volwaardige open-source AutoCAD-alternatief met native DWG-ondersteuning. We verwelkomen de vragen, de gezonde scepsis en de testers — precies waar open source om draait.",
     "date": "2026-06-03",
-    "url": "https://community.osarch.org/discussion/3471/openaec-everything-open-source-by-end-of-2026"
+    "url": "https://community.osarch.org/discussion/3471/openaec-everything-open-source-by-end-of-2026",
+    "title_en": "OpenAEC discussed on the OSArch forum — \"This is ... amazing\"",
+    "description_en": "The international open-source AEC community OSArch discovered OpenAEC. Dion Moult, creator of IfcOpenShell and Bonsai, opened the thread with \"https://open-aec.com — This is ... amazing.\" A lively discussion followed about the ecosystem and especially Open CAD Studio, described by the community as the first full-featured open-source CAD alternative with native DWG support. We welcome the questions, the healthy scepticism and the testers — exactly what open source is about."
   },
   {
     "type": "announcement",
     "title": "Open CAD Studio gepresenteerd aan de AEC-community",
     "description": "Onafhankelijk open-source CAD-project van Hakan Seven: native DWG/DXF read en write, gebouwd in Rust met GPU-rendering via wgpu. 30 MB installer, start in <1 seconde. Geen Autodesk, geen Bricsys, geen abonnement. OpenAEC Foundation promoot dit project actief — wij zoeken early adopters in de industrie en feedback via GitHub issues.",
     "date": "2026-05-24",
-    "url": "/nieuws/open-cad-studio-launch/"
+    "url": "/nieuws/open-cad-studio-launch/",
+    "title_en": "Open CAD Studio presented to the AEC community",
+    "description_en": "Independent open-source CAD project by Hakan Seven: native DWG/DXF read and write, built in Rust with GPU rendering via wgpu. 30 MB installer, starts in under a second. No proprietary vendors, no subscription. The OpenAEC Foundation actively promotes this project — we're looking for early adopters in the industry and feedback via GitHub issues."
   },
   {
     "type": "announcement",
     "title": "Open Geotechniek Studio v0.2.9 live — testers gezocht",
     "description": "Gratis open-source tool voor sonderingen en boringen in browser én desktop (Windows/Linux). GEF + BRO-XML viewer, directe BRO-import, Robertson SBT-classificatie, sonderingen vergelijken, .ifcgis-opslag. Onderlagen op de kaart: BRT, luchtfoto, AHN, kadaster. Extensions: sonderingstekening (A2/A3 met PDF-export) + offertes opvragen. Alles MIT-licensed.",
     "date": "2026-05-22",
-    "url": "/nieuws/open-geotechniek-studio-v0-2-9/"
+    "url": "/nieuws/open-geotechniek-studio-v0-2-9/",
+    "title_en": "Open Geotechniek Studio v0.2.9 live — testers wanted",
+    "description_en": "Free open-source tool for CPTs and borings, in browser and on desktop (Windows/Linux). GEF + BRO-XML viewer, direct BRO import, Robertson SBT classification, comparing CPTs, .ifcgis storage. Map base layers: topography, aerial imagery, elevation, cadastre. Extensions: CPT drawing (A2/A3 with PDF export) + request quotations. All MIT-licensed."
   },
   {
     "type": "announcement",
     "title": "Uitgelicht: Open Speech Studio v0.9.0 — gratis lokale spraakherkenning",
     "description": "Druk CTRL+Win en dicteer in elke Windows-applicatie via Whisper AI. 100% lokaal — je stem verlaat nooit je computer. Geen abonnement, geen cloud, geen limiet. Gratis alternatief voor Dragon NaturallySpeaking (~€500) en Otter.ai (~€20/mnd).",
     "date": "2026-05-19",
-    "url": "/open-speech-studio/"
+    "url": "/open-speech-studio/",
+    "title_en": "Featured: Open Speech Studio v0.9.0 — free local speech recognition",
+    "description_en": "Press CTRL+Win and dictate in any Windows application via Whisper AI. 100% local — your voice never leaves your computer. No subscription, no cloud, no limit. A free alternative to expensive proprietary dictation and transcription software."
   },
   {
     "type": "linkedin",
     "title": "LinkedIn-post: Open Heatloss Studio alpha gelanceerd",
     "description": "We hebben op LinkedIn aangekondigd dat Open Heatloss Studio in alpha staat. Open source warmteverliesberekening conform NEN 12831 en ISSO 51:2023, gebouwd in Rust + Tauri.",
     "date": "2026-05-15",
-    "url": "https://www.linkedin.com/posts/openaec-rust-crateswarehouse-ugcPost-7461109675158220800-H79E"
+    "url": "https://www.linkedin.com/posts/openaec-rust-crateswarehouse-ugcPost-7461109675158220800-H79E",
+    "title_en": "LinkedIn post: Open Heatloss Studio alpha launched",
+    "description_en": "We announced on LinkedIn that Open Heatloss Studio is in alpha. Open-source heat-loss calculation compliant with NEN 12831 and ISSO 51:2023, built in Rust + Tauri."
   }
 ]
