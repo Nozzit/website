@@ -22,32 +22,86 @@
   "formats": {
     "title": "Dosya formatları — <span class=\"accent\">yerel DWG ve DXF</span>",
     "desc": "Belki de en önemli özellik: Open CAD Studio, R13 ile R2018 arasındaki tüm sürümlerde DWG ve DXF'i yerel olarak okur ve yazar. Dönüştürücü yok, geçici çözüm yok, Autodesk kütüphanesi yok.",
-    "dwg": { "title": "DWG (R13–R2018)", "desc": "DWG dosyalarının yerel okuma ve yazımı — endüstri standardı format. Üçüncü taraf kütüphane lisansı yok." },
-    "dxf": { "title": "DXF (R13–R2018)", "desc": "Modern sürümler dahil tam DXF okuma/yazma. AutoCAD, BricsCAD, LibreCAD ve DXF destekleyen herhangi bir CAD uygulamasıyla uyumlu." },
-    "stl": { "title": "STL / STEP / OBJ", "desc": "3D baskı ve CAM için STL ve STEP AP203'e dışa aktarma. Diğer kaynaklardan 3D modeller için OBJ içe aktarma." },
-    "pdf": { "title": "PDF plot", "desc": "Layout'ları doğrudan PDF'e plotlayın — gömülü PlotSettings'ten okunan doğru kağıt boyutlarıyla." },
-    "wblock": { "title": "WBLOCK", "desc": "Seçilen elemanları veya bir bloğu yeniden kullanım için harici bir dosyaya yazın." },
-    "xref": { "title": "XREF", "desc": "Harici referanslar (xrefs) ekleme, yeniden yükleme ve otomatik çözme — tıpkı AutoCAD gibi." }
+    "dwg": {
+      "title": "DWG (R13–R2018)",
+      "desc": "DWG dosyalarının yerel okuma ve yazımı — endüstri standardı format. Üçüncü taraf kütüphane lisansı yok."
+    },
+    "dxf": {
+      "title": "DXF (R13–R2018)",
+      "desc": "Modern sürümler dahil tam DXF okuma/yazma. AutoCAD, BricsCAD, LibreCAD ve DXF destekleyen herhangi bir CAD uygulamasıyla uyumlu."
+    },
+    "stl": {
+      "title": "STL / STEP / OBJ",
+      "desc": "3D baskı ve CAM için STL ve STEP AP203'e dışa aktarma. Diğer kaynaklardan 3D modeller için OBJ içe aktarma."
+    },
+    "pdf": {
+      "title": "PDF plot",
+      "desc": "Layout'ları doğrudan PDF'e plotlayın — gömülü PlotSettings'ten okunan doğru kağıt boyutlarıyla."
+    },
+    "wblock": {
+      "title": "WBLOCK",
+      "desc": "Seçilen elemanları veya bir bloğu yeniden kullanım için harici bir dosyaya yazın."
+    },
+    "xref": {
+      "title": "XREF",
+      "desc": "Harici referanslar (xrefs) ekleme, yeniden yükleme ve otomatik çözme — tıpkı AutoCAD gibi."
+    }
   },
   "drafting": {
     "title": "2D <span class=\"accent\">çizim</span>",
     "desc": "Profesyonel bir CAD uygulamasından beklediğiniz tüm komutları içeren eksiksiz 2D çizim paketi:",
-    "geom": { "title": "Temel geometri", "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>" },
-    "modify": { "title": "Değiştir", "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — çizgiler, yaylar, elipsler, polylines ve spline'larda çalışır" },
-    "transform": { "title": "Dönüşümler", "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>" },
-    "hatch": { "title": "Hatch", "desc": "Desen, ölçek ve açı düzenlemesi ile <code>HATCH</code> ve <code>HATCHEDIT</code>." },
-    "mass": { "title": "Özellikler", "desc": "<code>MASSPROP</code> — seçilen elemanların alanı, çevresi ve ağırlık merkezi." },
-    "text": { "title": "Metin düzenleme", "desc": "<code>DDEDIT</code> — metin düzenlemek için çift tıklayın. Font tarayıcısı ile <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code>." }
+    "geom": {
+      "title": "Temel geometri",
+      "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>"
+    },
+    "modify": {
+      "title": "Değiştir",
+      "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — çizgiler, yaylar, elipsler, polylines ve spline'larda çalışır"
+    },
+    "transform": {
+      "title": "Dönüşümler",
+      "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>"
+    },
+    "hatch": {
+      "title": "Hatch",
+      "desc": "Desen, ölçek ve açı düzenlemesi ile <code>HATCH</code> ve <code>HATCHEDIT</code>."
+    },
+    "mass": {
+      "title": "Özellikler",
+      "desc": "<code>MASSPROP</code> — seçilen elemanların alanı, çevresi ve ağırlık merkezi."
+    },
+    "text": {
+      "title": "Metin düzenleme",
+      "desc": "<code>DDEDIT</code> — metin düzenlemek için çift tıklayın. Font tarayıcısı ile <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code>."
+    }
   },
   "modeling": {
     "title": "3D <span class=\"accent\">modelleme</span>",
     "desc": "ACIS solids tessellation ile tam 3D modelleme yetenekleri:",
-    "prim": { "title": "Primitives", "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — parametrik modelleme için temel solids." },
-    "extrude": { "title": "Extrude ve revolve", "desc": "Profil tabanlı solids: doğrusal extrusion için <code>EXTRUDE</code> ve eksen etrafında döndürme için <code>REVOLVE</code>." },
-    "loft": { "title": "Loft ve sweep", "desc": "Birden fazla profil arasında <code>LOFT</code>, herhangi bir yol boyunca <code>SWEEP</code>." },
-    "array": { "title": "3D Array", "desc": "<code>ARRAY3D</code> — 3D'de dikdörtgensel veya kutupsal diziler." },
-    "acis": { "title": "ACIS tessellation", "desc": "<code>3DSOLID</code>, <code>REGION</code> ve <code>BODY</code> elemanlarını render eder — DWG/DXF'ten gelen solids doğru gösterilir." },
-    "gpu": { "title": "GPU hızlandırmalı", "desc": "wgpu tabanlı render. Büyük modellerle akıcı çalışma, aynı anda birçok solid olsa bile." }
+    "prim": {
+      "title": "Primitives",
+      "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — parametrik modelleme için temel solids."
+    },
+    "extrude": {
+      "title": "Extrude ve revolve",
+      "desc": "Profil tabanlı solids: doğrusal extrusion için <code>EXTRUDE</code> ve eksen etrafında döndürme için <code>REVOLVE</code>."
+    },
+    "loft": {
+      "title": "Loft ve sweep",
+      "desc": "Birden fazla profil arasında <code>LOFT</code>, herhangi bir yol boyunca <code>SWEEP</code>."
+    },
+    "array": {
+      "title": "3D Array",
+      "desc": "<code>ARRAY3D</code> — 3D'de dikdörtgensel veya kutupsal diziler."
+    },
+    "acis": {
+      "title": "ACIS tessellation",
+      "desc": "<code>3DSOLID</code>, <code>REGION</code> ve <code>BODY</code> elemanlarını render eder — DWG/DXF'ten gelen solids doğru gösterilir."
+    },
+    "gpu": {
+      "title": "GPU hızlandırmalı",
+      "desc": "wgpu tabanlı render. Büyük modellerle akıcı çalışma, aynı anda birçok solid olsa bile."
+    }
   },
   "annotations": {
     "title": "<span class=\"accent\">Açıklamalar</span> ve ölçüler",
@@ -55,12 +109,30 @@
   },
   "paperspace": {
     "title": "Paper space ve <span class=\"accent\">layout'lar</span>",
-    "layouts": { "title": "Multi-tab layout", "desc": "Model space + sınırsız paper space sekmeleri. Kamera konumu ve zoom layout başına kaydedilir." },
-    "viewports": { "title": "Viewport projection", "desc": "Model içeriği paper-space viewport dikdörtgenlerinde doğru şekilde yansıtılır. Inline MSPACE overlay için çift tıklayın." },
-    "vports": { "title": "Viewport ön ayarları", "desc": "<code>VPORTS</code> — single, 2H, 2V, 4-way yapılandırmaları." },
-    "styles": { "title": "Plot stilleri", "desc": "<code>PLOTSTYLEPANEL</code> ve <code>STYLESMANAGER</code> — CTB/STB plot style tablo editörü." },
-    "print": { "title": "PRINT", "desc": "Gömülü PlotSettings'ten doğru kağıt boyutlarıyla layout'ları doğrudan sistem yazıcısına gönderin." },
-    "manager": { "title": "Layout yöneticisi", "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — layout yönetimi için GUI." }
+    "layouts": {
+      "title": "Multi-tab layout",
+      "desc": "Model space + sınırsız paper space sekmeleri. Kamera konumu ve zoom layout başına kaydedilir."
+    },
+    "viewports": {
+      "title": "Viewport projection",
+      "desc": "Model içeriği paper-space viewport dikdörtgenlerinde doğru şekilde yansıtılır. Inline MSPACE overlay için çift tıklayın."
+    },
+    "vports": {
+      "title": "Viewport ön ayarları",
+      "desc": "<code>VPORTS</code> — single, 2H, 2V, 4-way yapılandırmaları."
+    },
+    "styles": {
+      "title": "Plot stilleri",
+      "desc": "<code>PLOTSTYLEPANEL</code> ve <code>STYLESMANAGER</code> — CTB/STB plot style tablo editörü."
+    },
+    "print": {
+      "title": "PRINT",
+      "desc": "Gömülü PlotSettings'ten doğru kağıt boyutlarıyla layout'ları doğrudan sistem yazıcısına gönderin."
+    },
+    "manager": {
+      "title": "Layout yöneticisi",
+      "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — layout yönetimi için GUI."
+    }
   },
   "tech": {
     "title": "Teknoloji",
@@ -76,5 +148,10 @@
     "issues": "Sorunlar ve geri bildirim",
     "relatedTool": "Ayrıca Open 2D Studio'ya bakın",
     "starsLine": "GitHub yıldızı · bağımsız bir geliştirici tarafından geliştirilen açık kaynaklı CAD uygulaması"
+  },
+  "releases": {
+    "title": "Tüm sürümler ve <span class=\"accent\">sürüm notları</span>",
+    "desc": "Open CAD Studio'nun her yayınlanan sürümü, doğrudan GitHub'dan alınır.",
+    "loading": "Sürümler yükleniyor…"
   }
 }
