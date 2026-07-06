@@ -53,6 +53,15 @@
   },
   "bio": {
     "mojtaba": "Back-end ve front-end geliştirici. Özel çözümler ve entegrasyonlar geliştirir.",
-    "jan": "Açık kaynak araçlara ve platform entegrasyonlarına odaklanan geliştirici."
+    "jan": "Açık kaynak araçlara ve platform entegrasyonlarına odaklanan geliştirici.",
+    "maarten": "İnşaat sektöründe 16 yıl deneyim; OpenAEC'in ve tedarikçi bağımlılığından kurtuluş olarak açık kaynağın itici gücü.",
+    "silvia": "LRCZ'nin kurucusu — sanal inşaat, prototipleme ve BIM eğitimi.",
+    "martjan": "GAF architects'te Bilgi & İnovasyon Direktörü; mimaride BIM, dijitalleşme ve yapay zeka.",
+    "ethan": "En genç ekip üyesi; araçlara taze bir Z kuşağı bakışı getiriyor.",
+    "mattias": "Junior yapı mühendisi; projeleri iyi hesaplamak için yaratıcılığı ve içgörüyü birleştiriyor.",
+    "bjorn": "Matematik ve bilgisayar bilimi öğrencisi; ekosistem içinde geliştirici.",
+    "piet": "İnşaat mühendisi ve 3BM yönetim kurulu üyesi; Y-app ve Monty Viewer'a katkıda bulunuyor.",
+    "hakan": "Bağımsız açık kaynak geliştiricisi ve Open CAD Studio'nun (Rust, DWG/DXF) yaratıcısı.",
+    "jochem": "3BM'de teknik tasarımcı ve mühendis; Open Heatloss Studio üzerinde çalışıyor."
   }
 }
