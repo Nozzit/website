@@ -1,0 +1,18 @@
+{
+  "totalRepos": 103,
+  "publicRepos": 54,
+  "privateRepos": 49,
+  "totalStars": 644,
+  "totalForks": 79,
+  "totalOpenIssues": 221,
+  "openIssues": 346,
+  "closedIssues": 599,
+  "openPRs": 15,
+  "closedPRs": 130,
+  "mergedPRs": 106,
+  "totalSizeKB": 11679391,
+  "estimatedLinesOfCode": 21670950,
+  "totalCommits": 6050,
+  "uniqueContributors": 42,
+  "languages": 9
+}

@@ -1,10 +1,19 @@
 [
   {
     "type": "release",
+    "repo": "open-fem2d-studio",
+    "title": "open-fem2d-studio v2.0.0 uitgebracht",
+    "description": "Open FEM2D Studio 2.0.0",
+    "date": "2026-07-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-fem2d-studio/releases/tag/v2.0.0",
+    "count": 1
+  },
+  {
+    "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.68.0-nightly.20260630.f4cc850",
-    "date": "2026-06-30",
+    "description": "Nightly build 1.69.0-nightly.20260706.ea57481",
+    "date": "2026-07-06",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -12,9 +21,72 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260630.9f5c914",
-    "date": "2026-06-30",
+    "description": "Nightly build 0.1.4-nightly.20260706.9f5c914",
+    "date": "2026-07-06",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-frame-studio",
+    "title": "open-frame-studio v0.4.0 uitgebracht",
+    "description": "Open Frame Studio v0.4.0",
+    "date": "2026-07-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.4.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.8.7 uitgebracht",
+    "description": "Open Calc Studio v0.8.7",
+    "date": "2026-07-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.7",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio: 3 releases (v2026.7.4 → v2026.7.6)",
+    "description": "Versies: v2026.7.4, v2026.7.5, v2026.7.6",
+    "date": "2026-07-04",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.6",
+    "count": 3
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio: 2 releases (v2026.7.2 → v2026.7.3)",
+    "description": "Versies: v2026.7.2, v2026.7.3",
+    "date": "2026-07-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.3",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio: 2 releases (v2026.7.0 → v2026.7.1)",
+    "description": "Versies: v2026.7.0, v2026.7.1",
+    "date": "2026-07-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.1",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.8.6 uitgebracht",
+    "description": "Open Calc Studio v0.8.6",
+    "date": "2026-07-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.6",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.8.5 uitgebracht",
+    "description": "Open Calc Studio v0.8.5",
+    "date": "2026-07-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.5",
     "count": 1
   },
   {
