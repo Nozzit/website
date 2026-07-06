@@ -69,5 +69,13 @@
   },
   "footer": {
     "slogan": "Build free. Build together."
+  },
+  "whatsnew": {
+    "label": "New in v2026.6.0 · testers wanted",
+    "title": "Plan construction with open BIM — and help us test",
+    "desc": "This version brings <strong>native IFC 4.3</strong> (your schedule <em>is</em> an IFC file), a <strong>4D link</strong> to your BIM model, automatic <strong>Critical Path Method (CPM)</strong> and an extended <strong>reporting tab</strong> with live print preview — plus construction-specific resources like holidays, inspection moments and phasing.",
+    "testers": "We are looking for <strong>testers</strong>: work planners, schedulers, project leads and BIM coordinators. Try Open Planner Studio right in your browser and tell us what you think — your feedback helps shape where it goes.",
+    "ctaDemo": "Try the live demo →",
+    "ctaJoin": "Join as a tester"
   }
 }

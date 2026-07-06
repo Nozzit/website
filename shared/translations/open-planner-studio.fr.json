@@ -69,5 +69,13 @@
   },
   "footer": {
     "slogan": "Construisez librement. Construisons ensemble."
+  },
+  "whatsnew": {
+    "label": "Nouveau dans v2026.6.0 · testeurs recherchés",
+    "title": "Planifiez la construction avec l’open BIM — et aidez-nous à tester",
+    "desc": "Cette version apporte l’<strong>IFC 4.3 natif</strong> (votre planning <em>est</em> un fichier IFC), un <strong>lien 4D</strong> vers votre modèle BIM, le <strong>chemin critique (CPM)</strong> automatique et un <strong>onglet de rapports</strong> étendu avec aperçu d’impression en direct — ainsi que des ressources propres au chantier comme les congés, les moments d’inspection et le phasage.",
+    "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent son évolution.",
+    "ctaDemo": "Essayer la démo en direct →",
+    "ctaJoin": "Participer comme testeur"
   }
 }

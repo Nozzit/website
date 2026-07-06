@@ -69,5 +69,13 @@
   },
   "footer": {
     "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  },
+  "whatsnew": {
+    "label": "v2026.6.0’da yeni · test edenler aranıyor",
+    "title": "İnşaatı açık BIM ile planlayın — ve test etmemize yardım edin",
+    "desc": "Bu sürüm <strong>yerel IFC 4.3</strong> (planınız <em>bir</em> IFC dosyasıdır), BIM modelinize <strong>4D bağlantı</strong>, otomatik <strong>kritik yol (CPM)</strong> ve canlı baskı önizlemeli gelişmiş bir <strong>rapor sekmesi</strong> getiriyor — ayrıca tatiller, muayene anları ve fazlandırma gibi inşaata özgü kaynaklar.",
+    "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio’yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz yönünü belirlemeye yardımcı olur.",
+    "ctaDemo": "Canlı demoyu dene →",
+    "ctaJoin": "Test eden olarak katıl"
   }
 }

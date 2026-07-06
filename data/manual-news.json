@@ -1,6 +1,13 @@
 [
   {
     "type": "announcement",
+    "title": "Wat is er nieuw: twee weken doorontwikkeling in het OpenAEC-ecosysteem",
+    "description": "In twee weken flink doorontwikkeld. Open PDF Studio kreeg een compleet nieuwe render-engine (zware bouwtekeningen openen razendsnel). Open Geotechniek Studio maakte een enorme sprong: sonderingen/boringen direct openen, live BRO-kaart en zelf-bijwerkende rapporten. Open Calc Studio calculeert slimmer (uren naar rato, AI- en spraak-koppeling). Open Planner Studio v2026.6.0 brengt bouwplanning met kritieke pad en native IFC 4.3. En OpenAEC SuperCloud is aangekondigd: één account en login voor het hele ecosysteem. Plus tientallen kleinere verbeteringen — allemaal open source en gratis.",
+    "date": "2026-06-30",
+    "url": "https://www.open-aec.com/"
+  },
+  {
+    "type": "announcement",
     "title": "Open CAD Studio v0.7.0 — 147 GitHub stars en 1.185 commits",
     "description": "Het open-source CAD-community-project van Hakan Seven blijft hard groeien. Open CAD Studio staat nu op v0.7.0 met 147 GitHub stars, 1.185 commits over 60 releases en 8 contributors — daarmee de meest actieve repository in het ecosysteem. Native DWG/DXF, gebouwd in Rust met GPU-rendering, én direct in de browser te proberen. De OpenAEC Foundation promoot dit project actief.",
     "date": "2026-06-30",
