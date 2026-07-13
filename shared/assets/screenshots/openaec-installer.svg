@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-label="OpenAEC Installer — installeren, bijwerken en starten">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A2A32"/><stop offset="1" stop-color="#1A1A20"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#D97706"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="26%" cy="34%" r="46%">
+      <stop offset="0" stop-color="#D97706" stop-opacity="0.28"/><stop offset="1" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.04"/>
+    </pattern>
+    <style>
+      .h { font-family:'Space Grotesk','Inter',system-ui,sans-serif; font-weight:700; }
+      .m { font-family:'JetBrains Mono','Courier New',monospace; font-weight:500; }
+      .b { font-family:'Inter',system-ui,sans-serif; font-weight:500; }
+    </style>
+  </defs>
+
+  <rect width="800" height="320" fill="url(#bg)"/>
+  <rect width="800" height="320" fill="url(#grid)"/>
+  <rect width="800" height="320" fill="url(#glow)"/>
+
+  <!-- OpenAEC cube -->
+  <g transform="translate(150,150) scale(1.55)">
+    <polygon points="-60,-20 0,15 0,80 -60,45" fill="#D97706" fill-opacity="0.22" stroke="#D97706" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="0,-55 60,-20 0,15 -60,-20" fill="#D97706" fill-opacity="0.12" stroke="#D97706" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="60" y1="-20" x2="60" y2="45" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="80" x2="60" y2="45" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+    <!-- download arrow into the cube -->
+    <line x1="0" y1="-42" x2="0" y2="2" stroke="url(#amber)" stroke-width="5" stroke-linecap="round"/>
+    <polygon points="-11,-6 11,-6 0,10" fill="url(#amber)"/>
+  </g>
+
+  <!-- text -->
+  <text x="290" y="132" class="h" font-size="46" fill="#FAFAF9">OpenAEC</text>
+  <text x="290" y="186" class="h" font-size="46" fill="#F59E0B">Installer</text>
+  <text x="290" y="232" class="m" font-size="19" letter-spacing="2" fill="#A1A1AA">INSTALL &#183; UPDATE &#183; LAUNCH</text>
+
+  <!-- app tiles motif -->
+  <g>
+    <rect x="290" y="252" width="34" height="34" rx="7" fill="#36363E" stroke="#D97706" stroke-opacity="0.5"/>
+    <rect x="334" y="252" width="34" height="34" rx="7" fill="#36363E" stroke="#D97706" stroke-opacity="0.5"/>
+    <rect x="378" y="252" width="34" height="34" rx="7" fill="#36363E" stroke="#D97706" stroke-opacity="0.5"/>
+    <rect x="422" y="252" width="34" height="34" rx="7" fill="#36363E" stroke="#D97706" stroke-opacity="0.5"/>
+    <rect x="466" y="252" width="34" height="34" rx="7" fill="#2A2A32" stroke="#F59E0B" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+    <text x="483" y="275" text-anchor="middle" class="b" font-size="20" fill="#F59E0B">+</text>
+  </g>
+
+  <!-- OS badges -->
+  <g class="m" font-size="15" fill="#D6D3D1" text-anchor="middle">
+    <g><rect x="612" y="120" width="150" height="34" rx="17" fill="#36363E"/><text x="687" y="142">Windows</text></g>
+    <g><rect x="612" y="164" width="150" height="34" rx="17" fill="#36363E"/><text x="687" y="186">macOS</text></g>
+    <g><rect x="612" y="208" width="150" height="34" rx="17" fill="#36363E"/><text x="687" y="230">Linux</text></g>
+  </g>
+</svg>
