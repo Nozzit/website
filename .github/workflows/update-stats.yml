@@ -7,17 +7,21 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout website repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          # A PAT (secret WORKFLOW_PAT) from a user allowed to push to `main`
+          # lets us commit directly (main is protected against the default bot).
+          # Falls back to GITHUB_TOKEN if the secret is absent.
+          token: ${{ secrets.WORKFLOW_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
 
@@ -49,9 +53,7 @@ jobs:
         run: |
           find data/history -name "*.json" -mtime +90 -delete 2>/dev/null || true
 
-      - name: Create PR with updated data
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit updated data to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -60,9 +62,5 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          BRANCH="chore/update-stats-$(date +%Y-%m-%d)"
-          git checkout -b "$BRANCH"
-          git commit -m "chore: update statistics $(date +%Y-%m-%d)"
-          git push origin "$BRANCH"
-          gh pr create --title "chore: update statistics $(date +%Y-%m-%d)" --body "Automated daily statistics update." --base main --head "$BRANCH"
-          gh pr merge "$BRANCH" --auto --merge --delete-branch
+          git commit -m "chore: update statistics & news $(date +%Y-%m-%d)"
+          git push origin HEAD:main

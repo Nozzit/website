@@ -1,19 +1,228 @@
 {
   "repo": "Y-app",
-  "generated": "2026-06-30T07:48:34.331Z",
-  "totalReleases": 29,
-  "totalChanges": 59,
+  "generated": "2026-07-13T14:44:44.474Z",
+  "totalReleases": 37,
+  "totalChanges": 123,
   "latestStable": {
-    "tag": "v0.28.7",
-    "name": "Y-app v0.28.7",
-    "date": "2026-06-30",
-    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.7"
+    "tag": "v0.31.2",
+    "name": "Y-app v0.31.2",
+    "date": "2026-07-10",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.2"
   },
   "nightly": null,
   "groups": [
     {
+      "minorVersion": "0.31",
+      "releases": [
+        {
+          "tag": "v0.31.2",
+          "name": "Y-app v0.31.2",
+          "date": "2026-07-10",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.2",
+          "changes": [],
+          "patchNum": 2
+        },
+        {
+          "tag": "v0.31.1",
+          "name": "Y-app v0.31.1",
+          "date": "2026-07-09",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.1",
+          "changes": [
+            "**desktop**: IMAP-loginstorm bij mailbox-wissel — AUTHENTICATIONFAILED-cirkel doorbroken",
+            "**mail**: relay alleen bij bewezen From-behoud — lookup-fout is nu ook weigeren",
+            "buglist-ronde juli — 9 gebruikersbugs + GitHub issues #100-#104"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.31.0",
+          "name": "Y-app v0.31.0",
+          "date": "2026-07-06",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.0",
+          "changes": [
+            "**notify**: geluidssignaal + app-icoon-teller bij nieuwe mail én chat",
+            "**desktop**: ongelezen-teller voor ALLE mappen (achtergrond-STATUS-sweep)",
+            "**webmail**: nieuwe mail/beantwoorden inline in het leespaneel i.p.v. zwevend popup",
+            "**mail**: bijlages mee-cachen op desktop (instant openen) — Deel A van het versnellingsplan",
+            "**desktop**: ongelezen-teller achter de Junk/Spam-map in de mappenlijst",
+            "**desktop**: verzonden mail bewaren in Verzonden + verwijderen → prullenbak (geen permanent verlies)",
+            "**mail**: Verzonden-/Verwijderde-map-instelling keyt nu op account (werd niet gehonoreerd)",
+            "**nas**: volgnummer-scan toont nu \"scant…\" i.p.v. een misleidende \"1\" tijdens laden",
+            "**desktop**: PDF-bijlage werd stil gedownload i.p.v. geopend als preview",
+            "**nas**: medewerkers kregen nooit de door de werkgever ingestelde NAS-template",
+            "**mail**: popout-mailbody liep niet door — iframe kreeg nooit zijn eigen hoogte",
+            "**desktop**: mail-popout gaf \"Missing uid in URL\" — window.location i.p.v. MemoryRouter",
+            "**desktop**: popout boot seconden sneller — creds-handoff i.p.v. kluis heropenen"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**desktop**: IMAP-loginstorm bij mailbox-wissel — AUTHENTICATIONFAILED-cirkel doorbroken",
+        "**mail**: relay alleen bij bewezen From-behoud — lookup-fout is nu ook weigeren",
+        "buglist-ronde juli — 9 gebruikersbugs + GitHub issues #100-#104",
+        "**notify**: geluidssignaal + app-icoon-teller bij nieuwe mail én chat",
+        "**desktop**: ongelezen-teller voor ALLE mappen (achtergrond-STATUS-sweep)",
+        "**webmail**: nieuwe mail/beantwoorden inline in het leespaneel i.p.v. zwevend popup",
+        "**mail**: bijlages mee-cachen op desktop (instant openen) — Deel A van het versnellingsplan",
+        "**desktop**: ongelezen-teller achter de Junk/Spam-map in de mappenlijst",
+        "**desktop**: verzonden mail bewaren in Verzonden + verwijderen → prullenbak (geen permanent verlies)",
+        "**mail**: Verzonden-/Verwijderde-map-instelling keyt nu op account (werd niet gehonoreerd)",
+        "**nas**: volgnummer-scan toont nu \"scant…\" i.p.v. een misleidende \"1\" tijdens laden",
+        "**desktop**: PDF-bijlage werd stil gedownload i.p.v. geopend als preview",
+        "**nas**: medewerkers kregen nooit de door de werkgever ingestelde NAS-template",
+        "**mail**: popout-mailbody liep niet door — iframe kreeg nooit zijn eigen hoogte",
+        "**desktop**: mail-popout gaf \"Missing uid in URL\" — window.location i.p.v. MemoryRouter",
+        "**desktop**: popout boot seconden sneller — creds-handoff i.p.v. kluis heropenen"
+      ],
+      "firstDate": "2026-07-06",
+      "lastDate": "2026-07-10",
+      "releaseCount": 3,
+      "changeCount": 16
+    },
+    {
+      "minorVersion": "0.30",
+      "releases": [
+        {
+          "tag": "v0.30.0",
+          "name": "Y-app v0.30.0",
+          "date": "2026-07-04",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.30.0",
+          "changes": [
+            "**desktop**: meerdere vensters — mail/chat-popouts via echte Tauri-windows (OPMERKINGEN punt 2)",
+            "**desktop**: agenda-afspraak aanmaken + factuur-preview — simpeler dan gedacht",
+            "**desktop**: 10 resterende gaps gedicht — NC-bestanden, messenger-compleet, counts/prefs/settings",
+            "**desktop**: Talk-upload (plaatje versturen!) + reactie/bewerk/verwijder — 4 messenger-gaps gedicht",
+            "**leave**: overuren op niet-roosterdagen rood tonen in OverurenView (per-dag-detail)",
+            "**webmail**: toast-severity regexes dekken nu álle echte bundle-strings (review-fix op #1)",
+            "**webmail**: bugfix #5 (deep-link cache-key account-bewust) + #1 (toast-severity locale-robust)",
+            "**webmail**: 5 geverifieerde bugfixes uit de audit (races, folder, modal, bulk-confirm)",
+            "**frontend**: move 9 inline mail components to components/mail/*",
+            "**frontend**: extract Webmail helpers to lib/ (9 modules, tests-eerst)",
+            "**frontend**: extract shared mail types to lib/mail-types.ts",
+            "**drift**: gedeelde response-envelope-types server↔desktop (api-shapes.ts)",
+            "**de**: backfill 351 ontbrekende keys + locale-parity nu strikt voor DE"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**desktop**: meerdere vensters — mail/chat-popouts via echte Tauri-windows (OPMERKINGEN punt 2)",
+        "**desktop**: agenda-afspraak aanmaken + factuur-preview — simpeler dan gedacht",
+        "**desktop**: 10 resterende gaps gedicht — NC-bestanden, messenger-compleet, counts/prefs/settings",
+        "**desktop**: Talk-upload (plaatje versturen!) + reactie/bewerk/verwijder — 4 messenger-gaps gedicht",
+        "**leave**: overuren op niet-roosterdagen rood tonen in OverurenView (per-dag-detail)",
+        "**webmail**: toast-severity regexes dekken nu álle echte bundle-strings (review-fix op #1)",
+        "**webmail**: bugfix #5 (deep-link cache-key account-bewust) + #1 (toast-severity locale-robust)",
+        "**webmail**: 5 geverifieerde bugfixes uit de audit (races, folder, modal, bulk-confirm)",
+        "**frontend**: move 9 inline mail components to components/mail/*",
+        "**frontend**: extract Webmail helpers to lib/ (9 modules, tests-eerst)",
+        "**frontend**: extract shared mail types to lib/mail-types.ts",
+        "**drift**: gedeelde response-envelope-types server↔desktop (api-shapes.ts)",
+        "**de**: backfill 351 ontbrekende keys + locale-parity nu strikt voor DE"
+      ],
+      "firstDate": "2026-07-04",
+      "lastDate": "2026-07-04",
+      "releaseCount": 1,
+      "changeCount": 13
+    },
+    {
+      "minorVersion": "0.29",
+      "releases": [
+        {
+          "tag": "v0.29.0",
+          "name": "Y-app v0.29.0",
+          "date": "2026-07-03",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.29.0",
+          "changes": [
+            "**desktop**: native mail-notificaties via poll-loop (punt 4b)",
+            "**notify**: browser-notificaties bij nieuwe e-mail (web) + Messenger klik-pariteit",
+            "**settings**: NAS-mapkeuze zichtbaar voor medewerkers (device vs shared split)",
+            "**desktop**: mail verslepen in Windows-app + map-verwijderen (web-pariteit)",
+            "**desktop**: rfd niet op Android compileren → Android-build gefixt",
+            "**frontend**: extract pure mail formatters to lib/mail-format.ts + tests",
+            "**server**: mail.ts tests-first safety net — extract errors + address utils",
+            "**server**: extract stats/uren handlers from index.ts to routes/stats.ts",
+            "**server**: extract calendar/CalDAV stack from index.ts to routes/calendar.ts",
+            "**server**: split messenger.ts providers into messenger/{types,nextcloud,telegram,teams}.ts",
+            "**server**: extract NC Talk noise-filter to messenger/noise-filter.ts + tests",
+            "**server**: split pure crypto primitives + dedup decrypt-to-string/json"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**desktop**: native mail-notificaties via poll-loop (punt 4b)",
+        "**notify**: browser-notificaties bij nieuwe e-mail (web) + Messenger klik-pariteit",
+        "**settings**: NAS-mapkeuze zichtbaar voor medewerkers (device vs shared split)",
+        "**desktop**: mail verslepen in Windows-app + map-verwijderen (web-pariteit)",
+        "**desktop**: rfd niet op Android compileren → Android-build gefixt",
+        "**frontend**: extract pure mail formatters to lib/mail-format.ts + tests",
+        "**server**: mail.ts tests-first safety net — extract errors + address utils",
+        "**server**: extract stats/uren handlers from index.ts to routes/stats.ts",
+        "**server**: extract calendar/CalDAV stack from index.ts to routes/calendar.ts",
+        "**server**: split messenger.ts providers into messenger/{types,nextcloud,telegram,teams}.ts",
+        "**server**: extract NC Talk noise-filter to messenger/noise-filter.ts + tests",
+        "**server**: split pure crypto primitives + dedup decrypt-to-string/json"
+      ],
+      "firstDate": "2026-07-03",
+      "lastDate": "2026-07-03",
+      "releaseCount": 1,
+      "changeCount": 12
+    },
+    {
       "minorVersion": "0.28",
       "releases": [
+        {
+          "tag": "v0.28.10",
+          "name": "Y-app v0.28.10",
+          "date": "2026-07-01",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.10",
+          "changes": [
+            "**Desktop mail: berichtenlijst faalde op BODYSTRUCTURE-parse** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): de list-FETCH vroeg BODYSTRUCTURE op; async-imap's imap-proto parser crasht (nom `TakeWhile1`) op complexe geneste structuren (doorgestuurde `message/rfc822` met inline-afbeeldingen) → de HELE folder-FETCH faalde met \"E-mail kon niet worden geladen\", terwijl de mappenlijst wél laadde. BODYSTRUCTURE uit de list-FETCH gehaald; `has_attachments` nu heuristisch uit de Content-Type-header (`multipart/mixed`). Bericht openen (`BODY.PEEK[]` + mail_parser) was al robuust.",
+            "**Desktop mail: leeg bewerk-formulier** ([adapter/vault.ts](packages/desktop/src/adapter/vault.ts) / MailAccountSettings): de veldblokken hangen aan `addAuthType`, maar de kluis sloeg `authType` niet op → `undefined` → geen veld-render. `handleEdit` valt nu terug op `\"manual\"` als `authType` ontbreekt (repareert bestaande accounts).",
+            "**Desktop mail: trage mappenlijst** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): `op_list_folders` deed een EXAMINE per (sub)map (100+ round-trips bij veel projectmappen) die de ene IMAP-verbinding bezet hield en mail-openen + body-prefill erachter blokkeerde. Nu alleen EXAMINE voor INBOX + special-use mappen; gewone submappen zonder telling.",
+            "**Desktop mail: dubbelklik navigeerde de app weg** ([Webmail.tsx](packages/frontend/src/pages/Webmail.tsx)): dubbelklik deed `window.open(\"/mail/view\")` voor een popout-tab, wat in de Tauri-webview de ene window wég-navigeert. Op desktop (`isDesktopApp`) opent dubbelklik nu in het leespaneel. Offline-cache-instelling verplaatst van de Webmail-mappenvoettekst naar Instellingen → Email accounts.",
+            "**Desktop mail: inline-afbeeldingen werden niet getoond** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): de webview kan `<img src=\"cid:...\">` / `\"/api/...\"` niet resolven (geen server; fetch-adapter onderschept alleen `fetch()`, geen element-loads). `op_get_message` + `op_get_bodies` herschrijven `cid:`-referenties in de HTML nu naar base64-`data:`-URL's uit de inline-bijlage-bytes.",
+            "**Desktop mail: SMTP-versturen gefixt via poort 465** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)).",
+            "**Messenger: betrouwbaar scrollen naar het laatste bericht (web + desktop)** ([Messenger.tsx](packages/frontend/src/pages/Messenger.tsx)): de scroll-to-bottom gebruikte `behavior:\"smooth\"`; async inladende afbeeldingen groeiden de content-hoogte ná het starten van de animatie → landde te hoog. Nu instant (`behavior:\"auto\"`) + herhalingen (80/250/600ms) terwijl de hoogte settelt.",
+            "**Projecten: \"Open in Verkenner\" en de map-knop openen dezelfde projectmap** ([Projects.tsx](packages/frontend/src/pages/Projects.tsx), ProjectDetail): de map-knop in de projectenlijst riep `/api/open-folder` aan (bestaat niet in de desktop-app → viel terug op \"pad naar klembord\"). `openFolder()` is nu desktop-bewust en opent de projectmap echt in Windows Verkenner via de native Rust-command (`/api/nas/open-folder` → `open_in_explorer`); ProjectDetail gebruikt dezelfde `getProjectFolderPath(...)` als de lijst. Web ongewijzigd.",
+            "**Desktop mail: lichtere conversatie-load** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): `op_get_conversation` (~1118ms bij elke mail-open, gemeten met de nieuwe profiler) deed een volledige `op_list_folders` (144 mappen, ~440ms) alleen om Sent te vinden + een full-body fetch per thread-lid (~180ms elk, markeerde ook `\\Seen`) + pageSize 200. Nu: vaste zoekmappen (huidige + INBOX + gangbare Sent-namen), alleen headers voor de thread-lijst (geen full-body, geen `\\Seen`), pageSize 50. Plus een eenmalige `clearAllMailCache()` na de afbeelding-inbed-fix zodat gecachte bodies zonder ingebedde `cid:`-afbeeldingen opnieuw worden opgehaald.",
+            "**Desktop mail: folderlijst-cache bij tab-switch** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): de `MailPool` cachet de folderlijst per account (30s TTL) — tab-switchen re-fetchte anders elke keer de volledige LIST en bezette de IMAP-verbinding. Geïnvalideerd op connectie-fouten + na map aanmaken/hernoemen.",
+            "**Messenger/Talk: snellere gesprek-opening** ([Messenger.tsx](packages/frontend/src/pages/Messenger.tsx), [messenger.rs](packages/desktop/src-tauri/src/messenger.rs), [BackgroundSyncProvider.tsx](packages/frontend/src/lib/BackgroundSyncProvider.tsx)): de vaste 250ms-`setTimeout` bij aanklikken (dubbelklik-detectie) is weg → direct openen (op desktop opent dubbelklik in het paneel i.p.v. een dode `window.open`); `nc_resolve_uid` wordt gecached per `(base,user)` met 1u TTL (DashMap) i.p.v. een HTTP-round-trip vóór elke berichten-fetch; `pollMessengerOnce` racete met het openen van /messenger om dezelfde NC-verbinding → `/messenger`-guard toegevoegd (mirror van /webmail).",
+            "**Talk-afbeeldingsvoorbeelden parallel + compacter** ([messenger.rs](packages/desktop/src-tauri/src/messenger.rs)): image-previews werden 1 sequentiële HTTP-fetch per plaatje binnen de berichten-loop → traag bij veel afbeeldingen. Nu parallel (`buffer_unordered`, bounded op 8) én 300×300 i.p.v. 600×600 (~4× minder data per plaatje).",
+            "**Desktop mail: grote bijlages downloadden dubbel** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): `op_get_attachment` haalde eerst `op_get_message` op voor metadata en dan nog eens voor de bytes. Nu één fetch; metadata uit de geparste part. Fors sneller bij grote bijlagen.",
+            "**Webmail: \"Sorteer in projectmap\" (bulk)** — meerdere mails selecteren en per mail een bestaande projectmap laten voorstellen + verplaatsen via een reviewscherm ([Webmail.tsx](packages/frontend/src/pages/Webmail.tsx), [SortToProjectDialog.tsx](packages/frontend/src/components/SortToProjectDialog.tsx)). Inbox-mail → INBOX-submap, verzonden-mail → Sent-submap; matcht een project zonder bestaande map → \"Map aanmaken: `[IN]/[OUT] {nr} {naam}`\" + direct erin verplaatsen. De voorspeller combineert zes signalen (bestaande koppeling, e-mailthread, geleerd folder-profiel, projectnummer/klantreferentie, projectnaam-tokens, bijlagenamen), IDF-gewogen; afzender/opdrachtgever bewust géén los signaal. Alles client-side uit de warme mail-caches. Nieuw: `lib/project-mail-match.ts`, `lib/folder-profile-match.ts`, `lib/project-folder-resolve.ts`. _Live UI nog niet uitgebreid getest._",
+            "**E-mailinstellingen per account** ([MailAccountSettings.tsx](packages/frontend/src/pages/MailAccountSettings.tsx)): alle e-mailinstellingen staan nu genest onder Instellingen → Email accounts, per account uitklapbaar — eigen **HTML-handtekening** (met base64-afbeeldingen, overschrijft de ERPNext-handtekening), **offline-cache-venster**, **Verzonden-map** en **Verwijderde-items-map**.",
+            "**NAS-projectmappen: \"Bladeren\"-knop** (desktop) achter master- en doelmap → native mapkiezer ([NasSettingsSection.tsx](packages/frontend/src/components/NasSettingsSection.tsx), `pick_folder` via de rfd-crate).",
+            "**Headless mail-profiler (dev-tool)** ([examples/mailprofile.rs](packages/desktop/src-tauri/examples/mailprofile.rs)): perf/diagnose-harness die `op_list_folders` / `op_list_messages` / `op_get_bodies` / `op_get_conversation` tegen een echte mailbox timet. Leest `MAIL_HOST` / `MAIL_PORT` / `MAIL_USER` / `MAIL_PASS` / `MAIL_SECURE` / `MAIL_FOLDER` uit de omgeving. Maakte de bovenstaande conversatie-metingen mogelijk."
+          ],
+          "patchNum": 10
+        },
+        {
+          "tag": "v0.28.9",
+          "name": "Y-app v0.28.9",
+          "date": "2026-07-01",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.9",
+          "changes": [
+            "**mail**: desktop mailaccount-wachtwoord werd leeg opgeslagen (creds-nesting)",
+            "**desktop**: pinned-veld ontbrak in telegram Conversation-constructor (E0063)"
+          ],
+          "patchNum": 9
+        },
+        {
+          "tag": "v0.28.8",
+          "name": "Y-app v0.28.8",
+          "date": "2026-06-30",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.8",
+          "changes": [
+            "**Desktop: projectmappen op de NAS aanmaken** ([nas.rs](packages/desktop/src-tauri/src/nas.rs), [adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts), [NasSettingsSection.tsx](packages/frontend/src/components/NasSettingsSection.tsx), [Projects.tsx](packages/frontend/src/pages/Projects.tsx)): knop **\"Maak NAS-mappen aan\"** op een project (alleen in de desktop-app) kopieert een **master-map** recursief (mappen + bestanden) naar een nieuwe projectmap op de NAS, hernoemd volgens een template. Instelbaar in Settings → Project-instellingen: master-pad, doel-root, mapnaam-template (`{nr} {project_name}`). Native `std::fs`-kopie via de Rust-backend (geen Nextcloud/browser-FSA). Bestaat de doelmap al → \"map bestaat al\", geen overschrijven. Plus een knop **\"Open in Verkenner\"** (`open_in_explorer`) die de projectmap op de doel-locatie direct in de Windows-bestandsbeheerder opent. Beide knoppen verborgen in de web-build.",
+            "**Desktop: \"onthoud op dit apparaat\" (auto-unlock)** ([commands.rs](packages/desktop/src-tauri/src/commands.rs), [adapter/remember.ts](packages/desktop/src/adapter/remember.ts), [DesktopApp.tsx](packages/desktop/src/DesktopApp.tsx), [VaultUnlock.tsx](packages/desktop/src/pages/VaultUnlock.tsx)): opt-in vinkje op het ontgrendel-scherm → de app onthoudt je master-wachtwoord en opent bij elke start vanzelf, geen getyp meer. Bewust **app-eigen opslag** (een bestand in de app-datamap), **géén** Windows Credential Manager / Hello — geen Windows-account-afhankelijkheid (op verzoek). Afweging: een proces dat als dezelfde gebruiker draait kan het bestand lezen (in de opt-in-tekst vermeld). Wachtwoord wordt pas opgeslagen ná een succesvolle ontgrendeling; gewist bij wachtwoord-wijziging, kluis-reset en uitvinken. Op Android blijft de prompt-gated biometrie de weg. Plus `autocomplete=\"off\"` op het kluisveld om de Edge-\"wachtwoord opslaan\"-prompt te onderdrukken.",
+            "**Desktop Talk: gesprekkenlijst-sortering** ([messenger.rs](packages/desktop/src-tauri/src/messenger.rs), [adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de lijst werd niet gesorteerd (NC-volgorde) en `Conversation` miste `pinned`. Nu `pinned` uit `r.isFavorite` + sortering vastgepind-eerst-dan-nieuwste, zoals het web. (Vastzetten zelf doe je in NextCloud Talk; Y-app spiegelt het — net als de webversie, die ook geen pin-knop heeft.)",
+            "**Desktop: auto-geladen mailaccount nu zichtbaar in Settings → Email accounts** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de uit-ERPNext-geladen mailbox (opgeslagen in de enkele `imap_*`-kluisvelden) werd niet getoond omdat de lijst alleen de `mail_accounts`-array las. De GET-route toont het account nu ook (label \"automatisch uit ERPNext\")."
+          ],
+          "patchNum": 8
+        },
         {
           "tag": "v0.28.7",
           "name": "Y-app v0.28.7",
@@ -88,6 +297,29 @@
         }
       ],
       "allChanges": [
+        "**Desktop mail: berichtenlijst faalde op BODYSTRUCTURE-parse** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): de list-FETCH vroeg BODYSTRUCTURE op; async-imap's imap-proto parser crasht (nom `TakeWhile1`) op complexe geneste structuren (doorgestuurde `message/rfc822` met inline-afbeeldingen) → de HELE folder-FETCH faalde met \"E-mail kon niet worden geladen\", terwijl de mappenlijst wél laadde. BODYSTRUCTURE uit de list-FETCH gehaald; `has_attachments` nu heuristisch uit de Content-Type-header (`multipart/mixed`). Bericht openen (`BODY.PEEK[]` + mail_parser) was al robuust.",
+        "**Desktop mail: leeg bewerk-formulier** ([adapter/vault.ts](packages/desktop/src/adapter/vault.ts) / MailAccountSettings): de veldblokken hangen aan `addAuthType`, maar de kluis sloeg `authType` niet op → `undefined` → geen veld-render. `handleEdit` valt nu terug op `\"manual\"` als `authType` ontbreekt (repareert bestaande accounts).",
+        "**Desktop mail: trage mappenlijst** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): `op_list_folders` deed een EXAMINE per (sub)map (100+ round-trips bij veel projectmappen) die de ene IMAP-verbinding bezet hield en mail-openen + body-prefill erachter blokkeerde. Nu alleen EXAMINE voor INBOX + special-use mappen; gewone submappen zonder telling.",
+        "**Desktop mail: dubbelklik navigeerde de app weg** ([Webmail.tsx](packages/frontend/src/pages/Webmail.tsx)): dubbelklik deed `window.open(\"/mail/view\")` voor een popout-tab, wat in de Tauri-webview de ene window wég-navigeert. Op desktop (`isDesktopApp`) opent dubbelklik nu in het leespaneel. Offline-cache-instelling verplaatst van de Webmail-mappenvoettekst naar Instellingen → Email accounts.",
+        "**Desktop mail: inline-afbeeldingen werden niet getoond** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): de webview kan `<img src=\"cid:...\">` / `\"/api/...\"` niet resolven (geen server; fetch-adapter onderschept alleen `fetch()`, geen element-loads). `op_get_message` + `op_get_bodies` herschrijven `cid:`-referenties in de HTML nu naar base64-`data:`-URL's uit de inline-bijlage-bytes.",
+        "**Desktop mail: SMTP-versturen gefixt via poort 465** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)).",
+        "**Messenger: betrouwbaar scrollen naar het laatste bericht (web + desktop)** ([Messenger.tsx](packages/frontend/src/pages/Messenger.tsx)): de scroll-to-bottom gebruikte `behavior:\"smooth\"`; async inladende afbeeldingen groeiden de content-hoogte ná het starten van de animatie → landde te hoog. Nu instant (`behavior:\"auto\"`) + herhalingen (80/250/600ms) terwijl de hoogte settelt.",
+        "**Projecten: \"Open in Verkenner\" en de map-knop openen dezelfde projectmap** ([Projects.tsx](packages/frontend/src/pages/Projects.tsx), ProjectDetail): de map-knop in de projectenlijst riep `/api/open-folder` aan (bestaat niet in de desktop-app → viel terug op \"pad naar klembord\"). `openFolder()` is nu desktop-bewust en opent de projectmap echt in Windows Verkenner via de native Rust-command (`/api/nas/open-folder` → `open_in_explorer`); ProjectDetail gebruikt dezelfde `getProjectFolderPath(...)` als de lijst. Web ongewijzigd.",
+        "**Desktop mail: lichtere conversatie-load** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): `op_get_conversation` (~1118ms bij elke mail-open, gemeten met de nieuwe profiler) deed een volledige `op_list_folders` (144 mappen, ~440ms) alleen om Sent te vinden + een full-body fetch per thread-lid (~180ms elk, markeerde ook `\\Seen`) + pageSize 200. Nu: vaste zoekmappen (huidige + INBOX + gangbare Sent-namen), alleen headers voor de thread-lijst (geen full-body, geen `\\Seen`), pageSize 50. Plus een eenmalige `clearAllMailCache()` na de afbeelding-inbed-fix zodat gecachte bodies zonder ingebedde `cid:`-afbeeldingen opnieuw worden opgehaald.",
+        "**Desktop mail: folderlijst-cache bij tab-switch** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): de `MailPool` cachet de folderlijst per account (30s TTL) — tab-switchen re-fetchte anders elke keer de volledige LIST en bezette de IMAP-verbinding. Geïnvalideerd op connectie-fouten + na map aanmaken/hernoemen.",
+        "**Messenger/Talk: snellere gesprek-opening** ([Messenger.tsx](packages/frontend/src/pages/Messenger.tsx), [messenger.rs](packages/desktop/src-tauri/src/messenger.rs), [BackgroundSyncProvider.tsx](packages/frontend/src/lib/BackgroundSyncProvider.tsx)): de vaste 250ms-`setTimeout` bij aanklikken (dubbelklik-detectie) is weg → direct openen (op desktop opent dubbelklik in het paneel i.p.v. een dode `window.open`); `nc_resolve_uid` wordt gecached per `(base,user)` met 1u TTL (DashMap) i.p.v. een HTTP-round-trip vóór elke berichten-fetch; `pollMessengerOnce` racete met het openen van /messenger om dezelfde NC-verbinding → `/messenger`-guard toegevoegd (mirror van /webmail).",
+        "**Talk-afbeeldingsvoorbeelden parallel + compacter** ([messenger.rs](packages/desktop/src-tauri/src/messenger.rs)): image-previews werden 1 sequentiële HTTP-fetch per plaatje binnen de berichten-loop → traag bij veel afbeeldingen. Nu parallel (`buffer_unordered`, bounded op 8) én 300×300 i.p.v. 600×600 (~4× minder data per plaatje).",
+        "**Desktop mail: grote bijlages downloadden dubbel** ([mail.rs](packages/desktop/src-tauri/src/mail.rs)): `op_get_attachment` haalde eerst `op_get_message` op voor metadata en dan nog eens voor de bytes. Nu één fetch; metadata uit de geparste part. Fors sneller bij grote bijlagen.",
+        "**Webmail: \"Sorteer in projectmap\" (bulk)** — meerdere mails selecteren en per mail een bestaande projectmap laten voorstellen + verplaatsen via een reviewscherm ([Webmail.tsx](packages/frontend/src/pages/Webmail.tsx), [SortToProjectDialog.tsx](packages/frontend/src/components/SortToProjectDialog.tsx)). Inbox-mail → INBOX-submap, verzonden-mail → Sent-submap; matcht een project zonder bestaande map → \"Map aanmaken: `[IN]/[OUT] {nr} {naam}`\" + direct erin verplaatsen. De voorspeller combineert zes signalen (bestaande koppeling, e-mailthread, geleerd folder-profiel, projectnummer/klantreferentie, projectnaam-tokens, bijlagenamen), IDF-gewogen; afzender/opdrachtgever bewust géén los signaal. Alles client-side uit de warme mail-caches. Nieuw: `lib/project-mail-match.ts`, `lib/folder-profile-match.ts`, `lib/project-folder-resolve.ts`. _Live UI nog niet uitgebreid getest._",
+        "**E-mailinstellingen per account** ([MailAccountSettings.tsx](packages/frontend/src/pages/MailAccountSettings.tsx)): alle e-mailinstellingen staan nu genest onder Instellingen → Email accounts, per account uitklapbaar — eigen **HTML-handtekening** (met base64-afbeeldingen, overschrijft de ERPNext-handtekening), **offline-cache-venster**, **Verzonden-map** en **Verwijderde-items-map**.",
+        "**NAS-projectmappen: \"Bladeren\"-knop** (desktop) achter master- en doelmap → native mapkiezer ([NasSettingsSection.tsx](packages/frontend/src/components/NasSettingsSection.tsx), `pick_folder` via de rfd-crate).",
+        "**Headless mail-profiler (dev-tool)** ([examples/mailprofile.rs](packages/desktop/src-tauri/examples/mailprofile.rs)): perf/diagnose-harness die `op_list_folders` / `op_list_messages` / `op_get_bodies` / `op_get_conversation` tegen een echte mailbox timet. Leest `MAIL_HOST` / `MAIL_PORT` / `MAIL_USER` / `MAIL_PASS` / `MAIL_SECURE` / `MAIL_FOLDER` uit de omgeving. Maakte de bovenstaande conversatie-metingen mogelijk.",
+        "**mail**: desktop mailaccount-wachtwoord werd leeg opgeslagen (creds-nesting)",
+        "**desktop**: pinned-veld ontbrak in telegram Conversation-constructor (E0063)",
+        "**Desktop: projectmappen op de NAS aanmaken** ([nas.rs](packages/desktop/src-tauri/src/nas.rs), [adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts), [NasSettingsSection.tsx](packages/frontend/src/components/NasSettingsSection.tsx), [Projects.tsx](packages/frontend/src/pages/Projects.tsx)): knop **\"Maak NAS-mappen aan\"** op een project (alleen in de desktop-app) kopieert een **master-map** recursief (mappen + bestanden) naar een nieuwe projectmap op de NAS, hernoemd volgens een template. Instelbaar in Settings → Project-instellingen: master-pad, doel-root, mapnaam-template (`{nr} {project_name}`). Native `std::fs`-kopie via de Rust-backend (geen Nextcloud/browser-FSA). Bestaat de doelmap al → \"map bestaat al\", geen overschrijven. Plus een knop **\"Open in Verkenner\"** (`open_in_explorer`) die de projectmap op de doel-locatie direct in de Windows-bestandsbeheerder opent. Beide knoppen verborgen in de web-build.",
+        "**Desktop: \"onthoud op dit apparaat\" (auto-unlock)** ([commands.rs](packages/desktop/src-tauri/src/commands.rs), [adapter/remember.ts](packages/desktop/src/adapter/remember.ts), [DesktopApp.tsx](packages/desktop/src/DesktopApp.tsx), [VaultUnlock.tsx](packages/desktop/src/pages/VaultUnlock.tsx)): opt-in vinkje op het ontgrendel-scherm → de app onthoudt je master-wachtwoord en opent bij elke start vanzelf, geen getyp meer. Bewust **app-eigen opslag** (een bestand in de app-datamap), **géén** Windows Credential Manager / Hello — geen Windows-account-afhankelijkheid (op verzoek). Afweging: een proces dat als dezelfde gebruiker draait kan het bestand lezen (in de opt-in-tekst vermeld). Wachtwoord wordt pas opgeslagen ná een succesvolle ontgrendeling; gewist bij wachtwoord-wijziging, kluis-reset en uitvinken. Op Android blijft de prompt-gated biometrie de weg. Plus `autocomplete=\"off\"` op het kluisveld om de Edge-\"wachtwoord opslaan\"-prompt te onderdrukken.",
+        "**Desktop Talk: gesprekkenlijst-sortering** ([messenger.rs](packages/desktop/src-tauri/src/messenger.rs), [adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de lijst werd niet gesorteerd (NC-volgorde) en `Conversation` miste `pinned`. Nu `pinned` uit `r.isFavorite` + sortering vastgepind-eerst-dan-nieuwste, zoals het web. (Vastzetten zelf doe je in NextCloud Talk; Y-app spiegelt het — net als de webversie, die ook geen pin-knop heeft.)",
+        "**Desktop: auto-geladen mailaccount nu zichtbaar in Settings → Email accounts** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de uit-ERPNext-geladen mailbox (opgeslagen in de enkele `imap_*`-kluisvelden) werd niet getoond omdat de lijst alleen de `mail_accounts`-array las. De GET-route toont het account nu ook (label \"automatisch uit ERPNext\").",
         "**Desktop: e-mailaccounts beheren zoals op web** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts), [adapter/vault.ts](packages/desktop/src/adapter/vault.ts)): Settings → Email accounts werkt nu op de desktop — toevoegen / lijst / bewerken / verwijderen (`GET/POST/PUT/DELETE /api/instances/:id/mail-accounts`), opgeslagen in de **Stronghold-kluis** i.p.v. de server-`mail_accounts`-tabel (die een Y-app-account vereist die de desktop niet heeft). De mail-routes zijn account-aware (`?account=<id>`); zónder vault-account valt mail terug op de bestaande ERPNext-auto-resolve. Lost de \"Opslaan mislukt\"-fout op. Wachtwoorden staan versleuteld in de kluis en worden nooit door de GET-lijst teruggegeven.",
         "**Factuur-verzendinstellingen syncen niet naar de desktop** ([index.ts](packages/server/src/index.ts), [commands.rs](packages/desktop/src-tauri/src/commands.rs)): de key `invoice-email-defaults` (sjabloon / To-CC-BCC-defaults, in `instance_settings`) zat niet in `DESKTOP_CONFIG_KEYS`, dus de centrale config-sync sloeg 'm over. Toegevoegd aan beide lijsten (server + Rust) → wordt nu meegesynct.",
         "**Desktop: mailconfig uit ERPNext + lokale kluis** ([adapter/fetch.ts](packages/desktop/src/adapter/fetch.ts)): de desktop had geen pad om IMAP/SMTP-creds bij de mail-routes te krijgen — de Stronghold-kluis had de velden, maar niets vulde ze, en de mail-routes lazen een in-memory map die nergens werd gevuld → elke `/api/mail/*` gaf 400. Nieuw: vóór elke mail-route resolvet `ensureMailCredsPopulated` de creds in volgorde lokale kluis → ERPNext \"Email Account\" (alleen password-accounts; OAuth overgeslagen) en **persist** het resultaat in de kluis. Mail werkt nu automatisch — kluis ontgrendelen → Webmail open → creds uit ERPNext, daarna offline + na herstart uit de kluis, zonder handmatige IMAP-setup. Creds verlaten het apparaat nooit (geen Y-app-server betrokken).",
@@ -96,9 +328,9 @@
         "**Web: NextCloud Talk werkt niet in een geïnstalleerde app (Edge \"app\"/PWA)** ([messenger.ts](packages/server/src/messenger.ts), [BackgroundSyncProvider.tsx](packages/frontend/src/lib/BackgroundSyncProvider.tsx), server [index.ts](packages/server/src/index.ts)): post-Wave-0a bereikten de NC-creds de server-cache uitsluitend via de `subscribe-messenger`-push over de `/ws/events`-WebSocket. Die WS komt in een geïnstalleerde PWA niet betrouwbaar op → de cache bleef leeg → elke `/api/messenger/*` gaf \"Missende NextCloud Talk credentials\", terwijl de creds wél geconfigureerd waren (in een gewone tab werkte het wél). Nieuw `POST /api/messenger/subscribe` (`messengerSubscribe` → `setNcSession`) waarmee de frontend de creds óók via geauthenticeerde HTTP in de cache zet — zelfde sessiecookie + instance-header als de datacalls, dus de cache landt onder de juiste sleutel, ongeacht of de WS opkomt. Creds in de POST-body (niet de URL) → access-logs blijven schoon (Wave 0a-intentie intact)."
       ],
       "firstDate": "2026-06-27",
-      "lastDate": "2026-06-30",
-      "releaseCount": 8,
-      "changeCount": 6
+      "lastDate": "2026-07-01",
+      "releaseCount": 11,
+      "changeCount": 29
     },
     {
       "minorVersion": "0.27",

@@ -1,19 +1,30 @@
 {
   "repo": "open-speech-studio",
-  "generated": "2026-06-30T07:48:28.988Z",
-  "totalReleases": 4,
-  "totalChanges": 28,
+  "generated": "2026-07-13T14:44:39.070Z",
+  "totalReleases": 5,
+  "totalChanges": 30,
   "latestStable": {
-    "tag": "v0.10.1",
-    "name": "Open Speech Studio v0.10.1",
-    "date": "2026-06-17",
-    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.1"
+    "tag": "v0.10.3",
+    "name": "Open Speech Studio v0.10.3",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.3"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "0.10",
       "releases": [
+        {
+          "tag": "v0.10.3",
+          "name": "Open Speech Studio v0.10.3",
+          "date": "2026-07-13",
+          "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.3",
+          "changes": [
+            "**Vastloper / crash na langer gebruik opgelost.** Bij het vasthouden van de dicteer-sneltoets kon Windows snelle toets-herhaling-events (losgelaten/ingedrukt-paren) sturen. Elk paar startte een start/stop-cyclus waarbij telkens Whisper draaide, wat de app overspoelde en na verloop van tijd bevroor of liet crashen (soms met een wit scherm). Deze events worden nu weggedebouncet, zodat één keer vasthouden precies één opname is.",
+            "**Eind-geluid** bij loslaten van de toets vuurt nu betrouwbaar precies één keer."
+          ],
+          "patchNum": 3
+        },
         {
           "tag": "v0.10.1",
           "name": "Open Speech Studio v0.10.1",
@@ -31,11 +42,14 @@
           "patchNum": 0
         }
       ],
-      "allChanges": [],
+      "allChanges": [
+        "**Vastloper / crash na langer gebruik opgelost.** Bij het vasthouden van de dicteer-sneltoets kon Windows snelle toets-herhaling-events (losgelaten/ingedrukt-paren) sturen. Elk paar startte een start/stop-cyclus waarbij telkens Whisper draaide, wat de app overspoelde en na verloop van tijd bevroor of liet crashen (soms met een wit scherm). Deze events worden nu weggedebouncet, zodat één keer vasthouden precies één opname is.",
+        "**Eind-geluid** bij loslaten van de toets vuurt nu betrouwbaar precies één keer."
+      ],
       "firstDate": "2026-04-24",
-      "lastDate": "2026-06-17",
-      "releaseCount": 2,
-      "changeCount": 0
+      "lastDate": "2026-07-13",
+      "releaseCount": 3,
+      "changeCount": 2
     },
     {
       "minorVersion": "0.8",

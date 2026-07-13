@@ -1,19 +1,66 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-06-30T07:48:25.349Z",
-  "totalReleases": 14,
-  "totalChanges": 127,
+  "generated": "2026-07-13T14:44:35.150Z",
+  "totalReleases": 18,
+  "totalChanges": 138,
   "latestStable": {
-    "tag": "v0.8.2",
-    "name": "Open Calc Studio v0.8.2",
-    "date": "2026-06-12",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.2"
+    "tag": "v0.8.8",
+    "name": "Open Calc Studio v0.8.8",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.8"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "0.8",
       "releases": [
+        {
+          "tag": "v0.8.8",
+          "name": "Open Calc Studio v0.8.8",
+          "date": "2026-07-13",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.8",
+          "changes": [
+            "**Excel/CSV-import: bedragen kwamen op € 0** — een spreadsheet met alléén een eenheidsprijs- of totaal-kolom (zonder aparte materiaal/arbeid-kolommen) leverde na herberekening € 0 op. De ingelezen prijs wordt nu correct verwerkt.",
+            "**Excel/CSV-import ook via de MCP-server** — nieuwe tool `import_excel_csv`: lees een .xlsx/.xls/.csv met vrije kolomindeling in en koppel de kolommen aan de begrotingsvelden (koppen worden automatisch herkend)."
+          ],
+          "patchNum": 8
+        },
+        {
+          "tag": "v0.8.7",
+          "name": "Open Calc Studio v0.8.7",
+          "date": "2026-07-06",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.7",
+          "changes": [
+            "**Excel / CSV met kolom-mapping** — lees elk Excel-/CSV-bestand met een vrije kolomindeling in en koppel zelf de kolommen aan de begrotingsvelden; de koppen worden automatisch herkend.",
+            "**STABU SUFX** — het XML-uitwisselformaat (STABU Bouwbreed), naast het bestaande .s01.",
+            "**Legacy RAW (.rsu)** — de oudere RAW-uitwisseling, via de RSX-route.",
+            "**Prijscatalogus (BMEcat / DICO)** — groothandels- en ETIM-prijslijsten rechtstreeks in de middelenbibliotheek."
+          ],
+          "patchNum": 7
+        },
+        {
+          "tag": "v0.8.6",
+          "name": "Open Calc Studio v0.8.6",
+          "date": "2026-07-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.6",
+          "changes": [
+            "**Rapport-samenvatting: juiste staartkosten** — \"Algemene bedrijfskosten\" kon op 0% / € 0 staan en door de gebruiker aangepaste opslag-percentages werden genegeerd. De samenvatting leest de percentages en bedragen nu rechtstreeks uit de staart-regels, dus ze komen altijd overeen met de begroting.",
+            "**Interne opschoning** van het staartkosten-model; alle rapporten rekenen met dezelfde bron van waarheid."
+          ],
+          "patchNum": 6
+        },
+        {
+          "tag": "v0.8.5",
+          "name": "Open Calc Studio v0.8.5",
+          "date": "2026-07-01",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.5",
+          "changes": [
+            "**Veel meer importformaten** — `.cuf`, `.dnc`, `.xtb` (met detailregels), `.rsx`, `.s01` (STABU-bestek) en `.ifcx`",
+            "**Wit scherm op Windows opgelost** — WebView valt terug op software-rendering, zodat het venster niet leeg blijft",
+            "**Importmotor schoon herbouwd** — één gedeelde kern; ingelezen totalen komen exact overeen met het bronbestand"
+          ],
+          "patchNum": 5
+        },
         {
           "tag": "v0.8.2",
           "name": "Open Calc Studio v0.8.2",
@@ -31,11 +78,23 @@
           "patchNum": 1
         }
       ],
-      "allChanges": [],
+      "allChanges": [
+        "**Excel/CSV-import: bedragen kwamen op € 0** — een spreadsheet met alléén een eenheidsprijs- of totaal-kolom (zonder aparte materiaal/arbeid-kolommen) leverde na herberekening € 0 op. De ingelezen prijs wordt nu correct verwerkt.",
+        "**Excel/CSV-import ook via de MCP-server** — nieuwe tool `import_excel_csv`: lees een .xlsx/.xls/.csv met vrije kolomindeling in en koppel de kolommen aan de begrotingsvelden (koppen worden automatisch herkend).",
+        "**Excel / CSV met kolom-mapping** — lees elk Excel-/CSV-bestand met een vrije kolomindeling in en koppel zelf de kolommen aan de begrotingsvelden; de koppen worden automatisch herkend.",
+        "**STABU SUFX** — het XML-uitwisselformaat (STABU Bouwbreed), naast het bestaande .s01.",
+        "**Legacy RAW (.rsu)** — de oudere RAW-uitwisseling, via de RSX-route.",
+        "**Prijscatalogus (BMEcat / DICO)** — groothandels- en ETIM-prijslijsten rechtstreeks in de middelenbibliotheek.",
+        "**Rapport-samenvatting: juiste staartkosten** — \"Algemene bedrijfskosten\" kon op 0% / € 0 staan en door de gebruiker aangepaste opslag-percentages werden genegeerd. De samenvatting leest de percentages en bedragen nu rechtstreeks uit de staart-regels, dus ze komen altijd overeen met de begroting.",
+        "**Interne opschoning** van het staartkosten-model; alle rapporten rekenen met dezelfde bron van waarheid.",
+        "**Veel meer importformaten** — `.cuf`, `.dnc`, `.xtb` (met detailregels), `.rsx`, `.s01` (STABU-bestek) en `.ifcx`",
+        "**Wit scherm op Windows opgelost** — WebView valt terug op software-rendering, zodat het venster niet leeg blijft",
+        "**Importmotor schoon herbouwd** — één gedeelde kern; ingelezen totalen komen exact overeen met het bronbestand"
+      ],
       "firstDate": "2026-06-12",
-      "lastDate": "2026-06-12",
-      "releaseCount": 2,
-      "changeCount": 0
+      "lastDate": "2026-07-13",
+      "releaseCount": 6,
+      "changeCount": 11
     },
     {
       "minorVersion": "0.7",

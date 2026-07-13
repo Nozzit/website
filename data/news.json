@@ -1,6 +1,111 @@
 [
   {
     "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio nightly uitgebracht",
+    "description": "Nightly build 1.71.0-nightly.20260713.131dd21",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Open-Calculations-Studio",
+    "title": "Open-Calculations-Studio nightly uitgebracht",
+    "description": "Nightly build 0.1.4-nightly.20260713.9f5c914",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-speech-studio",
+    "title": "open-speech-studio v0.10.3 uitgebracht",
+    "description": "Open Speech Studio v0.10.3",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.3",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.8.8 uitgebracht",
+    "description": "Open Calc Studio v0.8.8",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.8",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "openaec-installer",
+    "title": "openaec-installer: 2 releases (v0.1.0 → v0.1.1)",
+    "description": "Versies: v0.1.0, v0.1.1",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.1.1",
+    "count": 2
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-installer",
+    "title": "Nieuwe repository: openaec-installer",
+    "description": "Centrale hub voor OpenAEC Foundation tools — installeren, bijwerken en starten · Central hub for OpenAEC tools",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-cloud-desktop",
+    "title": "Nieuwe repository: openaec-cloud-desktop",
+    "description": "OpenAEC Cloud - Dropbox-achtige desktop sync-client voor de OpenAEC SuperCloud (Tauri 2 + Rust + SolidJS)",
+    "date": "2026-07-13",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-cloud-desktop"
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.7.10 uitgebracht",
+    "description": "Open Planner Studio v2026.7.10",
+    "date": "2026-07-10",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.10",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-frame-studio",
+    "title": "open-frame-studio v0.5.2 uitgebracht",
+    "description": "Open Frame Studio v0.5.2",
+    "date": "2026-07-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.5.2",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-pdf-studio-library",
+    "title": "Nieuwe repository: open-pdf-studio-library",
+    "description": "Content Library for Open PDF Studio",
+    "date": "2026-07-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio-library"
+  },
+  {
+    "type": "release",
+    "repo": "open-frame-studio",
+    "title": "open-frame-studio: 3 releases (v0.4.1 → v0.5.1)",
+    "description": "Versies: v0.4.1, v0.5.0, v0.5.1",
+    "date": "2026-07-08",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.5.1",
+    "count": 3
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio: 2 releases (v2026.7.8 → v2026.7.9)",
+    "description": "Versies: v2026.7.8, v2026.7.9",
+    "date": "2026-07-07",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.9",
+    "count": 2
+  },
+  {
+    "type": "release",
     "repo": "open-fem2d-studio",
     "title": "open-fem2d-studio v2.0.0 uitgebracht",
     "description": "Open FEM2D Studio 2.0.0",
@@ -10,20 +115,29 @@
   },
   {
     "type": "release",
-    "repo": "open-pdf-studio",
-    "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.69.0-nightly.20260706.ea57481",
+    "repo": "open-geotechniek-studio",
+    "title": "open-geotechniek-studio v0.4.0 uitgebracht",
+    "description": "v0.4.0",
     "date": "2026-07-06",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
+    "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.4.0",
     "count": 1
   },
   {
     "type": "release",
-    "repo": "Open-Calculations-Studio",
-    "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260706.9f5c914",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.7.7 uitgebracht",
+    "description": "Open Planner Studio v2026.7.7",
     "date": "2026-07-06",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.7",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.70.0 uitgebracht",
+    "description": "Open PDF Studio v1.70.0",
+    "date": "2026-07-06",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/untagged-bff408814a8c0280ad0f",
     "count": 1
   },
   {
