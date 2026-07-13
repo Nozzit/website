@@ -1,16 +1,143 @@
 {
   "repo": "open-frame-studio",
-  "generated": "2026-06-30T07:48:30.501Z",
-  "totalReleases": 2,
-  "totalChanges": 12,
+  "generated": "2026-07-13T07:02:35.942Z",
+  "totalReleases": 7,
+  "totalChanges": 42,
   "latestStable": {
-    "tag": "v0.2.0",
-    "name": "Open Frame Studio v0.2.0",
-    "date": "2026-04-08",
-    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.2.0"
+    "tag": "v0.5.2",
+    "name": "Open Frame Studio v0.5.2",
+    "date": "2026-07-09",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.5.2"
   },
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "0.5",
+      "releases": [
+        {
+          "tag": "v0.5.2",
+          "name": "Open Frame Studio v0.5.2",
+          "date": "2026-07-09",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.5.2",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 2
+        },
+        {
+          "tag": "v0.5.1",
+          "name": "Open Frame Studio v0.5.1",
+          "date": "2026-07-08",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.5.1",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.5.0",
+          "name": "Open Frame Studio v0.5.0",
+          "date": "2026-07-08",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.5.0",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)",
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)",
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)"
+      ],
+      "firstDate": "2026-07-08",
+      "lastDate": "2026-07-09",
+      "releaseCount": 3,
+      "changeCount": 18
+    },
+    {
+      "minorVersion": "0.4",
+      "releases": [
+        {
+          "tag": "v0.4.1",
+          "name": "Open Frame Studio v0.4.1",
+          "date": "2026-07-08",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.4.1",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.4.0",
+          "name": "Open Frame Studio v0.4.0",
+          "date": "2026-07-06",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.4.0",
+          "changes": [
+            "Parametric window frame design with grid editor",
+            "IFC / DXF / PDF / glTF export",
+            "Profile database (wood, PVC, aluminum)",
+            "Production lists & cost calculation",
+            "Blender/Bonsai integration",
+            "Multi-language (NL / EN / DE)"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)",
+        "Parametric window frame design with grid editor",
+        "IFC / DXF / PDF / glTF export",
+        "Profile database (wood, PVC, aluminum)",
+        "Production lists & cost calculation",
+        "Blender/Bonsai integration",
+        "Multi-language (NL / EN / DE)"
+      ],
+      "firstDate": "2026-07-06",
+      "lastDate": "2026-07-08",
+      "releaseCount": 2,
+      "changeCount": 12
+    },
     {
       "minorVersion": "0.2",
       "releases": [
