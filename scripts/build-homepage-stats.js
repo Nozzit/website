@@ -69,6 +69,9 @@ let updates = 0;
 const articleRegex = /<article class="tool-card"([^>]*?)data-repo="([^"]+)"([^>]*)>([\s\S]*?)<\/article>/g;
 
 html = html.replace(articleRegex, (match, before, repoName, after, inner) => {
+  // Open CAD Studio is an external repo whose card updates itself live in the
+  // browser (data-ocs-* + fetch). Leave it untouched so we don't wipe those.
+  if (repoName === 'OpenCADStudio') return match;
   const repo = repoMap[repoName.toLowerCase()];
   if (!repo) return match;
 
