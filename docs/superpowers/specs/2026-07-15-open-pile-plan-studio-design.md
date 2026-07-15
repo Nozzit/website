@@ -6,7 +6,7 @@ Open Pile Plan Studio als volwaardig, beschikbaar product opnemen in de bestaand
 
 ## Bron en status
 
-- Repository: `OpenAEC-Foundation/open-pile-plan-studio`
+- Repository: `OpenAEC-Foundation/pile-plan-studio`
 - Productstatus: Beschikbaar en Beta
 - Segment: GWW / Geotechniek
 - AEC-categorieën: Engineering (`E`) en Infrastructure (`I`)
@@ -22,7 +22,7 @@ De kaart bevat:
 - omschrijving: “Maak en beheer paalplannen met positionering, nummering, maatvoering en technische uitvoer voor funderingsprojecten.”;
 - link naar de eigen productpagina;
 - link naar de live webapp als die in de repository of projectmetadata aantoonbaar beschikbaar is, anders een link naar GitHub Releases;
-- GitHub-statistieken via `data-repo="open-pile-plan-studio"` en de bestaande generators;
+- GitHub-statistieken via `data-repo="pile-plan-studio"` en de bestaande generators;
 - een representatieve afbeelding uit de repository, indien beschikbaar; anders een eenvoudige afbeelding in de bestaande OpenAEC-vormtaal.
 
 Voeg de titel, omschrijving en linktekst toe aan alle vier bestaande taalobjecten: Nederlands, Engels, Frans en Turks. Voeg Open Pile Plan Studio ook toe aan de Schema.org-lijst op de homepage.
