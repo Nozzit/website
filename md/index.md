@@ -2,7 +2,7 @@
 
 > Machine-readable Markdown mirrors of the OpenAEC product pages. Use these when feeding the OpenAEC catalog to AI assistants (Claude, Continue, Cursor, etc).
 
-Generated: 2026-06-30T07:48:48.827Z
+Generated: 2026-07-15T13:17:57.060Z
 
 **Foundation totals:** 54 public repos · 617 stars · 5532 commits · 40 contributors.
 
@@ -13,6 +13,7 @@ Generated: 2026-06-30T07:48:48.827Z
 - [Open PDF Studio](./open-pdf-studio.md) — Open-source PDF editor and annotator with a custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms. Vector PDF rendering optimized for CAD drawings. (`v1.47.3`)
 - [Open 2D Studio](./open-2d-studio.md) — 2D CAD application with drawing tools, DXF import/export, layers and dimensions. (`v0.35.0`)
 - [Open Calc Studio](./open-calc-studio.md) — Cost estimation and budgeting for buildings, civil infrastructure and GWW projects. STABU/RAW support, IFCX integration, MCP server for AI control. (`v0.8.0`)
+- [Open Pile Plan Studio](./open-pile-plan-studio.md) — Interactive pile planning with load points, CPT selection, pile options, utilization, estimated costs and IFCPP project files. (`n/a`)
 - [Open Pointcloud Studio](./open-pointcloud-studio.md) — Point cloud viewer for LAS / LAZ with RGB, elevation and classification rendering. EDL and octree LoD for large datasets. (`v0.3.0`)
 - [Open Speech Studio](./open-speech-studio.md) — Local speech-to-text using Whisper AI. CTRL+Win shortcut for OS-wide dictation. Privacy-first, no cloud. (`v0.9.0`)
 - [Monty IFC Viewer](./monty-ifc-viewer.md) — Lightweight IFC viewer for quick BIM model inspection. (`v1.0.1`)

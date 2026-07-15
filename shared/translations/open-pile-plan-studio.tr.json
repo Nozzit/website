@@ -1,0 +1,57 @@
+{
+  "header": {
+    "label": "Temel mühendisliği",
+    "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
+    "desc": "Yük noktalarını, CPT'leri, temel tavsiyelerini, kazık seçeneklerini, kullanım oranlarını ve tahmini maliyetleri tek bir etkileşimli kazık planında birleştirin.",
+    "available": "Kullanılabilir",
+    "beta": "Beta",
+    "gww": "İnşaat / Geoteknik",
+    "liveDemo": "Tarayıcı demosunu aç",
+    "github": "GitHub'da görüntüle",
+    "caution": "Mühendislik sonuçları karar desteğidir ve her zaman yetkin bir uzman tarafından kontrol edilmelidir."
+  },
+  "intro": {
+    "label": "Tek plan, tüm karar verileri",
+    "title": "Yük noktasından gerekçeli kazık seçimine",
+    "p1": "Open Pile Plan Studio, yapısal yükler, yakındaki CPT'ler ve mevcut kazık konfigürasyonları arasındaki ilişkiyi doğrudan görünür kılar.",
+    "p2": "Bir veya daha fazla yük noktası seçin; geçerli seçenekleri uç seviyesi, kullanım oranı, belirleyici CPT ve tahmini maliyete göre karşılaştırın ve seçilen konfigürasyonu aynı projede kaydedin."
+  },
+  "features": {
+    "label": "Özellikler",
+    "title": "Kaynak veriden kazık planına odaklı ilerleyin",
+    "import": { "title": "Amaca yönelik proje içe aktarımı", "desc": "Yük noktalarını, CPT koordinatlarını ve temel tavsiyelerini CSV veya XLSX dosyalarından içe aktarın ve üç kaynak rolünü önceden atayın." },
+    "selection": { "title": "CPT seçimi", "desc": "CPT'leri kadran veya maksimum açı kurallarıyla otomatik seçin ve tek tek yük noktaları için seçimi elle değiştirin." },
+    "options": { "title": "Kazık seçeneklerini karşılaştır", "desc": "Her konum için geçerli, yetersiz ve eksik seçenekleri boyut, uç seviyesi ve belirleyici CPT ile görüntüleyin." },
+    "assign": { "title": "Tekli veya toplu ata", "desc": "Bir konfigürasyonu tek bir yük noktasına ya da ortak seçeneklere sahip çoklu seçime atayın." },
+    "compare": { "title": "Kullanım ve maliyet", "desc": "Bir konfigürasyonu kaydetmeden önce kullanım oranını, belirleyici CPT'yi ve tahmini maliyeti karşılaştırın." },
+    "optimize": { "title": "Planı optimize et", "desc": "Verimli bir kazık planı için mevcut greedy optimizer'ı konfigürasyon sınırlarıyla karar desteği olarak kullanın." },
+    "interact": { "title": "Etkileşimli seçim", "desc": "Konumları tıklama, çoklu seçim veya kement ile seçin; lejantta kazık boyutu ve uç seviyesine göre filtreleyin." },
+    "project": { "title": "IFCPP proje dosyası", "desc": "İçe aktarılan verileri, ayarları, kazık seçimlerini ve elle yapılan CPT seçimlerini birlikte saklayın ve projeyi daha sonra yeniden açın." },
+    "sample": { "title": "Hemen keşfedin", "desc": "Tarayıcı demosu eksiksiz bir örnek projeyle açılır; iş akışını hazırlık yapmadan inceleyebilirsiniz." }
+  },
+  "workflow": {
+    "label": "İş akışı",
+    "title": "İzlenebilir bir proje için üç adım",
+    "step1": { "title": "Kaynakları birleştirin", "desc": "Yük noktalarını, CPT'leri ve temel tavsiyelerini içe aktarın ve rollerini doğrulayın." },
+    "step2": { "title": "Seçenekleri değerlendirin", "desc": "Planı, CPT seçimini, taşıma kapasitesini, kullanım oranını ve maliyeti inceleyin." },
+    "step3": { "title": "Seçimleri kaydedin", "desc": "Konfigürasyonları atayın, planın tamamını kontrol edin ve her şeyi IFCPP projesi olarak kaydedin." }
+  },
+  "limits": {
+    "label": "Şeffaf sınırlar",
+    "title": "Karar desteği; otomatik tasarım sorumluluğu değil",
+    "desc1": "Yapılandırılabilir CPT seçimi pratik bir yaklaşımdır. Greedy optimizer seçenekleri karşılaştırmaya yardımcı olur ancak küresel olarak en iyi kazık planını garanti etmez.",
+    "desc2": "Girdileri, varsayımları ve mühendislik sonuçlarını her zaman yetkin bir uzmana doğrulatın."
+  },
+  "tech": {
+    "label": "Paylaşılan hesaplama çekirdeği",
+    "title": "Tarayıcı ve masaüstünde aynı mühendislik mantığı",
+    "desc": "İçe aktarım, kazık seçenekleri, maliyetler, CPT seçimi ve optimizasyon mantığı Rust çekirdeğinde yer alır. Aynı çekirdek tarayıcıda WebAssembly üzerinden, Tauri masaüstü uygulamasında ise yerel olarak çalışır."
+  },
+  "cta": {
+    "title": "Örnek projeyi keşfedin",
+    "desc": "Tarayıcı demosunu açın ve yük noktalarının, CPT'lerin ve kazık seçeneklerinin tek çalışma alanında nasıl birleştiğini görün.",
+    "demo": "Tarayıcı demosunu başlat",
+    "github": "Kaynak kodu ve belgeler"
+  },
+  "footer": { "slogan": "Özgürce inşa et. Birlikte inşa et." }
+}

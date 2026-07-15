@@ -17,6 +17,7 @@ const CATS = {
   'open-calc-studio':           ['C','I'],
   'open-heatloss-studio':       ['E'],
   'open-geotechniek-studio':    ['E','I'],
+  'pile-plan-studio':           ['E','I'],
   'open-speech-studio':         ['A','E','C','I'],
   'open-books':                 ['A'],
   'y-app':                      ['A','E','C','I'],

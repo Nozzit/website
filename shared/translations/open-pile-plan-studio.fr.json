@@ -1,0 +1,57 @@
+{
+  "header": {
+    "label": "Ingénierie des fondations",
+    "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
+    "desc": "Réunissez points de charge, sondages CPT, avis de fondation, options de pieux, taux d'utilisation et coûts estimés dans un plan interactif.",
+    "available": "Disponible",
+    "beta": "Bêta",
+    "gww": "Génie civil / Géotechnique",
+    "liveDemo": "Ouvrir la démo navigateur",
+    "github": "Voir sur GitHub",
+    "caution": "Les résultats techniques servent d'aide à la décision et doivent toujours être vérifiés par un professionnel qualifié."
+  },
+  "intro": {
+    "label": "Un seul plan, toutes les données de décision",
+    "title": "Du point de charge au choix de pieu étayé",
+    "p1": "Open Pile Plan Studio rend immédiatement visible la relation entre les charges structurelles, les sondages CPT voisins et les configurations de pieux disponibles.",
+    "p2": "Sélectionnez un ou plusieurs points de charge, comparez les options valides selon le niveau de pointe, le taux d'utilisation, le sondage déterminant et le coût estimé, puis enregistrez la configuration choisie dans le même projet."
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Passez directement des données sources au plan de pieux",
+    "import": { "title": "Import de projet ciblé", "desc": "Importez les points de charge, coordonnées CPT et avis de fondation depuis des fichiers CSV ou XLSX et attribuez les trois rôles avant l'import." },
+    "selection": { "title": "Sélection des CPT", "desc": "Sélectionnez automatiquement les CPT par quadrant ou angle maximal et remplacez manuellement le choix pour chaque point de charge." },
+    "options": { "title": "Comparer les options", "desc": "Consultez les options valides, insuffisantes et manquantes par emplacement avec dimension, niveau de pointe et CPT déterminant." },
+    "assign": { "title": "Affectation unique ou groupée", "desc": "Affectez une configuration à un point de charge ou à une sélection multiple disposant d'options communes." },
+    "compare": { "title": "Utilisation et coût", "desc": "Comparez le taux d'utilisation, le CPT déterminant et le coût estimé avant d'enregistrer une configuration." },
+    "optimize": { "title": "Optimiser le plan", "desc": "Utilisez l'optimiseur glouton actuel avec des limites de configuration comme aide à la décision." },
+    "interact": { "title": "Sélection interactive", "desc": "Sélectionnez les emplacements par clic, sélection multiple ou lasso et filtrez par dimension et niveau de pointe dans la légende." },
+    "project": { "title": "Fichier projet IFCPP", "desc": "Conservez ensemble données importées, paramètres, choix de pieux et sélections CPT manuelles, puis rouvrez le projet complet." },
+    "sample": { "title": "Explorer immédiatement", "desc": "La démo navigateur s'ouvre avec un projet exemple complet pour découvrir le flux sans préparation." }
+  },
+  "workflow": {
+    "label": "Méthode",
+    "title": "Trois étapes vers un projet traçable",
+    "step1": { "title": "Combiner les sources", "desc": "Importez points de charge, CPT et avis de fondation, puis contrôlez leur rôle." },
+    "step2": { "title": "Évaluer les options", "desc": "Examinez le plan, la sélection CPT, la capacité portante, l'utilisation et le coût." },
+    "step3": { "title": "Enregistrer les choix", "desc": "Affectez les configurations, contrôlez l'ensemble et sauvegardez le projet au format IFCPP." }
+  },
+  "limits": {
+    "label": "Limites transparentes",
+    "title": "Aide à la décision, pas responsabilité de conception automatisée",
+    "desc1": "La sélection CPT configurable est une approximation pratique. L'optimiseur glouton aide à comparer les choix sans garantir un plan globalement optimal.",
+    "desc2": "Faites toujours vérifier les données, hypothèses et résultats techniques par un professionnel qualifié."
+  },
+  "tech": {
+    "label": "Noyau de calcul partagé",
+    "title": "La même logique d'ingénierie dans le navigateur et sur le bureau",
+    "desc": "La logique d'import, d'options de pieux, de coûts, de sélection CPT et d'optimisation réside dans le noyau Rust. Celui-ci fonctionne via WebAssembly dans le navigateur et nativement dans l'application Tauri."
+  },
+  "cta": {
+    "title": "Explorez le projet exemple",
+    "desc": "Ouvrez la démo navigateur et observez directement comment points de charge, CPT et options de pieux se rejoignent dans un même espace.",
+    "demo": "Lancer la démo navigateur",
+    "github": "Code source et documentation"
+  },
+  "footer": { "slogan": "Construire librement. Construire ensemble." }
+}
