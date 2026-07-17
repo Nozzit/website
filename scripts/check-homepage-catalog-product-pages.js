@@ -53,8 +53,8 @@ assert.ok(
 );
 assert.match(
   validator,
-  /<a href="https:\/\/github\.com\/OpenAEC-Foundation\/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-primary">/,
-  'BIM Validator GitHub-link mist veilige externe-linkattributen',
+  /<a href="https:\/\/github\.com\/OpenAEC-Foundation\/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-primary github-cta">/,
+  'BIM Validator GitHub-link mist veilige attributen of toegankelijke knopstijl',
 );
 assert.ok(validator.includes('id="recent-developments"'), 'BIM Validator mist recente ontwikkelingen');
 assert.ok(
@@ -74,6 +74,16 @@ assert.match(
   validator,
   /\.development-link\s*\{[^}]*color:\s*var\(--info\)/s,
   'BIM Validator-links missen voldoende contrast',
+);
+assert.match(
+  validator,
+  /\.header-actions \.github-cta\s*\{[^}]*color:\s*#18181B/s,
+  'BIM Validator GitHub-knop mist contrastrijke tekst',
+);
+assert.match(
+  validator,
+  /\.header-actions \.github-cta:hover,[\s\S]*?background:\s*var\(--signal-orange\);[\s\S]*?color:\s*#18181B/,
+  'BIM Validator GitHub-knop mist contrastrijke hoverstijl',
 );
 for (const text of [
   'Project data separated per organization',
