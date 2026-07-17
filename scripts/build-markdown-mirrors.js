@@ -204,6 +204,29 @@ const TOOLS = [
     standards: ['IFCX'],
   },
   {
+    id: 'open-pile-plan-studio',
+    name: 'Open Pile Plan Studio',
+    repo: 'pile-plan-studio',
+    category: 'Foundation Engineering',
+    status: 'beta',
+    license: 'LGPL-3.0-or-later',
+    platforms: ['Web', 'Windows'],
+    techStack: ['Rust', 'WebAssembly', 'React', 'TypeScript', 'Tauri 2'],
+    description: 'Interactive pile planning with load points, CPT selection, pile options, utilization, estimated costs and IFCPP project files.',
+    alternatives: [],
+    features: [
+      'CSV and XLSX import for load points, CPT coordinates and foundation advice',
+      'Automatic and manual CPT selection per load point',
+      'Pile option comparison by size, tip level, utilization, governing CPT and estimated cost',
+      'Single and bulk pile configuration assignment',
+      'Greedy optimization with configurable limits',
+      'IFCPP project save and reopen',
+      'Shared Rust calculation core in browser and desktop',
+    ],
+    whenToUse: 'Exploring and assigning pile configurations across structural load points while keeping input data, engineering choices and cost estimates in one traceable project.',
+    standards: ['IFCPP'],
+  },
+  {
     id: 'open-pointcloud-studio',
     name: 'Open Pointcloud Studio',
     repo: 'open-pointcloud-studio',
@@ -362,7 +385,7 @@ const TOOLS = [
     platforms: ['Web'],
     techStack: ['Rust (WASM)', 'TypeScript'],
     description: 'IDS validation against NL-BIM Basis ILS and RVB BIM Norm. Browser-based, 3D viewer, BCF export.',
-    alternatives: ['Solibri Office', 'BIMcollab Zoom IDS', 'usBIM.IDSeditor'],
+    alternatives: ['Commercial BIM validation suites'],
     features: [
       'IDS (Information Delivery Specification) validation',
       'NL-BIM Basis ILS preset',
@@ -370,6 +393,9 @@ const TOOLS = [
       'Browser-based, no install',
       '3D viewer for failed elements',
       'BCF export of failures',
+      'Project data separated per organization',
+      'Open and save projects locally or in connected project storage',
+      'Interactive section planes for focused model inspection',
     ],
     whenToUse: 'Pre-delivery IDS checks of IFC models against Dutch and RVB standards, browser-only quick validation.',
     standards: ['IDS', 'IFC 4', 'NL-BIM Basis ILS', 'RVB BIM Norm', 'BCF 2.1'],
@@ -612,13 +638,13 @@ function buildToolMarkdown(tool, stats, downloads, releaseInfo) {
   return lines.join('\n');
 }
 
-function buildIndexMarkdown(tools, stats, downloads) {
+function buildIndexMarkdown(tools, stats, downloads, generatedAt) {
   const lines = [];
   lines.push(`# OpenAEC tools — Markdown index`);
   lines.push('');
   lines.push(`> Machine-readable Markdown mirrors of the OpenAEC product pages. Use these when feeding the OpenAEC catalog to AI assistants (Claude, Continue, Cursor, etc).`);
   lines.push('');
-  lines.push(`Generated: ${new Date().toISOString()}`);
+  lines.push(`Generated: ${generatedAt}`);
   lines.push('');
 
   // Summary line from stats
@@ -696,6 +722,10 @@ function buildAboutMarkdown(llmsTxt) {
 function main() {
   const stats = readJson('data/stats.json');
   const downloads = readJson('data/downloads.json');
+  const generatedAt = [stats?.generated, downloads?.generated]
+    .filter(Boolean)
+    .sort()
+    .at(-1) || '1970-01-01T00:00:00.000Z';
   const llmsTxt = (() => {
     const p = path.join(ROOT, 'llms.txt');
     return fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
@@ -729,7 +759,7 @@ function main() {
   }
 
   // index.md
-  const indexMd = buildIndexMarkdown(TOOLS, stats, downloads);
+  const indexMd = buildIndexMarkdown(TOOLS, stats, downloads, generatedAt);
   totalBytes += writeFile('index.md', indexMd);
   generated.push({ id: '_index', file: '/md/index.md', bytes: Buffer.byteLength(indexMd, 'utf8') });
 
@@ -741,7 +771,7 @@ function main() {
   // index.json
   const indexJson = {
     $schema: 'https://www.open-aec.com/md/index.schema.json',
-    generated: new Date().toISOString(),
+    generated: generatedAt,
     description: 'Markdown mirrors of OpenAEC product pages for AI tool integrations.',
     base: `${SITE_BASE}/md/`,
     tools: TOOLS.map(t => ({

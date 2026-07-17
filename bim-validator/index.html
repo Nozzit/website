@@ -33,6 +33,84 @@
       margin: 0 auto;
       line-height: 1.6;
     }
+    .header-actions {
+      display: flex;
+      justify-content: center;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .header-actions .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+    }
+    .header-actions .github-cta {
+      color: #18181B;
+    }
+    .header-actions .github-cta:hover,
+    .header-actions .github-cta:focus-visible {
+      background: var(--signal-orange);
+      color: #18181B;
+    }
+
+    .development-section {
+      background: var(--concrete);
+    }
+    .development-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .development-intro {
+      max-width: 680px;
+      color: #57534E;
+      margin-bottom: var(--sp-8);
+    }
+    .development-list {
+      display: grid;
+      gap: var(--sp-4);
+    }
+    .development-item {
+      display: grid;
+      grid-template-columns: 9rem minmax(0, 1fr) auto;
+      gap: var(--sp-5);
+      align-items: start;
+      padding: var(--sp-5);
+      background: white;
+      border: 1px solid #E7E5E4;
+      border-left: 3px solid var(--amber);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .development-item time {
+      font-family: var(--font-code);
+      font-size: 0.75rem;
+      color: #57534E;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .development-item h3 {
+      font-size: 1rem;
+      margin: 0 0 var(--sp-1);
+      color: var(--deep-forge);
+    }
+    .development-item p {
+      margin: 0;
+      color: #57534E;
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    .development-link {
+      color: var(--info);
+      font-family: var(--font-heading);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .development-link:hover,
+    .development-link:focus-visible {
+      color: #1E40AF;
+    }
 
     .feature-section { max-width: 900px; margin: 0 auto; }
     .feature-section h2 {
@@ -195,6 +273,7 @@
       .page-header h1 { font-size: 2rem; }
       .feature-table tbody td:first-child { white-space: normal; width: auto; }
       .highlight-cards { grid-template-columns: repeat(2, 1fr); }
+      .development-item { grid-template-columns: 1fr; gap: var(--sp-2); }
     }
   </style>
 </head>
@@ -206,6 +285,9 @@
     <p class="section-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
     <h1>BIM <span class="accent">Validator</span></h1>
     <p data-i18n="header.desc">Open source IFC-validatietool. Valideer modellen tegen IDS-specificaties, Nederlandse standaarden en projecteisen — in de browser, via CLI of API.</p>
+    <div class="header-actions">
+      <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-primary github-cta">Bekijk broncode op GitHub</a>
+    </div>
   </header>
 
   <!-- Key stats -->
@@ -368,6 +450,51 @@
       </div>
     </div>
   </section>
+
+  <section class="section development-section" id="recent-developments">
+    <div class="development-inner">
+      <p class="section-label">Projectontwikkeling</p>
+      <h2>Recente ontwikkelingen</h2>
+      <p class="development-intro">De validator wordt actief ontwikkeld. Dit zijn de belangrijkste recente verbeteringen uit de openbare repository.</p>
+      <div class="development-list">
+        <article class="development-item">
+          <time datetime="2026-04-21">21 april 2026</time>
+          <div>
+            <h3>Projecten afgeschermd per organisatie</h3>
+            <p>Project-, bestands- en cloudroutes controleren voortaan de organisatiecontext voordat gegevens worden geopend of gewijzigd.</p>
+          </div>
+          <a class="development-link" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/562f071" target="_blank" rel="noopener">Bekijk wijziging &rarr;</a>
+        </article>
+        <article class="development-item">
+          <time datetime="2026-04-20">20 april 2026</time>
+          <div>
+            <h3>Afhankelijkheden beveiligd</h3>
+            <p>De frontend-tooling en gegevensparser zijn bijgewerkt en de gemelde beveiligingsproblemen in de dependencycontrole zijn opgelost.</p>
+          </div>
+          <a class="development-link" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/f80e92c" target="_blank" rel="noopener">Bekijk wijziging &rarr;</a>
+        </article>
+        <article class="development-item">
+          <time datetime="2026-04-16">16 april 2026</time>
+          <div>
+            <h3>Projecten lokaal en in de cloud openen en opslaan</h3>
+            <p>De projectworkflow ondersteunt nu lokale projectbestanden, opslaan als nieuw project en openen of bijwerken vanuit gekoppelde projectopslag.</p>
+          </div>
+          <a class="development-link" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/f73da0e" target="_blank" rel="noopener">Bekijk wijziging &rarr;</a>
+        </article>
+        <article class="development-item">
+          <time datetime="2026-04-02">2 april 2026</time>
+          <div>
+            <h3>Interactieve doorsnedevlakken</h3>
+            <p>Doorsnedevlakken zijn direct in de 3D-weergave te selecteren en te verslepen voor gerichte modelinspectie.</p>
+          </div>
+          <a class="development-link" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/ecf9f10" target="_blank" rel="noopener">Bekijk wijziging &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div data-release-notes="OpenAEC-BIM-validator"></div>
+  <script src="/shared/release-notes.js?v=20260603"></script>
 
   <footer class="footer page-footer" style="padding: var(--sp-6);">
     <div class="footer-inner">
