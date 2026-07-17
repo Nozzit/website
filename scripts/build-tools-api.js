@@ -102,7 +102,7 @@ const TOOLS = [
   {
     id: 'open-pile-plan-studio',
     repo: 'pile-plan-studio',
-    name: 'Open Pile Plan Studio',
+    name: 'Pile Plan Studio',
     category: 'Foundation Engineering',
     status: 'beta',
     description: 'Open-source engineering tool for assigning pile configurations to structural load points, comparing utilization and estimated cost, and saving complete IFCPP projects.',

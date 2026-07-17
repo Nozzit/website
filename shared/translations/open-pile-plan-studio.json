@@ -1,57 +1,60 @@
 {
   "header": {
-    "label": "Foundation engineering",
-    "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
-    "desc": "Bring load points, CPTs, foundation advice, pile options, utilization and estimated costs together in one interactive pile plan.",
-    "available": "Available",
-    "beta": "Beta",
+    "label": "OpenAEC Ecosystem",
+    "title": "<span class=\"accent\">Pile Plan</span> Studio",
+    "desc": "Open-source engineering tool for pile plans. Bring load points, CPTs, foundation advice, pile options, utilization and estimated costs together in one interactive pile plan.",
+    "badge": "Alpha",
     "gww": "Civil / Geotechnical",
-    "liveDemo": "Open the browser demo",
-    "github": "View on GitHub",
     "caution": "Engineering results are decision support and must always be checked by a qualified professional."
   },
-  "intro": {
-    "label": "One plan, all decision data",
-    "title": "From load point to substantiated pile choice",
-    "p1": "Open Pile Plan Studio makes the relationship between structural loads, nearby CPTs and available pile configurations immediately visible.",
-    "p2": "Select one or more load points, compare valid options by tip level, utilization, governing CPT and estimated cost, and record the chosen configuration in the same project."
+  "cta": {
+    "liveDemo": "🏗️ Open the browser demo",
+    "releases": "Releases on GitHub",
+    "github": "GitHub"
+  },
+  "what": {
+    "title": "What is Pile Plan Studio?",
+    "desc": "Pile Plan Studio is an open-source engineering tool for reviewing pile options and assembling a practical pile plan. It makes the relationship between structural loads, nearby CPTs and available pile configurations immediately visible — in the browser or as a desktop app, powered by the same Rust calculation core.",
+    "list1": "Import load points, CPTs and foundation advice from CSV/XLSX (incl. RFEM exports)",
+    "list2": "Valid, insufficient and missing pile options per load point",
+    "list3": "CPT selection by quadrant or maximum angle, with manual override",
+    "list4": "Compare utilization, governing resistance and estimated cost",
+    "list5": "Greedy optimization with limits on sizes, tip levels and configurations",
+    "list6": "Save the complete project as an IFCPP file and reopen it later"
+  },
+  "why": {
+    "title": "Why <span class=\"accent\">Pile Plan</span> Studio?",
+    "desc1": "Assembling a pile plan is often manual work spread across spreadsheets, foundation advice reports and drawings. Pile Plan Studio brings that information together in one interactive workspace: select load points, instantly see which pile configurations are valid, and record choices traceably.",
+    "desc2": "Free and open source, for structural engineers, geotechnical consultants and foundation specialists. The browser demo opens with a complete sample project, so you can explore the workflow without any preparation."
   },
   "features": {
-    "label": "Features",
-    "title": "Work directly from source data to pile plan",
-    "import": { "title": "Purposeful project import", "desc": "Import load points, CPT coordinates and foundation advice from CSV or XLSX files and assign the three source roles before import." },
+    "title": "Features",
+    "import": { "title": "Purposeful project import", "desc": "Import load points, CPT coordinates and foundation advice from CSV or XLSX files and assign the three source roles before import. RFEM exports are detected automatically." },
     "selection": { "title": "Select CPTs", "desc": "Select CPTs automatically by quadrant or maximum-angle rules and override the choice manually for individual load points." },
     "options": { "title": "Compare pile options", "desc": "Review valid, insufficient and missing pile options per location with size, tip level and governing CPT." },
     "assign": { "title": "Assign one or many", "desc": "Assign a configuration to one load point or to a multiple selection with common options." },
     "compare": { "title": "Utilization and cost", "desc": "Compare utilization, governing CPT and estimated cost before recording a configuration." },
-    "optimize": { "title": "Optimize the plan", "desc": "Use the current greedy optimizer with configuration limits as decision support for an efficient pile plan." },
+    "optimize": { "title": "Optimize the plan", "desc": "Use the greedy optimizer with limits on sizes, tip levels and complete configurations as decision support for an efficient pile plan." },
     "interact": { "title": "Interactive selection", "desc": "Select locations by click, multi-selection or lasso and filter through pile size and tip level in the legend." },
     "project": { "title": "IFCPP project file", "desc": "Keep imported data, settings, pile choices and manual CPT selections together and reopen the complete project later." },
+    "export": { "title": "Export to Excel/CSV", "desc": "Export the current pile assignments and selected CPTs to Excel or CSV for reporting and coordination." },
+    "pileImport": { "title": "Import an existing pile plan", "desc": "Update an active project from an Excel/CSV table, including legacy files — with ID and coordinate validation and a preview before import." },
+    "webdesktop": { "title": "Browser and desktop", "desc": "The same Rust calculation core runs through WebAssembly in the browser and natively in the Windows desktop app (Tauri 2)." },
     "sample": { "title": "Explore immediately", "desc": "The browser demo opens with a complete sample project, so you can investigate the workflow without preparation." }
   },
   "workflow": {
-    "label": "Workflow",
-    "title": "Three steps to a traceable project",
-    "step1": { "title": "Combine sources", "desc": "Import load points, CPTs and foundation advice and verify their role." },
-    "step2": { "title": "Assess options", "desc": "Inspect the plan, CPT selection, bearing capacity, utilization and cost." },
-    "step3": { "title": "Record choices", "desc": "Assign configurations, review the whole plan and save everything as an IFCPP project." }
+    "title": "Workflow: three steps to a traceable project",
+    "step1": "<strong style=\"color: white;\">Combine sources</strong> — import load points, CPTs and foundation advice and verify their role.",
+    "step2": "<strong style=\"color: white;\">Assess options</strong> — inspect the plan view, CPT selection, bearing capacity, utilization and cost.",
+    "step3": "<strong style=\"color: white;\">Record choices</strong> — assign configurations, review the whole plan and save everything as an IFCPP project."
   },
   "limits": {
-    "label": "Transparent boundaries",
-    "title": "Decision support, not automated design responsibility",
-    "desc1": "The configurable CPT selection is a practical approximation. The greedy optimizer helps compare choices but does not guarantee a globally optimal pile plan.",
-    "desc2": "Always have a qualified professional verify input, assumptions and engineering results within the project."
+    "title": "⚠️ Decision support, not automated design responsibility",
+    "desc1": "Pile Plan Studio is currently a public alpha. The configurable CPT selection is a practical approximation and the greedy optimizer helps compare choices, but does not guarantee a globally optimal pile plan.",
+    "desc2": "Always have input, assumptions and engineering results checked within the project by a qualified professional. The tool supports engineering decisions but does not replace responsibility for the foundation design."
   },
   "tech": {
-    "label": "Shared calculation core",
-    "title": "The same engineering logic in browser and desktop",
-    "desc": "Engineering logic for imports, pile options, costs, CPT selection and optimization lives in the Rust core. The same core runs through WebAssembly in the browser and natively in the Tauri desktop app."
-  },
-  "cta": {
-    "title": "Explore the sample project",
-    "desc": "Open the browser demo and see directly how load points, CPTs and pile options come together in one workspace.",
-    "demo": "Start the browser demo",
-    "github": "Source code and documentation"
-  },
-  "footer": { "slogan": "Build free. Build together." }
+    "title": "Technology",
+    "desc": "The engineering logic for import, pile options, costs, CPT selection and optimization lives in the Rust calculation core. That same core runs through WebAssembly in the browser and natively in the Tauri desktop app — one calculation model, two platforms."
+  }
 }

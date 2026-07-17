@@ -102,6 +102,12 @@ async function processRepo(repo) {
   // Filter out nightly/draft
   let stable = releases.filter(r => !r.draft && !r.prerelease && r.tag_name !== 'nightly');
 
+  // Alpha-only repos: when a repo has no stable release yet, surface the
+  // prereleases instead so the product page still shows a release history.
+  if (stable.length === 0) {
+    stable = releases.filter(r => !r.draft && r.tag_name !== 'nightly');
+  }
+
   // Per-repo exclusion of "bad" historical version ranges that pre-date a
   // version reset. Y-app reset from v1.x.x back down to v0.x.x in 2026-03,
   // so the old v1.x tags are confusing and should not be surfaced.

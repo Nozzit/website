@@ -14,7 +14,7 @@ const homepage = read('index.html');
 assert.ok(homepage.includes('data-repo="pile-plan-studio"'), 'homepage mist de repositorykoppeling');
 assert.ok(homepage.includes('href="/open-pile-plan-studio/"'), 'homepage mist de productpaginalink');
 assert.ok(homepage.includes('https://pile-plan-studio.open-aec.com/'), 'homepage mist de live demo');
-assert.ok(homepage.includes('"name": "Open Pile Plan Studio"'), 'homepage mist Schema.org metadata');
+assert.ok(homepage.includes('"name": "Pile Plan Studio"'), 'homepage mist Schema.org metadata');
 assert.equal((homepage.match(/openPilePlan:\s*\{/g) || []).length, 4, 'homepage mist één of meer taalitems');
 
 assert.ok(exists('open-pile-plan-studio/index.html'), 'productpagina ontbreekt');
@@ -40,4 +40,4 @@ includes('api/tools.json', '"id": "open-pile-plan-studio"');
 assert.ok(exists('md/open-pile-plan-studio.md'), 'Markdown-productspiegel ontbreekt');
 includes('md/index.json', '"id": "open-pile-plan-studio"');
 
-console.log('Open Pile Plan Studio website integration: OK');
+console.log('Pile Plan Studio website integration: OK');

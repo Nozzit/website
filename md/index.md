@@ -13,7 +13,7 @@ Generated: 2026-07-17T05:58:18.107Z
 - [Open PDF Studio](./open-pdf-studio.md) — Open-source PDF editor and annotator with a custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms. Vector PDF rendering optimized for CAD drawings. (`untagged-7c498dd034e1f778cb30`)
 - [Open 2D Studio](./open-2d-studio.md) — 2D CAD application with drawing tools, DXF import/export, layers and dimensions. (`v0.35.0`)
 - [Open Calc Studio](./open-calc-studio.md) — Cost estimation and budgeting for buildings, civil infrastructure and GWW projects. STABU/RAW support, IFCX integration, MCP server for AI control. (`v0.9.0`)
-- [Open Pile Plan Studio](./open-pile-plan-studio.md) — Interactive pile planning with load points, CPT selection, pile options, utilization, estimated costs and IFCPP project files. (`n/a`)
+- [Pile Plan Studio](./open-pile-plan-studio.md) — Interactive pile planning with load points, CPT selection, pile options, utilization, estimated costs and IFCPP project files. (`n/a`)
 - [Open Pointcloud Studio](./open-pointcloud-studio.md) — Point cloud viewer for LAS / LAZ with RGB, elevation and classification rendering. EDL and octree LoD for large datasets. (`v0.3.0`)
 - [Open Speech Studio](./open-speech-studio.md) — Local speech-to-text using Whisper AI. CTRL+Win shortcut for OS-wide dictation. Privacy-first, no cloud. (`v0.10.2`)
 - [Monty IFC Viewer](./monty-ifc-viewer.md) — Lightweight IFC viewer for quick BIM model inspection. (`v1.0.1`)

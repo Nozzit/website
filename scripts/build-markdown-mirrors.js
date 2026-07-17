@@ -205,7 +205,7 @@ const TOOLS = [
   },
   {
     id: 'open-pile-plan-studio',
-    name: 'Open Pile Plan Studio',
+    name: 'Pile Plan Studio',
     repo: 'pile-plan-studio',
     category: 'Foundation Engineering',
     status: 'beta',
