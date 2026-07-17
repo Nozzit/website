@@ -27,6 +27,9 @@
 - Browser-based, no install
 - 3D viewer for failed elements
 - BCF export of failures
+- Project data separated per organization
+- Open and save projects locally or in connected project storage
+- Interactive section planes for focused model inspection
 
 ## Tech stack
 
@@ -38,9 +41,7 @@ Pre-delivery IDS checks of IFC models against Dutch and RVB standards, browser-o
 
 ## Alternative to
 
-- Solibri Office
-- BIMcollab Zoom IDS
-- usBIM.IDSeditor
+- Commercial BIM validation suites
 
 ## Standards & integration
 

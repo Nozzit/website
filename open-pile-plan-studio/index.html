@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Pile Plan Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Open Pile Plan Studio brengt belastinglocaties, sonderingen, funderingsadvies, paalopties, benutting en geraamde kosten samen in één interactief paalplan.">
+  <meta name="i18n-page" content="open-pile-plan-studio">
+  <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
+  <link rel="stylesheet" href="/shared/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Open Pile Plan Studio",
+    "applicationCategory": "EngineeringApplication",
+    "operatingSystem": "Web, Windows",
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "url": "https://www.open-aec.com/open-pile-plan-studio/",
+    "sameAs": "https://github.com/OpenAEC-Foundation/pile-plan-studio",
+    "description": "Open-source engineering tool for exploring and assigning pile configurations to structural load points, with CPT selection, utilization, estimated costs and IFCPP project files.",
+    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://www.open-aec.com" }
+  }
+  </script>
+  <style>
+    .pile-hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--night-build);
+      padding: var(--sp-20) var(--sp-6) var(--sp-16);
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      border-image: var(--gradient-accent) 1;
+    }
+    .pile-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.2;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, black, transparent 92%);
+    }
+    .pile-constellation { position: absolute; inset: 0; pointer-events: none; opacity: 0.34; }
+    .pile-constellation span {
+      position: absolute; width: 13px; height: 13px; border: 3px solid var(--amber);
+      border-radius: 50%; box-shadow: 0 0 0 5px rgba(217,119,6,0.1);
+    }
+    .pile-constellation span:nth-child(1) { left: 12%; top: 32%; }
+    .pile-constellation span:nth-child(2) { left: 21%; top: 68%; border-radius: 2px; transform: rotate(45deg); }
+    .pile-constellation span:nth-child(3) { right: 18%; top: 28%; width: 16px; height: 16px; }
+    .pile-constellation span:nth-child(4) { right: 10%; top: 72%; border-radius: 2px; }
+    .hero-inner { position: relative; z-index: 1; max-width: 850px; margin: 0 auto; }
+    .eyebrow { color: var(--warm-gold); font-family: var(--font-code); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .pile-hero h1 { color: white; font-family: var(--font-heading); font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.02; letter-spacing: -0.04em; margin: var(--sp-4) 0; }
+    .pile-hero h1 .accent { color: var(--amber); }
+    .pile-hero .lead { color: var(--scaffold-gray); font-size: 1.1rem; line-height: 1.7; max-width: 740px; margin: 0 auto; }
+    .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sp-2); margin-top: var(--sp-5); }
+    .status-badge { display: inline-flex; font-family: var(--font-code); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 5px 13px; border-radius: var(--radius-full); background: #DCFCE7; color: #166534; }
+    .status-badge.beta { background: #FED7AA; color: #9A3412; }
+    .status-badge.gww { background: #CFFAFE; color: #155E75; }
+    .hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-7); }
+    .hero-note { color: #FDE68A; font-size: 0.8rem; line-height: 1.5; margin: var(--sp-5) auto 0; max-width: 650px; }
+    .content { max-width: 1080px; margin: 0 auto; }
+    .intro-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: var(--sp-10); align-items: center; }
+    .product-shot { width: 100%; display: block; border-radius: var(--radius-lg); border: 1px solid #D6D3D1; box-shadow: 0 18px 50px rgba(28,25,23,0.16); }
+    .section-kicker { color: #B45309; font-family: var(--font-code); font-size: 0.72rem; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: var(--sp-3); }
+    .content h2 { font-family: var(--font-heading); color: var(--deep-forge); font-size: clamp(1.7rem, 3vw, 2.35rem); letter-spacing: -0.025em; margin-bottom: var(--sp-4); }
+    .content p { color: #57534E; line-height: 1.72; }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-top: var(--sp-8); }
+    .feature-card { background: white; border: 1px solid #E7E5E4; border-radius: var(--radius-lg); padding: var(--sp-6); box-shadow: var(--shadow-sm); }
+    .feature-card .feature-mark { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: #FFF7ED; color: #B45309; font-family: var(--font-code); font-size: 0.72rem; font-weight: 700; margin-bottom: var(--sp-4); }
+    .feature-card h3 { font-family: var(--font-heading); color: var(--deep-forge); font-size: 1rem; margin-bottom: var(--sp-2); }
+    .feature-card p { font-size: 0.875rem; margin: 0; }
+    .workflow { background: var(--night-build); color: white; border-radius: var(--radius-lg); padding: var(--sp-8); }
+    .workflow h2 { color: white; }
+    .workflow .section-kicker { color: var(--warm-gold); }
+    .workflow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-6); margin-top: var(--sp-7); }
+    .workflow-step { border-top: 1px solid rgba(255,255,255,0.2); padding-top: var(--sp-4); }
+    .workflow-step .step-number { font-family: var(--font-code); color: var(--amber); font-size: 0.72rem; }
+    .workflow-step h3 { font-family: var(--font-heading); margin: var(--sp-2) 0; }
+    .workflow-step p { color: var(--scaffold-gray); font-size: 0.875rem; margin: 0; }
+    .notice { background: #FFFBEB; border: 1px solid #FDE68A; border-left: 4px solid #D97706; border-radius: var(--radius-md); padding: var(--sp-6); }
+    .notice h2 { font-size: 1.25rem; margin-bottom: var(--sp-2); }
+    .notice p:last-child { margin-bottom: 0; }
+    .tech-strip { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin: var(--sp-5) 0; }
+    .tech-tag { font-family: var(--font-code); font-size: 0.75rem; background: var(--concrete); color: var(--deep-forge); padding: 6px 12px; border-radius: var(--radius-full); }
+    .final-cta { text-align: center; background: linear-gradient(135deg, #FFF7ED, #FFFBEB); border: 1px solid #FED7AA; border-radius: var(--radius-lg); padding: var(--sp-10); }
+    .final-cta p { max-width: 650px; margin: 0 auto var(--sp-6); }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-4); }
+    @media (max-width: 820px) {
+      .intro-grid, .feature-grid, .workflow-grid { grid-template-columns: 1fr; }
+      .pile-hero { padding-top: var(--sp-16); }
+      .pile-constellation { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <div id="shared-nav"></div>
+  <script src="/shared/nav.js?v=20260603"></script>
+
+  <header class="pile-hero">
+    <div class="pile-constellation" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="hero-inner">
+      <p class="eyebrow" data-i18n="header.label">Funderingsengineering</p>
+      <h1 data-i18n="header.title">Open <span class="accent">Pile Plan</span> Studio</h1>
+      <p class="lead" data-i18n="header.desc">Breng belastinglocaties, sonderingen, funderingsadvies, paalopties, benutting en geraamde kosten samen in één interactief paalplan.</p>
+      <div class="badges">
+        <span class="status-badge" data-i18n="header.available">Beschikbaar</span>
+        <span class="status-badge beta" data-i18n="header.beta">Beta</span>
+        <span class="status-badge gww" data-i18n="header.gww">GWW / Geotechniek</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" data-i18n="header.liveDemo">Open de browserdemo</a>
+        <a class="btn btn-ghost" href="https://github.com/OpenAEC-Foundation/pile-plan-studio" target="_blank" rel="noopener" data-i18n="header.github">Bekijk op GitHub</a>
+      </div>
+      <p class="hero-note" data-i18n="header.caution">Technische resultaten zijn beslisondersteuning en moeten altijd door een gekwalificeerde professional worden gecontroleerd.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="background:var(--blueprint-white);">
+      <div class="content intro-grid">
+        <div>
+          <p class="section-kicker" data-i18n="intro.label">Eén plan, alle beslisinformatie</p>
+          <h2 data-i18n="intro.title">Van belastinglocatie naar onderbouwde paalkeuze</h2>
+          <p data-i18n="intro.p1">Open Pile Plan Studio maakt de samenhang tussen constructieve belastingen, nabijgelegen sonderingen en beschikbare paalconfiguraties direct zichtbaar.</p>
+          <p data-i18n="intro.p2">Selecteer één of meerdere belastinglocaties, vergelijk geldige opties op puntniveau, benutting, maatgevende sondering en geraamde kosten, en leg de gekozen configuratie vast in hetzelfde project.</p>
+        </div>
+        <img class="product-shot" src="/shared/assets/screenshots/open-pile-plan-studio.png" alt="Open Pile Plan Studio met een paalplan, sonderingen en paalopties">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <p class="section-kicker" data-i18n="features.label">Functionaliteiten</p>
+        <h2 data-i18n="features.title">Werk gericht van brondata naar paalplan</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-mark">01</span><h3 data-i18n="features.import.title">Gerichte projectimport</h3><p data-i18n="features.import.desc">Importeer belastinglocaties, sonderingscoördinaten en funderingsadvies uit CSV- of XLSX-bestanden en wijs de drie bronrollen vóór import toe.</p></article>
+          <article class="feature-card"><span class="feature-mark">02</span><h3 data-i18n="features.selection.title">Sonderingen selecteren</h3><p data-i18n="features.selection.desc">Selecteer sonderingen automatisch per kwadrant of maximale hoek en overschrijf de keuze handmatig voor afzonderlijke belastinglocaties.</p></article>
+          <article class="feature-card"><span class="feature-mark">03</span><h3 data-i18n="features.options.title">Paalopties vergelijken</h3><p data-i18n="features.options.desc">Bekijk per locatie geldige, onvoldoende en ontbrekende paalopties met afmeting, puntniveau en maatgevende sondering.</p></article>
+          <article class="feature-card"><span class="feature-mark">04</span><h3 data-i18n="features.assign.title">Enkelvoudig of in bulk toewijzen</h3><p data-i18n="features.assign.desc">Wijs een configuratie toe aan één belastinglocatie of aan een meervoudige selectie met gemeenschappelijke opties.</p></article>
+          <article class="feature-card"><span class="feature-mark">05</span><h3 data-i18n="features.compare.title">Benutting en kosten</h3><p data-i18n="features.compare.desc">Vergelijk benutting, maatgevende sondering en geraamde kosten voordat je een configuratie vastlegt.</p></article>
+          <article class="feature-card"><span class="feature-mark">06</span><h3 data-i18n="features.optimize.title">Plan optimaliseren</h3><p data-i18n="features.optimize.desc">Gebruik de huidige greedy optimizer met configuratielimieten als beslisondersteuning voor een doelmatig paalplan.</p></article>
+          <article class="feature-card"><span class="feature-mark">07</span><h3 data-i18n="features.interact.title">Interactieve selectie</h3><p data-i18n="features.interact.desc">Selecteer locaties met klikken, multiselectie of lasso en filter via paalafmeting en puntniveau in de legenda.</p></article>
+          <article class="feature-card"><span class="feature-mark">08</span><h3 data-i18n="features.project.title">IFCPP-projectbestand</h3><p data-i18n="features.project.desc">Bewaar geïmporteerde data, instellingen, paalkeuzes en handmatige sonderingsselecties samen en open het volledige project later opnieuw.</p></article>
+          <article class="feature-card"><span class="feature-mark">09</span><h3 data-i18n="features.sample.title">Direct verkennen</h3><p data-i18n="features.sample.desc">De browserdemo opent met een compleet voorbeeldproject, zodat je de werkwijze zonder voorbereiding kunt onderzoeken.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="content workflow">
+        <p class="section-kicker" data-i18n="workflow.label">Werkwijze</p>
+        <h2 data-i18n="workflow.title">Drie stappen naar een navolgbaar project</h2>
+        <div class="workflow-grid">
+          <div class="workflow-step"><span class="step-number">STAP 01</span><h3 data-i18n="workflow.step1.title">Bronnen combineren</h3><p data-i18n="workflow.step1.desc">Importeer belastinglocaties, sonderingen en funderingsadvies en controleer hun rol.</p></div>
+          <div class="workflow-step"><span class="step-number">STAP 02</span><h3 data-i18n="workflow.step2.title">Opties beoordelen</h3><p data-i18n="workflow.step2.desc">Inspecteer de planweergave, sonderingskeuze, draagvermogen, benutting en kosten.</p></div>
+          <div class="workflow-step"><span class="step-number">STAP 03</span><h3 data-i18n="workflow.step3.title">Keuzes vastleggen</h3><p data-i18n="workflow.step3.desc">Wijs configuraties toe, controleer het geheel en bewaar alles als IFCPP-project.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--blueprint-white);">
+      <div class="content">
+        <div class="notice">
+          <p class="section-kicker" data-i18n="limits.label">Transparante grenzen</p>
+          <h2 data-i18n="limits.title">Beslisondersteuning, geen automatische ontwerpverantwoordelijkheid</h2>
+          <p data-i18n="limits.desc1">De instelbare sonderingsselectie is een praktische benadering. De greedy optimizer helpt keuzes vergelijken, maar garandeert geen wereldwijd optimaal paalplan.</p>
+          <p data-i18n="limits.desc2">Controleer invoer, aannames en technische resultaten altijd binnen het project door een gekwalificeerde professional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <p class="section-kicker" data-i18n="tech.label">Gedeelde rekenkern</p>
+        <h2 data-i18n="tech.title">Dezelfde engineeringlogica in browser en desktop</h2>
+        <div class="tech-strip"><span class="tech-tag">Rust</span><span class="tech-tag">WebAssembly</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Tauri 2</span><span class="tech-tag">IFCPP</span></div>
+        <p data-i18n="tech.desc">De engineeringlogica voor import, paalopties, kosten, sonderingsselectie en optimalisatie leeft in de Rust-kern. Diezelfde kern draait via WebAssembly in de browser en native in de Tauri-desktopapp.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="content final-cta">
+        <h2 data-i18n="cta.title">Onderzoek het voorbeeldproject</h2>
+        <p data-i18n="cta.desc">Open de browserdemo en bekijk direct hoe belastinglocaties, sonderingen en paalopties in één werkruimte samenkomen.</p>
+        <div class="hero-actions" style="margin-top:0;">
+          <a class="btn btn-primary" href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" data-i18n="cta.demo">Start de browserdemo</a>
+          <a class="btn btn-secondary" href="https://github.com/OpenAEC-Foundation/pile-plan-studio" target="_blank" rel="noopener" data-i18n="cta.github">Broncode en documentatie</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-release-notes="pile-plan-studio"></div>
+  <script src="/shared/release-notes.js?v=20260603"></script>
+
+  <footer class="footer" style="padding:var(--sp-6);">
+    <div class="footer-inner">
+      <a href="/" class="nav-brand" style="color:white;text-decoration:none;font-family:var(--font-heading);font-weight:700;">Open<span style="color:var(--amber);">AEC</span></a>
+      <p style="color:var(--scaffold-gray);font-size:0.8rem;" data-i18n="footer.slogan">Vrij bouwen. Samen bouwen.</p>
+      <p style="color:var(--scaffold-gray);font-size:0.75rem;">&copy; 2026 OpenAEC Foundation</p>
+    </div>
+  </footer>
+  <script src="/shared/i18n.js?v=20260603"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.open-aec.com/md/index.schema.json",
-  "generated": "2026-06-30T07:48:48.833Z",
+  "generated": "2026-07-17T05:58:18.107Z",
   "description": "Markdown mirrors of OpenAEC product pages for AI tool integrations.",
   "base": "https://www.open-aec.com/md/",
   "tools": [
@@ -53,6 +53,16 @@
       "relativeMarkdown": "./open-planner-studio.md",
       "productPage": "https://www.open-aec.com/open-planner-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-planner-studio"
+    },
+    {
+      "id": "open-pile-plan-studio",
+      "name": "Open Pile Plan Studio",
+      "status": "beta",
+      "category": "Foundation Engineering",
+      "markdown": "https://www.open-aec.com/md/open-pile-plan-studio.md",
+      "relativeMarkdown": "./open-pile-plan-studio.md",
+      "productPage": "https://www.open-aec.com/open-pile-plan-studio/",
+      "githubRepo": "https://github.com/OpenAEC-Foundation/pile-plan-studio"
     },
     {
       "id": "open-pointcloud-studio",

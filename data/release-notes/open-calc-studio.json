@@ -1,16 +1,66 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-07-13T14:44:35.150Z",
-  "totalReleases": 18,
-  "totalChanges": 138,
+  "generated": "2026-07-17T05:57:55.533Z",
+  "totalReleases": 19,
+  "totalChanges": 153,
   "latestStable": {
-    "tag": "v0.8.8",
-    "name": "Open Calc Studio v0.8.8",
-    "date": "2026-07-13",
-    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.8"
+    "tag": "v0.10.0",
+    "name": "Open Calc Studio v0.10.0",
+    "date": "2026-07-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.10.0"
   },
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "0.10",
+      "releases": [
+        {
+          "tag": "v0.10.0",
+          "name": "Open Calc Studio v0.10.0",
+          "date": "2026-07-16",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.10.0",
+          "changes": [
+            "**Bedrijfslogo in de koptekst** — het rechter rapportlogo staat",
+            "**Hoofdaanneming verfijnd** — een echte som-lijn (zwart, rechts",
+            "**Compacte weergaven** — nieuw: \"Alleen subtotaal per hoofdstuk\"",
+            "**Stabiliteit** — rapporten op staand papier konden crashen op tekens",
+            "**Formules in getalcellen** — typ `=12,2*2,22` of `12.2*2.2` in elke",
+            "**Komma-bug opgelost** — een getalcel openen en wegklikken kon een",
+            "**Posten rekenen zelf** — een prijs op een (bewakings)post telt altijd",
+            "**Sneller werken in het grid** — prijzen met een percentage verhogen of",
+            "**Nettere weergave** — tekstregels lopen terug over meerdere regels,",
+            "**Eindbedrag invullen** — typ het gewenste totaal excl. btw (inclusief",
+            "Het staartpaneel eindigt met het eindbedrag en telt de klassieke",
+            "Kopiëren en plakken verschuift celverwijzingen relatief, ook bij",
+            "Komma-decimalen werken in waarden én formules, en `=SOM(` wordt",
+            "Lint-dropdowns (Inklappen tot…, meerstaps ongedaan) vallen niet meer",
+            "Projectgegevens-dialoog opgeruimd, met kengetallen en rapportopties"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Bedrijfslogo in de koptekst** — het rechter rapportlogo staat",
+        "**Hoofdaanneming verfijnd** — een echte som-lijn (zwart, rechts",
+        "**Compacte weergaven** — nieuw: \"Alleen subtotaal per hoofdstuk\"",
+        "**Stabiliteit** — rapporten op staand papier konden crashen op tekens",
+        "**Formules in getalcellen** — typ `=12,2*2,22` of `12.2*2.2` in elke",
+        "**Komma-bug opgelost** — een getalcel openen en wegklikken kon een",
+        "**Posten rekenen zelf** — een prijs op een (bewakings)post telt altijd",
+        "**Sneller werken in het grid** — prijzen met een percentage verhogen of",
+        "**Nettere weergave** — tekstregels lopen terug over meerdere regels,",
+        "**Eindbedrag invullen** — typ het gewenste totaal excl. btw (inclusief",
+        "Het staartpaneel eindigt met het eindbedrag en telt de klassieke",
+        "Kopiëren en plakken verschuift celverwijzingen relatief, ook bij",
+        "Komma-decimalen werken in waarden én formules, en `=SOM(` wordt",
+        "Lint-dropdowns (Inklappen tot…, meerstaps ongedaan) vallen niet meer",
+        "Projectgegevens-dialoog opgeruimd, met kengetallen en rapportopties"
+      ],
+      "firstDate": "2026-07-16",
+      "lastDate": "2026-07-16",
+      "releaseCount": 1,
+      "changeCount": 15
+    },
     {
       "minorVersion": "0.8",
       "releases": [
