@@ -1,0 +1,66 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+
+const ROOT = path.join(__dirname, '..');
+const read = (relativePath) => fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
+const exists = (relativePath) => fs.existsSync(path.join(ROOT, relativePath));
+
+const homepage = read('index.html');
+const validator = read('bim-validator/index.html');
+const speech = read('open-speech-studio/index.html');
+const tools = JSON.parse(read('api/tools.json'));
+
+const retiredHomepageRepos = [
+  'open-energy-studio',
+  'open-2d-studio',
+  'openaec-cloud',
+  'openaec-docs',
+];
+
+for (const repo of retiredHomepageRepos) {
+  assert.ok(!homepage.includes(`data-repo="${repo}"`), `homepage bevat nog kaart: ${repo}`);
+}
+
+for (const page of [
+  'open-energy-studio/index.html',
+  'open-2d-studio/index.html',
+  'openaec-cloud/index.html',
+  'openaec-docs/index.html',
+]) {
+  assert.ok(exists(page), `productpagina ontbreekt: ${page}`);
+}
+
+for (const id of ['open-energy-studio', 'open-2d-studio', 'openaec-cloud', 'openaec-docs']) {
+  assert.ok(tools.tools.some((tool) => tool.id === id), `API-vermelding ontbreekt: ${id}`);
+}
+
+assert.ok(
+  validator.includes('https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator'),
+  'BIM Validator mist GitHub-link',
+);
+assert.ok(validator.includes('id="recent-developments"'), 'BIM Validator mist recente ontwikkelingen');
+assert.ok(
+  validator.includes('data-release-notes="OpenAEC-BIM-validator"'),
+  'BIM Validator mist release-notescomponent',
+);
+
+const expectedSpeechScreenshots = [
+  '/shared/assets/screenshots/open-speech-studio-tts.png',
+  '/shared/assets/screenshots/open-speech-studio-models.png',
+  '/shared/assets/screenshots/open-speech-studio-settings.png',
+];
+const speechScreenshotPaths = [...speech.matchAll(/<div class="slider-slide"><img src="([^"]*open-speech-studio[^"]*)"/g)]
+  .map((match) => match[1]);
+assert.deepEqual(speechScreenshotPaths, expectedSpeechScreenshots, 'Speech Studio galerij is niet actueel');
+assert.ok(
+  homepage.includes('<img class="tool-thumb" src="/shared/assets/screenshots/open-speech-studio-tts.png" alt="Open Speech Studio">'),
+  'homepage gebruikt niet de nieuwe Speech Studio-thumbnail',
+);
+assert.match(
+  homepage,
+  /\.logo-full\s*\{[^}]*max-width:\s*100%[^}]*height:\s*auto/s,
+  'homepage-logo is niet begrensd voor mobiele schermen',
+);
+
+console.log('Homepage catalog and product pages: OK');

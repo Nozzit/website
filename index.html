@@ -189,7 +189,7 @@
     }
 
     /* Logo in hero */
-    .logo-full { display: block; margin: 0 auto var(--sp-8); }
+    .logo-full { display: block; max-width: 100%; height: auto; margin: 0 auto var(--sp-8); }
 
     /* Section helpers */
     .section { padding: var(--sp-20) var(--sp-6); }
@@ -1110,7 +1110,7 @@
           </div>
         </article>
         <article class="tool-card" data-repo="open-speech-studio" data-categories="A,E,C,I">
-          <img class="tool-thumb" src="/shared/assets/screenshots/open-speech-studio.png" alt="Open Speech Studio">
+          <img class="tool-thumb" src="/shared/assets/screenshots/open-speech-studio-tts.png" alt="Open Speech Studio">
           <div>
             <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openSpeech.title" style="margin-bottom:0;">Open Speech Studio</h3><span class="tool-tag tool-tag-available" data-i18n="tools.tags.available">Beschikbaar</span><span class="tool-tag tool-tag-beta" data-i18n="tools.tags.beta">Beta</span></div>
@@ -1209,40 +1209,6 @@
             <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
-        <article class="tool-card" data-repo="open-2d-studio" data-categories="A,E">
-          <img class="tool-thumb" src="/shared/assets/screenshots/open-2d-studio.jpeg" alt="Open 2D Studio">
-          <div>
-            <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.open2d.title" style="margin-bottom:0;">Open 2D Studio</h3><span class="tool-tag tool-tag-beta" data-i18n="tools.tags.beta">Beta</span></div>
-            <p data-i18n="tools.items.open2d.desc">Viewer- en productpagina voor 2D-documenten en tekeningen binnen een open ontwerpworkflow.</p>
-            <div class="tool-stats">
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 90 commits</span>
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h4l1 1v4l-1 1H2L1 7V3l1-1zm7 7h4l1 1v4l-1 1H9l-1-1v-4l1-1z"/></svg> v0.35</span>
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg> 23</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">9 jul 2026</span><span class="lang-en">9 Jul 2026</span></span>
-            </div>
-            </div>
-          <div class="tool-links">
-            <a href="/open-2d-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
-            <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
-          </div>
-        </article>
-        <article class="tool-card" data-repo="open-energy-studio" data-categories="E">
-          <img class="tool-thumb" src="/shared/assets/screenshots/open-energy-studio.jpeg" alt="Open Energy Studio">
-          <div>
-            <div class="tool-cats"><span class="tool-cat tool-cat-e">E</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openEnergy.title" style="margin-bottom:0;">Open Energy Studio</h3><span class="tool-tag tool-tag-beta" data-i18n="tools.tags.beta">Beta</span></div>
-            <p data-i18n="tools.items.openEnergy.desc">Projectpagina voor open energie-analyse en gebouwprestaties.</p>
-            <div class="tool-stats">
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 30 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 1 apr 2026</span>
-            </div>
-          </div>
-          <div class="tool-links">
-            <a href="/open-energy-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
-            <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
-          </div>
-        </article>
         <article class="tool-card" data-repo="open-pointcloud-studio" data-categories="E,C,I">
           <img class="tool-thumb" src="/shared/assets/screenshots/open-pointcloud-studio.jpeg" alt="Open Pointcloud Studio">
           <div>
@@ -1274,32 +1240,6 @@
             </div>
             </div>
           <a href="/bim-validator/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
-        </article>
-        <article class="tool-card" data-repo="openaec-docs" data-categories="A,E,C,I">
-          <img class="tool-thumb" src="/shared/assets/screenshots/openaec-docs.png" alt="OpenAEC Docs">
-          <div>
-            <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.openaecDocs.title" style="margin-bottom:0;">OpenAEC Docs</h3><span class="tool-tag tool-tag-beta" data-i18n="tools.tags.beta">Beta</span></div>
-            <p data-i18n="tools.items.openaecDocs.desc">Open source document management systeem voor BIM-projecten. Beheer, deel en archiveer projectdocumenten.</p>
-            <div class="tool-stats">
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 5 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">14 apr 2026</span><span class="lang-en">14 Apr 2026</span></span>
-            </div>
-            </div>
-          <a href="/openaec-docs/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
-        </article>
-        <article class="tool-card" data-repo="openaec-cloud" data-categories="A,E,C,I">
-          <img class="tool-thumb" src="/shared/assets/screenshots/openaec-cloud.jpeg" alt="OpenAEC Cloud Platform">
-          <div>
-            <div class="tool-cats"><span class="tool-cat tool-cat-a">A</span><span class="tool-cat tool-cat-e">E</span><span class="tool-cat tool-cat-c">C</span><span class="tool-cat tool-cat-i">I</span></div>
-            <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.cloudPlatform.title" style="margin-bottom:0;">OpenAEC Cloud Platform</h3><span class="tool-tag tool-tag-alpha" data-i18n="tools.tags.alpha">Alpha</span></div>
-            <p data-i18n="tools.items.cloudPlatform.desc">Centraal cloudplatform voor het OpenAEC-ecosysteem. Projectbeheer, gebruikersbeheer, SSO en synchronisatie tussen alle tools.</p>
-            <div class="tool-stats">
-              <span class="tool-stat"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="8" r="3"/></svg> 2 commits</span>
-              <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">14 apr 2026</span><span class="lang-en">14 Apr 2026</span></span>
-            </div>
-            </div>
-          <a href="/openaec-cloud/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-categories="A,E,C,I">
           <img class="tool-thumb" src="/shared/assets/screenshots/openaec-supercloud.svg" alt="OpenAEC SuperCloud">
