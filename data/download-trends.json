@@ -1,9 +1,9 @@
 {
-  "generated": "2026-06-30T07:48:48.270Z",
+  "generated": "2026-07-17T05:58:18.206Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-06-30",
-  "snapshotCount": 11,
-  "weekCount": 7,
+  "lastSnapshot": "2026-07-17",
+  "snapshotCount": 12,
+  "weekCount": 8,
   "weeklyDeltas": [
     {
       "weekEnd": "2026-05-25",
@@ -105,27 +105,48 @@
         "Y-app": 7
       },
       "total": 496
+    },
+    {
+      "weekEnd": "2026-07-13",
+      "weekStart": "2026-06-29",
+      "perRepo": {
+        "open-pdf-studio": 1722,
+        "open-2d-studio": 250,
+        "open-calc-studio": 65,
+        "open-planner-studio": 186,
+        "open-pointcloud-studio": 14,
+        "open-heatloss-studio": 1,
+        "open-speech-studio": 19,
+        "Open-Field-Studio": 3,
+        "open-frame-studio": 27,
+        "open-geotechniek-studio": 25,
+        "Open-Calculations-Studio": 22,
+        "monty-ifc-viewer": 24,
+        "Y-app": 14
+      },
+      "total": 2372
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 3117,
-    "open-2d-studio": 324,
-    "open-calc-studio": 63,
+    "open-pdf-studio": 4839,
+    "open-2d-studio": 574,
+    "open-calc-studio": 128,
     "open-energy-studio": 0,
-    "open-planner-studio": 34,
-    "open-pointcloud-studio": 37,
-    "open-heatloss-studio": 9,
-    "open-speech-studio": 15,
-    "Open-Field-Studio": 9,
-    "open-frame-studio": 17,
-    "open-geotechniek-studio": 49,
-    "Open-Calculations-Studio": 48,
-    "monty-ifc-viewer": 48,
+    "open-planner-studio": 220,
+    "open-pointcloud-studio": 51,
+    "open-heatloss-studio": 10,
+    "open-speech-studio": 34,
+    "Open-Field-Studio": 12,
+    "open-frame-studio": 44,
+    "open-geotechniek-studio": 74,
+    "pile-plan-studio": 0,
+    "Open-Calculations-Studio": 70,
+    "monty-ifc-viewer": 72,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
     "openaec-cloud": 0,
-    "Y-app": 7
+    "Y-app": 21
   },
-  "totalDownloadsAdded": 3777
+  "totalDownloadsAdded": 6149
 }

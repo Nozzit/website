@@ -6,7 +6,7 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux, Android, iOS
 **Category:** Communication
-**Current version:** v0.28.7 (2026-06-30)
+**Current version:** v0.31.2 (2026-07-10)
 **Tool ID:** `y-app`
 **GitHub repo:** `OpenAEC-Foundation/Y-app`
 
@@ -16,9 +16,9 @@
 - Commits: **0**
 - Forks: **0**
 - Open issues: **0**
-- Releases: **30**
-- Total downloads: **22**
-- Downloads by platform: Windows (13), Android (9)
+- Releases: **40**
+- Total downloads: **36**
+- Downloads by platform: Windows (27), Android (9)
 
 ## Key features
 
@@ -52,19 +52,19 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://www.open-aec.com/y-app/
 - Live demo: https://y-app.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/Y-app
-- Latest stable release: https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.28.7
+- Latest stable release: https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.2
 - Nightly builds: https://github.com/OpenAEC-Foundation/Y-app/releases/tag/nightly
 
 ## Direct downloads (most popular)
 
+- [Windows · Y-app_0.31.2_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.31.2/Y-app_0.31.2_x64_user-setup.exe) (v0.31.2 — 4 MB)
+- [Windows · Y-app_0.31.1_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.31.1/Y-app_0.31.1_x64_user-setup.exe) (v0.31.1 — 4 MB)
+- [Windows · Y-app_0.31.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.31.0/Y-app_0.31.0_x64-setup.exe) (v0.31.0 — 4 MB)
+- [Windows · Y-app_0.30.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.30.0/Y-app_0.30.0_x64-setup.exe) (v0.30.0 — 4 MB)
+- [Windows · Y-app_0.28.10_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.10/Y-app_0.28.10_x64-setup.exe) (v0.28.10 — 3.9 MB)
 - [Windows · Y-app_0.5.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.7.1/Y-app_0.5.0_x64-setup.exe) (v0.7.1 — 3.5 MB)
-- [Windows · Y-app_0.28.7_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.7/Y-app_0.28.7_x64-setup.exe) (v0.28.7 — 3.9 MB)
-- [Windows · Y-app_0.28.6_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.6/Y-app_0.28.6_x64-setup.exe) (v0.28.6 — 3.9 MB)
-- [Windows · Y-app_0.28.4_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.4/Y-app_0.28.4_x64-setup.exe) (v0.28.4 — 3.9 MB)
-- [Windows · Y-app_0.28.3_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.3/Y-app_0.28.3_x64-setup.exe) (v0.28.3 — 3.9 MB)
-- [Windows · Y-app_0.28.2_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.2/Y-app_0.28.2_x64_user-setup.exe) (v0.28.2 — 3.9 MB)
-- [Windows · Y-app_0.28.1_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.1/Y-app_0.28.1_x64_user-setup.exe) (v0.28.1 — 3.9 MB)
-- [Windows · Y-app_0.28.0_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.0/Y-app_0.28.0_x64_user-setup.exe) (v0.28.0 — 3.9 MB)
+- [Windows · Y-app_0.31.2_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.31.2/Y-app_0.31.2_x64-setup.exe) (v0.31.2 — 4 MB)
+- [Windows · Y-app_0.28.9_x64-setup.exe](https://github.com/OpenAEC-Foundation/Y-app/releases/download/v0.28.9/Y-app_0.28.9_x64-setup.exe) (v0.28.9 — 3.9 MB)
 
 ---
 

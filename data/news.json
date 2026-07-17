@@ -3,8 +3,8 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.71.0-nightly.20260713.131dd21",
-    "date": "2026-07-13",
+    "description": "Nightly build 1.78.0-nightly.20260717.5ee2ef9",
+    "date": "2026-07-17",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -12,10 +12,80 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260713.9f5c914",
-    "date": "2026-07-13",
+    "description": "Nightly build 0.1.4-nightly.20260717.6369851",
+    "date": "2026-07-17",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
     "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-fem2d-studio",
+    "title": "open-fem2d-studio v2.0.1 uitgebracht",
+    "description": "Open FEM2D Studio 2.0.1",
+    "date": "2026-07-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-fem2d-studio/releases/tag/v2.0.1",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-calc-studio",
+    "title": "open-calc-studio v0.10.0 uitgebracht",
+    "description": "Open Calc Studio v0.10.0",
+    "date": "2026-07-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.10.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-3d-studio",
+    "title": "open-3d-studio: 2 releases (v0.6.0 → v0.8.0)",
+    "description": "Versies: v0.6.0, v0.8.0",
+    "date": "2026-07-16",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-studio/releases/tag/v0.8.0",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "openaec-installer",
+    "title": "openaec-installer: 4 releases (v0.1.2 → v0.1.6)",
+    "description": "Versies: v0.1.2, v0.1.3, v0.1.5, v0.1.6",
+    "date": "2026-07-15",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.1.6",
+    "count": 4
+  },
+  {
+    "type": "release",
+    "repo": "open-3d-studio",
+    "title": "open-3d-studio: 4 releases (v0.1.0 → v0.3.1)",
+    "description": "Versies: v0.1.0, v0.2.0, v0.3.0, v0.3.1",
+    "date": "2026-07-15",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-studio/releases/tag/v0.3.1",
+    "count": 4
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-3d-studio",
+    "title": "Nieuwe repository: open-3d-studio",
+    "description": "Open source 3D-modelleerstudio met IFC als native output - OpenAEC-stijl, aangedreven door That Open Engine",
+    "date": "2026-07-15",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-studio"
+  },
+  {
+    "type": "release",
+    "repo": "open-frame-studio",
+    "title": "open-frame-studio v0.6.0 uitgebracht",
+    "description": "Open Frame Studio v0.6.0",
+    "date": "2026-07-14",
+    "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.6.0",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "acadifc",
+    "title": "Nieuwe repository: acadifc",
+    "description": "A pure Rust library for reading and writing CAD files (IFCCAD, DXF and DWG).",
+    "date": "2026-07-14",
+    "url": "https://github.com/OpenAEC-Foundation/acadifc"
   },
   {
     "type": "release",
@@ -103,6 +173,14 @@
     "date": "2026-07-07",
     "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.9",
     "count": 2
+  },
+  {
+    "type": "new_repo",
+    "repo": "pile-plan-studio",
+    "title": "Nieuwe repository: pile-plan-studio",
+    "description": "Nieuw project gestart",
+    "date": "2026-07-07",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio"
   },
   {
     "type": "release",

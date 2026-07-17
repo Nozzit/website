@@ -17,8 +17,8 @@
 - Forks: **0**
 - Open issues: **6**
 - Releases: **2**
-- Total downloads: **61**
-- Downloads by platform: Windows (37), macOS (8), Windows (MSI) (7), Linux (AppImage) (5), Linux (deb) (3), Archive (1)
+- Total downloads: **75**
+- Downloads by platform: Windows (44), macOS (10), Windows (MSI) (9), Linux (AppImage) (6), Linux (deb) (5), Archive (1)
 
 ## Key features
 
@@ -63,8 +63,8 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - [macOS · Open.Pointcloud.Studio_0.3.0_aarch64.dmg](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_aarch64.dmg) (v0.3.0 — 3.4 MB)
 - [Windows (MSI) · Open.Pointcloud.Studio_0.3.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_x64_en-US.msi) (v0.3.0 — 3.7 MB)
 - [Linux (AppImage) · Open.Pointcloud.Studio_0.3.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_amd64.AppImage) (v0.3.0 — 77.7 MB)
-- [Windows · Open.Pointcloud.Studio_0.2.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.2.0/Open.Pointcloud.Studio_0.2.0_x64-setup.exe) (v0.2.0 — 2.8 MB)
 - [Linux (deb) · Open.Pointcloud.Studio_0.3.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_amd64.deb) (v0.3.0 — 3.7 MB)
+- [Windows · Open.Pointcloud.Studio_0.2.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.2.0/Open.Pointcloud.Studio_0.2.0_x64-setup.exe) (v0.2.0 — 2.8 MB)
 - [Archive · Open.Pointcloud.Studio_aarch64.app.tar.gz](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_aarch64.app.tar.gz) (v0.3.0 — 3.3 MB)
 - [Windows (MSI) · Open.Pointcloud.Studio_0.2.0_x64_en-US.msi](https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.2.0/Open.Pointcloud.Studio_0.2.0_x64_en-US.msi) (v0.2.0 — 3.7 MB)
 
