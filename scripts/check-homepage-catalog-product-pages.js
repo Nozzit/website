@@ -10,7 +10,18 @@ const homepage = read('index.html');
 const validator = read('bim-validator/index.html');
 const speech = read('open-speech-studio/index.html');
 const validatorMarkdown = read('md/bim-validator.md');
+const markdownIndex = read('md/index.md');
+const markdownIndexJson = JSON.parse(read('md/index.json'));
+const stats = JSON.parse(read('data/stats.json'));
+const downloads = JSON.parse(read('data/downloads.json'));
 const tools = JSON.parse(read('api/tools.json'));
+
+const expectedGeneratedAt = [stats.generated, downloads.generated].sort().at(-1);
+assert.equal(markdownIndexJson.generated, expectedGeneratedAt, 'Markdown JSON-index gebruikt geen stabiele brondatum');
+assert.ok(
+  markdownIndex.includes(`Generated: ${expectedGeneratedAt}`),
+  'Markdown-index gebruikt geen stabiele brondatum',
+);
 
 const retiredHomepageRepos = [
   'open-energy-studio',

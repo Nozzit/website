@@ -638,13 +638,13 @@ function buildToolMarkdown(tool, stats, downloads, releaseInfo) {
   return lines.join('\n');
 }
 
-function buildIndexMarkdown(tools, stats, downloads) {
+function buildIndexMarkdown(tools, stats, downloads, generatedAt) {
   const lines = [];
   lines.push(`# OpenAEC tools — Markdown index`);
   lines.push('');
   lines.push(`> Machine-readable Markdown mirrors of the OpenAEC product pages. Use these when feeding the OpenAEC catalog to AI assistants (Claude, Continue, Cursor, etc).`);
   lines.push('');
-  lines.push(`Generated: ${new Date().toISOString()}`);
+  lines.push(`Generated: ${generatedAt}`);
   lines.push('');
 
   // Summary line from stats
@@ -722,6 +722,10 @@ function buildAboutMarkdown(llmsTxt) {
 function main() {
   const stats = readJson('data/stats.json');
   const downloads = readJson('data/downloads.json');
+  const generatedAt = [stats?.generated, downloads?.generated]
+    .filter(Boolean)
+    .sort()
+    .at(-1) || '1970-01-01T00:00:00.000Z';
   const llmsTxt = (() => {
     const p = path.join(ROOT, 'llms.txt');
     return fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
@@ -755,7 +759,7 @@ function main() {
   }
 
   // index.md
-  const indexMd = buildIndexMarkdown(TOOLS, stats, downloads);
+  const indexMd = buildIndexMarkdown(TOOLS, stats, downloads, generatedAt);
   totalBytes += writeFile('index.md', indexMd);
   generated.push({ id: '_index', file: '/md/index.md', bytes: Buffer.byteLength(indexMd, 'utf8') });
 
@@ -767,7 +771,7 @@ function main() {
   // index.json
   const indexJson = {
     $schema: 'https://www.open-aec.com/md/index.schema.json',
-    generated: new Date().toISOString(),
+    generated: generatedAt,
     description: 'Markdown mirrors of OpenAEC product pages for AI tool integrations.',
     base: `${SITE_BASE}/md/`,
     tools: TOOLS.map(t => ({
