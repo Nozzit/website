@@ -28,4 +28,3 @@ De homepage-opruiming verandert alleen de HTML-catalogus. Generatoren mogen de v
 - De check bewijst dat BIM Validator een repositorylink, recente-ontwikkelingensectie en release-notescomponent bevat.
 - De check bewijst dat Speech Studio precies de drie nieuwe galerijbeelden gebruikt en dat de homepage-thumbnail naar het eerste nieuwe beeld verwijst.
 - Alle JSON-bestanden blijven parseerbaar en `git diff --check` blijft schoon.
-

@@ -9,6 +9,7 @@ const exists = (relativePath) => fs.existsSync(path.join(ROOT, relativePath));
 const homepage = read('index.html');
 const validator = read('bim-validator/index.html');
 const speech = read('open-speech-studio/index.html');
+const validatorMarkdown = read('md/bim-validator.md');
 const tools = JSON.parse(read('api/tools.json'));
 
 const retiredHomepageRepos = [
@@ -39,11 +40,37 @@ assert.ok(
   validator.includes('https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator'),
   'BIM Validator mist GitHub-link',
 );
+assert.match(
+  validator,
+  /<a href="https:\/\/github\.com\/OpenAEC-Foundation\/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-primary">/,
+  'BIM Validator GitHub-link mist veilige externe-linkattributen',
+);
 assert.ok(validator.includes('id="recent-developments"'), 'BIM Validator mist recente ontwikkelingen');
 assert.ok(
   validator.includes('data-release-notes="OpenAEC-BIM-validator"'),
   'BIM Validator mist release-notescomponent',
 );
+assert.ok(
+  validator.includes('<script src="/shared/release-notes.js?v=20260603"></script>'),
+  'BIM Validator laadt het release-notesscript niet',
+);
+assert.match(
+  validator,
+  /\.development-item time\s*\{[^}]*color:\s*#57534E/s,
+  'BIM Validator-datums missen voldoende contrast',
+);
+assert.match(
+  validator,
+  /\.development-link\s*\{[^}]*color:\s*var\(--info\)/s,
+  'BIM Validator-links missen voldoende contrast',
+);
+for (const text of [
+  'Project data separated per organization',
+  'Open and save projects locally or in connected project storage',
+  'Interactive section planes for focused model inspection',
+]) {
+  assert.ok(validatorMarkdown.includes(text), `BIM Validator Markdown-spiegel mist: ${text}`);
+}
 
 const expectedSpeechScreenshots = [
   '/shared/assets/screenshots/open-speech-studio-tts.png',

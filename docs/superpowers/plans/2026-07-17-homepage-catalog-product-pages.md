@@ -115,4 +115,3 @@
 - [ ] **Step 4: Verify visually**
 
   Inspect `/`, `/bim-validator/`, and `/open-speech-studio/` at desktop and mobile viewport widths.
-

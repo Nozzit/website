@@ -385,7 +385,7 @@ const TOOLS = [
     platforms: ['Web'],
     techStack: ['Rust (WASM)', 'TypeScript'],
     description: 'IDS validation against NL-BIM Basis ILS and RVB BIM Norm. Browser-based, 3D viewer, BCF export.',
-    alternatives: ['Solibri Office', 'BIMcollab Zoom IDS', 'usBIM.IDSeditor'],
+    alternatives: ['Commercial BIM validation suites'],
     features: [
       'IDS (Information Delivery Specification) validation',
       'NL-BIM Basis ILS preset',
@@ -393,6 +393,9 @@ const TOOLS = [
       'Browser-based, no install',
       '3D viewer for failed elements',
       'BCF export of failures',
+      'Project data separated per organization',
+      'Open and save projects locally or in connected project storage',
+      'Interactive section planes for focused model inspection',
     ],
     whenToUse: 'Pre-delivery IDS checks of IFC models against Dutch and RVB standards, browser-only quick validation.',
     standards: ['IDS', 'IFC 4', 'NL-BIM Basis ILS', 'RVB BIM Norm', 'BCF 2.1'],
