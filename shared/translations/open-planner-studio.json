@@ -2,78 +2,105 @@
   "header": {
     "label": "Construction planning",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Open-source construction planning with Gantt charts, Critical Path Method, and native IFC 4.3 file format. Built for the AEC industry.",
-    "downloadBtn": "Download v2026.7.6",
+    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as its file format. On your desktop and right in your browser.",
+    "downloadBtn": "Download v2026.7.11",
+    "demoBtn": "Open in your browser",
     "sourceBtn": "View source"
   },
   "download": {
-    "title": "Download v2026.7.6"
+    "title": "Download v2026.7.11",
+    "browserNote": "Rather not install anything? Open Planner Studio also runs <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">fully in your browser</a> — including opening and saving files."
   },
   "features": {
     "heading": "Features",
     "gantt": {
       "title": "Gantt charts",
-      "desc": "Interactive Canvas-rendered Gantt diagrams with drag and drop, zoom, and timeline navigation."
+      "desc": "Interactive HTML5 Canvas Gantt with drag and drop, zoom and timeline navigation. Box selection to grab multiple tasks at once."
     },
     "cpm": {
-      "title": "Critical Path Method",
-      "desc": "Automatic CPM calculation with critical path identification and float analysis."
+      "title": "Critical path (CPM)",
+      "desc": "Automatic critical path calculation with float, near-critical work, multiple critical paths and deadline analysis."
     },
     "wbs": {
-      "title": "Work Breakdown Structure",
-      "desc": "Hierarchical task structure with collapsible chapters. Excel-style table editor with inline editing."
+      "title": "WBS &amp; table view",
+      "desc": "Hierarchical task structure with collapsible chapters. Excel-style table editor with in-cell editing."
     },
     "ifc": {
-      "title": "IFC 4.3 native",
-      "desc": "Save and open planning files in IFC 4.3 format (buildingSMART standard). Built-in IFC code editor with generate and apply."
+      "title": "Native IFC 4.3",
+      "desc": "Your schedule <em>is</em> an IFC file (buildingSMART standard). With a built-in IFC code editor to generate and apply."
     },
     "resources": {
-      "title": "Resource management",
-      "desc": "Manage labor, equipment, and subcontractors. Construction-specific features: holidays, building recess, inspection moments, and phasing."
+      "title": "Resources &amp; levelling",
+      "desc": "Labour, equipment and subcontractors with a histogram and automatic levelling of overallocation. Move assignments while keeping units and curve."
+    },
+    "baselines": {
+      "title": "Baselines &amp; progress",
+      "desc": "Capture multiple baselines and record progress with a status date, actual start and a cleaned-up progress line."
+    },
+    "calendars": {
+      "title": "Calendars &amp; hourly planning",
+      "desc": "Construction-specific calendars: public holidays, building recess, frost delay, inspection moments and phasing. Plan down to the hour."
+    },
+    "browser": {
+      "title": "Desktop and browser",
+      "desc": "Runs natively on Windows, macOS and Linux, but also fully in the browser — including open, save, auto-save and crash recovery."
+    },
+    "exchange": {
+      "title": "Exchange",
+      "desc": "Import and export IFC, CSV, MS Project (.xml) and Primavera P6 (.xml) — no intermediate steps or conversion tools."
     },
     "bim4d": {
       "title": "4D BIM-ready",
-      "desc": "Link planning tasks to IFC building model elements for 4D construction sequence visualization."
+      "desc": "Link planning tasks to elements from your IFC building model for 4D visualisation of the construction sequence."
     },
     "reporting": {
-      "title": "Reporting",
-      "desc": "Live print preview in the ribbon with configurable report options. Context menu for quick task actions."
+      "title": "Reporting &amp; printing",
+      "desc": "Live print preview in the ribbon with configurable options, and export to a real high-resolution PDF (approx. 220 DPI)."
+    },
+    "docs": {
+      "title": "Manual inside the app",
+      "desc": "Press F1 for an offline manual: quick start, nine practical guides and fifteen reference pages — plus three sample projects to practise on."
+    },
+    "shortcuts": {
+      "title": "Shortcuts &amp; context menus",
+      "desc": "Full overview via Ctrl+/ and rich right-click menus on the task row, Gantt bar, canvas and band header. Per-task notes with a tickable checklist."
     },
     "multilingual": {
-      "title": "Multilingual",
-      "desc": "Interface in 6 languages: Nederlands, English, Francais, Deutsch, Espanol, and Zhongwen."
+      "title": "14 languages",
+      "desc": "Nederlands, English, Fran&ccedil;ais, Deutsch, Espa&ntilde;ol, Italiano, Portugu&ecirc;s, Polski, T&uuml;rk&ccedil;e, 中文, 日本語, 한국어 and RTL support for العربية and فارسی."
     },
     "ribbon": {
       "title": "Ribbon toolbar",
-      "desc": "Microsoft Office-style ribbon with tabs: Start, Planning, View, Settings, Table, IFC, and Report."
+      "desc": "Familiar Office-style ribbon with tabs: Home, Planning, View, Settings, Table, IFC and Report."
     }
   },
   "tech": {
-    "heading": "Tech stack",
+    "heading": "Technology",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "Native desktop application with Rust backend."
+      "title": "Tauri 2",
+      "desc": "Native desktop app with a Rust backend for Windows, macOS and Linux."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Component-based UI with Zustand + Immer state management."
+      "title": "React 19 + TypeScript",
+      "desc": "Component-based UI with Zustand + Immer for state management."
     },
     "canvas": {
       "title": "HTML5 Canvas 2D",
-      "desc": "Gantt chart rendering. TailwindCSS styling, Vite 5 build."
+      "desc": "Gantt rendering. TailwindCSS 4 for styling, Vite 7 as the build."
     }
   },
   "cta": {
     "demo": "Live demo &rarr;",
+    "releases": "All releases &rarr;",
     "github": "GitHub &rarr;"
   },
   "footer": {
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "New in v2026.6.0 · testers wanted",
-    "title": "Plan construction with open BIM — and help us test",
-    "desc": "This version brings <strong>native IFC 4.3</strong> (your schedule <em>is</em> an IFC file), a <strong>4D link</strong> to your BIM model, automatic <strong>Critical Path Method (CPM)</strong> and an extended <strong>reporting tab</strong> with live print preview — plus construction-specific resources like holidays, inspection moments and phasing.",
+    "label": "New in v2026.7.11 · testers wanted",
+    "title": "Now fully usable in your browser too",
+    "desc": "The web version can now <strong>open and save files</strong>. In Chromium browsers (Chrome, Edge, Brave, Opera, Vivaldi) you save over <strong>the same file</strong> with Ctrl+S, just like on the desktop; Firefox and Safari get a clean fallback through the file picker. <strong>Auto-save and crash recovery</strong> now work in the browser as well. On top of that: a <strong>complete manual inside the app</strong> (F1), <strong>three sample projects</strong> from a renovation to an apartment complex, and eight closed gaps where data could be lost on save.",
     "testers": "We are looking for <strong>testers</strong>: work planners, schedulers, project leads and BIM coordinators. Try Open Planner Studio right in your browser and tell us what you think — your feedback helps shape where it goes.",
     "ctaDemo": "Try the live demo →",
     "ctaJoin": "Join as a tester"

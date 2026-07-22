@@ -1,19 +1,51 @@
 {
   "repo": "open-planner-studio",
-  "generated": "2026-07-17T05:57:57.115Z",
-  "totalReleases": 14,
-  "totalChanges": 159,
+  "generated": "2026-07-22T19:39:34.129Z",
+  "totalReleases": 15,
+  "totalChanges": 182,
   "latestStable": {
-    "tag": "v2026.7.10",
-    "name": "Open Planner Studio v2026.7.10",
-    "date": "2026-07-10",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.10"
+    "tag": "v2026.7.11",
+    "name": "Open Planner Studio v2026.7.11",
+    "date": "2026-07-20",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.11"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "2026.7",
       "releases": [
+        {
+          "tag": "v2026.7.11",
+          "name": "Open Planner Studio v2026.7.11",
+          "date": "2026-07-20",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.11",
+          "changes": [
+            "**Bestanden openen en opslaan in de browser.** De web-versie was tot nu toe volledig bruikbaar",
+            "**Openen, opslaan, opslaan-als en exporteren** (IFC, CSV, MS Project, Primavera P6) werken nu",
+            "**Browsers met de File System Access API** — in de praktijk de Chromium-familie (Chrome, Edge,",
+            "**Browsers zonder die API** — op dit moment Firefox en Safari: nette terugval, openen via een",
+            "De app kijkt naar de **mogelijkheid, niet naar de browsernaam** (feature-detectie). Rolt een",
+            "**Recente bestanden** zijn opnieuw te openen in browsers met die API (de verwijzing naar het",
+            "**Auto-save en crash-herstel** werken nu ook in de browser: bij elke wijziging wordt (gedebounced)",
+            "De desktop-versie verandert hierdoor niet: die gebruikt dezelfde gedeelde laag met het",
+            "**Bouwmodus-schakelaar** — een bouw-agnostische modus voor gebruik buiten de bouwcontext",
+            "**Acht gaten waardoor gegevens bij opslaan verloren gingen, zijn gedicht.** Het opslagcontract",
+            "**Openen verloor activity-codes en custom fields.** Alle open-paden lopen nu door één gedeelde",
+            "**De snelle opslaan-route in de browser liet velden vallen** (activity-codes, custom fields,",
+            "**Speling verdween bij horizontaal scrollen.** De speling-band werd samen met de taakbalk",
+            "**Gantt-slepen:** het verslepen van de balkrand schrijft nu de juiste (inclusieve werkdagen-)duur,",
+            "**Niet-werkdagen werden altijd als zaterdag/zondag gearceerd** in plaats van volgens de",
+            "**Crash bij het wisselen van document** na een herstel-actie (een bevroren kalenderlijst werd",
+            "**PDF-export herzien**: meerdere pagina's, paginarichting en een voorbeeldweergave die overeenkomt",
+            "**Beeld-tab en titelbalk** overlapten bij een smal venster; de weergave-opties staan nu in een",
+            "**Instellingen**: nettere indeling, uniforme checkboxes en werkende toetsbediening in dropdowns.",
+            "**Beveiligingsupdate**: `serde_with` 3.18.0 → 3.21.0 (GHSA-7gcf-g7xr-8hxj).",
+            "**Ontwikkelomgeving**: Vite bekeek bij een tweede dev-server alle git-worktrees mee (kon het",
+            "**Grote saneringsronde op basis van een modulariteits-audit van de volledige codebase.** Geen",
+            "**Testdekking uitgebreid** met batterijen die de zojuist gedichte gaten permanent bewaken:"
+          ],
+          "patchNum": 11
+        },
         {
           "tag": "v2026.7.10",
           "name": "Open Planner Studio v2026.7.10",
@@ -266,6 +298,29 @@
         }
       ],
       "allChanges": [
+        "**Bestanden openen en opslaan in de browser.** De web-versie was tot nu toe volledig bruikbaar",
+        "**Openen, opslaan, opslaan-als en exporteren** (IFC, CSV, MS Project, Primavera P6) werken nu",
+        "**Browsers met de File System Access API** — in de praktijk de Chromium-familie (Chrome, Edge,",
+        "**Browsers zonder die API** — op dit moment Firefox en Safari: nette terugval, openen via een",
+        "De app kijkt naar de **mogelijkheid, niet naar de browsernaam** (feature-detectie). Rolt een",
+        "**Recente bestanden** zijn opnieuw te openen in browsers met die API (de verwijzing naar het",
+        "**Auto-save en crash-herstel** werken nu ook in de browser: bij elke wijziging wordt (gedebounced)",
+        "De desktop-versie verandert hierdoor niet: die gebruikt dezelfde gedeelde laag met het",
+        "**Bouwmodus-schakelaar** — een bouw-agnostische modus voor gebruik buiten de bouwcontext",
+        "**Acht gaten waardoor gegevens bij opslaan verloren gingen, zijn gedicht.** Het opslagcontract",
+        "**Openen verloor activity-codes en custom fields.** Alle open-paden lopen nu door één gedeelde",
+        "**De snelle opslaan-route in de browser liet velden vallen** (activity-codes, custom fields,",
+        "**Speling verdween bij horizontaal scrollen.** De speling-band werd samen met de taakbalk",
+        "**Gantt-slepen:** het verslepen van de balkrand schrijft nu de juiste (inclusieve werkdagen-)duur,",
+        "**Niet-werkdagen werden altijd als zaterdag/zondag gearceerd** in plaats van volgens de",
+        "**Crash bij het wisselen van document** na een herstel-actie (een bevroren kalenderlijst werd",
+        "**PDF-export herzien**: meerdere pagina's, paginarichting en een voorbeeldweergave die overeenkomt",
+        "**Beeld-tab en titelbalk** overlapten bij een smal venster; de weergave-opties staan nu in een",
+        "**Instellingen**: nettere indeling, uniforme checkboxes en werkende toetsbediening in dropdowns.",
+        "**Beveiligingsupdate**: `serde_with` 3.18.0 → 3.21.0 (GHSA-7gcf-g7xr-8hxj).",
+        "**Ontwikkelomgeving**: Vite bekeek bij een tweede dev-server alle git-worktrees mee (kon het",
+        "**Grote saneringsronde op basis van een modulariteits-audit van de volledige codebase.** Geen",
+        "**Testdekking uitgebreid** met batterijen die de zojuist gedichte gaten permanent bewaken:",
         "**Volledige gebruikershandleiding, offline beschikbaar** — druk op `F1` of ga naar Bestand → Help: een quick-start (\"je eerste planning in 10 minuten\"), negen praktijkgidsen (plannen & WBS, relaties & beperkingen, kalenders & urenplanning, resources & histogram & nivellering, baselines & voortgang, kritiek pad & analyse, im-/export, rapporten & printen, bediening) en vijftien naslagpagina's per dialoog. In het Nederlands en Engels, doorzoekbaar, met directe koppelingen naar de voorbeeldprojecten.",
         "**Drie woningbouw-showcases in oplopende schaal**: een verbouwing (~20 taken, het instapvoorbeeld), een rijtje van 6 woningen (~80 taken — resources, vorstverlet, voortgang, een bewust deadline-conflict en een overbelasting die je zelf met nivellering oplost) en een appartementencomplex met drie torens (~250 taken — urenplanning op het betonwerk, harde pins, hammocks, meerdere kritieke paden, bijna-kritiek werk, twee baselines met meerwerk en een externe koppeling). Open ze via Bestand → Voorbeelden; de gidsen verwijzen ernaar als oefenmateriaal.",
         "**Nivellering respecteert nu de statusdatum** — bij projecten met ingevoerde voortgang rekende de nivellering intern zonder statusdatum, waardoor conflicten konden worden gemist of verkeerd opgelost.",
@@ -420,9 +475,9 @@
         "All new UI strings translated in **14 languages**."
       ],
       "firstDate": "2026-07-02",
-      "lastDate": "2026-07-10",
-      "releaseCount": 11,
-      "changeCount": 152
+      "lastDate": "2026-07-20",
+      "releaseCount": 12,
+      "changeCount": 175
     },
     {
       "minorVersion": "2026.6",

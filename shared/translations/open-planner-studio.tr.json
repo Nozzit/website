@@ -2,80 +2,107 @@
   "header": {
     "label": "İnşaat planlaması",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Gantt çizelgeleri, Kritik Yol Yöntemi ve yerel IFC 4.3 dosya formatı ile açık kaynak inşaat planlaması. AEC sektörü için tasarlanmıştır.",
-    "downloadBtn": "v2026.7.6 indir",
+    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — ve yerel dosya biçimi olarak IFC 4.3. Masaüstünüzde ve doğrudan tarayıcınızda.",
+    "downloadBtn": "v2026.7.11'i indir",
+    "demoBtn": "Tarayıcıda aç",
     "sourceBtn": "Kaynak kodu görüntüle"
   },
   "download": {
-    "title": "v2026.7.6 indir"
+    "title": "v2026.7.11'i indir",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Open Planner Studio <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">tamamen tarayıcınızda da</a> çalışır — dosya açma ve kaydetme dahil."
   },
   "features": {
     "heading": "Özellikler",
     "gantt": {
-      "title": "Gantt çizelgeleri",
-      "desc": "Sürükle bırak, yakınlaştırma ve zaman çizelgesi navigasyonu ile Canvas render edilen etkileşimli Gantt diyagramları."
+      "title": "Gantt şemaları",
+      "desc": "Sürükle bırak, yakınlaştırma ve zaman çizelgesi gezinmesi olan etkileşimli HTML5 Canvas Gantt. Birden fazla görevi aynı anda seçmek için kutu seçimi."
     },
     "cpm": {
-      "title": "Kritik Yol Yöntemi",
-      "desc": "Kritik yol tanımlama ve serbest süre analizi ile otomatik CPM hesaplaması."
+      "title": "Kritik yol (CPM)",
+      "desc": "Bolluk, kritiğe yakın işler, birden fazla kritik yol ve son tarih analizi ile otomatik kritik yol hesaplaması."
     },
     "wbs": {
-      "title": "İş Kırılım Yapısı",
-      "desc": "Daraltılabilir bölümlerle hiyerarşik görev yapısı. Satır içi düzenleme ile Excel tarzı tablo editörü."
+      "title": "WBS ve tablo görünümü",
+      "desc": "Katlanabilir bölümlerle hiyerarşik görev yapısı. Hücre içinde düzenleme yapılan Excel benzeri tablo düzenleyici."
     },
     "ifc": {
-      "title": "IFC 4.3 yerel",
-      "desc": "Planlama dosyalarını IFC 4.3 formatında (buildingSMART standardı) kaydedin ve açın. Oluştur ve uygula ile yerleşik IFC kod editörü."
+      "title": "Yerel IFC 4.3",
+      "desc": "Planlamanız bir IFC dosyasıdır (buildingSMART standardı). Oluşturmak ve uygulamak için yerleşik IFC kod düzenleyicisiyle."
     },
     "resources": {
-      "title": "Kaynak yönetimi",
-      "desc": "İşgücü, ekipman ve taşeronları yönetin. İnşaata özgü özellikler: tatiller, yıllık kapatma, denetim anları ve faz planlaması."
+      "title": "Kaynaklar ve dengeleme",
+      "desc": "Histogram ve aşırı yüklemenin otomatik dengelenmesi ile işçilik, ekipman ve taşeronlar. Atamaları birim ve eğriyi koruyarak taşıyın."
+    },
+    "baselines": {
+      "title": "Temel planlar ve ilerleme",
+      "desc": "Birden fazla temel plan kaydedin ve durum tarihi, gerçek başlangıç ve sadeleştirilmiş bir ilerleme çizgisi ile ilerlemeyi girin."
+    },
+    "calendars": {
+      "title": "Takvimler ve saatlik planlama",
+      "desc": "İnşaata özgü takvimler: resmî tatiller, inşaat tatili, don nedeniyle gecikme, denetim anları ve fazlandırma. Saat düzeyinde planlayın."
+    },
+    "browser": {
+      "title": "Masaüstü ve tarayıcı",
+      "desc": "Windows, macOS ve Linux'ta yerel olarak çalışır, ancak tamamen tarayıcıda da — açma, kaydetme, otomatik kaydetme ve çökme kurtarma dahil."
+    },
+    "exchange": {
+      "title": "Veri alışverişi",
+      "desc": "IFC, CSV, MS Project (.xml) ve Primavera P6 (.xml) içe ve dışa aktarın — ara adım veya dönüştürme aracı olmadan."
     },
     "bim4d": {
       "title": "4D BIM'e hazır",
-      "desc": "4D inşaat sırası görselleştirmesi için planlama görevlerini IFC bina modeli öğelerine bağlayın."
+      "desc": "İnşaat sırasının 4D görselleştirmesi için planlama görevlerini IFC yapı modelinizdeki elemanlara bağlayın."
     },
     "reporting": {
-      "title": "Raporlama",
-      "desc": "Yapılandırılabilir rapor seçenekleri ile ribbon'da canlı yazdırma önizlemesi. Hızlı görev eylemleri için bağlam menüsü."
+      "title": "Raporlama ve yazdırma",
+      "desc": "Şeritte yapılandırılabilir seçeneklerle canlı baskı önizlemesi ve gerçek yüksek çözünürlüklü PDF'ye (yaklaşık 220 DPI) aktarım."
+    },
+    "docs": {
+      "title": "Uygulama içi kılavuz",
+      "desc": "Çevrimdışı kılavuz için F1'e basın: hızlı başlangıç, dokuz uygulama rehberi ve on beş başvuru sayfası — ayrıca alıştırma yapmak için üç örnek proje."
+    },
+    "shortcuts": {
+      "title": "Kısayollar ve bağlam menüleri",
+      "desc": "Ctrl+/ ile tam genel bakış ve görev satırı, Gantt çubuğu, tuval ve bant başlığında zengin sağ tık menüleri. İşaretlenebilir kontrol listesiyle görev başına notlar."
     },
     "multilingual": {
-      "title": "Çok dilli",
-      "desc": "6 dilde arayüz: Nederlands, English, Français, Deutsch, Español ve 中文."
+      "title": "14 dil",
+      "desc": "Nederlands, English, Fran&ccedil;ais, Deutsch, Espa&ntilde;ol, Italiano, Portugu&ecirc;s, Polski, T&uuml;rk&ccedil;e, 中文, 日本語, 한국어 ve العربية ile فارسی için RTL desteği."
     },
     "ribbon": {
-      "title": "Ribbon araç çubuğu",
-      "desc": "Sekmelerle Microsoft Office tarzı ribbon: Başlangıç, Planlama, Görünüm, Ayarlar, Tablo, IFC ve Rapor."
+      "title": "Şerit araç çubuğu",
+      "desc": "Sekmeleri olan tanıdık Office tarzı şerit: Giriş, Planlama, Görünüm, Ayarlar, Tablo, IFC ve Rapor."
     }
   },
   "tech": {
-    "heading": "Teknoloji stack'i",
+    "heading": "Teknoloji",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "Rust backend ile yerel masaüstü uygulaması."
+      "title": "Tauri 2",
+      "desc": "Windows, macOS ve Linux için Rust arka uçlu yerel masaüstü uygulaması."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Zustand + Immer durum yönetimi ile bileşen tabanlı UI."
+      "title": "React 19 + TypeScript",
+      "desc": "Durum yönetimi için Zustand + Immer ile bileşen tabanlı arayüz."
     },
     "canvas": {
       "title": "HTML5 Canvas 2D",
-      "desc": "Gantt çizelgesi render'ı. TailwindCSS stili, Vite 5 build."
+      "desc": "Gantt render'ı. Stil için TailwindCSS 4, derleme için Vite 7."
     }
   },
   "cta": {
     "demo": "Canlı demo &rarr;",
+    "releases": "Tüm sürümler &rarr;",
     "github": "GitHub &rarr;"
   },
   "footer": {
-    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+    "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "v2026.6.0’da yeni · test edenler aranıyor",
-    "title": "İnşaatı açık BIM ile planlayın — ve test etmemize yardım edin",
-    "desc": "Bu sürüm <strong>yerel IFC 4.3</strong> (planınız <em>bir</em> IFC dosyasıdır), BIM modelinize <strong>4D bağlantı</strong>, otomatik <strong>kritik yol (CPM)</strong> ve canlı baskı önizlemeli gelişmiş bir <strong>rapor sekmesi</strong> getiriyor — ayrıca tatiller, muayene anları ve fazlandırma gibi inşaata özgü kaynaklar.",
-    "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio’yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz yönünü belirlemeye yardımcı olur.",
-    "ctaDemo": "Canlı demoyu dene →",
+    "label": "v2026.7.11'de yeni · test edenler aranıyor",
+    "title": "Artık tarayıcınızda da eksiksiz kullanılabilir",
+    "desc": "Web sürümü artık <strong>dosya açıp kaydedebiliyor</strong>. Chromium tarayıcılarda (Chrome, Edge, Brave, Opera, Vivaldi) Ctrl+S ile tıpkı masaüstündeki gibi <strong>aynı dosyanın üzerine</strong> kaydedersiniz; Firefox ve Safari için dosya seçici üzerinden düzgün bir geri dönüş var. <strong>Otomatik kaydetme ve çökme kurtarma</strong> da artık tarayıcıda çalışıyor. Bunlara ek olarak: <strong>uygulama içinde eksiksiz bir kılavuz</strong> (F1), tadilattan apartman kompleksine kadar <strong>üç örnek proje</strong> ve kaydetme sırasında veri kaybına yol açabilen sekiz açığın kapatılması.",
+    "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio'yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz gidişatı belirlemeye yardımcı olur.",
+    "ctaDemo": "Canlı demoyu deneyin →",
     "ctaJoin": "Test eden olarak katıl"
   }
 }

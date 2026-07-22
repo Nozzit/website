@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Planner Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open-source construction planning application with Gantt charts, Critical Path Method, WBS, and native IFC 4.3 file format. Built with Tauri 2.">
+  <meta name="description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en voortgang, en native IFC 4.3. Voor Windows, macOS, Linux én direct in de browser.">
   <meta name="i18n-page" content="open-planner-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
@@ -28,12 +28,13 @@
 <script src="/shared/nav.js?v=20260603"></script>
 
   <section class="hero">
-    <span class="section-label" data-i18n="header.label">Construction planning</span>
+    <span class="section-label" data-i18n="header.label">Bouwplanning</span>
     <h1 data-i18n="header.title">Open <span class="accent">Planner</span> Studio</h1>
-    <p class="tagline" data-i18n="header.desc">Open-source construction planning with Gantt charts, Critical Path Method, and native IFC 4.3 file format. Built for the construction sector.</p>
+    <p class="tagline" data-i18n="header.desc">Open-source bouwplanning met Gantt, kritiek pad, resources en nivellering, baselines en voortgang — en native IFC 4.3 als bestandsformaat. Op je desktop én direct in de browser.</p>
     <div class="btn-group">
-      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.7.6</a>
-      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">View source</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.7.11</a>
+      <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="header.demoBtn">Open in je browser</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">Bekijk broncode</a>
     </div>
   </section>
 
@@ -55,9 +56,9 @@
 
   <section class="section" style="padding: var(--sp-6) 0;"><div class="container">
     <div style="max-width: 880px; margin: 0 auto; background: #FAEEDA; border: 1px solid rgba(217,119,6,0.35); border-radius: 12px; padding: var(--sp-6) var(--sp-7);">
-      <span class="section-label" style="color:#B45309;" data-i18n="whatsnew.label">Nieuw in v2026.6.0 &middot; testers gezocht</span>
-      <h2 style="margin: var(--sp-2) 0 var(--sp-3); color:#1e1e24;" data-i18n="whatsnew.title">Plan de bouw met open BIM — en help ons testen</h2>
-      <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-4);" data-i18n="whatsnew.desc">Deze versie brengt <strong>native IFC 4.3</strong> (je planning &iacute;s een IFC-bestand), een <strong>4D-koppeling</strong> naar je BIM-model, automatische <strong>kritieke-pad-analyse (CPM)</strong> en een uitgebreide <strong>rapportage-tab</strong> met live print-preview — plus bouw-specifieke resources zoals bouwvak, keuringsmomenten en fasering.</p>
+      <span class="section-label" style="color:#B45309;" data-i18n="whatsnew.label">Nieuw in v2026.7.11 &middot; testers gezocht</span>
+      <h2 style="margin: var(--sp-2) 0 var(--sp-3); color:#1e1e24;" data-i18n="whatsnew.title">Nu ook volledig werken in je browser</h2>
+      <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-4);" data-i18n="whatsnew.desc">De web-versie kan nu <strong>bestanden openen en opslaan</strong>. In Chromium-browsers (Chrome, Edge, Brave, Opera, Vivaldi) sla je met Ctrl+S over <strong>hetzelfde bestand</strong> op, net als op de desktop; in Firefox en Safari is er een nette terugval via de bestandskiezer. Ook <strong>auto-save en crash-herstel</strong> werken nu in de browser. Daarnaast: een <strong>volledige handleiding in de app</strong> (F1), <strong>drie voorbeeldprojecten</strong> van verbouwing tot appartementencomplex, en acht gedichte gaten waardoor gegevens bij opslaan verloren konden gaan.</p>
       <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-5);" data-i18n="whatsnew.testers">We zoeken <strong>testers</strong>: werkvoorbereiders, planners, projectleiders en BIM-co&ouml;rdinatoren. Probeer Open Planner Studio direct in je browser en laat ons weten wat je vindt — jouw feedback bepaalt mede de koers.</p>
       <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap;">
         <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="whatsnew.ctaDemo">Probeer de live demo &rarr;</a>
@@ -68,74 +69,104 @@
 
   <section class="section" id="download"><div class="container">
     <div class="download-section">
-      <h3 data-i18n="download.title" data-opl-ver>Download v2026.7.6</h3>
+      <h3 data-i18n="download.title" data-opl-ver>Download v2026.7.11</h3>
       <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-opl-size="windows">5.1 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
-        <div class="download-item"><div class="os">macOS (universal)</div><div class="size" data-opl-size="macos">11.0 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
-        <div class="download-item"><div class="os">Linux (deb)</div><div class="size" data-opl-size="linux-deb">5.7 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size" data-opl-size="linux-appimage">79.6 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.6/Open.Planner.Studio_2026.7.6_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+        <div class="download-item"><div class="os">Windows</div><div class="size" data-opl-size="windows">5.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
+        <div class="download-item"><div class="os">macOS (universal)</div><div class="size" data-opl-size="macos">11.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size" data-opl-size="linux-deb">5.9 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+        <div class="download-item"><div class="os">Linux (rpm)</div><div class="size" data-opl-size="linux-rpm">5.9 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio-2026.7.11-1.x86_64.rpm" data-opl-dl="linux-rpm" class="btn btn-primary btn-sm">Download .rpm</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size" data-opl-size="linux-appimage">79.8 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+        <div class="download-item"><div class="os">Linux (snap)</div><div class="size" data-opl-size="linux-snap">5.1 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/open-planner-studio_2026.7.11_amd64.snap" data-opl-dl="linux-snap" class="btn btn-primary btn-sm">Download .snap</a></div>
       </div>
+      <p style="color:var(--scaffold-gray); font-size:0.85rem; margin-top:var(--sp-4);" data-i18n="download.browserNote">Liever niets installeren? Open Planner Studio draait ook <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" style="color:var(--amber);">volledig in je browser</a> — inclusief bestanden openen en opslaan.</p>
     </div>
   </div></section>
 
   <section class="section section-alt"><div class="container">
-    <h2 data-i18n="features.heading">Features</h2>
+    <h2 data-i18n="features.heading">Functionaliteiten</h2>
     <div class="features" style="margin-top:var(--sp-8)">
       <div class="feature">
-        <h4 data-i18n="features.gantt.title">Gantt charts</h4>
-        <p data-i18n="features.gantt.desc">Interactive Canvas-rendered Gantt diagrams with drag and drop, zoom, and timeline navigation.</p>
+        <h4 data-i18n="features.gantt.title">Gantt-diagrammen</h4>
+        <p data-i18n="features.gantt.desc">Interactieve Gantt op HTML5 Canvas met slepen en neerzetten, zoomen en tijdlijnnavigatie. Box-selectie om meerdere taken tegelijk te pakken.</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.cpm.title">Critical Path Method</h4>
-        <p data-i18n="features.cpm.desc">Automatic CPM calculation with critical path identification and float analysis.</p>
+        <h4 data-i18n="features.cpm.title">Kritiek pad (CPM)</h4>
+        <p data-i18n="features.cpm.desc">Automatische kritieke-padberekening met speling, bijna-kritiek werk, meerdere kritieke paden en deadline-analyse.</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.wbs.title">Work Breakdown Structure</h4>
-        <p data-i18n="features.wbs.desc">Hierarchical task structure with collapsible chapters. Excel-style table editor with inline editing.</p>
+        <h4 data-i18n="features.wbs.title">WBS &amp; tabelweergave</h4>
+        <p data-i18n="features.wbs.desc">Hi&euml;rarchische taakstructuur met inklapbare hoofdstukken. Excel-achtige tabel-editor met bewerken in de cel.</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.ifc.title">IFC 4.3 native</h4>
-        <p data-i18n="features.ifc.desc">Save and open planning files in IFC 4.3 format (buildingSMART standard). Built-in IFC code editor with generate and apply.</p>
+        <h4 data-i18n="features.ifc.title">Native IFC 4.3</h4>
+        <p data-i18n="features.ifc.desc">Je planning &iacute;s een IFC-bestand (buildingSMART-standaard). Met ingebouwde IFC-code-editor om te genereren en toe te passen.</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.resources.title">Resource management</h4>
-        <p data-i18n="features.resources.desc">Manage labor, equipment, and subcontractors. Construction-specific features: holidays, building recess, inspection moments, and phasing.</p>
+        <h4 data-i18n="features.resources.title">Resources &amp; nivellering</h4>
+        <p data-i18n="features.resources.desc">Arbeid, materieel en onderaannemers met histogram en automatische nivellering van overbelasting. Toewijzingen verplaatsen met behoud van eenheden en curve.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.baselines.title">Baselines &amp; voortgang</h4>
+        <p data-i18n="features.baselines.desc">Leg meerdere baselines vast en registreer voortgang met statusdatum, werkelijke start en een opgeschoonde voortgangslijn.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.calendars.title">Kalenders &amp; urenplanning</h4>
+        <p data-i18n="features.calendars.desc">Bouw-specifieke kalenders: feestdagen, bouwvak, vorstverlet, keuringsmomenten en fasering. Plannen tot op uurniveau.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.browser.title">Desktop &eacute;n browser</h4>
+        <p data-i18n="features.browser.desc">Draait native op Windows, macOS en Linux, maar ook volledig in de browser — inclusief openen, opslaan, auto-save en crash-herstel.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.exchange.title">Uitwisseling</h4>
+        <p data-i18n="features.exchange.desc">Importeer en exporteer IFC, CSV, MS Project (.xml) en Primavera P6 (.xml) — zonder tussenstappen of conversietools.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.bim4d.title">4D BIM-ready</h4>
-        <p data-i18n="features.bim4d.desc">Link planning tasks to IFC building model elements for 4D construction sequence visualization.</p>
+        <p data-i18n="features.bim4d.desc">Koppel planningtaken aan elementen uit je IFC-gebouwmodel voor 4D-visualisatie van de bouwvolgorde.</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.reporting.title">Reporting</h4>
-        <p data-i18n="features.reporting.desc">Live print preview in the ribbon with configurable report options. Context menu for quick task actions.</p>
+        <h4 data-i18n="features.reporting.title">Rapportage &amp; printen</h4>
+        <p data-i18n="features.reporting.desc">Live afdrukvoorbeeld in het lint met instelbare opties, en export naar echte PDF in hoge resolutie (&plusmn;220 DPI).</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.multilingual.title">Multilingual</h4>
-        <p data-i18n="features.multilingual.desc">Interface in 6 languages: Nederlands, English, Francais, Deutsch, Espanol, and Zhongwen.</p>
+        <h4 data-i18n="features.docs.title">Handleiding in de app</h4>
+        <p data-i18n="features.docs.desc">Druk op F1 voor een offline handleiding: quick-start, negen praktijkgidsen en vijftien naslagpagina's — plus drie voorbeeldprojecten om op te oefenen.</p>
       </div>
       <div class="feature">
-        <h4 data-i18n="features.ribbon.title">Ribbon toolbar</h4>
-        <p data-i18n="features.ribbon.desc">Microsoft Office-style ribbon with tabs: Start, Planning, View, Settings, Table, IFC, and Report.</p>
+        <h4 data-i18n="features.shortcuts.title">Sneltoetsen &amp; contextmenu's</h4>
+        <p data-i18n="features.shortcuts.desc">Volledig overzicht via Ctrl+/ en rijke rechtermuisknop-menu's op taakrij, Gantt-balk, canvas en bandkop. Aantekeningen per taak met afvinkbare checklist.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.multilingual.title">14 talen</h4>
+        <p data-i18n="features.multilingual.desc">Nederlands, English, Fran&ccedil;ais, Deutsch, Espa&ntilde;ol, Italiano, Portugu&ecirc;s, Polski, T&uuml;rk&ccedil;e, 中文, 日本語, 한국어 en RTL-ondersteuning voor العربية en فارسی.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.ribbon.title">Lint-werkbalk</h4>
+        <p data-i18n="features.ribbon.desc">Vertrouwde Office-achtige ribbon met tabbladen: Start, Planning, Beeld, Instellingen, Tabel, IFC en Rapport.</p>
       </div>
     </div>
   </div></section>
 
   <section class="section"><div class="container">
-    <h2 data-i18n="tech.heading">Tech stack</h2>
+    <h2 data-i18n="tech.heading">Technologie</h2>
     <div class="features" style="margin-top:var(--sp-8)">
-      <div class="feature"><h4 data-i18n="tech.tauri.title">Tauri 2.0</h4><p data-i18n="tech.tauri.desc">Native desktop application with Rust backend.</p></div>
-      <div class="feature"><h4 data-i18n="tech.react.title">React 18 + TypeScript</h4><p data-i18n="tech.react.desc">Component-based UI with Zustand + Immer state management.</p></div>
-      <div class="feature"><h4 data-i18n="tech.canvas.title">HTML5 Canvas 2D</h4><p data-i18n="tech.canvas.desc">Gantt chart rendering. TailwindCSS styling, Vite 5 build.</p></div>
+      <div class="feature"><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Native desktop-app met Rust-backend voor Windows, macOS en Linux.</p></div>
+      <div class="feature"><h4 data-i18n="tech.react.title">React 19 + TypeScript</h4><p data-i18n="tech.react.desc">Component-gebaseerde UI met Zustand + Immer voor state-beheer.</p></div>
+      <div class="feature"><h4 data-i18n="tech.canvas.title">HTML5 Canvas 2D</h4><p data-i18n="tech.canvas.desc">Rendering van de Gantt. TailwindCSS 4 voor styling, Vite 7 als build.</p></div>
     </div>
   </div></section>
 
   <section style="background: var(--concrete); padding: 3rem 1.5rem; text-align: center;">
     <div style="max-width: 900px; margin: 0 auto; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
       <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.demo">Live demo &rarr;</a>
+      <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" data-i18n="cta.releases">Alle releases &rarr;</a>
       <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" data-i18n="cta.github">GitHub &rarr;</a>
     </div>
   </section>
@@ -182,7 +213,9 @@
       windows: /_x64-setup\.exe$/i,
       macos: /_universal\.dmg$/i,
       'linux-deb': /_amd64\.deb$/i,
-      'linux-appimage': /_amd64\.AppImage$/i
+      'linux-rpm': /\.x86_64\.rpm$/i,
+      'linux-appimage': /_amd64\.AppImage$/i,
+      'linux-snap': /_amd64\.snap$/i
     };
 
     // Re-apply the version into the i18n-managed labels. Runs on load and again

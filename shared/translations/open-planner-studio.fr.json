@@ -2,80 +2,107 @@
   "header": {
     "label": "Planification de chantier",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Planification de chantier open source avec diagrammes de Gantt, méthode du chemin critique et format de fichier IFC 4.3 natif. Conçu pour le secteur AEC.",
-    "downloadBtn": "Télécharger v2026.7.6",
+    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et le format natif IFC 4.3. Sur votre bureau et directement dans votre navigateur.",
+    "downloadBtn": "Télécharger v2026.7.11",
+    "demoBtn": "Ouvrir dans le navigateur",
     "sourceBtn": "Voir le code source"
   },
   "download": {
-    "title": "Télécharger v2026.7.6"
+    "title": "Télécharger v2026.7.11",
+    "browserNote": "Vous préférez ne rien installer ? Open Planner Studio fonctionne aussi <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">entièrement dans votre navigateur</a> — y compris l'ouverture et l'enregistrement de fichiers."
   },
   "features": {
     "heading": "Fonctionnalités",
     "gantt": {
       "title": "Diagrammes de Gantt",
-      "desc": "Diagrammes de Gantt interactifs rendus sur Canvas avec glisser-déposer, zoom et navigation chronologique."
+      "desc": "Gantt interactif en HTML5 Canvas avec glisser-déposer, zoom et navigation temporelle. Sélection par cadre pour saisir plusieurs tâches à la fois."
     },
     "cpm": {
-      "title": "Méthode du chemin critique",
-      "desc": "Calcul CPM automatique avec identification du chemin critique et analyse des marges."
+      "title": "Chemin critique (CPM)",
+      "desc": "Calcul automatique du chemin critique avec marge, travaux quasi critiques, chemins critiques multiples et analyse des échéances."
     },
     "wbs": {
-      "title": "Structure de décomposition du travail (WBS)",
-      "desc": "Structure de tâches hiérarchique avec chapitres pliables. Éditeur de tableau type Excel avec édition en ligne."
+      "title": "WBS et vue tableau",
+      "desc": "Structure de tâches hiérarchique avec chapitres repliables. Éditeur de tableau façon tableur avec édition dans la cellule."
     },
     "ifc": {
       "title": "IFC 4.3 natif",
-      "desc": "Enregistrez et ouvrez les fichiers de planification au format IFC 4.3 (standard buildingSMART). Éditeur de code IFC intégré avec génération et application."
+      "desc": "Votre planning <em>est</em> un fichier IFC (standard buildingSMART). Avec un éditeur de code IFC intégré pour générer et appliquer."
     },
     "resources": {
-      "title": "Gestion des ressources",
-      "desc": "Gérez main-d'œuvre, équipements et sous-traitants. Fonctionnalités spécifiques à la construction : congés, fermeture annuelle, points d'inspection et phasage."
+      "title": "Ressources et nivellement",
+      "desc": "Main-d'œuvre, matériel et sous-traitants avec histogramme et nivellement automatique des surcharges. Déplacez les affectations en conservant unités et courbe."
+    },
+    "baselines": {
+      "title": "Références et avancement",
+      "desc": "Enregistrez plusieurs références et saisissez l'avancement avec date d'état, début réel et une ligne d'avancement épurée."
+    },
+    "calendars": {
+      "title": "Calendriers et planification horaire",
+      "desc": "Calendriers propres au bâtiment : jours fériés, congés du bâtiment, intempéries, moments de contrôle et phasage. Planifiez à l'heure près."
+    },
+    "browser": {
+      "title": "Bureau et navigateur",
+      "desc": "Fonctionne nativement sur Windows, macOS et Linux, mais aussi entièrement dans le navigateur — ouverture, enregistrement, sauvegarde automatique et récupération après plantage inclus."
+    },
+    "exchange": {
+      "title": "Échange de données",
+      "desc": "Importez et exportez IFC, CSV, MS Project (.xml) et Primavera P6 (.xml) — sans étape intermédiaire ni outil de conversion."
     },
     "bim4d": {
-      "title": "Prêt pour le BIM 4D",
-      "desc": "Liez les tâches de planification aux éléments du modèle BIM IFC pour la visualisation de la séquence de construction 4D."
+      "title": "Prêt pour la 4D BIM",
+      "desc": "Reliez les tâches du planning aux éléments de votre maquette IFC pour visualiser la séquence de construction en 4D."
     },
     "reporting": {
-      "title": "Rapports",
-      "desc": "Aperçu d'impression en direct dans le ruban avec options de rapport configurables. Menu contextuel pour actions rapides sur les tâches."
+      "title": "Rapports et impression",
+      "desc": "Aperçu avant impression en direct dans le ruban avec options configurables, et export en véritable PDF haute résolution (env. 220 DPI)."
+    },
+    "docs": {
+      "title": "Manuel dans l'application",
+      "desc": "Appuyez sur F1 pour un manuel hors ligne : démarrage rapide, neuf guides pratiques et quinze pages de référence — plus trois projets d'exemple pour s'exercer."
+    },
+    "shortcuts": {
+      "title": "Raccourcis et menus contextuels",
+      "desc": "Vue d'ensemble complète via Ctrl+/ et menus clic droit riches sur la ligne de tâche, la barre de Gantt, le canevas et l'en-tête de bande. Notes par tâche avec liste à cocher."
     },
     "multilingual": {
-      "title": "Multilingue",
-      "desc": "Interface en 6 langues : Nederlands, English, Français, Deutsch, Español et 中文."
+      "title": "14 langues",
+      "desc": "Nederlands, English, Fran&ccedil;ais, Deutsch, Espa&ntilde;ol, Italiano, Portugu&ecirc;s, Polski, T&uuml;rk&ccedil;e, 中文, 日本語, 한국어 et prise en charge RTL pour العربية et فارسی."
     },
     "ribbon": {
-      "title": "Barre d'outils Ribbon",
-      "desc": "Ruban de style Microsoft Office avec onglets : Démarrage, Planification, Affichage, Paramètres, Tableau, IFC et Rapport."
+      "title": "Barre d'outils en ruban",
+      "desc": "Ruban familier de style Office avec onglets : Accueil, Planification, Affichage, Paramètres, Tableau, IFC et Rapport."
     }
   },
   "tech": {
-    "heading": "Stack technique",
+    "heading": "Technologie",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "Application de bureau native avec backend Rust."
+      "title": "Tauri 2",
+      "desc": "Application de bureau native avec backend Rust pour Windows, macOS et Linux."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Interface basée sur composants avec gestion d'état Zustand + Immer."
+      "title": "React 19 + TypeScript",
+      "desc": "Interface par composants avec Zustand + Immer pour la gestion d'état."
     },
     "canvas": {
       "title": "HTML5 Canvas 2D",
-      "desc": "Rendu des diagrammes de Gantt. Style TailwindCSS, build Vite 5."
+      "desc": "Rendu du Gantt. TailwindCSS 4 pour le style, Vite 7 comme build."
     }
   },
   "cta": {
     "demo": "Démo en ligne &rarr;",
+    "releases": "Toutes les versions &rarr;",
     "github": "GitHub &rarr;"
   },
   "footer": {
-    "slogan": "Construisez librement. Construisons ensemble."
+    "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "Nouveau dans v2026.6.0 · testeurs recherchés",
-    "title": "Planifiez la construction avec l’open BIM — et aidez-nous à tester",
-    "desc": "Cette version apporte l’<strong>IFC 4.3 natif</strong> (votre planning <em>est</em> un fichier IFC), un <strong>lien 4D</strong> vers votre modèle BIM, le <strong>chemin critique (CPM)</strong> automatique et un <strong>onglet de rapports</strong> étendu avec aperçu d’impression en direct — ainsi que des ressources propres au chantier comme les congés, les moments d’inspection et le phasage.",
-    "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent son évolution.",
-    "ctaDemo": "Essayer la démo en direct →",
+    "label": "Nouveau dans la v2026.7.11 · testeurs recherchés",
+    "title": "Désormais pleinement utilisable dans votre navigateur",
+    "desc": "La version web peut maintenant <strong>ouvrir et enregistrer des fichiers</strong>. Dans les navigateurs Chromium (Chrome, Edge, Brave, Opera, Vivaldi), vous enregistrez sur <strong>le même fichier</strong> avec Ctrl+S, exactement comme sur le bureau ; Firefox et Safari bénéficient d'un repli propre via le sélecteur de fichiers. La <strong>sauvegarde automatique et la récupération après plantage</strong> fonctionnent également dans le navigateur. En complément : un <strong>manuel complet dans l'application</strong> (F1), <strong>trois projets d'exemple</strong> allant d'une rénovation à un complexe d'appartements, et huit failles comblées où des données pouvaient être perdues à l'enregistrement.",
+    "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs de travaux, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent la suite.",
+    "ctaDemo": "Essayer la démo en ligne →",
     "ctaJoin": "Participer comme testeur"
   }
 }
