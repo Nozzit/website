@@ -2,6 +2,12 @@ name: Auto-assign issues to product owner
 on:
   issues:
     types: [opened]
+
+# Zonder dit blok krijgt GITHUB_TOKEN alleen leesrechten en geeft de
+# addAssignees-aanroep hieronder een 403.
+permissions:
+  issues: write
+
 jobs:
   assign:
     runs-on: ubuntu-latest
