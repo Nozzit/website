@@ -1,19 +1,27 @@
 {
   "repo": "open-planner-studio",
-  "generated": "2026-07-22T19:39:34.129Z",
-  "totalReleases": 15,
+  "generated": "2026-07-27T15:12:01.792Z",
+  "totalReleases": 16,
   "totalChanges": 182,
   "latestStable": {
-    "tag": "v2026.7.11",
-    "name": "Open Planner Studio v2026.7.11",
-    "date": "2026-07-20",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.11"
+    "tag": "v2026.7.12",
+    "name": "Open Planner Studio v2026.7.12",
+    "date": "2026-07-23",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.12"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "2026.7",
       "releases": [
+        {
+          "tag": "v2026.7.12",
+          "name": "Open Planner Studio v2026.7.12",
+          "date": "2026-07-23",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.12",
+          "changes": [],
+          "patchNum": 12
+        },
         {
           "tag": "v2026.7.11",
           "name": "Open Planner Studio v2026.7.11",
@@ -475,8 +483,8 @@
         "All new UI strings translated in **14 languages**."
       ],
       "firstDate": "2026-07-02",
-      "lastDate": "2026-07-20",
-      "releaseCount": 12,
+      "lastDate": "2026-07-23",
+      "releaseCount": 13,
       "changeCount": 175
     },
     {

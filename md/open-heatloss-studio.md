@@ -13,12 +13,12 @@
 ## Live stats
 
 - Stars: **2**
-- Commits: **676**
+- Commits: **692**
 - Forks: **1**
 - Open issues: **3**
 - Releases: **2**
-- Total downloads: **17**
-- Downloads by platform: Windows (17)
+- Total downloads: **19**
+- Downloads by platform: Windows (19)
 
 ## Key features
 
@@ -57,7 +57,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://www.open-aec.com/open-heatloss-studio/
 - Live demo: https://open-heatloss-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-heatloss-studio
-- Latest stable release: https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases
+- Latest stable release: https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/v0.1.1-pr13.alpha
 - Nightly builds: https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/nightly
 
 ## Direct downloads (most popular)

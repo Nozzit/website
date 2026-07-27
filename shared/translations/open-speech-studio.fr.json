@@ -2,9 +2,9 @@
   "header": {
     "label": "Écosystème OpenAEC",
     "title": "Open Speech <span class=\"accent\">Studio</span>",
-    "desc": "Reconnaissance vocale locale gratuite avec Whisper AI. Appuyez sur <strong style=\"color:white;\">CTRL+Win</strong> et dictez dans n'importe quelle application — chat, e-mail, terminal, IDE. Sans cloud, sans abonnement, sans limites. v0.10.1 stable, 1 installateur, prêt en 30 secondes.",
-    "badge": "v0.10.1 STABLE",
-    "meta": "v0.10.1 &middot; 80 commits &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
+    "desc": "Reconnaissance vocale locale gratuite avec Whisper AI. Appuyez sur <strong style=\"color:white;\">CTRL+Win</strong> et dictez dans n'importe quelle application — chat, e-mail, terminal, IDE. Sans cloud, sans abonnement, sans limites. v0.10.3 stable, 1 installateur, prêt en 30 secondes.",
+    "badge": "v0.10.3 STABLE",
+    "meta": "v0.10.3 &middot; 80 commits &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
     "cta": {
       "download": "Télécharger l'installateur (.exe)",
       "github": "Voir sur GitHub"
@@ -162,7 +162,7 @@
     "desc": "1 fichier d'installation (.exe), sans inscription, sans compte, sans carte bancaire. Prêt à dicter en &lt;1 minute. Fonctionne sur Windows 10 et Windows 11.",
     "download": "Télécharger l'installateur (.exe)",
     "github": "Voir le code source sur GitHub",
-    "meta": "v0.10.1 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; téléchargement ~40 Mo"
+    "meta": "v0.10.3 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; téléchargement ~40 Mo"
   },
   "cta": {
     "download": "Télécharger l'installateur",

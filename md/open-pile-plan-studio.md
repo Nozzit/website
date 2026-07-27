@@ -12,11 +12,11 @@
 
 ## Live stats
 
-- Stars: **0**
-- Commits: **110**
+- Stars: **2**
+- Commits: **134**
 - Forks: **0**
-- Open issues: **3**
-- Releases: **0**
+- Open issues: **9**
+- Releases: **1**
 - Total downloads: **0**
 
 ## Key features

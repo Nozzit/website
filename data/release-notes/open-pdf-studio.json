@@ -1,20 +1,114 @@
 {
   "repo": "open-pdf-studio",
-  "generated": "2026-07-17T05:57:53.734Z",
-  "totalReleases": 48,
-  "totalChanges": 319,
+  "generated": "2026-07-27T15:11:57.846Z",
+  "totalReleases": 50,
+  "totalChanges": 347,
   "latestStable": {
-    "tag": "v1.67.0",
-    "name": "Open PDF Studio v1.67.0",
-    "date": "2026-06-18",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.67.0"
+    "tag": "v1.82.0",
+    "name": "Open PDF Studio v1.82.0",
+    "date": "2026-07-23",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.82.0"
   },
   "nightly": {
     "tag": "nightly",
-    "date": "2026-07-17",
+    "date": "2026-07-27",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly"
   },
   "groups": [
+    {
+      "minorVersion": "1.82",
+      "releases": [
+        {
+          "tag": "v1.82.0",
+          "name": "Open PDF Studio v1.82.0",
+          "date": "2026-07-23",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.82.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-07-23",
+      "lastDate": "2026-07-23",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
+      "minorVersion": "1.80",
+      "releases": [
+        {
+          "tag": "v1.80.0",
+          "name": "Open PDF Studio v1.80.0",
+          "date": "2026-07-20",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.80.0",
+          "changes": [
+            "**Meerdere PDF's tegelijk openen**: multi-selectie in het Openen-venster; elk bestand opent in een eigen tab (ook via Ctrl+O)",
+            "**Review-statussen uit andere PDF-software**: statussen als \"Afgerond\"/\"Geaccepteerd\" verschijnen nu op de juiste annotatie (met auteur en datum) in plaats van als losse notities, en blijven bij opslaan behouden voor andere programma's",
+            "**Tekstvak-rotatie op gedraaide pagina's definitief opgelost**: tekstvakken en callouts worden correct weggeschreven én weergegeven op pagina's met een kwartslag rotatie; eerder beschadigde bestanden herstellen zichzelf bij openen en opslaan",
+            "**Draaiknoppen op tabblad Beeld**: pagina linksom/rechtsom draaien direct vanuit de kijkweergave (undo-baar)",
+            "**Grote reeks editor-verbeteringen**: betrouwbaarder ongedaan maken/opnieuw, lijnselectie en klembordacties, PDF-tekstbewerking (positionering, lettertypen, opmaak, Ctrl+A), meetschaal-dialogen en eigenschappen-paneel",
+            "**Miniaturen**: lege paginaminiaturen bij bepaalde exports opgelost",
+            "**Donkere modus**: \"Wat is nieuw\"-venster volledig leesbaar (issue #310)",
+            "PDF's bekijken en navigeren",
+            "Tekst selecteren en zoeken",
+            "Annotaties: markeren, onderstrepen, doorhalen",
+            "Tekengereedschappen: vrije hand, vormen, tekst",
+            "Meerdere documenten in tabbladen",
+            "Miniatuurnavigatie",
+            "Sessieherstel",
+            "**Open multiple PDFs at once**: multi-select in the Open dialog; each file opens in its own tab (also via Ctrl+O)",
+            "**Review statuses from other PDF software**: statuses like \"Completed\"/\"Accepted\" now appear on the correct annotation (with author and date) instead of as loose notes, and are preserved on save for other applications",
+            "**Text box rotation on rotated pages fixed for good**: text boxes and callouts are written and displayed correctly on rotated pages; previously damaged files self-heal on open and save",
+            "**Rotate buttons on the View tab**: rotate pages left/right directly from the viewing context (undoable)",
+            "**Large batch of editor improvements**: more reliable undo/redo, line selection and clipboard actions, PDF text editing (positioning, fonts, formatting, Ctrl+A), measurement scale dialogs and properties panel",
+            "**Thumbnails**: fixed blank page thumbnails for certain exports",
+            "**Dark mode**: \"What's new\" dialog fully readable (issue #310)",
+            "PDF viewing and navigation",
+            "Text selection and search",
+            "Annotations: highlight, underline, strikethrough",
+            "Drawing tools: freehand, shapes, text",
+            "Multi-tab document support",
+            "Thumbnail navigation",
+            "Session restore"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**Meerdere PDF's tegelijk openen**: multi-selectie in het Openen-venster; elk bestand opent in een eigen tab (ook via Ctrl+O)",
+        "**Review-statussen uit andere PDF-software**: statussen als \"Afgerond\"/\"Geaccepteerd\" verschijnen nu op de juiste annotatie (met auteur en datum) in plaats van als losse notities, en blijven bij opslaan behouden voor andere programma's",
+        "**Tekstvak-rotatie op gedraaide pagina's definitief opgelost**: tekstvakken en callouts worden correct weggeschreven én weergegeven op pagina's met een kwartslag rotatie; eerder beschadigde bestanden herstellen zichzelf bij openen en opslaan",
+        "**Draaiknoppen op tabblad Beeld**: pagina linksom/rechtsom draaien direct vanuit de kijkweergave (undo-baar)",
+        "**Grote reeks editor-verbeteringen**: betrouwbaarder ongedaan maken/opnieuw, lijnselectie en klembordacties, PDF-tekstbewerking (positionering, lettertypen, opmaak, Ctrl+A), meetschaal-dialogen en eigenschappen-paneel",
+        "**Miniaturen**: lege paginaminiaturen bij bepaalde exports opgelost",
+        "**Donkere modus**: \"Wat is nieuw\"-venster volledig leesbaar (issue #310)",
+        "PDF's bekijken en navigeren",
+        "Tekst selecteren en zoeken",
+        "Annotaties: markeren, onderstrepen, doorhalen",
+        "Tekengereedschappen: vrije hand, vormen, tekst",
+        "Meerdere documenten in tabbladen",
+        "Miniatuurnavigatie",
+        "Sessieherstel",
+        "**Open multiple PDFs at once**: multi-select in the Open dialog; each file opens in its own tab (also via Ctrl+O)",
+        "**Review statuses from other PDF software**: statuses like \"Completed\"/\"Accepted\" now appear on the correct annotation (with author and date) instead of as loose notes, and are preserved on save for other applications",
+        "**Text box rotation on rotated pages fixed for good**: text boxes and callouts are written and displayed correctly on rotated pages; previously damaged files self-heal on open and save",
+        "**Rotate buttons on the View tab**: rotate pages left/right directly from the viewing context (undoable)",
+        "**Large batch of editor improvements**: more reliable undo/redo, line selection and clipboard actions, PDF text editing (positioning, fonts, formatting, Ctrl+A), measurement scale dialogs and properties panel",
+        "**Thumbnails**: fixed blank page thumbnails for certain exports",
+        "**Dark mode**: \"What's new\" dialog fully readable (issue #310)",
+        "PDF viewing and navigation",
+        "Text selection and search",
+        "Annotations: highlight, underline, strikethrough",
+        "Drawing tools: freehand, shapes, text",
+        "Multi-tab document support",
+        "Thumbnail navigation",
+        "Session restore"
+      ],
+      "firstDate": "2026-07-20",
+      "lastDate": "2026-07-20",
+      "releaseCount": 1,
+      "changeCount": 28
+    },
     {
       "minorVersion": "1.67",
       "releases": [

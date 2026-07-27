@@ -1,9 +1,41 @@
 {
   "repo": "open-energy-studio",
-  "generated": "2026-07-17T05:57:56.265Z",
-  "totalReleases": 0,
+  "generated": "2026-07-27T15:12:00.908Z",
+  "totalReleases": 2,
   "totalChanges": 0,
-  "latestStable": null,
+  "latestStable": {
+    "tag": "v0.1.6-alpha",
+    "name": "v0.1.6-alpha",
+    "date": "2026-03-31",
+    "url": "https://github.com/OpenAEC-Foundation/open-energy-studio/releases/tag/v0.1.6-alpha"
+  },
   "nightly": null,
-  "groups": []
+  "groups": [
+    {
+      "minorVersion": "0.1",
+      "releases": [
+        {
+          "tag": "v0.1.6-alpha",
+          "name": "v0.1.6-alpha",
+          "date": "2026-03-31",
+          "url": "https://github.com/OpenAEC-Foundation/open-energy-studio/releases/tag/v0.1.6-alpha",
+          "changes": [],
+          "patchNum": 6
+        },
+        {
+          "tag": "v0.1.5-alpha",
+          "name": "v0.1.5-alpha",
+          "date": "2026-03-31",
+          "url": "https://github.com/OpenAEC-Foundation/open-energy-studio/releases/tag/v0.1.5-alpha",
+          "changes": [],
+          "patchNum": 5
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-03-31",
+      "lastDate": "2026-03-31",
+      "releaseCount": 2,
+      "changeCount": 0
+    }
+  ]
 }

@@ -1,9 +1,106 @@
 {
   "repo": "open-heatloss-studio",
-  "generated": "2026-07-17T05:57:58.465Z",
-  "totalReleases": 0,
-  "totalChanges": 0,
-  "latestStable": null,
+  "generated": "2026-07-27T15:12:03.205Z",
+  "totalReleases": 2,
+  "totalChanges": 31,
+  "latestStable": {
+    "tag": "v0.1.1-pr13.alpha",
+    "name": "v0.1.1-pr13.alpha — PR #13 testing build",
+    "date": "2026-05-15",
+    "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/v0.1.1-pr13.alpha"
+  },
   "nightly": null,
-  "groups": []
+  "groups": [
+    {
+      "minorVersion": "0.1",
+      "releases": [
+        {
+          "tag": "v0.1.1-pr13.alpha",
+          "name": "v0.1.1-pr13.alpha — PR #13 testing build",
+          "date": "2026-05-15",
+          "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/v0.1.1-pr13.alpha",
+          "changes": [
+            "**gen_pdf CLI**: \\`gen_pdf.exe\\` (stand-alone PDF-generator voor batch-jobs)",
+            "**Smoke-test PDF**: \\`portiekwoning-smoke.pdf\\` (rapport van portiekwoning fixture)",
+            "**Rapport-overhaul**: TOC two-pass (100% exacte paginanummers), opmaak modal V2 (header + footer image + marges + accent), vertrekken als sub-chapters, constructies overzicht-tabel, doorsnede in materiaal-kleuren, TO-juli sectie",
+            "**Tabbed views**: multi-document workflow met undo/redo per tab, snapshot-based state-management",
+            "**OpenAEC branding**: nieuw wireframe-logo, ribbon hernoemd, button-icons in pyRevit",
+            "**UX-tweaks**: Backstage links-only layout, sub-items always-open, Save altijd silent (fallback naar Documents-folder), Vabi UI bevroren",
+            "**Feedback flow**: pre-filled GitHub Issue i.p.v. externe API",
+            "**PyRevit**: ontbrekende \\`ui_template.py\\` shared lib geleverd, \\`clean_engine: true\\` voor hot-reload",
+            "Vabi importer UI is bevroren (label \"in ontwikkeling\") — Rust keten werkt maar UX nog niet betrouwbaar",
+            "Lettertype-keuze in rapport-opmaak is V3 (vereist extra TTF files)"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.1.0-alpha.1",
+          "name": "v0.1.0-alpha.1 — first public testing build",
+          "date": "2026-05-11",
+          "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/tag/v0.1.0-alpha.1",
+          "changes": [
+            "Volledige ISSO 51:2023 implementatie in pure Rust (transmissie / ventilatie / infiltratie / opwarmtoeslag / systeemverliezen / water-boundary fix)",
+            "3 referentie-fixtures: portiekwoning · DR Engineering · Vabi vrijstaande woning",
+            "Office-stijl Ribbon: Bestand · Vertrekken · Constructies · Modeller ❄️ · IFC · Resultaten · Rapport",
+            "Native Windows save-dialog voor `.ifcenergy`",
+            "DevTools enabled (F12) voor debug",
+            "Native Rust PDF engine via `openaec-layout` submodule (printpdf/lopdf)",
+            "Liberation Sans embedded (OFL 1.1)",
+            "Voorbladafbeelding upload (PNG/JPEG) via Projectgegevens",
+            "**Invoer per vertrek** — Algemeen + Constructie-elementen tabellen vóór de reken-resultaten",
+            "**Constructie-opbouw & Rc-waarden** sectie — per opbouw Laagopbouw + R/U-resultaten + ISO 6946 §6.7.2 ratio-check",
+            "Rich backcover met projectmeta + GitHub URL + MIT",
+            "`gen_pdf` CLI binary om PDF te genereren zonder UI",
+            "`.ifcenergy` (IFCX / IFC5 alpha) als default save-formaat met `isso51::envelope::v1` payload",
+            "Legacy `.isso51.json` read-only ondersteund",
+            "IFC4X3 STEP + IFCX JSON viewer in IFC-tab",
+            "MCP server voor Claude Desktop / Code (tools: calculate · calculate_file · generate_pdf · parse_ifcenergy · get_schema · list_constructions)",
+            "REST API documentatie",
+            "Nieuwe thematische icon (huis met opstijgende warmtegolven, OHS-teal + amber gradient) — vervangt de I51 placeholder",
+            "Modeller is read-only (editable mode komt op `claude/modeller-2d3d-viewer`)",
+            "IFC-import via sidecar werkt pas na lokaal bouwen van `tools/ifc-tool/` (Python + PyInstaller)",
+            "Niet code-signed → SmartScreen waarschuwing"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**gen_pdf CLI**: \\`gen_pdf.exe\\` (stand-alone PDF-generator voor batch-jobs)",
+        "**Smoke-test PDF**: \\`portiekwoning-smoke.pdf\\` (rapport van portiekwoning fixture)",
+        "**Rapport-overhaul**: TOC two-pass (100% exacte paginanummers), opmaak modal V2 (header + footer image + marges + accent), vertrekken als sub-chapters, constructies overzicht-tabel, doorsnede in materiaal-kleuren, TO-juli sectie",
+        "**Tabbed views**: multi-document workflow met undo/redo per tab, snapshot-based state-management",
+        "**OpenAEC branding**: nieuw wireframe-logo, ribbon hernoemd, button-icons in pyRevit",
+        "**UX-tweaks**: Backstage links-only layout, sub-items always-open, Save altijd silent (fallback naar Documents-folder), Vabi UI bevroren",
+        "**Feedback flow**: pre-filled GitHub Issue i.p.v. externe API",
+        "**PyRevit**: ontbrekende \\`ui_template.py\\` shared lib geleverd, \\`clean_engine: true\\` voor hot-reload",
+        "Vabi importer UI is bevroren (label \"in ontwikkeling\") — Rust keten werkt maar UX nog niet betrouwbaar",
+        "Lettertype-keuze in rapport-opmaak is V3 (vereist extra TTF files)",
+        "Volledige ISSO 51:2023 implementatie in pure Rust (transmissie / ventilatie / infiltratie / opwarmtoeslag / systeemverliezen / water-boundary fix)",
+        "3 referentie-fixtures: portiekwoning · DR Engineering · Vabi vrijstaande woning",
+        "Office-stijl Ribbon: Bestand · Vertrekken · Constructies · Modeller ❄️ · IFC · Resultaten · Rapport",
+        "Native Windows save-dialog voor `.ifcenergy`",
+        "DevTools enabled (F12) voor debug",
+        "Native Rust PDF engine via `openaec-layout` submodule (printpdf/lopdf)",
+        "Liberation Sans embedded (OFL 1.1)",
+        "Voorbladafbeelding upload (PNG/JPEG) via Projectgegevens",
+        "**Invoer per vertrek** — Algemeen + Constructie-elementen tabellen vóór de reken-resultaten",
+        "**Constructie-opbouw & Rc-waarden** sectie — per opbouw Laagopbouw + R/U-resultaten + ISO 6946 §6.7.2 ratio-check",
+        "Rich backcover met projectmeta + GitHub URL + MIT",
+        "`gen_pdf` CLI binary om PDF te genereren zonder UI",
+        "`.ifcenergy` (IFCX / IFC5 alpha) als default save-formaat met `isso51::envelope::v1` payload",
+        "Legacy `.isso51.json` read-only ondersteund",
+        "IFC4X3 STEP + IFCX JSON viewer in IFC-tab",
+        "MCP server voor Claude Desktop / Code (tools: calculate · calculate_file · generate_pdf · parse_ifcenergy · get_schema · list_constructions)",
+        "REST API documentatie",
+        "Nieuwe thematische icon (huis met opstijgende warmtegolven, OHS-teal + amber gradient) — vervangt de I51 placeholder",
+        "Modeller is read-only (editable mode komt op `claude/modeller-2d3d-viewer`)",
+        "IFC-import via sidecar werkt pas na lokaal bouwen van `tools/ifc-tool/` (Python + PyInstaller)",
+        "Niet code-signed → SmartScreen waarschuwing"
+      ],
+      "firstDate": "2026-05-11",
+      "lastDate": "2026-05-15",
+      "releaseCount": 2,
+      "changeCount": 31
+    }
+  ]
 }

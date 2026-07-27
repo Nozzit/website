@@ -2,18 +2,18 @@
 
 > Machine-readable Markdown mirrors of the OpenAEC product pages. Use these when feeding the OpenAEC catalog to AI assistants (Claude, Continue, Cursor, etc).
 
-Generated: 2026-07-17T05:58:18.107Z
+Generated: 2026-07-27T15:12:26.682Z
 
-**Foundation totals:** 60 public repos · 713 stars · 7244 commits · 50 contributors.
+**Foundation totals:** 62 public repos · 766 stars · 367667 commits · 410 contributors.
 
-**Total downloads across tools:** 11,315 (19 repos).
+**Total downloads across tools:** 12,865 (19 repos).
 
 ## Beta
 
-- [Open PDF Studio](./open-pdf-studio.md) — Open-source PDF editor and annotator with a custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms. Vector PDF rendering optimized for CAD drawings. (`untagged-7c498dd034e1f778cb30`)
+- [Open PDF Studio](./open-pdf-studio.md) — Open-source PDF editor and annotator with a custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms. Vector PDF rendering optimized for CAD drawings. (`untagged-fc4a0ecb8d660bafa52e`)
 - [Open 2D Studio](./open-2d-studio.md) — 2D CAD application with drawing tools, DXF import/export, layers and dimensions. (`v0.35.0`)
 - [Open Calc Studio](./open-calc-studio.md) — Cost estimation and budgeting for buildings, civil infrastructure and GWW projects. STABU/RAW support, IFCX integration, MCP server for AI control. (`v0.9.0`)
-- [Pile Plan Studio](./open-pile-plan-studio.md) — Interactive pile planning with load points, CPT selection, pile options, utilization, estimated costs and IFCPP project files. (`n/a`)
+- [Pile Plan Studio](./open-pile-plan-studio.md) — Interactive pile planning with load points, CPT selection, pile options, utilization, estimated costs and IFCPP project files. (`v0.1.3-alpha`)
 - [Open Pointcloud Studio](./open-pointcloud-studio.md) — Point cloud viewer for LAS / LAZ with RGB, elevation and classification rendering. EDL and octree LoD for large datasets. (`v0.3.0`)
 - [Open Speech Studio](./open-speech-studio.md) — Local speech-to-text using Whisper AI. CTRL+Win shortcut for OS-wide dictation. Privacy-first, no cloud. (`v0.10.2`)
 - [Monty IFC Viewer](./monty-ifc-viewer.md) — Lightweight IFC viewer for quick BIM model inspection. (`v1.0.1`)
@@ -21,7 +21,7 @@ Generated: 2026-07-17T05:58:18.107Z
 ## Alpha
 
 - [Open Energy Studio](./open-energy-studio.md) — Building energy analysis and performance for the Dutch NTA 8800 / BENG framework. (`n/a`)
-- [Open Planner Studio](./open-planner-studio.md) — Project planning and Gantt for building, infrastructure and civil works. (`v2026.7.10`)
+- [Open Planner Studio](./open-planner-studio.md) — Project planning and Gantt for building, infrastructure and civil works. (`v2026.7.12`)
 - [Open Heatloss Studio](./open-heatloss-studio.md) — Heat loss calculations for buildings per NEN 12831 and ISSO 51:2023. Rust calculation engine, IFCX integration, PDF reports. (`v0.1.1-pr13.alpha`)
 - [Open Field Studio](./open-field-studio.md) — Site inspection and quality control. Defect pinning on floorplans, NEN 2767 checklists, offline-first. (`v0.1.3`)
 - [Open Frame Studio](./open-frame-studio.md) — 2D structural frame analysis for beams, columns, portal frames and civil load-bearing systems. (`v0.1.0`)

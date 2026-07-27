@@ -1,68 +1,68 @@
 {
-  "generated": "2026-07-17T05:58:18.107Z",
-  "grandTotal": 11315,
+  "generated": "2026-07-27T15:12:26.682Z",
+  "grandTotal": 12865,
   "totalRepos": 19,
   "platformTotals": {
-    "Android": 1178,
-    "Linux (AppImage)": 1060,
-    "Archive": 205,
-    "Linux (deb)": 1021,
-    "macOS": 1016,
-    "Windows": 6372,
-    "Linux (snap)": 138,
-    "Linux (rpm)": 132,
-    "Windows (MSI)": 193,
+    "Linux (AppImage)": 1208,
+    "Archive": 232,
+    "Linux (deb)": 1173,
+    "macOS": 1111,
+    "Windows": 7173,
+    "Android": 1467,
+    "Linux (snap)": 146,
+    "Linux (rpm)": 143,
+    "Windows (MSI)": 212,
     "Other": 0
   },
   "rankedByDownloads": [
     {
       "repo": "open-pdf-studio",
-      "downloads": 9236,
-      "releases": 55
+      "downloads": 10508,
+      "releases": 60
     },
     {
       "repo": "open-2d-studio",
-      "downloads": 1140,
+      "downloads": 1283,
       "releases": 25
     },
     {
       "repo": "open-planner-studio",
-      "downloads": 224,
-      "releases": 14
+      "downloads": 278,
+      "releases": 16
     },
     {
       "repo": "open-calc-studio",
-      "downloads": 201,
+      "downloads": 221,
       "releases": 21
     },
     {
       "repo": "monty-ifc-viewer",
-      "downloads": 92,
+      "downloads": 104,
       "releases": 2
     },
     {
       "repo": "open-pointcloud-studio",
-      "downloads": 75,
+      "downloads": 85,
       "releases": 2
     },
     {
       "repo": "open-geotechniek-studio",
-      "downloads": 74,
+      "downloads": 85,
       "releases": 6
     },
     {
       "repo": "open-speech-studio",
-      "downloads": 70,
+      "downloads": 81,
       "releases": 7
     },
     {
       "repo": "Open-Calculations-Studio",
-      "downloads": 70,
+      "downloads": 81,
       "releases": 11
     },
     {
       "repo": "open-frame-studio",
-      "downloads": 50,
+      "downloads": 54,
       "releases": 9
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "repo": "open-heatloss-studio",
-      "downloads": 17,
+      "downloads": 19,
       "releases": 2
     },
     {
@@ -88,7 +88,7 @@
     {
       "repo": "pile-plan-studio",
       "downloads": 0,
-      "releases": 0
+      "releases": 1
     },
     {
       "repo": "OpenAEC-BIM-validator",
@@ -114,39 +114,43 @@
   "perTool": [
     {
       "repo": "open-pdf-studio",
-      "totalDownloads": 9236,
-      "totalAssets": 476,
-      "releases": 55,
+      "totalDownloads": 10508,
+      "totalAssets": 522,
+      "releases": 60,
       "byPlatform": {
-        "Android": 1067,
-        "Linux (AppImage)": 838,
-        "Archive": 134,
-        "Linux (deb)": 760,
-        "macOS": 928,
-        "Windows": 5310,
-        "Linux (snap)": 128,
-        "Linux (rpm)": 39,
-        "Windows (MSI)": 32
+        "Linux (AppImage)": 945,
+        "Archive": 149,
+        "Linux (deb)": 885,
+        "macOS": 1015,
+        "Windows": 5963,
+        "Android": 1345,
+        "Linux (snap)": 131,
+        "Linux (rpm)": 41,
+        "Windows (MSI)": 34
       },
       "byVersion": {
+        "untagged-fc4a0ecb8d660bafa52e": 0,
+        "v1.79.0": 335,
         "untagged-7c498dd034e1f778cb30": 0,
         "v1.70.0": 16,
         "v1.69.0": 0,
         "v1.47.3": 1,
-        "v1.67.0": 2393,
-        "v1.62.0": 90,
-        "v1.47.13": 2873,
-        "v1.47.12": 93,
-        "v1.47.11": 26,
-        "v1.47.10": 26,
-        "v1.47.9": 39,
-        "v1.47.8": 23,
-        "v1.47.5": 114,
-        "v1.47.4": 56,
-        "v1.45.0": 1340,
-        "v1.43.0": 685,
-        "v1.41.0": 53,
-        "v1.40.0": 226,
+        "v1.82.0": 191,
+        "v1.80.0": 377,
+        "v1.67.0": 2674,
+        "v1.62.0": 103,
+        "v1.47.13": 2884,
+        "v1.47.12": 94,
+        "v1.47.11": 28,
+        "v1.47.10": 29,
+        "v1.47.9": 43,
+        "v1.47.8": 30,
+        "v1.47.5": 116,
+        "v1.47.4": 62,
+        "v1.45.0": 1343,
+        "v1.43.0": 688,
+        "v1.41.0": 56,
+        "v1.40.0": 228,
         "v1.37.0": 93,
         "v1.36.0": 10,
         "v1.35.0": 163,
@@ -172,13 +176,13 @@
         "v1.8.0": 4,
         "v1.7.0": 2,
         "v1.6.0": 14,
-        "v1.5.0": 20,
-        "v1.4.0": 13,
-        "v1.3.0": 29,
-        "v1.2.0": 22,
-        "v1.0.3-tauri": 13,
-        "v1.0.3": 10,
-        "v1.0.2": 9,
+        "v1.5.0": 22,
+        "v1.4.0": 15,
+        "v1.3.0": 31,
+        "v1.2.0": 25,
+        "v1.0.3-tauri": 14,
+        "v1.0.3": 11,
+        "v1.0.2": 10,
         "v1.0.0": 8
       },
       "topAssets": [
@@ -186,7 +190,7 @@
           "tag": "v1.67.0",
           "name": "Open.PDF.Studio_1.67.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 1375,
+          "downloads": 1531,
           "sizeMB": 84.1,
           "date": "2026-06-18",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_x64-setup.exe"
@@ -195,7 +199,7 @@
           "tag": "v1.47.13",
           "name": "Open.PDF.Studio_1.47.13_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 1246,
+          "downloads": 1247,
           "sizeMB": 13.7,
           "date": "2026-05-07",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.13/Open.PDF.Studio_1.47.13_x64-setup.exe"
@@ -204,7 +208,7 @@
           "tag": "v1.47.13",
           "name": "open-pdf-studio-release.apk",
           "platform": "Android",
-          "downloads": 627,
+          "downloads": 632,
           "sizeMB": 30.3,
           "date": "2026-05-07",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.13/open-pdf-studio-release.apk"
@@ -229,12 +233,39 @@
         },
         {
           "tag": "v1.67.0",
+          "name": "Open.PDF.Studio_1.67.0_universal.dmg",
+          "platform": "macOS",
+          "downloads": 277,
+          "sizeMB": 41.9,
+          "date": "2026-06-18",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_universal.dmg"
+        },
+        {
+          "tag": "v1.67.0",
+          "name": "Open.PDF.Studio_1.67.0_amd64.AppImage",
+          "platform": "Linux (AppImage)",
+          "downloads": 266,
+          "sizeMB": 96.6,
+          "date": "2026-06-18",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_amd64.AppImage"
+        },
+        {
+          "tag": "v1.67.0",
           "name": "Open.PDF.Studio_1.67.0_x64_user-setup.exe",
           "platform": "Windows",
-          "downloads": 255,
+          "downloads": 263,
           "sizeMB": 19.1,
           "date": "2026-06-18",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_x64_user-setup.exe"
+        },
+        {
+          "tag": "v1.67.0",
+          "name": "Open.PDF.Studio_1.67.0_amd64.deb",
+          "platform": "Linux (deb)",
+          "downloads": 257,
+          "sizeMB": 24.4,
+          "date": "2026-06-18",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_amd64.deb"
         },
         {
           "tag": "v1.45.0",
@@ -244,85 +275,58 @@
           "sizeMB": 30.2,
           "date": "2026-04-23",
           "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.45.0/open-pdf-studio-release.apk"
-        },
-        {
-          "tag": "v1.67.0",
-          "name": "Open.PDF.Studio_1.67.0_amd64.AppImage",
-          "platform": "Linux (AppImage)",
-          "downloads": 243,
-          "sizeMB": 96.6,
-          "date": "2026-06-18",
-          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_amd64.AppImage"
-        },
-        {
-          "tag": "v1.47.13",
-          "name": "Open.PDF.Studio_1.47.13_universal.dmg",
-          "platform": "macOS",
-          "downloads": 239,
-          "sizeMB": 33.7,
-          "date": "2026-05-07",
-          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.13/Open.PDF.Studio_1.47.13_universal.dmg"
-        },
-        {
-          "tag": "v1.67.0",
-          "name": "Open.PDF.Studio_1.67.0_amd64.deb",
-          "platform": "Linux (deb)",
-          "downloads": 228,
-          "sizeMB": 24.4,
-          "date": "2026-06-18",
-          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_amd64.deb"
         }
       ]
     },
     {
       "repo": "open-2d-studio",
-      "totalDownloads": 1140,
+      "totalDownloads": 1283,
       "totalAssets": 200,
       "releases": 25,
       "byPlatform": {
-        "Android": 88,
-        "Linux (snap)": 9,
-        "Linux (rpm)": 74,
-        "macOS": 45,
-        "Linux (AppImage)": 161,
-        "Archive": 61,
-        "Linux (deb)": 149,
-        "Windows": 431,
-        "Windows (MSI)": 122
+        "Android": 99,
+        "Linux (snap)": 13,
+        "Linux (rpm)": 83,
+        "macOS": 51,
+        "Linux (AppImage)": 193,
+        "Archive": 72,
+        "Linux (deb)": 166,
+        "Windows": 472,
+        "Windows (MSI)": 134
       },
       "byVersion": {
-        "v0.35.0": 455,
-        "v0.33.0": 24,
-        "v0.32.0": 32,
-        "v0.31.0": 214,
-        "v0.30.0": 22,
-        "v0.29.0": 28,
-        "v0.27.0": 32,
-        "v0.24.0": 28,
-        "v0.22.0": 52,
-        "v0.20.0": 27,
-        "v0.19.0": 16,
+        "v0.35.0": 541,
+        "v0.33.0": 29,
+        "v0.32.0": 34,
+        "v0.31.0": 216,
+        "v0.30.0": 27,
+        "v0.29.0": 34,
+        "v0.27.0": 37,
+        "v0.24.0": 32,
+        "v0.22.0": 53,
+        "v0.20.0": 30,
+        "v0.19.0": 17,
         "v0.17.0": 27,
-        "v0.15.0": 14,
-        "v0.13.0": 9,
-        "v0.11.0": 14,
-        "v0.9.0": 12,
-        "v0.8.0": 16,
-        "v0.7.0": 14,
-        "v0.6.0": 13,
-        "v0.5.0": 15,
-        "v0.4.0": 10,
-        "v0.3.0": 9,
-        "v0.2.0": 28,
+        "v0.15.0": 17,
+        "v0.13.0": 11,
+        "v0.11.0": 15,
+        "v0.9.0": 14,
+        "v0.8.0": 18,
+        "v0.7.0": 15,
+        "v0.6.0": 16,
+        "v0.5.0": 17,
+        "v0.4.0": 11,
+        "v0.3.0": 12,
+        "v0.2.0": 29,
         "v0.1.1": 15,
-        "v0.1.0": 14
+        "v0.1.0": 16
       },
       "topAssets": [
         {
           "tag": "v0.35.0",
           "name": "Open.2D.Studio_0.35.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 169,
+          "downloads": 203,
           "sizeMB": 4,
           "date": "2026-03-26",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_x64-setup.exe"
@@ -340,7 +344,7 @@
           "tag": "v0.35.0",
           "name": "Open.2D.Studio_0.35.0_amd64.AppImage",
           "platform": "Linux (AppImage)",
-          "downloads": 78,
+          "downloads": 99,
           "sizeMB": 79.2,
           "date": "2026-03-26",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_amd64.AppImage"
@@ -349,7 +353,7 @@
           "tag": "v0.35.0",
           "name": "open-2d-studio-android.apk",
           "platform": "Android",
-          "downloads": 65,
+          "downloads": 74,
           "sizeMB": 54.3,
           "date": "2026-03-26",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/open-2d-studio-android.apk"
@@ -358,7 +362,7 @@
           "tag": "v0.35.0",
           "name": "Open.2D.Studio_0.35.0_amd64.deb",
           "platform": "Linux (deb)",
-          "downloads": 62,
+          "downloads": 72,
           "sizeMB": 5.3,
           "date": "2026-03-26",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_amd64.deb"
@@ -367,10 +371,19 @@
           "tag": "v0.35.0",
           "name": "Open.2D.Studio_0.35.0_x64_en-US.msi",
           "platform": "Windows (MSI)",
-          "downloads": 35,
+          "downloads": 39,
           "sizeMB": 5.2,
           "date": "2026-03-26",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_x64_en-US.msi"
+        },
+        {
+          "tag": "v0.35.0",
+          "name": "Open.2D.Studio_0.35.0_aarch64.dmg",
+          "platform": "macOS",
+          "downloads": 27,
+          "sizeMB": 4.9,
+          "date": "2026-03-26",
+          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_aarch64.dmg"
         },
         {
           "tag": "v0.31.0",
@@ -380,15 +393,6 @@
           "sizeMB": 5.6,
           "date": "2026-03-02",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_x64_en-US.msi"
-        },
-        {
-          "tag": "v0.35.0",
-          "name": "Open.2D.Studio_0.35.0_aarch64.dmg",
-          "platform": "macOS",
-          "downloads": 22,
-          "sizeMB": 4.9,
-          "date": "2026-03-26",
-          "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.35.0/Open.2D.Studio_0.35.0_aarch64.dmg"
         },
         {
           "tag": "v0.31.0",
@@ -403,7 +407,7 @@
           "tag": "v0.31.0",
           "name": "Open.2D.Studio_0.31.0_amd64.AppImage",
           "platform": "Linux (AppImage)",
-          "downloads": 17,
+          "downloads": 18,
           "sizeMB": 79.5,
           "date": "2026-03-02",
           "url": "https://github.com/OpenAEC-Foundation/open-2d-studio/releases/download/v0.31.0/Open.2D.Studio_0.31.0_amd64.AppImage"
@@ -412,25 +416,25 @@
     },
     {
       "repo": "open-calc-studio",
-      "totalDownloads": 201,
+      "totalDownloads": 221,
       "totalAssets": 61,
       "releases": 21,
       "byPlatform": {
         "Linux (rpm)": 9,
         "macOS": 21,
-        "Linux (deb)": 14,
-        "Windows": 145,
-        "Windows (MSI)": 12
+        "Linux (deb)": 15,
+        "Windows": 161,
+        "Windows (MSI)": 15
       },
       "byVersion": {
         "v0.9.0": 0,
         "v0.8.0": 0,
-        "v0.10.0": 2,
+        "v0.10.0": 19,
         "v0.8.8": 13,
         "v0.8.7": 19,
-        "v0.8.6": 14,
+        "v0.8.6": 16,
         "v0.8.5": 0,
-        "v0.8.2": 31,
+        "v0.8.2": 32,
         "v0.8.1": 1,
         "v0.7.4": 9,
         "v0.7.8": 33,
@@ -465,6 +469,24 @@
           "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.7.8/Open.Calc.Studio_0.7.8_x64-setup.exe"
         },
         {
+          "tag": "v0.10.0",
+          "name": "Open.Calc.Studio_0.10.0_x64-setup.exe",
+          "platform": "Windows",
+          "downloads": 16,
+          "sizeMB": 22.7,
+          "date": "2026-07-16",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.10.0/Open.Calc.Studio_0.10.0_x64-setup.exe"
+        },
+        {
+          "tag": "v0.8.6",
+          "name": "Open.Calc.Studio_0.8.6_x64-setup.exe",
+          "platform": "Windows",
+          "downloads": 12,
+          "sizeMB": 22.2,
+          "date": "2026-07-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.6/Open.Calc.Studio_0.8.6_x64-setup.exe"
+        },
+        {
           "tag": "v0.8.8",
           "name": "Open.Calc.Studio_0.8.8_x64-setup.exe",
           "platform": "Windows",
@@ -472,15 +494,6 @@
           "sizeMB": 22.3,
           "date": "2026-07-13",
           "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.8/Open.Calc.Studio_0.8.8_x64-setup.exe"
-        },
-        {
-          "tag": "v0.8.6",
-          "name": "Open.Calc.Studio_0.8.6_x64-setup.exe",
-          "platform": "Windows",
-          "downloads": 10,
-          "sizeMB": 22.2,
-          "date": "2026-07-02",
-          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.6/Open.Calc.Studio_0.8.6_x64-setup.exe"
         },
         {
           "tag": "v0.8.2",
@@ -513,7 +526,7 @@
           "tag": "v0.8.2",
           "name": "Open.Calc.Studio_0.8.2_x64_en-US.msi",
           "platform": "Windows (MSI)",
-          "downloads": 7,
+          "downloads": 8,
           "sizeMB": 29,
           "date": "2026-06-12",
           "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.2/Open.Calc.Studio_0.8.2_x64_en-US.msi"
@@ -526,15 +539,6 @@
           "sizeMB": 22.2,
           "date": "2026-07-03",
           "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.7/Open.Calc.Studio_0.8.7_x64-setup.exe"
-        },
-        {
-          "tag": "v0.7.8",
-          "name": "Open.Calc.Studio_0.7.8_aarch64.dmg",
-          "platform": "macOS",
-          "downloads": 6,
-          "sizeMB": 25.4,
-          "date": "2026-05-04",
-          "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.7.8/Open.Calc.Studio_0.7.8_aarch64.dmg"
         }
       ]
     },
@@ -554,20 +558,22 @@
     },
     {
       "repo": "open-planner-studio",
-      "totalDownloads": 224,
-      "totalAssets": 134,
-      "releases": 14,
+      "totalDownloads": 278,
+      "totalAssets": 153,
+      "releases": 16,
       "byPlatform": {
-        "Linux (snap)": 1,
         "Linux (rpm)": 8,
-        "Linux (AppImage)": 23,
-        "Linux (deb)": 64,
+        "Linux (AppImage)": 25,
+        "Linux (deb)": 72,
         "macOS": 4,
-        "Windows": 115,
-        "Archive": 9
+        "Windows": 157,
+        "Archive": 10,
+        "Linux (snap)": 2
       },
       "byVersion": {
-        "v2026.7.10": 39,
+        "v2026.7.12": 20,
+        "v2026.7.11": 25,
+        "v2026.7.10": 48,
         "v2026.7.9": 20,
         "v2026.7.8": 18,
         "v2026.7.7": 16,
@@ -596,10 +602,19 @@
           "tag": "v2026.7.10",
           "name": "Open.Planner.Studio_2026.7.10_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 17,
+          "downloads": 24,
           "sizeMB": 5.3,
           "date": "2026-07-10",
           "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.10/Open.Planner.Studio_2026.7.10_x64-setup.exe"
+        },
+        {
+          "tag": "v2026.7.12",
+          "name": "Open.Planner.Studio_2026.7.12_x64-setup.exe",
+          "platform": "Windows",
+          "downloads": 12,
+          "sizeMB": 6.3,
+          "date": "2026-07-23",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio_2026.7.12_x64-setup.exe"
         },
         {
           "tag": "v2026.6.0",
@@ -611,6 +626,24 @@
           "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_amd64.deb"
         },
         {
+          "tag": "v2026.7.11",
+          "name": "Open.Planner.Studio_2026.7.11_x64-setup.exe",
+          "platform": "Windows",
+          "downloads": 11,
+          "sizeMB": 5.3,
+          "date": "2026-07-20",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_x64-setup.exe"
+        },
+        {
+          "tag": "v2026.7.10",
+          "name": "Open.Planner.Studio_2026.7.10_x64-setup.nsis.zip",
+          "platform": "Windows",
+          "downloads": 10,
+          "sizeMB": 4.9,
+          "date": "2026-07-10",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.10/Open.Planner.Studio_2026.7.10_x64-setup.nsis.zip"
+        },
+        {
           "tag": "v2026.7.10",
           "name": "Open.Planner.Studio_2026.7.10_amd64.deb",
           "platform": "Linux (deb)",
@@ -620,13 +653,13 @@
           "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.10/Open.Planner.Studio_2026.7.10_amd64.deb"
         },
         {
-          "tag": "v2026.7.10",
-          "name": "Open.Planner.Studio_2026.7.10_x64-setup.nsis.zip",
+          "tag": "v2026.7.11",
+          "name": "Open.Planner.Studio_2026.7.11_x64-setup.nsis.zip",
           "platform": "Windows",
-          "downloads": 8,
+          "downloads": 7,
           "sizeMB": 4.9,
-          "date": "2026-07-10",
-          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.10/Open.Planner.Studio_2026.7.10_x64-setup.nsis.zip"
+          "date": "2026-07-20",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_x64-setup.nsis.zip"
         },
         {
           "tag": "v2026.7.9",
@@ -645,52 +678,25 @@
           "sizeMB": 4.7,
           "date": "2026-07-06",
           "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.7/Open.Planner.Studio_2026.7.7_x64-setup.nsis.zip"
-        },
-        {
-          "tag": "v2026.6.1",
-          "name": "Open.Planner.Studio_2026.6.1_x64-setup.exe",
-          "platform": "Windows",
-          "downloads": 7,
-          "sizeMB": 4.7,
-          "date": "2026-06-29",
-          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.1/Open.Planner.Studio_2026.6.1_x64-setup.exe"
-        },
-        {
-          "tag": "v2026.7.9",
-          "name": "Open.Planner.Studio_2026.7.9_amd64.deb",
-          "platform": "Linux (deb)",
-          "downloads": 6,
-          "sizeMB": 5.8,
-          "date": "2026-07-07",
-          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.9/Open.Planner.Studio_2026.7.9_amd64.deb"
-        },
-        {
-          "tag": "v2026.7.8",
-          "name": "Open.Planner.Studio_2026.7.8_x64-setup.exe",
-          "platform": "Windows",
-          "downloads": 6,
-          "sizeMB": 5.1,
-          "date": "2026-07-07",
-          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.8/Open.Planner.Studio_2026.7.8_x64-setup.exe"
         }
       ]
     },
     {
       "repo": "open-pointcloud-studio",
-      "totalDownloads": 75,
+      "totalDownloads": 85,
       "totalAssets": 14,
       "releases": 2,
       "byPlatform": {
         "Linux (rpm)": 0,
         "macOS": 10,
-        "Linux (AppImage)": 6,
-        "Linux (deb)": 5,
-        "Windows": 44,
-        "Windows (MSI)": 9,
+        "Linux (AppImage)": 8,
+        "Linux (deb)": 6,
+        "Windows": 50,
+        "Windows (MSI)": 10,
         "Archive": 1
       },
       "byVersion": {
-        "v0.3.0": 70,
+        "v0.3.0": 80,
         "v0.2.0": 5
       },
       "topAssets": [
@@ -698,7 +704,7 @@
           "tag": "v0.3.0",
           "name": "Open.Pointcloud.Studio_0.3.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 40,
+          "downloads": 46,
           "sizeMB": 2.8,
           "date": "2026-03-03",
           "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_x64-setup.exe"
@@ -716,7 +722,7 @@
           "tag": "v0.3.0",
           "name": "Open.Pointcloud.Studio_0.3.0_x64_en-US.msi",
           "platform": "Windows (MSI)",
-          "downloads": 8,
+          "downloads": 9,
           "sizeMB": 3.7,
           "date": "2026-03-03",
           "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_x64_en-US.msi"
@@ -725,7 +731,7 @@
           "tag": "v0.3.0",
           "name": "Open.Pointcloud.Studio_0.3.0_amd64.AppImage",
           "platform": "Linux (AppImage)",
-          "downloads": 6,
+          "downloads": 8,
           "sizeMB": 77.7,
           "date": "2026-03-03",
           "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_amd64.AppImage"
@@ -734,7 +740,7 @@
           "tag": "v0.3.0",
           "name": "Open.Pointcloud.Studio_0.3.0_amd64.deb",
           "platform": "Linux (deb)",
-          "downloads": 5,
+          "downloads": 6,
           "sizeMB": 3.7,
           "date": "2026-03-03",
           "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/download/v0.3.0/Open.Pointcloud.Studio_0.3.0_amd64.deb"
@@ -770,11 +776,11 @@
     },
     {
       "repo": "open-heatloss-studio",
-      "totalDownloads": 17,
+      "totalDownloads": 19,
       "totalAssets": 4,
       "releases": 2,
       "byPlatform": {
-        "Windows": 17,
+        "Windows": 19,
         "Other": 0
       },
       "byVersion": {},
@@ -783,7 +789,7 @@
           "tag": "v0.1.1-pr13.alpha",
           "name": "Open.Heatloss.Studio_0.1.1_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 13,
+          "downloads": 15,
           "sizeMB": 10.1,
           "date": "2026-05-15",
           "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases/download/v0.1.1-pr13.alpha/Open.Heatloss.Studio_0.1.1_x64-setup.exe"
@@ -810,25 +816,34 @@
     },
     {
       "repo": "open-speech-studio",
-      "totalDownloads": 70,
+      "totalDownloads": 81,
       "totalAssets": 26,
       "releases": 7,
       "byPlatform": {
         "Linux (deb)": 14,
-        "Windows": 48,
+        "Windows": 59,
         "Windows (MSI)": 6,
         "macOS": 2
       },
       "byVersion": {
         "v0.10.2": 0,
         "v0.9.0": 1,
-        "v0.10.3": 11,
+        "v0.10.3": 22,
         "v0.10.1": 12,
         "v0.10.0": 33,
         "v0.8.0": 7,
         "v0.5.0": 6
       },
       "topAssets": [
+        {
+          "tag": "v0.10.3",
+          "name": "Open.Speech.Studio_0.10.3_x64-setup.exe",
+          "platform": "Windows",
+          "downloads": 22,
+          "sizeMB": 680.7,
+          "date": "2026-07-13",
+          "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.3/Open.Speech.Studio_0.10.3_x64-setup.exe"
+        },
         {
           "tag": "v0.10.0",
           "name": "Open.Speech.Studio_0.10.0_x64-setup.exe",
@@ -837,15 +852,6 @@
           "sizeMB": 679.2,
           "date": "2026-04-24",
           "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.0/Open.Speech.Studio_0.10.0_x64-setup.exe"
-        },
-        {
-          "tag": "v0.10.3",
-          "name": "Open.Speech.Studio_0.10.3_x64-setup.exe",
-          "platform": "Windows",
-          "downloads": 11,
-          "sizeMB": 680.7,
-          "date": "2026-07-13",
-          "url": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.3/Open.Speech.Studio_0.10.3_x64-setup.exe"
         },
         {
           "tag": "v0.10.1",
@@ -1035,21 +1041,21 @@
     },
     {
       "repo": "open-frame-studio",
-      "totalDownloads": 50,
+      "totalDownloads": 54,
       "totalAssets": 73,
       "releases": 9,
       "byPlatform": {
         "Linux (rpm)": 1,
-        "Linux (AppImage)": 11,
+        "Linux (AppImage)": 12,
         "Linux (deb)": 1,
         "macOS": 0,
-        "Windows": 34,
+        "Windows": 37,
         "Windows (MSI)": 3,
         "Archive": 0
       },
       "byVersion": {
         "v0.1.0": 5,
-        "v0.6.0": 7,
+        "v0.6.0": 11,
         "v0.5.2": 4,
         "v0.5.1": 1,
         "v0.5.0": 1,
@@ -1080,7 +1086,7 @@
           "tag": "v0.6.0",
           "name": "Open.Frame.Studio_0.6.0_x64_user-setup.exe",
           "platform": "Windows",
-          "downloads": 5,
+          "downloads": 8,
           "sizeMB": 4.6,
           "date": "2026-07-14",
           "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64_user-setup.exe"
@@ -1113,6 +1119,15 @@
           "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.4.0/Open.Frame.Studio_0.4.0_x64-setup.exe"
         },
         {
+          "tag": "v0.6.0",
+          "name": "Open.Frame.Studio_0.6.0_amd64.AppImage",
+          "platform": "Linux (AppImage)",
+          "downloads": 2,
+          "sizeMB": 80.6,
+          "date": "2026-07-14",
+          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_amd64.AppImage"
+        },
+        {
           "tag": "v0.2.0",
           "name": "Open.Frame.Studio_0.2.0_x64_en-US.msi",
           "platform": "Windows (MSI)",
@@ -1138,37 +1153,37 @@
           "sizeMB": 4.5,
           "date": "2026-06-16",
           "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/untagged-020f5ff3021f28fe5b35/Open.Frame.Studio_0.4.0_x64-setup.exe"
-        },
-        {
-          "tag": "v0.6.0",
-          "name": "Open.Frame.Studio_0.6.0_amd64.AppImage",
-          "platform": "Linux (AppImage)",
-          "downloads": 1,
-          "sizeMB": 80.6,
-          "date": "2026-07-14",
-          "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_amd64.AppImage"
         }
       ]
     },
     {
       "repo": "open-geotechniek-studio",
-      "totalDownloads": 74,
+      "totalDownloads": 85,
       "totalAssets": 14,
       "releases": 6,
       "byPlatform": {
-        "Linux (AppImage)": 7,
+        "Linux (AppImage)": 10,
         "Linux (deb)": 5,
-        "Windows": 62
+        "Windows": 70
       },
       "byVersion": {
-        "v0.4.0": 19,
+        "v0.4.0": 29,
         "v0.3.0": 22,
         "v0.2.9": 17,
         "v0.2.8": 0,
-        "v0.2.1": 16,
+        "v0.2.1": 17,
         "v0.2.0": 0
       },
       "topAssets": [
+        {
+          "tag": "v0.4.0",
+          "name": "Open.Geotechniek.Studio_0.4.0_x64-setup.exe",
+          "platform": "Windows",
+          "downloads": 24,
+          "sizeMB": 9.9,
+          "date": "2026-07-06",
+          "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.0/Open.Geotechniek.Studio_0.4.0_x64-setup.exe"
+        },
         {
           "tag": "v0.3.0",
           "name": "Open.Geotechniek.Studio_0.3.0_x64-setup.exe",
@@ -1179,19 +1194,10 @@
           "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.3.0/Open.Geotechniek.Studio_0.3.0_x64-setup.exe"
         },
         {
-          "tag": "v0.4.0",
-          "name": "Open.Geotechniek.Studio_0.4.0_x64-setup.exe",
-          "platform": "Windows",
-          "downloads": 17,
-          "sizeMB": 9.9,
-          "date": "2026-07-06",
-          "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.0/Open.Geotechniek.Studio_0.4.0_x64-setup.exe"
-        },
-        {
           "tag": "v0.2.1",
           "name": "Open.Geotechniek.Studio_0.2.1_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 16,
+          "downloads": 17,
           "sizeMB": 11.5,
           "date": "2026-05-18",
           "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.2.1/Open.Geotechniek.Studio_0.2.1_x64-setup.exe"
@@ -1204,6 +1210,15 @@
           "sizeMB": 7.3,
           "date": "2026-05-20",
           "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.2.9/Open.Geotechniek.Studio_0.2.9_x64-setup.exe"
+        },
+        {
+          "tag": "v0.4.0",
+          "name": "Open.Geotechniek.Studio_0.4.0_amd64.AppImage",
+          "platform": "Linux (AppImage)",
+          "downloads": 5,
+          "sizeMB": 88.8,
+          "date": "2026-07-06",
+          "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.0/Open.Geotechniek.Studio_0.4.0_amd64.AppImage"
         },
         {
           "tag": "v0.2.9",
@@ -1222,15 +1237,6 @@
           "sizeMB": 12.5,
           "date": "2026-05-20",
           "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.2.9/Open.Geotechniek.Studio_0.2.9_amd64.deb"
-        },
-        {
-          "tag": "v0.4.0",
-          "name": "Open.Geotechniek.Studio_0.4.0_amd64.AppImage",
-          "platform": "Linux (AppImage)",
-          "downloads": 2,
-          "sizeMB": 88.8,
-          "date": "2026-07-06",
-          "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.0/Open.Geotechniek.Studio_0.4.0_amd64.AppImage"
         },
         {
           "tag": "v0.3.0",
@@ -1256,21 +1262,21 @@
       "repo": "pile-plan-studio",
       "totalDownloads": 0,
       "totalAssets": 0,
-      "releases": 0,
+      "releases": 1,
       "byPlatform": {},
       "byVersion": {},
       "topAssets": []
     },
     {
       "repo": "Open-Calculations-Studio",
-      "totalDownloads": 70,
+      "totalDownloads": 81,
       "totalAssets": 5,
       "releases": 11,
       "byPlatform": {
-        "Windows": 70
+        "Windows": 81
       },
       "byVersion": {
-        "v0.1.4": 67,
+        "v0.1.4": 78,
         "v0.1.3": 2,
         "v0.1.2": 0,
         "v0.1.1": 0,
@@ -1281,7 +1287,7 @@
           "tag": "v0.1.4",
           "name": "Open.Calculations.Studio_0.1.4_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 67,
+          "downloads": 78,
           "sizeMB": 9.5,
           "date": "2026-05-22",
           "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/download/v0.1.4/Open.Calculations.Studio_0.1.4_x64-setup.exe"
@@ -1308,20 +1314,20 @@
     },
     {
       "repo": "monty-ifc-viewer",
-      "totalDownloads": 92,
+      "totalDownloads": 104,
       "totalAssets": 14,
       "releases": 2,
       "byPlatform": {
         "Linux (rpm)": 0,
-        "macOS": 6,
-        "Linux (AppImage)": 11,
+        "macOS": 8,
+        "Linux (AppImage)": 12,
         "Linux (deb)": 7,
-        "Windows": 60,
-        "Windows (MSI)": 8,
+        "Windows": 68,
+        "Windows (MSI)": 9,
         "Archive": 0
       },
       "byVersion": {
-        "v1.0.1": 92,
+        "v1.0.1": 104,
         "v1.0.0": 0
       },
       "topAssets": [
@@ -1329,7 +1335,7 @@
           "tag": "v1.0.1",
           "name": "Monty.IFC.Viewer_1.0.0_x64-setup.exe",
           "platform": "Windows",
-          "downloads": 60,
+          "downloads": 68,
           "sizeMB": 2.5,
           "date": "2026-02-23",
           "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_x64-setup.exe"
@@ -1338,7 +1344,7 @@
           "tag": "v1.0.1",
           "name": "Monty.IFC.Viewer_1.0.0_amd64.AppImage",
           "platform": "Linux (AppImage)",
-          "downloads": 11,
+          "downloads": 12,
           "sizeMB": 77.5,
           "date": "2026-02-23",
           "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_amd64.AppImage"
@@ -1347,10 +1353,19 @@
           "tag": "v1.0.1",
           "name": "Monty.IFC.Viewer_1.0.0_x64_en-US.msi",
           "platform": "Windows (MSI)",
-          "downloads": 8,
+          "downloads": 9,
           "sizeMB": 3.5,
           "date": "2026-02-23",
           "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_x64_en-US.msi"
+        },
+        {
+          "tag": "v1.0.1",
+          "name": "Monty.IFC.Viewer_1.0.0_aarch64.dmg",
+          "platform": "macOS",
+          "downloads": 8,
+          "sizeMB": 3.6,
+          "date": "2026-02-23",
+          "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_aarch64.dmg"
         },
         {
           "tag": "v1.0.1",
@@ -1360,15 +1375,6 @@
           "sizeMB": 3.6,
           "date": "2026-02-23",
           "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_amd64.deb"
-        },
-        {
-          "tag": "v1.0.1",
-          "name": "Monty.IFC.Viewer_1.0.0_aarch64.dmg",
-          "platform": "macOS",
-          "downloads": 6,
-          "sizeMB": 3.6,
-          "date": "2026-02-23",
-          "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/download/v1.0.1/Monty.IFC.Viewer_1.0.0_aarch64.dmg"
         }
       ]
     },

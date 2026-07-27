@@ -6,19 +6,19 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux, Android
 **Category:** PDF / Document
-**Current version:** untagged-7c498dd034e1f778cb30 (2026-06-18)
+**Current version:** untagged-fc4a0ecb8d660bafa52e (2026-07-23)
 **Tool ID:** `open-pdf-studio`
 **GitHub repo:** `OpenAEC-Foundation/open-pdf-studio`
 
 ## Live stats
 
-- Stars: **369**
-- Commits: **679**
-- Forks: **34**
-- Open issues: **11**
-- Releases: **55**
-- Total downloads: **9,236**
-- Downloads by platform: Windows (5310), Android (1067), macOS (928), Linux (AppImage) (838), Linux (deb) (760), Archive (134), Linux (snap) (128), Linux (rpm) (39), Windows (MSI) (32)
+- Stars: **379**
+- Commits: **751**
+- Forks: **36**
+- Open issues: **14**
+- Releases: **60**
+- Total downloads: **10,508**
+- Downloads by platform: Windows (5963), Android (1345), macOS (1015), Linux (AppImage) (945), Linux (deb) (885), Archive (149), Linux (snap) (131), Linux (rpm) (41), Windows (MSI) (34)
 
 ## Key features
 
@@ -62,7 +62,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://www.open-aec.com/open-pdf-studio/
 - Live demo: https://open-pdf-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-pdf-studio
-- Latest stable release: https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.67.0
+- Latest stable release: https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.82.0
 - Nightly builds: https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly
 
 ## Direct downloads (most popular)
@@ -72,9 +72,9 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - [Android · open-pdf-studio-release.apk](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.47.13/open-pdf-studio-release.apk) (v1.47.13 — 30.3 MB)
 - [Windows · Open.PDF.Studio_1.45.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.45.0/Open.PDF.Studio_1.45.0_x64-setup.exe) (v1.45.0 — 13.6 MB)
 - [Windows · Open.PDF.Studio_1.43.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.43.0/Open.PDF.Studio_1.43.0_x64-setup.exe) (v1.43.0 — 13.2 MB)
-- [Windows · Open.PDF.Studio_1.67.0_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_x64_user-setup.exe) (v1.67.0 — 19.1 MB)
-- [Android · open-pdf-studio-release.apk](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.45.0/open-pdf-studio-release.apk) (v1.45.0 — 30.2 MB)
+- [macOS · Open.PDF.Studio_1.67.0_universal.dmg](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_universal.dmg) (v1.67.0 — 41.9 MB)
 - [Linux (AppImage) · Open.PDF.Studio_1.67.0_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_amd64.AppImage) (v1.67.0 — 96.6 MB)
+- [Windows · Open.PDF.Studio_1.67.0_x64_user-setup.exe](https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v1.67.0/Open.PDF.Studio_1.67.0_x64_user-setup.exe) (v1.67.0 — 19.1 MB)
 
 ---
 
