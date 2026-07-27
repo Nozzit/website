@@ -44,7 +44,7 @@ Hands-free site notes, dictation for inspection reports, confidential dictation 
 
 ## Download & links
 
-- Product page: https://www.open-aec.com/open-speech-studio/
+- Product page: https://open-aec.com/open-speech-studio/
 - Live demo: https://open-speech-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-speech-studio
 - Latest stable release: https://github.com/OpenAEC-Foundation/open-speech-studio/releases/tag/v0.10.3
@@ -63,4 +63,4 @@ Hands-free site notes, dictation for inspection reports, confidential dictation 
 
 ---
 
-Part of the [OpenAEC Foundation](https://www.open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.
+Part of the [OpenAEC Foundation](https://open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.

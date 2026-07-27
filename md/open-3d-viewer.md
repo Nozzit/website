@@ -40,9 +40,9 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ## Download & links
 
-- Product page: https://www.open-aec.com/open-3d-viewer/
+- Product page: https://open-aec.com/open-3d-viewer/
 - Live demo: https://open-3d-viewer.open-aec.com/
 
 ---
 
-Part of the [OpenAEC Foundation](https://www.open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.
+Part of the [OpenAEC Foundation](https://open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.

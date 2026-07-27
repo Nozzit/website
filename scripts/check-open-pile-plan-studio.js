@@ -27,7 +27,7 @@ for (const file of [
   JSON.parse(read(file));
 }
 
-includes('sitemap.xml', 'https://www.open-aec.com/open-pile-plan-studio/');
+includes('sitemap.xml', 'https://open-aec.com/open-pile-plan-studio/');
 includes('scripts/generate-downloads.js', "'pile-plan-studio'");
 includes('scripts/generate-release-notes.js', "'pile-plan-studio'");
 assert.ok(exists('data/release-notes/pile-plan-studio.json'), 'leeg release-notes resultaat ontbreekt');

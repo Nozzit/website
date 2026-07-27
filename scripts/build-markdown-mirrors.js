@@ -31,7 +31,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'md');
-const SITE_BASE = 'https://www.open-aec.com';
+const SITE_BASE = 'https://open-aec.com';
 
 // ---------- helpers ----------
 
@@ -770,7 +770,7 @@ function main() {
 
   // index.json
   const indexJson = {
-    $schema: 'https://www.open-aec.com/md/index.schema.json',
+    $schema: 'https://open-aec.com/md/index.schema.json',
     generated: generatedAt,
     description: 'Markdown mirrors of OpenAEC product pages for AI tool integrations.',
     base: `${SITE_BASE}/md/`,
