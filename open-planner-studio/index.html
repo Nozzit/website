@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Planner Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en voortgang, en native IFC 4.3. Voor Windows, macOS, Linux én direct in de browser.">
+  <meta name="description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines, native IFC 4.3 en een ingebouwde MCP-server waarmee een AI-assistent je planning leest en bewerkt. Windows, macOS, Linux en direct in de browser.">
   <link rel="canonical" href="https://open-aec.com/open-planner-studio/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="Open Planner Studio">
-  <meta property="og:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en voortgang, en native IFC 4.3. Voor Windows, macOS, Linux én direct in de browser.">
+  <meta property="og:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines, native IFC 4.3 en een ingebouwde MCP-server waarmee een AI-assistent je planning leest en bewerkt. Windows, macOS, Linux en direct in de browser.">
   <meta property="og:url" content="https://open-aec.com/open-planner-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-planner-studio-licht.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-planner-studio-app-gantt.png">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Planner Studio">
-  <meta name="twitter:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en voortgang, en native IFC 4.3. Voor Windows, macOS, Linux én direct in de browser.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-planner-studio-licht.png">
+  <meta name="twitter:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines, native IFC 4.3 en een ingebouwde MCP-server waarmee een AI-assistent je planning leest en bewerkt. Windows, macOS, Linux en direct in de browser.">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-planner-studio-app-gantt.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -29,12 +29,65 @@
   <meta name="i18n-page" content="open-planner-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Open Planner Studio",
+    "applicationCategory": "EngineeringApplication",
+    "applicationSubCategory": "Project Planning",
+    "operatingSystem": "Windows, macOS, Linux, Web",
+    "url": "https://open-aec.com/open-planner-studio/",
+    "downloadUrl": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases",
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "description": "Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule. Runs on Windows, macOS and Linux and fully in the browser.",
+    "featureList": [
+      "AI-assistent via MCP",
+      "Gantt-diagrammen",
+      "Kritiek pad (CPM)",
+      "WBS & tabelweergave",
+      "Native IFC 4.3",
+      "Resources & nivellering",
+      "Resource-bibliotheken",
+      "Baselines & voortgang",
+      "Kalenders & urenplanning",
+      "Desktop én browser",
+      "Uitwisseling",
+      "4D BIM-ready",
+      "Rapportage & printen",
+      "Handleiding in de app",
+      "Sneltoetsen & contextmenu's",
+      "14 talen",
+      "Lint-werkbalk"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-planner-studio-app-gantt.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "project planning, construction scheduling, bouwplanning, werkvoorbereiding, Gantt, critical path, CPM, WBS, resource levelling, baseline, 4D BIM, IFC 4.3, MCP server, AI assistant, MS Project alternative, Primavera P6 alternative, Asta Powerproject alternative",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/open-planner-studio",
+      "https://open-planner-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
+  }
+  </script>
   <style>
     .media-slider { max-width: 900px; margin: 0 auto var(--sp-8); position: relative; }
     .slider-container { position: relative; overflow: hidden; border-radius: 12px; background: #2A2A32; }
     .slider-track { display: flex; transition: transform 0.4s ease; }
     .slider-slide { min-width: 100%; }
-    .slider-slide img { width: 100%; display: block; border-radius: 12px; }
+    /* height:auto is nodig zodra de img een height-attribuut heeft, anders
+       neemt de browser die letterlijk over in plaats van de verhouding. */
+    .slider-slide img { width: 100%; height: auto; display: block; border-radius: 12px; }
     .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.25rem; display: flex; align-items: center; justify-content: center; z-index: 2; }
     .slider-btn:hover { background: rgba(0,0,0,0.7); }
     .slider-prev { left: 12px; }
@@ -51,9 +104,9 @@
   <section class="hero">
     <span class="section-label" data-i18n="header.label">Bouwplanning</span>
     <h1 data-i18n="header.title">Open <span class="accent">Planner</span> Studio</h1>
-    <p class="tagline" data-i18n="header.desc">Open-source bouwplanning met Gantt, kritiek pad, resources en nivellering, baselines en voortgang — en native IFC 4.3 als bestandsformaat. Op je desktop én direct in de browser.</p>
+    <p class="tagline" data-i18n="header.desc">Open-source bouwplanning met Gantt, kritiek pad, resources en nivellering, baselines en voortgang — en native IFC 4.3 als bestandsformaat. Met een ingebouwde MCP-server, zodat een AI-assistent je planning kan lezen en bewerken. Op je desktop én direct in de browser.</p>
     <div class="btn-group">
-      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.7.12</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.7.13</a>
       <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="header.demoBtn">Open in je browser</a>
       <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">Bekijk broncode</a>
     </div>
@@ -62,12 +115,12 @@
     <div class="media-slider">
       <div class="slider-container">
         <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-gantt.png" alt="Open Planner Studio — Gantt-planning met WBS, kritiek pad en eigenschappenpaneel"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-rapport.png" alt="Open Planner Studio — Rapport-tab met Gantt-afdruk en instelbare opties"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-browser.png" alt="Open Planner Studio — draait volledig in de browser, hier een GWW-brugvervanging"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-planning.png" alt="Open Planner Studio — WBS en tijdlijn met kritieke pad"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-details.png" alt="Open Planner Studio — taakeigenschappen en planningdetails"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-context.png" alt="Open Planner Studio — contextmenu en bewerking"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-gantt.png" alt="Open Planner Studio — Gantt-planning met WBS, kritiek pad en eigenschappenpaneel" width="2044" height="1021" decoding="async" fetchpriority="high"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-rapport.png" alt="Open Planner Studio — Rapport-tab met Gantt-afdruk en instelbare opties" width="2044" height="1021" decoding="async" loading="lazy"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-browser.png" alt="Open Planner Studio — draait volledig in de browser, hier een GWW-brugvervanging" width="2044" height="1074" decoding="async" loading="lazy"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-planning.png" alt="Open Planner Studio — WBS en tijdlijn met kritieke pad" width="2044" height="1021" decoding="async" loading="lazy"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-details.png" alt="Open Planner Studio — taakeigenschappen en planningdetails" width="2044" height="1074" decoding="async" loading="lazy"></div>
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-context.png" alt="Open Planner Studio — contextmenu en bewerking" width="1600" height="1000" decoding="async" loading="lazy"></div>
         </div>
         <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
         <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
@@ -77,9 +130,9 @@
 
   <section class="section" style="padding: var(--sp-6) 0;"><div class="container">
     <div style="max-width: 880px; margin: 0 auto; background: #FAEEDA; border: 1px solid rgba(217,119,6,0.35); border-radius: 12px; padding: var(--sp-6) var(--sp-7);">
-      <span class="section-label" style="color:#B45309;" data-i18n="whatsnew.label">Nieuw in v2026.7.12 &middot; testers gezocht</span>
-      <h2 style="margin: var(--sp-2) 0 var(--sp-3); color:#1e1e24;" data-i18n="whatsnew.title">Nu ook volledig werken in je browser</h2>
-      <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-4);" data-i18n="whatsnew.desc">De web-versie kan nu <strong>bestanden openen en opslaan</strong>. In Chromium-browsers (Chrome, Edge, Brave, Opera, Vivaldi) sla je met Ctrl+S over <strong>hetzelfde bestand</strong> op, net als op de desktop; in Firefox en Safari is er een nette terugval via de bestandskiezer. Ook <strong>auto-save en crash-herstel</strong> werken nu in de browser. Daarnaast: een <strong>volledige handleiding in de app</strong> (F1), <strong>drie voorbeeldprojecten</strong> van verbouwing tot appartementencomplex, en acht gedichte gaten waardoor gegevens bij opslaan verloren konden gaan.</p>
+      <span class="section-label" style="color:#B45309;" data-i18n="whatsnew.label">Nieuw in v2026.7.13 &middot; testers gezocht</span>
+      <h2 style="margin: var(--sp-2) 0 var(--sp-3); color:#1e1e24;" data-i18n="whatsnew.title">Laat een AI-assistent je planning lezen en bewerken</h2>
+      <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-4);" data-i18n="whatsnew.desc">Er zit nu een <strong>MCP-server in de app</strong>. Daarmee kan een AI-client zoals Claude Code je planning rechtstreeks lezen en aanpassen — je zet het aan in het nieuwe <strong>AI-tabblad</strong>, met pauzeknop, alleen-lezen-stand en automatische back-ups als vangnet. Nieuw zijn ook <strong>resource-bibliotheken</strong>: één gedeelde pool over meerdere projecten, waarbij het project laat zien wat het werkelijk gebruikt en afwijkingen gemarkeerd worden. Verder kun je een hele selectie <strong>verticaal verslepen</strong>, niet-werkdagen uit de tijdlijn <strong>inklappen</strong>, met Ctrl+klik meerdere taken selecteren en de WBS-tabel bewerken als een spreadsheet. Rapporten kregen instelbare lettergrootte, een koptekst die op elke pagina terugkomt en een tijdlijn die over meerdere pagina's mag lopen.</p>
       <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-5);" data-i18n="whatsnew.testers">We zoeken <strong>testers</strong>: werkvoorbereiders, planners, projectleiders en BIM-co&ouml;rdinatoren. Probeer Open Planner Studio direct in je browser en laat ons weten wat je vindt — jouw feedback bepaalt mede de koers.</p>
       <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap;">
         <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="whatsnew.ctaDemo">Probeer de live demo &rarr;</a>
@@ -90,20 +143,20 @@
 
   <section class="section" id="download"><div class="container">
     <div class="download-section">
-      <h3 data-i18n="download.title" data-opl-ver>Download v2026.7.12</h3>
+      <h3 data-i18n="download.title" data-opl-ver>Download v2026.7.13</h3>
       <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-opl-size="windows">5.3 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio_2026.7.12_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
-        <div class="download-item"><div class="os">macOS (universal)</div><div class="size" data-opl-size="macos">11.3 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio_2026.7.12_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
-        <div class="download-item"><div class="os">Linux (deb)</div><div class="size" data-opl-size="linux-deb">5.9 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio_2026.7.12_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux (rpm)</div><div class="size" data-opl-size="linux-rpm">5.9 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio-2026.7.12-1.x86_64.rpm" data-opl-dl="linux-rpm" class="btn btn-primary btn-sm">Download .rpm</a></div>
-        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size" data-opl-size="linux-appimage">79.8 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio_2026.7.12_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
-        <div class="download-item"><div class="os">Linux (snap)</div><div class="size" data-opl-size="linux-snap">5.1 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/open-planner-studio_2026.7.12_amd64.snap" data-opl-dl="linux-snap" class="btn btn-primary btn-sm">Download .snap</a></div>
+        <div class="download-item"><div class="os">Windows</div><div class="size" data-opl-size="windows">7.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
+        <div class="download-item"><div class="os">macOS (universal)</div><div class="size" data-opl-size="macos">15.4 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
+        <div class="download-item"><div class="os">Linux (deb)</div><div class="size" data-opl-size="linux-deb">8.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+        <div class="download-item"><div class="os">Linux (rpm)</div><div class="size" data-opl-size="linux-rpm">8.3 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio-2026.7.13-1.x86_64.rpm" data-opl-dl="linux-rpm" class="btn btn-primary btn-sm">Download .rpm</a></div>
+        <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size" data-opl-size="linux-appimage">82.2 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+        <div class="download-item"><div class="os">Linux (snap)</div><div class="size" data-opl-size="linux-snap">7.5 MB</div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/open-planner-studio_2026.7.13_amd64.snap" data-opl-dl="linux-snap" class="btn btn-primary btn-sm">Download .snap</a></div>
       </div>
       <p style="color:var(--scaffold-gray); font-size:0.85rem; margin-top:var(--sp-4);" data-i18n="download.browserNote">Liever niets installeren? Open Planner Studio draait ook <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" style="color:var(--amber);">volledig in je browser</a> — inclusief bestanden openen en opslaan.</p>
     </div>
@@ -113,8 +166,12 @@
     <h2 data-i18n="features.heading">Functionaliteiten</h2>
     <div class="features" style="margin-top:var(--sp-8)">
       <div class="feature">
+        <h4 data-i18n="features.ai.title">AI-assistent via MCP</h4>
+        <p data-i18n="features.ai.desc">Een MCP-server zit in de app ingebouwd, zodat een AI-client als Claude Code je planning rechtstreeks kan lezen en bewerken. Aan te zetten in het AI-tabblad, met pauzeknop, alleen-lezen-stand en automatische back-ups.</p>
+      </div>
+      <div class="feature">
         <h4 data-i18n="features.gantt.title">Gantt-diagrammen</h4>
-        <p data-i18n="features.gantt.desc">Interactieve Gantt op HTML5 Canvas met slepen en neerzetten, zoomen en tijdlijnnavigatie. Box-selectie om meerdere taken tegelijk te pakken.</p>
+        <p data-i18n="features.gantt.desc">Interactieve Gantt op HTML5 Canvas met slepen en neerzetten, zoomen en tijdlijnnavigatie. Sleep een hele selectie verticaal, klap niet-werkdagen uit de tijdlijn en selecteer met Ctrl+klik. Weeknummers in de kop.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.cpm.title">Kritiek pad (CPM)</h4>
@@ -122,7 +179,7 @@
       </div>
       <div class="feature">
         <h4 data-i18n="features.wbs.title">WBS &amp; tabelweergave</h4>
-        <p data-i18n="features.wbs.desc">Hi&euml;rarchische taakstructuur met inklapbare hoofdstukken. Excel-achtige tabel-editor met bewerken in de cel.</p>
+        <p data-i18n="features.wbs.desc">Hi&euml;rarchische taakstructuur met inklapbare hoofdstukken. De tabel bewerkt als een spreadsheet: in de cel typen, meerdere rijen tegelijk pakken en rijen verslepen.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.ifc.title">Native IFC 4.3</h4>
@@ -131,6 +188,10 @@
       <div class="feature">
         <h4 data-i18n="features.resources.title">Resources &amp; nivellering</h4>
         <p data-i18n="features.resources.desc">Arbeid, materieel en onderaannemers met histogram en automatische nivellering van overbelasting. Toewijzingen verplaatsen met behoud van eenheden en curve.</p>
+      </div>
+      <div class="feature">
+        <h4 data-i18n="features.library.title">Resource-bibliotheken</h4>
+        <p data-i18n="features.library.desc">Deel &eacute;&eacute;n resourcepool over meerdere projecten. De bibliotheek is de bron, het project laat zien wat het werkelijk gebruikt, en afwijkingen worden gemarkeerd zodat je ze kunt oplossen.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.baselines.title">Baselines &amp; voortgang</h4>
@@ -154,11 +215,11 @@
       </div>
       <div class="feature">
         <h4 data-i18n="features.reporting.title">Rapportage &amp; printen</h4>
-        <p data-i18n="features.reporting.desc">Live afdrukvoorbeeld in het lint met instelbare opties, en export naar echte PDF in hoge resolutie (&plusmn;220 DPI).</p>
+        <p data-i18n="features.reporting.desc">Live afdrukvoorbeeld in het lint en export naar echte PDF in hoge resolutie (&plusmn;220 DPI). Instelbare lettergrootte, een koptekst die op elke pagina terugkomt en een tijdlijn die over meerdere pagina's mag lopen. Je instellingen worden onthouden.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.docs.title">Handleiding in de app</h4>
-        <p data-i18n="features.docs.desc">Druk op F1 voor een offline handleiding: quick-start, negen praktijkgidsen en vijftien naslagpagina's — plus drie voorbeeldprojecten om op te oefenen.</p>
+        <p data-i18n="features.docs.desc">Druk op F1 voor een offline handleiding, beschikbaar in alle veertien talen: quick-start, praktijkgidsen — waaronder resource-bibliotheken en het koppelen van een AI-assistent — en vijftien naslagpagina's, plus drie voorbeeldprojecten om op te oefenen.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.shortcuts.title">Sneltoetsen &amp; contextmenu's</h4>

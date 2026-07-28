@@ -2,8 +2,8 @@
   "header": {
     "label": "Construction planning",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as its file format. On your desktop and right in your browser.",
-    "downloadBtn": "Download v2026.7.11",
+    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as the file format. With a built-in MCP server, so an AI assistant can read and edit your schedule. On your desktop and straight in the browser.",
+    "downloadBtn": "Download v2026.7.13",
     "demoBtn": "Open in your browser",
     "sourceBtn": "View source"
   },
@@ -12,10 +12,13 @@
     "browserNote": "Rather not install anything? Open Planner Studio also runs <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">fully in your browser</a> — including opening and saving files."
   },
   "features": {
-    "heading": "Features",
+    "ai": {
+      "title": "AI assistant via MCP",
+      "desc": "An MCP server is built into the app, so an AI client such as Claude Code can read and edit your schedule directly. Switch it on in the AI tab, with a pause button, read-only mode and automatic backups."
+    },
     "gantt": {
       "title": "Gantt charts",
-      "desc": "Interactive HTML5 Canvas Gantt with drag and drop, zoom and timeline navigation. Box selection to grab multiple tasks at once."
+      "desc": "Interactive HTML5 Canvas Gantt with drag and drop, zoom and timeline navigation. Drag a whole selection vertically, collapse non-working days out of the timeline and select with Ctrl+click. Week numbers in the header."
     },
     "cpm": {
       "title": "Critical path (CPM)",
@@ -23,7 +26,7 @@
     },
     "wbs": {
       "title": "WBS &amp; table view",
-      "desc": "Hierarchical task structure with collapsible chapters. Excel-style table editor with in-cell editing."
+      "desc": "Hierarchical task structure with collapsible chapters. The table edits like a spreadsheet: type in the cell, grab several rows at once and drag rows around."
     },
     "ifc": {
       "title": "Native IFC 4.3",
@@ -33,6 +36,11 @@
       "title": "Resources &amp; levelling",
       "desc": "Labour, equipment and subcontractors with a histogram and automatic levelling of overallocation. Move assignments while keeping units and curve."
     },
+    "library": {
+      "title": "Resource libraries",
+      "desc": "Share one resource pool across several projects. The library is the source, the project shows what it actually uses, and deviations are flagged so you can resolve them."
+    },
+    "heading": "Features",
     "baselines": {
       "title": "Baselines &amp; progress",
       "desc": "Capture multiple baselines and record progress with a status date, actual start and a cleaned-up progress line."
@@ -55,11 +63,11 @@
     },
     "reporting": {
       "title": "Reporting &amp; printing",
-      "desc": "Live print preview in the ribbon with configurable options, and export to a real high-resolution PDF (approx. 220 DPI)."
+      "desc": "Live print preview in the ribbon and export to a real high-resolution PDF (±220 DPI). Configurable font size, a header that repeats on every page and a timeline that may span several pages. Your settings are remembered."
     },
     "docs": {
       "title": "Manual inside the app",
-      "desc": "Press F1 for an offline manual: quick start, nine practical guides and fifteen reference pages — plus three sample projects to practise on."
+      "desc": "Press F1 for an offline manual, available in all fourteen languages: quick start, practical guides — including resource libraries and connecting an AI assistant — and fifteen reference pages, plus three sample projects to practise on."
     },
     "shortcuts": {
       "title": "Shortcuts &amp; context menus",
@@ -98,9 +106,9 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "New in v2026.7.11 · testers wanted",
-    "title": "Now fully usable in your browser too",
-    "desc": "The web version can now <strong>open and save files</strong>. In Chromium browsers (Chrome, Edge, Brave, Opera, Vivaldi) you save over <strong>the same file</strong> with Ctrl+S, just like on the desktop; Firefox and Safari get a clean fallback through the file picker. <strong>Auto-save and crash recovery</strong> now work in the browser as well. On top of that: a <strong>complete manual inside the app</strong> (F1), <strong>three sample projects</strong> from a renovation to an apartment complex, and eight closed gaps where data could be lost on save.",
+    "label": "New in v2026.7.13 · testers wanted",
+    "title": "Let an AI assistant read and edit your schedule",
+    "desc": "There is now an <strong>MCP server inside the app</strong>. It lets an AI client such as Claude Code read and edit your schedule directly — you switch it on in the new <strong>AI tab</strong>, with a pause button, read-only mode and automatic backups as a safety net. Also new are <strong>resource libraries</strong>: one shared pool across several projects, where the project shows what it actually uses and deviations are flagged. On top of that you can drag a whole selection <strong>vertically</strong>, <strong>collapse</strong> non-working days out of the timeline, multi-select tasks with Ctrl+click and edit the WBS table like a spreadsheet. Reports gained a configurable font size, a header that repeats on every page and a timeline that may span several pages.",
     "testers": "We are looking for <strong>testers</strong>: work planners, schedulers, project leads and BIM coordinators. Try Open Planner Studio right in your browser and tell us what you think — your feedback helps shape where it goes.",
     "ctaDemo": "Try the live demo →",
     "ctaJoin": "Join as a tester"

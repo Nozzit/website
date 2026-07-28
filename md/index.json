@@ -47,7 +47,7 @@
     {
       "id": "open-planner-studio",
       "name": "Open Planner Studio",
-      "status": "alpha",
+      "status": "beta",
       "category": "Project Planning",
       "markdown": "https://www.open-aec.com/md/open-planner-studio.md",
       "relativeMarkdown": "./open-planner-studio.md",

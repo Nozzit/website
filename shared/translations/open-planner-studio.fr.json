@@ -2,8 +2,8 @@
   "header": {
     "label": "Planification de chantier",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et le format natif IFC 4.3. Sur votre bureau et directement dans votre navigateur.",
-    "downloadBtn": "Télécharger v2026.7.11",
+    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et l'IFC 4.3 natif comme format de fichier. Avec un serveur MCP intégré, pour qu'un assistant IA puisse lire et modifier votre planning. Sur votre poste et directement dans le navigateur.",
+    "downloadBtn": "Télécharger v2026.7.13",
     "demoBtn": "Ouvrir dans le navigateur",
     "sourceBtn": "Voir le code source"
   },
@@ -12,10 +12,13 @@
     "browserNote": "Vous préférez ne rien installer ? Open Planner Studio fonctionne aussi <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">entièrement dans votre navigateur</a> — y compris l'ouverture et l'enregistrement de fichiers."
   },
   "features": {
-    "heading": "Fonctionnalités",
+    "ai": {
+      "title": "Assistant IA via MCP",
+      "desc": "Un serveur MCP est intégré à l'application : un client IA comme Claude Code peut lire et modifier directement votre planning. À activer dans l'onglet IA, avec bouton de pause, mode lecture seule et sauvegardes automatiques."
+    },
     "gantt": {
       "title": "Diagrammes de Gantt",
-      "desc": "Gantt interactif en HTML5 Canvas avec glisser-déposer, zoom et navigation temporelle. Sélection par cadre pour saisir plusieurs tâches à la fois."
+      "desc": "Gantt interactif en HTML5 Canvas avec glisser-déposer, zoom et navigation temporelle. Faites glisser toute une sélection verticalement, repliez les jours chômés hors de la frise et sélectionnez avec Ctrl+clic. Numéros de semaine dans l'en-tête."
     },
     "cpm": {
       "title": "Chemin critique (CPM)",
@@ -23,7 +26,7 @@
     },
     "wbs": {
       "title": "WBS et vue tableau",
-      "desc": "Structure de tâches hiérarchique avec chapitres repliables. Éditeur de tableau façon tableur avec édition dans la cellule."
+      "desc": "Structure de tâches hiérarchique avec chapitres repliables. Le tableau se modifie comme un tableur : saisie dans la cellule, sélection de plusieurs lignes à la fois et déplacement des lignes."
     },
     "ifc": {
       "title": "IFC 4.3 natif",
@@ -33,6 +36,11 @@
       "title": "Ressources et nivellement",
       "desc": "Main-d'œuvre, matériel et sous-traitants avec histogramme et nivellement automatique des surcharges. Déplacez les affectations en conservant unités et courbe."
     },
+    "library": {
+      "title": "Bibliothèques de ressources",
+      "desc": "Partagez un même pool de ressources entre plusieurs projets. La bibliothèque fait référence, le projet montre ce qu'il utilise réellement, et les écarts sont signalés pour que vous puissiez les résoudre."
+    },
+    "heading": "Fonctionnalités",
     "baselines": {
       "title": "Références et avancement",
       "desc": "Enregistrez plusieurs références et saisissez l'avancement avec date d'état, début réel et une ligne d'avancement épurée."
@@ -55,11 +63,11 @@
     },
     "reporting": {
       "title": "Rapports et impression",
-      "desc": "Aperçu avant impression en direct dans le ruban avec options configurables, et export en véritable PDF haute résolution (env. 220 DPI)."
+      "desc": "Aperçu avant impression en direct dans le ruban et export en véritable PDF haute résolution (±220 DPI). Taille de police réglable, en-tête répété sur chaque page et frise pouvant s'étendre sur plusieurs pages. Vos réglages sont mémorisés."
     },
     "docs": {
       "title": "Manuel dans l'application",
-      "desc": "Appuyez sur F1 pour un manuel hors ligne : démarrage rapide, neuf guides pratiques et quinze pages de référence — plus trois projets d'exemple pour s'exercer."
+      "desc": "Appuyez sur F1 pour un manuel hors ligne, disponible dans les quatorze langues : démarrage rapide, guides pratiques — dont les bibliothèques de ressources et la connexion d'un assistant IA — et quinze pages de référence, plus trois projets d'exemple pour s'exercer."
     },
     "shortcuts": {
       "title": "Raccourcis et menus contextuels",
@@ -98,9 +106,9 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "Nouveau dans la v2026.7.11 · testeurs recherchés",
-    "title": "Désormais pleinement utilisable dans votre navigateur",
-    "desc": "La version web peut maintenant <strong>ouvrir et enregistrer des fichiers</strong>. Dans les navigateurs Chromium (Chrome, Edge, Brave, Opera, Vivaldi), vous enregistrez sur <strong>le même fichier</strong> avec Ctrl+S, exactement comme sur le bureau ; Firefox et Safari bénéficient d'un repli propre via le sélecteur de fichiers. La <strong>sauvegarde automatique et la récupération après plantage</strong> fonctionnent également dans le navigateur. En complément : un <strong>manuel complet dans l'application</strong> (F1), <strong>trois projets d'exemple</strong> allant d'une rénovation à un complexe d'appartements, et huit failles comblées où des données pouvaient être perdues à l'enregistrement.",
+    "label": "Nouveau dans la v2026.7.13 · testeurs recherchés",
+    "title": "Laissez un assistant IA lire et modifier votre planning",
+    "desc": "L'application intègre désormais un <strong>serveur MCP</strong>. Un client IA comme Claude Code peut ainsi lire et modifier directement votre planning — vous l'activez dans le nouvel <strong>onglet IA</strong>, avec bouton de pause, mode lecture seule et sauvegardes automatiques comme filet de sécurité. Autre nouveauté : les <strong>bibliothèques de ressources</strong>, un pool partagé entre plusieurs projets, où le projet montre ce qu'il utilise réellement et où les écarts sont signalés. Vous pouvez également faire glisser toute une sélection <strong>verticalement</strong>, <strong>replier</strong> les jours chômés hors de la frise, sélectionner plusieurs tâches avec Ctrl+clic et modifier le tableau WBS comme un tableur. Les rapports gagnent une taille de police réglable, un en-tête répété sur chaque page et une frise pouvant s'étendre sur plusieurs pages.",
     "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs de travaux, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent la suite.",
     "ctaDemo": "Essayer la démo en ligne →",
     "ctaJoin": "Participer comme testeur"
