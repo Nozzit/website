@@ -1,6 +1,19 @@
 [
   {
     "type": "announcement",
+    "title": "Open Planner Studio v2026.7.13 — een AI-assistent die je planning leest en bewerkt",
+    "description": "Open Planner Studio heeft nu een MCP-server ingebouwd. Daarmee kan een AI-client zoals Claude Code je bouwplanning rechtstreeks uitlezen en aanpassen — je zet het aan in het nieuwe AI-tabblad, met pauzeknop, alleen-lezen-stand en automatische back-ups als vangnet. Nieuw zijn ook resource-bibliotheken: één gedeelde pool over meerdere projecten, waarbij afwijkingen gemarkeerd worden. Verder kun je een hele selectie verticaal verslepen, niet-werkdagen uit de tijdlijn inklappen en de WBS-tabel bewerken als een spreadsheet. De planning blijft een IFC 4.3-bestand, en de handleiding in de app is nu in alle veertien talen beschikbaar.",
+    "date": "2026-07-27",
+    "url": "/open-planner-studio/",
+    "title_en": "Open Planner Studio v2026.7.13 — an AI assistant that reads and edits your schedule",
+    "description_en": "Open Planner Studio now ships a built-in MCP server. An AI client such as Claude Code can read and edit your construction schedule directly — you switch it on in the new AI tab, with a pause button, read-only mode and automatic backups as a safety net. Also new are resource libraries: one shared pool across several projects, with deviations flagged. On top of that you can drag a whole selection vertically, collapse non-working days out of the timeline and edit the WBS table like a spreadsheet. The schedule remains an IFC 4.3 file, and the in-app manual is now available in all fourteen languages.",
+    "title_fr": "Open Planner Studio v2026.7.13 — un assistant IA qui lit et modifie votre planning",
+    "description_fr": "Open Planner Studio intègre désormais un serveur MCP. Un client IA comme Claude Code peut lire et modifier directement votre planning de chantier — vous l'activez dans le nouvel onglet IA, avec bouton de pause, mode lecture seule et sauvegardes automatiques comme filet de sécurité. Autre nouveauté : les bibliothèques de ressources, un pool partagé entre plusieurs projets, avec les écarts signalés. Vous pouvez également faire glisser toute une sélection verticalement, replier les jours chômés hors de la frise et modifier le tableau WBS comme un tableur. Le planning reste un fichier IFC 4.3, et le manuel intégré est désormais disponible dans les quatorze langues.",
+    "title_tr": "Open Planner Studio v2026.7.13 — planınızı okuyup düzenleyen bir yapay zekâ asistanı",
+    "description_tr": "Open Planner Studio artık yerleşik bir MCP sunucusuyla geliyor. Claude Code gibi bir yapay zekâ istemcisi inşaat planınızı doğrudan okuyup düzenleyebilir — yeni YZ sekmesinden açarsınız; duraklatma düğmesi, salt okunur mod ve otomatik yedekler güvenlik ağı olarak çalışır. Kaynak kitaplıkları da yeni: birden fazla proje arasında paylaşılan tek bir havuz, sapmalar işaretlenmiş olarak. Ayrıca bir seçimin tamamını dikey sürükleyebilir, çalışılmayan günleri zaman çizelgesinden katlayabilir ve WBS tablosunu bir hesap tablosu gibi düzenleyebilirsiniz. Plan bir IFC 4.3 dosyası olarak kalır ve uygulama içi kılavuz artık on dört dilin hepsinde mevcuttur."
+  },
+  {
+    "type": "announcement",
     "title": "Open Heatloss Studio — warmteverlies conform NEN 12831 & ISSO 51:2023, volop in ontwikkeling",
     "description": "Open Heatloss Studio is de open-source tool voor warmteverliesberekeningen conform NEN 12831 en ISSO 51:2023. De reken-engine is gebouwd in Rust (ruim 620 commits, 4 bijdragers) en zit in een actieve alpha-fase. Recent wordt gewerkt aan een indicatieve MPG-tab voor de milieuprestatie van gebouwen — zodat je naast het warmteverlies ook een eerste beeld van de duurzaamheid krijgt. Gratis, open source en volop in ontwikkeling.",
     "date": "2026-07-05",
@@ -69,7 +82,7 @@
     "title": "Open Planner Studio v2026.6.0 — met IFC-koppeling en Rapportage",
     "description": "Open Planner Studio v2026.6.0 is uit: een volwaardige projectplanner met Gantt-weergave, kritieke-pad-analyse (CPM), WBS en mijlpalen. Nieuw in deze versie zijn de IFC-koppeling en een uitgebreide Rapportage-tab. Gratis, open source en direct in de browser te proberen.",
     "date": "2026-06-18",
-    "url": "https://open-planner-studio.open-aec.com/",
+    "url": "/open-planner-studio/",
     "title_en": "Open Planner Studio v2026.6.0 — with IFC link and reporting",
     "description_en": "Open Planner Studio v2026.6.0 is out: a full-featured project scheduler with Gantt view, Critical Path Method (CPM), WBS and milestones. New in this version are the IFC link and an extended reporting tab. Free, open source and available right in your browser.",
     "title_fr": "Open Planner Studio v2026.6.0 — avec liaison IFC et rapports",

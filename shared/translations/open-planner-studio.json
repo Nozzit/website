@@ -113,5 +113,40 @@
     "ctaDemo": "Try the live demo →",
     "ctaJoin": "Join as a tester",
     "list": "<li><strong>Resource libraries</strong> — one shared pool across several projects, with deviations flagged.</li><li><strong>Gantt and table</strong> — drag a whole selection vertically, collapse non-working days, week numbers in the header, Ctrl+click, and the WBS table edits like a spreadsheet.</li><li><strong>Reports</strong> — configurable font size, a header on every page and a timeline spanning several pages.</li><li><strong>Manual</strong> — now in all fourteen languages, with guides for resource libraries and for connecting an AI assistant.</li>"
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "import": {
+      "q": "Can I open files from Microsoft Project or Primavera P6?",
+      "a": "Yes. Open Planner Studio imports and exports MS Project (.xml) and Primavera P6 (.xml) directly, with no intermediate step or conversion tool. IFC and CSV are supported as well."
+    },
+    "browser": {
+      "q": "Do I have to install anything?",
+      "a": "No. The full application runs in the browser, including opening and saving files, auto-save and crash recovery. In Chromium browsers (Chrome, Edge, Brave, Opera, Vivaldi) Ctrl+S saves back over the same file, just like on the desktop; Firefox and Safari fall back to the file picker. If you do want to install, there are builds for Windows, macOS and Linux."
+    },
+    "formaat": {
+      "q": "What file format is my schedule saved in?",
+      "a": "IFC 4.3, the open buildingSMART standard. Your schedule *is* an IFC file — there is no proprietary, closed format. That keeps your data readable outside this application, and lets you link schedule tasks to elements in an IFC building model for 4D."
+    },
+    "ai": {
+      "q": "What exactly can an AI assistant do with my schedule?",
+      "a": "Since v2026.7.13 the app ships a built-in MCP server. An AI client such as Claude Code can read your schedule through it — project overview, tasks, critical path, resources, histogram, calendars and baselines — and edit it too. You switch the bridge on in the AI tab and stay in control: there is a pause button, a read-only mode, automatic backups and an activity panel listing every call the assistant made."
+    },
+    "prijs": {
+      "q": "What does Open Planner Studio cost?",
+      "a": "Nothing. The application is free and open source under the LGPL-3.0 licence. No subscription, no per-seat licence fees."
+    },
+    "platforms": {
+      "q": "Which systems does it run on?",
+      "a": "Windows (.exe), macOS (universal .dmg, both Intel and Apple Silicon) and Linux (.deb, .rpm, AppImage and snap). Plus fully in the browser."
+    },
+    "bouwpraktijk": {
+      "q": "Does it fit construction practice?",
+      "a": "Yes. You set up construction-specific calendars with public holidays, building recess, frost delay, inspection moments and phasing, and you can plan down to hour level. The interface is available in fourteen languages."
+    },
+    "analyse": {
+      "q": "Can I see which tasks drive the end date?",
+      "a": "Yes. The critical path is calculated automatically, with float, near-critical work, multiple critical paths and deadline analysis. Resources get a histogram with automatic levelling of overallocation, and multiple baselines let you track deviations from the original plan."
+    }
   }
 }

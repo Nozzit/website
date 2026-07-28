@@ -113,5 +113,40 @@
     "ctaDemo": "Canlı demoyu deneyin →",
     "ctaJoin": "Test eden olarak katıl",
     "list": "<li><strong>Kaynak kitaplıkları</strong> — birden fazla proje arasında paylaşılan tek bir havuz; sapmalar işaretlenir.</li><li><strong>Gantt ve tablo</strong> — bir seçimin tamamını dikey sürükleyin, çalışılmayan günleri katlayın, başlıkta hafta numaraları, Ctrl+tık ve WBS tablosu bir hesap tablosu gibi düzenlenir.</li><li><strong>Raporlar</strong> — ayarlanabilir yazı boyutu, her sayfada başlık ve birden fazla sayfaya yayılan zaman çizelgesi.</li><li><strong>Kılavuz</strong> — artık on dört dilin hepsinde; kaynak kitaplıkları ve yapay zekâ asistanı bağlama rehberleriyle.</li>"
+  },
+  "faq": {
+    "heading": "Sık sorulan sorular",
+    "import": {
+      "q": "Microsoft Project veya Primavera P6 dosyalarını açabilir miyim?",
+      "a": "Evet. Open Planner Studio, MS Project (.xml) ve Primavera P6 (.xml) dosyalarını ara adım veya dönüştürme aracı olmadan doğrudan içe ve dışa aktarır. IFC ve CSV de desteklenir."
+    },
+    "browser": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Uygulamanın tamamı tarayıcıda çalışır; dosya açma ve kaydetme, otomatik kaydetme ve çökme kurtarma dahil. Chromium tarayıcılarda (Chrome, Edge, Brave, Opera, Vivaldi) Ctrl+S aynı dosyanın üzerine kaydeder, masaüstündeki gibi; Firefox ve Safari dosya seçiciye geri döner. Yine de kurmak isterseniz Windows, macOS ve Linux sürümleri mevcuttur."
+    },
+    "formaat": {
+      "q": "Planım hangi dosya biçiminde kaydedilir?",
+      "a": "buildingSMART’ın açık standardı olan IFC 4.3 biçiminde. Planınız bir IFC dosyasıdır — kapalı, özel bir biçim yoktur. Böylece verileriniz bu uygulamanın dışında da okunabilir kalır ve plan görevlerini 4D için bir IFC yapı modelinin öğelerine bağlayabilirsiniz."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı planımla tam olarak ne yapabilir?",
+      "a": "v2026.7.13’ten beri uygulamada yerleşik bir MCP sunucusu var. Claude Code gibi bir yapay zekâ istemcisi planınızı okuyabilir — proje genel görünümü, görevler, kritik yol, kaynaklar, histogram, takvimler ve temel planlar — ve düzenleyebilir. Bağlantıyı YZ sekmesinden açarsınız ve kontrol sizde kalır: duraklatma düğmesi, salt okunur mod, otomatik yedekler ve asistanın yaptığı her çağrıyı listeleyen bir etkinlik paneli."
+    },
+    "prijs": {
+      "q": "Open Planner Studio ne kadar?",
+      "a": "Hiç. Uygulama LGPL-3.0 lisansı altında ücretsiz ve açık kaynaktır. Abonelik yok, kullanıcı başına lisans ücreti yok."
+    },
+    "platforms": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows (.exe), macOS (evrensel .dmg, hem Intel hem Apple Silicon) ve Linux (.deb, .rpm, AppImage ve snap). Ayrıca tamamen tarayıcıda."
+    },
+    "bouwpraktijk": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "Evet. Resmi tatiller, inşaat tatili, don nedeniyle duraklama, denetim anları ve fazlandırma ile inşaata özgü takvimler kurarsınız ve saat düzeyine kadar planlarsınız. Arayüz on dört dilde mevcuttur."
+    },
+    "analyse": {
+      "q": "Bitiş tarihini hangi görevlerin belirlediğini görebilir miyim?",
+      "a": "Evet. Kritik yol otomatik hesaplanır; bolluk, kritiğe yakın işler, birden fazla kritik yol ve son tarih analizi ile. Kaynaklar aşırı yüklemenin otomatik dengelenmesini içeren bir histogram alır ve birden fazla temel plan ile özgün plandan sapmaları izlersiniz."
+    }
   }
 }

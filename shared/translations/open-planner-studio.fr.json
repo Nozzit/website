@@ -113,5 +113,40 @@
     "ctaDemo": "Essayer la démo en ligne →",
     "ctaJoin": "Participer comme testeur",
     "list": "<li><strong>Bibliothèques de ressources</strong> — un pool partagé entre plusieurs projets, avec les écarts signalés.</li><li><strong>Gantt et tableau</strong> — faites glisser toute une sélection verticalement, repliez les jours chômés, numéros de semaine dans l'en-tête, Ctrl+clic, et le tableau WBS se modifie comme un tableur.</li><li><strong>Rapports</strong> — taille de police réglable, en-tête sur chaque page et frise pouvant s'étendre sur plusieurs pages.</li><li><strong>Manuel</strong> — désormais dans les quatorze langues, avec des guides pour les bibliothèques de ressources et la connexion d'un assistant IA.</li>"
+  },
+  "faq": {
+    "heading": "Questions fréquentes",
+    "import": {
+      "q": "Puis-je ouvrir des fichiers Microsoft Project ou Primavera P6 ?",
+      "a": "Oui. Open Planner Studio importe et exporte directement MS Project (.xml) et Primavera P6 (.xml), sans étape intermédiaire ni outil de conversion. IFC et CSV sont également pris en charge."
+    },
+    "browser": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. L'application complète fonctionne dans le navigateur, y compris l'ouverture et l'enregistrement de fichiers, la sauvegarde automatique et la récupération après plantage. Dans les navigateurs Chromium (Chrome, Edge, Brave, Opera, Vivaldi), Ctrl+S réenregistre le même fichier, comme sur le bureau ; Firefox et Safari passent par le sélecteur de fichiers. Si vous préférez installer, des versions existent pour Windows, macOS et Linux."
+    },
+    "formaat": {
+      "q": "Dans quel format mon planning est-il enregistré ?",
+      "a": "En IFC 4.3, la norme ouverte de buildingSMART. Votre planning *est* un fichier IFC — il n'existe pas de format propriétaire fermé. Vos données restent donc lisibles en dehors de cette application, et vous pouvez relier les tâches aux éléments d'une maquette IFC pour la 4D."
+    },
+    "ai": {
+      "q": "Que peut faire exactement un assistant IA avec mon planning ?",
+      "a": "Depuis la v2026.7.13, un serveur MCP est intégré à l'application. Un client IA comme Claude Code peut ainsi lire votre planning — vue d'ensemble du projet, tâches, chemin critique, ressources, histogramme, calendriers et références — et le modifier. Vous activez la liaison dans l'onglet IA et gardez la main : bouton de pause, mode lecture seule, sauvegardes automatiques et panneau d'activité listant chaque appel effectué par l'assistant."
+    },
+    "prijs": {
+      "q": "Combien coûte Open Planner Studio ?",
+      "a": "Rien. L'application est gratuite et open source sous licence LGPL-3.0. Pas d'abonnement, pas de licence par utilisateur."
+    },
+    "platforms": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Windows (.exe), macOS (.dmg universel, Intel et Apple Silicon) et Linux (.deb, .rpm, AppImage et snap). Ainsi que entièrement dans le navigateur."
+    },
+    "bouwpraktijk": {
+      "q": "Est-il adapté à la pratique du chantier ?",
+      "a": "Oui. Vous configurez des calendriers propres au bâtiment : jours fériés, congés du bâtiment, intempéries, moments d'inspection et phasage, avec une planification jusqu'à l'heure près. L'interface est disponible en quatorze langues."
+    },
+    "analyse": {
+      "q": "Puis-je voir quelles tâches déterminent la date de fin ?",
+      "a": "Oui. Le chemin critique est calculé automatiquement, avec marges, travaux quasi critiques, chemins critiques multiples et analyse des échéances. Les ressources disposent d'un histogramme avec nivellement automatique des surcharges, et plusieurs références permettent de suivre les écarts par rapport au plan initial."
+    }
   }
 }
