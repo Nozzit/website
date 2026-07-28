@@ -108,9 +108,10 @@
   "whatsnew": {
     "label": "New in v2026.7.13 · testers wanted",
     "title": "Let an AI assistant read and edit your schedule",
-    "desc": "There is now an <strong>MCP server inside the app</strong>. It lets an AI client such as Claude Code read and edit your schedule directly — you switch it on in the new <strong>AI tab</strong>, with a pause button, read-only mode and automatic backups as a safety net. Also new are <strong>resource libraries</strong>: one shared pool across several projects, where the project shows what it actually uses and deviations are flagged. On top of that you can drag a whole selection <strong>vertically</strong>, <strong>collapse</strong> non-working days out of the timeline, multi-select tasks with Ctrl+click and edit the WBS table like a spreadsheet. Reports gained a configurable font size, a header that repeats on every page and a timeline that may span several pages.",
+    "desc": "There is now an <strong>MCP server inside the app</strong>. It lets an AI client such as Claude Code read and edit your schedule directly — you switch it on in the new <strong>AI tab</strong>, with a pause button, read-only mode and automatic backups as a safety net.",
     "testers": "We are looking for <strong>testers</strong>: work planners, schedulers, project leads and BIM coordinators. Try Open Planner Studio right in your browser and tell us what you think — your feedback helps shape where it goes.",
     "ctaDemo": "Try the live demo →",
-    "ctaJoin": "Join as a tester"
+    "ctaJoin": "Join as a tester",
+    "list": "<li><strong>Resource libraries</strong> — one shared pool across several projects, with deviations flagged.</li><li><strong>Gantt and table</strong> — drag a whole selection vertically, collapse non-working days, week numbers in the header, Ctrl+click, and the WBS table edits like a spreadsheet.</li><li><strong>Reports</strong> — configurable font size, a header on every page and a timeline spanning several pages.</li><li><strong>Manual</strong> — now in all fourteen languages, with guides for resource libraries and for connecting an AI assistant.</li>"
   }
 }

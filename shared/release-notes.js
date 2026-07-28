@@ -349,7 +349,53 @@
     `;
   }
 
-  function renderAll(container, data) {
+  // Alleen de nieuwste release tonen. Opt-in per pagina via
+  // <div data-release-notes="repo" data-release-notes-latest>, zodat pagina's
+  // die het volledige archief willen tonen ongemoeid blijven.
+  function renderLatestOnly(container, data) {
+    const group = data.groups && data.groups[0];
+    const release = group && group.releases && group.releases[0];
+    if (!release) {
+      container.innerHTML = `<p class="rn-loading">${t('noReleases')}</p>`;
+      return;
+    }
+    const lang = getLang();
+    const changes = (lang === 'en' && Array.isArray(release.changesEn) && release.changesEn.length)
+      ? release.changesEn
+      : release.changes;
+
+    container.innerHTML = `
+      <div class="rn-header-block">
+        <h2 class="rn-title" data-rn-title>${t('title')}</h2>
+        <p class="rn-desc" data-rn-desc>
+          <strong>${escapeHtml(release.tag)}</strong> · ${release.date} ·
+          ${changes.length} ${changes.length === 1 ? t('change') : t('changes')}
+        </p>
+      </div>
+      <div class="rn-groups">
+        <div class="rn-group latest expanded">
+          <div class="rn-group-body">
+            ${changes.length
+              ? `<ol class="rn-changes-list">${changes.map(c => `<li>${escapeHtml(c)}</li>`).join('')}</ol>`
+              : `<p class="rn-loading">${t('noReleases')}</p>`}
+            <div class="rn-releases-detail">
+              <div class="rn-release-row">
+                <span class="rn-release-tag">${escapeHtml(release.tag)}</span>
+                <span class="rn-release-date">${release.date}</span>
+                <a href="${release.url}" target="_blank" rel="noopener" class="rn-release-link">${t('viewGitHub')}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="rn-viewall">
+        <a href="https://github.com/OpenAEC-Foundation/${data.repo}/releases" target="_blank" rel="noopener">${t('viewAll')}</a>
+      </p>
+    `;
+  }
+
+  function renderAll(container, data, latestOnly) {
+    if (latestOnly) return renderLatestOnly(container, data);
     const totalChanges = data.totalChanges;
     const totalReleases = data.totalReleases;
 
@@ -415,6 +461,7 @@
 
     for (const placeholder of placeholders) {
       const repo = placeholder.getAttribute('data-release-notes');
+      const latestOnly = placeholder.hasAttribute('data-release-notes-latest');
 
       placeholder.innerHTML = `
         <section class="rn-section">
@@ -428,7 +475,7 @@
 
       try {
         const data = await fetchData(repo);
-        renderAll(container, data);
+        renderAll(container, data, latestOnly);
         placeholder._rnData = data;
       } catch (err) {
         container.innerHTML = `<p class="rn-error">${t('error')}</p>`;
@@ -442,7 +489,7 @@
           document.querySelectorAll('[data-release-notes]').forEach(p => {
             const container = p.querySelector('.rn-container');
             if (p._rnData && container) {
-              renderAll(container, p._rnData);
+              renderAll(container, p._rnData, p.hasAttribute('data-release-notes-latest'));
             }
           });
         }, 50);

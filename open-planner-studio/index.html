@@ -81,7 +81,16 @@
   }
   </script>
   <style>
-    .media-slider { max-width: 900px; margin: 0 auto var(--sp-8); position: relative; }
+    /* Zelfde contentbreedte als .download-section en .features hieronder,
+       anders staan er drie verschillende breedtes onder elkaar. */
+    .media-slider { max-width: 1152px; margin: 0 auto var(--sp-8); position: relative; }
+    .whatsnew { background: #FAEEDA; border: 1px solid rgba(217,119,6,0.35); border-radius: var(--radius-lg); padding: var(--sp-7) var(--sp-8); }
+    .whatsnew h2 { margin: var(--sp-2) 0 var(--sp-3); color: #1e1e24; }
+    .whatsnew p { color: #5b4a2e; font-size: 1.02rem; line-height: 1.7; margin: 0 0 var(--sp-4); max-width: 68ch; }
+    .whatsnew p:last-of-type { margin-bottom: var(--sp-5); }
+    .whatsnew-list { color: #5b4a2e; font-size: 1.02rem; line-height: 1.7; margin: 0 0 var(--sp-4); padding-left: var(--sp-5); max-width: 68ch; }
+    .whatsnew-list li { margin-bottom: var(--sp-2); }
+    .whatsnew-list li::marker { color: var(--amber); }
     .slider-container { position: relative; overflow: hidden; border-radius: 12px; background: #2A2A32; }
     .slider-track { display: flex; transition: transform 0.4s ease; }
     .slider-slide { min-width: 100%; }
@@ -99,7 +108,7 @@
 </head>
 <body>
     <div id="shared-nav"></div>
-<script src="/shared/nav.js?v=20260603"></script>
+<script src="/shared/nav.js?v=20260728"></script>
 
   <section class="hero">
     <span class="section-label" data-i18n="header.label">Bouwplanning</span>
@@ -112,7 +121,7 @@
     </div>
   </section>
 
-    <div class="media-slider">
+    <section class="section" style="padding: 0 var(--sp-6);"><div class="container"><div class="media-slider">
       <div class="slider-container">
         <div class="slider-track" id="sliderTrack">
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-gantt.png" alt="Open Planner Studio — Gantt-planning met WBS, kritiek pad en eigenschappenpaneel" width="2044" height="1021" decoding="async" fetchpriority="high"></div>
@@ -126,14 +135,20 @@
         <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>
       </div>
       <div class="slider-dots" id="sliderDots"></div>
-    </div>
+    </div></div></section>
 
-  <section class="section" style="padding: var(--sp-6) 0;"><div class="container">
-    <div style="max-width: 880px; margin: 0 auto; background: #FAEEDA; border: 1px solid rgba(217,119,6,0.35); border-radius: 12px; padding: var(--sp-6) var(--sp-7);">
+  <section class="section" style="padding: var(--sp-6) var(--sp-6);"><div class="container">
+    <div class="whatsnew">
       <span class="section-label" style="color:#B45309;" data-i18n="whatsnew.label">Nieuw in v2026.7.13 &middot; testers gezocht</span>
-      <h2 style="margin: var(--sp-2) 0 var(--sp-3); color:#1e1e24;" data-i18n="whatsnew.title">Laat een AI-assistent je planning lezen en bewerken</h2>
-      <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-4);" data-i18n="whatsnew.desc">Er zit nu een <strong>MCP-server in de app</strong>. Daarmee kan een AI-client zoals Claude Code je planning rechtstreeks lezen en aanpassen — je zet het aan in het nieuwe <strong>AI-tabblad</strong>, met pauzeknop, alleen-lezen-stand en automatische back-ups als vangnet. Nieuw zijn ook <strong>resource-bibliotheken</strong>: één gedeelde pool over meerdere projecten, waarbij het project laat zien wat het werkelijk gebruikt en afwijkingen gemarkeerd worden. Verder kun je een hele selectie <strong>verticaal verslepen</strong>, niet-werkdagen uit de tijdlijn <strong>inklappen</strong>, met Ctrl+klik meerdere taken selecteren en de WBS-tabel bewerken als een spreadsheet. Rapporten kregen instelbare lettergrootte, een koptekst die op elke pagina terugkomt en een tijdlijn die over meerdere pagina's mag lopen.</p>
-      <p style="color:#5b4a2e; font-size:1.02rem; line-height:1.7; margin:0 0 var(--sp-5);" data-i18n="whatsnew.testers">We zoeken <strong>testers</strong>: werkvoorbereiders, planners, projectleiders en BIM-co&ouml;rdinatoren. Probeer Open Planner Studio direct in je browser en laat ons weten wat je vindt — jouw feedback bepaalt mede de koers.</p>
+      <h2 data-i18n="whatsnew.title">Laat een AI-assistent je planning lezen en bewerken</h2>
+      <p data-i18n="whatsnew.desc">Er zit nu een <strong>MCP-server in de app</strong>. Daarmee kan een AI-client zoals Claude Code je planning rechtstreeks lezen en aanpassen — je zet het aan in het nieuwe <strong>AI-tabblad</strong>, met pauzeknop, alleen-lezen-stand en automatische back-ups als vangnet.</p>
+      <ul class="whatsnew-list" data-i18n="whatsnew.list">
+        <li><strong>Resource-bibliotheken</strong> — één gedeelde pool over meerdere projecten, met afwijkingen gemarkeerd.</li>
+        <li><strong>Gantt en tabel</strong> — sleep een hele selectie verticaal, klap niet-werkdagen in, weeknummers in de kop, Ctrl+klik en de WBS-tabel bewerkt als een spreadsheet.</li>
+        <li><strong>Rapporten</strong> — instelbare lettergrootte, koptekst op elke pagina en een tijdlijn over meerdere pagina's.</li>
+        <li><strong>Handleiding</strong> — nu in alle veertien talen, met gidsen voor resource-bibliotheken en het koppelen van een AI-assistent.</li>
+      </ul>
+      <p data-i18n="whatsnew.testers">We zoeken <strong>testers</strong>: werkvoorbereiders, planners, projectleiders en BIM-co&ouml;rdinatoren. Probeer Open Planner Studio direct in je browser en laat ons weten wat je vindt — jouw feedback bepaalt mede de koers.</p>
       <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap;">
         <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="whatsnew.ctaDemo">Probeer de live demo &rarr;</a>
         <a href="mailto:maarten@open-aec.com?subject=Tester%20Open%20Planner%20Studio" class="btn btn-ghost" data-i18n="whatsnew.ctaJoin">Meedoen als tester</a>
@@ -254,8 +269,8 @@
   </section>
 
   <!-- Release Notes (shared component) -->
-  <div data-release-notes="open-planner-studio"></div>
-  <script src="/shared/release-notes.js?v=20260603"></script>
+  <div data-release-notes="open-planner-studio" data-release-notes-latest></div>
+  <script src="/shared/release-notes.js?v=20260728"></script>
 
   <footer class="footer"><div class="footer-container">
     <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
@@ -350,6 +365,6 @@
     else start();
   })();
 </script>
-<script src="/shared/i18n.js?v=20260603"></script>
+<script src="/shared/i18n.js?v=20260728"></script>
 </body>
 </html>

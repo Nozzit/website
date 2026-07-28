@@ -108,9 +108,10 @@
   "whatsnew": {
     "label": "Nouveau dans la v2026.7.13 · testeurs recherchés",
     "title": "Laissez un assistant IA lire et modifier votre planning",
-    "desc": "L'application intègre désormais un <strong>serveur MCP</strong>. Un client IA comme Claude Code peut ainsi lire et modifier directement votre planning — vous l'activez dans le nouvel <strong>onglet IA</strong>, avec bouton de pause, mode lecture seule et sauvegardes automatiques comme filet de sécurité. Autre nouveauté : les <strong>bibliothèques de ressources</strong>, un pool partagé entre plusieurs projets, où le projet montre ce qu'il utilise réellement et où les écarts sont signalés. Vous pouvez également faire glisser toute une sélection <strong>verticalement</strong>, <strong>replier</strong> les jours chômés hors de la frise, sélectionner plusieurs tâches avec Ctrl+clic et modifier le tableau WBS comme un tableur. Les rapports gagnent une taille de police réglable, un en-tête répété sur chaque page et une frise pouvant s'étendre sur plusieurs pages.",
+    "desc": "L'application intègre désormais un <strong>serveur MCP</strong>. Un client IA comme Claude Code peut ainsi lire et modifier directement votre planning — vous l'activez dans le nouvel <strong>onglet IA</strong>, avec bouton de pause, mode lecture seule et sauvegardes automatiques comme filet de sécurité.",
     "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs de travaux, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent la suite.",
     "ctaDemo": "Essayer la démo en ligne →",
-    "ctaJoin": "Participer comme testeur"
+    "ctaJoin": "Participer comme testeur",
+    "list": "<li><strong>Bibliothèques de ressources</strong> — un pool partagé entre plusieurs projets, avec les écarts signalés.</li><li><strong>Gantt et tableau</strong> — faites glisser toute une sélection verticalement, repliez les jours chômés, numéros de semaine dans l'en-tête, Ctrl+clic, et le tableau WBS se modifie comme un tableur.</li><li><strong>Rapports</strong> — taille de police réglable, en-tête sur chaque page et frise pouvant s'étendre sur plusieurs pages.</li><li><strong>Manuel</strong> — désormais dans les quatorze langues, avec des guides pour les bibliothèques de ressources et la connexion d'un assistant IA.</li>"
   }
 }
