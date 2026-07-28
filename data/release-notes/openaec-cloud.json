@@ -1,9 +1,10 @@
 {
   "repo": "openaec-cloud",
-  "generated": "2026-07-28T09:25:54.362Z",
+  "generated": "2026-07-28T12:00:52.030Z",
   "totalReleases": 0,
   "totalChanges": 0,
   "latestStable": null,
+  "latestChangelog": null,
   "nightly": null,
   "groups": []
 }

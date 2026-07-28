@@ -1,6 +1,6 @@
 {
   "repo": "monty-ifc-viewer",
-  "generated": "2026-07-28T09:25:52.930Z",
+  "generated": "2026-07-28T12:00:48.762Z",
   "totalReleases": 2,
   "totalChanges": 8,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-02-23",
     "url": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer/releases/tag/v1.0.1"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {

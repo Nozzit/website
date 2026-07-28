@@ -1,6 +1,6 @@
 {
   "repo": "open-energy-studio",
-  "generated": "2026-07-28T09:25:45.889Z",
+  "generated": "2026-07-28T12:00:33.695Z",
   "totalReleases": 2,
   "totalChanges": 0,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-03-31",
     "url": "https://github.com/OpenAEC-Foundation/open-energy-studio/releases/tag/v0.1.6-alpha"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {

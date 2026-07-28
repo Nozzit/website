@@ -205,6 +205,31 @@
         border-bottom: 1px solid #F5F5F4;
       }
       .rn-changes-list li:last-child { border-bottom: none; }
+      /* Uitgebreide changelog-sectie (docs/CHANGELOG.md) */
+      .rn-changelog { color: var(--deep-forge); font-size: 0.95rem; line-height: 1.7; }
+      .rn-changelog h4 {
+        font-family: var(--font-heading);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--amber);
+        margin: var(--sp-6) 0 var(--sp-3);
+        padding-bottom: var(--sp-2);
+        border-bottom: 1px solid #E7E5E4;
+      }
+      .rn-changelog h4:first-child { margin-top: 0; }
+      .rn-changelog p { margin: 0 0 var(--sp-3); max-width: 78ch; }
+      .rn-changelog ul { margin: 0 0 var(--sp-4); padding-left: var(--sp-5); max-width: 78ch; }
+      .rn-changelog li { margin-bottom: var(--sp-3); }
+      .rn-changelog li::marker { color: var(--amber); }
+      .rn-changelog code {
+        font-family: var(--font-code);
+        font-size: 0.85em;
+        background: var(--concrete);
+        padding: 1px 5px;
+        border-radius: var(--radius-sm);
+      }
+      .rn-changelog a { color: var(--info); }
       .rn-changes-list li::before {
         content: counter(change-counter, decimal-leading-zero);
         position: absolute;
@@ -349,6 +374,53 @@
     `;
   }
 
+  // Minimale markdown-renderer voor de changelog-sectie. Bewust klein: we
+  // escapen eerst alles en staan daarna alleen koppen, lijsten, vet, code en
+  // links toe. Genoeg voor docs/CHANGELOG.md, geen ruimte voor injectie.
+  function renderMarkdown(md) {
+    const inline = (s) => escapeHtml(s)
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+
+    const out = [];
+    let list = null;      // opgebouwde <li>-teksten
+    let para = [];        // opgebouwde alinea-regels
+
+    const flushList = () => {
+      if (list && list.length) out.push(`<ul>${list.map(i => `<li>${inline(i)}</li>`).join('')}</ul>`);
+      list = null;
+    };
+    const flushPara = () => {
+      if (para.length) out.push(`<p>${inline(para.join(' '))}</p>`);
+      para = [];
+    };
+
+    for (const raw of md.split('\n')) {
+      const line = raw.replace(/\s+$/, '');
+      const heading = line.match(/^(#{3,4})\s+(.*)$/);
+      const bullet = line.match(/^\s*[-*]\s+(.*)$/);
+
+      if (heading) {
+        flushList(); flushPara();
+        out.push(`<h4>${inline(heading[2])}</h4>`);
+      } else if (bullet) {
+        flushPara();
+        if (!list) list = [];
+        list.push(bullet[1]);
+      } else if (!line.trim()) {
+        flushList(); flushPara();
+      } else if (list) {
+        // Doorlopende regel van het vorige opsommingsteken (hangende inspringing).
+        list[list.length - 1] += ' ' + line.trim();
+      } else {
+        para.push(line.trim());
+      }
+    }
+    flushList(); flushPara();
+    return out.join('\n');
+  }
+
   // Alleen de nieuwste release tonen. Opt-in per pagina via
   // <div data-release-notes="repo" data-release-notes-latest>, zodat pagina's
   // die het volledige archief willen tonen ongemoeid blijven.
@@ -368,16 +440,19 @@
       <div class="rn-header-block">
         <h2 class="rn-title" data-rn-title>${t('title')}</h2>
         <p class="rn-desc" data-rn-desc>
-          <strong>${escapeHtml(release.tag)}</strong> · ${release.date} ·
-          ${changes.length} ${changes.length === 1 ? t('change') : t('changes')}
+          <strong>${escapeHtml(release.tag)}</strong> · ${release.date}${data.latestChangelog
+            ? ''
+            : ` · ${changes.length} ${changes.length === 1 ? t('change') : t('changes')}`}
         </p>
       </div>
       <div class="rn-groups">
         <div class="rn-group latest expanded">
           <div class="rn-group-body">
-            ${changes.length
-              ? `<ol class="rn-changes-list">${changes.map(c => `<li>${escapeHtml(c)}</li>`).join('')}</ol>`
-              : `<p class="rn-loading">${t('noReleases')}</p>`}
+            ${data.latestChangelog
+              ? `<div class="rn-changelog">${renderMarkdown(data.latestChangelog)}</div>`
+              : changes.length
+                ? `<ol class="rn-changes-list">${changes.map(c => `<li>${escapeHtml(c)}</li>`).join('')}</ol>`
+                : `<p class="rn-loading">${t('noReleases')}</p>`}
             <div class="rn-releases-detail">
               <div class="rn-release-row">
                 <span class="rn-release-tag">${escapeHtml(release.tag)}</span>

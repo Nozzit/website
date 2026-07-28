@@ -1,6 +1,6 @@
 {
   "repo": "Y-app",
-  "generated": "2026-07-28T09:25:55.388Z",
+  "generated": "2026-07-28T12:00:54.053Z",
   "totalReleases": 37,
   "totalChanges": 123,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-07-10",
     "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.2"
   },
+  "latestChangelog": "_Onderhoud / interne wijzigingen._",
   "nightly": null,
   "groups": [
     {

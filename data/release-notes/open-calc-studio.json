@@ -1,6 +1,6 @@
 {
   "repo": "open-calc-studio",
-  "generated": "2026-07-28T09:25:45.044Z",
+  "generated": "2026-07-28T12:00:32.414Z",
   "totalReleases": 19,
   "totalChanges": 153,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-07-16",
     "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.10.0"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {

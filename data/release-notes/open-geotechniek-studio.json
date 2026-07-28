@@ -1,6 +1,6 @@
 {
   "repo": "open-geotechniek-studio",
-  "generated": "2026-07-28T09:25:51.291Z",
+  "generated": "2026-07-28T12:00:46.246Z",
   "totalReleases": 6,
   "totalChanges": 55,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-07-06",
     "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v0.4.0"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {

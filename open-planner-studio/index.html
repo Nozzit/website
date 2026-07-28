@@ -91,7 +91,11 @@
     .whatsnew-list { color: #5b4a2e; font-size: 1.02rem; line-height: 1.7; margin: 0 0 var(--sp-4); padding-left: var(--sp-5); max-width: 68ch; }
     .whatsnew-list li { margin-bottom: var(--sp-2); }
     .whatsnew-list li::marker { color: var(--amber); }
-    .slider-container { position: relative; overflow: hidden; border-radius: 12px; background: #2A2A32; }
+    /* Geen eigen achtergrond: de flex-track neemt de hoogte van de langste
+       slide, dus onder een bredere screenshot bleef er anders een donkere
+       balk staan. De screenshots zitten nu bovendien allemaal tussen 1.90 en
+       2.00, waardoor het verschil hooguit een paar pixels wit is. */
+    .slider-container { position: relative; overflow: hidden; border-radius: 12px; background: transparent; }
     .slider-track { display: flex; transition: transform 0.4s ease; }
     .slider-slide { min-width: 100%; }
     /* height:auto is nodig zodra de img een height-attribuut heeft, anders
@@ -129,7 +133,6 @@
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-app-browser.png" alt="Open Planner Studio — draait volledig in de browser, hier een GWW-brugvervanging" width="2044" height="1074" decoding="async" loading="lazy"></div>
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-planning.png" alt="Open Planner Studio — WBS en tijdlijn met kritieke pad" width="2044" height="1021" decoding="async" loading="lazy"></div>
           <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-details.png" alt="Open Planner Studio — taakeigenschappen en planningdetails" width="2044" height="1074" decoding="async" loading="lazy"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-planner-studio-context.png" alt="Open Planner Studio — contextmenu en bewerking" width="1600" height="1000" decoding="async" loading="lazy"></div>
         </div>
         <button class="slider-btn slider-prev" onclick="slideMove(-1)">&lsaquo;</button>
         <button class="slider-btn slider-next" onclick="slideMove(1)">&rsaquo;</button>

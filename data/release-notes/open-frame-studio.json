@@ -1,6 +1,6 @@
 {
   "repo": "open-frame-studio",
-  "generated": "2026-07-28T09:25:50.577Z",
+  "generated": "2026-07-28T12:00:44.712Z",
   "totalReleases": 8,
   "totalChanges": 48,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-07-14",
     "url": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases/tag/v0.6.0"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {
