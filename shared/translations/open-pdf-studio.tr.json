@@ -15,6 +15,11 @@
   "download": {
     "title": "v1.82.0 indir"
   },
+  "performance": {
+    "label": "Rust PDF Motoru",
+    "title": "Şimşek hızında <span style=\"color: var(--amber);\">vektör PDF’ler</span>",
+    "desc": "Open PDF Studio, maksimum performans için kendi Rust PDF motorunu kullanır. Vektör PDF dosyaları — teknik çizimler, kat planları ve karmaşık diyagramlar — yüzlerce sayfada bile anında işlenir. JavaScript darboğazı yok, render beklemesi yok."
+  },
   "features": {
     "heading": "Özellikler",
     "annotations": {

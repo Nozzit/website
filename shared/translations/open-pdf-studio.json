@@ -15,6 +15,11 @@
   "download": {
     "title": "Download v1.82.0"
   },
+  "performance": {
+    "label": "Rust PDF Engine",
+    "title": "Blazing-fast <span style=\"color: var(--amber);\">vector PDFs</span>",
+    "desc": "Open PDF Studio uses its own Rust PDF engine for maximum performance. Vector PDF files — technical drawings, floor plans and complex diagrams — render instantly, even at hundreds of pages. No JavaScript bottleneck, no waiting for rendering."
+  },
   "features": {
     "heading": "Features",
     "annotations": {

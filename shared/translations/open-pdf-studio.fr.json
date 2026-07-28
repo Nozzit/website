@@ -15,6 +15,11 @@
   "download": {
     "title": "Télécharger v1.82.0"
   },
+  "performance": {
+    "label": "Moteur PDF Rust",
+    "title": "Des <span style=\"color: var(--amber);\">PDF vectoriels</span> ultra-rapides",
+    "desc": "Open PDF Studio utilise son propre moteur PDF en Rust pour des performances maximales. Les fichiers PDF vectoriels — plans techniques, plans d’étage et diagrammes complexes — s’affichent instantanément, même à des centaines de pages. Aucun goulot d’étranglement JavaScript, aucune attente de rendu."
+  },
   "features": {
     "heading": "Fonctionnalités",
     "annotations": {
