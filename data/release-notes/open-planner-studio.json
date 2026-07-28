@@ -1,19 +1,34 @@
 {
   "repo": "open-planner-studio",
-  "generated": "2026-07-27T15:12:01.792Z",
-  "totalReleases": 16,
-  "totalChanges": 182,
+  "generated": "2026-07-28T09:25:46.857Z",
+  "totalReleases": 17,
+  "totalChanges": 188,
   "latestStable": {
-    "tag": "v2026.7.12",
-    "name": "Open Planner Studio v2026.7.12",
-    "date": "2026-07-23",
-    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.12"
+    "tag": "v2026.7.13",
+    "name": "Open Planner Studio v2026.7.13",
+    "date": "2026-07-27",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.13"
   },
   "nightly": null,
   "groups": [
     {
       "minorVersion": "2026.7",
       "releases": [
+        {
+          "tag": "v2026.7.13",
+          "name": "Open Planner Studio v2026.7.13",
+          "date": "2026-07-27",
+          "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.13",
+          "changes": [
+            "AI assistant: an MCP server is now built into the app, so an AI client such as Claude Code can read and edit your planning directly. Turn it on in the new AI tab, with pause, read-only and automatic backups as safeguards.",
+            "Resource libraries: share one resource pool across projects. The library is the source, the project shows what it actually uses, and deviations are marked so you can resolve them.",
+            "Gantt and table: drag a whole selection vertically, collapse non-working days out of the timeline, week numbers in the header, Ctrl+click multi-select, and the WBS table now edits like a spreadsheet.",
+            "Reports: adjustable font size, repeat the header on every page, spread the timeline over several pages, and every report setting is remembered. Interface font and text size are configurable as well.",
+            "Fixes: dates could shift a day in some timezones; an apostrophe or semicolon in a task name could corrupt a saved file; crash recovery could lose dependencies or baselines; exports could ship a stale schedule; failed saves are no longer silent. One leftover needs your hand: files saved by an earlier version may show a literal \"$\" in a task description, WBS code or calendar description — that has to be cleared manually, as it can't be told apart from a \"$\" you typed on purpose.",
+            "Manual: the in-app help is now available in all 14 languages, with new guides for resource libraries and for connecting an AI assistant."
+          ],
+          "patchNum": 13
+        },
         {
           "tag": "v2026.7.12",
           "name": "Open Planner Studio v2026.7.12",
@@ -306,6 +321,12 @@
         }
       ],
       "allChanges": [
+        "AI assistant: an MCP server is now built into the app, so an AI client such as Claude Code can read and edit your planning directly. Turn it on in the new AI tab, with pause, read-only and automatic backups as safeguards.",
+        "Resource libraries: share one resource pool across projects. The library is the source, the project shows what it actually uses, and deviations are marked so you can resolve them.",
+        "Gantt and table: drag a whole selection vertically, collapse non-working days out of the timeline, week numbers in the header, Ctrl+click multi-select, and the WBS table now edits like a spreadsheet.",
+        "Reports: adjustable font size, repeat the header on every page, spread the timeline over several pages, and every report setting is remembered. Interface font and text size are configurable as well.",
+        "Fixes: dates could shift a day in some timezones; an apostrophe or semicolon in a task name could corrupt a saved file; crash recovery could lose dependencies or baselines; exports could ship a stale schedule; failed saves are no longer silent. One leftover needs your hand: files saved by an earlier version may show a literal \"$\" in a task description, WBS code or calendar description — that has to be cleared manually, as it can't be told apart from a \"$\" you typed on purpose.",
+        "Manual: the in-app help is now available in all 14 languages, with new guides for resource libraries and for connecting an AI assistant.",
         "**Bestanden openen en opslaan in de browser.** De web-versie was tot nu toe volledig bruikbaar",
         "**Openen, opslaan, opslaan-als en exporteren** (IFC, CSV, MS Project, Primavera P6) werken nu",
         "**Browsers met de File System Access API** — in de praktijk de Chromium-familie (Chrome, Edge,",
@@ -483,9 +504,9 @@
         "All new UI strings translated in **14 languages**."
       ],
       "firstDate": "2026-07-02",
-      "lastDate": "2026-07-23",
-      "releaseCount": 13,
-      "changeCount": 175
+      "lastDate": "2026-07-27",
+      "releaseCount": 14,
+      "changeCount": 181
     },
     {
       "minorVersion": "2026.6",

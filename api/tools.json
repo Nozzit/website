@@ -1,13 +1,13 @@
 {
-  "$schema": "https://www.open-aec.com/api/tools.schema.json",
-  "generated": "2026-07-27T15:12:26.913Z",
+  "$schema": "https://open-aec.com/api/tools.schema.json",
+  "generated": "2026-07-28T09:25:55.432Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
     "description": "Non-profit foundation developing open-source software for the entire Architecture, Engineering & Construction (AEC) industry — buildings, civil infrastructure (GWW), and civil engineering.",
     "country": "Netherlands",
     "status": "in formation (stichting i.o.)",
-    "website": "https://www.open-aec.com",
+    "website": "https://open-aec.com",
     "github": "https://github.com/OpenAEC-Foundation",
     "linkedin": "https://www.linkedin.com/company/23749451",
     "email": "info@open-aec.com",
@@ -113,7 +113,7 @@
         "Linux",
         "Android"
       ],
-      "productPage": "https://www.open-aec.com/open-pdf-studio/",
+      "productPage": "https://open-aec.com/open-pdf-studio/",
       "liveDemo": "https://open-pdf-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
@@ -162,7 +162,7 @@
         "macOS",
         "Linux"
       ],
-      "productPage": "https://www.open-aec.com/open-2d-studio/",
+      "productPage": "https://open-aec.com/open-2d-studio/",
       "liveDemo": "https://open-2d-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-2d-studio",
       "stats": {
@@ -214,7 +214,7 @@
         "Linux",
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/open-calc-studio/",
+      "productPage": "https://open-aec.com/open-calc-studio/",
       "liveDemo": "https://open-calc-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-calc-studio",
       "stats": {
@@ -264,7 +264,7 @@
         "Linux",
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/open-heatloss-studio/",
+      "productPage": "https://open-aec.com/open-heatloss-studio/",
       "liveDemo": "https://open-heatloss-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "stats": {
@@ -308,7 +308,7 @@
         "Linux",
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/open-energy-studio/",
+      "productPage": "https://open-aec.com/open-energy-studio/",
       "liveDemo": "https://open-energy-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-energy-studio",
       "stats": null
@@ -317,23 +317,37 @@
       "id": "open-planner-studio",
       "repo": "open-planner-studio",
       "name": "Open Planner Studio",
-      "category": "Project Management",
+      "category": "Project Planning",
       "status": "beta",
-      "description": "Open planning and project coordination tool for buildings, infrastructure and civil works.",
+      "description": "Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule. Runs on Windows, macOS and Linux and fully in the browser.",
       "keywords": [
         "project planning",
+        "construction scheduling",
+        "bouwplanning",
+        "werkvoorbereiding",
         "Gantt",
-        "scheduling",
+        "critical path",
+        "CPM",
+        "WBS",
+        "resource levelling",
+        "baseline",
+        "4D BIM",
+        "IFC 4.3",
+        "MCP server",
+        "AI assistant",
         "MS Project alternative",
-        "planning"
+        "Primavera P6 alternative",
+        "Asta Powerproject alternative"
       ],
       "alternatives": [
-        "MS Project",
+        "Microsoft Project",
         "Primavera P6",
+        "Asta Powerproject",
         "TILOS"
       ],
       "license": "LGPL-3.0",
       "techStack": [
+        "Rust",
         "TypeScript",
         "Tauri 2"
       ],
@@ -343,7 +357,7 @@
         "Linux",
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/open-planner-studio/",
+      "productPage": "https://open-aec.com/open-planner-studio/",
       "liveDemo": "https://open-planner-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-planner-studio",
       "stats": {
@@ -386,7 +400,7 @@
         "Web",
         "Windows"
       ],
-      "productPage": "https://www.open-aec.com/open-pile-plan-studio/",
+      "productPage": "https://open-aec.com/open-pile-plan-studio/",
       "liveDemo": "https://pile-plan-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/pile-plan-studio",
       "stats": {
@@ -434,7 +448,7 @@
         "macOS",
         "Linux"
       ],
-      "productPage": "https://www.open-aec.com/open-pointcloud-studio/",
+      "productPage": "https://open-aec.com/open-pointcloud-studio/",
       "liveDemo": "https://open-pointcloud-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio",
       "stats": {
@@ -480,7 +494,7 @@
         "macOS",
         "Linux"
       ],
-      "productPage": "https://www.open-aec.com/open-frame-studio/",
+      "productPage": "https://open-aec.com/open-frame-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-frame-studio",
       "stats": {
         "commits": 121,
@@ -532,7 +546,7 @@
         "Android",
         "iOS"
       ],
-      "productPage": "https://www.open-aec.com/open-field-studio/",
+      "productPage": "https://open-aec.com/open-field-studio/",
       "liveDemo": "https://open-field-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Open-Field-Studio",
       "stats": {
@@ -601,8 +615,8 @@
         "macOS",
         "Linux"
       ],
-      "productPage": "https://www.open-aec.com/open-speech-studio/",
-      "comparisonPage": "https://www.open-aec.com/vs/dragon/",
+      "productPage": "https://open-aec.com/open-speech-studio/",
+      "comparisonPage": "https://open-aec.com/vs/dragon/",
       "useCases": [
         "Inspecties op de bouwplaats: handsfree dictate van bevindingen",
         "Real-time vergader-transcriptie (zonder cloud, GDPR-safe)",
@@ -661,7 +675,7 @@
         "macOS",
         "Linux"
       ],
-      "productPage": "https://www.open-aec.com/monty-ifc-viewer/",
+      "productPage": "https://open-aec.com/monty-ifc-viewer/",
       "liveDemo": "https://monty-ifc-viewer.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer",
       "stats": {
@@ -709,7 +723,7 @@
         "Linux",
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/bcf-manager-studio/",
+      "productPage": "https://open-aec.com/bcf-manager-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-bcf-platform",
       "stats": {
         "commits": 40,
@@ -752,7 +766,7 @@
       "platforms": [
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/bim-validator/",
+      "productPage": "https://open-aec.com/bim-validator/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator",
       "stats": {
         "commits": 74,
@@ -797,7 +811,7 @@
         "Web",
         "Self-hosted"
       ],
-      "productPage": "https://www.open-aec.com/openaec-docs/",
+      "productPage": "https://open-aec.com/openaec-docs/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-docs",
       "stats": {
         "commits": 5,
@@ -838,7 +852,7 @@
         "Web",
         "Self-hosted"
       ],
-      "productPage": "https://www.open-aec.com/openaec-cloud/",
+      "productPage": "https://open-aec.com/openaec-cloud/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-cloud",
       "stats": {
         "commits": 2,
@@ -908,17 +922,17 @@
       "platforms": [
         "Web"
       ],
-      "productPage": "https://www.open-aec.com/y-app/",
+      "productPage": "https://open-aec.com/y-app/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Y-app",
       "stats": null
     }
   ],
   "links": {
-    "website": "https://www.open-aec.com",
-    "llmsTxt": "https://www.open-aec.com/llms.txt",
-    "sitemap": "https://www.open-aec.com/sitemap.xml",
-    "stats": "https://www.open-aec.com/data/stats.json",
-    "news": "https://www.open-aec.com/data/news.json",
-    "roadmap": "https://www.open-aec.com/roadmap/"
+    "website": "https://open-aec.com",
+    "llmsTxt": "https://open-aec.com/llms.txt",
+    "sitemap": "https://open-aec.com/sitemap.xml",
+    "stats": "https://open-aec.com/data/stats.json",
+    "news": "https://open-aec.com/data/news.json",
+    "roadmap": "https://open-aec.com/roadmap/"
   }
 }
