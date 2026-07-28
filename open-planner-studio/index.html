@@ -125,6 +125,11 @@
     .slider-dots { display: flex; justify-content: center; gap: 8px; padding: 12px 0; }
     .slider-dot { width: 8px; height: 8px; border-radius: 50%; background: #D6D3D1; border: none; cursor: pointer; }
     .slider-dot.active { background: #D97706; }
+    @media (max-width: 768px) {
+      /* var(--sp-8) rondom laat op 375px maar ~215px tekst over */
+      .explainer { padding: var(--sp-6) var(--sp-5); }
+      .explainer h2 { font-size: 1.25rem; }
+    }
   </style>
 </head>
 <body>
