@@ -8,6 +8,7 @@
   <url><loc>https://www.open-aec.com/statistieken/</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.open-aec.com/nieuws/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.open-aec.com/supporters/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.open-aec.com/wij-ondersteunen/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.open-aec.com/credits/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.open-aec.com/diensten/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.open-aec.com/beleid/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
