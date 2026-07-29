@@ -45,7 +45,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ## Download & links
 
-- Product page: https://www.open-aec.com/open-pile-plan-studio/
+- Product page: https://open-aec.com/open-pile-plan-studio/
 - Live demo: https://open-pile-plan-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/pile-plan-studio
 - Latest stable release: https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.3-alpha
@@ -53,4 +53,4 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ---
 
-Part of the [OpenAEC Foundation](https://www.open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.
+Part of the [OpenAEC Foundation](https://open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.

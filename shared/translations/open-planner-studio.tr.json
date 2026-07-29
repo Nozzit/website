@@ -2,8 +2,8 @@
   "header": {
     "label": "İnşaat planlaması",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — ve yerel dosya biçimi olarak IFC 4.3. Masaüstünüzde ve doğrudan tarayıcınızda.",
-    "downloadBtn": "v2026.7.11'i indir",
+    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — dosya biçimi olarak yerel IFC 4.3. Yerleşik bir MCP sunucusuyla birlikte gelir, böylece bir yapay zekâ asistanı planınızı okuyup düzenleyebilir. Masaüstünüzde ve doğrudan tarayıcıda.",
+    "downloadBtn": "v2026.7.13'ü indir",
     "demoBtn": "Tarayıcıda aç",
     "sourceBtn": "Kaynak kodu görüntüle"
   },
@@ -12,10 +12,13 @@
     "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Open Planner Studio <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">tamamen tarayıcınızda da</a> çalışır — dosya açma ve kaydetme dahil."
   },
   "features": {
-    "heading": "Özellikler",
+    "ai": {
+      "title": "MCP ile yapay zekâ asistanı",
+      "desc": "Uygulamaya bir MCP sunucusu gömülüdür; Claude Code gibi bir yapay zekâ istemcisi planınızı doğrudan okuyup düzenleyebilir. YZ sekmesinden açılır; duraklatma düğmesi, salt okunur mod ve otomatik yedekler bulunur."
+    },
     "gantt": {
       "title": "Gantt şemaları",
-      "desc": "Sürükle bırak, yakınlaştırma ve zaman çizelgesi gezinmesi olan etkileşimli HTML5 Canvas Gantt. Birden fazla görevi aynı anda seçmek için kutu seçimi."
+      "desc": "Sürükle bırak, yakınlaştırma ve zaman çizelgesi gezinmesi olan etkileşimli HTML5 Canvas Gantt. Bir seçimin tamamını dikey olarak sürükleyin, çalışılmayan günleri zaman çizelgesinden katlayın ve Ctrl+tık ile seçin. Başlıkta hafta numaraları."
     },
     "cpm": {
       "title": "Kritik yol (CPM)",
@@ -23,7 +26,7 @@
     },
     "wbs": {
       "title": "WBS ve tablo görünümü",
-      "desc": "Katlanabilir bölümlerle hiyerarşik görev yapısı. Hücre içinde düzenleme yapılan Excel benzeri tablo düzenleyici."
+      "desc": "Katlanabilir bölümlerle hiyerarşik görev yapısı. Tablo bir hesap tablosu gibi düzenlenir: hücrede yazın, aynı anda birden çok satır seçin ve satırları sürükleyin."
     },
     "ifc": {
       "title": "Yerel IFC 4.3",
@@ -33,6 +36,11 @@
       "title": "Kaynaklar ve dengeleme",
       "desc": "Histogram ve aşırı yüklemenin otomatik dengelenmesi ile işçilik, ekipman ve taşeronlar. Atamaları birim ve eğriyi koruyarak taşıyın."
     },
+    "library": {
+      "title": "Kaynak kitaplıkları",
+      "desc": "Tek bir kaynak havuzunu birden fazla proje arasında paylaşın. Kitaplık kaynaktır, proje gerçekte neyi kullandığını gösterir ve sapmalar çözebilmeniz için işaretlenir."
+    },
+    "heading": "Özellikler",
     "baselines": {
       "title": "Temel planlar ve ilerleme",
       "desc": "Birden fazla temel plan kaydedin ve durum tarihi, gerçek başlangıç ve sadeleştirilmiş bir ilerleme çizgisi ile ilerlemeyi girin."
@@ -55,11 +63,11 @@
     },
     "reporting": {
       "title": "Raporlama ve yazdırma",
-      "desc": "Şeritte yapılandırılabilir seçeneklerle canlı baskı önizlemesi ve gerçek yüksek çözünürlüklü PDF'ye (yaklaşık 220 DPI) aktarım."
+      "desc": "Şeritte canlı baskı önizlemesi ve gerçek yüksek çözünürlüklü PDF dışa aktarımı (±220 DPI). Ayarlanabilir yazı boyutu, her sayfada tekrarlanan bir başlık ve birden fazla sayfaya yayılabilen bir zaman çizelgesi. Ayarlarınız hatırlanır."
     },
     "docs": {
       "title": "Uygulama içi kılavuz",
-      "desc": "Çevrimdışı kılavuz için F1'e basın: hızlı başlangıç, dokuz uygulama rehberi ve on beş başvuru sayfası — ayrıca alıştırma yapmak için üç örnek proje."
+      "desc": "Çevrimdışı kılavuz için F1'e basın; on dört dilin hepsinde mevcut: hızlı başlangıç, uygulama rehberleri — kaynak kitaplıkları ve bir yapay zekâ asistanının bağlanması dahil — ve on beş başvuru sayfası, ayrıca alıştırma için üç örnek proje."
     },
     "shortcuts": {
       "title": "Kısayollar ve bağlam menüleri",
@@ -98,11 +106,47 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "v2026.7.11'de yeni · test edenler aranıyor",
-    "title": "Artık tarayıcınızda da eksiksiz kullanılabilir",
-    "desc": "Web sürümü artık <strong>dosya açıp kaydedebiliyor</strong>. Chromium tarayıcılarda (Chrome, Edge, Brave, Opera, Vivaldi) Ctrl+S ile tıpkı masaüstündeki gibi <strong>aynı dosyanın üzerine</strong> kaydedersiniz; Firefox ve Safari için dosya seçici üzerinden düzgün bir geri dönüş var. <strong>Otomatik kaydetme ve çökme kurtarma</strong> da artık tarayıcıda çalışıyor. Bunlara ek olarak: <strong>uygulama içinde eksiksiz bir kılavuz</strong> (F1), tadilattan apartman kompleksine kadar <strong>üç örnek proje</strong> ve kaydetme sırasında veri kaybına yol açabilen sekiz açığın kapatılması.",
+    "label": "v2026.7.13'te yeni · test edenler aranıyor",
+    "title": "Planınızı bir yapay zekâ asistanı okusun ve düzenlesin",
+    "desc": "Uygulamanın içinde artık bir <strong>MCP sunucusu</strong> var. Böylece Claude Code gibi bir yapay zekâ istemcisi planınızı doğrudan okuyup düzenleyebiliyor — yeni <strong>YZ sekmesinden</strong> açıyorsunuz; duraklatma düğmesi, salt okunur mod ve otomatik yedekler güvenlik ağı olarak çalışıyor.",
     "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio'yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz gidişatı belirlemeye yardımcı olur.",
     "ctaDemo": "Canlı demoyu deneyin →",
-    "ctaJoin": "Test eden olarak katıl"
+    "ctaJoin": "Test eden olarak katıl",
+    "list": "<li><strong>Kaynak kitaplıkları</strong> — birden fazla proje arasında paylaşılan tek bir havuz; sapmalar işaretlenir.</li><li><strong>Gantt ve tablo</strong> — bir seçimin tamamını dikey sürükleyin, çalışılmayan günleri katlayın, başlıkta hafta numaraları, Ctrl+tık ve WBS tablosu bir hesap tablosu gibi düzenlenir.</li><li><strong>Raporlar</strong> — ayarlanabilir yazı boyutu, her sayfada başlık ve birden fazla sayfaya yayılan zaman çizelgesi.</li><li><strong>Kılavuz</strong> — artık on dört dilin hepsinde; kaynak kitaplıkları ve yapay zekâ asistanı bağlama rehberleriyle.</li>"
+  },
+  "faq": {
+    "heading": "Sık sorulan sorular",
+    "import": {
+      "q": "Microsoft Project veya Primavera P6 dosyalarını açabilir miyim?",
+      "a": "Evet. Open Planner Studio, MS Project (.xml) ve Primavera P6 (.xml) dosyalarını ara adım veya dönüştürme aracı olmadan doğrudan içe ve dışa aktarır. IFC ve CSV de desteklenir."
+    },
+    "browser": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Uygulamanın tamamı tarayıcıda çalışır; dosya açma ve kaydetme, otomatik kaydetme ve çökme kurtarma dahil. Chromium tarayıcılarda (Chrome, Edge, Brave, Opera, Vivaldi) Ctrl+S aynı dosyanın üzerine kaydeder, masaüstündeki gibi; Firefox ve Safari dosya seçiciye geri döner. Yine de kurmak isterseniz Windows, macOS ve Linux sürümleri mevcuttur."
+    },
+    "formaat": {
+      "q": "Planım hangi dosya biçiminde kaydedilir?",
+      "a": "buildingSMART’ın açık standardı olan IFC 4.3 biçiminde. Planınız bir IFC dosyasıdır — kapalı, özel bir biçim yoktur. Böylece verileriniz bu uygulamanın dışında da okunabilir kalır ve plan görevlerini 4D için bir IFC yapı modelinin öğelerine bağlayabilirsiniz."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı planımla tam olarak ne yapabilir?",
+      "a": "v2026.7.13’ten beri uygulamada yerleşik bir MCP sunucusu var. Claude Code gibi bir yapay zekâ istemcisi planınızı okuyabilir — proje genel görünümü, görevler, kritik yol, kaynaklar, histogram, takvimler ve temel planlar — ve düzenleyebilir. Bağlantıyı YZ sekmesinden açarsınız ve kontrol sizde kalır: duraklatma düğmesi, salt okunur mod, otomatik yedekler ve asistanın yaptığı her çağrıyı listeleyen bir etkinlik paneli."
+    },
+    "prijs": {
+      "q": "Open Planner Studio ne kadar?",
+      "a": "Hiç. Uygulama LGPL-3.0 lisansı altında ücretsiz ve açık kaynaktır. Abonelik yok, kullanıcı başına lisans ücreti yok."
+    },
+    "platforms": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows (.exe), macOS (evrensel .dmg, hem Intel hem Apple Silicon) ve Linux (.deb, .rpm, AppImage ve snap). Ayrıca tamamen tarayıcıda."
+    },
+    "bouwpraktijk": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "Evet. Resmi tatiller, inşaat tatili, don nedeniyle duraklama, denetim anları ve fazlandırma ile inşaata özgü takvimler kurarsınız ve saat düzeyine kadar planlarsınız. Arayüz on dört dilde mevcuttur."
+    },
+    "analyse": {
+      "q": "Bitiş tarihini hangi görevlerin belirlediğini görebilir miyim?",
+      "a": "Evet. Kritik yol otomatik hesaplanır; bolluk, kritiğe yakın işler, birden fazla kritik yol ve son tarih analizi ile. Kaynaklar aşırı yüklemenin otomatik dengelenmesini içeren bir histogram alır ve birden fazla temel plan ile özgün plandan sapmaları izlersiniz."
+    }
   }
 }

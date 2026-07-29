@@ -52,7 +52,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ## Download & links
 
-- Product page: https://www.open-aec.com/open-2d-studio/
+- Product page: https://open-aec.com/open-2d-studio/
 - Live demo: https://open-2d-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-2d-studio
 - Latest stable release: https://github.com/OpenAEC-Foundation/open-2d-studio/releases/tag/v0.35.0
@@ -71,4 +71,4 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ---
 
-Part of the [OpenAEC Foundation](https://www.open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.
+Part of the [OpenAEC Foundation](https://open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.

@@ -3,99 +3,59 @@
 # Our mission is open source — discoverability for AI assistants is part of that.
 
 # Sitemap
-Sitemap: https://www.open-aec.com/sitemap.xml
+Sitemap: https://open-aec.com/sitemap.xml
 
 # All standard search bots
 User-agent: *
 Allow: /
+Disallow: /presentation foundation/
+Disallow: /old/
+Disallow: /*.draft.html$
 
 # === AI assistants & LLM crawlers — explicit allow ===
+# Consecutive User-agent lines form ONE group (RFC 9309), so every bot listed
+# below shares the rules at the bottom of this block. Giving each bot its own
+# group would mean a group containing only "Allow: /", which does NOT inherit
+# the exclusions above — that is how these crawlers reached /old/ and drafts.
 
 # Anthropic Claude
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: Claude-Web
-Allow: /
-
 User-agent: anthropic-ai
-Allow: /
-
 # OpenAI ChatGPT
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 # Google Gemini & AI Overview
 User-agent: Google-Extended
-Allow: /
-
 User-agent: Googlebot
-Allow: /
-
 # Perplexity
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Perplexity-User
-Allow: /
-
 # Meta AI (Llama)
 User-agent: Meta-ExternalAgent
-Allow: /
-
 User-agent: FacebookBot
-Allow: /
-
 # xAI Grok
 User-agent: Grok
-Allow: /
-
 # Mistral
 User-agent: MistralAI-User
-Allow: /
-
 # Cohere
 User-agent: cohere-ai
-Allow: /
-
 # Apple Intelligence
 User-agent: Applebot
-Allow: /
-
 User-agent: Applebot-Extended
-Allow: /
-
 # DuckDuckGo
 User-agent: DuckDuckBot
-Allow: /
-
 # Bing & Microsoft Copilot
 User-agent: Bingbot
-Allow: /
-
 User-agent: msnbot
-Allow: /
-
 # Yandex
 User-agent: YandexBot
-Allow: /
-
 # Common Crawl (used by many LLMs for training)
 User-agent: CCBot
-Allow: /
-
 # Diffbot (used by some AI search engines)
 User-agent: Diffbot
 Allow: /
-
-# === Don't index draft / presentation files ===
-User-agent: *
 Disallow: /presentation foundation/
 Disallow: /old/
 Disallow: /*.draft.html$

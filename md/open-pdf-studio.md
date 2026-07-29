@@ -6,7 +6,7 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux, Android
 **Category:** PDF / Document
-**Current version:** untagged-fc4a0ecb8d660bafa52e (2026-07-23)
+**Current version:** untagged-fc4a0ecb8d660bafa52e (2026-07-28)
 **Tool ID:** `open-pdf-studio`
 **GitHub repo:** `OpenAEC-Foundation/open-pdf-studio`
 
@@ -59,10 +59,10 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ## Download & links
 
-- Product page: https://www.open-aec.com/open-pdf-studio/
+- Product page: https://open-aec.com/open-pdf-studio/
 - Live demo: https://open-pdf-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-pdf-studio
-- Latest stable release: https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.82.0
+- Latest stable release: https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.84.0
 - Nightly builds: https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly
 
 ## Direct downloads (most popular)
@@ -78,4 +78,4 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 ---
 
-Part of the [OpenAEC Foundation](https://www.open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.
+Part of the [OpenAEC Foundation](https://open-aec.com/) ecosystem — open-source software for buildings, civil infrastructure (GWW) and civil engineering. All tools communicate through **IFCX**.

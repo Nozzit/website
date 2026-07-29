@@ -1,6 +1,6 @@
 {
   "repo": "open-pointcloud-studio",
-  "generated": "2026-07-27T15:12:02.587Z",
+  "generated": "2026-07-28T12:00:38.701Z",
   "totalReleases": 2,
   "totalChanges": 10,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-03-03",
     "url": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases/tag/v0.3.0"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {

@@ -21,7 +21,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Rust', 'SolidJS', 'Tauri 2', 'PDF.js', 'pdf-lib'],
     platforms: ['Windows', 'macOS', 'Linux', 'Android'],
-    productPage: 'https://www.open-aec.com/open-pdf-studio/',
+    productPage: 'https://open-aec.com/open-pdf-studio/',
     liveDemo: 'https://open-pdf-studio.open-aec.com/',
   },
   {
@@ -36,7 +36,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Rust', 'React', 'TypeScript', 'Tauri 2', 'Canvas 2D', 'Zustand'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    productPage: 'https://www.open-aec.com/open-2d-studio/',
+    productPage: 'https://open-aec.com/open-2d-studio/',
     liveDemo: 'https://open-2d-studio.open-aec.com/',
   },
   {
@@ -51,7 +51,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['TypeScript', 'Rust', 'Tauri 2', 'MCP'],
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
-    productPage: 'https://www.open-aec.com/open-calc-studio/',
+    productPage: 'https://open-aec.com/open-calc-studio/',
     liveDemo: 'https://open-calc-studio.open-aec.com/',
   },
   {
@@ -66,7 +66,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Rust', 'TypeScript', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
-    productPage: 'https://www.open-aec.com/open-heatloss-studio/',
+    productPage: 'https://open-aec.com/open-heatloss-studio/',
     liveDemo: 'https://open-heatloss-studio.open-aec.com/',
   },
   {
@@ -81,22 +81,22 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['TypeScript', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
-    productPage: 'https://www.open-aec.com/open-energy-studio/',
+    productPage: 'https://open-aec.com/open-energy-studio/',
     liveDemo: 'https://open-energy-studio.open-aec.com/',
   },
   {
     id: 'open-planner-studio',
     repo: 'open-planner-studio',
     name: 'Open Planner Studio',
-    category: 'Project Management',
+    category: 'Project Planning',
     status: 'beta',
-    description: 'Open planning and project coordination tool for buildings, infrastructure and civil works.',
-    keywords: ['project planning', 'Gantt', 'scheduling', 'MS Project alternative', 'planning'],
-    alternatives: ['MS Project', 'Primavera P6', 'TILOS'],
+    description: 'Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule. Runs on Windows, macOS and Linux and fully in the browser.',
+    keywords: ['project planning', 'construction scheduling', 'bouwplanning', 'werkvoorbereiding', 'Gantt', 'critical path', 'CPM', 'WBS', 'resource levelling', 'baseline', '4D BIM', 'IFC 4.3', 'MCP server', 'AI assistant', 'MS Project alternative', 'Primavera P6 alternative', 'Asta Powerproject alternative'],
+    alternatives: ['Microsoft Project', 'Primavera P6', 'Asta Powerproject', 'TILOS'],
     license: 'LGPL-3.0',
-    techStack: ['TypeScript', 'Tauri 2'],
+    techStack: ['Rust', 'TypeScript', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
-    productPage: 'https://www.open-aec.com/open-planner-studio/',
+    productPage: 'https://open-aec.com/open-planner-studio/',
     liveDemo: 'https://open-planner-studio.open-aec.com/',
   },
   {
@@ -111,7 +111,7 @@ const TOOLS = [
     license: 'LGPL-3.0-or-later',
     techStack: ['Rust', 'WebAssembly', 'React', 'TypeScript', 'Tauri 2'],
     platforms: ['Web', 'Windows'],
-    productPage: 'https://www.open-aec.com/open-pile-plan-studio/',
+    productPage: 'https://open-aec.com/open-pile-plan-studio/',
     liveDemo: 'https://pile-plan-studio.open-aec.com/',
   },
   {
@@ -126,7 +126,7 @@ const TOOLS = [
     license: 'LGPL-3.0-or-later',
     techStack: ['TypeScript', 'React', 'Three.js', 'Rust', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    productPage: 'https://www.open-aec.com/open-pointcloud-studio/',
+    productPage: 'https://open-aec.com/open-pointcloud-studio/',
     liveDemo: 'https://open-pointcloud-studio.open-aec.com/',
   },
   {
@@ -141,7 +141,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Svelte', 'Rust', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    productPage: 'https://www.open-aec.com/open-frame-studio/',
+    productPage: 'https://open-aec.com/open-frame-studio/',
   },
   {
     id: 'open-field-studio',
@@ -155,7 +155,7 @@ const TOOLS = [
     license: 'CC-BY-SA-4.0',
     techStack: ['JavaScript', 'Tauri 2', 'i18next', 'PDF.js'],
     platforms: ['Windows', 'macOS', 'Linux', 'Android', 'iOS'],
-    productPage: 'https://www.open-aec.com/open-field-studio/',
+    productPage: 'https://open-aec.com/open-field-studio/',
     liveDemo: 'https://open-field-studio.open-aec.com/',
   },
   {
@@ -172,8 +172,8 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['TypeScript', 'Rust', 'Tauri 2', 'Whisper AI', 'CUDA'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    productPage: 'https://www.open-aec.com/open-speech-studio/',
-    comparisonPage: 'https://www.open-aec.com/vs/dragon/',
+    productPage: 'https://open-aec.com/open-speech-studio/',
+    comparisonPage: 'https://open-aec.com/vs/dragon/',
     useCases: [
       'Inspecties op de bouwplaats: handsfree dictate van bevindingen',
       'Real-time vergader-transcriptie (zonder cloud, GDPR-safe)',
@@ -197,7 +197,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['TypeScript', 'Speckle Viewer', 'Three.js', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux'],
-    productPage: 'https://www.open-aec.com/monty-ifc-viewer/',
+    productPage: 'https://open-aec.com/monty-ifc-viewer/',
     liveDemo: 'https://monty-ifc-viewer.open-aec.com/',
   },
   {
@@ -212,7 +212,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Rust', 'TypeScript', 'Tauri 2'],
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
-    productPage: 'https://www.open-aec.com/bcf-manager-studio/',
+    productPage: 'https://open-aec.com/bcf-manager-studio/',
   },
   {
     id: 'bim-validator',
@@ -226,7 +226,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Python', 'IfcOpenShell', 'Web'],
     platforms: ['Web'],
-    productPage: 'https://www.open-aec.com/bim-validator/',
+    productPage: 'https://open-aec.com/bim-validator/',
   },
   {
     id: 'openaec-docs',
@@ -240,7 +240,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Rust', 'TypeScript', 'Nextcloud'],
     platforms: ['Web', 'Self-hosted'],
-    productPage: 'https://www.open-aec.com/openaec-docs/',
+    productPage: 'https://open-aec.com/openaec-docs/',
   },
   {
     id: 'openaec-cloud',
@@ -254,7 +254,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['Rust', 'Nextcloud'],
     platforms: ['Web', 'Self-hosted'],
-    productPage: 'https://www.open-aec.com/openaec-cloud/',
+    productPage: 'https://open-aec.com/openaec-cloud/',
   },
   {
     id: 'cpt-viewer',
@@ -282,7 +282,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     techStack: ['TypeScript'],
     platforms: ['Web'],
-    productPage: 'https://www.open-aec.com/y-app/',
+    productPage: 'https://open-aec.com/y-app/',
   }
 ];
 
@@ -311,7 +311,7 @@ const enriched = TOOLS.map(tool => {
 });
 
 const output = {
-  $schema: 'https://www.open-aec.com/api/tools.schema.json',
+  $schema: 'https://open-aec.com/api/tools.schema.json',
   generated: new Date().toISOString(),
   foundation: {
     name: 'OpenAEC Foundation',
@@ -319,7 +319,7 @@ const output = {
     description: 'Non-profit foundation developing open-source software for the entire Architecture, Engineering & Construction (AEC) industry — buildings, civil infrastructure (GWW), and civil engineering.',
     country: 'Netherlands',
     status: 'in formation (stichting i.o.)',
-    website: 'https://www.open-aec.com',
+    website: 'https://open-aec.com',
     github: 'https://github.com/OpenAEC-Foundation',
     linkedin: 'https://www.linkedin.com/company/23749451',
     email: 'info@open-aec.com',
@@ -357,12 +357,12 @@ const output = {
   },
   tools: enriched,
   links: {
-    website: 'https://www.open-aec.com',
-    llmsTxt: 'https://www.open-aec.com/llms.txt',
-    sitemap: 'https://www.open-aec.com/sitemap.xml',
-    stats: 'https://www.open-aec.com/data/stats.json',
-    news: 'https://www.open-aec.com/data/news.json',
-    roadmap: 'https://www.open-aec.com/roadmap/',
+    website: 'https://open-aec.com',
+    llmsTxt: 'https://open-aec.com/llms.txt',
+    sitemap: 'https://open-aec.com/sitemap.xml',
+    stats: 'https://open-aec.com/data/stats.json',
+    news: 'https://open-aec.com/data/news.json',
+    roadmap: 'https://open-aec.com/roadmap/',
   },
 };
 

@@ -62,7 +62,7 @@ assert.ok(
   'BIM Validator mist release-notescomponent',
 );
 assert.ok(
-  validator.includes('<script src="/shared/release-notes.js?v=20260603"></script>'),
+  validator.includes('<script src="/shared/release-notes.js?v=20260728"></script>'),
   'BIM Validator laadt het release-notesscript niet',
 );
 assert.match(

@@ -1,6 +1,6 @@
 {
   "repo": "open-field-studio",
-  "generated": "2026-07-27T15:12:05.026Z",
+  "generated": "2026-07-28T12:00:43.072Z",
   "totalReleases": 4,
   "totalChanges": 19,
   "latestStable": {
@@ -9,6 +9,7 @@
     "date": "2026-03-31",
     "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.3"
   },
+  "latestChangelog": null,
   "nightly": null,
   "groups": [
     {

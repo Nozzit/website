@@ -1,17 +1,17 @@
 {
-  "$schema": "https://www.open-aec.com/md/index.schema.json",
+  "$schema": "https://open-aec.com/md/index.schema.json",
   "generated": "2026-07-27T15:12:26.682Z",
   "description": "Markdown mirrors of OpenAEC product pages for AI tool integrations.",
-  "base": "https://www.open-aec.com/md/",
+  "base": "https://open-aec.com/md/",
   "tools": [
     {
       "id": "open-pdf-studio",
       "name": "Open PDF Studio",
       "status": "beta",
       "category": "PDF / Document",
-      "markdown": "https://www.open-aec.com/md/open-pdf-studio.md",
+      "markdown": "https://open-aec.com/md/open-pdf-studio.md",
       "relativeMarkdown": "./open-pdf-studio.md",
-      "productPage": "https://www.open-aec.com/open-pdf-studio/",
+      "productPage": "https://open-aec.com/open-pdf-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio"
     },
     {
@@ -19,9 +19,9 @@
       "name": "Open 2D Studio",
       "status": "beta",
       "category": "CAD",
-      "markdown": "https://www.open-aec.com/md/open-2d-studio.md",
+      "markdown": "https://open-aec.com/md/open-2d-studio.md",
       "relativeMarkdown": "./open-2d-studio.md",
-      "productPage": "https://www.open-aec.com/open-2d-studio/",
+      "productPage": "https://open-aec.com/open-2d-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-2d-studio"
     },
     {
@@ -29,9 +29,9 @@
       "name": "Open Calc Studio",
       "status": "beta",
       "category": "Cost Estimation",
-      "markdown": "https://www.open-aec.com/md/open-calc-studio.md",
+      "markdown": "https://open-aec.com/md/open-calc-studio.md",
       "relativeMarkdown": "./open-calc-studio.md",
-      "productPage": "https://www.open-aec.com/open-calc-studio/",
+      "productPage": "https://open-aec.com/open-calc-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-calc-studio"
     },
     {
@@ -39,19 +39,19 @@
       "name": "Open Energy Studio",
       "status": "alpha",
       "category": "Building Physics",
-      "markdown": "https://www.open-aec.com/md/open-energy-studio.md",
+      "markdown": "https://open-aec.com/md/open-energy-studio.md",
       "relativeMarkdown": "./open-energy-studio.md",
-      "productPage": "https://www.open-aec.com/open-energy-studio/",
+      "productPage": "https://open-aec.com/open-energy-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-energy-studio"
     },
     {
       "id": "open-planner-studio",
       "name": "Open Planner Studio",
-      "status": "alpha",
+      "status": "beta",
       "category": "Project Planning",
-      "markdown": "https://www.open-aec.com/md/open-planner-studio.md",
+      "markdown": "https://open-aec.com/md/open-planner-studio.md",
       "relativeMarkdown": "./open-planner-studio.md",
-      "productPage": "https://www.open-aec.com/open-planner-studio/",
+      "productPage": "https://open-aec.com/open-planner-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-planner-studio"
     },
     {
@@ -59,9 +59,9 @@
       "name": "Pile Plan Studio",
       "status": "beta",
       "category": "Foundation Engineering",
-      "markdown": "https://www.open-aec.com/md/open-pile-plan-studio.md",
+      "markdown": "https://open-aec.com/md/open-pile-plan-studio.md",
       "relativeMarkdown": "./open-pile-plan-studio.md",
-      "productPage": "https://www.open-aec.com/open-pile-plan-studio/",
+      "productPage": "https://open-aec.com/open-pile-plan-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/pile-plan-studio"
     },
     {
@@ -69,9 +69,9 @@
       "name": "Open Pointcloud Studio",
       "status": "beta",
       "category": "Reality Capture",
-      "markdown": "https://www.open-aec.com/md/open-pointcloud-studio.md",
+      "markdown": "https://open-aec.com/md/open-pointcloud-studio.md",
       "relativeMarkdown": "./open-pointcloud-studio.md",
-      "productPage": "https://www.open-aec.com/open-pointcloud-studio/",
+      "productPage": "https://open-aec.com/open-pointcloud-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio"
     },
     {
@@ -79,9 +79,9 @@
       "name": "Open Heatloss Studio",
       "status": "alpha",
       "category": "Building Physics",
-      "markdown": "https://www.open-aec.com/md/open-heatloss-studio.md",
+      "markdown": "https://open-aec.com/md/open-heatloss-studio.md",
       "relativeMarkdown": "./open-heatloss-studio.md",
-      "productPage": "https://www.open-aec.com/open-heatloss-studio/",
+      "productPage": "https://open-aec.com/open-heatloss-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-heatloss-studio"
     },
     {
@@ -89,9 +89,9 @@
       "name": "Open Speech Studio",
       "status": "beta",
       "category": "Productivity",
-      "markdown": "https://www.open-aec.com/md/open-speech-studio.md",
+      "markdown": "https://open-aec.com/md/open-speech-studio.md",
       "relativeMarkdown": "./open-speech-studio.md",
-      "productPage": "https://www.open-aec.com/open-speech-studio/",
+      "productPage": "https://open-aec.com/open-speech-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-speech-studio"
     },
     {
@@ -99,9 +99,9 @@
       "name": "Open Field Studio",
       "status": "alpha",
       "category": "Field / Inspection",
-      "markdown": "https://www.open-aec.com/md/open-field-studio.md",
+      "markdown": "https://open-aec.com/md/open-field-studio.md",
       "relativeMarkdown": "./open-field-studio.md",
-      "productPage": "https://www.open-aec.com/open-field-studio/",
+      "productPage": "https://open-aec.com/open-field-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Open-Field-Studio"
     },
     {
@@ -109,9 +109,9 @@
       "name": "Open Frame Studio",
       "status": "alpha",
       "category": "Structural Engineering",
-      "markdown": "https://www.open-aec.com/md/open-frame-studio.md",
+      "markdown": "https://open-aec.com/md/open-frame-studio.md",
       "relativeMarkdown": "./open-frame-studio.md",
-      "productPage": "https://www.open-aec.com/open-frame-studio/",
+      "productPage": "https://open-aec.com/open-frame-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-frame-studio"
     },
     {
@@ -119,9 +119,9 @@
       "name": "Monty IFC Viewer",
       "status": "beta",
       "category": "BIM Viewer",
-      "markdown": "https://www.open-aec.com/md/monty-ifc-viewer.md",
+      "markdown": "https://open-aec.com/md/monty-ifc-viewer.md",
       "relativeMarkdown": "./monty-ifc-viewer.md",
-      "productPage": "https://www.open-aec.com/monty-ifc-viewer/",
+      "productPage": "https://open-aec.com/monty-ifc-viewer/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/monty-ifc-viewer"
     },
     {
@@ -129,9 +129,9 @@
       "name": "BCF Manager Studio",
       "status": "in development",
       "category": "Issue Management",
-      "markdown": "https://www.open-aec.com/md/bcf-manager-studio.md",
+      "markdown": "https://open-aec.com/md/bcf-manager-studio.md",
       "relativeMarkdown": "./bcf-manager-studio.md",
-      "productPage": "https://www.open-aec.com/bcf-manager-studio/",
+      "productPage": "https://open-aec.com/bcf-manager-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-bcf-platform"
     },
     {
@@ -139,9 +139,9 @@
       "name": "OpenAEC BIM Validator",
       "status": "in development",
       "category": "BIM Validation",
-      "markdown": "https://www.open-aec.com/md/bim-validator.md",
+      "markdown": "https://open-aec.com/md/bim-validator.md",
       "relativeMarkdown": "./bim-validator.md",
-      "productPage": "https://www.open-aec.com/bim-validator/",
+      "productPage": "https://open-aec.com/bim-validator/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator"
     },
     {
@@ -149,9 +149,9 @@
       "name": "OpenAEC Docs",
       "status": "in development",
       "category": "Document Management",
-      "markdown": "https://www.open-aec.com/md/openaec-docs.md",
+      "markdown": "https://open-aec.com/md/openaec-docs.md",
       "relativeMarkdown": "./openaec-docs.md",
-      "productPage": "https://www.open-aec.com/openaec-docs/",
+      "productPage": "https://open-aec.com/openaec-docs/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-docs"
     },
     {
@@ -159,9 +159,9 @@
       "name": "OpenAEC Cloud Platform",
       "status": "in development",
       "category": "Platform",
-      "markdown": "https://www.open-aec.com/md/openaec-cloud.md",
+      "markdown": "https://open-aec.com/md/openaec-cloud.md",
       "relativeMarkdown": "./openaec-cloud.md",
-      "productPage": "https://www.open-aec.com/openaec-cloud/",
+      "productPage": "https://open-aec.com/openaec-cloud/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-cloud"
     },
     {
@@ -169,9 +169,9 @@
       "name": "Y-app",
       "status": "alpha",
       "category": "Communication",
-      "markdown": "https://www.open-aec.com/md/y-app.md",
+      "markdown": "https://open-aec.com/md/y-app.md",
       "relativeMarkdown": "./y-app.md",
-      "productPage": "https://www.open-aec.com/y-app/",
+      "productPage": "https://open-aec.com/y-app/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Y-app"
     },
     {
@@ -179,9 +179,9 @@
       "name": "Open 3D Viewer",
       "status": "preview",
       "category": "BIM Viewer",
-      "markdown": "https://www.open-aec.com/md/open-3d-viewer.md",
+      "markdown": "https://open-aec.com/md/open-3d-viewer.md",
       "relativeMarkdown": "./open-3d-viewer.md",
-      "productPage": "https://www.open-aec.com/open-3d-viewer/",
+      "productPage": "https://open-aec.com/open-3d-viewer/",
       "githubRepo": null
     },
     {
@@ -189,14 +189,14 @@
       "name": "Open Safety Studio",
       "status": "planned",
       "category": "Safety",
-      "markdown": "https://www.open-aec.com/md/open-safety-studio.md",
+      "markdown": "https://open-aec.com/md/open-safety-studio.md",
       "relativeMarkdown": "./open-safety-studio.md",
-      "productPage": "https://www.open-aec.com/open-safety-studio/",
+      "productPage": "https://open-aec.com/open-safety-studio/",
       "githubRepo": null
     }
   ],
   "extras": {
-    "indexMarkdown": "https://www.open-aec.com/md/index.md",
-    "aboutMarkdown": "https://www.open-aec.com/md/about.md"
+    "indexMarkdown": "https://open-aec.com/md/index.md",
+    "aboutMarkdown": "https://open-aec.com/md/about.md"
   }
 }

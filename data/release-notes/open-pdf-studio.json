@@ -1,20 +1,39 @@
 {
   "repo": "open-pdf-studio",
-  "generated": "2026-07-27T15:11:57.846Z",
-  "totalReleases": 50,
+  "generated": "2026-07-28T12:00:29.306Z",
+  "totalReleases": 51,
   "totalChanges": 347,
   "latestStable": {
-    "tag": "v1.82.0",
-    "name": "Open PDF Studio v1.82.0",
-    "date": "2026-07-23",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.82.0"
+    "tag": "v1.84.0",
+    "name": "Open PDF Studio v1.84.0",
+    "date": "2026-07-28",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.84.0"
   },
+  "latestChangelog": null,
   "nightly": {
     "tag": "nightly",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly"
   },
   "groups": [
+    {
+      "minorVersion": "1.84",
+      "releases": [
+        {
+          "tag": "v1.84.0",
+          "name": "Open PDF Studio v1.84.0",
+          "date": "2026-07-28",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.84.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-07-28",
+      "lastDate": "2026-07-28",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
     {
       "minorVersion": "1.82",
       "releases": [

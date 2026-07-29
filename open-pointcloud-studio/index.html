@@ -5,9 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Pointcloud Studio — OpenAEC Foundation</title>
   <meta name="description" content="Cross-platform pointcloud viewer built with Tauri, React, and Three.js. Supports LAS/LAZ files with multiple color modes and octree-based LOD.">
+  <link rel="canonical" href="https://open-aec.com/open-pointcloud-studio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OpenAEC Foundation">
+  <meta property="og:title" content="Open Pointcloud Studio">
+  <meta property="og:description" content="Cross-platform pointcloud viewer built with Tauri, React, and Three.js. Supports LAS/LAZ files with multiple color modes and octree-based LOD.">
+  <meta property="og:url" content="https://open-aec.com/open-pointcloud-studio/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-pointcloud-studio.jpeg">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Open Pointcloud Studio">
+  <meta name="twitter:description" content="Cross-platform pointcloud viewer built with Tauri, React, and Three.js. Supports LAS/LAZ files with multiple color modes and octree-based LOD.">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-pointcloud-studio.jpeg">
+
+  <!-- AI / LLM discoverability -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
+  <link rel="alternate" type="application/json" href="/api/tools.json" title="Machine-readable tools catalog">
   <meta name="i18n-page" content="open-pointcloud-studio">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="stylesheet" href="/shared/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Open Pointcloud Studio",
+    "applicationCategory": "EngineeringApplication",
+    "applicationSubCategory": "Point Cloud",
+    "operatingSystem": "Windows, macOS, Linux",
+    "url": "https://open-aec.com/open-pointcloud-studio/",
+    "downloadUrl": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio/releases",
+    "description": "Open-source point cloud viewer (LAS, LAZ) with RGB/elevation/classification rendering, EDL, octree LoD.",
+    "featureList": [
+      "LAS/LAZ import",
+      "Color modes",
+      "Classification filtering",
+      "Eye-Dome Lighting",
+      "Octree-based LOD",
+      "Themes"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-pointcloud-studio.jpeg",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "point cloud, LAS, LAZ, scanning, survey, CloudCompare alternative",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/open-pointcloud-studio",
+      "https://open-pointcloud-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
+  }
+  </script>
   <style>
     .media-slider { max-width: 900px; margin: 0 auto var(--sp-8); position: relative; }
     .slider-container { position: relative; overflow: hidden; border-radius: 12px; background: #2A2A32; }
@@ -25,7 +85,7 @@
 </head>
 <body>
     <div id="shared-nav"></div>
-<script src="/shared/nav.js?v=20260603"></script>
+<script src="/shared/nav.js?v=20260728"></script>
 
   <section class="hero">
     <span class="section-label" data-i18n="header.label">Point cloud viewer</span>
@@ -105,7 +165,7 @@
 
   <!-- Release Notes (shared component) -->
   <div data-release-notes="open-pointcloud-studio"></div>
-  <script src="/shared/release-notes.js?v=20260603"></script>
+  <script src="/shared/release-notes.js?v=20260728"></script>
 
   <footer class="footer"><div class="footer-container">
     <a href="/" class="nav-brand">Open<span class="accent">AEC</span></a>
@@ -133,6 +193,6 @@
       };
     })();
   </script>
-  <script src="/shared/i18n.js?v=20260603"></script>
+  <script src="/shared/i18n.js?v=20260728"></script>
 </body>
 </html>

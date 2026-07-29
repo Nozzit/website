@@ -34,6 +34,42 @@ const TOOL_REPOS = [
   'Y-app',
 ];
 
+// Sommige repo's onderhouden een uitgebreide changelog met een sectie per
+// uitgebrachte versie. Die tekst is de inhoudelijke tegenhanger van de korte
+// release-body en is wat we op de productpagina willen tonen.
+const CHANGELOG_PATHS = ['docs/CHANGELOG.md', 'CHANGELOG.md'];
+
+async function fetchChangelog(repo) {
+  for (const p of CHANGELOG_PATHS) {
+    try {
+      const res = await fetch(
+        `https://api.github.com/repos/${ORG}/${repo}/contents/${p}`,
+        { headers: { ...headers, Accept: 'application/vnd.github.v3.raw' } }
+      );
+      if (res.ok) return await res.text();
+    } catch (e) {}
+  }
+  return null;
+}
+
+// Haalt de sectie voor één versie uit de changelog. Koppen zien eruit als
+// "## v2026.7.13 — 2026-07-27"; de sectie loopt tot de volgende "## ".
+function extractChangelogSection(md, tag) {
+  if (!md || !tag) return null;
+  const lines = md.split('\n');
+  const version = tag.replace(/^v/, '');
+  const start = lines.findIndex(l =>
+    /^##\s+/.test(l) && l.replace(/^##\s+/, '').replace(/^v/, '').startsWith(version)
+  );
+  if (start === -1) return null;
+  let end = lines.length;
+  for (let i = start + 1; i < lines.length; i++) {
+    if (/^##\s+/.test(lines[i])) { end = i; break; }
+  }
+  const body = lines.slice(start + 1, end).join('\n').trim();
+  return body || null;
+}
+
 async function ghFetch(url) {
   const res = await fetch(url, { headers });
   if (!res.ok) throw new Error(`${res.status}: ${url}`);
@@ -170,6 +206,11 @@ async function processRepo(repo) {
   const latestStable = stable[0];
   const nightly = releases.find(r => r.tag_name === 'nightly');
 
+  const changelogMd = await fetchChangelog(repo);
+  const latestChangelog = latestStable
+    ? extractChangelogSection(changelogMd, latestStable.tag_name)
+    : null;
+
   return {
     repo: repo,
     generated: new Date().toISOString(),
@@ -181,6 +222,9 @@ async function processRepo(repo) {
       date: latestStable.published_at?.substring(0, 10),
       url: latestStable.html_url,
     } : null,
+    // Uitgebreide beschrijving van de nieuwste versie, uit docs/CHANGELOG.md.
+    // null wanneer de repo geen changelog heeft of er geen sectie voor deze tag is.
+    latestChangelog: latestChangelog,
     nightly: nightly ? {
       tag: nightly.tag_name,
       date: nightly.published_at?.substring(0, 10),
