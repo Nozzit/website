@@ -460,12 +460,23 @@
         d.onclick = ()=>slideTo(i);
         dots.appendChild(d);
       }
+      // De track schuift met transform, en daar reageert loading="lazy" niet
+      // op: de browser blijft de oorspronkelijke layoutpositie gebruiken en
+      // laadt de afbeelding nooit, waardoor de slide leeg blijft. Daarom de
+      // doelslide en zijn buur hier zelf ophalen vlak voordat ze in beeld
+      // komen. De eerste slide staat op eager en is er dus altijd meteen.
+      function laad(i){
+        const img = track.children[(i+slides)%slides]?.querySelector('img');
+        if (img && img.loading === 'lazy') img.loading = 'eager';
+      }
       window.slideMove = function(dir){slideTo(current+dir);};
       window.slideTo = function(i){
         current = (i+slides)%slides;
+        laad(current); laad(current+1);
         track.style.transform = 'translateX(-'+current*100+'%)';
         dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
       };
+      laad(1); // buur van de startslide alvast klaarzetten
     })();
   </script>
   <script>
