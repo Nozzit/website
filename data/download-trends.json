@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-27T15:12:26.779Z",
+  "generated": "2026-08-05T19:21:57.401Z",
   "firstSnapshot": "2026-05-19",
-  "lastSnapshot": "2026-07-27",
-  "snapshotCount": 13,
-  "weekCount": 9,
+  "lastSnapshot": "2026-08-05",
+  "snapshotCount": 14,
+  "weekCount": 10,
   "weeklyDeltas": [
     {
       "weekEnd": "2026-05-25",
@@ -143,28 +143,47 @@
         "monty-ifc-viewer": 12
       },
       "total": 1550
+    },
+    {
+      "weekEnd": "2026-08-03",
+      "weekStart": "2026-07-27",
+      "perRepo": {
+        "open-pdf-studio": 1587,
+        "open-2d-studio": 89,
+        "open-calc-studio": 12,
+        "open-planner-studio": 112,
+        "open-pointcloud-studio": 11,
+        "open-heatloss-studio": 1,
+        "open-speech-studio": 7,
+        "Open-Field-Studio": 13,
+        "open-frame-studio": 2,
+        "open-geotechniek-studio": 6,
+        "Open-Calculations-Studio": 8,
+        "monty-ifc-viewer": 11
+      },
+      "total": 1859
     }
   ],
   "totalDelta": {
-    "open-pdf-studio": 6111,
-    "open-2d-studio": 717,
-    "open-calc-studio": 148,
+    "open-pdf-studio": 7698,
+    "open-2d-studio": 806,
+    "open-calc-studio": 160,
     "open-energy-studio": 0,
-    "open-planner-studio": 274,
-    "open-pointcloud-studio": 61,
-    "open-heatloss-studio": 12,
-    "open-speech-studio": 45,
-    "Open-Field-Studio": 12,
-    "open-frame-studio": 48,
-    "open-geotechniek-studio": 85,
+    "open-planner-studio": 386,
+    "open-pointcloud-studio": 72,
+    "open-heatloss-studio": 13,
+    "open-speech-studio": 52,
+    "Open-Field-Studio": 25,
+    "open-frame-studio": 50,
+    "open-geotechniek-studio": 91,
     "pile-plan-studio": 0,
-    "Open-Calculations-Studio": 81,
-    "monty-ifc-viewer": 84,
+    "Open-Calculations-Studio": 89,
+    "monty-ifc-viewer": 95,
     "OpenAEC-BIM-validator": 0,
     "openaec-bcf-platform": 0,
     "openaec-docs": 0,
     "openaec-cloud": 0,
     "Y-app": 21
   },
-  "totalDownloadsAdded": 7699
+  "totalDownloadsAdded": 9558
 }

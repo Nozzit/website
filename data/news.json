@@ -2,19 +2,140 @@
   {
     "type": "release",
     "repo": "open-pdf-studio",
-    "title": "open-pdf-studio: 2 releases (nightly → v1.83.0)",
-    "description": "Versies: nightly, v1.83.0",
-    "date": "2026-07-27",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.83.0",
-    "count": 2
+    "title": "open-pdf-studio nightly uitgebracht",
+    "description": "Nightly build 1.85.0-nightly.20260805.6a31026",
+    "date": "2026-08-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
+    "count": 1
   },
   {
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260727.6369851",
-    "date": "2026-07-27",
+    "description": "Nightly build 0.1.4-nightly.20260805.6369851",
+    "date": "2026-08-05",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "pile-plan-studio",
+    "title": "pile-plan-studio v0.1.7-alpha uitgebracht",
+    "description": "Pile Plan Studio 0.1.7-alpha",
+    "date": "2026-08-05",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.7-alpha",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "pile-plan-studio",
+    "title": "pile-plan-studio: 3 releases (v0.1.4-alpha → v0.1.6-alpha)",
+    "description": "Versies: v0.1.4-alpha, v0.1.5-alpha, v0.1.6-alpha",
+    "date": "2026-08-04",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.6-alpha",
+    "count": 3
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-aec-master-builder-I-OAMBI",
+    "title": "Nieuwe repository: open-aec-master-builder-I-OAMBI",
+    "description": "Master Builder AI ",
+    "date": "2026-08-03",
+    "url": "https://github.com/OpenAEC-Foundation/open-aec-master-builder-I-OAMBI"
+  },
+  {
+    "type": "new_repo",
+    "repo": "master-builder-library",
+    "title": "Nieuwe repository: master-builder-library",
+    "description": "Library with building knowledge, standards, drawings etc. Basis for education for humans and AI",
+    "date": "2026-08-03",
+    "url": "https://github.com/OpenAEC-Foundation/master-builder-library"
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio v0.3.0 uitgebracht",
+    "description": "Open Field Studio v0.3.0",
+    "date": "2026-07-31",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.3.0",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-accounts-client",
+    "title": "Nieuwe repository: openaec-accounts-client",
+    "description": "Nieuw project gestart",
+    "date": "2026-07-31",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-accounts-client"
+  },
+  {
+    "type": "new_repo",
+    "repo": "openaec-accounts-server",
+    "title": "Nieuwe repository: openaec-accounts-server",
+    "description": "Nieuw project gestart",
+    "date": "2026-07-31",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-accounts-server"
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.7.14 uitgebracht",
+    "description": "Open Planner Studio v2026.7.14",
+    "date": "2026-07-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.14",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio: 2 releases (v0.2.0 → v0.2.1)",
+    "description": "Versies: v0.2.0, v0.2.1",
+    "date": "2026-07-30",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.2.1",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "openaec-installer",
+    "title": "openaec-installer: 2 releases (v0.2.0 → v0.1.8)",
+    "description": "Versies: v0.2.0, v0.1.8",
+    "date": "2026-07-29",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/untagged-3530de948e34aec18fb5",
+    "count": 2
+  },
+  {
+    "type": "new_repo",
+    "repo": "Y-app-ERPNext",
+    "title": "Nieuwe repository: Y-app-ERPNext",
+    "description": "Y-app as ERPNext site",
+    "date": "2026-07-29",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app-ERPNext"
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.84.0 uitgebracht",
+    "description": "Open PDF Studio v1.84.0",
+    "date": "2026-07-28",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.84.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.7.13 uitgebracht",
+    "description": "Open Planner Studio v2026.7.13",
+    "date": "2026-07-27",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.13",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v1.83.0 uitgebracht",
+    "description": "Open PDF Studio v1.83.0",
+    "date": "2026-07-27",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v1.83.0",
     "count": 1
   },
   {
@@ -323,6 +444,14 @@
     "date": "2026-07-06",
     "url": "https://github.com/OpenAEC-Foundation/open-calc-studio/releases/tag/v0.8.7",
     "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "IFC-CAD",
+    "title": "Nieuwe repository: IFC-CAD",
+    "description": "Nieuw project gestart",
+    "date": "2026-07-06",
+    "url": "https://github.com/OpenAEC-Foundation/IFC-CAD"
   },
   {
     "type": "release",

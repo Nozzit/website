@@ -1,17 +1,120 @@
 {
   "repo": "open-field-studio",
-  "generated": "2026-07-28T12:00:43.072Z",
-  "totalReleases": 4,
-  "totalChanges": 19,
+  "generated": "2026-08-05T19:21:35.169Z",
+  "totalReleases": 7,
+  "totalChanges": 46,
   "latestStable": {
-    "tag": "v0.1.3",
-    "name": "Open Field Studio v0.1.3",
-    "date": "2026-03-31",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.1.3"
+    "tag": "v0.3.0",
+    "name": "Open Field Studio v0.3.0",
+    "date": "2026-07-31",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.3.0"
   },
   "latestChangelog": null,
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "0.3",
+      "releases": [
+        {
+          "tag": "v0.3.0",
+          "name": "Open Field Studio v0.3.0",
+          "date": "2026-07-31",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.3.0",
+          "changes": [
+            "Tickets & gebrekenregistratie op plattegronden",
+            "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+            "Energielabel opname — volledige NTA 8800 data-verzameling",
+            "Monument inspectie — constructie, interieur, vocht/schade",
+            "Oplevering met proces-verbaal en digitale handtekeningen",
+            "Dashboard met real-time statistieken",
+            "Camera-integratie voor foto-opname op locatie",
+            "4 talen: Nederlands, Engels, Duits, Frans",
+            "HTML/PDF rapporten"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Tickets & gebrekenregistratie op plattegronden",
+        "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+        "Energielabel opname — volledige NTA 8800 data-verzameling",
+        "Monument inspectie — constructie, interieur, vocht/schade",
+        "Oplevering met proces-verbaal en digitale handtekeningen",
+        "Dashboard met real-time statistieken",
+        "Camera-integratie voor foto-opname op locatie",
+        "4 talen: Nederlands, Engels, Duits, Frans",
+        "HTML/PDF rapporten"
+      ],
+      "firstDate": "2026-07-31",
+      "lastDate": "2026-07-31",
+      "releaseCount": 1,
+      "changeCount": 9
+    },
+    {
+      "minorVersion": "0.2",
+      "releases": [
+        {
+          "tag": "v0.2.1",
+          "name": "Open Field Studio v0.2.1",
+          "date": "2026-07-30",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.2.1",
+          "changes": [
+            "Tickets & gebrekenregistratie op plattegronden",
+            "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+            "Energielabel opname — volledige NTA 8800 data-verzameling",
+            "Monument inspectie — constructie, interieur, vocht/schade",
+            "Oplevering met proces-verbaal en digitale handtekeningen",
+            "Dashboard met real-time statistieken",
+            "Camera-integratie voor foto-opname op locatie",
+            "4 talen: Nederlands, Engels, Duits, Frans",
+            "HTML/PDF rapporten"
+          ],
+          "patchNum": 1
+        },
+        {
+          "tag": "v0.2.0",
+          "name": "Open Field Studio v0.2.0",
+          "date": "2026-07-30",
+          "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.2.0",
+          "changes": [
+            "Tickets & gebrekenregistratie op plattegronden",
+            "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+            "Energielabel opname — volledige NTA 8800 data-verzameling",
+            "Monument inspectie — constructie, interieur, vocht/schade",
+            "Oplevering met proces-verbaal en digitale handtekeningen",
+            "Dashboard met real-time statistieken",
+            "Camera-integratie voor foto-opname op locatie",
+            "4 talen: Nederlands, Engels, Duits, Frans",
+            "HTML/PDF rapporten"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "Tickets & gebrekenregistratie op plattegronden",
+        "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+        "Energielabel opname — volledige NTA 8800 data-verzameling",
+        "Monument inspectie — constructie, interieur, vocht/schade",
+        "Oplevering met proces-verbaal en digitale handtekeningen",
+        "Dashboard met real-time statistieken",
+        "Camera-integratie voor foto-opname op locatie",
+        "4 talen: Nederlands, Engels, Duits, Frans",
+        "HTML/PDF rapporten",
+        "Tickets & gebrekenregistratie op plattegronden",
+        "Checklist-inspecties met 10 templates (pass/fail en NEN 2767)",
+        "Energielabel opname — volledige NTA 8800 data-verzameling",
+        "Monument inspectie — constructie, interieur, vocht/schade",
+        "Oplevering met proces-verbaal en digitale handtekeningen",
+        "Dashboard met real-time statistieken",
+        "Camera-integratie voor foto-opname op locatie",
+        "4 talen: Nederlands, Engels, Duits, Frans",
+        "HTML/PDF rapporten"
+      ],
+      "firstDate": "2026-07-30",
+      "lastDate": "2026-07-30",
+      "releaseCount": 2,
+      "changeCount": 18
+    },
     {
       "minorVersion": "0.1",
       "releases": [

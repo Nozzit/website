@@ -1,17 +1,73 @@
 {
   "repo": "Y-app",
-  "generated": "2026-07-28T12:00:54.053Z",
-  "totalReleases": 37,
-  "totalChanges": 123,
+  "generated": "2026-08-05T19:21:44.631Z",
+  "totalReleases": 39,
+  "totalChanges": 132,
   "latestStable": {
-    "tag": "v0.31.2",
-    "name": "Y-app v0.31.2",
-    "date": "2026-07-10",
-    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.31.2"
+    "tag": "v0.34.0",
+    "name": "Y-app v0.34.0",
+    "date": "2026-08-03",
+    "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.34.0"
   },
-  "latestChangelog": "_Onderhoud / interne wijzigingen._",
+  "latestChangelog": "### Overig\n- origin/main in fix/kg-417-maatwerkvelden\n\n### Opgelost\n- **projecten**: de urenkolom miste een parameter, het waren geen ontbrekende rechten\n- **uren**: de verwijderknop stond verstopt in de bewerkmodus\n- **velden**: declareer per omgeving welke velden ontbreken, in plaats van te proberen en te herstellen\n- **projecten,ophalen**: meld toegewezen projecten die de lijst niet bevat, en verlies geen opgehaalde pagina's\n- **taken**: geen medewerkerstelling in de persoonlijke weergave\n- **contacten**: een streepje is geen naam\n- **taken**: \"Mijn taken\" toont op het kanbanbord alleen je eigen kolom\n- **projecten**: leid het jaar ook uit het projectnummer af\n- **rechten**: werkgever-config bereikt de medewerker, en een 403 blijft niet stil\n- **boeken**: geen keuzelijst met collega's voor wie geen werkgeversrechten heeft\n- **boeken**: het medewerkersveld staat meteen op jezelf, uit de sessie\n- **taken**: \"Mijn taken\" toont een lege lijst bij onbekende identiteit, niet alles\n- **weergave**: leid werkgever/medewerker af uit de ERPNext-rol, niet uit de browser\n- **release-notes**: v0.33.0 in de lokale lijst\n\n### Toegevoegd\n- **planning,contacten**: \"Mijn taken\" ook op het planningsbord, functie en afdeling in de contactenlijst\n- **projecten**: \"Mijn projecten\" toont de projecten waarin je een toegewezen taak hebt\n- **taken**: teller bij \"Mijn taken\" en eigen taken herkenbaar in de lijst\n- **uren**: boeken kan alleen nog op een taak van een project\n\n### Verbeterd\n- **rechten**: rolpoort gedeeld, zodat een scherm een 403 niet meer uitlokt",
   "nightly": null,
   "groups": [
+    {
+      "minorVersion": "0.34",
+      "releases": [
+        {
+          "tag": "v0.34.0",
+          "name": "Y-app v0.34.0",
+          "date": "2026-08-03",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.34.0",
+          "changes": [
+            "**rechten**: rolpoort gedeeld, zodat een scherm een 403 niet meer uitlokt",
+            "**rechten**: werkgever-config bereikt de medewerker, en een 403 blijft niet stil",
+            "**boeken**: geen keuzelijst met collega's voor wie geen werkgeversrechten heeft",
+            "**boeken**: het medewerkersveld staat meteen op jezelf, uit de sessie",
+            "**taken**: \"Mijn taken\" toont een lege lijst bij onbekende identiteit, niet alles",
+            "**weergave**: leid werkgever/medewerker af uit de ERPNext-rol, niet uit de browser",
+            "**release-notes**: v0.33.0 in de lokale lijst",
+            "**taken**: teller bij \"Mijn taken\" en eigen taken herkenbaar in de lijst",
+            "**uren**: boeken kan alleen nog op een taak van een project"
+          ],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [
+        "**rechten**: rolpoort gedeeld, zodat een scherm een 403 niet meer uitlokt",
+        "**rechten**: werkgever-config bereikt de medewerker, en een 403 blijft niet stil",
+        "**boeken**: geen keuzelijst met collega's voor wie geen werkgeversrechten heeft",
+        "**boeken**: het medewerkersveld staat meteen op jezelf, uit de sessie",
+        "**taken**: \"Mijn taken\" toont een lege lijst bij onbekende identiteit, niet alles",
+        "**weergave**: leid werkgever/medewerker af uit de ERPNext-rol, niet uit de browser",
+        "**release-notes**: v0.33.0 in de lokale lijst",
+        "**taken**: teller bij \"Mijn taken\" en eigen taken herkenbaar in de lijst",
+        "**uren**: boeken kan alleen nog op een taak van een project"
+      ],
+      "firstDate": "2026-08-03",
+      "lastDate": "2026-08-03",
+      "releaseCount": 1,
+      "changeCount": 9
+    },
+    {
+      "minorVersion": "0.33",
+      "releases": [
+        {
+          "tag": "v0.33.0",
+          "name": "Y-app v0.33.0",
+          "date": "2026-07-30",
+          "url": "https://github.com/OpenAEC-Foundation/Y-app/releases/tag/v0.33.0",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-07-30",
+      "lastDate": "2026-07-30",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
     {
       "minorVersion": "0.31",
       "releases": [

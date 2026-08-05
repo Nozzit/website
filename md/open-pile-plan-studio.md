@@ -6,17 +6,17 @@
 **License:** LGPL-3.0-or-later
 **Platforms:** Web, Windows
 **Category:** Foundation Engineering
-**Current version:** v0.1.3-alpha (2026-07-17)
+**Current version:** v0.1.7-alpha (2026-08-05)
 **Tool ID:** `open-pile-plan-studio`
 **GitHub repo:** `OpenAEC-Foundation/pile-plan-studio`
 
 ## Live stats
 
 - Stars: **2**
-- Commits: **134**
+- Commits: **161**
 - Forks: **0**
-- Open issues: **9**
-- Releases: **1**
+- Open issues: **4**
+- Releases: **5**
 - Total downloads: **0**
 
 ## Key features
@@ -48,7 +48,7 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://open-aec.com/open-pile-plan-studio/
 - Live demo: https://open-pile-plan-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/pile-plan-studio
-- Latest stable release: https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.3-alpha
+- Latest stable release: https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.7-alpha
 - Nightly builds: https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/nightly
 
 ---
