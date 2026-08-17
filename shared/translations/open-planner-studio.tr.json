@@ -106,7 +106,7 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "v2026.8.0 ile yeni · test edenler aranıyor",
+    "label": "v2026.8.0'da yeni · test edenler aranıyor",
     "title": "Aynı ekibin iki kez ayrıldığını tek bakışta görün",
     "desc": "Kaynak kitaplığı, birden fazla proje arasında paylaşılan tek bir havuzdur. Yeni olan, <strong>doluluk genel görünümü</strong>: her kitaplık öğesi için — tablo ve histogram olarak — açık olan tüm projelerinizde ne kadarının halihazırda bağlandığını görürsünüz. Aynı anda iki projeye planlanan bir ekip ya da makine böylece <strong>örtük olmaktan çıkıp görünür hale gelir</strong>; tek bir proje bunu tanımı gereği gösteremez.",
     "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio'yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz gidişatı belirlemeye yardımcı olur.",
