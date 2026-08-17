@@ -191,7 +191,7 @@ const TOOLS = [
     license: 'LGPL-3.0',
     platforms: ['Windows', 'macOS', 'Linux', 'Web'],
     techStack: ['Rust', 'TypeScript', 'Tauri 2'],
-    description: 'Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule.',
+    description: 'Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Shared resource libraries show how much of each crew or machine is committed across all your open projects. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule.',
     alternatives: ['Microsoft Project', 'Primavera P6', 'Asta Powerproject', 'TILOS'],
     features: [
       'Built-in MCP server: an AI client such as Claude Code can read and edit the schedule, with pause, read-only mode and automatic backups',
@@ -201,6 +201,7 @@ const TOOLS = [
       'Native IFC 4.3 as the file format, with a built-in IFC code editor',
       'Resources (labour, equipment, subcontractors) with histogram and automatic levelling of overallocation',
       'Resource libraries: one shared pool across projects, with deviations flagged',
+      'Occupancy overview: per library item, the load committed across all open projects as a table and a histogram, with days over capacity flagged — the double booking a single project cannot show',
       'Multiple baselines and progress tracking with status date, actual start and progress line',
       'Construction calendars: public holidays, building recess, frost delay, inspection moments, phasing, hour-level planning',
       'Import and export of IFC, CSV, MS Project (.xml) and Primavera P6 (.xml)',
