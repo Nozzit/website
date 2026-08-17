@@ -2,13 +2,13 @@
   "header": {
     "label": "İnşaat planlaması",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — dosya biçimi olarak yerel IFC 4.3. Yerleşik bir MCP sunucusuyla birlikte gelir, böylece bir yapay zekâ asistanı planınızı okuyup düzenleyebilir. Masaüstünüzde ve doğrudan tarayıcıda.",
-    "downloadBtn": "v2026.7.13'ü indir",
+    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — dosya biçimi olarak yerel IFC 4.3. Paylaşılan kaynak kitaplıkları, bir ekibin ya da makinenin tüm projeleriniz genelinde ne kadar bağlandığını gösterir; yerleşik MCP sunucusu ise bir yapay zekâ asistanının planınızı okuyup düzenlemesine olanak tanır. Masaüstünüzde ve doğrudan tarayıcıda.",
+    "downloadBtn": "v2026.8.0'ı indir",
     "demoBtn": "Tarayıcıda aç",
     "sourceBtn": "Kaynak kodu görüntüle"
   },
   "download": {
-    "title": "v2026.7.11'i indir",
+    "title": "v2026.8.0'ı indir",
     "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Open Planner Studio <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">tamamen tarayıcınızda da</a> çalışır — dosya açma ve kaydetme dahil."
   },
   "features": {
@@ -38,7 +38,7 @@
     },
     "library": {
       "title": "Kaynak kitaplıkları",
-      "desc": "Tek bir kaynak havuzunu birden fazla proje arasında paylaşın. Kitaplık kaynaktır, proje gerçekte neyi kullandığını gösterir ve sapmalar çözebilmeniz için işaretlenir."
+      "desc": "Tek bir kaynak havuzunu birden fazla proje arasında paylaşın. Kitaplık kaynaktır, proje gerçekte neyi kullandığını gösterir ve sapmalar çözebilmeniz için işaretlenir. Doluluk genel görünümü, açık olan tüm projeleri toplar — tablo ve histogram olarak — ve bağlanan yükün mevcut kapasiteyi aştığı günleri işaretler."
     },
     "heading": "Özellikler",
     "baselines": {
@@ -106,13 +106,13 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "v2026.7.13'te yeni · test edenler aranıyor",
-    "title": "Planınızı bir yapay zekâ asistanı okusun ve düzenlesin",
-    "desc": "Uygulamanın içinde artık bir <strong>MCP sunucusu</strong> var. Böylece Claude Code gibi bir yapay zekâ istemcisi planınızı doğrudan okuyup düzenleyebiliyor — yeni <strong>YZ sekmesinden</strong> açıyorsunuz; duraklatma düğmesi, salt okunur mod ve otomatik yedekler güvenlik ağı olarak çalışıyor.",
+    "label": "v2026.8.0 ile yeni · test edenler aranıyor",
+    "title": "Aynı ekibin iki kez ayrıldığını tek bakışta görün",
+    "desc": "Kaynak kitaplığı, birden fazla proje arasında paylaşılan tek bir havuzdur. Yeni olan, <strong>doluluk genel görünümü</strong>: her kitaplık öğesi için — tablo ve histogram olarak — açık olan tüm projelerinizde ne kadarının halihazırda bağlandığını görürsünüz. Aynı anda iki projeye planlanan bir ekip ya da makine böylece <strong>örtük olmaktan çıkıp görünür hale gelir</strong>; tek bir proje bunu tanımı gereği gösteremez.",
     "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio'yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz gidişatı belirlemeye yardımcı olur.",
     "ctaDemo": "Canlı demoyu deneyin →",
     "ctaJoin": "Test eden olarak katıl",
-    "list": "<li><strong>Kaynak kitaplıkları</strong> — birden fazla proje arasında paylaşılan tek bir havuz; sapmalar işaretlenir.</li><li><strong>Gantt ve tablo</strong> — bir seçimin tamamını dikey sürükleyin, çalışılmayan günleri katlayın, başlıkta hafta numaraları, Ctrl+tık ve WBS tablosu bir hesap tablosu gibi düzenlenir.</li><li><strong>Raporlar</strong> — ayarlanabilir yazı boyutu, her sayfada başlık ve birden fazla sayfaya yayılan zaman çizelgesi.</li><li><strong>Kılavuz</strong> — artık on dört dilin hepsinde; kaynak kitaplıkları ve yapay zekâ asistanı bağlama rehberleriyle.</li>"
+    "list": "<li><strong>Doluluk genel görünümü</strong> — açık olan tüm projelerinizde ekip, makine veya taşeron başına bağlanan yük, kapasite aşımları işaretlenmiş olarak.</li><li><strong>Kilometre taşlarında ve özet görevlerde ilişkiler</strong> — bir kilometre taşından ilişki sürüklemek yeniden çalışıyor, hiçbir etkisi olamayacak ilişkiler sessizce yok sayılmak yerine işaretleniyor ve içe aktarılan bir dosya içinde ne varsa koruyor.</li><li><strong>Görev türü üst görevden devralınır</strong> — hem kendi eklediğiniz görevde hem de yapay zekâ asistanının oluşturduğu görevde.</li><li><strong>Kaynaklı örnek projeler</strong> — birlikte gelen örnekler artık kaynak planlamasını ve doluluk genel görünümünü gerçek verilerle gösteriyor.</li>"
   },
   "faq": {
     "heading": "Sık sorulan sorular",

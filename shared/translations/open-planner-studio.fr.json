@@ -2,13 +2,13 @@
   "header": {
     "label": "Planification de chantier",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et l'IFC 4.3 natif comme format de fichier. Avec un serveur MCP intégré, pour qu'un assistant IA puisse lire et modifier votre planning. Sur votre poste et directement dans le navigateur.",
-    "downloadBtn": "Télécharger v2026.7.13",
+    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et l'IFC 4.3 natif comme format de fichier. Les bibliothèques de ressources partagées montrent à quel point une équipe ou une machine est engagée sur l'ensemble de vos projets, et un serveur MCP intégré permet à un assistant IA de lire et modifier votre planning. Sur votre poste et directement dans le navigateur.",
+    "downloadBtn": "Télécharger v2026.8.0",
     "demoBtn": "Ouvrir dans le navigateur",
     "sourceBtn": "Voir le code source"
   },
   "download": {
-    "title": "Télécharger v2026.7.11",
+    "title": "Télécharger v2026.8.0",
     "browserNote": "Vous préférez ne rien installer ? Open Planner Studio fonctionne aussi <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">entièrement dans votre navigateur</a> — y compris l'ouverture et l'enregistrement de fichiers."
   },
   "features": {
@@ -38,7 +38,7 @@
     },
     "library": {
       "title": "Bibliothèques de ressources",
-      "desc": "Partagez un même pool de ressources entre plusieurs projets. La bibliothèque fait référence, le projet montre ce qu'il utilise réellement, et les écarts sont signalés pour que vous puissiez les résoudre."
+      "desc": "Partagez un même pool de ressources entre plusieurs projets. La bibliothèque fait référence, le projet montre ce qu'il utilise réellement, et les écarts sont signalés pour que vous puissiez les résoudre. La vue d'occupation additionne tous les projets ouverts — sous forme de tableau et d'histogramme — et signale les jours où la charge engagée dépasse la capacité disponible."
     },
     "heading": "Fonctionnalités",
     "baselines": {
@@ -106,13 +106,13 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "Nouveau dans la v2026.7.13 · testeurs recherchés",
-    "title": "Laissez un assistant IA lire et modifier votre planning",
-    "desc": "L'application intègre désormais un <strong>serveur MCP</strong>. Un client IA comme Claude Code peut ainsi lire et modifier directement votre planning — vous l'activez dans le nouvel <strong>onglet IA</strong>, avec bouton de pause, mode lecture seule et sauvegardes automatiques comme filet de sécurité.",
+    "label": "Nouveau dans la v2026.8.0 · testeurs recherchés",
+    "title": "Voyez d'un coup d'œil si la même équipe est réservée deux fois",
+    "desc": "Une bibliothèque de ressources est un pool partagé entre plusieurs projets. Nouveauté : la <strong>vue d'occupation</strong>. Pour chaque élément de la bibliothèque, vous voyez — sous forme de tableau et d'histogramme — quelle part est déjà engagée sur l'ensemble de vos projets ouverts. Une équipe ou une machine planifiée sur deux projets à la fois devient ainsi <strong>visible au lieu d'implicite</strong> ; un projet isolé ne peut pas le montrer, par définition.",
     "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs de travaux, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent la suite.",
     "ctaDemo": "Essayer la démo en ligne →",
     "ctaJoin": "Participer comme testeur",
-    "list": "<li><strong>Bibliothèques de ressources</strong> — un pool partagé entre plusieurs projets, avec les écarts signalés.</li><li><strong>Gantt et tableau</strong> — faites glisser toute une sélection verticalement, repliez les jours chômés, numéros de semaine dans l'en-tête, Ctrl+clic, et le tableau WBS se modifie comme un tableur.</li><li><strong>Rapports</strong> — taille de police réglable, en-tête sur chaque page et frise pouvant s'étendre sur plusieurs pages.</li><li><strong>Manuel</strong> — désormais dans les quatorze langues, avec des guides pour les bibliothèques de ressources et la connexion d'un assistant IA.</li>"
+    "list": "<li><strong>Vue d'occupation</strong> — la charge engagée par équipe, machine ou sous-traitant sur tous vos projets ouverts, avec les dépassements de capacité signalés.</li><li><strong>Relations sur les jalons et les tâches récapitulatives</strong> — faire glisser une relation depuis un jalon fonctionne à nouveau, les relations sans effet possible sont signalées au lieu d'être ignorées en silence, et un fichier importé conserve tout ce qu'il contenait.</li><li><strong>Type de tâche hérité de la tâche parente</strong> — aussi bien pour une tâche que vous ajoutez vous-même que pour une tâche créée par l'assistant IA.</li><li><strong>Projets d'exemple avec ressources</strong> — les exemples fournis montrent désormais la planification des ressources et la vue d'occupation avec de vraies données.</li>"
   },
   "faq": {
     "heading": "Questions fréquentes",

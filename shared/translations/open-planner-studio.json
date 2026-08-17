@@ -2,13 +2,13 @@
   "header": {
     "label": "Construction planning",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as the file format. With a built-in MCP server, so an AI assistant can read and edit your schedule. On your desktop and straight in the browser.",
-    "downloadBtn": "Download v2026.7.13",
+    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as the file format. Shared resource libraries show how heavily a crew or machine is committed across all your projects, and a built-in MCP server lets an AI assistant read and edit your schedule. On your desktop and straight in the browser.",
+    "downloadBtn": "Download v2026.8.0",
     "demoBtn": "Open in your browser",
     "sourceBtn": "View source"
   },
   "download": {
-    "title": "Download v2026.7.11",
+    "title": "Download v2026.8.0",
     "browserNote": "Rather not install anything? Open Planner Studio also runs <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">fully in your browser</a> — including opening and saving files."
   },
   "features": {
@@ -38,7 +38,7 @@
     },
     "library": {
       "title": "Resource libraries",
-      "desc": "Share one resource pool across several projects. The library is the source, the project shows what it actually uses, and deviations are flagged so you can resolve them."
+      "desc": "Share one resource pool across several projects. The library is the source, the project shows what it actually uses, and deviations are flagged so you can resolve them. The occupancy overview adds up every open project — as a table and as a histogram — and marks the days where the committed load exceeds the available capacity."
     },
     "heading": "Features",
     "baselines": {
@@ -106,13 +106,13 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "New in v2026.7.13 · testers wanted",
-    "title": "Let an AI assistant read and edit your schedule",
-    "desc": "There is now an <strong>MCP server inside the app</strong>. It lets an AI client such as Claude Code read and edit your schedule directly — you switch it on in the new <strong>AI tab</strong>, with a pause button, read-only mode and automatic backups as a safety net.",
+    "label": "New in v2026.8.0 · testers wanted",
+    "title": "See at a glance whether the same crew is booked twice",
+    "desc": "A resource library is one shared pool across several projects. New is the <strong>occupancy overview</strong>: per library item you see — as a table and as a histogram — how much of it is already committed across all your open projects together. One crew or machine scheduled on two projects at once becomes <strong>visible instead of implicit</strong>; a single project cannot show that by definition.",
     "testers": "We are looking for <strong>testers</strong>: work planners, schedulers, project leads and BIM coordinators. Try Open Planner Studio right in your browser and tell us what you think — your feedback helps shape where it goes.",
     "ctaDemo": "Try the live demo →",
     "ctaJoin": "Join as a tester",
-    "list": "<li><strong>Resource libraries</strong> — one shared pool across several projects, with deviations flagged.</li><li><strong>Gantt and table</strong> — drag a whole selection vertically, collapse non-working days, week numbers in the header, Ctrl+click, and the WBS table edits like a spreadsheet.</li><li><strong>Reports</strong> — configurable font size, a header on every page and a timeline spanning several pages.</li><li><strong>Manual</strong> — now in all fourteen languages, with guides for resource libraries and for connecting an AI assistant.</li>"
+    "list": "<li><strong>Occupancy overview</strong> — the committed load per crew, machine or subcontractor across all your open projects, with capacity overruns flagged.</li><li><strong>Relations on milestones and summary tasks</strong> — dragging a relation from a milestone works again, relations that cannot have any effect are marked instead of silently ignored, and an imported file keeps everything it came with.</li><li><strong>Task type inherited from the parent task</strong> — both for a task you add yourself and for one the AI assistant creates.</li><li><strong>Sample projects with resources</strong> — the bundled examples now show resource planning and the occupancy overview with real data.</li>"
   },
   "faq": {
     "heading": "Frequently asked questions",
