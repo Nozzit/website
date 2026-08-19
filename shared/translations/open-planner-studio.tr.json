@@ -2,13 +2,13 @@
   "header": {
     "label": "İnşaat planlaması",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — dosya biçimi olarak yerel IFC 4.3. Paylaşılan kaynak kitaplıkları, bir ekibin ya da makinenin tüm projeleriniz genelinde ne kadar bağlandığını gösterir; yerleşik MCP sunucusu ise bir yapay zekâ asistanının planınızı okuyup düzenlemesine olanak tanır. Masaüstünüzde ve doğrudan tarayıcıda.",
-    "downloadBtn": "v2026.8.0'ı indir",
+    "desc": "Gantt şemaları, kritik yol, kaynaklar ve dengeleme, temel planlar ve ilerleme ile açık kaynaklı inşaat planlaması — dosya biçimi olarak yerel IFC 4.3. Artık MS Project (.mpp) dosyalarını da doğrudan açıyor; dakikasına kadar tarihe sadık, bölünmüş ve elle planlanan görevler Gantt'ta görünür durumda. Masaüstünüzde ve doğrudan tarayıcıda.",
+    "downloadBtn": "v2026.8.1'i indir",
     "demoBtn": "Tarayıcıda aç",
     "sourceBtn": "Kaynak kodu görüntüle"
   },
   "download": {
-    "title": "v2026.8.0'ı indir",
+    "title": "v2026.8.1'i indir",
     "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Open Planner Studio <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">tamamen tarayıcınızda da</a> çalışır — dosya açma ve kaydetme dahil."
   },
   "features": {
@@ -22,7 +22,7 @@
     },
     "cpm": {
       "title": "Kritik yol (CPM)",
-      "desc": "Bolluk, kritiğe yakın işler, birden fazla kritik yol ve son tarih analizi ile otomatik kritik yol hesaplaması."
+      "desc": "Bolluk, kritiğe yakın işler, birden fazla kritik yol ve son tarih analizi ile otomatik kritik yol hesaplaması. Bir \"kaydedildiği gibi tarihler\" görünümü, yeniden hesaplamadan farklıysa bir dosyayı tam olarak kendi kaydettiği tarihlerle gösterir."
     },
     "wbs": {
       "title": "WBS ve tablo görünümü",
@@ -57,9 +57,13 @@
       "title": "Veri alışverişi",
       "desc": "IFC, CSV, MS Project (.xml) ve Primavera P6 (.xml) içe ve dışa aktarın — ara adım veya dönüştürme aracı olmadan."
     },
+    "mpp": {
+      "title": "MS Project (.mpp) içe aktarma",
+      "desc": "Microsoft Project veya bir dönüştürücü olmadan .mpp dosyalarını doğrudan açar — 216 dosyalık bir test korpusunda dakikasına kadar tarihe sadıktır. Bölünmüş görevler, dengeleme gecikmesi, zamana yayılmış atamalar ve elle planlanan görevler okunur ve Gantt'ta, baskı önizlemesinde ve PDF dışa aktarımında kesintili çubuklar olarak gösterilir; düzenlemeden sonra bile kaynak dosyadan hiçbir şey kaybolmaz."
+    },
     "bim4d": {
       "title": "4D BIM'e hazır",
-      "desc": "İnşaat sırasının 4D görselleştirmesi için planlama görevlerini IFC yapı modelinizdeki elemanlara bağlayın."
+      "desc": "Planınız açık bir IFC 4.3 dosyasıdır. BIM yazılımı, inşaat sırasının 4D analizi için onu dönüştürmeye gerek kalmadan doğrudan yapı modelinizin yanına koyabilir."
     },
     "reporting": {
       "title": "Raporlama ve yazdırma",
@@ -67,7 +71,7 @@
     },
     "docs": {
       "title": "Uygulama içi kılavuz",
-      "desc": "Çevrimdışı kılavuz için F1'e basın; on dört dilin hepsinde mevcut: hızlı başlangıç, uygulama rehberleri — kaynak kitaplıkları ve bir yapay zekâ asistanının bağlanması dahil — ve on beş başvuru sayfası, ayrıca alıştırma için üç örnek proje."
+      "desc": "Çevrimdışı kılavuz için F1'e basın; on dört dilin hepsinde mevcut: hızlı başlangıç, uygulama rehberleri — kaynak kitaplıkları ve bir yapay zekâ asistanının bağlanması dahil — ve on beş başvuru sayfası, ayrıca alıştırma için sekiz örnek proje."
     },
     "shortcuts": {
       "title": "Kısayollar ve bağlam menüleri",
@@ -79,7 +83,7 @@
     },
     "ribbon": {
       "title": "Şerit araç çubuğu",
-      "desc": "Sekmeleri olan tanıdık Office tarzı şerit: Giriş, Planlama, Görünüm, Ayarlar, Tablo, IFC ve Rapor."
+      "desc": "Sekmeleri olan tanıdık Office tarzı şerit: Giriş, Planlama, Kaynaklar, İlişkiler, Görünüm, Ayarlar, Tablo, IFC ve Rapor — YZ modu açıldığında bir YZ sekmesi de eklenir."
     }
   },
   "tech": {
@@ -106,19 +110,19 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "v2026.8.0'da yeni · test edenler aranıyor",
-    "title": "Aynı ekibin iki kez ayrıldığını tek bakışta görün",
-    "desc": "Kaynak kitaplığı, birden fazla proje arasında paylaşılan tek bir havuzdur. Yeni olan, <strong>doluluk genel görünümü</strong>: her kitaplık öğesi için — tablo ve histogram olarak — açık olan tüm projelerinizde ne kadarının halihazırda bağlandığını görürsünüz. Aynı anda iki projeye planlanan bir ekip ya da makine böylece <strong>örtük olmaktan çıkıp görünür hale gelir</strong>; tek bir proje bunu tanımı gereği gösteremez.",
+    "label": "v2026.8.1'de yeni · test edenler aranıyor",
+    "title": "MS Project dosyalarınızı doğrudan açın, dakikasına kadar tarihe sadık",
+    "desc": "Open Planner Studio artık <strong>MS Project (.mpp) dosyalarını doğrudan açıyor</strong> — Microsoft Project gerekmeden, ara adım olmadan. 216 dosyalık bir test korpusunda, yeniden hesaplamadan sonra her dosya artık <strong>dakikasına kadar tarihe sadık</strong>: başlangıç, bitiş veya aynı gün sapması yok, kalıcı bir gerileme testiyle güvence altında. Bölünmüş görevler, dengeleme gecikmesi, zamana yayılmış atamalar ve elle planlanan görevler artık gerçek özellikler olarak okunuyor ve gösteriliyor — Gantt'ta, baskı önizlemesinde ve PDF dışa aktarımında kesintili çubuklar dahil.",
     "testers": "<strong>Test edenler</strong> arıyoruz: iş hazırlayıcılar, planlamacılar, proje yöneticileri ve BIM koordinatörleri. Open Planner Studio'yu doğrudan tarayıcınızda deneyin ve ne düşündüğünüzü bize bildirin — geri bildiriminiz gidişatı belirlemeye yardımcı olur.",
     "ctaDemo": "Canlı demoyu deneyin →",
     "ctaJoin": "Test eden olarak katıl",
-    "list": "<li><strong>Doluluk genel görünümü</strong> — açık olan tüm projelerinizde ekip, makine veya taşeron başına bağlanan yük, kapasite aşımları işaretlenmiş olarak.</li><li><strong>Kilometre taşlarında ve özet görevlerde ilişkiler</strong> — bir kilometre taşından ilişki sürüklemek yeniden çalışıyor, hiçbir etkisi olamayacak ilişkiler sessizce yok sayılmak yerine işaretleniyor ve içe aktarılan bir dosya içinde ne varsa koruyor.</li><li><strong>Görev türü üst görevden devralınır</strong> — hem kendi eklediğiniz görevde hem de yapay zekâ asistanının oluşturduğu görevde.</li><li><strong>Kaynaklı örnek projeler</strong> — birlikte gelen örnekler artık kaynak planlamasını ve doluluk genel görünümünü gerçek verilerle gösteriyor.</li>"
+    "list": "<li><strong>Yerleşik MS Project (.mpp)</strong> — dönüştürücü olmadan doğrudan açılır, on dört dilin hepsinde hata mesajlarıyla.</li><li><strong>Dakikasına kadar tarihe sadık</strong> — 216 test dosyasında sıfır sapma, kalıcı bir gerileme testiyle güvence altında.</li><li><strong>Bölünmüş ve elle planlanan görevler görünür</strong> — Gantt'ta, baskı önizlemesinde ve PDF dışa aktarımında kesintili çubuklar.</li><li><strong>Hiçbir şey kaybolmaz</strong> — kaynak veriler kaydetme, yeniden açma, geri alma ve çökme kurtarmayı, hatta düzenlemeden sonra bile atlatır; bunu serbest bırakan bir düzenleme uygulamada bunu bildirir.</li><li><strong>Ayrıca yeni:</strong> dosyanın kaydettiği tarihleri olduğu gibi gösteren bir görünüm, ilişkilerde WBS'ye atlama düğmesi ve aktif-arası tarih filtresi.</li>"
   },
   "faq": {
     "heading": "Sık sorulan sorular",
     "import": {
       "q": "Microsoft Project veya Primavera P6 dosyalarını açabilir miyim?",
-      "a": "Evet. Open Planner Studio, MS Project (.xml) ve Primavera P6 (.xml) dosyalarını ara adım veya dönüştürme aracı olmadan doğrudan içe ve dışa aktarır. IFC ve CSV de desteklenir."
+      "a": "Evet. Open Planner Studio, Microsoft Project veya harici bir dönüştürücü olmadan MS Project (.mpp) dosyalarını doğrudan açar ve 216 dosyalık bir test korpusunda dakikasına kadar tarihe sadıktır; bölünmüş görevler, dengeleme gecikmesi, zamana yayılmış atamalar ve elle planlanan görevler okunur ve gösterilir. Uygulama ayrıca MS Project (.xml) ve Primavera P6 (.xml) dosyalarını ara adım veya dönüştürme aracı olmadan doğrudan içe ve dışa aktarır. IFC ve CSV de desteklenir."
     },
     "browser": {
       "q": "Bir şey kurmam gerekiyor mu?",
@@ -126,7 +130,7 @@
     },
     "formaat": {
       "q": "Planım hangi dosya biçiminde kaydedilir?",
-      "a": "buildingSMART’ın açık standardı olan IFC 4.3 biçiminde. Planınız bir IFC dosyasıdır — kapalı, özel bir biçim yoktur. Böylece verileriniz bu uygulamanın dışında da okunabilir kalır ve plan görevlerini 4D için bir IFC yapı modelinin öğelerine bağlayabilirsiniz."
+      "a": "buildingSMART’ın açık standardı olan IFC 4.3 biçiminde. Planınız bir IFC dosyasıdır — kapalı, özel bir biçim yoktur. Böylece verileriniz bu uygulamanın dışında da okunabilir kalır ve BIM yazılımı planınızı inşaat sırasının 4D analizi için doğrudan bir IFC yapı modelinin yanına koyabilir."
     },
     "ai": {
       "q": "Bir yapay zekâ asistanı planımla tam olarak ne yapabilir?",

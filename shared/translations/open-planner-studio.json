@@ -2,13 +2,13 @@
   "header": {
     "label": "Construction planning",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as the file format. Shared resource libraries show how heavily a crew or machine is committed across all your projects, and a built-in MCP server lets an AI assistant read and edit your schedule. On your desktop and straight in the browser.",
-    "downloadBtn": "Download v2026.8.0",
+    "desc": "Open-source construction planning with Gantt charts, critical path, resources and levelling, baselines and progress — and native IFC 4.3 as the file format. Now also opens MS Project (.mpp) files natively, date-faithful to the minute, with split and manually scheduled tasks visible in the Gantt. On your desktop and straight in the browser.",
+    "downloadBtn": "Download v2026.8.1",
     "demoBtn": "Open in your browser",
     "sourceBtn": "View source"
   },
   "download": {
-    "title": "Download v2026.8.0",
+    "title": "Download v2026.8.1",
     "browserNote": "Rather not install anything? Open Planner Studio also runs <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">fully in your browser</a> — including opening and saving files."
   },
   "features": {
@@ -22,7 +22,7 @@
     },
     "cpm": {
       "title": "Critical path (CPM)",
-      "desc": "Automatic critical path calculation with float, near-critical work, multiple critical paths and deadline analysis."
+      "desc": "Automatic critical path calculation with float, near-critical work, multiple critical paths and deadline analysis. A \"dates as recorded\" view shows a file exactly as it recorded its own dates, when those differ from recalculation."
     },
     "wbs": {
       "title": "WBS &amp; table view",
@@ -57,9 +57,13 @@
       "title": "Exchange",
       "desc": "Import and export IFC, CSV, MS Project (.xml) and Primavera P6 (.xml) — no intermediate steps or conversion tools."
     },
+    "mpp": {
+      "title": "MS Project (.mpp) import",
+      "desc": "Opens .mpp files natively, with no Microsoft Project or converter involved — date-faithful to the minute across a 216-file test corpus. Split tasks, resource leveling, timephased assignments and manually scheduled tasks are read and shown as interrupted bars in the Gantt, print preview and PDF export; nothing from the source file is lost, even after you edit it."
+    },
     "bim4d": {
       "title": "4D BIM-ready",
-      "desc": "Link planning tasks to elements from your IFC building model for 4D visualisation of the construction sequence."
+      "desc": "Your schedule is an open IFC 4.3 file. BIM software can lay it directly alongside your building model for 4D analysis of the construction sequence, with no conversion needed."
     },
     "reporting": {
       "title": "Reporting &amp; printing",
@@ -67,7 +71,7 @@
     },
     "docs": {
       "title": "Manual inside the app",
-      "desc": "Press F1 for an offline manual, available in all fourteen languages: quick start, practical guides — including resource libraries and connecting an AI assistant — and fifteen reference pages, plus three sample projects to practise on."
+      "desc": "Press F1 for an offline manual, available in all fourteen languages: quick start, practical guides — including resource libraries and connecting an AI assistant — and fifteen reference pages, plus eight sample projects to practise on."
     },
     "shortcuts": {
       "title": "Shortcuts &amp; context menus",
@@ -79,7 +83,7 @@
     },
     "ribbon": {
       "title": "Ribbon toolbar",
-      "desc": "Familiar Office-style ribbon with tabs: Home, Planning, View, Settings, Table, IFC and Report."
+      "desc": "Familiar Office-style ribbon with tabs: Home, Planning, Resources, Relations, View, Settings, Table, IFC and Report — plus an AI tab once AI mode is switched on."
     }
   },
   "tech": {
@@ -106,19 +110,19 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "New in v2026.8.0 · testers wanted",
-    "title": "See at a glance whether the same crew is booked twice",
-    "desc": "A resource library is one shared pool across several projects. New is the <strong>occupancy overview</strong>: per library item you see — as a table and as a histogram — how much of it is already committed across all your open projects together. One crew or machine scheduled on two projects at once becomes <strong>visible instead of implicit</strong>; a single project cannot show that by definition.",
+    "label": "New in v2026.8.1 · testers wanted",
+    "title": "Open your MS Project files directly, date-faithful to the minute",
+    "desc": "Open Planner Studio now opens <strong>MS Project (.mpp) files natively</strong> — no Microsoft Project needed, no intermediate step. Across a 216-file test corpus, every file now lands, after recalculation, <strong>date-faithful to the minute</strong>: no start, finish or same-day deviations at all, enforced by a permanent regression gate. Split tasks, leveling delay, timephased assignments and manually scheduled tasks are now read and shown as real features — including interrupted bars in the Gantt, the print preview and PDF export.",
     "testers": "We are looking for <strong>testers</strong>: work planners, schedulers, project leads and BIM coordinators. Try Open Planner Studio right in your browser and tell us what you think — your feedback helps shape where it goes.",
     "ctaDemo": "Try the live demo →",
     "ctaJoin": "Join as a tester",
-    "list": "<li><strong>Occupancy overview</strong> — the committed load per crew, machine or subcontractor across all your open projects, with capacity overruns flagged.</li><li><strong>Relations on milestones and summary tasks</strong> — dragging a relation from a milestone works again, relations that cannot have any effect are marked instead of silently ignored, and an imported file keeps everything it came with.</li><li><strong>Task type inherited from the parent task</strong> — both for a task you add yourself and for one the AI assistant creates.</li><li><strong>Sample projects with resources</strong> — the bundled examples now show resource planning and the occupancy overview with real data.</li>"
+    "list": "<li><strong>MS Project (.mpp) native</strong> — opens directly, no converter, with error messages in all fourteen languages.</li><li><strong>Date-faithful to the minute</strong> — zero deviations across 216 test files, enforced by a permanent regression gate.</li><li><strong>Split and manually scheduled tasks visible</strong> — interrupted bars in the Gantt, the print preview and PDF export.</li><li><strong>Nothing gets lost</strong> — source data survives saving, reopening, undo and crash recovery, even after editing; an edit that releases it tells you so in the app.</li><li><strong>Also new:</strong> a view that shows dates exactly as the file recorded them, a jump button to the WBS on relations, and an active-between filter.</li>"
   },
   "faq": {
     "heading": "Frequently asked questions",
     "import": {
       "q": "Can I open files from Microsoft Project or Primavera P6?",
-      "a": "Yes. Open Planner Studio imports and exports MS Project (.xml) and Primavera P6 (.xml) directly, with no intermediate step or conversion tool. IFC and CSV are supported as well."
+      "a": "Yes. Open Planner Studio opens MS Project (.mpp) files natively — no Microsoft Project or external converter needed — and is date-faithful to the minute across a 216-file test corpus; split tasks, leveling delay, timephased assignments and manually scheduled tasks are read and shown. The app also imports and exports MS Project (.xml) and Primavera P6 (.xml) directly, with no intermediate step or conversion tool. IFC and CSV are supported as well."
     },
     "browser": {
       "q": "Do I have to install anything?",
@@ -126,7 +130,7 @@
     },
     "formaat": {
       "q": "What file format is my schedule saved in?",
-      "a": "IFC 4.3, the open buildingSMART standard. Your schedule *is* an IFC file — there is no proprietary, closed format. That keeps your data readable outside this application, and lets you link schedule tasks to elements in an IFC building model for 4D."
+      "a": "IFC 4.3, the open buildingSMART standard. Your schedule *is* an IFC file — there is no proprietary, closed format. That keeps your data readable outside this application, and lets BIM software lay your schedule directly alongside an IFC building model for 4D analysis of the construction sequence."
     },
     "ai": {
       "q": "What exactly can an AI assistant do with my schedule?",

@@ -2,13 +2,13 @@
   "header": {
     "label": "Planification de chantier",
     "title": "Open <span class=\"accent\">Planner</span> Studio",
-    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et l'IFC 4.3 natif comme format de fichier. Les bibliothèques de ressources partagées montrent à quel point une équipe ou une machine est engagée sur l'ensemble de vos projets, et un serveur MCP intégré permet à un assistant IA de lire et modifier votre planning. Sur votre poste et directement dans le navigateur.",
-    "downloadBtn": "Télécharger v2026.8.0",
+    "desc": "Planification de chantier open source avec diagrammes de Gantt, chemin critique, ressources et nivellement, références et avancement — et l'IFC 4.3 natif comme format de fichier. Ouvre désormais aussi les fichiers MS Project (.mpp) nativement, fidèle aux dates à la minute près, avec les tâches fractionnées et planifiées manuellement visibles dans le Gantt. Sur votre poste et directement dans le navigateur.",
+    "downloadBtn": "Télécharger v2026.8.1",
     "demoBtn": "Ouvrir dans le navigateur",
     "sourceBtn": "Voir le code source"
   },
   "download": {
-    "title": "Télécharger v2026.8.0",
+    "title": "Télécharger v2026.8.1",
     "browserNote": "Vous préférez ne rien installer ? Open Planner Studio fonctionne aussi <a href=\"https://open-planner-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--amber);\">entièrement dans votre navigateur</a> — y compris l'ouverture et l'enregistrement de fichiers."
   },
   "features": {
@@ -22,7 +22,7 @@
     },
     "cpm": {
       "title": "Chemin critique (CPM)",
-      "desc": "Calcul automatique du chemin critique avec marge, travaux quasi critiques, chemins critiques multiples et analyse des échéances."
+      "desc": "Calcul automatique du chemin critique avec marge, travaux quasi critiques, chemins critiques multiples et analyse des échéances. Une vue « dates telles qu'enregistrées » montre un fichier exactement comme il a enregistré ses propres dates, quand celles-ci diffèrent du recalcul."
     },
     "wbs": {
       "title": "WBS et vue tableau",
@@ -57,9 +57,13 @@
       "title": "Échange de données",
       "desc": "Importez et exportez IFC, CSV, MS Project (.xml) et Primavera P6 (.xml) — sans étape intermédiaire ni outil de conversion."
     },
+    "mpp": {
+      "title": "Import MS Project (.mpp)",
+      "desc": "Ouvre les fichiers .mpp nativement, sans Microsoft Project ni convertisseur — fidèle aux dates à la minute près sur un corpus de test de 216 fichiers. Les tâches fractionnées, le nivellement, les affectations réparties dans le temps et les tâches planifiées manuellement sont lues et affichées sous forme de barres interrompues dans le Gantt, l'aperçu avant impression et l'export PDF ; rien du fichier source n'est perdu, même après modification."
+    },
     "bim4d": {
       "title": "Prêt pour la 4D BIM",
-      "desc": "Reliez les tâches du planning aux éléments de votre maquette IFC pour visualiser la séquence de construction en 4D."
+      "desc": "Votre planning est un fichier IFC 4.3 ouvert. Un logiciel BIM peut le placer directement à côté de votre maquette pour une analyse 4D de la séquence de construction, sans conversion."
     },
     "reporting": {
       "title": "Rapports et impression",
@@ -67,7 +71,7 @@
     },
     "docs": {
       "title": "Manuel dans l'application",
-      "desc": "Appuyez sur F1 pour un manuel hors ligne, disponible dans les quatorze langues : démarrage rapide, guides pratiques — dont les bibliothèques de ressources et la connexion d'un assistant IA — et quinze pages de référence, plus trois projets d'exemple pour s'exercer."
+      "desc": "Appuyez sur F1 pour un manuel hors ligne, disponible dans les quatorze langues : démarrage rapide, guides pratiques — dont les bibliothèques de ressources et la connexion d'un assistant IA — et quinze pages de référence, plus huit projets d'exemple pour s'exercer."
     },
     "shortcuts": {
       "title": "Raccourcis et menus contextuels",
@@ -79,7 +83,7 @@
     },
     "ribbon": {
       "title": "Barre d'outils en ruban",
-      "desc": "Ruban familier de style Office avec onglets : Accueil, Planification, Affichage, Paramètres, Tableau, IFC et Rapport."
+      "desc": "Ruban familier de style Office avec onglets : Accueil, Planification, Ressources, Relations, Affichage, Paramètres, Tableau, IFC et Rapport — plus un onglet IA dès que le mode IA est activé."
     }
   },
   "tech": {
@@ -106,19 +110,19 @@
     "slogan": "Build free. Build together."
   },
   "whatsnew": {
-    "label": "Nouveau dans la v2026.8.0 · testeurs recherchés",
-    "title": "Voyez d'un coup d'œil si la même équipe est réservée deux fois",
-    "desc": "Une bibliothèque de ressources est un pool partagé entre plusieurs projets. Nouveauté : la <strong>vue d'occupation</strong>. Pour chaque élément de la bibliothèque, vous voyez — sous forme de tableau et d'histogramme — quelle part est déjà engagée sur l'ensemble de vos projets ouverts. Une équipe ou une machine planifiée sur deux projets à la fois devient ainsi <strong>visible au lieu d'implicite</strong> ; un projet isolé ne peut pas le montrer, par définition.",
+    "label": "Nouveau dans la v2026.8.1 · testeurs recherchés",
+    "title": "Ouvrez vos fichiers MS Project directement, fidèles aux dates à la minute près",
+    "desc": "Open Planner Studio ouvre désormais les <strong>fichiers MS Project (.mpp) nativement</strong> — sans Microsoft Project, sans étape intermédiaire. Sur un corpus de test de 216 fichiers, chaque fichier, après recalcul, est désormais <strong>fidèle aux dates à la minute près</strong> : aucun écart de début, de fin ou de même jour, garanti par un test de non-régression permanent. Les tâches fractionnées, le délai de nivellement, les affectations réparties dans le temps et les tâches planifiées manuellement sont désormais lues et affichées comme de vraies fonctionnalités — y compris des barres interrompues dans le Gantt, l'aperçu avant impression et l'export PDF.",
     "testers": "Nous recherchons des <strong>testeurs</strong> : préparateurs de travaux, planificateurs, chefs de projet et coordinateurs BIM. Essayez Open Planner Studio directement dans votre navigateur et dites-nous ce que vous en pensez — vos retours orientent la suite.",
     "ctaDemo": "Essayer la démo en ligne →",
     "ctaJoin": "Participer comme testeur",
-    "list": "<li><strong>Vue d'occupation</strong> — la charge engagée par équipe, machine ou sous-traitant sur tous vos projets ouverts, avec les dépassements de capacité signalés.</li><li><strong>Relations sur les jalons et les tâches récapitulatives</strong> — faire glisser une relation depuis un jalon fonctionne à nouveau, les relations sans effet possible sont signalées au lieu d'être ignorées en silence, et un fichier importé conserve tout ce qu'il contenait.</li><li><strong>Type de tâche hérité de la tâche parente</strong> — aussi bien pour une tâche que vous ajoutez vous-même que pour une tâche créée par l'assistant IA.</li><li><strong>Projets d'exemple avec ressources</strong> — les exemples fournis montrent désormais la planification des ressources et la vue d'occupation avec de vraies données.</li>"
+    "list": "<li><strong>MS Project (.mpp) natif</strong> — ouverture directe, sans convertisseur, avec des messages d'erreur dans les quatorze langues.</li><li><strong>Fidèle aux dates à la minute près</strong> — zéro écart sur 216 fichiers de test, garanti par un test de non-régression permanent.</li><li><strong>Tâches fractionnées et planifiées manuellement visibles</strong> — barres interrompues dans le Gantt, l'aperçu avant impression et l'export PDF.</li><li><strong>Rien n'est perdu</strong> — les données source survivent à l'enregistrement, la réouverture, l'annulation et la récupération après plantage, même après modification ; une modification qui les libère vous le signale dans l'application.</li><li><strong>Également nouveau :</strong> une vue qui affiche les dates telles qu'enregistrées dans le fichier, un bouton de saut vers le WBS sur les relations, et un filtre sur la période active-entre.</li>"
   },
   "faq": {
     "heading": "Questions fréquentes",
     "import": {
       "q": "Puis-je ouvrir des fichiers Microsoft Project ou Primavera P6 ?",
-      "a": "Oui. Open Planner Studio importe et exporte directement MS Project (.xml) et Primavera P6 (.xml), sans étape intermédiaire ni outil de conversion. IFC et CSV sont également pris en charge."
+      "a": "Oui. Open Planner Studio ouvre les fichiers MS Project (.mpp) nativement — sans Microsoft Project ni convertisseur externe — et reste fidèle aux dates à la minute près sur un corpus de test de 216 fichiers ; les tâches fractionnées, le délai de nivellement, les affectations réparties dans le temps et les tâches planifiées manuellement sont lues et affichées. L'application importe et exporte aussi directement MS Project (.xml) et Primavera P6 (.xml), sans étape intermédiaire ni outil de conversion. IFC et CSV sont également pris en charge."
     },
     "browser": {
       "q": "Dois-je installer quelque chose ?",
@@ -126,7 +130,7 @@
     },
     "formaat": {
       "q": "Dans quel format mon planning est-il enregistré ?",
-      "a": "En IFC 4.3, la norme ouverte de buildingSMART. Votre planning *est* un fichier IFC — il n'existe pas de format propriétaire fermé. Vos données restent donc lisibles en dehors de cette application, et vous pouvez relier les tâches aux éléments d'une maquette IFC pour la 4D."
+      "a": "En IFC 4.3, la norme ouverte de buildingSMART. Votre planning *est* un fichier IFC — il n'existe pas de format propriétaire fermé. Vos données restent donc lisibles en dehors de cette application, et un logiciel BIM peut placer votre planning directement à côté d'une maquette IFC pour une analyse 4D de la séquence de construction."
     },
     "ai": {
       "q": "Que peut faire exactement un assistant IA avec mon planning ?",
