@@ -134,7 +134,12 @@ for (const file of htmlFiles(ROOT)) {
 
   const original = fs.readFileSync(file, 'utf8');
   const opened = `<div${m[1]}>`;
-  html = html.replace(m[0], `${opened}\n${block}\n</div>`);
+  // Replacer as a FUNCTION, not a string: a changelog can contain a literal
+  // "$" (e.g. IFC's null-value marker, described in prose), and a string
+  // replacement argument treats "$&", "$$", "$1" etc. as special patterns —
+  // "$&" in particular re-inserts the whole matched placeholder <div>,
+  // corrupting the page. A function return value is inserted verbatim.
+  html = html.replace(m[0], () => `${opened}\n${block}\n</div>`);
   const before = original;
 
   if (data.latestStable && data.latestStable.tag) {

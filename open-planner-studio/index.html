@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Planner Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en native IFC 4.3. Gedeelde resource-bibliotheken tonen nu de bezetting over al je projecten heen, en een ingebouwde MCP-server laat een AI-assistent je planning lezen en bewerken. Windows, macOS, Linux en direct in de browser.">
+  <meta name="description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en native IFC 4.3. Opent nu ook MS Project (.mpp)-bestanden rechtstreeks in — datumgetrouw tot op de minuut over een testcorpus van 216 bestanden, met gesplitste taken en handmatig geplande taken zichtbaar in de Gantt. Windows, macOS, Linux en direct in de browser.">
   <link rel="canonical" href="https://open-aec.com/open-planner-studio/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="Open Planner Studio">
-  <meta property="og:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en native IFC 4.3. Gedeelde resource-bibliotheken tonen nu de bezetting over al je projecten heen, en een ingebouwde MCP-server laat een AI-assistent je planning lezen en bewerken. Windows, macOS, Linux en direct in de browser.">
+  <meta property="og:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en native IFC 4.3. Opent nu ook MS Project (.mpp)-bestanden rechtstreeks in — datumgetrouw tot op de minuut over een testcorpus van 216 bestanden, met gesplitste taken en handmatig geplande taken zichtbaar in de Gantt. Windows, macOS, Linux en direct in de browser.">
   <meta property="og:url" content="https://open-aec.com/open-planner-studio/">
   <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-planner-studio-gantt.png">
   <meta property="og:locale" content="nl_NL">
@@ -20,7 +20,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Planner Studio">
-  <meta name="twitter:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en native IFC 4.3. Gedeelde resource-bibliotheken tonen nu de bezetting over al je projecten heen, en een ingebouwde MCP-server laat een AI-assistent je planning lezen en bewerken. Windows, macOS, Linux en direct in de browser.">
+  <meta name="twitter:description" content="Open Planner Studio: open-source bouwplanning met Gantt, kritiek pad (CPM), WBS, resources en nivellering, baselines en native IFC 4.3. Opent nu ook MS Project (.mpp)-bestanden rechtstreeks in — datumgetrouw tot op de minuut over een testcorpus van 216 bestanden, met gesplitste taken en handmatig geplande taken zichtbaar in de Gantt. Windows, macOS, Linux en direct in de browser.">
   <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-planner-studio-gantt.png">
 
   <!-- AI / LLM discoverability -->
@@ -37,17 +37,18 @@
     "applicationCategory": "EngineeringApplication",
     "applicationSubCategory": "Project Planning",
     "operatingSystem": "Windows, macOS, Linux, Web",
-    "softwareVersion": "2026.8.0",
+    "softwareVersion": "2026.8.1",
     "url": "https://open-aec.com/open-planner-studio/",
     "downloadUrl": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases",
     "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Shared resource libraries show how much of each crew or machine is committed across all your open projects. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule. Runs on Windows, macOS and Linux and fully in the browser.",
+    "description": "Open-source construction scheduling with Gantt charts, critical path (CPM), WBS, resource levelling, baselines and progress tracking. Opens Microsoft Project (.mpp) files natively — date-faithful to the minute across a 216-file test corpus, with split tasks, resource leveling, timephased assignments and manually scheduled tasks read from the file and drawn as interrupted bars in the Gantt. Uses IFC 4.3 as its native file format and ships a built-in MCP server so an AI assistant can read and edit the schedule. Runs on Windows, macOS and Linux and fully in the browser.",
     "featureList": [
       "AI-assistent via MCP",
       "Gantt-diagrammen",
       "Kritiek pad (CPM)",
       "WBS & tabelweergave",
       "Native IFC 4.3",
+      "MS Project (.mpp)-import",
       "Resources & nivellering",
       "Resource-bibliotheken",
       "Bezettingsoverzicht over projecten",
@@ -70,7 +71,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "project planning, construction scheduling, bouwplanning, werkvoorbereiding, Gantt, critical path, CPM, WBS, resource levelling, baseline, 4D BIM, IFC 4.3, MCP server, AI assistant, MS Project alternative, Primavera P6 alternative, Asta Powerproject alternative",
+    "keywords": "project planning, construction scheduling, bouwplanning, werkvoorbereiding, Gantt, critical path, CPM, WBS, resource levelling, baseline, 4D BIM, IFC 4.3, MS Project import, .mpp import, MCP server, AI assistant, MS Project alternative, Primavera P6 alternative, Asta Powerproject alternative",
     "sameAs": [
       "https://github.com/OpenAEC-Foundation/open-planner-studio",
       "https://open-planner-studio.open-aec.com/"
@@ -92,7 +93,7 @@
         "name": "Kan ik bestanden uit Microsoft Project of Primavera P6 openen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja. Open Planner Studio importeert en exporteert MS Project (.xml) en Primavera P6 (.xml) rechtstreeks, zonder tussenstap of conversietool. Ook IFC en CSV worden ondersteund."
+          "text": "Ja. Open Planner Studio opent MS Project (.mpp)-bestanden rechtstreeks — zonder Microsoft Project of een externe converter — en is daarbij datumgetrouw tot op de minuut over een testcorpus van 216 bestanden; gesplitste taken, nivelleringsvertraging, urenverdelingen en handmatig geplande taken worden gelezen en getoond. Daarnaast importeert en exporteert de app MS Project (.xml) en Primavera P6 (.xml) rechtstreeks, zonder tussenstap of conversietool. Ook IFC en CSV worden ondersteund."
         }
       },
       {
@@ -108,7 +109,7 @@
         "name": "In welk bestandsformaat wordt mijn planning opgeslagen?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In IFC 4.3, de open standaard van buildingSMART. Je planning ís een IFC-bestand — er is geen eigen, gesloten formaat. Daardoor blijft je data leesbaar buiten deze applicatie en kun je planningtaken koppelen aan elementen uit een IFC-gebouwmodel voor 4D."
+          "text": "In IFC 4.3, de open standaard van buildingSMART. Je planning ís een IFC-bestand — er is geen eigen, gesloten formaat. Daardoor blijft je data leesbaar buiten deze applicatie, en kan BIM-software je planning rechtstreeks naast een IFC-gebouwmodel leggen voor 4D-analyse van de bouwvolgorde."
         }
       },
       {
@@ -227,9 +228,9 @@
   <section class="hero">
     <span class="section-label" data-i18n="header.label">Bouwplanning</span>
     <h1 data-i18n="header.title">Open <span class="accent">Planner</span> Studio</h1>
-    <p class="tagline" data-i18n="header.desc">Open-source bouwplanning met Gantt, kritiek pad, resources en nivellering, baselines en voortgang — en native IFC 4.3 als bestandsformaat. Gedeelde resource-bibliotheken laten zien hoe zwaar een ploeg of machine bezet is over al je projecten heen, en een ingebouwde MCP-server laat een AI-assistent je planning lezen en bewerken. Op je desktop én direct in de browser.</p>
+    <p class="tagline" data-i18n="header.desc">Open-source bouwplanning met Gantt, kritiek pad, resources en nivellering, baselines en voortgang — en native IFC 4.3 als bestandsformaat. Opent nu ook MS Project (.mpp)-bestanden rechtstreeks in, datumgetrouw tot op de minuut, met gesplitste en handmatig geplande taken zichtbaar in de Gantt. Op je desktop én direct in de browser.</p>
     <div class="btn-group">
-      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.8.0</a>
+      <a href="#download" class="btn btn-primary btn-lg" data-i18n="header.downloadBtn" data-opl-ver>Download v2026.8.1</a>
       <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="header.demoBtn">Open in je browser</a>
       <a href="https://github.com/OpenAEC-Foundation/open-planner-studio" class="btn btn-ghost btn-lg" data-i18n="header.sourceBtn">Bekijk broncode</a>
     </div>
@@ -252,14 +253,15 @@
 
   <section class="section" style="padding: var(--sp-6) var(--sp-6);"><div class="container">
     <div class="explainer">
-      <span class="section-label" data-i18n="whatsnew.label">Nieuw in v2026.8.0 &middot; testers gezocht</span>
-      <h2 data-i18n="whatsnew.title">Zie in één oogopslag of dezelfde ploeg dubbel geboekt staat</h2>
-      <p data-i18n="whatsnew.desc">Een resource-bibliotheek is één gedeelde pool over meerdere projecten. Nieuw is het <strong>bezettingsoverzicht</strong>: per bibliotheekitem zie je — als tabel én als histogram — hoeveel ervan al vastligt over al je geopende projecten samen. Eén ploeg of machine die op twee projecten tegelijk is ingepland wordt daarmee <strong>zichtbaar in plaats van impliciet</strong>; een enkel project kan dat per definitie niet laten zien.</p>
+      <span class="section-label" data-i18n="whatsnew.label">Nieuw in v2026.8.1 &middot; testers gezocht</span>
+      <h2 data-i18n="whatsnew.title">Open je MS Project-bestanden rechtstreeks, tot op de minuut datumgetrouw</h2>
+      <p data-i18n="whatsnew.desc">Open Planner Studio opent nu <strong>MS Project (.mpp)-bestanden rechtstreeks</strong> — geen Microsoft Project nodig, geen tussenstap. Over een testcorpus van 216 bestanden is elk bestand na herberekening <strong>datumgetrouw tot op de minuut</strong>: geen enkele start-, eind- of dagafwijking, bewaakt door een permanente regressietoets. Gesplitste taken, nivelleringsvertraging, urenverdelingen en handmatig geplande taken worden nu als echte functies gelezen en getoond — inclusief onderbroken balken in de Gantt, het afdrukvoorbeeld en de PDF-export.</p>
       <ul data-i18n="whatsnew.list">
-        <li><strong>Bezettingsoverzicht</strong> — per ploeg, machine of onderaannemer de bezetting over al je geopende projecten, met overschrijdingen van de capaciteit gemarkeerd.</li>
-        <li><strong>Relaties op mijlpalen en verzameltaken</strong> — slepen vanaf een mijlpaal werkt weer, relaties die niets kunnen doen worden gemarkeerd in plaats van stil genegeerd, en een geïmporteerd bestand houdt alles wat erin zat.</li>
-        <li><strong>Taaktype erft van de bovenliggende taak</strong> — bij een nieuwe taak die je zelf toevoegt én bij een taak die de AI-assistent aanmaakt.</li>
-        <li><strong>Voorbeeldprojecten met resources</strong> — de meegeleverde voorbeelden tonen nu resourceplanning en het bezettingsoverzicht met echte data.</li>
+        <li><strong>MS Project (.mpp) native</strong> — rechtstreeks openen, zonder converter, met foutmeldingen in alle veertien talen.</li>
+        <li><strong>Datumgetrouw tot op de minuut</strong> — nul afwijkingen over 216 testbestanden, bewaakt door een permanente regressietoets.</li>
+        <li><strong>Gesplitste en handmatig geplande taken zichtbaar</strong> — onderbroken balken in de Gantt, het afdrukvoorbeeld en de PDF-export.</li>
+        <li><strong>Niets gaat verloren</strong> — brongegevens overleven opslaan, heropenen, undo en crashherstel, ook na bewerken; een bewerking die dat loslaat, meldt dat in de app.</li>
+        <li><strong>Ook nieuw:</strong> een weergave die datums toont zoals het bestand ze opsloeg, een sprongknop naar de WBS bij relaties en een filter op actief-tussen-periode.</li>
       </ul>
       <p data-i18n="whatsnew.testers">We zoeken <strong>testers</strong>: werkvoorbereiders, planners, projectleiders en BIM-co&ouml;rdinatoren. Probeer Open Planner Studio direct in je browser en laat ons weten wat je vindt — jouw feedback bepaalt mede de koers.</p>
       <div style="display:flex; gap:var(--sp-3); flex-wrap:wrap; margin-top:var(--sp-6);">
@@ -271,20 +273,20 @@
 
   <section class="section" id="download"><div class="container">
     <div class="download-section">
-      <h3 data-i18n="download.title" data-opl-ver>Download v2026.8.0</h3>
+      <h3 data-i18n="download.title" data-opl-ver>Download v2026.8.1</h3>
       <div class="download-grid">
         <div class="download-item"><div class="os">Windows</div><div class="size" data-opl-size="windows">7.3 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/Open.Planner.Studio_2026.8.0_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio_2026.8.1_x64-setup.exe" data-opl-dl="windows" class="btn btn-primary btn-sm">Download .exe</a></div>
         <div class="download-item"><div class="os">macOS (universal)</div><div class="size" data-opl-size="macos">15.4 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/Open.Planner.Studio_2026.8.0_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio_2026.8.1_universal.dmg" data-opl-dl="macos" class="btn btn-primary btn-sm">Download .dmg</a></div>
         <div class="download-item"><div class="os">Linux (deb)</div><div class="size" data-opl-size="linux-deb">8.3 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/Open.Planner.Studio_2026.8.0_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio_2026.8.1_amd64.deb" data-opl-dl="linux-deb" class="btn btn-primary btn-sm">Download .deb</a></div>
         <div class="download-item"><div class="os">Linux (rpm)</div><div class="size" data-opl-size="linux-rpm">8.3 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/Open.Planner.Studio-2026.8.0-1.x86_64.rpm" data-opl-dl="linux-rpm" class="btn btn-primary btn-sm">Download .rpm</a></div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio-2026.8.1-1.x86_64.rpm" data-opl-dl="linux-rpm" class="btn btn-primary btn-sm">Download .rpm</a></div>
         <div class="download-item"><div class="os">Linux (AppImage)</div><div class="size" data-opl-size="linux-appimage">82.2 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/Open.Planner.Studio_2026.8.0_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio_2026.8.1_amd64.AppImage" data-opl-dl="linux-appimage" class="btn btn-primary btn-sm">Download AppImage</a></div>
         <div class="download-item"><div class="os">Linux (snap)</div><div class="size" data-opl-size="linux-snap">7.5 MB</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/open-planner-studio_2026.8.0_amd64.snap" data-opl-dl="linux-snap" class="btn btn-primary btn-sm">Download .snap</a></div>
+          <a href="https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/open-planner-studio_2026.8.1_amd64.snap" data-opl-dl="linux-snap" class="btn btn-primary btn-sm">Download .snap</a></div>
       </div>
       <p style="color:var(--scaffold-gray); font-size:0.85rem; margin-top:var(--sp-4);" data-i18n="download.browserNote">Liever niets installeren? Open Planner Studio draait ook <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" style="color:var(--amber);">volledig in je browser</a> — inclusief bestanden openen en opslaan.</p>
     </div>
@@ -303,7 +305,7 @@
       </div>
       <div class="feature">
         <h4 data-i18n="features.cpm.title">Kritiek pad (CPM)</h4>
-        <p data-i18n="features.cpm.desc">Automatische kritieke-padberekening met speling, bijna-kritiek werk, meerdere kritieke paden en deadline-analyse.</p>
+        <p data-i18n="features.cpm.desc">Automatische kritieke-padberekening met speling, bijna-kritiek werk, meerdere kritieke paden en deadline-analyse. Een &quot;datums-zoals-opgeslagen&quot;-weergave toont een bestand precies zoals het zelf zijn datums vastlegde, als die afwijken van de herberekening.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.wbs.title">WBS &amp; tabelweergave</h4>
@@ -338,8 +340,12 @@
         <p data-i18n="features.exchange.desc">Importeer en exporteer IFC, CSV, MS Project (.xml) en Primavera P6 (.xml) — zonder tussenstappen of conversietools.</p>
       </div>
       <div class="feature">
+        <h4 data-i18n="features.mpp.title">MS Project (.mpp)-import</h4>
+        <p data-i18n="features.mpp.desc">Open .mpp-bestanden rechtstreeks, zonder Microsoft Project of een converter — datumgetrouw tot op de minuut over een testcorpus van 216 bestanden. Gesplitste taken, nivelleringsvertraging, urenverdelingen en handmatig geplande taken worden gelezen en als onderbroken balken getoond in de Gantt, het afdrukvoorbeeld en de PDF-export; niets uit het bronbestand gaat verloren, ook niet na bewerken.</p>
+      </div>
+      <div class="feature">
         <h4 data-i18n="features.bim4d.title">4D BIM-ready</h4>
-        <p data-i18n="features.bim4d.desc">Koppel planningtaken aan elementen uit je IFC-gebouwmodel voor 4D-visualisatie van de bouwvolgorde.</p>
+        <p data-i18n="features.bim4d.desc">Je planning is een open IFC 4.3-bestand. BIM-software kan het rechtstreeks naast je gebouwmodel leggen voor 4D-analyse van de bouwvolgorde, zonder conversie.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.reporting.title">Rapportage &amp; printen</h4>
@@ -347,7 +353,7 @@
       </div>
       <div class="feature">
         <h4 data-i18n="features.docs.title">Handleiding in de app</h4>
-        <p data-i18n="features.docs.desc">Druk op F1 voor een offline handleiding, beschikbaar in alle veertien talen: quick-start, praktijkgidsen — waaronder resource-bibliotheken en het koppelen van een AI-assistent — en vijftien naslagpagina's, plus drie voorbeeldprojecten om op te oefenen.</p>
+        <p data-i18n="features.docs.desc">Druk op F1 voor een offline handleiding, beschikbaar in alle veertien talen: quick-start, praktijkgidsen — waaronder resource-bibliotheken en het koppelen van een AI-assistent — en vijftien naslagpagina's, plus acht voorbeeldprojecten om op te oefenen.</p>
       </div>
       <div class="feature">
         <h4 data-i18n="features.shortcuts.title">Sneltoetsen &amp; contextmenu's</h4>
@@ -359,7 +365,7 @@
       </div>
       <div class="feature">
         <h4 data-i18n="features.ribbon.title">Lint-werkbalk</h4>
-        <p data-i18n="features.ribbon.desc">Vertrouwde Office-achtige ribbon met tabbladen: Start, Planning, Beeld, Instellingen, Tabel, IFC en Rapport.</p>
+        <p data-i18n="features.ribbon.desc">Vertrouwde Office-achtige ribbon met tabbladen: Start, Planning, Resources, Relaties, Beeld, Instellingen, Tabel, IFC en Rapport — plus een AI-tabblad zodra de AI-modus aan staat.</p>
       </div>
     </div>
   </div></section>
@@ -378,7 +384,7 @@
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q" data-i18n="faq.import.q">Kan ik bestanden uit Microsoft Project of Primavera P6 openen?</div>
-        <div class="faq-a"><p data-i18n="faq.import.a">Ja. Open Planner Studio importeert en exporteert MS Project (.xml) en Primavera P6 (.xml) rechtstreeks, zonder tussenstap of conversietool. Ook IFC en CSV worden ondersteund.</p></div>
+        <div class="faq-a"><p data-i18n="faq.import.a">Ja. Open Planner Studio opent MS Project (.mpp)-bestanden rechtstreeks — zonder Microsoft Project of een externe converter — en is daarbij datumgetrouw tot op de minuut over een testcorpus van 216 bestanden; gesplitste taken, nivelleringsvertraging, urenverdelingen en handmatig geplande taken worden gelezen en getoond. Daarnaast importeert en exporteert de app MS Project (.xml) en Primavera P6 (.xml) rechtstreeks, zonder tussenstap of conversietool. Ook IFC en CSV worden ondersteund.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" data-i18n="faq.browser.q">Moet ik iets installeren?</div>
@@ -386,7 +392,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-q" data-i18n="faq.formaat.q">In welk bestandsformaat wordt mijn planning opgeslagen?</div>
-        <div class="faq-a"><p data-i18n="faq.formaat.a">In IFC 4.3, de open standaard van buildingSMART. Je planning ís een IFC-bestand — er is geen eigen, gesloten formaat. Daardoor blijft je data leesbaar buiten deze applicatie en kun je planningtaken koppelen aan elementen uit een IFC-gebouwmodel voor 4D.</p></div>
+        <div class="faq-a"><p data-i18n="faq.formaat.a">In IFC 4.3, de open standaard van buildingSMART. Je planning ís een IFC-bestand — er is geen eigen, gesloten formaat. Daardoor blijft je data leesbaar buiten deze applicatie, en kan BIM-software je planning rechtstreeks naast een IFC-gebouwmodel leggen voor 4D-analyse van de bouwvolgorde.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" data-i18n="faq.ai.q">Wat kan een AI-assistent precies met mijn planning?</div>
