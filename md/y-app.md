@@ -16,7 +16,7 @@
 - Commits: **0**
 - Forks: **0**
 - Open issues: **0**
-- Releases: **73**
+- Releases: **84**
 - Total downloads: **36**
 - Downloads by platform: Windows (27), Android (9)
 

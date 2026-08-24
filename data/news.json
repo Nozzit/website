@@ -3,8 +3,8 @@
     "type": "release",
     "repo": "open-pdf-studio",
     "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 1.85.0-nightly.20260805.6a31026",
-    "date": "2026-08-05",
+    "description": "Nightly build 1.85.0-nightly.20260824.1908b4f",
+    "date": "2026-08-24",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
@@ -12,9 +12,80 @@
     "type": "release",
     "repo": "Open-Calculations-Studio",
     "title": "Open-Calculations-Studio nightly uitgebracht",
-    "description": "Nightly build 0.1.4-nightly.20260805.6369851",
-    "date": "2026-08-05",
+    "description": "Nightly build 0.1.4-nightly.20260824.6369851",
+    "date": "2026-08-24",
     "url": "https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "Open-Field-Studio",
+    "title": "Open-Field-Studio: 4 releases (v0.3.1 → v0.3.4)",
+    "description": "Versies: v0.3.1, v0.3.2, v0.3.3, v0.3.4",
+    "date": "2026-08-24",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/tag/v0.3.4",
+    "count": 4
+  },
+  {
+    "type": "release",
+    "repo": "openaec-installer",
+    "title": "openaec-installer: 2 releases (v0.2.1 → v0.2.2)",
+    "description": "Versies: v0.2.1, v0.2.2",
+    "date": "2026-08-24",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.2.2",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.8.1 uitgebracht",
+    "description": "Open Planner Studio v2026.8.1",
+    "date": "2026-08-19",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.8.1",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.8.0 uitgebracht",
+    "description": "Open Planner Studio v2026.8.0",
+    "date": "2026-08-17",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.8.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "pile-plan-studio",
+    "title": "pile-plan-studio v0.2.0-alpha uitgebracht",
+    "description": "Pile Plan Studio v0.2.0-alpha",
+    "date": "2026-08-14",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.2.0-alpha",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "pile-plan-studio",
+    "title": "pile-plan-studio v0.1.9-alpha uitgebracht",
+    "description": "Pile Plan Studio v0.1.9-alpha",
+    "date": "2026-08-10",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.9-alpha",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "ifccad",
+    "title": "Nieuwe repository: ifccad",
+    "description": "Rust implementation and language-neutral format contract for IFCCAD (IFCX + IFCDR + optional IFCPR).",
+    "date": "2026-08-10",
+    "url": "https://github.com/OpenAEC-Foundation/ifccad"
+  },
+  {
+    "type": "release",
+    "repo": "pile-plan-studio",
+    "title": "pile-plan-studio v0.1.8-alpha uitgebracht",
+    "description": "Pile Plan Studio 0.1.8-alpha",
+    "date": "2026-08-06",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.8-alpha",
     "count": 1
   },
   {
@@ -292,7 +363,7 @@
     "type": "new_repo",
     "repo": "acadifc",
     "title": "Nieuwe repository: acadifc",
-    "description": "A pure Rust library for reading and writing CAD files (IFCCAD, DXF and DWG).",
+    "description": "Archived migration source for initial IFCCAD Rust work. Active development: https://github.com/OpenAEC-Foundation/ifccad",
     "date": "2026-07-14",
     "url": "https://github.com/OpenAEC-Foundation/acadifc"
   },
@@ -447,11 +518,11 @@
   },
   {
     "type": "new_repo",
-    "repo": "IFC-CAD",
-    "title": "Nieuwe repository: IFC-CAD",
-    "description": "Nieuw project gestart",
+    "repo": "ifccad-prototype",
+    "title": "Nieuwe repository: ifccad-prototype",
+    "description": "Python reference implementation and format laboratory for IFCCAD.",
     "date": "2026-07-06",
-    "url": "https://github.com/OpenAEC-Foundation/IFC-CAD"
+    "url": "https://github.com/OpenAEC-Foundation/ifccad-prototype"
   },
   {
     "type": "release",

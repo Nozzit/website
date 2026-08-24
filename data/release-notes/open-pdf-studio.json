@@ -1,6 +1,6 @@
 {
   "repo": "open-pdf-studio",
-  "generated": "2026-08-05T19:21:25.689Z",
+  "generated": "2026-08-24T19:07:57.242Z",
   "totalReleases": 51,
   "totalChanges": 347,
   "latestStable": {
@@ -12,7 +12,7 @@
   "latestChangelog": null,
   "nightly": {
     "tag": "nightly",
-    "date": "2026-08-05",
+    "date": "2026-08-24",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly"
   },
   "groups": [

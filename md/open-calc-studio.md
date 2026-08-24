@@ -12,13 +12,13 @@
 
 ## Live stats
 
-- Stars: **7**
-- Commits: **71**
-- Forks: **2**
-- Open issues: **2**
+- Stars: **8**
+- Commits: **73**
+- Forks: **4**
+- Open issues: **3**
 - Releases: **21**
-- Total downloads: **233**
-- Downloads by platform: Windows (167), macOS (21), Linux (deb) (20), Windows (MSI) (16), Linux (rpm) (9)
+- Total downloads: **279**
+- Downloads by platform: Windows (200), Linux (deb) (26), macOS (21), Windows (MSI) (20), Linux (rpm) (11), Linux (snap) (1)
 
 ## Key features
 
@@ -65,11 +65,11 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - [Windows · Open.Calc.Studio_0.7.3_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.7.3/Open.Calc.Studio_0.7.3_x64-setup.exe) (v0.7.3 — 32.6 MB)
 - [Windows · Open.Calc.Studio_0.10.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.10.0/Open.Calc.Studio_0.10.0_x64-setup.exe) (v0.10.0 — 22.7 MB)
 - [Windows · Open.Calc.Studio_0.7.8_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.7.8/Open.Calc.Studio_0.7.8_x64-setup.exe) (v0.7.8 — 18.8 MB)
+- [Linux (deb) · Open.Calc.Studio_0.10.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.10.0/Open.Calc.Studio_0.10.0_amd64.deb) (v0.10.0 — 31.2 MB)
 - [Windows · Open.Calc.Studio_0.8.6_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.6/Open.Calc.Studio_0.8.6_x64-setup.exe) (v0.8.6 — 22.2 MB)
 - [Windows · Open.Calc.Studio_0.8.8_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.8/Open.Calc.Studio_0.8.8_x64-setup.exe) (v0.8.8 — 22.3 MB)
 - [Windows · Open.Calc.Studio_0.8.2_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.2/Open.Calc.Studio_0.8.2_x64-setup.exe) (v0.8.2 — 21.6 MB)
 - [macOS · Open.Calc.Studio_0.8.7_aarch64.dmg](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.8.7/Open.Calc.Studio_0.8.7_aarch64.dmg) (v0.8.7 — 29.4 MB)
-- [Windows · Open.Calc.Studio_0.7.4_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-calc-studio/releases/download/v0.7.4/Open.Calc.Studio_0.7.4_x64-setup.exe) (v0.7.4 — 33.6 MB)
 
 ---
 

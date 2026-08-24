@@ -1,20 +1,65 @@
 {
   "repo": "pile-plan-studio",
-  "generated": "2026-08-05T19:21:38.717Z",
-  "totalReleases": 5,
-  "totalChanges": 15,
+  "generated": "2026-08-24T19:08:10.992Z",
+  "totalReleases": 8,
+  "totalChanges": 25,
   "latestStable": {
-    "tag": "v0.1.7-alpha",
-    "name": "Pile Plan Studio 0.1.7-alpha",
-    "date": "2026-08-05",
-    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.7-alpha"
+    "tag": "v0.2.0-alpha",
+    "name": "Pile Plan Studio v0.2.0-alpha",
+    "date": "2026-08-14",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.2.0-alpha"
   },
   "latestChangelog": null,
   "nightly": null,
   "groups": [
     {
+      "minorVersion": "0.2",
+      "releases": [
+        {
+          "tag": "v0.2.0-alpha",
+          "name": "Pile Plan Studio v0.2.0-alpha",
+          "date": "2026-08-14",
+          "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.2.0-alpha",
+          "changes": [],
+          "patchNum": 0
+        }
+      ],
+      "allChanges": [],
+      "firstDate": "2026-08-14",
+      "lastDate": "2026-08-14",
+      "releaseCount": 1,
+      "changeCount": 0
+    },
+    {
       "minorVersion": "0.1",
       "releases": [
+        {
+          "tag": "v0.1.9-alpha",
+          "name": "Pile Plan Studio v0.1.9-alpha",
+          "date": "2026-08-10",
+          "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.9-alpha",
+          "changes": [],
+          "patchNum": 9
+        },
+        {
+          "tag": "v0.1.8-alpha",
+          "name": "Pile Plan Studio 0.1.8-alpha",
+          "date": "2026-08-06",
+          "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.1.8-alpha",
+          "changes": [
+            "Undo and redo persisted project changes, with concise feedback in the viewer.",
+            "Recover the latest browser project from IndexedDB after an accidental refresh or interrupted session.",
+            "Resize the project explorer horizontally using the same lightweight behavior as the properties panel.",
+            "Excel and CSV export the active pile plan and use its name as the suggested file name.",
+            "Importing a standard or Legacy pile-plan table creates and activates a new named pile plan while preserving existing plans.",
+            "Pile-cost defaults come from the bundled sample project and no longer change silently across projects.",
+            "Permanent inspection tabs close open settings panels, while viewer selection keeps them available.",
+            "Browser recovery is a convenience safeguard, not a replacement for saving an IFCPP project.",
+            "Excel and CSV contain one active pile plan; IFCPP preserves the complete project with all pile plans.",
+            "No Windows installer is included in this release while signing setup remains unavailable."
+          ],
+          "patchNum": 8
+        },
         {
           "tag": "v0.1.7-alpha",
           "name": "Pile Plan Studio 0.1.7-alpha",
@@ -74,6 +119,16 @@
         }
       ],
       "allChanges": [
+        "Undo and redo persisted project changes, with concise feedback in the viewer.",
+        "Recover the latest browser project from IndexedDB after an accidental refresh or interrupted session.",
+        "Resize the project explorer horizontally using the same lightweight behavior as the properties panel.",
+        "Excel and CSV export the active pile plan and use its name as the suggested file name.",
+        "Importing a standard or Legacy pile-plan table creates and activates a new named pile plan while preserving existing plans.",
+        "Pile-cost defaults come from the bundled sample project and no longer change silently across projects.",
+        "Permanent inspection tabs close open settings panels, while viewer selection keeps them available.",
+        "Browser recovery is a convenience safeguard, not a replacement for saving an IFCPP project.",
+        "Excel and CSV contain one active pile plan; IFCPP preserves the complete project with all pile plans.",
+        "No Windows installer is included in this release while signing setup remains unavailable.",
         "Lock and unlock load points per pile plan. Locked locations remain visible but dimmed, cannot be selected during ordinary plan editing, and are ignored by greedy optimization.",
         "Edit locked locations directly in the viewer using click and lasso interactions, with Apply, Cancel, and Unlock all controls.",
         "Show grid lines aligned to actual project coordinates, with adaptive spacing and a View-ribbon toggle.",
@@ -91,9 +146,9 @@
         "Refined OpenAEC styling and import icon alignment."
       ],
       "firstDate": "2026-07-17",
-      "lastDate": "2026-08-05",
-      "releaseCount": 5,
-      "changeCount": 15
+      "lastDate": "2026-08-10",
+      "releaseCount": 7,
+      "changeCount": 25
     }
   ]
 }

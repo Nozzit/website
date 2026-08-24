@@ -6,19 +6,19 @@
 **License:** LGPL-3.0
 **Platforms:** Windows, macOS, Linux, Web
 **Category:** Project Planning
-**Current version:** v2026.7.14 (2026-07-30)
+**Current version:** v2026.8.1 (2026-08-19)
 **Tool ID:** `open-planner-studio`
 **GitHub repo:** `OpenAEC-Foundation/open-planner-studio`
 
 ## Live stats
 
-- Stars: **7**
-- Commits: **933**
-- Forks: **1**
-- Open issues: **14**
-- Releases: **18**
-- Total downloads: **390**
-- Downloads by platform: Windows (188), Linux (deb) (93), Linux (AppImage) (41), macOS (34), Archive (20), Linux (rpm) (11), Linux (snap) (3)
+- Stars: **11**
+- Commits: **1399**
+- Forks: **2**
+- Open issues: **15**
+- Releases: **20**
+- Total downloads: **573**
+- Downloads by platform: Windows (294), Linux (deb) (120), Linux (AppImage) (63), macOS (49), Archive (21), Linux (rpm) (16), Linux (snap) (10)
 
 ## Key features
 
@@ -67,19 +67,19 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - Product page: https://open-aec.com/open-planner-studio/
 - Live demo: https://open-planner-studio.open-aec.com/
 - GitHub repo: https://github.com/OpenAEC-Foundation/open-planner-studio
-- Latest stable release: https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.7.14
+- Latest stable release: https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.8.1
 - Nightly builds: https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/nightly
 
 ## Direct downloads (most popular)
 
-- [Windows · Open.Planner.Studio_2026.6.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_x64-setup.exe) (v2026.6.0 — 4.6 MB)
+- [Windows · Open.Planner.Studio_2026.7.14_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.14/Open.Planner.Studio_2026.7.14_x64-setup.exe) (v2026.7.14 — 7.4 MB)
+- [Windows · Open.Planner.Studio_2026.8.1_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio_2026.8.1_x64-setup.exe) (v2026.8.1 — 7.6 MB)
 - [macOS · Open.Planner.Studio_2026.7.13_universal.dmg](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_universal.dmg) (v2026.7.13 — 15.4 MB)
+- [Windows · Open.Planner.Studio_2026.6.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_x64-setup.exe) (v2026.6.0 — 4.6 MB)
 - [Windows · Open.Planner.Studio_2026.7.10_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.10/Open.Planner.Studio_2026.7.10_x64-setup.exe) (v2026.7.10 — 5.3 MB)
+- [Linux (deb) · Open.Planner.Studio_2026.7.14_amd64.deb](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.14/Open.Planner.Studio_2026.7.14_amd64.deb) (v2026.7.14 — 8.4 MB)
+- [Windows · Open.Planner.Studio_2026.8.0_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.0/Open.Planner.Studio_2026.8.0_x64-setup.exe) (v2026.8.0 — 7.6 MB)
 - [Windows · Open.Planner.Studio_2026.7.12_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.12/Open.Planner.Studio_2026.7.12_x64-setup.exe) (v2026.7.12 — 6.3 MB)
-- [Linux (deb) · Open.Planner.Studio_2026.6.0_amd64.deb](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.6.0/Open.Planner.Studio_2026.6.0_amd64.deb) (v2026.6.0 — 5.4 MB)
-- [Linux (deb) · Open.Planner.Studio_2026.7.13_amd64.deb](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_amd64.deb) (v2026.7.13 — 8.4 MB)
-- [Windows · Open.Planner.Studio_2026.7.11_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.11/Open.Planner.Studio_2026.7.11_x64-setup.exe) (v2026.7.11 — 5.3 MB)
-- [Windows · Open.Planner.Studio_2026.7.13_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.7.13/Open.Planner.Studio_2026.7.13_x64-setup.exe) (v2026.7.13 — 7.3 MB)
 
 ---
 

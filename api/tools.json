@@ -1,6 +1,6 @@
 {
   "$schema": "https://open-aec.com/api/tools.schema.json",
-  "generated": "2026-08-05T19:21:57.587Z",
+  "generated": "2026-08-24T19:08:30.602Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -16,12 +16,12 @@
   },
   "totalTools": 18,
   "totalStats": {
-    "publicRepos": 68,
-    "totalStars": 967,
-    "totalCommits": 361644,
-    "contributors": 409,
+    "publicRepos": 69,
+    "totalStars": 1787,
+    "totalCommits": 362737,
+    "contributors": 414,
     "languages": 9,
-    "sourceDate": "2026-08-05T19:21:23.636Z"
+    "sourceDate": "2026-08-24T19:07:55.070Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -117,15 +117,15 @@
       "liveDemo": "https://open-pdf-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
-        "commits": 793,
-        "stars": 548,
-        "forks": 46,
-        "openIssues": 20,
-        "latestVersion": "v1.85.2",
+        "commits": 809,
+        "stars": 699,
+        "forks": 61,
+        "openIssues": 23,
+        "latestVersion": "untagged-b2f7f7ff80d18e2a230f",
         "latestReleaseDate": null,
-        "releases": 64,
+        "releases": 66,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-08-05"
+        "updatedAt": "2026-08-24"
       }
     },
     {
@@ -167,14 +167,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-2d-studio",
       "stats": {
         "commits": 90,
-        "stars": 23,
-        "forks": 4,
+        "stars": 24,
+        "forks": 5,
         "openIssues": 21,
         "latestVersion": "v0.35.0",
         "latestReleaseDate": "2026-03-26",
         "releases": 25,
         "createdAt": "2025-12-24",
-        "updatedAt": "2026-07-09"
+        "updatedAt": "2026-08-22"
       }
     },
     {
@@ -218,15 +218,15 @@
       "liveDemo": "https://open-calc-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-calc-studio",
       "stats": {
-        "commits": 71,
-        "stars": 7,
-        "forks": 2,
-        "openIssues": 2,
+        "commits": 73,
+        "stars": 8,
+        "forks": 4,
+        "openIssues": 3,
         "latestVersion": "v0.9.0",
         "latestReleaseDate": null,
         "releases": 21,
         "createdAt": "2026-05-02",
-        "updatedAt": "2026-08-03"
+        "updatedAt": "2026-08-17"
       }
     },
     {
@@ -361,15 +361,15 @@
       "liveDemo": "https://open-planner-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-planner-studio",
       "stats": {
-        "commits": 933,
-        "stars": 7,
-        "forks": 1,
-        "openIssues": 14,
-        "latestVersion": "v2026.7.14",
-        "latestReleaseDate": "2026-07-30",
-        "releases": 18,
+        "commits": 1399,
+        "stars": 11,
+        "forks": 2,
+        "openIssues": 15,
+        "latestVersion": "v2026.8.1",
+        "latestReleaseDate": "2026-08-19",
+        "releases": 20,
         "createdAt": "2026-01-17",
-        "updatedAt": "2026-08-05"
+        "updatedAt": "2026-08-22"
       }
     },
     {
@@ -404,15 +404,15 @@
       "liveDemo": "https://pile-plan-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/pile-plan-studio",
       "stats": {
-        "commits": 161,
-        "stars": 2,
-        "forks": 0,
-        "openIssues": 4,
-        "latestVersion": "v0.1.7-alpha",
-        "latestReleaseDate": "2026-08-05",
-        "releases": 5,
+        "commits": 218,
+        "stars": 3,
+        "forks": 1,
+        "openIssues": 13,
+        "latestVersion": "v0.2.0-alpha",
+        "latestReleaseDate": "2026-08-14",
+        "releases": 8,
         "createdAt": "2026-07-07",
-        "updatedAt": "2026-08-05"
+        "updatedAt": "2026-08-22"
       }
     },
     {
@@ -453,14 +453,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio",
       "stats": {
         "commits": 15,
-        "stars": 2,
+        "stars": 3,
         "forks": 0,
         "openIssues": 7,
         "latestVersion": "v0.3.0",
         "latestReleaseDate": "2026-03-03",
         "releases": 2,
         "createdAt": "2026-02-24",
-        "updatedAt": "2026-06-27"
+        "updatedAt": "2026-08-18"
       }
     },
     {
@@ -498,14 +498,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-frame-studio",
       "stats": {
         "commits": 121,
-        "stars": 4,
+        "stars": 5,
         "forks": 1,
         "openIssues": 1,
         "latestVersion": "v0.1.0",
         "latestReleaseDate": null,
         "releases": 9,
         "createdAt": "2026-04-01",
-        "updatedAt": "2026-07-26"
+        "updatedAt": "2026-08-17"
       }
     },
     {
@@ -550,15 +550,15 @@
       "liveDemo": "https://open-field-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Open-Field-Studio",
       "stats": {
-        "commits": 25,
+        "commits": 31,
         "stars": 0,
-        "forks": 0,
+        "forks": 1,
         "openIssues": 0,
-        "latestVersion": "v0.3.0",
-        "latestReleaseDate": "2026-07-31",
-        "releases": 7,
+        "latestVersion": "v0.3.3",
+        "latestReleaseDate": null,
+        "releases": 12,
         "createdAt": "2026-03-26",
-        "updatedAt": "2026-07-31"
+        "updatedAt": "2026-08-24"
       }
     },
     {
@@ -632,15 +632,15 @@
       "languages": 99,
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-speech-studio",
       "stats": {
-        "commits": 86,
+        "commits": 88,
         "stars": 3,
         "forks": 2,
-        "openIssues": 11,
+        "openIssues": 10,
         "latestVersion": "v0.10.2",
         "latestReleaseDate": null,
         "releases": 7,
         "createdAt": "2026-03-09",
-        "updatedAt": "2026-07-31"
+        "updatedAt": "2026-08-13"
       }
     },
     {
@@ -770,14 +770,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator",
       "stats": {
         "commits": 74,
-        "stars": 1,
+        "stars": 2,
         "forks": 0,
         "openIssues": 1,
         "latestVersion": null,
         "latestReleaseDate": null,
         "releases": 0,
         "createdAt": "2026-03-12",
-        "updatedAt": "2026-05-08"
+        "updatedAt": "2026-08-12"
       }
     },
     {
