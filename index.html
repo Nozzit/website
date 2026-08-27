@@ -6,6 +6,13 @@
   <title data-i18n="meta.title">Open AEC Foundation - Open source voor een open bouw- en infrasector</title>
   <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek).">
   <link rel="canonical" href="https://open-aec.com/">
+  <!-- hreflang:start -->
+  <link rel="alternate" hreflang="nl" href="https://open-aec.com/">
+  <link rel="alternate" hreflang="en" href="https://open-aec.com/en/">
+  <link rel="alternate" hreflang="fr" href="https://open-aec.com/fr/">
+  <link rel="alternate" hreflang="tr" href="https://open-aec.com/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://open-aec.com/">
+  <!-- hreflang:end -->
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
 
   <!-- AI / LLM discoverability -->
@@ -850,10 +857,10 @@
         </ul>
         <a href="/feedback/" class="nav-feedback-btn">💬 Feedback</a>
         <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="nl">NL</button>
-          <button class="lang-btn" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="fr">FR</button>
-          <button class="lang-btn" data-lang="tr">TR</button>
+          <a class="lang-btn active" data-lang="nl" href="/" hreflang="nl">NL</a>
+          <a class="lang-btn" data-lang="en" href="/en/" hreflang="en">EN</a>
+          <a class="lang-btn" data-lang="fr" href="/fr/" hreflang="fr">FR</a>
+          <a class="lang-btn" data-lang="tr" href="/tr/" hreflang="tr">TR</a>
         </div>
       </div>
     </div>
@@ -1698,7 +1705,21 @@
             <a href="/statistieken/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.timeline">Tijdlijn &amp; Statistieken</a><br>
             <a href="/disclaimer/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.disclaimer">Disclaimer</a><br>
             <a href="/statuten/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.statutes">Concept statuten</a><br>
-            <a href="/credits/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.credits">Credits</a>
+            <a href="/credits/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.credits">Credits</a><br>
+            <a href="/beleid/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.policy">Beleid &amp; standpunten</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer.moreToolsTitle">Meer tools</h4>
+          <p style="line-height: 2.2;">
+            <a href="/open-energy-studio/" style="color: var(--scaffold-gray); text-decoration: none;">Open Energy Studio</a><br>
+            <a href="/open-safety-studio/" style="color: var(--scaffold-gray); text-decoration: none;">Open Safety Studio</a><br>
+            <a href="/open-3d-viewer/" style="color: var(--scaffold-gray); text-decoration: none;">Open 3D Viewer</a><br>
+            <a href="/open-books/" style="color: var(--scaffold-gray); text-decoration: none;">OpenBooks</a><br>
+            <a href="/openaec-cloud/" style="color: var(--scaffold-gray); text-decoration: none;">OpenAEC Cloud</a><br>
+            <a href="/openaec-docs/" style="color: var(--scaffold-gray); text-decoration: none;">OpenAEC Docs</a><br>
+            <a href="/ext-drawing-statistics/" style="color: var(--scaffold-gray); text-decoration: none;">Drawing Statistics</a><br>
+            <a href="/y-app/" style="color: var(--scaffold-gray); text-decoration: none;">Y-app</a>
           </p>
         </div>
         <div class="footer-section">
@@ -1931,7 +1952,7 @@
         },
         footer: {
           description: "Open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) \u2014 van ontwerp tot oplevering en beheer.",
-          pagesTitle: "Pagina's",
+          pagesTitle: "Pagina's", moreToolsTitle: "Meer tools",
           pages: {
             about: "Over ons",
             roadmap: "Roadmap 2026",
@@ -1943,7 +1964,7 @@
             timeline: "Tijdlijn &amp; Statistieken",
             disclaimer: "Disclaimer",
             statutes: "Concept statuten",
-            credits: "Credits"
+            credits: "Credits", policy: "Beleid & standpunten"
           },
           foundation: "Stichting i.o.",
           country: "Nederland",
@@ -2151,7 +2172,7 @@
         },
         footer: {
           description: "Open source software for the entire AEC chain (buildings, infrastructure, civil engineering) \u2014 from design to delivery and management.",
-          pagesTitle: "Pages",
+          pagesTitle: "Pages", moreToolsTitle: "More tools",
           pages: {
             about: "About us",
             roadmap: "Roadmap 2026",
@@ -2163,7 +2184,7 @@
             timeline: "Timeline &amp; Statistics",
             disclaimer: "Disclaimer",
             statutes: "Draft statutes",
-            credits: "Credits"
+            credits: "Credits", policy: "Policy & positions"
           },
           foundation: "Foundation i.f.",
           country: "The Netherlands",
@@ -2478,8 +2499,14 @@
       }
     };
 
+    // Op /en/, /fr/ en /tr/ staat de vertaalde homepage al klaar in de HTML
+    // (scripts/build-i18n-pages.js). De taal hoort daar bij het adres, dus een
+    // voorkeur in localStorage mag hem niet terugdraaien.
+    const STATIC_LANG = (document.querySelector('meta[name="i18n-static"]') || {}).content || null;
+
     // Detect the best language: stored preference > browser language > English.
     function detectLang() {
+      if (STATIC_LANG) return STATIC_LANG;
       const stored = localStorage.getItem('openaec-lang');
       if (stored) return stored;
       const supported = ['nl', 'en', 'fr', 'tr'];
@@ -2497,6 +2524,15 @@
     const i18n = {
       currentLang: detectLang(),
       init() {
+        // Een statisch vertaalde pagina alleen de juiste taalknop laten
+        // aanzetten; de tekst staat er al in.
+        if (STATIC_LANG) {
+          document.documentElement.lang = STATIC_LANG;
+          document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === STATIC_LANG);
+          });
+          return;
+        }
         // Apply detected language WITHOUT persisting, so auto-detection keeps
         // working until the visitor explicitly picks a language.
         this.setLanguage(this.currentLang, false);
