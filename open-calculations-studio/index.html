@@ -172,6 +172,66 @@
       .features-grid { grid-template-columns: 1fr; }
     }
   </style>
+  <!-- schema:start -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://open-aec.com/#website",
+        "url": "https://open-aec.com/",
+        "name": "OpenAEC Foundation",
+        "inLanguage": "nl",
+        "publisher": {
+          "@id": "https://open-aec.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://open-aec.com/#organization",
+        "name": "OpenAEC Foundation",
+        "url": "https://open-aec.com/",
+        "sameAs": [
+          "https://github.com/OpenAEC-Foundation",
+          "https://www.linkedin.com/company/23749451"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://open-aec.com/open-calculations-studio/#webpage",
+        "url": "https://open-aec.com/open-calculations-studio/",
+        "isPartOf": {
+          "@id": "https://open-aec.com/#website"
+        },
+        "inLanguage": "nl",
+        "dateModified": "2026-08-27",
+        "breadcrumb": {
+          "@id": "https://open-aec.com/open-calculations-studio/#breadcrumb"
+        }
+      },
+      {
+        "@id": "https://open-aec.com/open-calculations-studio/#breadcrumb",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://open-aec.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Open Calculations Studio",
+            "item": "https://open-aec.com/open-calculations-studio/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- schema:end -->
 </head>
 <body>
   <div id="shared-nav"><!-- nav:start -->
@@ -193,7 +253,7 @@
         <li><a href="/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı">Structuur</a></li>
         <li><a href="/#contact" class="nav-link" data-i18n-en="Contact" data-i18n-fr="Contact" data-i18n-tr="İletişim">Contact</a></li>
       </ul>
-      <a href="/feedback/" class="nav-feedback-btn" data-i18n-en="Feedback" data-i18n-fr="Retour" data-i18n-tr="Geri bildirim">Feedback</a>
+      <a href="/feedback/" class="nav-feedback-btn" data-i18n-en="Feedback" data-i18n-fr="Commentaires" data-i18n-tr="Geri bildirim">Feedback</a>
       <div class="lang-switcher">
         <a class="lang-btn active" data-lang="nl" href="/open-calculations-studio/" hreflang="nl">NL</a>
         <a class="lang-btn" data-lang="en" href="/en/open-calculations-studio/" hreflang="en">EN</a>
@@ -212,7 +272,7 @@
     <p data-i18n="header.desc">Open-source desktop-app voor constructieve berekeningen — <strong style="color: white;">geïnspireerd door CalcPAD</strong>, met directe export naar <strong style="color: white;">IFC4x3 STEP</strong> en <strong style="color: white;">IFCX JSON-LD</strong>. Voorheen Ifc-Calc, herbouwd onder de OpenAEC Foundation.</p>
     <div>
       <span class="status-badge" data-i18n="header.badge">In ontwikkeling</span>
-      <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="status-badge" style="background:#16A34A;color:white;text-decoration:none;display:inline-flex;align-items:center;gap:6px;">🚀 open-calculations-studio.open-aec.com &rarr;</a>
+      <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="status-badge" style="background:#16A34A;color:white;text-decoration:none;display:inline-flex;align-items:center;gap:6px;">🚀 <span lang="en">open-calculations-studio.open-aec.com</span> &rarr;</a>
     </div>
     <div class="version-info">v0.1.4 &middot; TypeScript + Rust + Tauri 2 &middot; mathjs + KaTeX &middot; CalcPAD-compatible &middot; 67 commits &middot; 11 releases &middot; 8 stars</div>
   </header>

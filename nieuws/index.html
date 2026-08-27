@@ -343,6 +343,66 @@
     .featured-articles a { color: var(--amber); text-decoration: none; font-size: 0.9rem; }
     .featured-articles a:hover { text-decoration: underline; }
   </style>
+  <!-- schema:start -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://open-aec.com/#website",
+        "url": "https://open-aec.com/",
+        "name": "OpenAEC Foundation",
+        "inLanguage": "nl",
+        "publisher": {
+          "@id": "https://open-aec.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://open-aec.com/#organization",
+        "name": "OpenAEC Foundation",
+        "url": "https://open-aec.com/",
+        "sameAs": [
+          "https://github.com/OpenAEC-Foundation",
+          "https://www.linkedin.com/company/23749451"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://open-aec.com/nieuws/#webpage",
+        "url": "https://open-aec.com/nieuws/",
+        "isPartOf": {
+          "@id": "https://open-aec.com/#website"
+        },
+        "inLanguage": "nl",
+        "dateModified": "2026-08-27",
+        "breadcrumb": {
+          "@id": "https://open-aec.com/nieuws/#breadcrumb"
+        }
+      },
+      {
+        "@id": "https://open-aec.com/nieuws/#breadcrumb",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://open-aec.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Nieuws",
+            "item": "https://open-aec.com/nieuws/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- schema:end -->
 </head>
 <body>
 
@@ -365,7 +425,7 @@
         <li><a href="/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı">Structuur</a></li>
         <li><a href="/#contact" class="nav-link" data-i18n-en="Contact" data-i18n-fr="Contact" data-i18n-tr="İletişim">Contact</a></li>
       </ul>
-      <a href="/feedback/" class="nav-feedback-btn" data-i18n-en="Feedback" data-i18n-fr="Retour" data-i18n-tr="Geri bildirim">Feedback</a>
+      <a href="/feedback/" class="nav-feedback-btn" data-i18n-en="Feedback" data-i18n-fr="Commentaires" data-i18n-tr="Geri bildirim">Feedback</a>
       <div class="lang-switcher">
         <a class="lang-btn active" data-lang="nl" href="/nieuws/" hreflang="nl">NL</a>
         <a class="lang-btn" data-lang="en" href="/en/nieuws/" hreflang="en">EN</a>

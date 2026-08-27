@@ -281,6 +281,66 @@
     }
   </style>
   <meta name="i18n-static" content="en">
+  <!-- schema:start -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://open-aec.com/#website",
+        "url": "https://open-aec.com/",
+        "name": "OpenAEC Foundation",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://open-aec.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://open-aec.com/#organization",
+        "name": "OpenAEC Foundation",
+        "url": "https://open-aec.com/",
+        "sameAs": [
+          "https://github.com/OpenAEC-Foundation",
+          "https://www.linkedin.com/company/23749451"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://open-aec.com/en/credits/#webpage",
+        "url": "https://open-aec.com/en/credits/",
+        "isPartOf": {
+          "@id": "https://open-aec.com/#website"
+        },
+        "inLanguage": "en",
+        "dateModified": "2026-08-27",
+        "breadcrumb": {
+          "@id": "https://open-aec.com/en/credits/#breadcrumb"
+        }
+      },
+      {
+        "@id": "https://open-aec.com/en/credits/#breadcrumb",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://open-aec.com/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Credits",
+            "item": "https://open-aec.com/en/credits/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- schema:end -->
 </head>
 <body>
   <div id="shared-nav"><!-- nav:start -->
@@ -302,10 +362,10 @@
         <li><a href="/en/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı">Structure</a></li>
         <li><a href="/en/#contact" class="nav-link" data-i18n-en="Contact" data-i18n-fr="Contact" data-i18n-tr="İletişim">Contact</a></li>
       </ul>
-      <a href="/feedback/" class="nav-feedback-btn" data-i18n-en="Feedback" data-i18n-fr="Retour" data-i18n-tr="Geri bildirim">Feedback</a>
+      <a href="/feedback/" class="nav-feedback-btn" data-i18n-en="Feedback" data-i18n-fr="Commentaires" data-i18n-tr="Geri bildirim">Feedback</a>
       <div class="lang-switcher">
-        <a class="lang-btn active" data-lang="nl" href="/en/credits/" hreflang="nl">NL</a>
-        <a class="lang-btn" data-lang="en" href="/en/credits/" hreflang="en">EN</a>
+        <a class="lang-btn" data-lang="nl" href="/credits/" hreflang="nl">NL</a>
+        <a class="lang-btn active" data-lang="en" href="/en/credits/" hreflang="en">EN</a>
         <a class="lang-btn" data-lang="fr" href="/fr/credits/" hreflang="fr">FR</a>
         <a class="lang-btn" data-lang="tr" href="/tr/credits/" hreflang="tr">TR</a>
       </div>
@@ -592,7 +652,7 @@
           <p data-i18n="projects.ifcopenshell.desc">The backbone of open BIM. Reading, writing and manipulating IFC files.</p>
         </div>
         <div class="project-card" style="text-align:center;">
-          <img src="https://community.osarch.org/uploads/editor/3o/o20fqfl7wdkp.png" alt="Bonsai" style="height: 80px; width: auto; margin-bottom: 12px;">
+          <img src="https://avatars.githubusercontent.com/u/13692563?v=4" alt="Bonsai" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Bonsai (BlenderBIM)</h4>
           <p data-i18n="projects.bonsai.desc">BIM modeling in Blender. Full-fledged BIM authoring, entirely open source.</p>
         </div>
@@ -647,7 +707,7 @@
           <p data-i18n="projects.pdfjs.desc">PDF rendering in the browser. Open source alternative to proprietary PDF viewers.</p>
         </div>
         <div class="project-card" style="text-align:center;">
-          <img src="https://tauri.app/img/Tauri.svg" alt="Tauri" style="height: 80px; width: auto; margin-bottom: 12px;">
+          <img src="https://avatars.githubusercontent.com/u/54536011?v=4" alt="Tauri" style="height: 80px; width: auto; margin-bottom: 12px;">
           <h4>Tauri</h4>
           <p data-i18n="projects.tauri.desc">Lightweight desktop apps. Web tech with native performance and small bundles.</p>
         </div>

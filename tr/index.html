@@ -836,6 +836,60 @@
     }
   </style>
   <meta name="i18n-static" content="tr">
+  <!-- schema:start -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://open-aec.com/#website",
+        "url": "https://open-aec.com/",
+        "name": "OpenAEC Foundation",
+        "inLanguage": "tr",
+        "publisher": {
+          "@id": "https://open-aec.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://open-aec.com/#organization",
+        "name": "OpenAEC Foundation",
+        "url": "https://open-aec.com/",
+        "sameAs": [
+          "https://github.com/OpenAEC-Foundation",
+          "https://www.linkedin.com/company/23749451"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://open-aec.com/tr/#webpage",
+        "url": "https://open-aec.com/tr/",
+        "isPartOf": {
+          "@id": "https://open-aec.com/#website"
+        },
+        "inLanguage": "tr",
+        "dateModified": "2026-08-27",
+        "breadcrumb": {
+          "@id": "https://open-aec.com/tr/#breadcrumb"
+        }
+      },
+      {
+        "@id": "https://open-aec.com/tr/#breadcrumb",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://open-aec.com/tr/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- schema:end -->
 </head>
 <body>
   <!-- Navigation -->
@@ -872,7 +926,7 @@
     <div class="hero-content">
       <div class="badge">
         <span class="badge-dot"></span>
-        <span data-i18n="hero.badge">Goal: all construction software open source by end of 2026</span>
+        <span data-i18n="hero.badge">Hedef: 2026 sonuna kadar tüm inşaat yazılımlarının açık kaynak olması</span>
       </div>
 
       <!-- OpenAEC Logo v2 — isometric open cube + wordmark -->
@@ -905,12 +959,12 @@
 
       <h1 data-i18n="hero.title">Açık <span class="accent">inşaat ve altyapı sektörü</span> için <br><span class="accent">açık kaynak</span></h1>
 
-      <p class="tagline" data-i18n="hero.description">We develop, support and promote open source software for the entire AEC chain (buildings, infrastructure, civil engineering) — from design to delivery and management.</p>
+      <p class="tagline" data-i18n="hero.description">Tüm AEC zinciri (bina, altyapı, inşaat mühendisliği) için açık kaynak yazılımlar geliştiriyor, destekliyor ve tanıtıyoruz — tasarımdan teslime ve yönetime kadar.</p>
 
       <div class="hero-buttons">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-installer/releases/latest" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="hero.downloadBtn">↓ Download OpenAEC Installer</a>
-        <a href="#contact" class="btn btn-ghost btn-lg" data-i18n="hero.contactBtn">Get in touch →</a>
-        <a href="#over-ons" class="btn btn-ghost btn-lg" data-i18n="hero.readMore">Read more</a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-installer/releases/latest" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="hero.downloadBtn">↓ OpenAEC Installer'ı indir</a>
+        <a href="#contact" class="btn btn-ghost btn-lg" data-i18n="hero.contactBtn">İletişime geçin →</a>
+        <a href="#over-ons" class="btn btn-ghost btn-lg" data-i18n="hero.readMore">Devamını oku</a>
       </div>
 
     </div>
@@ -1456,33 +1510,33 @@
       <div class="features-grid">
         <div class="feature-card">
           <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4v4M24 40v4M4 24h4M40 24h4"/><circle cx="24" cy="24" r="12"/><path d="M18 24l3 3 6-6"/></svg>
-          <h3 data-i18n="about.features.cost.title">Cost reduction</h3>
-          <p data-i18n="about.features.cost.desc">No license costs, lower consulting fees. Building becomes more affordable for everyone.</p>
+          <h3 data-i18n="about.features.cost.title">Maliyet düşüşü</h3>
+          <p data-i18n="about.features.cost.desc">Lisans ücreti yok, danışmanlık maliyetleri daha düşük. İnşaat herkes için daha uygun fiyatlı hale gelir.</p>
         </div>
         <div class="feature-card">
           <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="14" r="4"/><circle cx="34" cy="14" r="4"/><circle cx="14" cy="34" r="4"/><circle cx="34" cy="34" r="4"/><path d="M18 14h12M14 18v12M34 18v12M18 34h12"/></svg>
-          <h3 data-i18n="about.features.ai.title">AI-ready</h3>
-          <p data-i18n="about.features.ai.desc">Open source code integrates better with AI and automation.</p>
+          <h3 data-i18n="about.features.ai.title">Yapay zekaya hazır</h3>
+          <p data-i18n="about.features.ai.desc">Açık kaynak kod, yapay zeka ve otomasyonla daha iyi entegre olur.</p>
         </div>
         <div class="feature-card">
           <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40V20l16-12 16 12v20"/><path d="M18 40V28h12v12"/><path d="M2 44h44"/></svg>
-          <h3 data-i18n="about.features.future.title">Future-proof</h3>
-          <p data-i18n="about.features.future.desc">Community can continue maintaining software, independent of vendors.</p>
+          <h3 data-i18n="about.features.future.title">Geleceğe hazır</h3>
+          <p data-i18n="about.features.future.desc">Topluluk, tedarikçilerden bağımsız olarak yazılımı bakımını sürdürebilir.</p>
         </div>
         <div class="feature-card">
           <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 44V12l8-8h16l8 8v32"/><path d="M16 4v8H8"/><path d="M16 24h16M16 32h10"/><path d="M32 4v8h8"/></svg>
-          <h3 data-i18n="about.features.edu.title">Education</h3>
-          <p data-i18n="about.features.edu.desc">Internship and training opportunities for students worldwide.</p>
+          <h3 data-i18n="about.features.edu.title">Eğitim</h3>
+          <p data-i18n="about.features.edu.desc">Dünyanın her yerinden öğrenciler için staj ve eğitim fırsatları.</p>
         </div>
         <div class="feature-card">
           <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="36" height="36" rx="4"/><path d="M6 18h36M18 6v36"/><circle cx="32" cy="32" r="4"/></svg>
-          <h3 data-i18n="about.features.formats.title">Open formats</h3>
-          <p data-i18n="about.features.formats.desc">All data in open standards like IFC, PDF, DXF. No vendor lock-in.</p>
+          <h3 data-i18n="about.features.formats.title">Açık formatlar</h3>
+          <p data-i18n="about.features.formats.desc">Tüm veriler IFC, PDF, DXF gibi açık standartlarda. Tedarikçiye bağımlılık yok.</p>
         </div>
         <div class="feature-card">
           <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 7"/><path d="M16 8l-2-4M32 8l2-4"/></svg>
-          <h3 data-i18n="about.features.ux.title">User-friendly</h3>
-          <p data-i18n="about.features.ux.desc">100% focus on user-friendliness. Modern interfaces inspired by the best commercial software.</p>
+          <h3 data-i18n="about.features.ux.title">Kullanıcı dostu</h3>
+          <p data-i18n="about.features.ux.desc">%100 kullanım kolaylığına odaklanma. En iyi ticari yazılımlardan ilham alan modern arayüzler.</p>
         </div>
       </div>
     </div>
@@ -1491,24 +1545,24 @@
   <!-- Missie Section -->
   <section class="section missie" id="missie">
     <div class="container text-center">
-      <p class="section-label" data-i18n="mission.label">Our mission</p>
-      <h2 class="section-title" data-i18n="mission.title">"Developing, supporting and promoting <span class="accent">open source software</span> for the entire AEC chain (buildings, infrastructure, civil engineering)."</h2>
+      <p class="section-label" data-i18n="mission.label">Misyonumuz</p>
+      <h2 class="section-title" data-i18n="mission.title">"Tüm AEC zinciri (bina, altyapı, inşaat mühendisliği) için <span class="accent">açık kaynak yazılımlar</span> geliştirmek, desteklemek ve tanıtmak."</h2>
       <div class="missie-grid">
         <div class="missie-item">
-          <h3 data-i18n="mission.items.dev.title">Development</h3>
-          <p data-i18n="mission.items.dev.desc">Coordinating and funding open source software development</p>
+          <h3 data-i18n="mission.items.dev.title">Geliştirme</h3>
+          <p data-i18n="mission.items.dev.desc">Açık kaynak yazılım geliştirmenin koordinasyonu ve finansmanı</p>
         </div>
         <div class="missie-item">
-          <h3 data-i18n="mission.items.support.title">Support</h3>
-          <p data-i18n="mission.items.support.desc">Managing licenses, API connections and integrations</p>
+          <h3 data-i18n="mission.items.support.title">Destek</h3>
+          <p data-i18n="mission.items.support.desc">Lisansların, API bağlantılarının ve entegrasyonların yönetimi</p>
         </div>
         <div class="missie-item">
-          <h3 data-i18n="mission.items.edu.title">Education</h3>
-          <p data-i18n="mission.items.edu.desc">Internship and training opportunities for students</p>
+          <h3 data-i18n="mission.items.edu.title">Eğitim</h3>
+          <p data-i18n="mission.items.edu.desc">Öğrenciler için staj ve eğitim fırsatları</p>
         </div>
         <div class="missie-item">
-          <h3 data-i18n="mission.items.advocacy.title">Advocacy</h3>
-          <p data-i18n="mission.items.advocacy.desc">Promoting open source and open standards</p>
+          <h3 data-i18n="mission.items.advocacy.title">Savunuculuk</h3>
+          <p data-i18n="mission.items.advocacy.desc">Açık kaynak ve açık standartların tanıtımı</p>
         </div>
       </div>
     </div>
@@ -1518,35 +1572,35 @@
   <section class="section section-alt" id="bestuur" style="display: none;">
     <div class="container">
       <div class="text-center">
-        <p class="section-label" data-i18n="board.label">Board</p>
-        <h2 class="section-title" data-i18n="board.title">The board</h2>
+        <p class="section-label" data-i18n="board.label">Yönetim kurulu</p>
+        <h2 class="section-title" data-i18n="board.title">Yönetim kurulu</h2>
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--sp-6); margin-top: var(--sp-10); max-width: 800px; margin-left: auto; margin-right: auto;">
         <div style="text-align: center;">
           <img src="/personen/Maarten.jpeg" alt="Maarten Vroegindeweij" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
           <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.maarten.name">Maarten Vroegindeweij</p>
-          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.maarten.role">Chairman</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.maarten.role">Başkan</p>
         </div>
         <div style="text-align: center;">
           <img src="/personen/Jochem.jpeg" alt="Jochem Kolthof" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
           <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.jochem.name">Jochem Kolthof</p>
-          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.jochem.role">Treasurer</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.jochem.role">Sayman</p>
         </div>
         <div style="text-align: center;">
           <img src="/personen/Martjan%20den%20Hoed.jpeg" alt="Martjan den Hoed" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
           <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.martjan.name">Martjan den Hoed</p>
-          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.martjan.role">Secretary</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.martjan.role">Sekreter</p>
         </div>
         <div style="text-align: center;">
           <img src="/personen/Silvia%20Taurer.jpeg" alt="Silvia Taurer" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #E7E5E4; margin: 0 auto var(--sp-3); display: block;">
           <p style="font-family: var(--font-heading); font-weight: 700; font-size: 1rem;" data-i18n="board.members.silvia.name">Silvia Taurer</p>
-          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.silvia.role">Board member</p>
+          <p style="font-family: var(--font-code); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--amber); margin-top: 2px;" data-i18n="board.members.silvia.role">Yönetim kurulu üyesi</p>
         </div>
       </div>
 
       <div style="text-align: center; margin-top: var(--sp-8);">
-        <a href="/tr/over-ons.html" class="btn btn-secondary" data-i18n="board.moreLink">More about the board</a>
+        <a href="/tr/over-ons.html" class="btn btn-secondary" data-i18n="board.moreLink">Yönetim kurulu hakkında daha fazla bilgi</a>
       </div>
     </div>
   </section>
@@ -1554,9 +1608,9 @@
   <!-- Nieuws Section -->
   <section class="section" style="background: var(--night-build); text-align: center; padding: var(--sp-12) var(--sp-6);">
     <div class="container">
-      <p style="font-family: var(--font-code); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--warm-gold); margin-bottom: var(--sp-4);" data-i18n="news.label">News</p>
-      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem; color: white; margin-bottom: var(--sp-3);" data-i18n="news.title">Stay updated</h2>
-      <p style="color: var(--scaffold-gray); font-size: 1rem; max-width: 500px; margin: 0 auto var(--sp-6); line-height: 1.6;" data-i18n="news.desc">Follow our WhatsApp group for the latest news about the ecosystem, new releases and updates.</p>
+      <p style="font-family: var(--font-code); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--warm-gold); margin-bottom: var(--sp-4);" data-i18n="news.label">Haberler</p>
+      <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem; color: white; margin-bottom: var(--sp-3);" data-i18n="news.title">Güncel kalın</h2>
+      <p style="color: var(--scaffold-gray); font-size: 1rem; max-width: 500px; margin: 0 auto var(--sp-6); line-height: 1.6;" data-i18n="news.desc">Ekosistem hakkındaki son haberler, yeni sürümler ve güncellemeler için WhatsApp grubumuzu takip edin.</p>
       <div id="news-feed" style="max-width:700px;margin:0 auto;text-align:left;"></div>
     </div>
   </section>
@@ -1565,19 +1619,19 @@
   <section class="section" style="background: linear-gradient(135deg, #1a1206 0%, #0a0a0a 50%, #0d1117 100%); padding: var(--sp-12) var(--sp-6); text-align: center;">
     <div class="container" style="max-width: 720px;">
       <div style="display: inline-block; background: rgba(230, 126, 34, 0.15); border: 1px solid rgba(230, 126, 34, 0.3); border-radius: var(--radius-full); padding: 6px 16px; margin-bottom: var(--sp-4);">
-        <span style="font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber);" data-i18n="cta.badge">🚀 Early Adopter Program</span>
+        <span style="font-family: var(--font-code); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--amber);" data-i18n="cta.badge">🚀 Erken Kullanıcı Programı</span>
       </div>
       <h2 style="font-family: var(--font-heading); font-weight: 700; font-size: 2rem; color: white; margin-bottom: var(--sp-4); line-height: 1.3;" data-i18n="cta.title">Destekçi olmak ister misiniz?</h2>
       <p style="color: var(--scaffold-gray); font-size: 1.1rem; line-height: 1.7; margin-bottom: var(--sp-6);" data-i18n="cta.desc">OpenAEC Foundation'ı destekleyin ve inşaat sektörünün açık kaynak olmasına yardımcı olun.</p>
       <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
-        <a href="/feedback/" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 8px;" data-i18n="cta.feedback">💬 Give feedback</a>
-        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" style="display: inline-flex; align-items: center; gap: 8px; border-color: rgba(255,255,255,0.3); color: white;" data-i18n="cta.github">⭐ Contribute on GitHub</a>
-        <a href="https://chat.whatsapp.com/J4PhnwwXGYP1WT6VQfoJVk" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" style="display: inline-flex; align-items: center; gap: 8px; border-color: rgba(230, 126, 34, 0.4); color: var(--amber);" data-i18n="cta.whatsapp">📱 Join the community</a>
+        <a href="/feedback/" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 8px;" data-i18n="cta.feedback">💬 Geri bildirim ver</a>
+        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" style="display: inline-flex; align-items: center; gap: 8px; border-color: rgba(255,255,255,0.3); color: white;" data-i18n="cta.github">⭐ GitHub'da katkıda bulun</a>
+        <a href="https://chat.whatsapp.com/J4PhnwwXGYP1WT6VQfoJVk" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" style="display: inline-flex; align-items: center; gap: 8px; border-color: rgba(230, 126, 34, 0.4); color: var(--amber);" data-i18n="cta.whatsapp">📱 Topluluğa katıl</a>
       </div>
       <p style="color: var(--scaffold-gray); font-size: 0.9rem; margin-top: var(--sp-6); margin-bottom: 0;">
         <span style="color: var(--warm-gold);">⭐</span>
         <strong style="color: white;" data-gh-stars>1787</strong>
-        <span data-i18n="cta.starsLine">GitHub stars across <strong style="color: white;" data-gh-repos>69</strong> public repositories</span>
+        <span data-i18n="cta.starsLine"><strong style="color: white;" data-gh-repos>69</strong> genel depoda GitHub yıldızları</span>
       </p>
     </div>
   </section>
@@ -1586,15 +1640,15 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="text-center">
-        <p class="section-label" data-i18n="contact.label">Contact</p>
-        <h2 class="section-title" data-i18n="contact.title">Get in touch</h2>
+        <p class="section-label" data-i18n="contact.label">İletişim</p>
+        <h2 class="section-title" data-i18n="contact.title">Bize ulaşın</h2>
       </div>
 
       <div class="contact-grid">
         <div class="contact-card">
-          <h3 data-i18n="contact.person.title">Contact person</h3>
+          <h3 data-i18n="contact.person.title">İletişim kişisi</h3>
           <p class="contact-name">Maarten Vroegindeweij</p>
-          <p class="contact-role" data-i18n="contact.person.role">Founder Open AEC Foundation</p>
+          <p class="contact-role" data-i18n="contact.person.role">Open AEC Foundation Kurucusu</p>
 
           <div class="contact-info">
             <div class="contact-item">
@@ -1602,7 +1656,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
               </span>
               <div>
-                <p class="contact-item-label" data-i18n="contact.person.emailLabel">Email</p>
+                <p class="contact-item-label" data-i18n="contact.person.emailLabel">E-posta</p>
                 <p class="contact-item-value"><a id="email-link" href="#" style="color: var(--amber); text-decoration: none; font-weight: 600;"></a></p>
               </div>
             </div>
@@ -1611,7 +1665,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </span>
               <div>
-                <p class="contact-item-label" data-i18n="contact.person.addressLabel">Address</p>
+                <p class="contact-item-label" data-i18n="contact.person.addressLabel">Adres</p>
                 <p class="contact-item-value">Burgemeester de Raadtsingel 31<br>Dordrecht</p>
               </div>
             </div>
@@ -1619,22 +1673,22 @@
         </div>
 
         <div class="contact-card">
-          <h3 data-i18n="contact.form.title">Send a message</h3>
+          <h3 data-i18n="contact.form.title">Mesaj gönder</h3>
           <form id="contactForm">
             <div class="form-group">
-              <label for="name" data-i18n="contact.form.name">Name</label>
-              <input type="text" id="name" name="name" required data-i18n-attr="placeholder" data-i18n="contact.form.namePlaceholder" placeholder="Your name">
+              <label for="name" data-i18n="contact.form.name">Ad</label>
+              <input type="text" id="name" name="name" required data-i18n-attr="placeholder" data-i18n="contact.form.namePlaceholder" placeholder="Adınız">
             </div>
             <div class="form-group">
-              <label for="email" data-i18n="contact.form.email">Email</label>
-              <input type="email" id="email" name="email" required data-i18n-attr="placeholder" data-i18n="contact.form.emailPlaceholder" placeholder="your@email.com">
+              <label for="email" data-i18n="contact.form.email">E-posta</label>
+              <input type="email" id="email" name="email" required data-i18n-attr="placeholder" data-i18n="contact.form.emailPlaceholder" placeholder="siz@email.com">
             </div>
             <div class="form-group">
-              <label for="message" data-i18n="contact.form.message">Message</label>
-              <textarea id="message" name="message" required data-i18n-attr="placeholder" data-i18n="contact.form.messagePlaceholder" placeholder="I am interested in..."></textarea>
+              <label for="message" data-i18n="contact.form.message">Mesaj</label>
+              <textarea id="message" name="message" required data-i18n-attr="placeholder" data-i18n="contact.form.messagePlaceholder" placeholder="Şununla ilgileniyorum..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="contact.form.submit">Send message</button>
-            <p id="contactFormNote" style="display:none; margin-top: var(--sp-3); font-size: 0.875rem; color: #57534E;" data-i18n="contact.form.sent">Uw e-mailprogramma opent met het bericht er al in. Verstuur die mail om het af te ronden — dan komt het binnen op <a href="mailto:info@open-aec.com">info@open-aec.com</a>.</p>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="contact.form.submit">Mesajı gönder</button>
+            <p id="contactFormNote" style="display:none; margin-top: var(--sp-3); font-size: 0.875rem; color: #57534E;" data-i18n="contact.form.sent">E-posta programınız mesajla birlikte açılır. Göndermeyi tamamlamak için bu e-postayı yollayın — böylece <a href="mailto:info@open-aec.com">info@open-aec.com</a> adresine ulaşır.</p>
           </form>
         </div>
       </div>
@@ -1652,8 +1706,8 @@
   <section class="section" id="socials" style="background: var(--blueprint-white);">
     <div class="container">
       <div class="text-center">
-        <p class="section-label" data-i18n="socials.label">Socials</p>
-        <h2 class="section-title" data-i18n="socials.title" style="margin-bottom: var(--sp-6);">Follow us</h2>
+        <p class="section-label" data-i18n="socials.label">Sosyal medya</p>
+        <h2 class="section-title" data-i18n="socials.title" style="margin-bottom: var(--sp-6);">Bizi takip edin</h2>
       </div>
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:var(--sp-3);">
         <a class="social-card" href="https://chat.whatsapp.com/J4PhnwwXGYP1WT6VQfoJVk" target="_blank" rel="noopener">
@@ -1690,28 +1744,28 @@
       <div class="footer-grid">
         <div>
           <a href="#hero" class="nav-brand">Open<span class="accent">AEC</span></a>
-          <p class="footer-desc" data-i18n="footer.description">Open source software for the entire AEC chain (buildings, infrastructure, civil engineering) — from design to delivery and management.</p>
+          <p class="footer-desc" data-i18n="footer.description">Tüm AEC zinciri (bina, altyapı, inşaat mühendisliği) için açık kaynak yazılım — tasarımdan teslime ve yönetime kadar.</p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer.pagesTitle">Pages</h4>
+          <h4 data-i18n="footer.pagesTitle">Sayfalar</h4>
           <p style="line-height: 2.2;">
-            <a href="/tr/over-ons.html" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.about">About us</a><br>
+            <a href="/tr/over-ons.html" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.about">Hakkımızda</a><br>
             <a href="/tr/ifcx/" style="color: var(--scaffold-gray); text-decoration: none;">IFCX</a><br>
-            <a href="/tr/roadmap/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.roadmap">Roadmap 2026</a><br>
-            <a href="/tr/architectuur/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.architecture">Architecture</a><br>
-            <a href="/tr/supporters/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.supporters">Supporters</a><br>
-            <a href="/tr/offerte/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.quote">Request quote</a><br>
-            <a href="/tr/structuur/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.structure">Structure</a><br>
-            <a href="/tr/faq/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.faq">FAQ</a><br>
-            <a href="/tr/statistieken/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.timeline">Timeline &amp; Statistics</a><br>
-            <a href="/tr/disclaimer/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.disclaimer">Disclaimer</a><br>
-            <a href="/tr/statuten/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.statutes">Draft statutes</a><br>
-            <a href="/tr/credits/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.credits">Credits</a><br>
-            <a href="/tr/beleid/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.policy">Policy & positions</a>
+            <a href="/tr/roadmap/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.roadmap">2026 yol haritası</a><br>
+            <a href="/tr/architectuur/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.architecture">Mimari</a><br>
+            <a href="/tr/supporters/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.supporters">Destekçiler</a><br>
+            <a href="/tr/offerte/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.quote">Teklif iste</a><br>
+            <a href="/tr/structuur/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.structure">Yapı</a><br>
+            <a href="/tr/faq/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.faq">SSS</a><br>
+            <a href="/tr/statistieken/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.timeline">Zaman çizelgesi &amp; istatistikler</a><br>
+            <a href="/tr/disclaimer/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.disclaimer">Sorumluluk reddi</a><br>
+            <a href="/tr/statuten/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.statutes">Taslak tüzük</a><br>
+            <a href="/tr/credits/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.credits">Teşekkürler</a><br>
+            <a href="/tr/beleid/" style="color: var(--scaffold-gray); text-decoration: none;" data-i18n="footer.pages.policy">Politika & duruşlar</a>
           </p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer.moreToolsTitle">More tools</h4>
+          <h4 data-i18n="footer.moreToolsTitle">Daha fazla araç</h4>
           <p style="line-height: 2.2;">
             <a href="/tr/open-energy-studio/" style="color: var(--scaffold-gray); text-decoration: none;">Open Energy Studio</a><br>
             <a href="/tr/open-safety-studio/" style="color: var(--scaffold-gray); text-decoration: none;">Open Safety Studio</a><br>
@@ -1724,13 +1778,13 @@
           </p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer.foundation">Foundation i.f.</h4>
-          <p>Burgemeester de Raadtsingel 31<br>Dordrecht<br><span data-i18n="footer.country">The Netherlands</span></p>
+          <h4 data-i18n="footer.foundation">Kuruluş aşamasında vakıf</h4>
+          <p>Burgemeester de Raadtsingel 31<br>Dordrecht<br><span data-i18n="footer.country">Hollanda</span></p>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p data-i18n="footer.copyright">© 2026 Open AEC Foundation i.f. — Open source for an open construction & infrastructure industry</p>
+        <p data-i18n="footer.copyright">© 2026 Open AEC Foundation (kuruluş aşamasında) — Açık inşaat ve altyapı sektörü için açık kaynak</p>
         <div style="display: flex; gap: var(--sp-4); align-items: center;">
           <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" style="color: var(--scaffold-gray); display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; text-decoration: none;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
@@ -1949,7 +2003,7 @@
           label: "Contact",
           title: "Neem contact op",
           person: { title: "Contactpersoon", role: "Initiatiefnemer Open AEC Foundation", emailLabel: "E-mail", addressLabel: "Adres", foundingLabel: "Status", foundingDate: "In oprichting (i.o.)" },
-          form: { title: "Stuur een bericht", name: "Naam", namePlaceholder: "Uw naam", email: "E-mail", emailPlaceholder: "uw@email.nl", message: "Bericht", messagePlaceholder: "Ik ben ge\u00efnteresseerd in...", submit: "Verstuur bericht" }
+          form: { title: "Stuur een bericht", name: "Naam", namePlaceholder: "Uw naam", email: "E-mail", emailPlaceholder: "uw@email.nl", message: "Bericht", messagePlaceholder: "Ik ben ge\u00efnteresseerd in...", submit: "Verstuur bericht", sent: "Uw e-mailprogramma opent met het bericht er al in. Verstuur die mail om het af te ronden — dan komt het binnen op <a href=\"mailto:info@open-aec.com\">info@open-aec.com</a>." }
         },
         footer: {
           description: "Open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) \u2014 van ontwerp tot oplevering en beheer.",
@@ -2169,7 +2223,7 @@
           label: "Contact",
           title: "Get in touch",
           person: { title: "Contact person", role: "Founder Open AEC Foundation", emailLabel: "Email", addressLabel: "Address", foundingLabel: "Status", foundingDate: "In formation (i.o.)" },
-          form: { title: "Send a message", name: "Name", namePlaceholder: "Your name", email: "Email", emailPlaceholder: "your@email.com", message: "Message", messagePlaceholder: "I am interested in...", submit: "Send message" }
+          form: { title: "Send a message", name: "Name", namePlaceholder: "Your name", email: "Email", emailPlaceholder: "your@email.com", message: "Message", messagePlaceholder: "I am interested in...", submit: "Send message", sent: "Your email client opens with the message already filled in. Send it to complete your message — then it reaches us at <a href=\"mailto:info@open-aec.com\">info@open-aec.com</a>." }
         },
         footer: {
           description: "Open source software for the entire AEC chain (buildings, infrastructure, civil engineering) \u2014 from design to delivery and management.",
@@ -2226,8 +2280,13 @@
           ai_a: "AI",
           ai_e: "First",
           ai_c: "Foundation",
+          badge: "Objectif : tout le secteur de la construction en open source d'ici fin 2026",
           title: "Open <span class=\"accent\">source</span> pour un secteur ouvert de la <br><span class=\"accent\">construction et de l'infrastructure</span>",
           subtitle: "L'OpenAEC Foundation d\u00e9veloppe, soutient et promeut des logiciels <strong>open source</strong> pour toute la cha\u00eene AEC : b\u00e2timent, infrastructure, g\u00e9nie civil et utilit\u00e9s. Notre premi\u00e8re mission : rendre le secteur enti\u00e8rement open source en 2026.",
+          description: "Nous d\u00e9veloppons, soutenons et promouvons des logiciels open source pour toute la cha\u00eene AEC (b\u00e2timent, infrastructure, g\u00e9nie civil) \u2014 de la conception \u00e0 la livraison et \u00e0 la gestion.",
+          downloadBtn: "\u2193 T\u00e9l\u00e9charger OpenAEC Installer",
+          contactBtn: "Nous contacter \u2192",
+          readMore: "En savoir plus",
           cta: {
             tools: "Voir les outils",
             mission: "Notre mission",
@@ -2249,7 +2308,25 @@
         about: {
           label: "\u00c0 propos d'OpenAEC",
           title: "Pourquoi l'<span class=\"accent\">open source</span> pour le secteur de la construction ?",
-          description: "Le secteur AEC est l'une des derni\u00e8res grandes industries qui fonctionne encore enti\u00e8rement sur des logiciels propri\u00e9taires ferm\u00e9s. Cela engendre des co\u00fbts de licence \u00e9lev\u00e9s, un verrouillage propri\u00e9taire et une d\u00e9pendance envers une poign\u00e9e de fournisseurs. Nous changeons cela."
+          description: "Le secteur AEC est l'une des derni\u00e8res grandes industries qui fonctionne encore enti\u00e8rement sur des logiciels propri\u00e9taires ferm\u00e9s. Cela engendre des co\u00fbts de licence \u00e9lev\u00e9s, un verrouillage propri\u00e9taire et une d\u00e9pendance envers une poign\u00e9e de fournisseurs. Nous changeons cela.",
+          features: {
+            cost: { title: "R\u00e9duction des co\u00fbts", desc: "Pas de frais de licence, honoraires de conseil r\u00e9duits. Construire devient plus abordable pour tous." },
+            ai: { title: "Pr\u00eat pour l'IA", desc: "Le code open source s'int\u00e8gre mieux avec l'IA et l'automatisation." },
+            future: { title: "P\u00e9renne", desc: "La communaut\u00e9 peut continuer \u00e0 maintenir le logiciel, ind\u00e9pendamment des fournisseurs." },
+            edu: { title: "\u00c9ducation", desc: "Opportunit\u00e9s de stages et de formation pour des \u00e9tudiants du monde entier." },
+            formats: { title: "Formats ouverts", desc: "Toutes les donn\u00e9es dans des standards ouverts comme IFC, PDF, DXF. Aucun verrouillage propri\u00e9taire." },
+            ux: { title: "Convivialit\u00e9", desc: "100 % ax\u00e9 sur la facilit\u00e9 d'utilisation. Interfaces modernes inspir\u00e9es des meilleurs logiciels commerciaux." }
+          }
+        },
+        mission: {
+          label: "Notre mission",
+          title: "\u00ab D\u00e9velopper, soutenir et promouvoir des <span class=\"accent\">logiciels open source</span> pour toute la cha\u00eene AEC (b\u00e2timent, infrastructure, g\u00e9nie civil). \u00bb",
+          items: {
+            dev: { title: "D\u00e9veloppement", desc: "Coordonner et financer le d\u00e9veloppement de logiciels open source" },
+            support: { title: "Support", desc: "G\u00e9rer les licences, les connexions API et les int\u00e9grations" },
+            edu: { title: "\u00c9ducation", desc: "Opportunit\u00e9s de stages et de formation pour les \u00e9tudiants" },
+            advocacy: { title: "Sensibilisation", desc: "Promouvoir l'open source et les standards ouverts" }
+          }
         },
         featuredCad: {
           label: "\u2b50 \u00c0 la une \u2014 CAO 2D + 3D compl\u00e8te, open source",
@@ -2339,12 +2416,66 @@
             openCalculations: { title: "Open Calculations Studio", desc: "Outil open source pour les calculs structuraux manuels \u2014 <strong>inspir\u00e9 de CalcPAD</strong>. Avec unit\u00e9s, formules KaTeX, dessins SVG et export IFCX + IFC4x3 STEP en direct. Les fichiers .cpd existants fonctionnent sans migration." }
           }
         },
+        news: {
+          label: "Actualités",
+          title: "Restez informé",
+          desc: "Suivez notre groupe WhatsApp pour les dernières actualités sur l'écosystème, les nouvelles versions et les mises à jour."
+        },
+        socials: {
+          label: "Réseaux sociaux",
+          title: "Suivez-nous"
+        },
         cta: {
+          badge: "🚀 Programme Early Adopter",
           title: "Devenez partenaire ?",
           desc: "Soutenez l'OpenAEC Foundation et aidez \u00e0 rendre le secteur de la construction open source.",
           becomeBtn: "Devenir partenaire",
           downloadBtn: "↓ Télécharger OpenAEC Installer",
-          contactBtn: "Nous contacter"
+          contactBtn: "Nous contacter",
+          feedback: "💬 Donner votre avis",
+          github: "⭐ Contribuer sur GitHub",
+          whatsapp: "📱 Rejoindre la communauté",
+          starsLine: "Étoiles GitHub sur <strong style=\"color: white;\" data-gh-repos>69</strong> dépôts publics"
+        },
+        board: {
+          label: "Conseil",
+          title: "Le conseil d'administration",
+          moreLink: "En savoir plus sur le conseil",
+          members: {
+            maarten: { name: "Maarten Vroegindeweij", role: "Président" },
+            jochem: { name: "Jochem Kolthof", role: "Trésorier" },
+            martjan: { name: "Martjan den Hoed", role: "Secrétaire" },
+            silvia: { name: "Silvia Taurer", role: "Membre du conseil" }
+          }
+        },
+        contact: {
+          label: "Contact",
+          title: "Contactez-nous",
+          person: { title: "Personne de contact", role: "Fondateur d'Open AEC Foundation", emailLabel: "E-mail", addressLabel: "Adresse", foundingLabel: "Statut", foundingDate: "En cours de constitution" },
+          form: { title: "Envoyer un message", name: "Nom", namePlaceholder: "Votre nom", email: "E-mail", emailPlaceholder: "votre@email.com", message: "Message", messagePlaceholder: "Je suis intéressé par...", submit: "Envoyer le message", sent: "Votre messagerie s'ouvre avec le message déjà rédigé. Envoyez cet e-mail pour finaliser l'envoi — il arrivera alors à <a href=\"mailto:info@open-aec.com\">info@open-aec.com</a>." }
+        },
+        footer: {
+          description: "Logiciels open source pour toute la chaîne AEC (bâtiment, infrastructure, génie civil) — de la conception à la livraison et à la gestion.",
+          pagesTitle: "Pages", moreToolsTitle: "Plus d'outils",
+          pages: {
+            about: "À propos",
+            roadmap: "Feuille de route 2026",
+            architecture: "Architecture",
+            supporters: "Partenaires",
+            quote: "Demander un devis",
+            structure: "Structure",
+            faq: "FAQ",
+            timeline: "Chronologie &amp; statistiques",
+            disclaimer: "Avertissement",
+            statutes: "Projet de statuts",
+            credits: "Crédits", policy: "Politique & positions"
+          },
+          foundation: "Fondation en cours de constitution",
+          country: "Pays-Bas",
+          foundingLabel: "Statut",
+          foundingDate: "En cours de constitution",
+          copyright: "© 2026 Open AEC Foundation, en cours de constitution — L'open source pour un secteur ouvert de la construction et de l'infrastructure",
+          inspired: "Inspiré par la Blender Foundation"
         }
       },
       // Turkish translations \u2014 full coverage of all keys.
@@ -2377,8 +2508,13 @@
           ai_a: "AI",
           ai_e: "First",
           ai_c: "Foundation",
+          badge: "Hedef: 2026 sonuna kadar t\u00fcm in\u015faat yaz\u0131l\u0131mlar\u0131n\u0131n a\u00e7\u0131k kaynak olmas\u0131",
           title: "A\u00e7\u0131k <span class=\"accent\">in\u015faat ve altyap\u0131 sekt\u00f6r\u00fc</span> i\u00e7in <br><span class=\"accent\">a\u00e7\u0131k kaynak</span>",
           subtitle: "OpenAEC Foundation, t\u00fcm AEC zinciri i\u00e7in <strong>a\u00e7\u0131k kaynak</strong> yaz\u0131l\u0131mlar geli\u015ftirir, destekler ve tan\u0131t\u0131r: bina, altyap\u0131, in\u015faat m\u00fchendisli\u011fi ve kamu hizmetleri. \u0130lk misyonumuz: 2026'da sekt\u00f6r\u00fc tamamen a\u00e7\u0131k kaynakl\u0131 hale getirmek.",
+          description: "T\u00fcm AEC zinciri (bina, altyap\u0131, in\u015faat m\u00fchendisli\u011fi) i\u00e7in a\u00e7\u0131k kaynak yaz\u0131l\u0131mlar geli\u015ftiriyor, destekliyor ve tan\u0131t\u0131yoruz \u2014 tasar\u0131mdan teslime ve y\u00f6netime kadar.",
+          downloadBtn: "\u2193 OpenAEC Installer'\u0131 indir",
+          contactBtn: "\u0130leti\u015fime ge\u00e7in \u2192",
+          readMore: "Devam\u0131n\u0131 oku",
           cta: {
             tools: "Ara\u00e7lar\u0131 g\u00f6r\u00fcnt\u00fcle",
             mission: "Misyonumuz",
@@ -2400,7 +2536,25 @@
         about: {
           label: "OpenAEC hakk\u0131nda",
           title: "Neden in\u015faat sekt\u00f6r\u00fc i\u00e7in <span class=\"accent\">a\u00e7\u0131k kaynak</span>?",
-          description: "AEC sekt\u00f6r\u00fc, hala tamamen kapal\u0131, tescilli yaz\u0131l\u0131mlar \u00fczerinde \u00e7al\u0131\u015fan son b\u00fcy\u00fck sekt\u00f6rlerden biridir. Bu y\u00fcksek lisans maliyetlerine, tedarik\u00e7i ba\u011f\u0131ml\u0131l\u0131\u011f\u0131na ve birka\u00e7 sa\u011flay\u0131c\u0131ya ba\u011f\u0131ml\u0131l\u0131\u011fa yol a\u00e7ar. Biz bunu de\u011fi\u015ftiriyoruz."
+          description: "AEC sekt\u00f6r\u00fc, hala tamamen kapal\u0131, tescilli yaz\u0131l\u0131mlar \u00fczerinde \u00e7al\u0131\u015fan son b\u00fcy\u00fck sekt\u00f6rlerden biridir. Bu y\u00fcksek lisans maliyetlerine, tedarik\u00e7i ba\u011f\u0131ml\u0131l\u0131\u011f\u0131na ve birka\u00e7 sa\u011flay\u0131c\u0131ya ba\u011f\u0131ml\u0131l\u0131\u011fa yol a\u00e7ar. Biz bunu de\u011fi\u015ftiriyoruz.",
+          features: {
+            cost: { title: "Maliyet d\u00fc\u015f\u00fc\u015f\u00fc", desc: "Lisans \u00fccreti yok, dan\u0131\u015fmanl\u0131k maliyetleri daha d\u00fc\u015f\u00fck. \u0130n\u015faat herkes i\u00e7in daha uygun fiyatl\u0131 hale gelir." },
+            ai: { title: "Yapay zekaya haz\u0131r", desc: "A\u00e7\u0131k kaynak kod, yapay zeka ve otomasyonla daha iyi entegre olur." },
+            future: { title: "Gelece\u011fe haz\u0131r", desc: "Topluluk, tedarik\u00e7ilerden ba\u011f\u0131ms\u0131z olarak yaz\u0131l\u0131m\u0131 bak\u0131m\u0131n\u0131 s\u00fcrd\u00fcrebilir." },
+            edu: { title: "E\u011fitim", desc: "D\u00fcnyan\u0131n her yerinden \u00f6\u011frenciler i\u00e7in staj ve e\u011fitim f\u0131rsatlar\u0131." },
+            formats: { title: "A\u00e7\u0131k formatlar", desc: "T\u00fcm veriler IFC, PDF, DXF gibi a\u00e7\u0131k standartlarda. Tedarik\u00e7iye ba\u011f\u0131ml\u0131l\u0131k yok." },
+            ux: { title: "Kullan\u0131c\u0131 dostu", desc: "%100 kullan\u0131m kolayl\u0131\u011f\u0131na odaklanma. En iyi ticari yaz\u0131l\u0131mlardan ilham alan modern aray\u00fczler." }
+          }
+        },
+        mission: {
+          label: "Misyonumuz",
+          title: "\"T\u00fcm AEC zinciri (bina, altyap\u0131, in\u015faat m\u00fchendisli\u011fi) i\u00e7in <span class=\"accent\">a\u00e7\u0131k kaynak yaz\u0131l\u0131mlar</span> geli\u015ftirmek, desteklemek ve tan\u0131tmak.\"",
+          items: {
+            dev: { title: "Geli\u015ftirme", desc: "A\u00e7\u0131k kaynak yaz\u0131l\u0131m geli\u015ftirmenin koordinasyonu ve finansman\u0131" },
+            support: { title: "Destek", desc: "Lisanslar\u0131n, API ba\u011flant\u0131lar\u0131n\u0131n ve entegrasyonlar\u0131n y\u00f6netimi" },
+            edu: { title: "E\u011fitim", desc: "\u00d6\u011frenciler i\u00e7in staj ve e\u011fitim f\u0131rsatlar\u0131" },
+            advocacy: { title: "Savunuculuk", desc: "A\u00e7\u0131k kaynak ve a\u00e7\u0131k standartlar\u0131n tan\u0131t\u0131m\u0131" }
+          }
         },
         featuredCad: {
           label: "\u2b50 \u00d6ne \u00e7\u0131kan \u2014 tam 2D + 3D CAD, a\u00e7\u0131k kaynak",
@@ -2490,12 +2644,66 @@
             openCalculations: { title: "Open Calculations Studio", desc: "Yap\u0131sal el hesaplamalar\u0131 i\u00e7in a\u00e7\u0131k kaynak ara\u00e7 \u2014 <strong>CalcPAD'den ilham alarak</strong>. Birimler, KaTeX form\u00fclleri, SVG \u00e7izimler ve canl\u0131 IFCX + IFC4x3 STEP d\u0131\u015fa aktarma ile. Mevcut .cpd dosyalar\u0131 ta\u015f\u0131ma gerektirmeden \u00e7al\u0131\u015f\u0131r." }
           }
         },
+        news: {
+          label: "Haberler",
+          title: "G\u00fcncel kal\u0131n",
+          desc: "Ekosistem hakk\u0131ndaki son haberler, yeni s\u00fcr\u00fcmler ve g\u00fcncellemeler i\u00e7in WhatsApp grubumuzu takip edin."
+        },
+        socials: {
+          label: "Sosyal medya",
+          title: "Bizi takip edin"
+        },
         cta: {
+          badge: "\ud83d\ude80 Erken Kullan\u0131c\u0131 Program\u0131",
           title: "Destek\u00e7i olmak ister misiniz?",
           desc: "OpenAEC Foundation'\u0131 destekleyin ve in\u015faat sekt\u00f6r\u00fcn\u00fcn a\u00e7\u0131k kaynak olmas\u0131na yard\u0131mc\u0131 olun.",
           becomeBtn: "Destek\u00e7i ol",
           downloadBtn: "\u2193 OpenAEC Installer'\u0131 indir",
-          contactBtn: "Bize ula\u015f\u0131n"
+          contactBtn: "Bize ula\u015f\u0131n",
+          feedback: "\ud83d\udcac Geri bildirim ver",
+          github: "\u2b50 GitHub'da katk\u0131da bulun",
+          whatsapp: "\ud83d\udcf1 Toplulu\u011fa kat\u0131l",
+          starsLine: "<strong style=\"color: white;\" data-gh-repos>69</strong> genel depoda GitHub y\u0131ld\u0131zlar\u0131"
+        },
+        board: {
+          label: "Y\u00f6netim kurulu",
+          title: "Y\u00f6netim kurulu",
+          moreLink: "Y\u00f6netim kurulu hakk\u0131nda daha fazla bilgi",
+          members: {
+            maarten: { name: "Maarten Vroegindeweij", role: "Ba\u015fkan" },
+            jochem: { name: "Jochem Kolthof", role: "Sayman" },
+            martjan: { name: "Martjan den Hoed", role: "Sekreter" },
+            silvia: { name: "Silvia Taurer", role: "Y\u00f6netim kurulu \u00fcyesi" }
+          }
+        },
+        contact: {
+          label: "\u0130leti\u015fim",
+          title: "Bize ula\u015f\u0131n",
+          person: { title: "\u0130leti\u015fim ki\u015fisi", role: "Open AEC Foundation Kurucusu", emailLabel: "E-posta", addressLabel: "Adres", foundingLabel: "Durum", foundingDate: "Kurulu\u015f a\u015famas\u0131nda" },
+          form: { title: "Mesaj g\u00f6nder", name: "Ad", namePlaceholder: "Ad\u0131n\u0131z", email: "E-posta", emailPlaceholder: "siz@email.com", message: "Mesaj", messagePlaceholder: "\u015eununla ilgileniyorum...", submit: "Mesaj\u0131 g\u00f6nder", sent: "E-posta program\u0131n\u0131z mesajla birlikte a\u00e7\u0131l\u0131r. G\u00f6ndermeyi tamamlamak i\u00e7in bu e-postay\u0131 yollay\u0131n \u2014 b\u00f6ylece <a href=\"mailto:info@open-aec.com\">info@open-aec.com</a> adresine ula\u015f\u0131r." }
+        },
+        footer: {
+          description: "T\u00fcm AEC zinciri (bina, altyap\u0131, in\u015faat m\u00fchendisli\u011fi) i\u00e7in a\u00e7\u0131k kaynak yaz\u0131l\u0131m \u2014 tasar\u0131mdan teslime ve y\u00f6netime kadar.",
+          pagesTitle: "Sayfalar", moreToolsTitle: "Daha fazla ara\u00e7",
+          pages: {
+            about: "Hakk\u0131m\u0131zda",
+            roadmap: "2026 yol haritas\u0131",
+            architecture: "Mimari",
+            supporters: "Destek\u00e7iler",
+            quote: "Teklif iste",
+            structure: "Yap\u0131",
+            faq: "SSS",
+            timeline: "Zaman \u00e7izelgesi &amp; istatistikler",
+            disclaimer: "Sorumluluk reddi",
+            statutes: "Taslak t\u00fcz\u00fck",
+            credits: "Te\u015fekk\u00fcrler", policy: "Politika & duru\u015flar"
+          },
+          foundation: "Kurulu\u015f a\u015famas\u0131nda vak\u0131f",
+          country: "Hollanda",
+          foundingLabel: "Durum",
+          foundingDate: "Kurulu\u015f a\u015famas\u0131nda",
+          copyright: "\u00a9 2026 Open AEC Foundation (kurulu\u015f a\u015famas\u0131nda) \u2014 A\u00e7\u0131k in\u015faat ve altyap\u0131 sekt\u00f6r\u00fc i\u00e7in a\u00e7\u0131k kaynak",
+          inspired: "Blender Foundation'dan ilham al\u0131nm\u0131\u015ft\u0131r"
         }
       }
     };
